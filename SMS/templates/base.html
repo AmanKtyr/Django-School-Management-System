@@ -66,7 +66,7 @@
               <i class="fas fa-user mr-2"></i> Profile
             </a>
             <div class="dropdown-divider"></div>
-            <a href="{% url 'logout' %}" class="dropdown-item">
+            <a href="{% url 'login' %}" class="dropdown-item">
               <i class="fas fa-sign-out"></i> Sign out
             </a>
           </div>
@@ -84,144 +84,167 @@
       <!-- Brand Logo -->
       <a href="{% url 'home' %}" class="brand-link">{{ school_name | default:"MySchool" }}</a>
 
-      <!-- Sidebar -->
-      <div class="sidebar">
+{% comment %} sidebar start {% endcomment %}
 
-        <!-- Sidebar Menu -->
-        <nav class="mt-2">
-          <ul class="nav nav-pills nav-sidebar flex-column"
-            data-widget="treeview" role="menu" data-accordion="false">
-            <li class="nav-item">
-              <a href="{% url 'student-list' %}" class="nav-link">
-                <i class="nav-icon fas fa-graduation-cap"></i>
-                <p>
-                  Students
-                </p>
+<div class="sidebar">
+  <nav class="mt-2">
+      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <li class="nav-item">
+              <a href="{% url 'home' %}" class="nav-link">
+                  <i class="nav-icon fas fa-tachometer-alt" style="color: #ff5733; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);"></i>
+                  <p>Dashboard</p>
               </a>
-            </li>
-            <li class="nav-header">Staff</li>
-            <li class="nav-item">
-              <a href="{% url 'staff-list' %}" class="nav-link">
-                <i class="nav-icon fas fa-users"></i>
-                <p>
-                  Teaching  Staff
-                </p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="{% url 'non-teaching-staffs-list' %}" class="nav-link">
-                <i class="nav-icon fas fa-users"></i>
-                <p>
-                  Non-Teaching  Staff
-                </p>
-              </a>
-            </li>
+          </li>
 
-            <li class="nav-header">Finance</li>
-            <li class="nav-item">
-              <a href="{% url 'invoice-list' %}" class="nav-link">
-                <i class="nav-icon fas fa-money-bill-alt"></i>
-                <p>
-                  Invoices
-                </p>
-              </a>
-            </li>
-
-            <li class="nav-header">Attendence</li>
-            <li class="nav-item">
-              <a href="" class="nav-link">
-                <i class="nav-icon fas fa-money-bill"></i>
-                <p>
-                  Students
-                </p>
-              </a>
-            </li>
-            <li class="nav-header">Results</li>
-            <li class="nav-item">
-              <a href="{% url 'create-result' %}" class="nav-link">
-                <i class="nav-icon fas fa-money-bill-alt"></i>
-                <p>
-                  Create Results
-                </p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="{% url 'edit-results' %}" class="nav-link">
-                <i class="nav-icon fas fa-money-bill-alt"></i>
-                <p>
-                  Update Results
-                </p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="{% url 'view-results' %}" class="nav-link">
-                <i class="nav-icon fas fa-money-bill-alt"></i>
-                <p>
-                  View Results
-                </p>
-              </a>
-            </li>
-
-            <li class="nav-header">Others</li>
-            <li class="nav-item has-treeview">
+          <li class="nav-header">Students</li>
+          <li class="nav-item has-treeview">
               <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-copy"></i>
-                <p>
-                  Management
-                  <i class="fas fa-angle-left right"></i>
-                </p>
+                  <i class="nav-icon fas fa-user-graduate" style="color: #3399ff; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);"></i>
+                  <p>Students<i class="fas fa-angle-left right"></i></p>
               </a>
               <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="{% url 'sessions' %}" class="nav-link">
-                    <i class="nav-icon fas fa-bars"></i>
-                    <p>
-                      Sessions
-                    </p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="{% url 'terms' %}" class="nav-link">
-                    <i class="nav-icon fas fa-bars"></i>
-                    <p>
-                      Terms
-                      <i class="right"></i>
-                    </p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="{% url 'subjects' %}" class="nav-link">
-                    <i class="nav-icon fas fa-bars"></i>
-                    <p>
-                      Subjects
-                    </p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="{% url 'classes' %}" class="nav-link">
-                    <i class="nav-icon fas fa-bars"></i>
-                    <p>
-                      Classes
-                    </p>
-                  </a>
-                </li>
+                  <li class="nav-item">
+                      <a href="{% url 'student-list' %}" class="nav-link">
+                          <i class="fas fa-list nav-icon" style="color: #33cc33;"></i>
+                          <p>Student List</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="{% url 'student-create' %}" class="nav-link">
+                          <i class="fas fa-user-plus nav-icon" style="color: #ffcc00;"></i>
+                          <p>Admissions</p>
+                      </a>
+                  </li>
               </ul>
-            </li>
-            <li class="nav-item">
-              <a href="{% url 'configs' %}" class="nav-link">
-                <i class="nav-icon fas fa-cog"></i>
-                <p>
-                  Settings
-                </p>
+          </li>
+
+          <li class="nav-header">Staff</li>
+          <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-users" style="color: #9933ff;"></i>
+                  <p>Staff<i class="fas fa-angle-left right"></i></p>
               </a>
+              <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                      <a href="{% url 'staff-list' %}" class="nav-link">
+                          <i class="fas fa-chalkboard-teacher nav-icon" style="color: #ff6666;"></i>
+                          <p>Teaching Staff</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="{% url 'non-teaching-staffs-list' %}" class="nav-link">
+                          <i class="fas fa-user-tie nav-icon" style="color: #009999;"></i>
+                          <p>Non-Teaching Staff</p>
+                      </a>
+                  </li>
+              </ul>
+          </li>
+
+          <li class="nav-header">Academics</li>
+          <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-book" style="color: #ff9900;"></i>
+                  <p>Academics<i class="fas fa-angle-left right"></i></p>
+              </a>
+              <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                      <a href="{% url 'subjects' %}" class="nav-link">
+                          <i class="fas fa-book-open nav-icon" style="color: #339966;"></i>
+                          <p>Subjects</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="{% url 'classes' %}" class="nav-link">
+                          <i class="fas fa-school nav-icon" style="color: #cc3300;"></i>
+                          <p>Classes</p>
+                      </a>
+                  </li>
+              </ul>
+          </li>
+
+          <li class="nav-header">Finance</li>
+          <li class="nav-item">
+              <a href="{% url 'invoice-list' %}" class="nav-link">
+                  <i class="nav-icon fas fa-money-bill-alt" style="color: #66ccff;"></i>
+                  <p>Invoices</p>
+              </a>
+          </li>
+
+          <li class="nav-header">Examinations</li>
+          <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-clipboard-list" style="color: #ff5050;"></i>
+                  <p>Results<i class="fas fa-angle-left right"></i></p>
+              </a>
+              <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                      <a href="{% url 'create-result' %}" class="nav-link">
+                          <i class="fas fa-file-alt nav-icon" style="color: #6600cc;"></i>
+                          <p>Create Results</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="{% url 'view-results' %}" class="nav-link">
+                          <i class="fas fa-eye nav-icon" style="color: #ffcc00;"></i>
+                          <p>View Results</p>
+                      </a>
+                  </li>
+              </ul>
+          </li>
+
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <li class="nav-header">Others</li>
+            <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-copy" style="color: #ff6600;"></i>
+                    <p>
+                        Management
+                        <i class="fas fa-angle-left right"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="{% url 'sessions' %}" class="nav-link">
+                            <i class="nav-icon fas fa-bars" style="color: #0099cc;"></i>
+                            <p>Sessions</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'terms' %}" class="nav-link">
+                            <i class="nav-icon fas fa-bars" style="color: #ff3366;"></i>
+                            <p>Terms</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'subjects' %}" class="nav-link">
+                            <i class="nav-icon fas fa-bars" style="color: #33cc33;"></i>
+                            <p>Subjects</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'classes' %}" class="nav-link">
+                            <i class="nav-icon fas fa-bars" style="color: #cc3300;"></i>
+                            <p>Classes</p>
+                        </a>
+                    </li>
+                </ul>
             </li>
+        </ul>
 
+          <li class="nav-header">Settings</li>
+          <li class="nav-item">
+              <a href="{% url 'configs' %}" class="nav-link">
+                  <i class="nav-icon fas fa-cog" style="color: #3333cc;"></i>
+                  <p>System Settings</p>
+              </a>
+          </li>
+      </ul>
+  </nav>
+</div>
 
-          </ul>
-        </nav>
-        <!-- /.sidebar-menu -->
-      </div>
-      <!-- /.sidebar -->
+    
+{% comment %} sidebar {% endcomment %}
+      
     </aside>
 
     

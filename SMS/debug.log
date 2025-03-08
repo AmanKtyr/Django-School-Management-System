@@ -27192,3 +27192,7 @@ INFO 2025-03-07 17:59:34,809 "GET /static/dist/css/style.css HTTP/1.1" 304 0
 INFO 2025-03-07 17:59:34,812 "GET /static/dist/js/custom.js HTTP/1.1" 304 0
 INFO 2025-03-07 17:59:35,696 "GET / HTTP/1.1" 200 13290
 INFO 2025-03-07 18:00:23,890 "GET / HTTP/1.1" 200 13294
+INFO 2025-03-08 12:00:08,465 Watching for file changes with StatReloader
+INFO 2025-03-08 12:01:02,791 Watching for file changes with StatReloader
+INFO 2025-03-08 12:07:06,267 Watching for file changes with StatReloader
+INFO 2025-03-08 12:07:55,425 Watching for file changes with StatReloader
