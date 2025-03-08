@@ -27196,3 +27196,382 @@ INFO 2025-03-08 12:00:08,465 Watching for file changes with StatReloader
 INFO 2025-03-08 12:01:02,791 Watching for file changes with StatReloader
 INFO 2025-03-08 12:07:06,267 Watching for file changes with StatReloader
 INFO 2025-03-08 12:07:55,425 Watching for file changes with StatReloader
+INFO 2025-03-08 12:07:58,529 "GET / HTTP/1.1" 302 0
+INFO 2025-03-08 12:07:58,657 "GET /accounts/login/?next=/ HTTP/1.1" 200 5356
+INFO 2025-03-08 12:07:59,124 "GET /static/dist/img/school-logo.png HTTP/1.1" 200 228739
+INFO 2025-03-08 12:07:59,126 "GET /static/dist/css/login-page.css HTTP/1.1" 200 9070
+WARNING 2025-03-08 12:08:00,095 Not Found: /favicon.ico
+WARNING 2025-03-08 12:08:00,097 "GET /favicon.ico HTTP/1.1" 404 6322
+INFO 2025-03-08 12:08:05,413 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-03-08 12:08:05,582 "GET / HTTP/1.1" 200 13294
+INFO 2025-03-08 12:08:05,668 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-08 12:08:05,706 "GET /static/dist/js/custom.js HTTP/1.1" 200 1569
+INFO 2025-03-08 12:08:09,516 "GET /student/list HTTP/1.1" 200 12071
+INFO 2025-03-08 12:08:11,552 "GET /staff/list/ HTTP/1.1" 200 11425
+INFO 2025-03-08 12:08:14,382 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 11394
+INFO 2025-03-08 12:10:12,259 "GET /student/list HTTP/1.1" 200 12071
+INFO 2025-03-08 12:10:14,151 "GET /student/create/ HTTP/1.1" 200 16669
+INFO 2025-03-08 12:10:25,881 "POST /student/create/ HTTP/1.1" 302 0
+INFO 2025-03-08 12:10:25,965 "GET /student/3/ HTTP/1.1" 200 13814
+INFO 2025-03-08 12:10:26,288 "GET /static/dist/img/avatar.png HTTP/1.1" 200 2044603
+INFO 2025-03-08 12:10:37,181 "GET /student/list HTTP/1.1" 200 12415
+INFO 2025-03-08 12:10:59,114 "GET /student/3/ HTTP/1.1" 200 13668
+INFO 2025-03-08 12:11:29,002 "GET /student/2/ HTTP/1.1" 200 13668
+INFO 2025-03-08 12:11:41,396 "GET /student/create/ HTTP/1.1" 200 16669
+INFO 2025-03-08 12:12:06,282 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 11394
+INFO 2025-03-08 12:13:24,744 "GET /student/list HTTP/1.1" 200 12415
+INFO 2025-03-08 12:14:09,420 "GET /student/1/ HTTP/1.1" 200 14313
+INFO 2025-03-08 12:15:27,936 "GET /student/1/ HTTP/1.1" 200 14440
+INFO 2025-03-08 12:16:16,135 "GET /student/list HTTP/1.1" 200 12415
+INFO 2025-03-08 12:16:17,385 "GET /student/2/ HTTP/1.1" 200 13795
+INFO 2025-03-08 12:16:19,832 "GET /student/list HTTP/1.1" 200 12415
+INFO 2025-03-08 12:16:20,910 "GET /student/3/ HTTP/1.1" 200 13795
+INFO 2025-03-08 12:16:27,557 "GET /student/3/update/ HTTP/1.1" 200 16777
+INFO 2025-03-08 12:16:41,578 "POST /student/3/update/ HTTP/1.1" 302 0
+INFO 2025-03-08 12:16:41,599 "GET /student/3/ HTTP/1.1" 200 13955
+INFO 2025-03-08 12:16:41,803 "GET /media/students/passports/icons8-person-80.png HTTP/1.1" 200 2823
+INFO 2025-03-08 12:20:25,933 "GET /student/3/ HTTP/1.1" 200 13811
+INFO 2025-03-08 12:20:26,021 "GET /media/students/passports/icons8-person-80.png HTTP/1.1" 304 0
+INFO 2025-03-08 12:20:28,540 "GET /accounts/login/ HTTP/1.1" 200 5355
+INFO 2025-03-08 12:20:33,251 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-03-08 12:20:33,276 "GET / HTTP/1.1" 200 13293
+INFO 2025-03-08 12:20:38,421 "GET /student/list HTTP/1.1" 200 12414
+INFO 2025-03-08 12:21:07,231 "GET /student/list HTTP/1.1" 200 12442
+INFO 2025-03-08 12:21:09,086 "GET /student/list HTTP/1.1" 200 12442
+INFO 2025-03-08 12:23:41,530 "GET /student/list HTTP/1.1" 200 12429
+INFO 2025-03-08 12:24:04,940 "GET /student/list HTTP/1.1" 200 12614
+INFO 2025-03-08 12:24:22,178 "GET /student/list HTTP/1.1" 200 12614
+INFO 2025-03-08 12:26:17,927 "GET /student/1/ HTTP/1.1" 200 14639
+INFO 2025-03-08 12:27:02,300 "GET /student/1/ HTTP/1.1" 200 14657
+INFO 2025-03-08 12:27:54,544 "GET /student/1/ HTTP/1.1" 200 14657
+INFO 2025-03-08 12:28:00,381 "GET /student/1/ HTTP/1.1" 200 14651
+INFO 2025-03-08 12:28:01,707 "GET /student/1/ HTTP/1.1" 200 14651
+INFO 2025-03-08 12:28:19,961 "GET /student/1/ HTTP/1.1" 200 14651
+INFO 2025-03-08 12:28:20,302 "GET /student/1/ HTTP/1.1" 200 14651
+INFO 2025-03-08 12:28:20,705 "GET /student/1/ HTTP/1.1" 200 14651
+WARNING 2025-03-08 12:28:26,577 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2025-03-08 12:28:51,855 "GET /student/1/ HTTP/1.1" 200 14641
+INFO 2025-03-08 12:31:38,084 "GET /student/1/ HTTP/1.1" 200 7872
+INFO 2025-03-08 12:31:48,222 "GET /subject/list/ HTTP/1.1" 200 6796
+INFO 2025-03-08 12:31:50,591 "GET /subject/list/ HTTP/1.1" 200 6796
+INFO 2025-03-08 12:31:55,858 "GET /finance/list/ HTTP/1.1" 200 5593
+INFO 2025-03-08 12:32:00,468 "GET /staff/list/ HTTP/1.1" 200 5387
+INFO 2025-03-08 12:32:06,237 "GET /student/list HTTP/1.1" 200 6305
+INFO 2025-03-08 12:32:10,193 "GET /staff/list/ HTTP/1.1" 200 5387
+INFO 2025-03-08 12:32:19,410 "GET /staff/list/ HTTP/1.1" 200 11626
+ERROR 2025-03-08 12:34:17,530 Internal Server Error: /staff/list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'dashboard' not found. 'dashboard' is not a valid view function or pattern name.
+ERROR 2025-03-08 12:34:17,534 "GET /staff/list/ HTTP/1.1" 500 139320
+INFO 2025-03-08 12:39:21,215 "GET /staff/list/ HTTP/1.1" 200 11626
+ERROR 2025-03-08 12:40:57,386 Internal Server Error: /staff/list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'dashboard' not found. 'dashboard' is not a valid view function or pattern name.
+ERROR 2025-03-08 12:40:57,387 "GET /staff/list/ HTTP/1.1" 500 142892
+ERROR 2025-03-08 12:41:06,158 Internal Server Error: /staff/list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'index' not found. 'index' is not a valid view function or pattern name.
+ERROR 2025-03-08 12:41:06,158 "GET /staff/list/ HTTP/1.1" 500 142813
+INFO 2025-03-08 12:41:19,798 "GET /staff/list/ HTTP/1.1" 200 11088
+INFO 2025-03-08 12:41:28,397 "GET /student/list HTTP/1.1" 200 12078
+INFO 2025-03-08 12:41:29,718 "GET /staff/list/ HTTP/1.1" 200 11088
+INFO 2025-03-08 12:41:30,819 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 11057
+INFO 2025-03-08 12:41:33,630 "GET / HTTP/1.1" 200 12957
+INFO 2025-03-08 12:41:37,220 "GET /student/list HTTP/1.1" 200 12078
+INFO 2025-03-08 12:42:14,241 "GET /student/list HTTP/1.1" 200 12624
+ERROR 2025-03-08 12:46:18,584 Internal Server Error: /student/list
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'dashboard' not found. 'dashboard' is not a valid view function or pattern name.
+ERROR 2025-03-08 12:46:18,586 "GET /student/list HTTP/1.1" 500 144916
+ERROR 2025-03-08 12:46:35,813 Internal Server Error: /student/list
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'admissions' not found. 'admissions' is not a valid view function or pattern name.
+ERROR 2025-03-08 12:46:35,814 "GET /student/list HTTP/1.1" 500 144892
+INFO 2025-03-08 12:47:24,777 "GET /student/list HTTP/1.1" 200 13227
+INFO 2025-03-08 12:47:37,152 "GET /staff/list/ HTTP/1.1" 200 12237
+INFO 2025-03-08 12:47:39,303 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 12206
+INFO 2025-03-08 12:47:43,729 "GET /student/create/ HTTP/1.1" 200 17481
+INFO 2025-03-08 12:47:46,809 "GET /student/list HTTP/1.1" 200 13227
+INFO 2025-03-08 12:47:52,389 "GET /site-config HTTP/1.1" 200 12667
+INFO 2025-03-08 12:48:58,956 "GET /site-config HTTP/1.1" 200 14266
+INFO 2025-03-08 12:49:21,508 "GET / HTTP/1.1" 200 15705
+INFO 2025-03-08 12:53:43,986 "GET / HTTP/1.1" 200 11615
+INFO 2025-03-08 12:53:45,665 "GET / HTTP/1.1" 200 11615
+INFO 2025-03-08 12:54:07,231 "GET / HTTP/1.1" 200 15695
+INFO 2025-03-08 12:54:55,900 "GET / HTTP/1.1" 200 13877
+INFO 2025-03-08 12:56:09,612 "GET / HTTP/1.1" 200 13877
+INFO 2025-03-08 12:56:25,438 "GET / HTTP/1.1" 200 13877
+INFO 2025-03-08 12:56:47,917 "GET /student/list HTTP/1.1" 200 12998
+INFO 2025-03-08 12:56:55,850 "GET /finance/list/ HTTP/1.1" 200 11913
+INFO 2025-03-08 12:56:59,647 "GET /result/view/all HTTP/1.1" 200 11608
+INFO 2025-03-08 12:57:01,978 "GET /result/create/ HTTP/1.1" 200 12452
+INFO 2025-03-08 12:57:40,242 "GET /result/create/ HTTP/1.1" 200 9200
+INFO 2025-03-08 12:58:00,043 "GET /result/create/ HTTP/1.1" 200 14270
+INFO 2025-03-08 12:58:29,871 "GET /result/create/ HTTP/1.1" 200 12452
+INFO 2025-03-08 12:58:48,278 "GET /result/create/ HTTP/1.1" 200 14030
+INFO 2025-03-08 12:59:12,988 "GET /result/create/ HTTP/1.1" 200 14252
+INFO 2025-03-08 12:59:27,955 "GET /result/create/ HTTP/1.1" 200 12464
+INFO 2025-03-08 12:59:58,980 "GET /result/create/ HTTP/1.1" 200 14241
+INFO 2025-03-08 13:00:10,864 "GET /student/list HTTP/1.1" 200 14787
+INFO 2025-03-08 13:01:06,050 "GET / HTTP/1.1" 200 15666
+INFO 2025-03-08 13:01:08,369 "GET /student/list HTTP/1.1" 200 14787
+INFO 2025-03-08 13:01:45,082 "GET /student/create/ HTTP/1.1" 200 19041
+INFO 2025-03-08 13:03:29,481 "GET /student/list HTTP/1.1" 200 14787
+INFO 2025-03-08 13:03:32,830 "GET /student/list HTTP/1.1" 200 14787
+INFO 2025-03-08 13:03:36,533 "GET /student/create/ HTTP/1.1" 200 19041
+INFO 2025-03-08 13:13:59,000 "GET /student/list HTTP/1.1" 200 14787
+INFO 2025-03-08 13:18:24,773 "GET /student/1/ HTTP/1.1" 200 16812
+INFO 2025-03-08 13:18:48,569 "GET /finance/1/detail/ HTTP/1.1" 200 14405
+INFO 2025-03-08 13:19:29,007 "GET /staff/list/ HTTP/1.1" 200 13797
+INFO 2025-03-08 13:19:33,391 "GET /staff/create/ HTTP/1.1" 200 16847
+INFO 2025-03-08 13:20:05,064 "GET /staff/list/ HTTP/1.1" 200 13797
+INFO 2025-03-08 13:20:06,727 "GET /staff/1/ HTTP/1.1" 200 15445
+INFO 2025-03-08 13:20:06,799 "GET /static/dist/img/teacher-dp.jpg HTTP/1.1" 200 14750
+INFO 2025-03-08 13:20:28,090 "GET /staff/1/update/ HTTP/1.1" 200 16913
+INFO 2025-03-08 13:20:31,006 "GET /staff/1/delete/ HTTP/1.1" 200 13518
+INFO 2025-03-08 13:20:36,435 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 13766
+INFO 2025-03-08 13:20:39,647 "GET /staff/list/ HTTP/1.1" 200 13797
+INFO 2025-03-08 13:20:43,096 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 13766
+INFO 2025-03-08 13:20:45,806 "GET /non-teaching-staffs/create/ HTTP/1.1" 200 16887
+INFO 2025-03-08 13:20:57,057 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 13766
+INFO 2025-03-08 13:20:59,865 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 15297
+INFO 2025-03-08 13:20:59,954 "GET /static/dist/img/worker.svg HTTP/1.1" 200 14909
+INFO 2025-03-08 13:21:38,840 "GET /staff/list/ HTTP/1.1" 200 13797
+INFO 2025-03-08 13:21:41,402 "GET /staff/1/ HTTP/1.1" 200 15445
+INFO 2025-03-08 13:21:43,926 "GET /staff/list/ HTTP/1.1" 200 13797
+INFO 2025-03-08 13:22:31,560 "GET / HTTP/1.1" 200 15666
