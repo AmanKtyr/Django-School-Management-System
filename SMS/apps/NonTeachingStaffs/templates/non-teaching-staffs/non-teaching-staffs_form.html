@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block breadcrumb-left %}
+<div class="container ">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-light p-3 rounded shadow-sm">
+      <li class="breadcrumb-item">
+        <a href="{% url 'non-teaching-staffs-list' %}" class="text-decoration-none text-primary fw-bold">
+          <i class="bi bi-people"></i>Non Teaching staffs
+        </a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="{% url 'non-teaching-staffs-list' %}" class="text-decoration-none text-primary fw-bold">
+          <i class="bi bi-list"></i> List
+        </a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">Form</li>
+    </ol>
+  </nav>
+</div>
+{% endblock breadcrumb-left %}
+{% block title %}
+
+  {% if object %}
+    Update {{ object }}
+  {% else %}
+    Add new student
+  {% endif %}
+
+{% endblock title %}
+
+
+{% block content %}
+
+<form action="" method="POST">
+  {% csrf_token %}
+
+  {% include 'corecode/form_snippet.html' %}
+
+  {% if object %}
+    <input type="submit" class="btn btn-primary" value="Update Record">
+  {% else %}
+    <input type="submit" class="btn btn-primary" value="Add new Staff">
+  {% endif %}
+</form>
+
+
+{% endblock content %}

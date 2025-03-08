@@ -1,0 +1,28 @@
+.alt-list li:nth-child(odd) {
+    background-color: #f8f9fa;
+  }
+  .alt-list li:nth-child(even) {
+    background-color: #e9ecef;
+  }
+
+
+  .dashboard-card {
+    border-left: 5px solid #007bff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    transition: transform 0.2s;
+}
+.dashboard-card:hover {
+    transform: scale(1.05);
+}
+.chart-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.list-group-item {
+    border-left: 5px solid #28a745;
+}

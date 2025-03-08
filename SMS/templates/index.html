@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="container mt-4">
+  <h2 class="text-center mb-4">Admin Dashboard</h2>
+  <div class="row g-4">
+      <!-- Dashboard Cards -->
+      <div class="col-md-3">
+          <div class="dashboard-card text-center">
+              <h5>Total Students</h5>
+              <h3 class="text-primary">1200</h3>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="dashboard-card text-center">
+              <h5>Total Teachers</h5>
+              <h3 class="text-success">80</h3>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="dashboard-card text-center">
+              <h5>Fees Collected</h5>
+              <h3 class="text-warning">₹5,00,000</h3>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="dashboard-card text-center">
+              <h5>Pending Dues</h5>
+              <h3 class="text-danger">₹50,000</h3>
+          </div>
+      </div>
+  </div>
+
+  <!-- Charts Section -->
+  <div class="row mt-4 g-4">
+      <div class="col-md-6">
+          <div class="chart-container">
+              <h5 class="text-center">Attendance Rate</h5>
+              <canvas id="attendanceChart"></canvas>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="chart-container">
+              <h5 class="text-center">Fees Collection</h5>
+              <canvas id="feesChart"></canvas>
+          </div>
+      </div>
+  </div>
+
+  <!-- Recent Activities -->
+  <div class="row mt-4">
+      <div class="col-md-12">
+          <h4 class="mb-3">Recent Activities</h4>
+          <ul class="list-group">
+              <li class="list-group-item">📌 New student enrolled: <strong>Rohan Sharma</strong></li>
+              <li class="list-group-item">💰 Fee payment received: <strong>₹10,000 from Priya Mehta</strong></li>
+              <li class="list-group-item">👨‍🏫 Teacher added: <strong>Mr. Arun Kumar</strong></li>
+          </ul>
+      </div>
+  </div>
+</div>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      // Attendance Chart
+      const ctx1 = document.getElementById('attendanceChart').getContext('2d');
+      new Chart(ctx1, {
+          type: 'line',
+          data: {
+              labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+              datasets: [{
+                  label: 'Attendance Rate',
+                  data: [90, 85, 88, 92, 95, 89],
+                  borderColor: '#007bff',
+                  backgroundColor: 'rgba(0,123,255,0.2)',
+                  fill: true
+              }]
+          }
+      });
+
+      // Fees Collection Chart
+      const ctx2 = document.getElementById('feesChart').getContext('2d');
+      new Chart(ctx2, {
+          type: 'bar',
+          data: {
+              labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+              datasets: [{
+                  label: 'Fees Collected (₹)',
+                  data: [80000, 90000, 75000, 95000, 100000, 85000],
+                  backgroundColor: ['#28a745', '#ffc107', '#dc3545', '#17a2b8', '#6610f2', '#6f42c1']
+              }]
+          }
+      });
+  });
+</script>
+
+{% endblock content %}

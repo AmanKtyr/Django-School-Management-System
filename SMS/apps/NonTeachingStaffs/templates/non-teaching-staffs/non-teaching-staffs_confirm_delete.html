@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+
+
+{% block breadcrumb-left %}
+<div class="container ">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-light p-3 rounded shadow-sm">
+      <li class="breadcrumb-item">
+        <a href="{% url 'non-teaching-staffs-list' %}" class="text-decoration-none text-primary fw-bold">
+          <i class="bi bi-people"></i> Non Teaching staffs
+        </a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="{% url 'non-teaching-staffs-list' %}" class="text-decoration-none text-primary fw-bold">
+          <i class="bi bi-list"></i> List
+        </a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">Delete</li>
+    </ol>
+  </nav>
+</div>
+{% endblock breadcrumb-left %}
+
+
+{% block title %}
+{% endblock title %}
+
+
+{% block content %}
+
+<form action="" method="POST">
+  {% csrf_token %}
+
+  <div class="alert">
+    <p>Are you sure you want to delete "{{ object }}"?</p>
+    <p>All contents attached to this staff will be deleted</p>
+  </div>
+
+  <input type="submit" class="btn btn-primary" value="Confirm">
+
+</form>
+
+
+{% endblock content %}

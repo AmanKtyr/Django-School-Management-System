@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% comment %} {% block title %}Non Teaching Staffs{% endblock title %} {% endcomment %}
+
+{% block breadcrumb-left %}
+<div class="container ">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-light p-3 rounded shadow-sm">
+      <li class="breadcrumb-item">
+        <a href="{% url 'non-teaching-staffs-list' %}" class="text-decoration-none text-primary fw-bold">
+          <i class="bi bi-people"></i>Non Teaching staffs
+        </a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">List</li>
+    </ol>
+  </nav>
+</div>
+{% endblock breadcrumb-left %}
+
+{% block breadcrumb %}
+<a class="btn btn-primary" href="{% url 'non-teaching-staffs-create' %}">
+  <i class="fas fa-plus"></i> New staff
+</a>
+{% endblock breadcrumb %}
+
+{% block content %}
+  <table id="stafftable" class="table table-bordered table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th>S/N</th>
+        <th>Fullname</th>
+        <th>Gender</th>
+        <th>Mobile Phone Number</th>
+        <th>Job Role</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      {% for staff in object_list %}
+        <tr class='clickable-row' data-href="{% url 'non-teaching-staffs-detail' staff.id %}">
+          <td>{{ forloop.counter }}</td>
+          <td>{{ staff.firstname }} {{ staff.surname }} {{ staff.other_name }}</td>
+          <td>{{ staff.get_gender_display }}</td>
+          <td>{{ staff.mobile_number }}</td>
+          <td>{{ staff.job_role }}</td>
+          <td>{{ staff.get_current_status_display }}</td>
+        </tr>
+      {% endfor %}
+
+    </tbody>
+  </table>
+{% endblock content %}
+
+{% block morejs %}
+<script>
+   $('#stafftable').DataTable({
+    select: false
+   });
+</script>
+{% endblock morejs %}

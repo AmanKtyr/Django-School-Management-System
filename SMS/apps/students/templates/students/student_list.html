@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% comment %} {% block title %}Students{% endblock title %} {% endcomment %}
+{% block breadcrumb-left %}
+<div class="container ">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-light p-3 rounded shadow-sm">
+      <li class="breadcrumb-item">
+        <a href="{% url 'student-list' %}" class="text-decoration-none text-primary fw-bold">
+          <i class="bi bi-people"></i> Students
+        </a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">List</li>
+    </ol>
+  </nav>
+</div>
+{% endblock breadcrumb-left %}
+
+{% block breadcrumb %}
+<a class="btn btn-primary" href="{% url 'student-create' %}"><i
+    class="fas fa-plus"></i> New student</a>
+<a class="btn btn-primary" href="{% url 'student-upload' %}"><i
+    class="fas fa-upload"></i> Upload students</a>
+{% endblock breadcrumb %}
+
+{% block content %}
+  <div class="table-responsive">
+    <table id="studenttable" class="table table-bordered table-hover" data-page-length='100'>
+      <thead class="thead-dark">
+        <tr>
+          <th>S/N</th>
+          <th>Fullname</th>
+          <th>Registration Number</th>
+          <th>Current Class</th>
+          <th>Gender</th>
+          <th>Mobile Number</th>
+          {% comment %} <th>Father Phone Number</th> {% endcomment %}
+          <th>Aadhar Number</th>
+          <th>Status</th>
+          {% comment %} <th>Barcode</th> {% endcomment %}
+        </tr>
+      </thead>
+      <tbody>
+
+        {% for student in students %}
+          <tr class='clickable-row' data-href="{% url 'student-detail' student.id %}">
+            <td>{{ forloop.counter}}</td>
+            <td>{{student.firstname }} {{ student.surname}}  </td>
+            <td>{{ student.registration_number}}</td>
+            <td>{{ student.current_class}}</td>
+            <td>{{ student.get_gender_display}}</td>
+            <td>{{ student.mobile_number}}</td>
+            {% comment %} <td>{{ student.Father_mobile_number}}</td> {% endcomment %}
+            <td>{{ student.aadhar}}</td>
+            <td>{{ student.get_current_status_display}}</td>
+            {% comment %} <td>{{ student.barcode_image() }}</td> {% endcomment %}
+          </tr>
+        {% endfor %}
+
+      </tbody>
+    </table>
+  </div>
+{% endblock content %}
+
+
+{% block morejs %}
+<script>
+  $('#studenttable').DataTable({
+  });
+</script>
+
+{% endblock morejs %}
