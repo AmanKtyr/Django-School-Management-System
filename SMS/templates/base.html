@@ -140,27 +140,29 @@
               </ul>
           </li>
 
-          <li class="nav-header">Academics</li>
-          <li class="nav-item has-treeview">
-              <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-book" style="color: #ff9900;"></i>
-                  <p>Academics<i class="fas fa-angle-left right"></i></p>
-              </a>
-              <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                      <a href="{% url 'subjects' %}" class="nav-link">
-                          <i class="fas fa-book-open nav-icon" style="color: #339966;"></i>
-                          <p>Subjects</p>
-                      </a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="{% url 'classes' %}" class="nav-link">
-                          <i class="fas fa-school nav-icon" style="color: #cc3300;"></i>
-                          <p>Classes</p>
-                      </a>
-                  </li>
-              </ul>
-          </li>
+          <li class="nav-header">Attendance</li>
+            <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-calendar-check" style="color: #ffcc00; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);"></i>
+                    <p>Attendance<i class="fas fa-angle-left right"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-user-check nav-icon" style="color: #33ccff;"></i>
+                            <p>Student Attendance</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-users nav-icon" style="color: #ff6633;"></i>
+                            <p>Staff Attendance</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+         
 
           <li class="nav-header">Finance</li>
           <li class="nav-item">
@@ -168,6 +170,35 @@
                   <i class="nav-icon fas fa-money-bill-alt" style="color: #66ccff;"></i>
                   <p>Invoices</p>
               </a>
+          </li>
+
+
+          <li class="nav-header">Exams</li>
+          <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-pen" style="color: #ff6600; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);"></i>
+                  <p>Examinations<i class="fas fa-angle-left right"></i></p>
+              </a>
+              <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">
+                          <i class="fas fa-calendar-alt nav-icon" style="color: #00ccff;"></i>
+                          <p>Exam Schedule</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">
+                          <i class="fas fa-poll nav-icon" style="color: #ff33cc;"></i>
+                          <p>Exam Results</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">
+                          <i class="fas fa-gavel nav-icon" style="color: #66ff66;"></i>
+                          <p>Exam Rules</p>
+                      </a>
+                  </li>
+              </ul>
           </li>
 
           <li class="nav-header">Examinations</li>
@@ -192,6 +223,35 @@
               </ul>
           </li>
 
+          <li class="nav-header">Documents</li>
+          <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-folder-open" style="color: #9933ff; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);"></i>
+                  <p>Documents<i class="fas fa-angle-left right"></i></p>
+              </a>
+              <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">
+                          <i class="fas fa-file-alt nav-icon" style="color: #ff9900;"></i>
+                          <p>Student Documents</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">
+                          <i class="fas fa-file-alt nav-icon" style="color: #33cccc;"></i>
+                          <p>Staff Documents</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">
+                          <i class="fas fa-file-alt nav-icon" style="color: #ff3366;"></i>
+                          <p>Exam Documents</p>
+                      </a>
+                  </li>
+              </ul>
+          </li>
+
+
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <li class="nav-header">Others</li>
             <li class="nav-item has-treeview">
@@ -202,6 +262,7 @@
                         <i class="fas fa-angle-left right"></i>
                     </p>
                 </a>
+                
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
                         <a href="{% url 'sessions' %}" class="nav-link">

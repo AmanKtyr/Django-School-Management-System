@@ -9,4 +9,45 @@ Active manu show
 Add secondrory color 
 #6610f2
 
-Student
+Student  form
+name  to Full name
+form devided in Student  Info, family info, documentation
+
+### **Updated Sidebar Menu for ERP**
+- **Dashboard**  
+- **Students Management**  
+  - Student Admission  
+  - Student List  
+  - Attendance  
+  - Fees Management  
+  - Exam Results  
+- **Teachers Management**  
+  - Teacher List  
+  - Assign Subjects  
+  - Attendance  
+  - Payroll  
+- **Academics**  
+  - Sessions  
+  - Terms  
+  - Classes  
+  - Subjects  
+  - Timetable  
+- **Examinations**  
+  - Exam Schedule  
+  - Marks Entry  
+  - Report Cards  
+- **HR & Staff**  
+  - Staff List  
+  - Leaves  
+  - Payroll  
+- **Library**  
+  - Books Management  
+  - Issued Books  
+- **Transport**  
+  - Routes & Vehicles  
+  - Assign Students  
+- **Hostel**  
+  - Hostel Rooms  
+  - Assign Students  
+- **Settings**  
+
