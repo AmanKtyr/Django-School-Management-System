@@ -33,3 +33,13 @@
 {
   color: #007bff;
 }
+
+
+
+.nav-link.active {
+  /* background-color: #3282B8 !important;  */
+  background-color: #1E3C72 !important; 
+  color: white !important;
+  font-weight: bold;
+  border-radius: 5px;
+}

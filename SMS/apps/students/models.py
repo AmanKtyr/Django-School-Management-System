@@ -21,8 +21,8 @@ class Student(models.Model):
         max_length=10, choices=STATUS_CHOICES, default="active"
     )
     registration_number = models.CharField(max_length=200, unique=True)
-    firstname = models.CharField(max_length=200)
-    surname = models.CharField(max_length=200)
+    fullname = models.CharField(max_length=200)
+    
     gender = models.CharField(max_length=10, choices=GENDER_CHOICES, default="male")
     category = models.CharField(max_length=10, choices=category, default="N/A")
 
@@ -74,10 +74,10 @@ class Student(models.Model):
       return f"{year_suffix}{self.current_class}{unique_number}"
 
     class Meta:
-        ordering = ["surname", "firstname",]
+        ordering = ["fullname",]
 
     def __str__(self):
-        return f"{self.surname} {self.firstname}"
+        return f"{self.fullname} "
 
     def get_absolute_url(self):
         return reverse("student-detail", kwargs={"pk": self.pk})

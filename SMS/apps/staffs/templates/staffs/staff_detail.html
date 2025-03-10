@@ -22,9 +22,9 @@
 {% endblock breadcrumb-left %}
 
 {% block content-header %}
-<div class="card-header d-flex justify-content-between bg-primary text-white shadow-lg rounded-3 border border-light">  
+<div class="card-header d-flex justify-content-between  text-white shadow-lg rounded-3 border border-light"  style="background-color:#1E3C72">  
   <h3 class="mb-0">👨‍🏫 Staff Details</h3>  
-  <div class="text-end">    
+  <div class="text-end ms-auto">    
     <a href="#" class="btn btn-light shadow-lg rounded-pill">📄 Print</a>    
     <a href="{% url 'staff-update' object.id %}" class="btn btn-warning text-white shadow-lg rounded-pill">       
       <i class="fas fa-edit"></i> Edit    

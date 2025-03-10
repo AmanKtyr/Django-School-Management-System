@@ -87,9 +87,7 @@ class DownloadCSVViewdownloadcsv(LoginRequiredMixin, View):
         writer.writerow(
             [
                 "registration_number",
-                "surname",
-                "firstname",
-                "other_names",
+                "fullname",
                 "gender",
                 "parent_number",
                 "address",
