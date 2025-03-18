@@ -1,34 +1,40 @@
 from django.db import models
-from apps.corecode.models import StudentClass  # Ensure corecode is installed correctly
-
-class Student(models.Model):
-    name = models.CharField(max_length=100)
-    unique_id = models.CharField(max_length=50, unique=True)
-    father_name = models.CharField(max_length=100)
-    class_id = models.ForeignKey(StudentClass, on_delete=models.CASCADE, related_name="students")  # ✅ Avoid conflict
-    section = models.CharField(max_length=10)
-
-    def __str__(self):
-        return self.name
+from apps.corecode.models import StudentClass   
+from apps.students.models import Student
+from django.utils.timezone import now
 
 class Attendance(models.Model):
-    student = models.ForeignKey(Student, on_delete=models.CASCADE)
-    status = models.CharField(max_length=10, choices=[('Present', 'Present'), ('Absent', 'Absent')], default='Absent')
+    ATTENDANCE_CHOICES = [
+        ('Present', 'Present'),
+        ('Absent', 'Absent'),
+        ('Leave', 'Leave'),
+    ]
+    student = models.ForeignKey(Student, on_delete=models.CASCADE, related_name="attendance")
+    status = models.CharField(max_length=10, choices=ATTENDANCE_CHOICES, default='Absent')
     date = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return f"{self.student.name} - {self.status} ({self.date})"
+        return f"{self.student.fullname} - {self.status} ({self.date})"
 
 class StudentAttendance(models.Model):
-    registration_number = models.CharField(max_length=50, unique=True)
-    fullname = models.CharField(max_length=100)
-    gender = models.CharField(max_length=10, choices=[('Male', 'Male'), ('Female', 'Female')])
-    parent_number = models.CharField(max_length=15)
-    address = models.TextField()
-    current_class = models.CharField(max_length=50)
-    section = models.CharField(max_length=10)
-    attendance_status = models.CharField(max_length=10, choices=[('Present', 'Present'), ('Absent', 'Absent')], default='Absent')
-    date = models.DateField(auto_now_add=True)
+    GENDER_CHOICES = [
+        ('Male', 'Male'),
+        ('Female', 'Female'),
+    ]
+    ATTENDANCE_STATUS_CHOICES = [
+        ('Present', 'Present'),
+        ('Absent', 'Absent'),
+    ]
+
+    registration_number = models.CharField(max_length=50, unique=True, verbose_name="Registration Number")
+    fullname = models.CharField(max_length=100, verbose_name="Full Name")
+    gender = models.CharField(max_length=10, choices=GENDER_CHOICES, verbose_name="Gender")
+    parent_number = models.CharField(max_length=15, verbose_name="Parent's Contact Number")
+    address = models.TextField(verbose_name="Address")
+    current_class = models.CharField(max_length=50, verbose_name="Current Class")
+    section = models.CharField(max_length=10, verbose_name="Section")
+    attendance_status = models.CharField(max_length=10, choices=ATTENDANCE_STATUS_CHOICES, default='Absent', verbose_name="Attendance Status")
+    date = models.DateField(auto_now_add=True, verbose_name="Date")
 
     def __str__(self):
-        return f"{self.fullname} - {self.registration_number}"
+        return f"{self.fullname} ({self.registration_number})"

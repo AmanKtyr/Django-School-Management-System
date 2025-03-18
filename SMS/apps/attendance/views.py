@@ -1,44 +1,52 @@
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.contrib.messages.views import SuccessMessageMixin
-from django.shortcuts import render, redirect, get_object_or_404
-from django.views.generic import ListView, DetailView, UpdateView
-from .models import StudentAttendance, Student, Attendance
-from apps.corecode.models import StudentClass  # Ensure correct import
+# views.py
+from django.shortcuts import render, get_object_or_404
+from django.http import JsonResponse
+from apps.students.models import Student
+from .models import Attendance
+from apps.corecode.models import StudentClass
 
 def attendance_list(request):
-    selected_class_id = request.GET.get('class')
     classes = StudentClass.objects.all()
-    students = Student.objects.filter(class_id=selected_class_id) if selected_class_id else Student.objects.none()
+    selected_class_id = request.GET.get('class_id')
 
-    if request.method == 'POST':
-        for student in students:
-            attendance_status = request.POST.get(f'attendance_{student.id}')
-            Attendance.objects.create(student=student, status=attendance_status)
-        return redirect('attendance:attendance_list')
+    students = []
+    if selected_class_id:
+        students = Student.objects.filter(current_class_id=selected_class_id)
+
+    present_leave = Attendance.objects.filter(status__in=["Present", "Leave"]).count()
+    absent = Attendance.objects.filter(status="Absent").count()
 
     context = {
-        'classes': classes,
-        'students': students,
-        'selected_class_id': selected_class_id,
-        'class_name': StudentClass.objects.get(id=selected_class_id).name if selected_class_id else '',
-        'class_teacher': StudentClass.objects.get(id=selected_class_id).teacher if selected_class_id else '',
-        'total_students': students.count(),
-        'present_leave': students.filter(attendance__status__in=['Present', 'Leave']).count(),
-        'absent': students.filter(attendance__status='Absent').count(),
+        "classes": classes,
+        "students": students,
+        "selected_class_id": selected_class_id,
+        "present_leave": present_leave,
+        "absent": absent,
     }
     return render(request, 'attendance/attendance_list.html', context)
 
-class AttendanceListView(LoginRequiredMixin, ListView):
-    model = StudentAttendance
-    template_name = 'attendance/attendance_list.html'
-    context_object_name = 'attendances'
+def get_students(request, class_id):
+    selected_class = get_object_or_404(StudentClass, id=class_id)
+    students = Student.objects.filter(current_class=selected_class)
 
-class AttendanceDetailView(LoginRequiredMixin, DetailView):
-    model = StudentAttendance
-    template_name = "attendance/attendance_detail.html"
+    students_data = [
+        {
+            "id": student.id,
+            "fullname": student.fullname,
+            "registration_number": student.registration_number,
+            "section": student.section,
+            "date": student.date.strftime('%Y-%m-%d')
+        }
+        for student in students
+    ]
+    return JsonResponse(students_data, safe=False)
 
-class AttendanceUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
-    model = StudentAttendance
-    fields = ["registration_number", "fullname", "gender", "parent_number", "address", "current_class", "attendance_status"]
-    success_message = "Attendance record successfully updated."
-    template_name = 'attendance/attendance_update.html'
+def submit_attendance(request):
+    if request.method == "POST":
+        for key, value in request.POST.items():
+            if key.startswith("attendance_"):
+                student_id = key.split("_")[1]
+                student = get_object_or_404(Student, id=student_id)
+                Attendance.objects.create(student=student, status=value)
+                
+    return JsonResponse({"message": "Attendance saved successfully!"})
