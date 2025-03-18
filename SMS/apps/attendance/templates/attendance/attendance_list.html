@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<header>
+    <h1>Attendance Section</h1>
+</header>
+<main>
+    <section>
+        <h2>Dashboard</h2>
+        <ul>
+            <li>Class name: {{ class_name }}</li>
+            <li>Class Teacher: {{ class_teacher }}</li>
+            <li>Total Students: {{ total_students }}</li>
+            <li>Present/Leave: {{ present_leave }}</li>
+            <li>Absent: {{ absent }}</li>
+        </ul>
+    </section>
+    <section>
+        <label for="class-select">Select Class:</label>
+        <select id="class-select" name="class" onchange="this.form.submit()">
+            {% for class in classes %}
+            <option value="{{ class.id }}" {% if class.id == selected_class_id %}selected{% endif %}>{{ class.name }}</option>
+            {% endfor %}
+        </select>
+    </section>
+    <section>
+        <h2>Students Attendance</h2>
+        <form method="post" action="{% url 'attendance:attendance_list' %}">
+            {% csrf_token %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sr</th>
+                        <th>Student Name</th>
+                        <th>Unique ID</th>
+                        <th>Father Name</th>
+                        <th>Class</th>
+                        <th>Section</th>
+                        <th>Attendance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for student in students %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td>{{ student.name }}</td>
+                        <td>{{ student.unique_id }}</td>
+                        <td>{{ student.father_name }}</td>
+                        <td>{{ student.class.name }}</td>
+                        <td>{{ student.section }}</td>
+                        <td>
+                            <input type="radio" name="attendance_{{ student.id }}" value="present"> Present
+                            <input type="radio" name="attendance_{{ student.id }}" value="leave"> Leave
+                            <input type="radio" name="attendance_{{ student.id }}" value="absent"> Absent
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+{% endblock content %}
