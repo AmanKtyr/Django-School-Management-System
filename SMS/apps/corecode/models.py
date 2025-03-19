@@ -6,7 +6,7 @@ from django.db import models
 class SiteConfig(models.Model):
     """Site Configurations"""
 
-    key = models.SlugField()
+    key = models.SlugField(unique=True)  # Ensure unique keys
     value = models.CharField(max_length=200)
 
     def __str__(self):

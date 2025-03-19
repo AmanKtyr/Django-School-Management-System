@@ -14,6 +14,7 @@ from .forms import (
     SiteConfigForm,
     StudentClassForm,
     SubjectForm,
+    SiteConfigFormSet  # Ensure this import is correct
 )
 from .models import (
     AcademicSession,
@@ -28,24 +29,19 @@ class IndexView(LoginRequiredMixin, TemplateView):
     template_name = "index.html"
 
 
-class SiteConfigView(LoginRequiredMixin, View):
-    """Site Config View"""
-
-    form_class = SiteConfigForm
-    template_name = "corecode/siteconfig.html"
-
-    def get(self, request, *args, **kwargs):
-        formset = self.form_class(queryset=SiteConfig.objects.all())
-        context = {"formset": formset}
-        return render(request, self.template_name, context)
-
-    def post(self, request, *args, **kwargs):
-        formset = self.form_class(request.POST)
+def site_config_view(request):
+    if request.method == 'POST':
+        formset = SiteConfigFormSet(request.POST, queryset=SiteConfig.objects.all())
         if formset.is_valid():
             formset.save()
-            messages.success(request, "Configurations successfully updated")
-        context = {"formset": formset, "title": "Configuration"}
-        return render(request, self.template_name, context)
+            return redirect('site_config')
+    else:
+        formset = SiteConfigFormSet(queryset=SiteConfig.objects.all())
+    
+    return render(request, 'corecode/siteconfig.html', {
+        'title': 'Site Configuration',
+        'formset': formset,
+    })
 
 
 class SessionListView(LoginRequiredMixin, SuccessMessageMixin, ListView):

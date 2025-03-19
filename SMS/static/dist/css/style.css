@@ -43,3 +43,28 @@
   font-weight: bold;
   border-radius: 5px;
 }
+
+
+/* custom primary button css  */
+.btn-primary {
+  background: linear-gradient(135deg, #1E3C72, #2A5298) !important;
+  border: none !important;
+  color: #fff !important;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #16345A, #1E3C72) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}

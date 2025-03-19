@@ -28,6 +28,7 @@
   <link
     href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700"
     rel="stylesheet">
+    
 </head>
 
 <body
@@ -82,7 +83,7 @@
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-6x">
       <!-- Brand Logo -->
-      <a href="{% url 'home' %}" class="brand-link">{{ school_name | default:"MySchool" }}</a>
+      <a href="{% url 'home' %}" class="brand-link">{{ site_config.schoolname | default:"MySchool" }}</a>
 
 {% comment %} sidebar start {% endcomment %}
 

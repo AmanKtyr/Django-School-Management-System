@@ -7,6 +7,7 @@ barcode generation for ID cards? 🚀
 Active manu show 
 
 Add secondrory color 
+#1E3C72 
 #6610f2
 
 Student  form

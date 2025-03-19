@@ -9,15 +9,22 @@ from .models import (
     Subject,
 )
 
-SiteConfigForm = modelformset_factory(
-    SiteConfig,
-    fields=(
-        "key",
-        "value",
-    ),
-    extra=0,
-)
+class SiteConfigForm(forms.ModelForm):
+    class Meta:
+        model = SiteConfig
+        fields = ['key', 'value']
+        widgets = {
+            'key': forms.TextInput(attrs={'class': 'form-control', 'readonly': 'readonly'}),
+            'value': forms.TextInput(attrs={'class': 'form-control'}),
+        }
 
+# Create a formset for SiteConfig
+SiteConfigFormSet = modelformset_factory(
+    SiteConfig,
+    form=SiteConfigForm,
+    extra=0,  # No extra empty forms
+    can_delete=False  # Prevent deletion of configurations
+)
 
 class AcademicSessionForm(ModelForm):
     prefix = "Academic Session"

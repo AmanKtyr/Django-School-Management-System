@@ -34958,3 +34958,1429 @@ INFO 2025-03-18 17:01:24,053 "GET /student/list HTTP/1.1" 200 18179
 INFO 2025-03-18 17:01:37,112 "GET /attendance/attendance_list/ HTTP/1.1" 200 20617
 INFO 2025-03-18 17:01:42,402 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 22346
 INFO 2025-03-18 17:01:56,999 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 22348
+INFO 2025-03-18 17:04:17,431 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 22352
+INFO 2025-03-18 17:04:25,976 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 22353
+INFO 2025-03-18 17:10:27,460 "GET /attendance/attendance_list/ HTTP/1.1" 200 20624
+INFO 2025-03-18 17:10:31,000 "GET /attendance/attendance_list/?class_id=5 HTTP/1.1" 200 22343
+INFO 2025-03-18 17:10:37,092 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 22353
+INFO 2025-03-18 17:10:40,345 "GET /attendance/attendance_list/?class_id=5 HTTP/1.1" 200 22343
+INFO 2025-03-18 17:14:10,051 "GET /attendance/attendance_list/ HTTP/1.1" 200 20624
+INFO 2025-03-18 17:14:24,135 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 22353
+INFO 2025-03-18 17:14:27,046 "GET /attendance/attendance_list/?class_id=3 HTTP/1.1" 200 20632
+INFO 2025-03-18 17:14:34,136 "GET /attendance/attendance_list/?class_id=5 HTTP/1.1" 200 22343
+INFO 2025-03-18 17:16:20,605 "GET /attendance/attendance_list/?class_id=5 HTTP/1.1" 200 21695
+INFO 2025-03-18 17:16:25,507 "GET /attendance/attendance_list/?class_id=5 HTTP/1.1" 200 21695
+INFO 2025-03-18 17:16:34,319 "GET /attendance/attendance_list/?class_id=5 HTTP/1.1" 200 22343
+INFO 2025-03-18 17:16:41,684 "GET /attendance/attendance_list/?class_id= HTTP/1.1" 200 20624
+INFO 2025-03-18 17:16:47,722 "GET /attendance/attendance_list/?class_id=5 HTTP/1.1" 200 22343
+INFO 2025-03-18 17:16:58,301 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 22353
+INFO 2025-03-19 10:23:17,203 Watching for file changes with StatReloader
+INFO 2025-03-19 10:23:21,305 "GET / HTTP/1.1" 302 0
+INFO 2025-03-19 10:23:21,512 "GET /accounts/login/?next=/ HTTP/1.1" 200 5356
+INFO 2025-03-19 10:23:21,872 "GET /static/dist/css/login-page.css HTTP/1.1" 200 9070
+INFO 2025-03-19 10:23:21,885 "GET /static/dist/img/school-logo.png HTTP/1.1" 200 228739
+WARNING 2025-03-19 10:23:22,540 Not Found: /favicon.ico
+WARNING 2025-03-19 10:23:22,541 "GET /favicon.ico HTTP/1.1" 404 6433
+INFO 2025-03-19 10:23:25,352 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-03-19 10:23:25,856 "GET / HTTP/1.1" 200 18395
+INFO 2025-03-19 10:23:26,306 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 10:23:30,831 "GET /attendance/attendance_list/ HTTP/1.1" 200 20624
+INFO 2025-03-19 10:23:39,962 "GET /attendance/attendance_list/?class_id=5 HTTP/1.1" 200 22343
+INFO 2025-03-19 10:23:43,514 "GET /site-config HTTP/1.1" 200 16950
+INFO 2025-03-19 10:23:50,627 "GET /class/list/ HTTP/1.1" 200 18326
+INFO 2025-03-19 10:23:52,592 "GET /class/1/delete/ HTTP/1.1" 200 16069
+INFO 2025-03-19 10:23:54,002 "POST /class/1/delete/ HTTP/1.1" 302 0
+INFO 2025-03-19 10:23:54,029 "GET /class/list/ HTTP/1.1" 200 18047
+INFO 2025-03-19 10:23:55,729 "GET /class/2/delete/ HTTP/1.1" 200 16069
+INFO 2025-03-19 10:23:56,920 "POST /class/2/delete/ HTTP/1.1" 302 0
+INFO 2025-03-19 10:23:56,948 "GET /class/list/ HTTP/1.1" 200 17768
+INFO 2025-03-19 10:24:02,774 "GET /attendance/attendance_list/ HTTP/1.1" 200 20278
+INFO 2025-03-19 10:24:10,331 "GET /attendance/attendance_list/?class_id=5 HTTP/1.1" 200 21997
+WARNING 2025-03-19 10:25:36,382 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2025-03-19 10:26:06,330 "GET /attendance/attendance_list/?class_id=5 HTTP/1.1" 200 21997
+WARNING 2025-03-19 10:26:09,618 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+WARNING 2025-03-19 10:27:11,363 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2025-03-19 10:28:17,807 "GET /attendance/attendance_list/?class_id=5 HTTP/1.1" 200 21997
+WARNING 2025-03-19 10:28:19,540 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+WARNING 2025-03-19 10:28:51,327 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2025-03-19 10:28:52,090 "GET /attendance/attendance_list/?class_id=5 HTTP/1.1" 200 21997
+INFO 2025-03-19 10:28:52,210 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-03-19 10:28:52,231 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-03-19 10:28:52,432 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-03-19 10:28:52,448 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-03-19 10:28:52,480 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-03-19 10:28:52,512 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+INFO 2025-03-19 10:28:52,526 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-03-19 10:28:52,535 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2025-03-19 10:28:52,594 "GET /static/dist/css/style.css HTTP/1.1" 200 951
+INFO 2025-03-19 10:28:52,613 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-03-19 10:28:52,650 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-03-19 10:28:52,689 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-03-19 10:28:52,694 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-03-19 10:28:52,696 "GET /static/dist/js/custom.js HTTP/1.1" 200 1569
+INFO 2025-03-19 10:28:52,958 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80704
+INFO 2025-03-19 10:28:52,996 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-03-19 10:28:53,041 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-03-19 10:28:53,308 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 318045
+INFO 2025-03-19 10:28:53,357 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-03-19 10:28:53,567 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+INFO 2025-03-19 10:28:53,664 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+WARNING 2025-03-19 10:28:53,943 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+WARNING 2025-03-19 10:28:54,330 Not Found: /favicon.ico
+WARNING 2025-03-19 10:28:54,332 "GET /favicon.ico HTTP/1.1" 404 6433
+INFO 2025-03-19 10:28:58,459 "GET /student/list HTTP/1.1" 200 18179
+INFO 2025-03-19 10:28:58,542 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 10:30:52,285 "GET /static/dist/css/style.css HTTP/1.1" 200 1054
+WARNING 2025-03-19 10:30:53,559 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2025-03-19 10:30:53,595 "GET /student/list HTTP/1.1" 200 18179
+INFO 2025-03-19 10:30:53,710 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-03-19 10:30:53,721 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-03-19 10:30:53,725 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-03-19 10:30:53,737 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-03-19 10:30:53,773 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-03-19 10:30:53,779 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-03-19 10:30:53,801 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-03-19 10:30:53,804 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80704
+INFO 2025-03-19 10:30:53,827 "GET /static/dist/css/style.css HTTP/1.1" 200 1054
+INFO 2025-03-19 10:30:53,829 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-03-19 10:30:53,842 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-03-19 10:30:53,848 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-03-19 10:30:53,861 "GET /static/dist/js/custom.js HTTP/1.1" 200 1569
+INFO 2025-03-19 10:30:53,868 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+INFO 2025-03-19 10:30:53,897 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2025-03-19 10:30:53,951 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-03-19 10:30:54,067 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-03-19 10:30:54,259 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-03-19 10:30:54,445 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-03-19 10:30:54,469 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 318045
+INFO 2025-03-19 10:30:54,876 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+WARNING 2025-03-19 10:30:54,894 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+WARNING 2025-03-19 10:30:55,398 Not Found: /favicon.ico
+WARNING 2025-03-19 10:30:55,399 "GET /favicon.ico HTTP/1.1" 404 6433
+INFO 2025-03-19 10:31:02,696 "GET /student/create/ HTTP/1.1" 200 21282
+INFO 2025-03-19 10:31:02,774 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 10:31:10,014 "GET /attendance/attendance_list/ HTTP/1.1" 200 20278
+INFO 2025-03-19 10:31:10,068 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 10:32:26,663 "GET /attendance/attendance_list/ HTTP/1.1" 200 20278
+INFO 2025-03-19 10:32:26,753 "GET /static/dist/css/style.css HTTP/1.1" 200 1445
+INFO 2025-03-19 10:32:41,805 "GET /student/list HTTP/1.1" 200 18179
+INFO 2025-03-19 10:32:41,881 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 10:33:27,489 "GET /student/list HTTP/1.1" 200 18179
+INFO 2025-03-19 10:33:27,553 "GET /static/dist/css/style.css HTTP/1.1" 200 1481
+INFO 2025-03-19 10:33:40,140 "GET /attendance/attendance_list/ HTTP/1.1" 200 20278
+INFO 2025-03-19 10:33:40,210 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 10:33:48,635 "GET /student/list HTTP/1.1" 200 18179
+INFO 2025-03-19 10:33:48,690 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 10:33:52,795 "GET /attendance/attendance_list/ HTTP/1.1" 200 20278
+INFO 2025-03-19 10:33:52,847 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 10:34:00,613 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+WARNING 2025-03-19 10:34:01,322 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2025-03-19 10:34:20,572 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 22007
+INFO 2025-03-19 10:34:20,649 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 10:34:26,409 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 22007
+INFO 2025-03-19 10:34:26,461 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 10:35:21,471 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 22007
+INFO 2025-03-19 10:35:21,547 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 10:36:16,898 "GET /student/list HTTP/1.1" 200 18179
+INFO 2025-03-19 10:36:16,981 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 10:36:24,493 "GET /attendance/attendance_list/ HTTP/1.1" 200 20278
+INFO 2025-03-19 10:36:52,504 "GET /attendance/attendance_list/?class_id=3 HTTP/1.1" 200 20286
+INFO 2025-03-19 10:36:52,555 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 10:36:54,946 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 22007
+INFO 2025-03-19 10:37:21,714 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 22003
+INFO 2025-03-19 10:37:21,760 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 10:37:46,142 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 21965
+INFO 2025-03-19 10:37:46,193 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 10:38:20,633 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 21965
+INFO 2025-03-19 10:38:20,683 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 10:38:26,502 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 21965
+INFO 2025-03-19 10:38:47,704 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 21969
+INFO 2025-03-19 10:39:22,293 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+WARNING 2025-03-19 10:39:22,934 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2025-03-19 10:40:29,899 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 21968
+INFO 2025-03-19 10:40:29,971 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+WARNING 2025-03-19 10:40:36,095 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2025-03-19 10:40:41,147 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 21968
+INFO 2025-03-19 10:40:41,258 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-03-19 10:40:41,265 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-03-19 10:40:41,273 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-03-19 10:40:41,276 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-03-19 10:40:41,281 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-03-19 10:40:41,283 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-03-19 10:40:41,310 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-03-19 10:40:41,324 "GET /static/dist/css/style.css HTTP/1.1" 200 1481
+INFO 2025-03-19 10:40:41,339 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-03-19 10:40:41,343 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-03-19 10:40:41,358 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80704
+INFO 2025-03-19 10:40:41,360 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-03-19 10:40:41,369 "GET /static/dist/js/custom.js HTTP/1.1" 200 1569
+INFO 2025-03-19 10:40:41,411 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+INFO 2025-03-19 10:40:41,415 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2025-03-19 10:40:41,430 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-03-19 10:40:41,474 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-03-19 10:40:41,694 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-03-19 10:40:41,787 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 318045
+INFO 2025-03-19 10:40:41,874 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-03-19 10:40:41,882 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+WARNING 2025-03-19 10:40:42,071 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+WARNING 2025-03-19 10:40:42,525 Not Found: /favicon.ico
+WARNING 2025-03-19 10:40:42,525 "GET /favicon.ico HTTP/1.1" 404 6433
+INFO 2025-03-19 10:40:51,804 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 21969
+INFO 2025-03-19 10:40:55,147 "GET /attendance/attendance_list/?class_id=5 HTTP/1.1" 200 21959
+INFO 2025-03-19 10:40:58,608 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 21969
+INFO 2025-03-19 10:41:00,952 "GET /attendance/attendance_list/?class_id=3 HTTP/1.1" 200 20248
+INFO 2025-03-19 10:41:03,119 "GET /attendance/attendance_list/?class_id=5 HTTP/1.1" 200 21959
+INFO 2025-03-19 10:41:05,696 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 21969
+INFO 2025-03-19 10:41:50,641 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 21968
+INFO 2025-03-19 10:41:50,695 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 10:42:04,048 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 21968
+INFO 2025-03-19 10:43:43,281 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+WARNING 2025-03-19 10:43:44,029 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2025-03-19 10:44:59,691 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 21968
+INFO 2025-03-19 10:44:59,765 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 10:46:29,673 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 21968
+INFO 2025-03-19 10:46:29,749 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 10:46:55,130 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 21978
+WARNING 2025-03-19 10:46:58,365 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2025-03-19 10:46:59,042 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 21978
+INFO 2025-03-19 10:46:59,137 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-03-19 10:46:59,138 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-03-19 10:46:59,151 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-03-19 10:46:59,152 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-03-19 10:46:59,157 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-03-19 10:46:59,160 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80704
+INFO 2025-03-19 10:46:59,166 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-03-19 10:46:59,168 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-03-19 10:46:59,174 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-03-19 10:46:59,176 "GET /static/dist/js/custom.js HTTP/1.1" 200 1569
+INFO 2025-03-19 10:46:59,212 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-03-19 10:46:59,292 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-03-19 10:46:59,310 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+INFO 2025-03-19 10:46:59,310 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2025-03-19 10:46:59,362 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-03-19 10:46:59,421 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-03-19 10:46:59,425 "GET /static/dist/css/style.css HTTP/1.1" 200 1481
+INFO 2025-03-19 10:46:59,531 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-03-19 10:46:59,739 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 318045
+INFO 2025-03-19 10:46:59,805 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-03-19 10:46:59,806 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+WARNING 2025-03-19 10:47:00,288 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+WARNING 2025-03-19 10:47:00,683 Not Found: /favicon.ico
+WARNING 2025-03-19 10:47:00,683 "GET /favicon.ico HTTP/1.1" 404 6433
+INFO 2025-03-19 10:47:11,749 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 21970
+INFO 2025-03-19 10:47:28,489 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 21970
+INFO 2025-03-19 10:47:29,533 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 21970
+INFO 2025-03-19 10:47:29,928 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 21970
+INFO 2025-03-19 10:47:30,284 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 21970
+WARNING 2025-03-19 10:47:33,968 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2025-03-19 10:47:34,957 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 21970
+INFO 2025-03-19 10:47:35,051 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-03-19 10:47:35,052 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-03-19 10:47:35,070 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-03-19 10:47:35,079 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-03-19 10:47:35,085 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-03-19 10:47:35,091 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80704
+INFO 2025-03-19 10:47:35,101 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-03-19 10:47:35,107 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-03-19 10:47:35,117 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-03-19 10:47:35,138 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-03-19 10:47:35,157 "GET /static/dist/js/custom.js HTTP/1.1" 200 1569
+INFO 2025-03-19 10:47:35,159 "GET /static/dist/css/style.css HTTP/1.1" 200 1481
+INFO 2025-03-19 10:47:35,197 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-03-19 10:47:35,220 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+INFO 2025-03-19 10:47:35,235 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2025-03-19 10:47:35,255 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-03-19 10:47:35,322 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-03-19 10:47:35,505 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-03-19 10:47:35,686 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-03-19 10:47:35,693 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 318045
+INFO 2025-03-19 10:47:35,698 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+WARNING 2025-03-19 10:47:35,873 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+WARNING 2025-03-19 10:47:36,398 Not Found: /favicon.ico
+WARNING 2025-03-19 10:47:36,400 "GET /favicon.ico HTTP/1.1" 404 6433
+INFO 2025-03-19 10:47:55,512 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 21970
+INFO 2025-03-19 10:48:19,107 "GET /student/list HTTP/1.1" 200 18179
+INFO 2025-03-19 10:48:29,581 "GET /attendance/attendance_list/ HTTP/1.1" 200 20239
+INFO 2025-03-19 10:48:49,542 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 21970
+INFO 2025-03-19 10:49:55,923 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 16504
+INFO 2025-03-19 10:49:56,008 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 10:50:01,598 "GET /finance/list/ HTTP/1.1" 200 16013
+INFO 2025-03-19 10:50:15,844 "GET /result/create/ HTTP/1.1" 200 17278
+INFO 2025-03-19 10:50:24,293 "POST /result/create/ HTTP/1.1" 200 17190
+INFO 2025-03-19 10:50:29,421 "POST /result/create/ HTTP/1.1" 200 17190
+INFO 2025-03-19 10:50:32,866 "POST /result/create/ HTTP/1.1" 302 0
+INFO 2025-03-19 10:50:32,915 "GET /result/edit-results/ HTTP/1.1" 200 17448
+INFO 2025-03-19 10:50:48,887 "GET /result/view/all HTTP/1.1" 200 16111
+INFO 2025-03-19 10:51:06,003 "GET /site-config HTTP/1.1" 200 16950
+INFO 2025-03-19 10:53:30,247 "GET /site-config HTTP/1.1" 200 16950
+INFO 2025-03-19 10:53:30,329 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+WARNING 2025-03-19 10:53:33,879 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2025-03-19 10:53:34,583 "GET /site-config HTTP/1.1" 200 16950
+INFO 2025-03-19 10:53:34,674 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-03-19 10:53:34,676 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-03-19 10:53:34,686 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-03-19 10:53:34,696 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-03-19 10:53:34,709 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-03-19 10:53:34,709 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-03-19 10:53:34,722 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-03-19 10:53:34,741 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80704
+INFO 2025-03-19 10:53:34,742 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-03-19 10:53:34,787 "GET /static/dist/js/custom.js HTTP/1.1" 200 1569
+INFO 2025-03-19 10:53:34,794 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-03-19 10:53:34,807 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-03-19 10:53:34,809 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2025-03-19 10:53:34,818 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+INFO 2025-03-19 10:53:34,824 "GET /static/dist/css/style.css HTTP/1.1" 200 1481
+INFO 2025-03-19 10:53:34,870 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-03-19 10:53:34,908 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-03-19 10:53:35,050 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-03-19 10:53:35,227 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-03-19 10:53:35,267 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 318045
+INFO 2025-03-19 10:53:35,348 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+WARNING 2025-03-19 10:53:35,610 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+WARNING 2025-03-19 10:53:35,897 Not Found: /favicon.ico
+WARNING 2025-03-19 10:53:35,898 "GET /favicon.ico HTTP/1.1" 404 6433
+INFO 2025-03-19 10:53:44,178 "POST /site-config HTTP/1.1" 200 16960
+INFO 2025-03-19 10:53:46,028 "GET / HTTP/1.1" 200 18395
+INFO 2025-03-19 10:53:49,447 "GET /site-config HTTP/1.1" 200 16950
+INFO 2025-03-19 10:54:53,211 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-03-19 10:54:54,235 Watching for file changes with StatReloader
+INFO 2025-03-19 10:54:58,952 "GET /site-config HTTP/1.1" 200 17007
+INFO 2025-03-19 10:55:04,238 "POST /site-config HTTP/1.1" 200 17686
+INFO 2025-03-19 10:55:22,718 "POST /site-config HTTP/1.1" 200 17673
+INFO 2025-03-19 10:55:55,782 "POST /site-config HTTP/1.1" 200 17673
+INFO 2025-03-19 10:55:55,845 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 10:57:04,825 D:\Sipher Web\Django School Management System\SMS\apps\corecode\forms.py changed, reloading.
+INFO 2025-03-19 10:57:06,091 Watching for file changes with StatReloader
+INFO 2025-03-19 10:57:09,101 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-03-19 10:57:09,926 Watching for file changes with StatReloader
+INFO 2025-03-19 10:57:13,986 "POST /site-config HTTP/1.1" 200 17964
+ERROR 2025-03-19 10:57:27,366 Internal Server Error: /site-config
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\views.py", line 48, in post
+    return redirect('desired-url')  # Replace 'desired-url' with the appropriate URL name
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'desired-url' not found. 'desired-url' is not a valid view function or pattern name.
+ERROR 2025-03-19 10:57:27,368 "POST /site-config HTTP/1.1" 500 105923
+INFO 2025-03-19 10:57:32,294 "POST /site-config HTTP/1.1" 200 18106
+INFO 2025-03-19 10:57:37,119 "GET / HTTP/1.1" 200 18393
+INFO 2025-03-19 10:57:40,617 "GET /site-config HTTP/1.1" 200 17299
+INFO 2025-03-19 10:58:03,138 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-03-19 10:58:04,513 Watching for file changes with StatReloader
+INFO 2025-03-19 10:58:06,443 D:\Sipher Web\Django School Management System\SMS\apps\corecode\forms.py changed, reloading.
+INFO 2025-03-19 10:58:07,326 Watching for file changes with StatReloader
+INFO 2025-03-19 10:58:10,292 "GET /site-config HTTP/1.1" 200 16956
+INFO 2025-03-19 10:58:10,355 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 10:58:13,017 "POST /site-config HTTP/1.1" 200 17670
+INFO 2025-03-19 10:58:17,430 "POST /site-config HTTP/1.1" 200 17670
+INFO 2025-03-19 10:58:27,257 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-03-19 10:58:28,404 Watching for file changes with StatReloader
+INFO 2025-03-19 10:58:30,209 "POST /site-config HTTP/1.1" 200 16941
+WARNING 2025-03-19 10:58:34,664 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2025-03-19 10:58:36,181 "POST /site-config HTTP/1.1" 200 16941
+INFO 2025-03-19 10:58:36,570 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-03-19 10:58:36,597 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-03-19 10:58:36,603 "GET /static/dist/css/style.css HTTP/1.1" 200 1481
+INFO 2025-03-19 10:58:36,619 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-03-19 10:58:36,626 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-03-19 10:58:36,632 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80704
+INFO 2025-03-19 10:58:36,651 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-03-19 10:58:36,660 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-03-19 10:58:36,666 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-03-19 10:58:36,677 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-03-19 10:58:36,681 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-03-19 10:58:36,685 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-03-19 10:58:36,685 "GET /static/dist/js/custom.js HTTP/1.1" 200 1569
+INFO 2025-03-19 10:58:36,715 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-03-19 10:58:36,754 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+INFO 2025-03-19 10:58:36,765 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2025-03-19 10:58:36,835 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-03-19 10:58:36,987 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-03-19 10:58:37,143 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-03-19 10:58:37,178 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 318045
+INFO 2025-03-19 10:58:37,210 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+WARNING 2025-03-19 10:58:37,469 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+WARNING 2025-03-19 10:58:37,726 Not Found: /favicon.ico
+WARNING 2025-03-19 10:58:37,731 "GET /favicon.ico HTTP/1.1" 404 6433
+INFO 2025-03-19 10:58:42,618 "GET /accounts/login/ HTTP/1.1" 200 5336
+INFO 2025-03-19 10:58:42,670 "GET /static/dist/css/login-page.css HTTP/1.1" 200 9070
+INFO 2025-03-19 10:58:42,679 "GET /static/dist/img/school-logo.png HTTP/1.1" 200 228739
+INFO 2025-03-19 10:58:48,309 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-03-19 10:58:48,345 "GET / HTTP/1.1" 200 18393
+INFO 2025-03-19 10:58:52,097 "GET /site-config HTTP/1.1" 200 16899
+INFO 2025-03-19 10:59:12,688 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-03-19 10:59:13,836 Watching for file changes with StatReloader
+INFO 2025-03-19 10:59:19,329 "GET /site-config HTTP/1.1" 200 17299
+INFO 2025-03-19 11:00:41,234 "POST /site-config HTTP/1.1" 200 17744
+ERROR 2025-03-19 11:00:59,459 Internal Server Error: /site-config
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\views.py", line 48, in post
+    return redirect('desired-url')  # Replace 'desired-url' with the appropriate URL name
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'desired-url' not found. 'desired-url' is not a valid view function or pattern name.
+ERROR 2025-03-19 11:00:59,459 "POST /site-config HTTP/1.1" 500 105972
+INFO 2025-03-19 11:01:05,799 "POST /site-config HTTP/1.1" 200 17888
+INFO 2025-03-19 11:01:10,062 "GET / HTTP/1.1" 200 18393
+INFO 2025-03-19 11:01:10,119 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 11:01:12,458 "GET /site-config HTTP/1.1" 200 17344
+INFO 2025-03-19 11:02:46,061 D:\Sipher Web\Django School Management System\SMS\apps\corecode\forms.py changed, reloading.
+INFO 2025-03-19 11:02:47,424 Watching for file changes with StatReloader
+INFO 2025-03-19 11:02:48,881 "GET /site-config HTTP/1.1" 200 17539
+INFO 2025-03-19 11:02:51,791 "GET /site-config HTTP/1.1" 200 17539
+INFO 2025-03-19 11:02:52,160 "GET /site-config HTTP/1.1" 200 17539
+ERROR 2025-03-19 11:03:16,190 Internal Server Error: /site-config
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\views.py", line 48, in post
+    return redirect('desired-url')  # Replace 'desired-url' with the appropriate URL name
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'desired-url' not found. 'desired-url' is not a valid view function or pattern name.
+ERROR 2025-03-19 11:03:16,190 "POST /site-config HTTP/1.1" 500 105559
+INFO 2025-03-19 11:03:26,205 "GET /site-config HTTP/1.1" 200 17692
+INFO 2025-03-19 11:03:27,166 "GET /site-config HTTP/1.1" 200 17542
+INFO 2025-03-19 11:03:47,318 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-03-19 11:03:48,714 Watching for file changes with StatReloader
+INFO 2025-03-19 11:03:49,276 "GET /site-config HTTP/1.1" 200 17542
+ERROR 2025-03-19 11:03:51,850 Internal Server Error: /site-config
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\views.py", line 48, in post
+    return redirect('site-config')  # Replace 'desired-url' with the actual URL name, e.g., 'site-config'
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'site-config' not found. 'site-config' is not a valid view function or pattern name.
+ERROR 2025-03-19 11:03:51,850 "POST /site-config HTTP/1.1" 500 105610
+ERROR 2025-03-19 11:03:54,713 Internal Server Error: /site-config
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\views.py", line 48, in post
+    return redirect('site-config')  # Replace 'desired-url' with the actual URL name, e.g., 'site-config'
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'site-config' not found. 'site-config' is not a valid view function or pattern name.
+ERROR 2025-03-19 11:03:54,716 "POST /site-config HTTP/1.1" 500 106041
+INFO 2025-03-19 11:03:56,063 "GET /site-config HTTP/1.1" 200 17836
+INFO 2025-03-19 11:03:58,494 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+WARNING 2025-03-19 11:03:59,186 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2025-03-19 11:04:03,371 "GET /site-config HTTP/1.1" 200 17542
+WARNING 2025-03-19 11:04:04,269 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2025-03-19 11:04:08,493 "GET /site-config HTTP/1.1" 200 17542
+INFO 2025-03-19 11:04:08,850 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-03-19 11:04:08,876 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-03-19 11:04:08,888 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-03-19 11:04:08,909 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80704
+INFO 2025-03-19 11:04:08,922 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-03-19 11:04:08,926 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-03-19 11:04:08,939 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-03-19 11:04:08,950 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-03-19 11:04:08,951 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-03-19 11:04:08,957 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-03-19 11:04:08,971 "GET /static/dist/js/custom.js HTTP/1.1" 200 1569
+INFO 2025-03-19 11:04:08,992 "GET /static/dist/css/style.css HTTP/1.1" 200 1481
+INFO 2025-03-19 11:04:09,009 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-03-19 11:04:09,106 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-03-19 11:04:09,156 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+INFO 2025-03-19 11:04:09,174 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2025-03-19 11:04:09,174 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-03-19 11:04:09,310 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-03-19 11:04:09,504 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-03-19 11:04:09,510 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+INFO 2025-03-19 11:04:09,534 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 318045
+WARNING 2025-03-19 11:04:09,870 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+WARNING 2025-03-19 11:04:10,098 Not Found: /favicon.ico
+WARNING 2025-03-19 11:04:10,108 "GET /favicon.ico HTTP/1.1" 404 6433
+ERROR 2025-03-19 11:04:19,559 Internal Server Error: /site-config
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\views.py", line 48, in post
+    return redirect('site-config')  # Replace 'desired-url' with the actual URL name, e.g., 'site-config'
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'site-config' not found. 'site-config' is not a valid view function or pattern name.
+ERROR 2025-03-19 11:04:19,562 "POST /site-config HTTP/1.1" 500 105610
+INFO 2025-03-19 11:05:14,147 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-03-19 11:05:15,659 Watching for file changes with StatReloader
+INFO 2025-03-19 11:05:23,737 D:\Sipher Web\Django School Management System\SMS\apps\corecode\urls.py changed, reloading.
+INFO 2025-03-19 11:05:24,967 Watching for file changes with StatReloader
+ERROR 2025-03-19 11:05:26,026 Internal Server Error: /site-config
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\views.py", line 41, in get
+    return render(request, self.template_name, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'configs' not found. 'configs' is not a valid view function or pattern name.
+ERROR 2025-03-19 11:05:26,032 "GET /site-config HTTP/1.1" 500 159907
+ERROR 2025-03-19 11:05:27,710 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'configs' not found. 'configs' is not a valid view function or pattern name.
+ERROR 2025-03-19 11:05:27,715 "GET / HTTP/1.1" 500 139302
+ERROR 2025-03-19 11:05:29,103 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'configs' not found. 'configs' is not a valid view function or pattern name.
+ERROR 2025-03-19 11:05:29,106 "GET / HTTP/1.1" 500 139570
+ERROR 2025-03-19 11:05:29,954 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'configs' not found. 'configs' is not a valid view function or pattern name.
+ERROR 2025-03-19 11:05:29,954 "GET / HTTP/1.1" 500 139570
+ERROR 2025-03-19 11:05:30,206 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'configs' not found. 'configs' is not a valid view function or pattern name.
+ERROR 2025-03-19 11:05:30,206 "GET / HTTP/1.1" 500 139570
+ERROR 2025-03-19 11:05:31,887 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'configs' not found. 'configs' is not a valid view function or pattern name.
+ERROR 2025-03-19 11:05:31,887 "GET / HTTP/1.1" 500 139570
+INFO 2025-03-19 11:06:46,360 D:\Sipher Web\Django School Management System\SMS\apps\corecode\urls.py changed, reloading.
+INFO 2025-03-19 11:06:47,193 Watching for file changes with StatReloader
+INFO 2025-03-19 11:06:49,699 "GET / HTTP/1.1" 200 18539
+INFO 2025-03-19 11:06:53,232 "GET /configs HTTP/1.1" 200 17538
+INFO 2025-03-19 11:07:04,110 "POST /configs HTTP/1.1" 302 0
+INFO 2025-03-19 11:07:04,142 "GET /site-config HTTP/1.1" 200 17690
+INFO 2025-03-19 11:10:50,796 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-03-19 11:10:51,881 Watching for file changes with StatReloader
+INFO 2025-03-19 11:11:08,250 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-03-19 11:11:09,278 Watching for file changes with StatReloader
+INFO 2025-03-19 11:11:12,360 "GET /site-config HTTP/1.1" 200 17540
+INFO 2025-03-19 11:11:12,436 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 11:11:13,289 "GET /site-config HTTP/1.1" 200 17540
+INFO 2025-03-19 11:11:13,685 "GET /site-config HTTP/1.1" 200 17540
+WARNING 2025-03-19 11:11:16,241 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2025-03-19 11:11:16,498 "GET /site-config HTTP/1.1" 200 17540
+INFO 2025-03-19 11:11:17,048 "GET /static/dist/css/style.css HTTP/1.1" 200 1481
+INFO 2025-03-19 11:11:17,065 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-03-19 11:11:17,076 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-03-19 11:11:17,085 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-03-19 11:11:17,087 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-03-19 11:11:17,096 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-03-19 11:11:17,114 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-03-19 11:11:17,132 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80704
+INFO 2025-03-19 11:11:17,136 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-03-19 11:11:17,146 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-03-19 11:11:17,150 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-03-19 11:11:17,151 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-03-19 11:11:17,163 "GET /static/dist/js/custom.js HTTP/1.1" 200 1569
+INFO 2025-03-19 11:11:17,294 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-03-19 11:11:17,349 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2025-03-19 11:11:17,389 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+INFO 2025-03-19 11:11:17,505 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-03-19 11:11:17,666 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-03-19 11:11:17,816 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+INFO 2025-03-19 11:11:17,817 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-03-19 11:11:17,865 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 318045
+WARNING 2025-03-19 11:11:18,117 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+WARNING 2025-03-19 11:11:18,398 Not Found: /favicon.ico
+WARNING 2025-03-19 11:11:18,400 "GET /favicon.ico HTTP/1.1" 404 6607
+INFO 2025-03-19 11:13:02,078 "GET /site-config HTTP/1.1" 200 17540
+INFO 2025-03-19 11:13:02,811 "GET /site-config HTTP/1.1" 200 17540
+INFO 2025-03-19 11:13:03,199 "GET /site-config HTTP/1.1" 200 17540
+INFO 2025-03-19 11:15:33,514 "GET /site-config HTTP/1.1" 200 17532
+INFO 2025-03-19 11:15:33,583 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 11:17:02,582 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-03-19 11:17:03,884 Watching for file changes with StatReloader
+INFO 2025-03-19 11:22:07,595 Watching for file changes with StatReloader
+INFO 2025-03-19 11:22:10,563 "GET / HTTP/1.1" 302 0
+INFO 2025-03-19 11:22:10,603 "GET /accounts/login/?next=/ HTTP/1.1" 200 5337
+INFO 2025-03-19 11:22:10,864 "GET /static/dist/css/login-page.css HTTP/1.1" 200 9070
+INFO 2025-03-19 11:22:10,878 "GET /static/dist/img/school-logo.png HTTP/1.1" 200 228739
+WARNING 2025-03-19 11:22:11,280 Not Found: /favicon.ico
+WARNING 2025-03-19 11:22:11,281 "GET /favicon.ico HTTP/1.1" 404 6433
+INFO 2025-03-19 11:22:13,721 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-03-19 11:22:13,826 "GET / HTTP/1.1" 200 18455
+INFO 2025-03-19 11:22:13,892 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 11:23:50,927 "GET / HTTP/1.1" 200 18398
+INFO 2025-03-19 11:23:53,403 "GET /accounts/login/ HTTP/1.1" 200 5336
+INFO 2025-03-19 11:24:12,627 "GET /accounts/login/ HTTP/1.1" 200 5336
+INFO 2025-03-19 11:33:03,887 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-03-19 11:33:03,971 "GET / HTTP/1.1" 200 18398
+INFO 2025-03-19 11:33:04,045 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 11:33:06,485 "GET /site-config HTTP/1.1" 200 17354
+INFO 2025-03-19 11:33:14,947 "GET /accounts/login/ HTTP/1.1" 200 5336
+INFO 2025-03-19 11:33:17,811 "GET /accounts/login/ HTTP/1.1" 200 5336
+INFO 2025-03-19 11:33:26,250 "GET /accounts/login/ HTTP/1.1" 200 5336
+INFO 2025-03-19 11:33:32,481 "GET /accounts/login/ HTTP/1.1" 200 5336
+INFO 2025-03-19 11:33:32,580 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-03-19 11:33:32,582 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-03-19 11:33:32,640 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2025-03-19 11:33:32,653 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-03-19 11:33:32,657 "GET /static/dist/css/login-page.css HTTP/1.1" 200 9070
+INFO 2025-03-19 11:33:32,745 "GET /static/dist/img/school-logo.png HTTP/1.1" 200 228739
+INFO 2025-03-19 11:33:32,954 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-03-19 11:33:33,033 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+WARNING 2025-03-19 11:33:33,221 Not Found: /favicon.ico
+WARNING 2025-03-19 11:33:33,223 "GET /favicon.ico HTTP/1.1" 404 6433
+INFO 2025-03-19 11:34:28,350 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-03-19 11:34:28,376 "GET / HTTP/1.1" 200 18398
+INFO 2025-03-19 11:34:28,457 "GET /static/dist/css/style.css HTTP/1.1" 200 1481
+INFO 2025-03-19 11:34:28,469 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-03-19 11:34:28,479 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-03-19 11:34:28,513 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-03-19 11:34:28,536 "GET /static/dist/js/custom.js HTTP/1.1" 200 1569
+INFO 2025-03-19 11:34:28,562 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-03-19 11:34:28,572 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-03-19 11:34:28,576 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-03-19 11:34:28,592 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-03-19 11:34:28,641 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+INFO 2025-03-19 11:34:28,758 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80704
+INFO 2025-03-19 11:34:29,096 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-03-19 11:34:36,440 "GET /subject/list/ HTTP/1.1" 200 17771
+INFO 2025-03-19 11:34:51,619 "POST /subject/create/ HTTP/1.1" 302 0
+INFO 2025-03-19 11:34:51,651 "GET /subject/list/ HTTP/1.1" 200 18201
+INFO 2025-03-19 11:34:59,667 "GET /staff/list/ HTTP/1.1" 200 16538
+INFO 2025-03-19 11:35:01,400 "GET /staff/create/ HTTP/1.1" 200 19573
+INFO 2025-03-19 11:35:11,517 "GET /result/create/ HTTP/1.1" 200 17281
+INFO 2025-03-19 11:35:15,527 "POST /result/create/ HTTP/1.1" 200 17348
+INFO 2025-03-19 11:35:20,805 "GET /result/create/ HTTP/1.1" 200 17281
+INFO 2025-03-19 11:35:22,264 "GET / HTTP/1.1" 200 18398
+INFO 2025-03-19 11:36:01,151 "GET /site-config HTTP/1.1" 200 17354
+INFO 2025-03-19 11:43:30,800 D:\Sipher Web\Django School Management System\SMS\apps\corecode\context_processors.py changed, reloading.
+INFO 2025-03-19 11:43:31,949 Watching for file changes with StatReloader
+INFO 2025-03-19 11:45:30,541 "GET /site-config HTTP/1.1" 200 17354
+INFO 2025-03-19 11:45:30,618 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 11:45:33,128 "GET /accounts/login/ HTTP/1.1" 200 5336
+INFO 2025-03-19 11:45:36,258 "GET /accounts/login/ HTTP/1.1" 200 5336
+INFO 2025-03-19 11:45:36,459 "GET /accounts/login/ HTTP/1.1" 200 5336
+INFO 2025-03-19 11:45:36,612 "GET /accounts/login/ HTTP/1.1" 200 5336
+INFO 2025-03-19 11:45:36,784 "GET /accounts/login/ HTTP/1.1" 200 5336
+INFO 2025-03-19 11:45:36,941 "GET /accounts/login/ HTTP/1.1" 200 5336
+INFO 2025-03-19 11:45:37,165 "GET /accounts/login/ HTTP/1.1" 200 5336
+INFO 2025-03-19 11:45:54,368 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-03-19 11:45:54,389 "GET / HTTP/1.1" 200 18398
+INFO 2025-03-19 11:55:10,692 D:\Sipher Web\Django School Management System\SMS\apps\corecode\context_processors.py changed, reloading.
+INFO 2025-03-19 11:55:11,589 Watching for file changes with StatReloader
+INFO 2025-03-19 11:55:24,464 "GET / HTTP/1.1" 200 18398
+INFO 2025-03-19 11:55:24,543 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 11:55:24,967 "GET / HTTP/1.1" 200 18398
+INFO 2025-03-19 11:55:25,424 "GET / HTTP/1.1" 200 18398
+INFO 2025-03-19 11:55:44,462 D:\Sipher Web\Django School Management System\SMS\apps\corecode\context_processors.py changed, reloading.
+INFO 2025-03-19 11:55:45,316 Watching for file changes with StatReloader
+INFO 2025-03-19 11:55:50,610 "GET / HTTP/1.1" 200 18398
+INFO 2025-03-19 11:55:50,949 "GET / HTTP/1.1" 200 18398
+INFO 2025-03-19 11:55:53,361 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 318045
+INFO 2025-03-19 11:55:53,442 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+INFO 2025-03-19 11:55:53,470 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-03-19 11:55:53,720 "GET / HTTP/1.1" 200 18398
+INFO 2025-03-19 11:55:53,824 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-03-19 11:55:53,832 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-03-19 11:55:53,836 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-03-19 11:55:53,840 "GET /static/dist/css/style.css HTTP/1.1" 200 1481
+INFO 2025-03-19 11:55:53,846 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-03-19 11:55:53,852 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80704
+INFO 2025-03-19 11:55:53,853 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-03-19 11:55:53,859 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-03-19 11:55:53,861 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-03-19 11:55:53,868 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-03-19 11:55:53,885 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-03-19 11:55:53,888 "GET /static/dist/js/custom.js HTTP/1.1" 200 1569
+INFO 2025-03-19 11:55:53,932 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-03-19 11:55:54,007 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+INFO 2025-03-19 11:55:54,009 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2025-03-19 11:55:54,072 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+WARNING 2025-03-19 11:55:54,126 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2025-03-19 11:55:54,130 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-03-19 11:55:54,205 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-03-19 11:55:54,672 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-03-19 11:55:54,679 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+INFO 2025-03-19 11:55:54,708 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 318045
+WARNING 2025-03-19 11:55:54,840 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+WARNING 2025-03-19 11:55:55,277 Not Found: /favicon.ico
+WARNING 2025-03-19 11:55:55,277 "GET /favicon.ico HTTP/1.1" 404 6433
+WARNING 2025-03-19 11:56:38,442 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2025-03-19 11:56:45,249 "GET / HTTP/1.1" 200 18398
+WARNING 2025-03-19 11:56:45,934 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2025-03-19 11:56:59,448 "GET /site-config HTTP/1.1" 200 17354
+INFO 2025-03-19 11:57:10,138 "GET /site-config HTTP/1.1" 200 17354
+INFO 2025-03-19 11:57:30,453 "GET /site-config HTTP/1.1" 200 17354
+INFO 2025-03-19 12:29:26,243 "GET /site-config HTTP/1.1" 200 17481
+INFO 2025-03-19 12:29:26,313 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 12:29:27,519 "GET /site-config HTTP/1.1" 200 17481
+INFO 2025-03-19 12:29:27,622 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-03-19 12:29:27,628 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-03-19 12:29:27,631 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-03-19 12:29:27,632 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-03-19 12:29:27,633 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80704
+INFO 2025-03-19 12:29:27,634 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-03-19 12:29:27,638 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-03-19 12:29:27,645 "GET /static/dist/js/custom.js HTTP/1.1" 200 1569
+INFO 2025-03-19 12:29:27,989 "GET /site-config HTTP/1.1" 200 17481
+INFO 2025-03-19 12:29:28,086 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-03-19 12:29:28,234 "GET /site-config HTTP/1.1" 200 17481
+WARNING 2025-03-19 12:29:33,841 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2025-03-19 12:29:35,522 "GET /site-config HTTP/1.1" 200 17481
+INFO 2025-03-19 12:29:35,616 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-03-19 12:29:35,616 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-03-19 12:29:35,627 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-03-19 12:29:35,628 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-03-19 12:29:35,633 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-03-19 12:29:35,635 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-03-19 12:29:35,643 "GET /static/dist/css/style.css HTTP/1.1" 200 1481
+INFO 2025-03-19 12:29:35,675 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-03-19 12:29:35,675 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80704
+INFO 2025-03-19 12:29:35,675 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-03-19 12:29:35,678 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-03-19 12:29:35,685 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-03-19 12:29:35,688 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-03-19 12:29:35,702 "GET /static/dist/js/custom.js HTTP/1.1" 200 1569
+INFO 2025-03-19 12:29:35,747 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-03-19 12:29:35,785 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+INFO 2025-03-19 12:29:35,787 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2025-03-19 12:29:35,874 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-03-19 12:29:36,002 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-03-19 12:29:36,005 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+INFO 2025-03-19 12:29:36,008 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 318045
+WARNING 2025-03-19 12:29:36,210 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+WARNING 2025-03-19 12:29:36,378 Not Found: /favicon.ico
+WARNING 2025-03-19 12:29:36,379 "GET /favicon.ico HTTP/1.1" 404 6433
+INFO 2025-03-19 12:30:10,953 "GET /site-config HTTP/1.1" 200 17481
+INFO 2025-03-19 12:33:56,251 "GET /site-config HTTP/1.1" 200 17354
+INFO 2025-03-19 12:36:28,492 "GET /site-config HTTP/1.1" 200 17186
+INFO 2025-03-19 12:37:32,375 "GET /site-config HTTP/1.1" 200 17321
+INFO 2025-03-19 12:38:52,548 "GET /site-config HTTP/1.1" 200 17081
+INFO 2025-03-19 12:39:56,752 "GET /site-config HTTP/1.1" 200 17401
+INFO 2025-03-19 12:40:09,870 "GET /site-config HTTP/1.1" 200 17081
+INFO 2025-03-19 12:40:14,740 "GET /site-config HTTP/1.1" 200 17481
+INFO 2025-03-19 12:40:17,055 "GET /site-config HTTP/1.1" 200 17481
+INFO 2025-03-19 12:40:27,388 "GET /site-config HTTP/1.1" 200 17481
+INFO 2025-03-19 12:40:27,857 "GET /site-config HTTP/1.1" 200 17481
+INFO 2025-03-19 12:40:33,090 "GET /site-config HTTP/1.1" 200 17081
+INFO 2025-03-19 12:40:38,622 "GET /site-config HTTP/1.1" 200 17321
+INFO 2025-03-19 12:40:47,005 "GET /site-config HTTP/1.1" 200 17481
+INFO 2025-03-19 12:40:48,437 "GET /site-config HTTP/1.1" 200 17481
+INFO 2025-03-19 12:40:48,681 "GET /site-config HTTP/1.1" 200 17481
+INFO 2025-03-19 12:42:05,885 "GET /site-config HTTP/1.1" 200 17934
+INFO 2025-03-19 12:42:05,950 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+ERROR 2025-03-19 12:42:13,011 Internal Server Error: /site-config
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\views.py", line 41, in get
+    return render(request, self.template_name, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 10: 'block'. Looking for one of: endblock.
+ERROR 2025-03-19 12:42:13,015 "GET /site-config HTTP/1.1" 500 183383
+INFO 2025-03-19 12:42:17,973 "GET /site-config HTTP/1.1" 200 17481
+INFO 2025-03-19 12:42:22,337 "GET /site-config HTTP/1.1" 200 17081
+INFO 2025-03-19 12:43:25,281 "GET /site-config HTTP/1.1" 200 17237
+INFO 2025-03-19 12:44:19,398 "GET /site-config HTTP/1.1" 200 17190
+INFO 2025-03-19 12:44:29,937 "GET /site-config HTTP/1.1" 200 17237
+INFO 2025-03-19 12:44:43,658 "GET /site-config HTTP/1.1" 200 17220
+INFO 2025-03-19 12:44:58,402 "GET /site-config HTTP/1.1" 200 17215
+INFO 2025-03-19 12:45:11,707 "POST /site-config HTTP/1.1" 200 18132
+INFO 2025-03-19 12:45:19,267 "POST /site-config HTTP/1.1" 200 18132
+INFO 2025-03-19 12:45:26,777 "POST /site-config HTTP/1.1" 200 18132
+INFO 2025-03-19 12:46:34,813 "POST /site-config HTTP/1.1" 200 18149
+INFO 2025-03-19 12:46:41,659 "POST /site-config HTTP/1.1" 200 18149
+INFO 2025-03-19 12:46:49,885 "POST /site-config HTTP/1.1" 200 18149
+INFO 2025-03-19 12:47:53,186 "POST /site-config HTTP/1.1" 200 18192
+INFO 2025-03-19 12:47:57,044 "GET /site-config HTTP/1.1" 200 17275
+INFO 2025-03-19 12:47:58,071 "GET / HTTP/1.1" 200 18398
+INFO 2025-03-19 12:48:00,772 "GET /site-config HTTP/1.1" 200 17275
+INFO 2025-03-19 12:48:02,163 "POST /site-config HTTP/1.1" 200 18190
+INFO 2025-03-19 12:48:04,563 "GET /site-config HTTP/1.1" 200 17275
+INFO 2025-03-19 12:49:17,668 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-03-19 12:49:19,144 Watching for file changes with StatReloader
+INFO 2025-03-19 12:50:06,946 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-03-19 12:50:08,591 Watching for file changes with StatReloader
+INFO 2025-03-19 12:50:10,444 D:\Sipher Web\Django School Management System\SMS\apps\corecode\models.py changed, reloading.
+INFO 2025-03-19 12:50:11,506 Watching for file changes with StatReloader
+INFO 2025-03-19 12:50:11,925 "GET /site-config HTTP/1.1" 200 17275
+INFO 2025-03-19 12:50:14,383 "POST /site-config HTTP/1.1" 200 18190
+INFO 2025-03-19 12:50:40,054 "POST /site-config HTTP/1.1" 200 18190
+INFO 2025-03-19 12:51:59,098 "POST /site-config HTTP/1.1" 200 17959
+INFO 2025-03-19 12:52:05,365 "POST /site-config HTTP/1.1" 200 17959
+INFO 2025-03-19 12:52:06,290 "POST /site-config HTTP/1.1" 200 17959
+INFO 2025-03-19 12:52:06,794 "POST /site-config HTTP/1.1" 200 17959
+INFO 2025-03-19 12:52:17,509 "POST /site-config HTTP/1.1" 200 17960
+INFO 2025-03-19 12:52:25,419 "POST /site-config HTTP/1.1" 200 18191
+INFO 2025-03-19 12:53:49,533 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-03-19 12:53:51,402 Watching for file changes with StatReloader
+INFO 2025-03-19 12:54:26,790 D:\Sipher Web\Django School Management System\SMS\apps\corecode\models.py changed, reloading.
+INFO 2025-03-19 12:54:28,307 Watching for file changes with StatReloader
+INFO 2025-03-19 12:54:28,948 "POST /site-config HTTP/1.1" 200 18185
+INFO 2025-03-19 12:54:33,392 "GET / HTTP/1.1" 200 18398
+INFO 2025-03-19 12:54:35,564 "GET /site-config HTTP/1.1" 200 17269
+INFO 2025-03-19 12:54:39,843 "POST /site-config HTTP/1.1" 200 18184
+INFO 2025-03-19 12:54:54,418 D:\Sipher Web\Django School Management System\SMS\apps\corecode\models.py changed, reloading.
+INFO 2025-03-19 12:54:56,091 Watching for file changes with StatReloader
+INFO 2025-03-19 12:54:59,230 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-03-19 12:55:01,212 Watching for file changes with StatReloader
+INFO 2025-03-19 12:55:01,976 "POST /site-config HTTP/1.1" 200 18190
+INFO 2025-03-19 12:55:02,083 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 12:55:08,680 "POST /site-config HTTP/1.1" 200 18190
+INFO 2025-03-19 12:58:54,999 "POST /site-config HTTP/1.1" 200 18190
+INFO 2025-03-19 13:00:12,129 D:\Sipher Web\Django School Management System\SMS\apps\corecode\models.py changed, reloading.
+INFO 2025-03-19 13:00:13,841 Watching for file changes with StatReloader
+INFO 2025-03-19 13:00:18,165 "POST /site-config HTTP/1.1" 200 18163
+INFO 2025-03-19 13:00:21,982 "GET / HTTP/1.1" 200 18398
+INFO 2025-03-19 13:00:38,655 Watching for file changes with StatReloader
+INFO 2025-03-19 13:00:40,684 "GET / HTTP/1.1" 200 18398
+INFO 2025-03-19 13:00:42,681 "GET /site-config HTTP/1.1" 200 17248
+INFO 2025-03-19 13:00:44,984 "POST /site-config HTTP/1.1" 200 18163
+INFO 2025-03-19 13:01:00,168 "POST /site-config HTTP/1.1" 200 18163
+INFO 2025-03-19 13:02:37,598 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-03-19 13:02:39,266 Watching for file changes with StatReloader
+INFO 2025-03-19 13:02:42,114 "GET / HTTP/1.1" 200 18398
+INFO 2025-03-19 13:02:45,255 "GET /site-config HTTP/1.1" 200 17965
+INFO 2025-03-19 13:03:10,151 D:\Sipher Web\Django School Management System\SMS\apps\corecode\models.py changed, reloading.
+INFO 2025-03-19 13:03:11,632 Watching for file changes with StatReloader
+INFO 2025-03-19 13:03:13,191 "GET /site-config HTTP/1.1" 200 17248
+INFO 2025-03-19 13:03:16,794 "POST /site-config HTTP/1.1" 200 18163
+INFO 2025-03-19 13:03:28,118 "GET /site-config HTTP/1.1" 200 17248
+INFO 2025-03-19 13:03:31,375 "POST /site-config HTTP/1.1" 200 18164
+INFO 2025-03-19 13:03:39,342 "GET /site-config HTTP/1.1" 200 17248
+INFO 2025-03-19 13:04:00,552 "POST /site-config HTTP/1.1" 200 18178
+INFO 2025-03-19 13:06:34,585 D:\Sipher Web\Django School Management System\SMS\apps\corecode\forms.py changed, reloading.
+INFO 2025-03-19 13:06:35,441 Watching for file changes with StatReloader
+INFO 2025-03-19 13:06:39,177 D:\Sipher Web\Django School Management System\SMS\apps\corecode\forms.py changed, reloading.
+INFO 2025-03-19 13:06:40,279 Watching for file changes with StatReloader
+INFO 2025-03-19 13:06:45,720 "POST /site-config HTTP/1.1" 200 18652
+INFO 2025-03-19 13:06:47,134 "GET /site-config HTTP/1.1" 200 17761
+INFO 2025-03-19 13:06:51,848 "GET / HTTP/1.1" 200 18398
+INFO 2025-03-19 13:06:53,745 "GET /site-config HTTP/1.1" 200 17761
+INFO 2025-03-19 13:06:55,731 "GET /site-config HTTP/1.1" 200 17761
+INFO 2025-03-19 13:06:56,342 "GET /site-config HTTP/1.1" 200 17761
+INFO 2025-03-19 13:07:14,445 "GET /site-config HTTP/1.1" 200 17287
+INFO 2025-03-19 13:07:16,588 "POST /site-config HTTP/1.1" 200 18202
+INFO 2025-03-19 13:07:20,780 "POST /site-config HTTP/1.1" 200 18202
+INFO 2025-03-19 13:07:22,417 "GET / HTTP/1.1" 200 18398
+INFO 2025-03-19 13:08:49,215 "GET / HTTP/1.1" 200 18398
+INFO 2025-03-19 13:08:51,122 "GET /site-config HTTP/1.1" 200 17287
+INFO 2025-03-19 13:08:53,162 "POST /site-config HTTP/1.1" 200 18292
+INFO 2025-03-19 13:09:00,139 "POST /site-config HTTP/1.1" 200 18292
+INFO 2025-03-19 13:09:14,353 "POST /site-config HTTP/1.1" 200 18292
+INFO 2025-03-19 13:09:14,412 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 13:10:14,589 "POST /site-config HTTP/1.1" 200 20875
+INFO 2025-03-19 13:10:19,715 "GET / HTTP/1.1" 200 18398
+INFO 2025-03-19 13:10:21,419 "GET /site-config HTTP/1.1" 200 19735
+INFO 2025-03-19 13:10:29,124 "GET /site-config HTTP/1.1" 200 17287
+INFO 2025-03-19 13:11:10,233 "GET /site-config HTTP/1.1" 200 17287
+INFO 2025-03-19 13:12:56,127 "GET /site-config HTTP/1.1" 200 17500
+INFO 2025-03-19 13:12:57,672 "POST /site-config HTTP/1.1" 200 18415
+INFO 2025-03-19 13:13:00,536 "GET /site-config HTTP/1.1" 200 17500
+INFO 2025-03-19 13:13:03,901 D:\Sipher Web\Django School Management System\SMS\apps\corecode\forms.py changed, reloading.
+INFO 2025-03-19 13:13:05,205 Watching for file changes with StatReloader
+INFO 2025-03-19 13:13:06,517 D:\Sipher Web\Django School Management System\SMS\apps\corecode\models.py changed, reloading.
+INFO 2025-03-19 13:13:07,382 Watching for file changes with StatReloader
+INFO 2025-03-19 13:13:10,019 D:\Sipher Web\Django School Management System\SMS\apps\corecode\forms.py changed, reloading.
+INFO 2025-03-19 13:13:11,137 Watching for file changes with StatReloader
+INFO 2025-03-19 13:13:13,818 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-03-19 13:13:14,822 Watching for file changes with StatReloader
+INFO 2025-03-19 13:14:43,724 D:\Sipher Web\Django School Management System\SMS\apps\corecode\urls.py changed, reloading.
+INFO 2025-03-19 13:14:44,651 Watching for file changes with StatReloader
+ERROR 2025-03-19 13:14:47,402 Internal Server Error: /site-config
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: corecode_siteconfig.description
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\views.py", line 41, in site_config_view
+    return render(request, 'corecode/siteconfig.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 173, in render
+    with context.bind_template(self):
+  File "C:\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\context.py", line 254, in bind_template
+    updates.update(processor(self.request))
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\context_processors.py", line 12, in site_defaults
+    for val in vals:
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 394, in __iter__
+    self._fetch_all()
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: corecode_siteconfig.description
+ERROR 2025-03-19 13:14:47,419 "GET /site-config HTTP/1.1" 500 160245
+INFO 2025-03-19 13:15:15,620 Watching for file changes with StatReloader
+INFO 2025-03-19 13:15:19,574 "GET /site-config HTTP/1.1" 200 17858
+INFO 2025-03-19 13:15:36,603 "POST /site-config HTTP/1.1" 200 18614
+INFO 2025-03-19 13:15:46,035 "GET /site-config HTTP/1.1" 200 17858
+INFO 2025-03-19 13:15:53,114 D:\Sipher Web\Django School Management System\SMS\apps\corecode\urls.py changed, reloading.
+INFO 2025-03-19 13:15:54,642 Watching for file changes with StatReloader
+INFO 2025-03-19 13:16:07,407 D:\Sipher Web\Django School Management System\SMS\apps\corecode\urls.py changed, reloading.
+INFO 2025-03-19 13:16:08,693 Watching for file changes with StatReloader
+INFO 2025-03-19 13:16:10,446 D:\Sipher Web\Django School Management System\SMS\apps\corecode\forms.py changed, reloading.
+INFO 2025-03-19 13:16:11,715 Watching for file changes with StatReloader
+INFO 2025-03-19 13:16:15,575 "GET /site-config HTTP/1.1" 200 17297
+INFO 2025-03-19 13:16:54,444 Watching for file changes with StatReloader
+INFO 2025-03-19 13:16:57,947 "GET / HTTP/1.1" 302 0
+INFO 2025-03-19 13:16:57,989 "GET /accounts/login/?next=/ HTTP/1.1" 200 5337
+INFO 2025-03-19 13:16:58,289 "GET /static/dist/css/login-page.css HTTP/1.1" 200 9070
+INFO 2025-03-19 13:16:58,312 "GET /static/dist/img/school-logo.png HTTP/1.1" 200 228739
+WARNING 2025-03-19 13:16:58,936 Not Found: /favicon.ico
+WARNING 2025-03-19 13:16:58,936 "GET /favicon.ico HTTP/1.1" 404 6433
+INFO 2025-03-19 13:17:07,051 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-03-19 13:17:07,078 "GET / HTTP/1.1" 200 18398
+INFO 2025-03-19 13:17:09,815 "GET /site-config HTTP/1.1" 200 17297
+INFO 2025-03-19 13:17:12,316 "POST /site-config HTTP/1.1" 200 18053
+INFO 2025-03-19 13:17:19,346 "GET /site-config HTTP/1.1" 200 17297
+INFO 2025-03-19 13:27:24,191 "GET /site-config HTTP/1.1" 200 17297
+INFO 2025-03-19 13:27:24,267 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-19 13:27:25,577 "POST /site-config HTTP/1.1" 200 18053
+INFO 2025-03-19 13:27:27,923 "GET /site-config HTTP/1.1" 200 17297
+INFO 2025-03-19 13:27:29,242 "GET /site-config HTTP/1.1" 200 17297
+INFO 2025-03-19 13:50:53,775 "GET /site-config HTTP/1.1" 200 17297
+INFO 2025-03-19 13:50:53,851 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+WARNING 2025-03-19 13:51:00,893 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2025-03-19 13:51:03,948 "POST /site-config HTTP/1.1" 200 18053
+INFO 2025-03-19 13:51:04,108 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-03-19 13:51:04,173 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-03-19 13:51:04,184 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-03-19 13:51:04,305 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-03-19 13:51:04,334 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80704
+INFO 2025-03-19 13:51:04,384 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-03-19 13:51:04,455 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+WARNING 2025-03-19 13:51:04,695 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2025-03-19 13:51:05,745 "GET /static/dist/js/custom.js HTTP/1.1" 200 1569
+INFO 2025-03-19 13:51:06,084 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-03-19 13:51:13,381 "GET /site-config HTTP/1.1" 200 17297
+WARNING 2025-03-19 13:51:13,874 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870

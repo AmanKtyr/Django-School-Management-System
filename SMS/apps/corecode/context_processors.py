@@ -13,3 +13,9 @@ def site_defaults(request):
         contexts[val.key] = val.value
 
     return contexts
+
+
+
+
+
+
