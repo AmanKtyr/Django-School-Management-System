@@ -1,33 +1,36 @@
 {% extends 'base.html' %}
 
-
 {% block content %}
 <div class="container mt-4">
   <h2 class="text-center mb-4">Admin Dashboard</h2>
   <div class="row g-4">
       <!-- Dashboard Cards -->
       <div class="col-md-3">
-          <div class="dashboard-card text-center">
+          <div class="dashboard-card text-center shadow-sm p-3 bg-white rounded">
               <h5>Total Students</h5>
-              <h3 class="text-primary">1200</h3>
+              <h3 class="text-primary">500</h3>
+              <p class="text-muted">Active Students</p>
           </div>
       </div>
       <div class="col-md-3">
-          <div class="dashboard-card text-center">
+          <div class="dashboard-card text-center shadow-sm p-3 bg-white rounded">
               <h5>Total Teachers</h5>
               <h3 class="text-success">80</h3>
+              <p class="text-muted">Teaching Staff</p>
           </div>
       </div>
       <div class="col-md-3">
-          <div class="dashboard-card text-center">
+          <div class="dashboard-card text-center shadow-sm p-3 bg-white rounded">
               <h5>Fees Collected</h5>
               <h3 class="text-warning">₹5,00,000</h3>
+              <p class="text-muted">This Month</p>
           </div>
       </div>
       <div class="col-md-3">
-          <div class="dashboard-card text-center">
+          <div class="dashboard-card text-center shadow-sm p-3 bg-white rounded">
               <h5>Pending Dues</h5>
               <h3 class="text-danger">₹50,000</h3>
+              <p class="text-muted">Unpaid Fees</p>
           </div>
       </div>
   </div>
@@ -35,13 +38,13 @@
   <!-- Charts Section -->
   <div class="row mt-4 g-4">
       <div class="col-md-6">
-          <div class="chart-container">
+          <div class="chart-container shadow-sm p-3 bg-white rounded">
               <h5 class="text-center">Attendance Rate</h5>
               <canvas id="attendanceChart"></canvas>
           </div>
       </div>
       <div class="col-md-6">
-          <div class="chart-container">
+          <div class="chart-container shadow-sm p-3 bg-white rounded">
               <h5 class="text-center">Fees Collection</h5>
               <canvas id="feesChart"></canvas>
           </div>
@@ -51,16 +54,88 @@
   <!-- Recent Activities -->
   <div class="row mt-4">
       <div class="col-md-12">
-          <h4 class="mb-3">Recent Activities</h4>
-          <ul class="list-group">
-              <li class="list-group-item">📌 New student enrolled: <strong>Rohan Sharma</strong></li>
-              <li class="list-group-item">💰 Fee payment received: <strong>₹10,000 from Priya Mehta</strong></li>
-              <li class="list-group-item">👨‍🏫 Teacher added: <strong>Mr. Arun Kumar</strong></li>
-          </ul>
+          <div class="recent-activities shadow-sm p-3 bg-white rounded">
+              <h4 class="mb-3">Recent Activities</h4>
+              <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                      📌 New student enrolled: <strong>Rohan Sharma</strong>
+                      <span class="badge bg-primary rounded-pill">Today</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                      💰 Fee payment received: <strong>₹10,000 from Priya Mehta</strong>
+                      <span class="badge bg-success rounded-pill">Yesterday</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                      👨‍🏫 Teacher added: <strong>Mr. Arun Kumar</strong>
+                      <span class="badge bg-info rounded-pill">2 Days Ago</span>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+
+  <!-- Top Performers Section -->
+  <div class="row mt-4">
+      <div class="col-md-6">
+          <div class="top-performers shadow-sm p-3 bg-white rounded">
+              <h4 class="mb-3">Top Performing Students</h4>
+              <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                      🏅 <strong>Ananya Verma</strong>
+                      <span class="badge bg-success rounded-pill">98%</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                      🏅 <strong>Rahul Singh</strong>
+                      <span class="badge bg-success rounded-pill">96%</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                      🏅 <strong>Priya Sharma</strong>
+                      <span class="badge bg-success rounded-pill">95%</span>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="top-performers shadow-sm p-3 bg-white rounded">
+              <h4 class="mb-3">Top Performing Teachers</h4>
+              <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                      🌟 <strong>Mr. Arun Kumar</strong>
+                      <span class="badge bg-primary rounded-pill">4.9/5</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                      🌟 <strong>Ms. Neha Gupta</strong>
+                      <span class="badge bg-primary rounded-pill">4.8/5</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                      🌟 <strong>Dr. Rajesh Mehta</strong>
+                      <span class="badge bg-primary rounded-pill">4.7/5</span>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+
+  <!-- Notifications Section -->
+  <div class="row mt-4">
+      <div class="col-md-12">
+          <div class="notifications shadow-sm p-3 bg-white rounded">
+              <h4 class="mb-3">Notifications</h4>
+              <ul class="list-group">
+                  <li class="list-group-item">
+                      📢 <strong>Parent-Teacher Meeting</strong> scheduled for <em>15th March</em>.
+                  </li>
+                  <li class="list-group-item">
+                      📢 <strong>Annual Sports Day</strong> on <em>25th March</em>. Prepare your teams!
+                  </li>
+                  <li class="list-group-item">
+                      📢 <strong>Exam Results</strong> will be declared on <em>10th April</em>.
+                  </li>
+              </ul>
+          </div>
       </div>
   </div>
 </div>
-
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -75,8 +150,14 @@
                   data: [90, 85, 88, 92, 95, 89],
                   borderColor: '#007bff',
                   backgroundColor: 'rgba(0,123,255,0.2)',
-                  fill: true
+                  fill: true,
+                  tension: 0.4
               }]
+          },
+          options: {
+              plugins: {
+                  legend: { display: false }
+              }
           }
       });
 
@@ -91,6 +172,11 @@
                   data: [80000, 90000, 75000, 95000, 100000, 85000],
                   backgroundColor: ['#28a745', '#ffc107', '#dc3545', '#17a2b8', '#6610f2', '#6f42c1']
               }]
+          },
+          options: {
+              plugins: {
+                  legend: { display: false }
+              }
           }
       });
   });

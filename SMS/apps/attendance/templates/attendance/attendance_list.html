@@ -17,148 +17,142 @@
 
 {% block content %}
 <div class="container mt-4">
-        <!-- Attendance Stats -->
-        <div class="row text-center mb-4">
-            <div class="col-md-3">
-                <div class="p-4 bg-primary text-white rounded shadow-sm">
-                    <h5>Total Students</h5>
-                    <p class="fw-bold fs-4">{{ total_students }}0</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="p-4 bg-success text-white rounded shadow-sm">
-                    <h5>Present/Leave</h5>
-                    <p class="fw-bold fs-4">{{ present_leave }}</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="p-4 bg-danger text-white rounded shadow-sm">
-                    <h5>Absent</h5>
-                    <p class="fw-bold fs-4">{{ absent }}</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="p-4 bg-info text-white rounded shadow-sm">
-                    <h5>Class Teacher</h5>
-                    <p class="fw-bold fs-4">{{ class_teacher }} A K</p>
-                </div>
-            </div>
-        </div>
+  <!-- Gradient Background -->
+  <div class="p-4 rounded shadow-sm" style="background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); color: white;">
+    <h2 class="text-center fw-bold">Attendance Dashboard</h2>
+  </div>
 
-<div class="container my-4">
-    <div class="d-flex justify-content-between align-items-center bg-white shadow-sm p-3 rounded-3">
-        <!-- Class Selection -->
-        <form method="GET" action="" class="d-flex align-items-center gap-3">
-            <label for="class-select" class="fw-bold fs-5 text-dark mb-0">
-                <i class="bi bi-ui-checks-grid text-primary"></i> Select Class: 
-            </label>
-            <select id="class-select" name="class_id" 
-                class="form-select form-control-lg shadow-sm border-1 border-primary px-4 py-2 rounded-3 fw-bold text-dark"
-                style="width: 225px; transition: 0.3s ease-in-out;"
-                onchange="this.form.submit()">
-                <option value="" class="fw-bold text-secondary">📌 Choose a Class</option>
-                {% for class in classes %}
-                <option value="{{ class.id }}" 
-                    class="fw-bold text-dark" 
-                    {% if class.id|stringformat:"s" == selected_class_id %}selected{% endif %}>
-                    {{ class.name }}
-                </option>
-                {% endfor %}
-            </select>
-        </form>
-
-        <!-- Current Date -->
-        <div class="text-end fw-bold fs-2 text-primary">
-            📅 <span id="current-date"></span>
-        </div>
+  <!-- Attendance Stats -->
+  <div class="row text-center my-4">
+    <div class="col-md-3">
+      <div class="p-4 rounded shadow-sm" style="background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%); color: white;">
+        <h5>Total Students</h5>
+        <p class="fw-bold fs-4">{{ total_students }}0</p>
+      </div>
     </div>
-</div>
+    <div class="col-md-3">
+      <div class="p-4 rounded shadow-sm" style="background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%); color: white;">
+        <h5>Present/Leave</h5>
+        <p class="fw-bold fs-4">{{ present_leave }}</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="p-4 rounded shadow-sm" style="background: linear-gradient(135deg, #ff512f 0%, #dd2476 100%); color: white;">
+        <h5>Absent</h5>
+        <p class="fw-bold fs-4">{{ absent }}</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="p-4 rounded shadow-sm" style="background: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%); color: white;">
+        <h5>Class Teacher</h5>
+        <p class="fw-bold fs-4">{{ class_teacher }} A K</p>
+      </div>
+    </div>
+  </div>
 
+  <!-- Class Selection -->
+  <div class="container my-4">
+    <div class="d-flex justify-content-between align-items-center bg-white shadow-sm p-3 rounded-3">
+      <form method="GET" action="" class="d-flex align-items-center gap-3">
+        <label for="class-select" class="fw-bold fs-5 text-dark mb-0">
+          <i class="bi bi-ui-checks-grid text-primary"></i> Select Class:
+        </label>
+        <select id="class-select" name="class_id" 
+          class="form-select form-control-lg shadow-sm border-1 border-primary px-4 py-2 rounded-3 fw-bold text-dark"
+          style="width: 225px; transition: 0.3s ease-in-out;"
+          onchange="this.form.submit()">
+          <option value="" class="fw-bold text-secondary">📌 Choose a Class</option>
+          {% for class in classes %}
+          <option value="{{ class.id }}" 
+            class="fw-bold text-dark" 
+            {% if class.id|stringformat:"s" == selected_class_id %}selected{% endif %}>
+            {{ class.name }}
+          </option>
+          {% endfor %}
+        </select>
+      </form>
+      <div class="text-end fw-bold fs-2 text-primary">
+        📅 <span id="current-date"></span>
+      </div>
+    </div>
+  </div>
 
-
-        <!-- Student Attendance Table -->
-        <div class="table-responsive">
-            <table id="studenttable" class="table table-bordered table-hover" data-page-length='25'>
-              <thead class="thead-dark">
+  <!-- Student Attendance Table -->
+  <div class="table-responsive">
+    <table id="studenttable" class="table table-bordered table-hover" data-page-length='25'>
+      <thead class="thead-dark">
         <tr>
-            <th> S/N</th>
-            <th> Student Name</th>
-            <th> Unique ID</th>
-            <th>Father Name</th>
-            <th> Class/Section</th>
-            <th> Attendance</th>
-            <th>📄 Comment</th>
-            {% comment %} <th>📅 Date</th> {% endcomment %}
+          <th>S/N</th>
+          <th>Student Name</th>
+          <th>Unique ID</th>
+          <th>Father Name</th>
+          <th>Class/Section</th>
+          <th>Attendance</th>
+          <th>📄 Comment</th>
         </tr>
-    </thead>
-    <tbody>
+      </thead>
+      <tbody>
         {% for student in students %}
         <tr>
-            <td>{{ forloop.counter }}</td>
-            <td class="fw-bold  text-primary">{{ student.fullname }}</td>
-            <td>{{ student.registration_number }}</td>
-            <td>{{ student.Father_name }}</td>
-            <td class="fw-bold">{{ student.current_class }}</td>
-            <td>
-                <div class="btn-group attendance-buttons" data-student="{{ student.id }}">
-                    <button type="button" class="btn btn-sm attendance-btn btn-outline-success" data-value="present">✔ Present</button>
-                    <button type="button" class="btn btn-sm attendance-btn btn-outline-warning" data-value="leave">⚠ Leave</button>
-                    <button type="button" class="btn btn-sm attendance-btn btn-outline-danger" data-value="absent">❌ Absent</button>
-                </div>
-            </td>
-            <td > <input type="text" class="form-control" placeholder="Leave a Comment If any"></td>
+          <td>{{ forloop.counter }}</td>
+          <td class="fw-bold text-primary">{{ student.fullname }}</td>
+          <td>{{ student.registration_number }}</td>
+          <td>{{ student.Father_name }}</td>
+          <td class="fw-bold">{{ student.current_class }}</td>
+          <td>
+            <div class="btn-group attendance-buttons" data-student="{{ student.id }}">
+              <button type="button" class="btn btn-sm attendance-btn btn-outline-success" data-value="present">✔ Present</button>
+              <button type="button" class="btn btn-sm attendance-btn btn-outline-warning" data-value="leave">⚠ Leave</button>
+              <button type="button" class="btn btn-sm attendance-btn btn-outline-danger" data-value="absent">❌ Absent</button>
+            </div>
+          </td>
+          <td><input type="text" class="form-control" placeholder="Leave a Comment If any"></td>
         </tr>
         {% endfor %}
-    </tbody>
-</table>
-</div>
+      </tbody>
+    </table>
+  </div>
 
-
-       <!-- Submit Button Aligned to Right -->
-<div class="d-flex justify-content-end">
+  <!-- Submit Button -->
+  <div class="d-flex justify-content-end">
     <button type="submit" class="btn btn-lg btn-primary mt-4 shadow-sm fw-bold px-4">
-        ✅ Submit Attendance
+      ✅ Submit Attendance
     </button>
+  </div>
 </div>
-
-
-
 
 <!-- JavaScript for Attendance Selection -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    $(document).ready(function () {
-        $(".attendance-btn").click(function () {
-            let studentId = $(this).closest(".attendance-buttons").data("student");
-            let selectedValue = $(this).data("value");
-            
-            $(this).siblings().removeClass("active btn-success btn-warning btn-danger text-white");
-            
-            if (selectedValue === "present") {
-                $(this).addClass("active btn-success text-white");
-            } else if (selectedValue === "leave") {
-                $(this).addClass("active btn-warning text-dark");
-            } else {
-                $(this).addClass("active btn-danger text-white");
-            }
-        });
+  $(document).ready(function () {
+    $(".attendance-btn").click(function () {
+      let studentId = $(this).closest(".attendance-buttons").data("student");
+      let selectedValue = $(this).data("value");
+      
+      $(this).siblings().removeClass("active btn-success btn-warning btn-danger text-white");
+      
+      if (selectedValue === "present") {
+        $(this).addClass("active btn-success text-white");
+      } else if (selectedValue === "leave") {
+        $(this).addClass("active btn-warning text-dark");
+      } else {
+        $(this).addClass("active btn-danger text-white");
+      }
     });
+  });
 </script>
 
 <!-- JavaScript for Dynamic Date -->
 <script>
-    document.getElementById("current-date").innerText = new Date().toLocaleDateString('en-GB', { 
-        day: '2-digit', month: 'long', year: 'numeric' 
-    });
+  document.getElementById("current-date").innerText = new Date().toLocaleDateString('en-GB', { 
+    day: '2-digit', month: 'long', year: 'numeric' 
+  });
 </script>
 
 {% endblock content %}
 
-
 {% block morejs %}
 <script>
-  $('#studenttable').DataTable({
-  });
+  $('#studenttable').DataTable({});
 </script>
-
 {% endblock morejs %}

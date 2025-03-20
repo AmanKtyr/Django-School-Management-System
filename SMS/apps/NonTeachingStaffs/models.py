@@ -31,7 +31,7 @@ class NonTeachingStaff(models.Model):
     others = models.TextField(blank=True)
 
     def __str__(self):
-        return f"{self.surname} {self.firstname} "
+        return f"{self.fullname} "
 
     def get_absolute_url(self):
         return reverse("non-teaching-staffs-detail", kwargs={"pk": self.pk})
