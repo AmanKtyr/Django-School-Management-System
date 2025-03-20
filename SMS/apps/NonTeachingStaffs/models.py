@@ -10,9 +10,9 @@ class NonTeachingStaff(models.Model):
     GENDER = [("male", "Male"), ("female", "Female")]
 
     current_status = models.CharField(max_length=10, choices=STATUS, default="active")
-    firstname = models.CharField(max_length=200)
-    surname = models.CharField(max_length=200)
-    other_name = models.CharField(max_length=200, blank=True)
+    fullname = models.CharField(max_length=200)
+
+    
     gender = models.CharField(max_length=10, choices=GENDER, default="male")
     
     job_role = models.CharField(max_length=100, default='N/A')  

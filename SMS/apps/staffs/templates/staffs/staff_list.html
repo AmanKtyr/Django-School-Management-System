@@ -41,7 +41,7 @@
       {% for staff in object_list %}
         <tr class='clickable-row' data-href="{% url 'staff-detail' staff.id %}">
           <td>{{ forloop.counter}}</td>
-          <td>{{ staff.surname}} {{staff.firstname }}</td>
+          <td>{{ staff.fullname}} </td>
           <td>{{ staff.registration_number}}</td>
           <td>{{ staff.get_gender_display}}</td>
           <td>{{ staff.Subject_specification}}</td>

@@ -52,3 +52,12 @@ form devided in Student  Info, family info, documentation
   - Assign Students  
 - **Settings**  
 
+
+for  attendance page 
+main ye chahata hu ki jab students ki attendance save karu to vo top  par
+ dashboad me show hone lage aur ye database me save ho jaye , 
+ agar same day me main fir se uss class ki list open karu  to vo same ho 
+
+
+
+

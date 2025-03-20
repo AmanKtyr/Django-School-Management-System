@@ -10,8 +10,7 @@ class Staff(models.Model):
 
     current_status = models.CharField(max_length=10, choices=STATUS, default="active")
     registration_number = models.CharField(max_length=200, unique=True)
-    firstname = models.CharField(max_length=200)
-    surname = models.CharField(max_length=200)
+    fullname = models.CharField(max_length=200)
     gender = models.CharField(max_length=10, choices=GENDER, default="male")
     date_of_birth = models.DateField(default=timezone.now)
     date_of_registration = models.DateField(default=timezone.now)
