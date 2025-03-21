@@ -2,22 +2,22 @@
 {% load widget_tweaks %}
 
 {% block content %}
-<div class="container">
+<div class="container mt-5">
   <h2 class="mb-4 text-center">{{ title }}</h2>
   <form method="POST" enctype="multipart/form-data" class="p-4 border rounded bg-light shadow" id="siteConfigForm">
     {% csrf_token %}
     {{ form.non_field_errors }}
-    {% for field in form %}
-      <div class="form-group row align-items-center mb-3">
-        <label class="col-3 col-form-label text-right font-weight-bold">{{ field.label }}</label>
-        <div class="col-7">
-          {{ field }}
-          {{ field.errors }}
+    <div class="row">
+      {% for field in form %}
+        <div class="col-md-6 mb-3">
+          <label class="form-label font-weight-bold">{{ field.label }}</label>
+          {{ field|add_class:"form-control" }}
+          <div class="text-danger small">{{ field.errors }}</div>
         </div>
-      </div>
-    {% endfor %}
-    <div class="text-center">
-      <input type="submit" value="Save" class="btn btn-primary px-5">
+      {% endfor %}
+    </div>
+    <div class="text-center mt-4">
+      <button type="submit" class="btn btn-primary px-5">Save</button>
     </div>
   </form>
 </div>
