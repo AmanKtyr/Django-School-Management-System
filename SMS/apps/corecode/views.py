@@ -2,10 +2,11 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
-from django.shortcuts import HttpResponseRedirect, redirect, render
+from django.shortcuts import HttpResponseRedirect, redirect, render, get_object_or_404
 from django.urls import reverse_lazy
 from django.views.generic import ListView, TemplateView, View
 from django.views.generic.edit import CreateView, DeleteView, UpdateView
+
 
 from .forms import (
     AcademicSessionForm,
@@ -14,7 +15,8 @@ from .forms import (
     SiteConfigForm,
     StudentClassForm,
     SubjectForm,
-    SiteConfigFormSet  # Ensure this import is correct
+    SiteConfigFormSet,  
+    CollegeProfileForm
 )
 from .models import (
     AcademicSession,
@@ -22,26 +24,26 @@ from .models import (
     SiteConfig,
     StudentClass,
     Subject,
+    CollegeProfile
 )
 
 
 class IndexView(LoginRequiredMixin, TemplateView):
     template_name = "index.html"
 
+    
+
 
 def site_config_view(request):
+    profile = CollegeProfile.objects.first()
     if request.method == 'POST':
-        formset = SiteConfigFormSet(request.POST, queryset=SiteConfig.objects.all())
-        if formset.is_valid():
-            formset.save()
-            return redirect('site_config')
+        form = CollegeProfileForm(request.POST, request.FILES, instance=profile)
+        if form.is_valid():
+            form.save()
+            return redirect('college_profile')  # Ensure this matches the URL name in urls.py
     else:
-        formset = SiteConfigFormSet(queryset=SiteConfig.objects.all())
-    
-    return render(request, 'corecode/siteconfig.html', {
-        'title': 'Site Configuration',
-        'formset': formset,
-    })
+        form = CollegeProfileForm(instance=profile)
+    return render(request, 'corecode/siteconfig.html', {'form': form, 'title': 'Site Configuration'})
 
 
 class SessionListView(LoginRequiredMixin, SuccessMessageMixin, ListView):
@@ -259,3 +261,28 @@ class CurrentSessionAndTermView(LoginRequiredMixin, View):
             AcademicTerm.objects.filter(name=term).update(current=True)
 
         return render(request, self.template_name, {"form": form})
+
+
+def college_profile_view(request):
+    profile = get_object_or_404(CollegeProfile)
+    return render(request, 'corecode/college_profile.html', {'profile': profile})
+
+
+def site_config(request):
+    try:
+        profile = CollegeProfile.objects.first()
+    except CollegeProfile.DoesNotExist:
+        profile = None
+
+    if request.method == 'POST':
+        form = CollegeProfileForm(request.POST, request.FILES, instance=profile)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "College profile updated successfully.")
+            return redirect('college-profile')  
+        else:
+            messages.error(request, "Please correct the errors below.")
+    else:
+        form = CollegeProfileForm(instance=profile)
+
+    return render(request, 'corecode/siteconfig.html', {'form': form, 'title': 'Site Configuration'})

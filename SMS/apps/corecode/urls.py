@@ -20,6 +20,7 @@ from .views import (
     TermDeleteView,
     TermListView,
     TermUpdateView,
+    college_profile_view,
 )
 
 urlpatterns = [
@@ -60,4 +61,8 @@ urlpatterns = [
         SubjectDeleteView.as_view(),
         name="subject-delete",
     ),
+    path('siteconfig/', site_config_view, name='siteconfig'),
+    path("college-profile/", college_profile_view, name="college-profile"),
+    path('site-config/', site_config_view, name='site_config'),
+    path('college-profile/', college_profile_view, name='college_profile'),  # Ensure this matches the redirect name
 ]

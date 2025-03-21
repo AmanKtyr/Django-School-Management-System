@@ -7,6 +7,7 @@ from .models import (
     SiteConfig,
     StudentClass,
     Subject,
+    CollegeProfile,
 )
 
 class SiteConfigForm(forms.ModelForm):
@@ -67,3 +68,15 @@ class CurrentSessionForm(forms.Form):
         queryset=AcademicTerm.objects.all(),
         help_text='Click <a href="/term/create/?next=current-session/">here</a> to add new term',
     )
+
+class CollegeProfileForm(forms.ModelForm):
+    class Meta:
+        model = CollegeProfile
+        fields = [
+            'college_name', 'college_address', 'college_email', 'college_phone',
+            'college_logo', 'established_year', 'principal_name', 'college_type',
+            'admin_email', 'admin_contact', 'facebook_link', 'twitter_link', 'linkedin_link'
+        ]
+        widgets = {
+            'college_address': forms.Textarea(attrs={'rows': 3}),
+        }

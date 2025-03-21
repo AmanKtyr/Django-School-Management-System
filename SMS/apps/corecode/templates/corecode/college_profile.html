@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container my-5 py-3" style="margin-top: 0 !important; padding-top: 0 !important;">
+  <h2 class="mb-4 text-center text-uppercase fw-bold">College Profile</h2>
+  {% if profile %}
+  <div class="card shadow-lg border-0">
+    <div class="card-header bg-primary text-white text-center">
+      <h4 class="mb-0">College Information</h4>
+    </div>
+    <div class="card-body">
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <p><strong>Name:</strong> {{ profile.college_name }}</p>
+          <p><strong>Address:</strong> {{ profile.college_address }}</p>
+          <p><strong>Email:</strong> {{ profile.college_email }}</p>
+          <p><strong>Phone:</strong> {{ profile.college_phone }}</p>
+        </div>
+        <div class="col-md-6">
+          <p><strong>Established Year:</strong> {{ profile.established_year }}</p>
+          <p><strong>Principal:</strong> {{ profile.principal_name }}</p>
+          <p><strong>Type:</strong> {{ profile.college_type }}</p>
+        </div>
+      </div>
+      <hr>
+      <h5 class="text-primary">Administrative Details</h5>
+      <p><strong>Admin Email:</strong> {{ profile.admin_email }}</p>
+      <p><strong>Admin Contact:</strong> {{ profile.admin_contact }}</p>
+      <hr>
+      <h5 class="text-primary">Social Media Links</h5>
+      <div class="d-flex flex-wrap gap-3">
+        <a href="{{ profile.facebook_link }}" class="btn btn-outline-primary btn-sm" target="_blank">
+          <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <a href="{{ profile.twitter_link }}" class="btn btn-outline-info btn-sm" target="_blank">
+          <i class="fab fa-twitter"></i> Twitter
+        </a>
+        <a href="{{ profile.linkedin_link }}" class="btn btn-outline-secondary btn-sm" target="_blank">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+  {% else %}
+  <div class="alert alert-warning text-center mt-4">
+    No profile found. <a href="{% url 'site_config' %}" class="alert-link">Click here</a> to create one.
+  </div>
+  {% endif %}
+</div>
+{% endblock content %}

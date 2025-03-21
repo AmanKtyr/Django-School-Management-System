@@ -9,6 +9,23 @@ class SiteConfig(models.Model):
     key = models.SlugField(unique=True)  # Ensure unique keys
     value = models.CharField(max_length=200)
 
+    # New fields for site configuration
+    college_name = models.CharField(max_length=200, blank=True, null=True)
+    college_address = models.TextField(blank=True, null=True)
+    college_email = models.EmailField(blank=True, null=True)
+    college_phone = models.CharField(max_length=15, blank=True, null=True)
+    college_logo = models.ImageField(upload_to='logos/', blank=True, null=True)
+    established_year = models.PositiveIntegerField(blank=True, null=True)
+    principal_name = models.CharField(max_length=200, blank=True, null=True)
+    COLLEGE_TYPE_CHOICES = [
+        ('Government', 'Government'),
+        ('Private', 'Private'),
+        ('Semi-Government', 'Semi-Government'),
+    ]
+    college_type = models.CharField(
+        max_length=20, choices=COLLEGE_TYPE_CHOICES, blank=True, null=True
+    )
+
     def __str__(self):
         return self.key
 
@@ -61,3 +78,26 @@ class StudentClass(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class CollegeProfile(models.Model):
+    college_name = models.CharField(max_length=255)
+    college_address = models.TextField()
+    college_email = models.EmailField()
+    college_phone = models.CharField(max_length=15)
+    college_logo = models.ImageField(upload_to='college_logos/', blank=True, null=True)
+    established_year = models.PositiveIntegerField()
+    principal_name = models.CharField(max_length=255)
+    college_type = models.CharField(max_length=50, choices=[
+        ('Government', 'Government'),
+        ('Private', 'Private'),
+        ('Semi-Government', 'Semi-Government'),
+    ])
+    admin_email = models.EmailField()
+    admin_contact = models.CharField(max_length=15)
+    facebook_link = models.URLField(blank=True, null=True)
+    twitter_link = models.URLField(blank=True, null=True)
+    linkedin_link = models.URLField(blank=True, null=True)
+
+    def __str__(self):
+        return self.college_name
