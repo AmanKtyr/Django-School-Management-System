@@ -32,6 +32,7 @@
           <th>Fullname</th>
           <th>Registration Number</th>
           <th>Current Class</th>
+          <th>Section</th>
           <th>Gender</th>
           <th>Mobile Number</th>
           {% comment %} <th>Father Phone Number</th> {% endcomment %}
@@ -48,6 +49,7 @@
             <td>{{student.fullname }}  </td>
             <td>{{ student.registration_number}}</td>
             <td>{{ student.current_class}}</td>
+            <td>{{ student.section}}</td>
             <td>{{ student.get_gender_display}}</td>
             <td>{{ student.mobile_number}}</td>
             {% comment %} <td>{{ student.Father_mobile_number}}</td> {% endcomment %}

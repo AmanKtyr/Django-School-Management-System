@@ -43841,3 +43841,1362 @@ INFO 2025-03-24 11:54:45,585 "GET /attendance/attendance_list/ HTTP/1.1" 200 245
 INFO 2025-03-24 11:54:48,658 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 25331
 INFO 2025-03-24 11:55:03,628 "GET /attendance/attendance_list/ HTTP/1.1" 200 24500
 INFO 2025-03-24 11:55:06,635 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 25331
+INFO 2025-03-24 11:56:49,954 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 25331
+INFO 2025-03-24 11:56:50,981 "GET / HTTP/1.1" 200 26927
+INFO 2025-03-24 11:56:54,482 "GET /site-config HTTP/1.1" 200 24565
+INFO 2025-03-24 11:57:01,500 "POST /site-config HTTP/1.1" 302 0
+INFO 2025-03-24 11:57:01,532 "GET /college-profile/ HTTP/1.1" 200 21391
+INFO 2025-03-24 11:57:01,598 "GET /media/college_logos/college_lgoooo_qltkv9U.jpg HTTP/1.1" 304 0
+INFO 2025-03-24 11:57:04,248 "GET / HTTP/1.1" 200 26975
+INFO 2025-03-24 11:57:18,687 "GET /site-config HTTP/1.1" 200 24637
+INFO 2025-03-24 11:57:28,799 "POST /site-config HTTP/1.1" 302 0
+INFO 2025-03-24 11:57:28,836 "GET /college-profile/ HTTP/1.1" 200 21319
+INFO 2025-03-24 11:57:36,061 "GET /site-config HTTP/1.1" 200 24565
+INFO 2025-03-24 11:57:51,045 "POST /site-config HTTP/1.1" 302 0
+INFO 2025-03-24 11:57:51,069 "GET /college-profile/ HTTP/1.1" 200 21343
+INFO 2025-03-24 11:58:07,366 "GET /site-config HTTP/1.1" 200 24589
+INFO 2025-03-24 11:58:23,888 "POST /site-config HTTP/1.1" 302 0
+INFO 2025-03-24 11:58:23,911 "GET /college-profile/ HTTP/1.1" 200 21324
+INFO 2025-03-24 11:58:32,258 "GET /accounts/login/ HTTP/1.1" 200 5715
+INFO 2025-03-24 11:58:32,317 "GET /static/dist/img/bg.jpg HTTP/1.1" 304 0
+INFO 2025-03-24 11:58:37,525 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-03-24 11:58:37,551 "GET / HTTP/1.1" 200 26927
+INFO 2025-03-24 11:58:39,635 "GET /attendance/attendance_list/ HTTP/1.1" 200 24500
+INFO 2025-03-24 12:11:36,259 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-03-24 12:11:37,723 Watching for file changes with StatReloader
+INFO 2025-03-24 12:12:08,545 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-03-24 12:12:09,566 Watching for file changes with StatReloader
+INFO 2025-03-24 12:14:22,459 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-03-24 12:14:23,309 Watching for file changes with StatReloader
+INFO 2025-03-24 12:14:25,839 "GET /attendance/attendance_list/ HTTP/1.1" 200 24069
+INFO 2025-03-24 12:14:28,043 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 24825
+ERROR 2025-03-24 12:14:31,596 Internal Server Error: /attendance/submit_attendance/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\attendance\views.py", line 53, in submit_attendance
+    Attendance.objects.create(student=student, status=status, date=now())
+                                                                   ^^^
+NameError: name 'now' is not defined. Did you mean: 'pow'?
+ERROR 2025-03-24 12:14:31,597 "POST /attendance/submit_attendance/ HTTP/1.1" 500 75615
+INFO 2025-03-24 12:14:37,494 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-03-24 12:14:38,631 Watching for file changes with StatReloader
+INFO 2025-03-24 12:14:39,077 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 24825
+INFO 2025-03-24 12:14:42,908 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 24825
+INFO 2025-03-24 12:14:52,593 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 25331
+INFO 2025-03-24 12:17:44,009 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 25331
+INFO 2025-03-24 12:17:51,815 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 25331
+ERROR 2025-03-24 12:18:23,169 Internal Server Error: /attendance/attendance_list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\attendance\views.py", line 26, in attendance_list
+    return render(request, 'attendance/attendance_list.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'save_attendance' not found. 'save_attendance' is not a valid view function or pattern name.
+ERROR 2025-03-24 12:18:23,173 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 500 182581
+INFO 2025-03-24 12:18:31,650 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 25632
+INFO 2025-03-24 12:18:43,621 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 25331
+ERROR 2025-03-24 12:25:37,640 Internal Server Error: /attendance/attendance_list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\attendance\views.py", line 26, in attendance_list
+    return render(request, 'attendance/attendance_list.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'submit_attendance' not found. 'submit_attendance' is not a valid view function or pattern name.
+ERROR 2025-03-24 12:25:37,640 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 500 181636
+INFO 2025-03-24 12:27:04,112 D:\Sipher Web\Django School Management System\SMS\apps\attendance\models.py changed, reloading.
+INFO 2025-03-24 12:27:05,137 Watching for file changes with StatReloader
+INFO 2025-03-24 12:27:36,123 D:\Sipher Web\Django School Management System\SMS\apps\attendance\urls.py changed, reloading.
+INFO 2025-03-24 12:27:37,219 Watching for file changes with StatReloader
+INFO 2025-03-24 12:27:56,351 D:\Sipher Web\Django School Management System\SMS\apps\attendance\urls.py changed, reloading.
+INFO 2025-03-24 12:27:57,243 Watching for file changes with StatReloader
+INFO 2025-03-24 12:28:08,581 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-03-24 12:28:09,619 Watching for file changes with StatReloader
+INFO 2025-03-24 12:28:19,180 Watching for file changes with StatReloader
+INFO 2025-03-24 12:28:34,044 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-03-24 12:28:35,402 Watching for file changes with StatReloader
+INFO 2025-03-24 12:28:49,215 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-03-24 12:28:50,111 Watching for file changes with StatReloader
+ERROR 2025-03-24 12:28:52,496 Internal Server Error: /attendance/attendance_list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\attendance\views.py", line 28, in attendance_list
+    return render(request, 'attendance/attendance_list.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'submit_attendance' not found. 'submit_attendance' is not a valid view function or pattern name.
+ERROR 2025-03-24 12:28:52,501 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 500 181636
+ERROR 2025-03-24 12:29:38,902 Internal Server Error: /attendance/attendance_list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\attendance\views.py", line 28, in attendance_list
+    return render(request, 'attendance/attendance_list.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'submit_attendance' not found. 'submit_attendance' is not a valid view function or pattern name.
+ERROR 2025-03-24 12:29:38,904 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 500 182408
+ERROR 2025-03-24 12:29:39,713 Internal Server Error: /attendance/attendance_list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\attendance\views.py", line 28, in attendance_list
+    return render(request, 'attendance/attendance_list.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'submit_attendance' not found. 'submit_attendance' is not a valid view function or pattern name.
+ERROR 2025-03-24 12:29:39,718 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 500 182408
+ERROR 2025-03-24 12:29:39,898 Internal Server Error: /attendance/attendance_list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\attendance\views.py", line 28, in attendance_list
+    return render(request, 'attendance/attendance_list.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'submit_attendance' not found. 'submit_attendance' is not a valid view function or pattern name.
+ERROR 2025-03-24 12:29:39,911 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 500 182408
+ERROR 2025-03-24 12:29:40,106 Internal Server Error: /attendance/attendance_list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\attendance\views.py", line 28, in attendance_list
+    return render(request, 'attendance/attendance_list.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'submit_attendance' not found. 'submit_attendance' is not a valid view function or pattern name.
+ERROR 2025-03-24 12:29:40,108 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 500 182408
+ERROR 2025-03-24 12:29:40,290 Internal Server Error: /attendance/attendance_list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\attendance\views.py", line 28, in attendance_list
+    return render(request, 'attendance/attendance_list.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'submit_attendance' not found. 'submit_attendance' is not a valid view function or pattern name.
+ERROR 2025-03-24 12:29:40,292 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 500 182408
+ERROR 2025-03-24 12:29:42,110 Internal Server Error: /attendance/attendance_list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\attendance\views.py", line 28, in attendance_list
+    return render(request, 'attendance/attendance_list.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'submit_attendance' not found. 'submit_attendance' is not a valid view function or pattern name.
+ERROR 2025-03-24 12:29:42,113 "GET /attendance/attendance_list/ HTTP/1.1" 500 180913
+ERROR 2025-03-24 12:30:26,396 Internal Server Error: /attendance/attendance_list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\attendance\views.py", line 28, in attendance_list
+    return render(request, 'attendance/attendance_list.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'submit_attendance' not found. 'submit_attendance' is not a valid view function or pattern name.
+ERROR 2025-03-24 12:30:26,398 "GET /attendance/attendance_list/ HTTP/1.1" 500 181685
+ERROR 2025-03-24 12:30:27,405 Internal Server Error: /attendance/attendance_list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\attendance\views.py", line 28, in attendance_list
+    return render(request, 'attendance/attendance_list.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'submit_attendance' not found. 'submit_attendance' is not a valid view function or pattern name.
+ERROR 2025-03-24 12:30:27,405 "GET /attendance/attendance_list/ HTTP/1.1" 500 181685
+INFO 2025-03-24 12:30:33,822 D:\Sipher Web\Django School Management System\SMS\apps\attendance\models.py changed, reloading.
+INFO 2025-03-24 12:30:35,055 Watching for file changes with StatReloader
+INFO 2025-03-24 12:30:37,852 D:\Sipher Web\Django School Management System\SMS\apps\attendance\urls.py changed, reloading.
+INFO 2025-03-24 12:30:39,084 Watching for file changes with StatReloader
+INFO 2025-03-24 12:30:40,962 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-03-24 12:30:42,004 Watching for file changes with StatReloader
+INFO 2025-03-24 12:30:42,607 "GET /attendance/attendance_list/ HTTP/1.1" 200 24500
+INFO 2025-03-24 12:32:11,620 D:\Sipher Web\Django School Management System\SMS\apps\attendance\urls.py changed, reloading.
+INFO 2025-03-24 12:32:12,569 Watching for file changes with StatReloader
+INFO 2025-03-24 12:32:14,441 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-03-24 12:32:15,273 Watching for file changes with StatReloader
+ERROR 2025-03-24 12:32:17,895 Internal Server Error: /attendance/attendance_list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\attendance\views.py", line 27, in attendance_list
+    return render(request, 'attendance/attendance_list.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'submit_attendance' not found. 'submit_attendance' is not a valid view function or pattern name.
+ERROR 2025-03-24 12:32:17,904 "GET /attendance/attendance_list/ HTTP/1.1" 500 180304
+INFO 2025-03-24 12:33:13,255 D:\Sipher Web\Django School Management System\SMS\apps\attendance\urls.py changed, reloading.
+INFO 2025-03-24 12:33:14,121 Watching for file changes with StatReloader
+INFO 2025-03-24 12:33:16,715 D:\Sipher Web\Django School Management System\SMS\apps\attendance\urls.py changed, reloading.
+INFO 2025-03-24 12:33:17,597 Watching for file changes with StatReloader
+INFO 2025-03-24 12:33:19,996 "GET /attendance/attendance_list/ HTTP/1.1" 200 24796
+INFO 2025-03-24 12:33:22,832 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 25757
+ERROR 2025-03-24 12:33:25,527 Internal Server Error: /attendance/submit_attendance/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\attendance\views.py", line 52, in submit_attendance
+    Attendance.objects.create(student=student, status=value, date=now().date())
+                                                                  ^^^
+NameError: name 'now' is not defined. Did you mean: 'pow'?
+ERROR 2025-03-24 12:33:25,531 "POST /attendance/submit_attendance/ HTTP/1.1" 500 75237
+INFO 2025-03-24 12:33:48,316 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-03-24 12:33:49,853 Watching for file changes with StatReloader
+INFO 2025-03-24 12:33:51,015 "POST /attendance/submit_attendance/ HTTP/1.1" 200 45
+INFO 2025-03-24 12:33:57,742 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 25757
+ERROR 2025-03-24 12:34:00,519 Internal Server Error: /attendance/submit_attendance/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: attendance_attendance.student_id, attendance_attendance.date
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\attendance\views.py", line 53, in submit_attendance
+    Attendance.objects.create(student=student, status=value, date=now().date())
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\base.py", line 1006, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\base.py", line 1047, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1790, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: attendance_attendance.student_id, attendance_attendance.date
+ERROR 2025-03-24 12:34:00,524 "POST /attendance/submit_attendance/ HTTP/1.1" 500 161660
+INFO 2025-03-24 12:34:27,914 D:\Sipher Web\Django School Management System\SMS\apps\attendance\models.py changed, reloading.
+INFO 2025-03-24 12:34:28,958 Watching for file changes with StatReloader
+INFO 2025-03-24 12:34:34,046 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-03-24 12:34:35,008 Watching for file changes with StatReloader
+INFO 2025-03-24 12:35:57,794 Watching for file changes with StatReloader
+INFO 2025-03-24 12:36:07,281 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 25757
+INFO 2025-03-24 12:36:10,040 "POST /attendance/submit_attendance/ HTTP/1.1" 200 45
+INFO 2025-03-24 12:36:17,644 "GET /attendance/attendance_list/?class_id=3 HTTP/1.1" 200 25758
+INFO 2025-03-24 12:36:20,125 "GET /attendance/attendance_list/?class_id=1 HTTP/1.1" 200 24804
+INFO 2025-03-24 12:36:22,674 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 25757
+INFO 2025-03-24 12:36:30,785 "POST /attendance/submit_attendance/ HTTP/1.1" 200 45
+INFO 2025-03-24 12:37:39,856 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-03-24 12:37:41,040 Watching for file changes with StatReloader
+INFO 2025-03-24 12:37:43,218 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 27324
+INFO 2025-03-24 12:37:45,318 "POST /attendance/submit_attendance/ HTTP/1.1" 200 60
+INFO 2025-03-24 12:38:08,328 D:\Sipher Web\Django School Management System\SMS\apps\attendance\models.py changed, reloading.
+INFO 2025-03-24 12:38:09,518 Watching for file changes with StatReloader
+INFO 2025-03-24 12:38:11,107 D:\Sipher Web\Django School Management System\SMS\apps\attendance\urls.py changed, reloading.
+INFO 2025-03-24 12:38:12,366 Watching for file changes with StatReloader
+INFO 2025-03-24 12:38:14,082 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-03-24 12:38:15,009 Watching for file changes with StatReloader
+INFO 2025-03-24 12:38:31,172 Watching for file changes with StatReloader
+INFO 2025-03-24 12:38:34,627 "GET /attendance/attendance_list/?class_id=4 HTTP/1.1" 200 25331
+INFO 2025-03-24 12:49:05,446 "GET /student/list HTTP/1.1" 200 21498
+INFO 2025-03-24 12:49:07,695 "GET /student/create/ HTTP/1.1" 200 25624
+INFO 2025-03-24 12:49:12,695 "GET /student/list HTTP/1.1" 200 21498
+INFO 2025-03-24 12:49:33,027 "GET /student/1/ HTTP/1.1" 200 23871
+INFO 2025-03-24 12:49:33,326 "GET /static/dist/img/avatar.png HTTP/1.1" 200 2044603
+INFO 2025-03-24 12:49:35,816 "GET /finance/1/detail/ HTTP/1.1" 200 21334
+INFO 2025-03-24 12:49:42,927 "GET /finance/1/detail/ HTTP/1.1" 200 21334
+INFO 2025-03-24 12:50:33,783 "GET /student/1/ HTTP/1.1" 200 23881
+INFO 2025-03-24 12:51:47,506 D:\Sipher Web\Django School Management System\SMS\apps\students\models.py changed, reloading.
+INFO 2025-03-24 12:51:48,492 Watching for file changes with StatReloader
+INFO 2025-03-24 12:53:48,009 Watching for file changes with StatReloader
+INFO 2025-03-24 12:53:50,612 "GET /student/1/ HTTP/1.1" 200 23883
+INFO 2025-03-24 12:53:54,594 "GET /student/create/ HTTP/1.1" 200 25878
+INFO 2025-03-24 12:54:09,840 "GET /class/list/ HTTP/1.1" 200 22353
+INFO 2025-03-24 12:54:11,641 "GET /class/3/update/ HTTP/1.1" 200 20212
+INFO 2025-03-24 12:54:15,827 "POST /class/3/update/ HTTP/1.1" 302 0
+INFO 2025-03-24 12:54:15,858 "GET /class/list/ HTTP/1.1" 200 22491
+INFO 2025-03-24 12:54:17,833 "GET /class/4/update/ HTTP/1.1" 200 20212
+INFO 2025-03-24 12:54:21,023 "GET /class/4/delete/ HTTP/1.1" 200 20370
+INFO 2025-03-24 12:54:22,280 "POST /class/4/delete/ HTTP/1.1" 302 0
+INFO 2025-03-24 12:54:22,324 "GET /class/list/ HTTP/1.1" 200 22069
+INFO 2025-03-24 12:54:25,195 "GET /class/1/update/ HTTP/1.1" 200 20209
+INFO 2025-03-24 12:54:28,112 "POST /class/1/update/ HTTP/1.1" 302 0
+INFO 2025-03-24 12:54:28,140 "GET /class/list/ HTTP/1.1" 200 22209
+INFO 2025-03-24 12:54:29,778 "GET /class/2/update/ HTTP/1.1" 200 20209
+INFO 2025-03-24 12:54:33,292 "POST /class/2/update/ HTTP/1.1" 302 0
+INFO 2025-03-24 12:54:33,325 "GET /class/list/ HTTP/1.1" 200 22207
+INFO 2025-03-24 12:54:38,956 "POST /class/create/ HTTP/1.1" 302 0
+INFO 2025-03-24 12:54:38,982 "GET /class/list/ HTTP/1.1" 200 22484
+INFO 2025-03-24 12:54:45,408 "GET /student/list HTTP/1.1" 200 21557
+INFO 2025-03-24 12:54:47,972 "GET /student/1/ HTTP/1.1" 200 23875
+INFO 2025-03-24 12:54:51,925 "GET /student/1/update/ HTTP/1.1" 200 25949
+INFO 2025-03-24 12:55:00,812 "POST /student/1/update/ HTTP/1.1" 302 0
+INFO 2025-03-24 12:55:00,843 "GET /student/1/ HTTP/1.1" 200 24015
+INFO 2025-03-24 12:55:21,165 "GET /attendance/attendance_list/ HTTP/1.1" 200 24488
+INFO 2025-03-24 12:55:26,076 "GET /attendance/attendance_list/?class_id=5 HTTP/1.1" 200 24496
+INFO 2025-03-24 12:55:28,634 "GET /attendance/attendance_list/?class_id=3 HTTP/1.1" 200 26127
+INFO 2025-03-24 12:56:05,095 "GET /attendance/attendance_list/?class_id=3 HTTP/1.1" 200 26129
+INFO 2025-03-24 12:56:21,179 "GET /student/list HTTP/1.1" 200 21554
+INFO 2025-03-24 12:56:25,505 "GET /student/2/ HTTP/1.1" 200 23218
+INFO 2025-03-24 12:56:28,861 "GET /student/2/update/ HTTP/1.1" 200 25942
+INFO 2025-03-24 12:56:34,551 "POST /student/2/update/ HTTP/1.1" 302 0
+INFO 2025-03-24 12:56:34,582 "GET /student/2/ HTTP/1.1" 200 23362
+INFO 2025-03-24 12:56:36,926 "GET /student/list HTTP/1.1" 200 21555
+INFO 2025-03-24 12:56:40,414 "GET /attendance/attendance_list/ HTTP/1.1" 200 24488
+INFO 2025-03-24 12:56:43,191 "GET /attendance/attendance_list/?class_id=5 HTTP/1.1" 200 24496
+INFO 2025-03-24 12:56:45,187 "GET /attendance/attendance_list/?class_id= HTTP/1.1" 200 24488
+INFO 2025-03-24 12:56:47,780 "GET /attendance/attendance_list/?class_id=3 HTTP/1.1" 200 26129
+INFO 2025-03-24 12:57:53,280 "GET /attendance/attendance_list/?class_id=3 HTTP/1.1" 200 26133
+INFO 2025-03-24 12:58:13,656 "GET /attendance/attendance_list/?class_id=3 HTTP/1.1" 200 26135
+INFO 2025-03-24 12:58:55,337 "GET /result/view/all HTTP/1.1" 200 19221
+INFO 2025-03-24 12:58:59,562 "GET /result/create/ HTTP/1.1" 200 21102
+INFO 2025-03-24 12:59:02,327 "POST /result/create/ HTTP/1.1" 200 21216
+INFO 2025-03-24 12:59:06,108 "POST /result/create/ HTTP/1.1" 302 0
+INFO 2025-03-24 12:59:06,170 "GET /result/edit-results/ HTTP/1.1" 200 21759
+INFO 2025-03-24 12:59:13,636 "GET /subject/list/ HTTP/1.1" 200 21780
+INFO 2025-03-24 12:59:26,095 "GET /attendance/attendance_list/ HTTP/1.1" 200 24488
+INFO 2025-03-24 12:59:35,236 "GET /attendance/attendance_list/ HTTP/1.1" 200 24488
+INFO 2025-03-24 12:59:52,259 "GET /attendance/attendance_list/ HTTP/1.1" 200 24488
+INFO 2025-03-24 12:59:52,644 "GET /attendance/attendance_list/ HTTP/1.1" 200 24488
+INFO 2025-03-24 12:59:53,034 "GET /attendance/attendance_list/ HTTP/1.1" 200 24488
+INFO 2025-03-24 12:59:58,056 "GET /attendance/attendance_list/?class_id=5 HTTP/1.1" 200 24496
+INFO 2025-03-24 13:00:00,362 "GET /attendance/attendance_list/?class_id=3 HTTP/1.1" 200 26135
+INFO 2025-03-24 13:00:13,567 Watching for file changes with StatReloader
+INFO 2025-03-24 13:00:18,680 "GET /attendance/attendance_list/?class_id=5 HTTP/1.1" 200 24496
+INFO 2025-03-24 14:49:02,943 Watching for file changes with StatReloader
+INFO 2025-03-24 14:49:09,233 "GET / HTTP/1.1" 302 0
+INFO 2025-03-24 14:49:09,339 "GET /accounts/login/?next=/ HTTP/1.1" 200 5716
+INFO 2025-03-24 14:49:09,545 "GET /media/college_logos/college_lgoooo_qltkv9U.jpg HTTP/1.1" 304 0
+INFO 2025-03-24 14:49:09,609 "GET /static/dist/img/bg.jpg HTTP/1.1" 304 0
+WARNING 2025-03-24 14:49:10,453 Not Found: /favicon.ico
+WARNING 2025-03-24 14:49:10,467 "GET /favicon.ico HTTP/1.1" 404 7163
+INFO 2025-03-24 14:49:18,644 "GET /accounts/login/?next=/ HTTP/1.1" 200 5716
+INFO 2025-03-24 15:42:51,449 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-03-24 15:42:51,487 "GET / HTTP/1.1" 200 26927
+INFO 2025-03-24 15:42:53,992 "GET /accounts/login/?next=/ HTTP/1.1" 200 5845
+INFO 2025-03-24 15:43:23,927 "GET /accounts/login/?next=/ HTTP/1.1" 200 5852
+INFO 2025-03-24 15:43:24,002 "GET /media/college_logos/college_lgoooo_qltkv9U.jpg HTTP/1.1" 304 0
+INFO 2025-03-24 15:43:24,012 "GET /static/dist/img/bg.jpg HTTP/1.1" 304 0
+INFO 2025-03-24 15:43:32,754 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-03-24 15:43:32,784 "GET / HTTP/1.1" 200 26927
+INFO 2025-03-24 15:43:32,999 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+INFO 2025-03-24 15:43:34,722 "GET /accounts/login/?next=/ HTTP/1.1" 200 5852
+INFO 2025-03-24 15:44:39,162 "GET /accounts/login/?next=/ HTTP/1.1" 200 5852
+INFO 2025-03-24 15:44:41,138 "GET /accounts/login/?next=/ HTTP/1.1" 200 5852
+INFO 2025-03-24 15:44:45,536 "GET /accounts/login/?next=/ HTTP/1.1" 200 5852
+INFO 2025-03-24 15:48:12,516 "GET /accounts/login/?next=/ HTTP/1.1" 200 6301
+INFO 2025-03-24 15:48:15,322 "GET /accounts/login/?next=/ HTTP/1.1" 200 6301
+INFO 2025-03-24 15:48:17,577 "GET /accounts/login/?next=/ HTTP/1.1" 200 6301
+INFO 2025-03-24 15:48:19,913 "GET /accounts/login/?next=/ HTTP/1.1" 200 6301
+INFO 2025-03-24 15:48:22,074 "GET /accounts/login/?next=/ HTTP/1.1" 200 6301
+INFO 2025-03-24 15:48:25,339 "GET /accounts/login/?next=/ HTTP/1.1" 200 6301
+INFO 2025-03-24 15:48:27,347 "GET /accounts/login/?next=/ HTTP/1.1" 200 6301
+INFO 2025-03-24 15:48:29,428 "GET /accounts/login/?next=/ HTTP/1.1" 200 6301
+INFO 2025-03-24 15:48:31,287 "GET /accounts/login/?next=/ HTTP/1.1" 200 6301
+INFO 2025-03-24 15:48:33,277 "GET /accounts/login/?next=/ HTTP/1.1" 200 6301
+INFO 2025-03-24 15:51:23,878 "GET /accounts/login/?next=/ HTTP/1.1" 200 7393
+INFO 2025-03-24 15:51:26,549 "GET /accounts/login/?next=/ HTTP/1.1" 200 7393
+INFO 2025-03-24 15:51:28,773 "GET /accounts/login/?next=/ HTTP/1.1" 200 7393
+INFO 2025-03-24 15:51:43,003 "GET /accounts/login/?next=/ HTTP/1.1" 200 5852
+INFO 2025-03-24 15:55:12,117 "GET /accounts/login/?next=/ HTTP/1.1" 200 6491
+INFO 2025-03-24 15:55:14,974 "GET /accounts/login/?next=/ HTTP/1.1" 200 6491
+INFO 2025-03-24 15:55:17,394 "GET /accounts/login/?next=/ HTTP/1.1" 200 6491
+INFO 2025-03-24 15:55:19,593 "GET /accounts/login/?next=/ HTTP/1.1" 200 6491
+INFO 2025-03-24 15:55:28,119 "GET /accounts/login/?next=/ HTTP/1.1" 200 6491
+INFO 2025-03-24 15:55:41,954 "GET /accounts/login/?next=/ HTTP/1.1" 200 5852
+INFO 2025-03-24 15:58:03,609 "GET /accounts/login/?next=/ HTTP/1.1" 200 6491
+INFO 2025-03-24 15:58:06,709 "GET /accounts/login/?next=/ HTTP/1.1" 200 6491
+INFO 2025-03-24 15:58:09,375 "GET /accounts/login/?next=/ HTTP/1.1" 200 6491
+INFO 2025-03-24 15:58:11,736 "GET /accounts/login/?next=/ HTTP/1.1" 200 6491
+INFO 2025-03-24 15:58:18,756 "GET /accounts/login/?next=/ HTTP/1.1" 200 5852
+INFO 2025-03-24 16:02:59,749 "GET /accounts/login/?next=/ HTTP/1.1" 200 5698
+WARNING 2025-03-24 16:02:59,830 "GET /static/dist/img/college-bg.jpg HTTP/1.1" 404 1828
+INFO 2025-03-24 16:03:07,648 "GET /accounts/login/?next=/ HTTP/1.1" 200 5698
+WARNING 2025-03-24 16:03:07,724 "GET /static/dist/img/college-bg.jpg HTTP/1.1" 404 1828
+INFO 2025-03-24 16:03:14,478 "GET /accounts/login/?next=/ HTTP/1.1" 200 5852
+INFO 2025-03-24 16:03:24,672 "GET /accounts/login/?next=/ HTTP/1.1" 200 5852
+INFO 2025-03-24 16:04:19,384 "GET /accounts/login/?next=/ HTTP/1.1" 200 5852
+INFO 2025-03-24 16:28:00,239 "GET /accounts/login/?next=/ HTTP/1.1" 200 5852
+INFO 2025-03-24 16:28:00,335 "GET /media/college_logos/college_lgoooo_qltkv9U.jpg HTTP/1.1" 304 0
+INFO 2025-03-24 16:28:00,344 "GET /static/dist/img/bg.jpg HTTP/1.1" 304 0
+INFO 2025-03-24 16:28:02,745 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-03-24 16:28:02,832 "GET / HTTP/1.1" 200 26927
+INFO 2025-03-24 16:28:05,619 "GET /accounts/login/?next=/ HTTP/1.1" 200 5852
+INFO 2025-03-24 16:28:20,762 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-03-24 16:28:20,784 "GET / HTTP/1.1" 200 26927
+INFO 2025-03-24 16:28:23,158 "GET /site-config HTTP/1.1" 200 24565
+INFO 2025-03-24 16:28:30,366 "POST /site-config HTTP/1.1" 302 0
+INFO 2025-03-24 16:28:30,401 "GET /college-profile/ HTTP/1.1" 200 21348
+INFO 2025-03-24 16:28:33,924 "GET /accounts/login/?next=/ HTTP/1.1" 200 5868
+INFO 2025-03-24 16:28:37,369 "GET /accounts/login/?next=/ HTTP/1.1" 200 5868
+INFO 2025-03-24 16:28:55,407 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-03-24 16:28:55,430 "GET / HTTP/1.1" 200 26943
+INFO 2025-03-24 16:28:59,341 "GET /site-config HTTP/1.1" 200 24589
+INFO 2025-03-24 16:29:31,649 "POST /site-config HTTP/1.1" 302 0
+INFO 2025-03-24 16:29:31,676 "GET /college-profile/ HTTP/1.1" 200 21359
+INFO 2025-03-24 16:30:01,999 "GET /site-config HTTP/1.1" 200 24626
+INFO 2025-03-24 16:30:10,054 "POST /site-config HTTP/1.1" 302 0
+INFO 2025-03-24 16:30:10,079 "GET /college-profile/ HTTP/1.1" 200 21359
+INFO 2025-03-24 16:30:20,814 "GET /attendance/attendance_list/ HTTP/1.1" 200 24488
+INFO 2025-03-24 16:30:24,523 "GET /attendance/attendance_list/?class_id=3 HTTP/1.1" 200 26135
+INFO 2025-03-24 16:33:49,090 "GET /attendance/attendance_list/?class_id=3 HTTP/1.1" 200 27596
+WARNING 2025-03-24 16:33:54,760 Not Found: /get-sections/
+WARNING 2025-03-24 16:33:54,760 "GET /get-sections/?class_id=5 HTTP/1.1" 404 7180
+INFO 2025-03-24 16:33:54,784 "GET /attendance/attendance_list/?class_id=5&section_id= HTTP/1.1" 200 25957
+WARNING 2025-03-24 16:33:57,919 Not Found: /get-sections/
+WARNING 2025-03-24 16:33:57,922 "GET /get-sections/?class_id=3 HTTP/1.1" 404 7180
+INFO 2025-03-24 16:33:57,949 "GET /attendance/attendance_list/?class_id=3&section_id= HTTP/1.1" 200 27596
+WARNING 2025-03-24 16:34:02,285 Not Found: /get-sections/
+WARNING 2025-03-24 16:34:02,287 "GET /get-sections/?class_id=1 HTTP/1.1" 404 7180
+INFO 2025-03-24 16:34:02,318 "GET /attendance/attendance_list/?class_id=1&section_id= HTTP/1.1" 200 25957
+WARNING 2025-03-24 16:34:08,379 Not Found: /get-sections/
+WARNING 2025-03-24 16:34:08,380 "GET /get-sections/?class_id=3 HTTP/1.1" 404 7180
+INFO 2025-03-24 16:34:08,406 "GET /attendance/attendance_list/?class_id=3&section_id= HTTP/1.1" 200 27596
+INFO 2025-03-24 16:34:56,707 D:\Sipher Web\Django School Management System\SMS\apps\attendance\urls.py changed, reloading.
+INFO 2025-03-24 16:34:58,701 Watching for file changes with StatReloader
+INFO 2025-03-24 16:35:09,319 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-03-24 16:35:10,493 Watching for file changes with StatReloader
+INFO 2025-03-24 16:36:05,305 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-03-24 16:36:06,248 Watching for file changes with StatReloader
+INFO 2025-03-24 16:36:19,010 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-03-24 16:36:20,410 Watching for file changes with StatReloader
+INFO 2025-03-24 16:36:42,040 Watching for file changes with StatReloader
+INFO 2025-03-24 16:36:46,819 "GET /attendance/attendance_list/?class_id=3&section_id= HTTP/1.1" 200 26135
+INFO 2025-03-24 16:36:50,262 "GET /attendance/attendance_list/?class_id=5 HTTP/1.1" 200 24496
+INFO 2025-03-24 16:36:54,709 "GET /attendance/attendance_list/?class_id=3 HTTP/1.1" 200 26135
+INFO 2025-03-24 16:37:36,726 "GET /class/list/ HTTP/1.1" 200 22341
+INFO 2025-03-24 16:41:02,063 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-03-24 16:41:03,694 Watching for file changes with StatReloader
+INFO 2025-03-24 16:41:05,401 D:\Sipher Web\Django School Management System\SMS\apps\attendance\urls.py changed, reloading.
+INFO 2025-03-24 16:41:06,559 Watching for file changes with StatReloader
+INFO 2025-03-24 16:41:28,889 "GET /class/list/ HTTP/1.1" 200 22341
+INFO 2025-03-24 16:41:31,579 "GET /attendance/attendance_list/ HTTP/1.1" 200 24489
+INFO 2025-03-24 16:41:34,330 "GET /attendance/attendance_list/?class_id=5 HTTP/1.1" 200 24497
+INFO 2025-03-24 16:41:36,206 "GET /attendance/attendance_list/?class_id=3 HTTP/1.1" 200 26136
+INFO 2025-03-24 16:46:06,529 "GET /attendance/attendance_list/?class_id=3 HTTP/1.1" 200 26758
+INFO 2025-03-24 16:47:52,783 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-03-24 16:47:53,739 Watching for file changes with StatReloader
+INFO 2025-03-24 16:48:05,918 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-03-24 16:48:07,166 Watching for file changes with StatReloader
+INFO 2025-03-24 16:48:38,972 Watching for file changes with StatReloader
+INFO 2025-03-24 16:48:43,427 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-03-24 16:48:44,568 Watching for file changes with StatReloader
+INFO 2025-03-24 16:48:45,556 "GET /attendance/attendance_list/?class_id=3 HTTP/1.1" 200 28693
+INFO 2025-03-24 16:48:52,191 "GET /attendance/attendance_list/?class_id=3 HTTP/1.1" 200 26135
+INFO 2025-03-24 16:48:56,082 "GET /attendance/attendance_list/?class_id=5 HTTP/1.1" 200 24496
+INFO 2025-03-24 16:48:58,557 "GET /attendance/attendance_list/?class_id= HTTP/1.1" 200 24488
+INFO 2025-03-24 16:49:20,469 "GET /finance/list/ HTTP/1.1" 200 20728
+INFO 2025-03-24 16:49:27,957 "GET /finance/create/ HTTP/1.1" 200 23828
+INFO 2025-03-24 16:49:49,332 "POST /finance/create/ HTTP/1.1" 302 0
+INFO 2025-03-24 16:49:49,351 "GET /finance/list HTTP/1.1" 301 0
+INFO 2025-03-24 16:49:49,383 "GET /finance/list/ HTTP/1.1" 200 21144
+INFO 2025-03-24 16:49:51,537 "GET /finance/2/detail/ HTTP/1.1" 200 21219
+INFO 2025-03-24 16:50:39,829 "GET /finance/list/ HTTP/1.1" 200 21144
+INFO 2025-03-24 16:51:03,125 "GET /finance/1/detail/ HTTP/1.1" 200 21330
+INFO 2025-03-24 16:51:06,960 "GET /finance/1/update/ HTTP/1.1" 200 24669
+INFO 2025-03-24 16:51:18,018 "GET /finance/2/detail/ HTTP/1.1" 200 21219
+INFO 2025-03-24 16:51:20,543 "GET /finance/2/update/ HTTP/1.1" 200 24178
+INFO 2025-03-24 16:51:32,270 "POST /finance/2/update/ HTTP/1.1" 302 0
+INFO 2025-03-24 16:51:32,298 "GET /finance/2/detail/ HTTP/1.1" 200 21326
+INFO 2025-03-24 16:51:38,401 "POST /finance/2/update/ HTTP/1.1" 302 0
+INFO 2025-03-24 16:51:38,430 "GET /finance/2/detail/ HTTP/1.1" 200 21432
+INFO 2025-03-24 16:51:45,766 "GET /finance/2/delete/ HTTP/1.1" 200 19981
+INFO 2025-03-24 16:51:53,934 "GET /finance/2/detail/ HTTP/1.1" 200 21432
+INFO 2025-03-24 16:51:56,736 "GET /finance/create/ HTTP/1.1" 200 23828
+INFO 2025-03-24 16:52:04,098 "GET /student/list HTTP/1.1" 200 21555
+INFO 2025-03-24 16:52:05,029 "GET /student/1/ HTTP/1.1" 200 24174
+INFO 2025-03-24 16:52:08,817 "GET /finance/1/detail/ HTTP/1.1" 200 21330
+INFO 2025-03-24 16:52:14,742 "GET /finance/1/update/ HTTP/1.1" 200 24669
+INFO 2025-03-24 16:52:27,801 "GET /finance/list/ HTTP/1.1" 200 21144
+INFO 2025-03-24 16:52:29,794 "GET /finance/receipt/create?invoice=1 HTTP/1.1" 200 21219
+INFO 2025-03-24 16:52:35,777 "GET /finance/receipt/create?invoice=1 HTTP/1.1" 200 21219
+INFO 2025-03-24 16:52:43,160 "POST /finance/receipt/create?invoice=1 HTTP/1.1" 302 0
+INFO 2025-03-24 16:52:43,193 "GET /finance/list/ HTTP/1.1" 200 21148
+INFO 2025-03-24 16:52:46,081 "GET /finance/1/detail/ HTTP/1.1" 200 21441
+INFO 2025-03-24 16:52:57,692 "GET /student/list HTTP/1.1" 200 21555
+INFO 2025-03-24 16:52:58,714 "GET /student/1/ HTTP/1.1" 200 24177
+WARNING 2025-03-24 16:53:22,957 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2025-03-24 16:53:22,971 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+INFO 2025-03-24 16:53:23,012 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 318045
+INFO 2025-03-24 16:53:23,113 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-03-24 16:54:00,185 "GET /static/dist/img/avatar.png HTTP/1.1" 200 2044603
+INFO 2025-03-24 16:55:08,290 "GET /finance/list/ HTTP/1.1" 200 21148
+INFO 2025-03-24 16:55:19,423 "GET /finance/create/ HTTP/1.1" 200 23828
+INFO 2025-03-24 16:55:42,204 "GET /finance/receipt/create?invoice=2 HTTP/1.1" 200 21219
+INFO 2025-03-24 16:56:02,771 "POST /finance/receipt/create?invoice=2 HTTP/1.1" 200 21300
+INFO 2025-03-24 16:56:09,664 "POST /finance/receipt/create?invoice=2 HTTP/1.1" 302 0
+INFO 2025-03-24 16:56:09,699 "GET /finance/list/ HTTP/1.1" 200 21148
+INFO 2025-03-24 16:56:13,635 "GET /finance/1/detail/ HTTP/1.1" 200 21441
+INFO 2025-03-24 16:56:28,990 "GET /finance/2/detail/ HTTP/1.1" 200 21535
+INFO 2025-03-24 16:57:38,889 "GET /finance/list/ HTTP/1.1" 200 21148
+INFO 2025-03-24 16:57:43,643 "GET /attendance/attendance_list/ HTTP/1.1" 200 24488
+INFO 2025-03-24 16:57:50,705 "GET /staff/list/ HTTP/1.1" 200 20832
+INFO 2025-03-24 16:57:54,143 "GET /attendance/attendance_list/ HTTP/1.1" 200 24488
+INFO 2025-03-24 16:57:57,349 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 20800
+INFO 2025-03-24 16:57:58,838 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 22346
+INFO 2025-03-24 16:57:58,926 "GET /static/dist/img/worker.svg HTTP/1.1" 200 14909
+INFO 2025-03-24 17:00:25,148 "GET /student/list HTTP/1.1" 200 21555
+INFO 2025-03-24 17:00:27,653 "GET /student/create/ HTTP/1.1" 200 25866
+INFO 2025-03-24 17:02:13,130 "GET /student/create/ HTTP/1.1" 200 26110
+INFO 2025-03-24 17:02:18,531 "GET /student/list HTTP/1.1" 200 21555
+INFO 2025-03-24 17:02:20,985 "GET /student/create/ HTTP/1.1" 200 26110
+INFO 2025-03-24 17:02:37,438 "GET /student/create/ HTTP/1.1" 200 25866
+INFO 2025-03-24 17:04:31,713 "GET /student/create/ HTTP/1.1" 200 28322
+INFO 2025-03-24 17:04:54,554 D:\Sipher Web\Django School Management System\SMS\apps\students\models.py changed, reloading.
+INFO 2025-03-24 17:04:55,906 Watching for file changes with StatReloader
+INFO 2025-03-24 17:04:56,372 "GET /student/create/ HTTP/1.1" 200 28303
+INFO 2025-03-24 17:05:09,348 "GET /staff/list/ HTTP/1.1" 200 20832
+INFO 2025-03-24 17:05:11,124 "GET /staff/create/ HTTP/1.1" 200 23651
+INFO 2025-03-24 17:05:15,560 "GET /student/list HTTP/1.1" 200 21555
+INFO 2025-03-24 17:05:17,213 "GET /student/create/ HTTP/1.1" 200 28303
+INFO 2025-03-24 17:06:43,875 "GET /student/create/ HTTP/1.1" 200 28303
+INFO 2025-03-24 17:06:46,818 "GET /staff/list/ HTTP/1.1" 200 20832
+INFO 2025-03-24 17:06:48,372 "GET /staff/create/ HTTP/1.1" 200 25068
+INFO 2025-03-24 17:06:54,760 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 20800
+INFO 2025-03-24 17:06:56,234 "GET /non-teaching-staffs/create/ HTTP/1.1" 200 23417
+INFO 2025-03-24 17:07:43,991 "GET /non-teaching-staffs/create/ HTTP/1.1" 200 23416
+INFO 2025-03-24 17:07:45,931 "GET /non-teaching-staffs/create/ HTTP/1.1" 200 23416
+INFO 2025-03-24 17:07:46,291 "GET /non-teaching-staffs/create/ HTTP/1.1" 200 23416
+INFO 2025-03-24 17:07:46,675 "GET /non-teaching-staffs/create/ HTTP/1.1" 200 23416
+WARNING 2025-03-24 17:08:12,232 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2025-03-24 17:08:13,861 "GET /non-teaching-staffs/create/ HTTP/1.1" 200 23416
+INFO 2025-03-24 17:08:14,507 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-03-24 17:08:14,525 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-03-24 17:08:14,541 "GET /static/dist/css/style.css HTTP/1.1" 200 1483
+INFO 2025-03-24 17:08:14,651 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-03-24 17:08:14,702 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-03-24 17:08:14,810 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-03-24 17:08:14,841 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-03-24 17:08:14,967 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-03-24 17:08:15,053 "GET /static/dist/js/custom.js HTTP/1.1" 200 1569
+INFO 2025-03-24 17:08:15,098 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-03-24 17:08:15,130 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-03-24 17:08:15,145 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-03-24 17:08:15,181 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-03-24 17:08:15,201 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80704
+INFO 2025-03-24 17:08:15,261 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-03-24 17:08:15,415 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 318045
+INFO 2025-03-24 17:08:15,491 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-03-24 17:08:15,534 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+INFO 2025-03-24 17:08:15,926 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+WARNING 2025-03-24 17:08:16,076 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+WARNING 2025-03-24 17:08:16,399 Not Found: /favicon.ico
+WARNING 2025-03-24 17:08:16,411 "GET /favicon.ico HTTP/1.1" 404 7163
+INFO 2025-03-24 17:08:28,630 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 20800
+INFO 2025-03-24 17:08:30,741 "GET /non-teaching-staffs/create/ HTTP/1.1" 200 23416
+INFO 2025-03-24 17:08:41,836 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 20800
+INFO 2025-03-24 17:08:43,270 "GET /non-teaching-staffs/create/ HTTP/1.1" 200 23416
+INFO 2025-03-24 17:09:48,848 "GET /non-teaching-staffs/create/ HTTP/1.1" 200 23416
+INFO 2025-03-24 17:10:02,185 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 20800
+INFO 2025-03-24 17:10:03,923 "GET /non-teaching-staffs/create/ HTTP/1.1" 200 23416
+INFO 2025-03-24 17:10:14,790 "GET /non-teaching-staffs/create/ HTTP/1.1" 200 23416
+INFO 2025-03-24 17:10:21,203 "GET /non-teaching-staffs/create/ HTTP/1.1" 200 23416
+INFO 2025-03-24 17:11:56,681 "GET /non-teaching-staffs/create/ HTTP/1.1" 200 23415
+INFO 2025-03-24 17:11:59,579 "GET /attendance/attendance_list/ HTTP/1.1" 200 24487
+INFO 2025-03-24 17:12:03,102 "GET /finance/list/ HTTP/1.1" 200 21147
+INFO 2025-03-24 17:12:21,791 "GET /session/list/ HTTP/1.1" 200 21984
+INFO 2025-03-24 17:12:34,184 "GET /session/list/ HTTP/1.1" 200 21985
+INFO 2025-03-24 17:12:40,986 "GET / HTTP/1.1" 200 26927

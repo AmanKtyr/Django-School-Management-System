@@ -40,6 +40,7 @@ class Student(models.Model):
     current_class = models.ForeignKey(
         StudentClass, on_delete=models.SET_NULL, blank=True, null=True
     )
+    section = models.CharField(max_length=10, blank=True)
     date_of_admission = models.DateField(default=timezone.now)
 
     mobile_num_regex = RegexValidator(
@@ -51,7 +52,7 @@ class Student(models.Model):
 
     Father_name = models.CharField(max_length=255, null=False, blank=False)
 
-    Father_mobile_number = models.CharField( validators=[mobile_num_regex] ,max_length=15, default="0000000000")
+    Father_mobile_number = models.CharField( validators=[mobile_num_regex] ,max_length=15,)
     Father_aadhar = models.CharField(validators=[aadhar_validator], max_length=12, blank=True)
     Mother_name = models.CharField(max_length=255, null=True, blank=True)
 

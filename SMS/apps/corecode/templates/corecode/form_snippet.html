@@ -10,6 +10,11 @@
   </label>
   <div class="col-sm-9">
     {{ field | add_class:"form-control"}}
+    {% if placeholders %}
+      <script>
+        document.querySelector('[name="{{ field.name }}"]').setAttribute('placeholder', 'Enter {{ field.label|lower }}');
+      </script>
+    {% endif %}
     {% if field.help_text %}
     <small>{{ field.help_text|safe }}</small>
     {% endif %}
