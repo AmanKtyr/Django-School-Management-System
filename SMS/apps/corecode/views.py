@@ -40,7 +40,7 @@ def site_config_view(request):
         form = CollegeProfileForm(request.POST, request.FILES, instance=profile)
         if form.is_valid():
             form.save()
-            return redirect('college_profile')  # Ensure this matches the URL name in urls.py
+            return redirect('college_profile') 
     else:
         form = CollegeProfileForm(instance=profile)
     return render(request, 'corecode/siteconfig.html', {'form': form, 'title': 'Site Configuration'})

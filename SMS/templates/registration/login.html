@@ -18,29 +18,31 @@
 
   <style>
     body {
-      background: linear-gradient(135deg, #1E3C72, #2A5298);
+      background: url("{% static 'dist/img/bg.jpg' %}") no-repeat center center fixed;
+      background-size: cover;
       font-family: 'Poppins', sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
       animation: fadeIn 1s ease-in;
+      color: #333;
     }
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
     }
     .container {
-      width: 1300px;
+      width: 1200px;
       display: flex;
-      background: white;
+      background: rgba(255, 255, 255, 0.9);
       box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3);
       border-radius: 20px;
       overflow: hidden;
     }
     .left-section {
       width: 50%;
-      background: linear-gradient(135deg, #0F4C75, #3282B8);
+      background: linear-gradient(135deg, #1E3C72,rgb(9, 32, 48));
       color: white;
       display: flex;
       flex-direction: column;
@@ -68,7 +70,7 @@
       to { transform: translateX(0); opacity: 1; }
     }
     .logo img {
-      width: 340px;
+      width: 300px;
       animation: bounceIn 1s ease-in-out;
     }
     @keyframes bounceIn {
@@ -78,12 +80,12 @@
     }
     input {
       width: 100%;
-      padding: 18px;
+      padding: 15px;
       margin: 16px 0;
       border-radius: 12px;
       border: 1px solid #ccc;
       transition: 0.3s;
-      font-size: 18px;
+      font-size: 16px;
     }
     input:focus {
       border-color: #3282B8;
@@ -93,13 +95,13 @@
     .login-btn {
       background: #0F4C75;
       color: white;
-      padding: 18px;
+      padding: 15px;
       border: none;
       width: 100%;
       cursor: pointer;
       border-radius: 12px;
       transition: 0.3s;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
       animation: slideUp 0.5s ease-in-out;
     }
@@ -124,10 +126,15 @@
     }
     .remember-me {
       display: flex;
-      width: 40%;
-      gap: 4px;
+      align-items: center;
+      gap: 8px;
       margin: 6px 0;
-      font-size: 16px;
+      font-size: 14px;
+    }
+    .error-msg {
+      color: red;
+      font-size: 14px;
+      margin-bottom: 10px;
     }
   </style>
 </head>
@@ -136,13 +143,19 @@
   <div class="container">
     <div class="left-section">
       <div class="logo">
-        <img src="{% static 'dist/img/school-logo.png' %}" alt="School Logo">
+        {% if profile.college_logo.url %}
+          <img src="{{ profile.college_logo.url }}" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        {% else %}
+          <img src="{% static 'path/to/default-logo.png' %}" alt="Default Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        {% endif %}
       </div>
-      <h2>Welcome to {{ profile.college_name | default:"MySchool"  }} </h2>
+      <h1>Welcome to {{ profile.college_name | default:"MySchool" }}</h1>
+      <h3>Your Gateway to Learning</h3>
       <p>Login to access your student or teacher portal.</p>
     </div>
     <div class="right-section">
-      <h2>{{ school_name }}</h2>
+      <h1>Login</h1>
+      <h3>Access Your Account</h3>
       {% if form.errors %}
         <p class="error-msg">Invalid username or password. Please try again.</p>
       {% endif %}

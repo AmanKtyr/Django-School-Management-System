@@ -1,4 +1,4 @@
-from .models import AcademicSession, AcademicTerm, SiteConfig
+from .models import AcademicSession, AcademicTerm, SiteConfig, CollegeProfile as CollegeProfileModel
 
 
 def site_defaults(request):
@@ -15,7 +15,9 @@ def site_defaults(request):
     return contexts
 
 
-
-
-
-
+def global_college_profile(request):  
+    try:
+        profile = CollegeProfileModel.objects.first()  
+    except CollegeProfileModel.DoesNotExist:
+        profile = None
+    return {'profile': profile}

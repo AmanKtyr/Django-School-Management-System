@@ -1,26 +1,30 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container my-5 py-3" style="margin-top: 0 !important; padding-top: 0 !important;">
-  <h2 class="mb-4 text-center text-uppercase fw-bold">College Profile</h2>
+
   {% if profile %}
   <div class="card shadow-lg border-0">
     <div class="card-header bg-primary text-white text-center">
-      <h4 class="mb-0">College Information</h4>
+      <h4 class="mb-0">College Profile</h4>
     </div>
     <div class="card-body">
       <div class="row mb-3">
-        <div class="col-md-6">
-          <p><strong>Name:</strong> {{ profile.college_name }}</p>
+        <div class="col-md-4">
+          <p><strong> College Name:</strong> {{ profile.college_name }}</p>
           <p><strong>Address:</strong> {{ profile.college_address }}</p>
           <p><strong>Email:</strong> {{ profile.college_email }}</p>
           <p><strong>Phone:</strong> {{ profile.college_phone }}</p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <p><strong>Established Year:</strong> {{ profile.established_year }}</p>
           <p><strong>Principal:</strong> {{ profile.principal_name }}</p>
           <p><strong>Type:</strong> {{ profile.college_type }}</p>
         </div>
+        <div class="col-md-4">
+          <p><strong>College Logo</strong></p>
+          <img src="{{ profile.college_logo.url }}" alt="College Logo" class="img-fluid" style="height: 100px; object-fit: contain;">
+        </div>
+
       </div>
       <hr>
       <h5 class="text-primary">Administrative Details</h5>
@@ -46,5 +50,5 @@
     No profile found. <a href="{% url 'site_config' %}" class="alert-link">Click here</a> to create one.
   </div>
   {% endif %}
-</div>
+
 {% endblock content %}
