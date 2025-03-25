@@ -83,5 +83,5 @@ python manage.py test
 This project is open-source and available under the [MIT License](LICENSE).
 
 ---
-Made with ❤️ for the education community!
+Made with ❤️ by Aman Ktyr 🧑🏻‍💻 for the education community!
 
