@@ -304,11 +304,37 @@
          
 
           <li class="nav-header">Finance</li>
-          <li class="nav-item">
-              <a href="{% url 'invoice-list' %}" class="nav-link">
+          <li class="nav-item has-treeview {% if request.resolver_match.url_name in 'invoice-list' %}menu-open{% endif %}">
+              <a href="#" class="nav-link">
                   <i class="nav-icon fas fa-money-bill-alt" style="color: #66ccff;"></i>
-                  <p>Invoices</p>
+                  <p>
+                      Finance
+                      <i class="fas fa-angle-left right"></i>
+                  </p>
               </a>
+              <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                      <a href="{% url 'invoice-list' %}" class="nav-link {% if request.resolver_match.url_name == 'invoice-list' %}active{% endif %}">
+                       
+                          <i class="fas fa-file-invoice-dollar nav-icon" style="color: #ff9900;"></i>
+                          <p>Invoices</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      {% comment %} <a href="{% url 'students-fee' %}" class="nav-link"> {% endcomment %}
+                      <a href="#" class="nav-link">
+                          <i class="fas fa-user-graduate nav-icon" style="color: #33cc33;"></i>
+                          <p>Students Fee</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      {% comment %} <a href="{% url 'staff-salary' %}" class="nav-link"> {% endcomment %}
+                      <a href="#" class="nav-link">
+                          <i class="fas fa-user-tie nav-icon" style="color: #009999;"></i>
+                          <p>Staff Salary</p>
+                      </a>
+                  </li>
+              </ul>
           </li>
 
 

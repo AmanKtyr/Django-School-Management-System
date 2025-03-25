@@ -23,19 +23,24 @@
 
 
 {% block content-header %}
-<div class="card-header d-flex justify-content-between  text-white shadow-lg rounded-3 border border-light"  style="background-color:#1E3C72">>  
-  <h3 class="mb-0">🛠 Non-Teaching Staff Details</h3>  
-  <div class="text-end">    
-    <a href="#" class="btn btn-light shadow-lg rounded-pill">📄 Print</a>    
-    <a href="{% url 'non-teaching-staffs-update' object.id %}" class="btn btn-warning text-white shadow-lg rounded-pill">       
-      <i class="fas fa-edit"></i> Edit    
-    </a>    
-    <a href="{% url 'non-teaching-staffs-delete' object.id %}" class="btn btn-danger shadow-lg rounded-pill">       
-      <i class="fas fa-times"></i> Delete    
-    </a>  
-  </div> 
-</div> 
-{% endblock content-header %}  
+<div class="card-header shadow rounded" style="background-color: #1E3C72; color: white;">
+  <div class="d-flex justify-content-between align-items-center">
+    <h3 class="mb-0"><i class="fas fa-tools"></i> Non-Teaching Staff Details</h3>
+    <div>
+      <a href="#" class="btn btn-light btn-sm shadow-sm" title="Print Non-Teaching Staff Details">
+        <i class="fas fa-print"></i> Print
+      </a>
+      <a href="{% url 'non-teaching-staffs-update' object.id %}" class="btn btn-warning btn-sm shadow-sm text-white" title="Edit Non-Teaching Staff Details">
+        <i class="fas fa-edit"></i> Edit
+      </a>
+      <a href="{% url 'non-teaching-staffs-delete' object.id %}" class="btn btn-danger btn-sm shadow-sm" title="Delete Non-Teaching Staff Details">
+        <i class="fas fa-trash-alt"></i> Delete
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock content-header %}
+ 
 
 {% block content %} 
 <div class="row">   
