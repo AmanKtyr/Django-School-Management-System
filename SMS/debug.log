@@ -1,2 +1,605 @@
 INFO 2025-03-25 15:47:23,326 "GET /student/1/ HTTP/1.1" 200 25451
 INFO 2025-03-25 15:48:00,454 "GET /finance/1/detail/ HTTP/1.1" 200 24273
+INFO 2025-03-25 16:19:28,780 "GET / HTTP/1.1" 200 28031
+INFO 2025-03-25 16:19:31,776 "GET /student/list HTTP/1.1" 200 23024
+INFO 2025-03-25 16:19:35,831 "GET /student/create/ HTTP/1.1" 200 29407
+INFO 2025-03-25 16:19:39,897 "GET /student/1/ HTTP/1.1" 200 25451
+INFO 2025-03-25 16:20:12,281 "GET /finance/list/ HTTP/1.1" 200 23506
+INFO 2025-03-25 16:20:17,932 "GET /finance/receipt/create?invoice=2 HTTP/1.1" 200 22339
+INFO 2025-03-25 16:21:10,961 "GET /student/list HTTP/1.1" 200 23024
+INFO 2025-03-25 16:21:14,320 "GET /finance/list/ HTTP/1.1" 200 23506
+INFO 2025-03-25 16:33:39,075 "GET / HTTP/1.1" 200 28031
+INFO 2025-03-25 16:33:47,012 "GET /student/list HTTP/1.1" 200 23024
+INFO 2025-03-25 16:33:56,717 "GET /student/create/ HTTP/1.1" 200 29407
+INFO 2025-03-25 16:34:05,618 "GET /student/list HTTP/1.1" 200 23024
+INFO 2025-03-25 16:34:06,798 "GET /student/1/ HTTP/1.1" 200 25451
+INFO 2025-03-25 16:34:16,815 "GET /attendance/attendance_list/ HTTP/1.1" 200 25592
+INFO 2025-03-25 16:34:23,095 "GET /attendance/attendance_list/?class_id=5 HTTP/1.1" 200 25600
+INFO 2025-03-25 16:34:26,118 "GET /attendance/attendance_list/?class_id=1 HTTP/1.1" 200 26418
+INFO 2025-03-25 16:34:33,293 "GET /finance/list/ HTTP/1.1" 200 23506
+INFO 2025-03-25 16:34:36,594 "GET /finance/create/ HTTP/1.1" 200 24975
+INFO 2025-03-25 16:34:44,951 "GET /finance/list/ HTTP/1.1" 200 23506
+INFO 2025-03-25 16:34:46,328 "GET /finance/receipt/create?invoice=1 HTTP/1.1" 200 22342
+INFO 2025-03-25 16:35:31,580 "GET / HTTP/1.1" 200 28031
+INFO 2025-03-25 16:35:33,696 "GET /college-profile/ HTTP/1.1" 200 22463
+INFO 2025-03-25 16:35:42,724 "GET /accounts/login/ HTTP/1.1" 200 5722
+INFO 2025-03-25 16:36:17,632 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-03-25 16:36:17,657 "GET / HTTP/1.1" 200 28031
+INFO 2025-03-25 16:36:21,344 "GET / HTTP/1.1" 200 28031
+INFO 2025-03-25 16:36:27,153 "GET / HTTP/1.1" 200 28031
+INFO 2025-03-25 16:36:37,272 "GET /finance/list/ HTTP/1.1" 200 23506
+INFO 2025-03-26 10:13:09,145 Watching for file changes with StatReloader
+INFO 2025-03-26 10:13:14,938 "GET / HTTP/1.1" 302 0
+INFO 2025-03-26 10:13:15,155 "GET /accounts/login/?next=/ HTTP/1.1" 200 5723
+INFO 2025-03-26 10:13:15,616 "GET /media/college_logos/college_lgoooo_qltkv9U.jpg HTTP/1.1" 304 0
+INFO 2025-03-26 10:13:15,743 "GET /static/dist/img/bg.jpg HTTP/1.1" 304 0
+WARNING 2025-03-26 10:13:16,585 Not Found: /favicon.ico
+WARNING 2025-03-26 10:13:16,585 "GET /favicon.ico HTTP/1.1" 404 7163
+INFO 2025-03-26 10:13:19,969 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-03-26 10:13:20,390 "GET / HTTP/1.1" 200 28031
+INFO 2025-03-26 10:13:20,996 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-26 10:13:30,993 "GET /finance/list/ HTTP/1.1" 200 23506
+INFO 2025-03-26 10:13:33,646 "GET /finance/create/ HTTP/1.1" 200 24975
+INFO 2025-03-26 10:15:27,258 "GET /finance/create/ HTTP/1.1" 200 24975
+INFO 2025-03-26 10:16:03,650 "GET /finance/receipt/create?invoice=1 HTTP/1.1" 200 22342
+INFO 2025-03-26 10:16:06,175 "GET /finance/receipt/create?invoice=1 HTTP/1.1" 200 22342
+INFO 2025-03-26 10:16:07,935 "GET /finance/1/detail/ HTTP/1.1" 200 24273
+INFO 2025-03-26 10:18:22,521 "GET /finance/receipt/create?invoice=1 HTTP/1.1" 200 22342
+INFO 2025-03-26 10:18:28,249 "GET /finance/1/detail/ HTTP/1.1" 200 24273
+INFO 2025-03-26 10:18:32,106 "GET /finance/1/update/ HTTP/1.1" 200 27914
+INFO 2025-03-26 10:44:58,509 "GET /finance/list/ HTTP/1.1" 200 23506
+INFO 2025-03-26 10:46:59,792 "GET /finance/list/ HTTP/1.1" 302 0
+INFO 2025-03-26 10:46:59,836 "GET /accounts/login/?next=/finance/list/ HTTP/1.1" 200 5736
+INFO 2025-03-26 10:47:00,132 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-03-26 10:47:00,157 "GET /static/dist/css/login-page.css HTTP/1.1" 200 9070
+INFO 2025-03-26 10:47:00,162 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-03-26 10:47:00,175 "GET /media/college_logos/college_lgoooo_qltkv9U.jpg HTTP/1.1" 200 31795
+INFO 2025-03-26 10:47:00,215 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-03-26 10:47:00,276 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-03-26 10:47:00,449 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2025-03-26 10:47:00,478 "GET /static/dist/img/bg.jpg HTTP/1.1" 200 3093083
+WARNING 2025-03-26 10:47:00,864 Not Found: /favicon.ico
+WARNING 2025-03-26 10:47:00,865 "GET /favicon.ico HTTP/1.1" 404 7163
+INFO 2025-03-26 10:48:29,987 D:\Sipher Web\Django School Management System\SMS\apps\staffs\views.py changed, reloading.
+INFO 2025-03-26 10:48:31,232 Watching for file changes with StatReloader
+INFO 2025-03-26 10:48:41,311 D:\Sipher Web\Django School Management System\SMS\apps\staffs\views.py changed, reloading.
+INFO 2025-03-26 10:48:42,168 Watching for file changes with StatReloader
+INFO 2025-03-26 10:48:55,222 "GET /staff/list/ HTTP/1.1" 200 21936
+INFO 2025-03-26 10:49:03,634 "GET /staff/list/ HTTP/1.1" 302 0
+INFO 2025-03-26 10:49:03,701 "GET /accounts/login/?next=/staff/list/ HTTP/1.1" 200 5734
+WARNING 2025-03-26 10:49:04,383 Not Found: /favicon.ico
+WARNING 2025-03-26 10:49:04,383 "GET /favicon.ico HTTP/1.1" 404 7163
+INFO 2025-03-26 11:41:18,361 "GET /finance/list/ HTTP/1.1" 200 23506
+INFO 2025-03-26 11:41:20,441 "GET /finance/create/ HTTP/1.1" 200 24975
+INFO 2025-03-26 11:41:40,131 "GET / HTTP/1.1" 200 28031
+INFO 2025-03-26 11:41:43,079 "GET /student/list HTTP/1.1" 200 23024
+INFO 2025-03-26 11:41:44,328 "GET /student/1/ HTTP/1.1" 200 25451
+INFO 2025-03-26 11:41:51,233 "GET /student/1/ HTTP/1.1" 200 25451
+INFO 2025-03-26 11:41:54,083 "GET /student/1/ HTTP/1.1" 200 25451
+INFO 2025-03-26 11:42:06,530 "GET /finance/1/detail/ HTTP/1.1" 200 24273
+INFO 2025-03-26 16:07:09,190 Watching for file changes with StatReloader
+INFO 2025-03-27 10:18:10,477 Watching for file changes with StatReloader
+INFO 2025-03-27 10:18:15,738 "GET / HTTP/1.1" 302 0
+INFO 2025-03-27 10:18:15,784 "GET /accounts/login/?next=/ HTTP/1.1" 200 5723
+INFO 2025-03-27 10:18:15,969 "GET /media/college_logos/college_lgoooo_qltkv9U.jpg HTTP/1.1" 304 0
+INFO 2025-03-27 10:18:16,093 "GET /static/dist/img/bg.jpg HTTP/1.1" 304 0
+WARNING 2025-03-27 10:18:18,242 Not Found: /favicon.ico
+WARNING 2025-03-27 10:18:18,243 "GET /favicon.ico HTTP/1.1" 404 7163
+INFO 2025-03-27 10:18:20,054 "GET /accounts/login/?next=/ HTTP/1.1" 200 5723
+INFO 2025-03-27 10:18:23,798 "GET /accounts/login/?next=/ HTTP/1.1" 200 5723
+INFO 2025-03-27 10:18:26,956 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-03-27 10:18:27,000 "GET / HTTP/1.1" 200 28031
+INFO 2025-03-27 10:18:27,083 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-03-27 10:18:27,083 "GET /static/dist/js/custom.js HTTP/1.1" 304 0
+INFO 2025-03-27 10:18:30,374 "GET /finance/list/ HTTP/1.1" 200 23506
+INFO 2025-03-27 10:18:33,817 "GET /finance/create/ HTTP/1.1" 200 24975
+INFO 2025-03-27 10:19:15,948 "GET /finance/receipt/create?invoice=1 HTTP/1.1" 200 22342
+INFO 2025-03-27 10:19:37,906 "GET /finance/receipt/create?invoice=4 HTTP/1.1" 200 22336
+INFO 2025-03-27 10:19:46,364 "POST /finance/receipt/create?invoice=4 HTTP/1.1" 302 0
+INFO 2025-03-27 10:19:46,437 "GET /finance/list/ HTTP/1.1" 200 23510
+INFO 2025-03-27 10:19:58,619 "GET /finance/5/detail/ HTTP/1.1" 200 24119
+INFO 2025-03-27 10:20:02,370 "GET /finance/receipt/create?invoice=5 HTTP/1.1" 200 22336
+INFO 2025-03-27 10:20:06,494 "POST /finance/receipt/create?invoice=5 HTTP/1.1" 302 0
+INFO 2025-03-27 10:20:06,549 "GET /finance/list/ HTTP/1.1" 200 23515
+INFO 2025-03-27 10:20:13,032 "GET /finance/receipt/create?invoice=5 HTTP/1.1" 200 22341
+INFO 2025-03-27 10:20:16,391 "GET /finance/5/detail/ HTTP/1.1" 200 24266
+INFO 2025-03-27 10:20:27,918 "GET /student/list HTTP/1.1" 200 23024
+INFO 2025-03-27 10:20:29,678 "GET /student/3/ HTTP/1.1" 200 25440
+INFO 2025-03-27 10:29:27,979 D:\Sipher Web\Django School Management System\SMS\apps\finance\views.py changed, reloading.
+INFO 2025-03-27 10:29:28,875 Watching for file changes with StatReloader
+INFO 2025-03-27 10:30:19,977 D:\Sipher Web\Django School Management System\SMS\apps\finance\models.py changed, reloading.
+INFO 2025-03-27 10:30:20,919 Watching for file changes with StatReloader
+INFO 2025-03-27 10:31:17,113 D:\Sipher Web\Django School Management System\SMS\apps\finance\models.py changed, reloading.
+INFO 2025-03-27 10:31:18,248 Watching for file changes with StatReloader
+INFO 2025-03-27 10:31:22,027 D:\Sipher Web\Django School Management System\SMS\apps\finance\urls.py changed, reloading.
+INFO 2025-03-27 10:31:23,225 Watching for file changes with StatReloader
+INFO 2025-03-27 10:31:25,124 D:\Sipher Web\Django School Management System\SMS\apps\finance\urls.py changed, reloading.
+INFO 2025-03-27 10:31:26,260 Watching for file changes with StatReloader
+INFO 2025-03-27 10:46:05,027 Watching for file changes with StatReloader
+INFO 2025-03-27 10:46:09,381 "GET /student/3/ HTTP/1.1" 302 0
+INFO 2025-03-27 10:46:09,445 "GET /accounts/login/?next=/student/3/ HTTP/1.1" 200 5712
+WARNING 2025-03-27 10:46:09,727 "GET /static/path/to/default-logo.png HTTP/1.1" 404 1831
+INFO 2025-03-27 10:46:12,005 "POST /accounts/login/ HTTP/1.1" 200 5800
+WARNING 2025-03-27 10:46:12,067 "GET /static/path/to/default-logo.png HTTP/1.1" 404 1831
+INFO 2025-03-27 10:50:35,677 Watching for file changes with StatReloader
+INFO 2025-03-27 10:50:39,751 "POST /accounts/login/ HTTP/1.1" 302 0
+WARNING 2025-03-27 10:50:39,798 Not Found: /student/3/
+WARNING 2025-03-27 10:50:39,798 "GET /student/3/ HTTP/1.1" 404 6923
+ERROR 2025-03-27 10:50:50,582 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'invoice-list' not found. 'invoice-list' is not a valid view function or pattern name.
+ERROR 2025-03-27 10:50:50,582 "GET / HTTP/1.1" 500 140121
+ERROR 2025-03-27 10:50:53,097 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'invoice-list' not found. 'invoice-list' is not a valid view function or pattern name.
+ERROR 2025-03-27 10:50:53,101 "GET / HTTP/1.1" 500 140258
+INFO 2025-03-27 10:50:56,800 "GET /accounts/login/?next=/student/3/ HTTP/1.1" 200 5841
+INFO 2025-03-27 10:50:58,679 "GET /accounts/login/?next=/student/3/ HTTP/1.1" 200 5841
+INFO 2025-03-27 10:51:00,018 "GET /accounts/login/?next=/student/3/ HTTP/1.1" 200 5841
+WARNING 2025-03-27 10:51:00,074 "GET /static/path/to/default-logo.png HTTP/1.1" 404 1831
+INFO 2025-03-27 10:51:02,395 "POST /accounts/login/ HTTP/1.1" 302 0
+WARNING 2025-03-27 10:51:02,423 Not Found: /student/3/
+WARNING 2025-03-27 10:51:02,423 "GET /student/3/ HTTP/1.1" 404 6923
+INFO 2025-03-27 10:51:36,282 D:\Sipher Web\Django School Management System\SMS\apps\students\views.py changed, reloading.
+INFO 2025-03-27 10:51:37,293 Watching for file changes with StatReloader
+WARNING 2025-03-27 10:51:39,605 Not Found: /student/3/
+WARNING 2025-03-27 10:51:39,605 "GET /student/3/ HTTP/1.1" 404 6923
+WARNING 2025-03-27 10:51:40,594 Not Found: /student/3/
+WARNING 2025-03-27 10:51:40,594 "GET /student/3/ HTTP/1.1" 404 6923
+WARNING 2025-03-27 10:51:40,787 Not Found: /student/3/
+WARNING 2025-03-27 10:51:40,787 "GET /student/3/ HTTP/1.1" 404 6923
+WARNING 2025-03-27 10:51:40,963 Not Found: /student/3/
+WARNING 2025-03-27 10:51:40,963 "GET /student/3/ HTTP/1.1" 404 6923
+WARNING 2025-03-27 10:51:41,104 Not Found: /student/3/
+WARNING 2025-03-27 10:51:41,104 "GET /student/3/ HTTP/1.1" 404 6923
+WARNING 2025-03-27 10:51:41,301 Not Found: /student/3/
+WARNING 2025-03-27 10:51:41,301 "GET /student/3/ HTTP/1.1" 404 6923
+INFO 2025-03-27 10:51:42,167 "GET /accounts/login/?next=/student/3/ HTTP/1.1" 200 5841
+INFO 2025-03-27 10:51:44,599 "POST /accounts/login/ HTTP/1.1" 302 0
+WARNING 2025-03-27 10:51:44,622 Not Found: /student/3/
+WARNING 2025-03-27 10:51:44,624 "GET /student/3/ HTTP/1.1" 404 6923
+INFO 2025-03-27 10:52:57,163 D:\Sipher Web\Django School Management System\SMS\apps\students\views.py changed, reloading.
+INFO 2025-03-27 10:52:58,508 Watching for file changes with StatReloader
+WARNING 2025-03-27 10:52:58,880 Not Found: /student/3/
+WARNING 2025-03-27 10:52:58,881 "GET /student/3/ HTTP/1.1" 404 6923
+ERROR 2025-03-27 10:53:04,704 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'invoice-list' not found. 'invoice-list' is not a valid view function or pattern name.
+ERROR 2025-03-27 10:53:04,715 "GET / HTTP/1.1" 500 140121
+INFO 2025-03-27 10:53:11,921 D:\Sipher Web\Django School Management System\SMS\apps\students\views.py changed, reloading.
+INFO 2025-03-27 10:53:13,508 Watching for file changes with StatReloader
+INFO 2025-03-27 10:53:15,432 D:\Sipher Web\Django School Management System\SMS\apps\finance\views.py changed, reloading.
+INFO 2025-03-27 10:53:16,598 Watching for file changes with StatReloader
+INFO 2025-03-27 10:53:19,141 D:\Sipher Web\Django School Management System\SMS\apps\finance\urls.py changed, reloading.
+INFO 2025-03-27 10:53:20,048 Watching for file changes with StatReloader
+INFO 2025-03-27 10:53:22,983 D:\Sipher Web\Django School Management System\SMS\apps\finance\models.py changed, reloading.
+INFO 2025-03-27 10:53:23,935 Watching for file changes with StatReloader
+INFO 2025-03-27 10:53:26,813 "GET / HTTP/1.1" 200 28017
+INFO 2025-03-27 10:53:33,566 "GET /site-config HTTP/1.1" 200 25223
+INFO 2025-03-27 10:54:04,516 "POST /site-config HTTP/1.1" 302 0
+INFO 2025-03-27 10:54:04,557 "GET /college-profile/ HTTP/1.1" 200 22413
+INFO 2025-03-27 10:54:04,814 "GET /media/college_logos/university-education-university.png HTTP/1.1" 200 272242
+INFO 2025-03-27 10:54:10,606 "GET /accounts/login/ HTTP/1.1" 200 5731
+INFO 2025-03-27 10:54:10,677 "GET /media/college_logos/university-education-university.png HTTP/1.1" 304 0
+INFO 2025-03-27 10:54:14,081 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-03-27 10:54:14,111 "GET / HTTP/1.1" 200 28031
+INFO 2025-03-27 10:54:16,093 "GET /student/list HTTP/1.1" 200 21924
+INFO 2025-03-27 10:55:28,534 "GET / HTTP/1.1" 200 28031
+INFO 2025-03-27 10:55:33,155 "GET /college-profile/ HTTP/1.1" 200 22413
+INFO 2025-03-27 10:55:33,262 "GET /media/college_logos/university-education-university.png HTTP/1.1" 304 0
+INFO 2025-03-27 10:55:47,778 "GET /finance/list/ HTTP/1.1" 200 21430
+INFO 2025-03-27 10:55:49,055 "GET /finance/create/ HTTP/1.1" 200 24867
+INFO 2025-03-27 10:56:00,106 "GET /session/list/ HTTP/1.1" 200 23089
+INFO 2025-03-27 10:56:02,605 "GET /session/1/delete/ HTTP/1.1" 200 21480
+INFO 2025-03-27 10:56:04,081 "POST /session/1/delete/ HTTP/1.1" 302 0
+ERROR 2025-03-27 10:56:04,146 Internal Server Error: /session/list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\middleware.py", line 9, in __call__
+    current_session = AcademicSession.objects.get(current=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+apps.corecode.models.AcademicSession.DoesNotExist: AcademicSession matching query does not exist.
+ERROR 2025-03-27 10:56:04,148 "GET /session/list/ HTTP/1.1" 500 73695
+ERROR 2025-03-27 10:56:05,773 Internal Server Error: /session/1/delete/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\middleware.py", line 9, in __call__
+    current_session = AcademicSession.objects.get(current=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+apps.corecode.models.AcademicSession.DoesNotExist: AcademicSession matching query does not exist.
+ERROR 2025-03-27 10:56:05,774 "GET /session/1/delete/ HTTP/1.1" 500 73461
+ERROR 2025-03-27 10:56:12,929 Internal Server Error: /session/list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\middleware.py", line 9, in __call__
+    current_session = AcademicSession.objects.get(current=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+apps.corecode.models.AcademicSession.DoesNotExist: AcademicSession matching query does not exist.
+ERROR 2025-03-27 10:56:12,930 "GET /session/list/ HTTP/1.1" 500 73556
+ERROR 2025-03-27 10:56:15,664 Internal Server Error: /current-session/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\middleware.py", line 9, in __call__
+    current_session = AcademicSession.objects.get(current=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+apps.corecode.models.AcademicSession.DoesNotExist: AcademicSession matching query does not exist.
+ERROR 2025-03-27 10:56:15,666 "GET /current-session/ HTTP/1.1" 500 73593
+INFO 2025-03-27 10:57:08,975 Watching for file changes with StatReloader
+INFO 2025-03-27 10:57:12,235 "GET /current-session/ HTTP/1.1" 302 0
+INFO 2025-03-27 10:57:12,253 "GET /accounts/login/?next=/current-session/ HTTP/1.1" 200 5718
+WARNING 2025-03-27 10:57:12,327 "GET /static/path/to/default-logo.png HTTP/1.1" 404 1831
+INFO 2025-03-27 10:57:15,518 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-03-27 10:57:15,566 "GET /current-session/ HTTP/1.1" 200 21995
+INFO 2025-03-27 10:57:27,631 "GET /session/create/?next=current-session/ HTTP/1.1" 200 21651
+INFO 2025-03-27 10:57:34,159 "GET /session/list/ HTTP/1.1" 200 23075
+INFO 2025-03-27 10:57:41,909 "POST /session/create/ HTTP/1.1" 302 0
+INFO 2025-03-27 10:57:41,948 "GET /session/list/ HTTP/1.1" 200 23561
+INFO 2025-03-27 10:57:48,616 "GET /session/2/update/ HTTP/1.1" 200 21644
+INFO 2025-03-27 10:58:06,628 "GET /session/list/ HTTP/1.1" 200 23416
+INFO 2025-03-27 10:58:12,425 "GET /session/1/delete/ HTTP/1.1" 200 21466
+INFO 2025-03-27 10:58:13,857 "POST /session/1/delete/ HTTP/1.1" 302 0
+ERROR 2025-03-27 10:58:13,917 Internal Server Error: /session/list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\middleware.py", line 9, in __call__
+    current_session = AcademicSession.objects.get(current=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+apps.corecode.models.AcademicSession.DoesNotExist: AcademicSession matching query does not exist.
+ERROR 2025-03-27 10:58:13,917 "GET /session/list/ HTTP/1.1" 500 73727
+ERROR 2025-03-27 10:58:15,691 Internal Server Error: /session/1/delete/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\middleware.py", line 9, in __call__
+    current_session = AcademicSession.objects.get(current=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+apps.corecode.models.AcademicSession.DoesNotExist: AcademicSession matching query does not exist.
+ERROR 2025-03-27 10:58:15,692 "GET /session/1/delete/ HTTP/1.1" 500 73493
+ERROR 2025-03-27 10:58:31,742 Internal Server Error: /session/create/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\middleware.py", line 9, in __call__
+    current_session = AcademicSession.objects.get(current=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+apps.corecode.models.AcademicSession.DoesNotExist: AcademicSession matching query does not exist.
+ERROR 2025-03-27 10:58:31,742 "POST /session/create/?next=current-session/ HTTP/1.1" 500 75007
+ERROR 2025-03-27 10:58:45,478 Internal Server Error: /session/create/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\middleware.py", line 9, in __call__
+    current_session = AcademicSession.objects.get(current=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+apps.corecode.models.AcademicSession.DoesNotExist: AcademicSession matching query does not exist.
+ERROR 2025-03-27 10:58:45,479 "GET /session/create/?next=current-session/ HTTP/1.1" 500 74156
+INFO 2025-03-27 10:59:45,206 Watching for file changes with StatReloader
+ERROR 2025-03-27 10:59:48,941 Internal Server Error: /current-session/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\middleware.py", line 9, in __call__
+    current_session = AcademicSession.objects.get(current=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+apps.corecode.models.AcademicSession.DoesNotExist: AcademicSession matching query does not exist.
+ERROR 2025-03-27 10:59:48,946 "GET /current-session/ HTTP/1.1" 500 73785
+ERROR 2025-03-27 10:59:50,482 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\middleware.py", line 9, in __call__
+    current_session = AcademicSession.objects.get(current=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+apps.corecode.models.AcademicSession.DoesNotExist: AcademicSession matching query does not exist.
+ERROR 2025-03-27 10:59:50,482 "GET /accounts/login/?next=/current-session/ HTTP/1.1" 500 74022
+ERROR 2025-03-27 10:59:50,735 Internal Server Error: /finance/create/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\middleware.py", line 9, in __call__
+    current_session = AcademicSession.objects.get(current=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+apps.corecode.models.AcademicSession.DoesNotExist: AcademicSession matching query does not exist.
+ERROR 2025-03-27 10:59:50,735 "GET /finance/create/ HTTP/1.1" 500 73474
+ERROR 2025-03-27 10:59:52,154 Internal Server Error: /finance/list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\middleware.py", line 9, in __call__
+    current_session = AcademicSession.objects.get(current=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+apps.corecode.models.AcademicSession.DoesNotExist: AcademicSession matching query does not exist.
+ERROR 2025-03-27 10:59:52,155 "GET /finance/list/ HTTP/1.1" 500 73457
+ERROR 2025-03-27 10:59:57,086 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\middleware.py", line 9, in __call__
+    current_session = AcademicSession.objects.get(current=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+apps.corecode.models.AcademicSession.DoesNotExist: AcademicSession matching query does not exist.
+ERROR 2025-03-27 10:59:57,086 "GET / HTTP/1.1" 500 73299
+INFO 2025-03-27 11:00:24,820 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-03-27 11:00:26,130 Watching for file changes with StatReloader
+INFO 2025-03-27 11:00:28,125 D:\Sipher Web\Django School Management System\SMS\apps\finance\models.py changed, reloading.
+INFO 2025-03-27 11:00:29,297 Watching for file changes with StatReloader
+ERROR 2025-03-27 11:00:29,718 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\middleware.py", line 9, in __call__
+    current_session = AcademicSession.objects.get(current=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+apps.corecode.models.AcademicSession.DoesNotExist: AcademicSession matching query does not exist.
+ERROR 2025-03-27 11:00:29,720 "GET / HTTP/1.1" 500 73436
+INFO 2025-03-27 11:04:07,840 Watching for file changes with StatReloader
+INFO 2025-03-27 11:04:13,115 "GET / HTTP/1.1" 302 0
+INFO 2025-03-27 11:04:13,140 "GET /accounts/login/?next=/ HTTP/1.1" 200 5702
+WARNING 2025-03-27 11:04:13,208 "GET /static/path/to/default-logo.png HTTP/1.1" 404 1831
+INFO 2025-03-27 11:04:15,047 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-03-27 11:04:15,077 "GET / HTTP/1.1" 200 28017
+INFO 2025-03-27 11:04:17,763 "GET /current-session/ HTTP/1.1" 200 21995
+INFO 2025-03-27 11:04:19,126 "GET /session/create/?next=current-session/ HTTP/1.1" 200 21651
+INFO 2025-03-27 11:04:33,260 "POST /session/create/?next=current-session/ HTTP/1.1" 302 0
+INFO 2025-03-27 11:04:33,287 "GET /session/list/ HTTP/1.1" 200 23559
+INFO 2025-03-27 11:04:37,699 "GET /session/1/delete/ HTTP/1.1" 200 21464
+INFO 2025-03-27 11:04:39,261 "POST /session/1/delete/ HTTP/1.1" 302 0
+INFO 2025-03-27 11:04:39,292 "GET /session/list/ HTTP/1.1" 200 23071
+INFO 2025-03-27 11:04:52,706 "GET /term/list/ HTTP/1.1" 200 23706
+INFO 2025-03-27 11:05:04,126 "GET /subject/list/ HTTP/1.1" 200 22872
+INFO 2025-03-27 11:05:07,791 "GET /class/list/ HTTP/1.1" 200 22885
+INFO 2025-03-27 11:05:18,775 "POST /class/create/ HTTP/1.1" 302 0
+INFO 2025-03-27 11:05:18,823 "GET /class/list/ HTTP/1.1" 200 23303
+INFO 2025-03-27 11:05:20,257 "GET /class/1/delete/ HTTP/1.1" 200 21456
+INFO 2025-03-27 11:05:21,439 "POST /class/1/delete/ HTTP/1.1" 302 0
+INFO 2025-03-27 11:05:21,476 "GET /class/list/ HTTP/1.1" 200 22881
+INFO 2025-03-27 11:05:22,835 "GET /class/2/delete/ HTTP/1.1" 200 21456
+INFO 2025-03-27 11:05:23,818 "POST /class/2/delete/ HTTP/1.1" 302 0
+INFO 2025-03-27 11:05:23,859 "GET /class/list/ HTTP/1.1" 200 22602
+INFO 2025-03-27 11:05:32,728 "POST /class/create/ HTTP/1.1" 302 0
+INFO 2025-03-27 11:05:32,758 "GET /class/list/ HTTP/1.1" 200 23020
+INFO 2025-03-27 11:05:38,057 "POST /class/create/ HTTP/1.1" 302 0
+INFO 2025-03-27 11:05:38,088 "GET /class/list/ HTTP/1.1" 200 23296
+INFO 2025-03-27 11:05:42,839 "POST /class/create/ HTTP/1.1" 302 0
+INFO 2025-03-27 11:05:42,872 "GET /class/list/ HTTP/1.1" 200 23572
+INFO 2025-03-27 11:05:47,666 "POST /class/create/ HTTP/1.1" 302 0
+INFO 2025-03-27 11:05:47,695 "GET /class/list/ HTTP/1.1" 200 23848
+INFO 2025-03-27 11:05:49,497 "GET /student/list HTTP/1.1" 200 21908
+INFO 2025-03-27 11:05:50,937 "GET /student/create/ HTTP/1.1" 200 29424
+INFO 2025-03-27 11:06:07,578 "POST /student/create/ HTTP/1.1" 200 29786
+INFO 2025-03-27 11:06:13,756 "POST /student/create/ HTTP/1.1" 302 0
+INFO 2025-03-27 11:06:13,784 "GET /student/1/ HTTP/1.1" 200 24621
+INFO 2025-03-27 11:06:20,046 "GET /student/list HTTP/1.1" 200 22275
+INFO 2025-03-27 11:06:23,866 "GET /staff/list/ HTTP/1.1" 200 21658
+INFO 2025-03-27 11:06:27,066 "GET /finance/list/ HTTP/1.1" 200 21414
+INFO 2025-03-27 11:06:28,434 "GET /finance/create/ HTTP/1.1" 200 24983
