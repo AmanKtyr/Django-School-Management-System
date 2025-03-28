@@ -635,3 +635,154 @@ INFO 2025-03-28 11:47:07,364 "GET /college-profile/ HTTP/1.1" 200 22458
 INFO 2025-03-28 11:47:07,481 "GET /media/college_logos/college_lgoooo_wLVF410.jpg HTTP/1.1" 200 31795
 INFO 2025-03-28 11:47:09,158 "GET /college-profile/ HTTP/1.1" 200 22458
 INFO 2025-03-28 11:47:09,213 "GET /media/college_logos/college_lgoooo_wLVF410.jpg HTTP/1.1" 304 0
+INFO 2025-03-28 11:55:24,056 Watching for file changes with StatReloader
+INFO 2025-03-28 11:55:28,847 "GET / HTTP/1.1" 302 0
+INFO 2025-03-28 11:55:28,876 "GET /accounts/login/?next=/ HTTP/1.1" 200 5723
+INFO 2025-03-28 11:55:29,272 "GET /media/college_logos/college_lgoooo_wLVF410.jpg HTTP/1.1" 304 0
+WARNING 2025-03-28 11:55:30,436 Not Found: /favicon.ico
+WARNING 2025-03-28 11:55:30,442 "GET /favicon.ico HTTP/1.1" 404 7163
+INFO 2025-03-28 11:55:32,615 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-03-28 11:55:32,647 "GET / HTTP/1.1" 200 28029
+INFO 2025-03-28 11:55:38,565 "GET /student/list HTTP/1.1" 200 22289
+INFO 2025-03-28 11:55:40,136 "GET /student/1/ HTTP/1.1" 200 24489
+INFO 2025-03-28 12:10:11,466 "GET / HTTP/1.1" 200 28029
+INFO 2025-03-28 14:42:45,749 Watching for file changes with StatReloader
+INFO 2025-03-28 14:43:50,175 Watching for file changes with StatReloader
+INFO 2025-03-28 14:46:08,170 Watching for file changes with StatReloader
+INFO 2025-03-28 14:48:03,139 Watching for file changes with StatReloader
+INFO 2025-03-28 14:50:20,683 Watching for file changes with StatReloader
+INFO 2025-03-28 15:04:12,819 Watching for file changes with StatReloader
+INFO 2025-03-28 15:04:15,900 "GET / HTTP/1.1" 302 0
+INFO 2025-03-28 15:04:15,948 "GET /accounts/login/?next=/ HTTP/1.1" 200 5723
+INFO 2025-03-28 15:04:16,178 "GET /media/college_logos/college_lgoooo_wLVF410.jpg HTTP/1.1" 304 0
+WARNING 2025-03-28 15:04:16,864 Not Found: /favicon.ico
+WARNING 2025-03-28 15:04:16,864 "GET /favicon.ico HTTP/1.1" 404 7268
+INFO 2025-03-28 15:04:18,702 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-03-28 15:04:18,737 "GET / HTTP/1.1" 200 28029
+INFO 2025-03-28 15:04:49,061 "GET / HTTP/1.1" 200 28049
+ERROR 2025-03-28 15:04:51,360 Internal Server Error: /fees/fee_management/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\fees\views.py", line 35, in fee_management
+    return render(request, "fees/fee_management.html", {"students": students, "payments": payments})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: fees/fee_management.html
+ERROR 2025-03-28 15:04:51,365 "GET /fees/fee_management/ HTTP/1.1" 500 87248
+ERROR 2025-03-28 15:06:23,123 Internal Server Error: /fees/fee_management/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\fees\views.py", line 35, in fee_management
+    return render(request, "fees/fee_management.html", {"students": students, "payments": payments})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: fees/fee_management.html
+ERROR 2025-03-28 15:06:23,123 "GET /fees/fee_management/ HTTP/1.1" 500 87385
+ERROR 2025-03-28 15:06:23,709 Internal Server Error: /fees/fee_management/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\fees\views.py", line 35, in fee_management
+    return render(request, "fees/fee_management.html", {"students": students, "payments": payments})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: fees/fee_management.html
+ERROR 2025-03-28 15:06:23,709 "GET /fees/fee_management/ HTTP/1.1" 500 87385
+INFO 2025-03-28 15:07:11,665 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-03-28 15:07:12,873 Watching for file changes with StatReloader
+INFO 2025-03-28 15:12:15,969 Watching for file changes with StatReloader
+INFO 2025-03-28 15:12:18,878 "GET / HTTP/1.1" 200 28049
+INFO 2025-03-28 15:12:20,887 "GET /student/list HTTP/1.1" 200 22309
+ERROR 2025-03-28 15:12:27,432 Internal Server Error: /fees/fee_management/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\fees\views.py", line 35, in fee_management
+    return render(request, "fees/fee_management.html", {"students": students, "payments": payments})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: fees/fee_management.html
+ERROR 2025-03-28 15:12:27,432 "GET /fees/fee_management/ HTTP/1.1" 500 87260
+INFO 2025-03-28 15:12:39,970 D:\Sipher Web\Django School Management System\SMS\apps\fees\urls.py changed, reloading.
+INFO 2025-03-28 15:12:41,136 Watching for file changes with StatReloader
+WARNING 2025-03-28 15:12:45,405 Not Found: /fees/fee_management/
+WARNING 2025-03-28 15:12:45,409 "GET /fees/fee_management/ HTTP/1.1" 404 7366
+WARNING 2025-03-28 15:12:46,353 Not Found: /fees/fee_management/
+WARNING 2025-03-28 15:12:46,353 "GET /fees/fee_management/ HTTP/1.1" 404 7366
+WARNING 2025-03-28 15:12:46,537 Not Found: /fees/fee_management/
+WARNING 2025-03-28 15:12:46,541 "GET /fees/fee_management/ HTTP/1.1" 404 7366
+WARNING 2025-03-28 15:12:46,817 Not Found: /fees/fee_management/
+WARNING 2025-03-28 15:12:46,823 "GET /fees/fee_management/ HTTP/1.1" 404 7366
+INFO 2025-03-28 15:12:50,109 "GET /student/list HTTP/1.1" 200 22295
+INFO 2025-03-28 15:12:50,438 "GET /student/list HTTP/1.1" 200 22295
+INFO 2025-03-28 15:12:52,608 "GET /attendance/attendance_list/ HTTP/1.1" 200 25724
+ERROR 2025-03-28 15:12:55,356 Internal Server Error: /fees//
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\fees\views.py", line 35, in fee_management
+    return render(request, "fees/fee_management.html", {"students": students, "payments": payments})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: fees/fee_management.html
+ERROR 2025-03-28 15:12:55,358 "GET /fees// HTTP/1.1" 500 87107
+INFO 2025-03-28 15:13:07,336 D:\Sipher Web\Django School Management System\SMS\apps\fees\urls.py changed, reloading.
+INFO 2025-03-28 15:13:08,753 Watching for file changes with StatReloader
+INFO 2025-03-28 15:18:33,329 Watching for file changes with StatReloader
