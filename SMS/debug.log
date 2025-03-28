@@ -603,3 +603,35 @@ INFO 2025-03-27 11:06:20,046 "GET /student/list HTTP/1.1" 200 22275
 INFO 2025-03-27 11:06:23,866 "GET /staff/list/ HTTP/1.1" 200 21658
 INFO 2025-03-27 11:06:27,066 "GET /finance/list/ HTTP/1.1" 200 21414
 INFO 2025-03-27 11:06:28,434 "GET /finance/create/ HTTP/1.1" 200 24983
+INFO 2025-03-28 11:45:54,276 Watching for file changes with StatReloader
+INFO 2025-03-28 11:45:57,658 "GET / HTTP/1.1" 302 0
+INFO 2025-03-28 11:45:57,704 "GET /accounts/login/?next=/ HTTP/1.1" 200 5702
+WARNING 2025-03-28 11:45:57,894 "GET /static/path/to/default-logo.png HTTP/1.1" 404 1831
+INFO 2025-03-28 11:45:58,002 "GET /static/dist/css/login-page.css HTTP/1.1" 200 9070
+INFO 2025-03-28 11:45:58,411 "GET /static/dist/img/bg.jpg HTTP/1.1" 200 3093083
+INFO 2025-03-28 11:45:58,475 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+WARNING 2025-03-28 11:45:59,044 Not Found: /favicon.ico
+WARNING 2025-03-28 11:45:59,046 "GET /favicon.ico HTTP/1.1" 404 7163
+INFO 2025-03-28 11:46:01,079 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-03-28 11:46:01,113 "GET / HTTP/1.1" 200 28015
+INFO 2025-03-28 11:46:03,493 "GET /student/list HTTP/1.1" 200 22275
+INFO 2025-03-28 11:46:04,557 "GET /student/1/ HTTP/1.1" 200 24475
+INFO 2025-03-28 11:46:04,705 "GET /static/dist/img/avatar.png HTTP/1.1" 200 2044603
+INFO 2025-03-28 11:46:08,269 "GET /staff/list/ HTTP/1.1" 200 21658
+INFO 2025-03-28 11:46:10,442 "GET /staff/create/ HTTP/1.1" 200 26156
+INFO 2025-03-28 11:46:25,451 "POST /staff/create/ HTTP/1.1" 302 0
+INFO 2025-03-28 11:46:25,481 "GET /staff/1/ HTTP/1.1" 200 23830
+INFO 2025-03-28 11:46:25,598 "GET /static/dist/img/teacher-dp.jpg HTTP/1.1" 200 14750
+INFO 2025-03-28 11:46:28,157 "GET /attendance/attendance_list/ HTTP/1.1" 200 25704
+INFO 2025-03-28 11:46:30,928 "GET /attendance/attendance_list/?class_id=6 HTTP/1.1" 200 25712
+INFO 2025-03-28 11:46:33,129 "GET /attendance/attendance_list/?class_id=5 HTTP/1.1" 200 26532
+INFO 2025-03-28 11:46:36,933 "GET /finance/list/ HTTP/1.1" 200 21414
+INFO 2025-03-28 11:46:38,394 "GET /finance/create/ HTTP/1.1" 200 24983
+INFO 2025-03-28 11:46:46,287 "GET /result/create/ HTTP/1.1" 200 22026
+INFO 2025-03-28 11:46:50,961 "GET /session/list/ HTTP/1.1" 200 23071
+INFO 2025-03-28 11:46:54,057 "GET /site-config HTTP/1.1" 200 25221
+INFO 2025-03-28 11:47:07,341 "POST /site-config HTTP/1.1" 302 0
+INFO 2025-03-28 11:47:07,364 "GET /college-profile/ HTTP/1.1" 200 22458
+INFO 2025-03-28 11:47:07,481 "GET /media/college_logos/college_lgoooo_wLVF410.jpg HTTP/1.1" 200 31795
+INFO 2025-03-28 11:47:09,158 "GET /college-profile/ HTTP/1.1" 200 22458
+INFO 2025-03-28 11:47:09,213 "GET /media/college_logos/college_lgoooo_wLVF410.jpg HTTP/1.1" 304 0
