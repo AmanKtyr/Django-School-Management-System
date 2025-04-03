@@ -24,7 +24,8 @@ from .models import (
     SiteConfig,
     StudentClass,
     Subject,
-    CollegeProfile
+    CollegeProfile,
+    FeeSetting
 )
 
 
@@ -286,3 +287,30 @@ def site_config(request):
         form = CollegeProfileForm(instance=profile)
 
     return render(request, 'corecode/siteconfig.html', {'form': form, 'title': 'Site Configuration'})
+
+
+def fee_settings(request):
+    if request.method == "POST":
+        class_name = request.POST.get("class")
+        frequency = request.POST.get("frequency")
+        fee_types = request.POST.getlist("fee_type[]")
+        amounts = request.POST.getlist("amount[]")
+        due_dates = request.POST.getlist("due_date[]")
+        late_fees = request.POST.getlist("late_fee[]")
+        discounts = request.POST.getlist("discount[]")
+
+        for i in range(len(fee_types)):
+            FeeSetting.objects.create(
+                class_name=class_name,
+                frequency=frequency,
+                fee_type=fee_types[i],
+                amount=float(amounts[i]) if amounts[i] else 0,
+                due_date=due_dates[i],
+                late_fee=float(late_fees[i]) if late_fees[i] else 0,
+                discount=float(discounts[i]) if discounts[i] else 0
+            )
+
+        return redirect("fee_settings")
+
+    fees = FeeSetting.objects.all()
+    return render(request, "corecode/fee_settings.html", {"fees": fees})

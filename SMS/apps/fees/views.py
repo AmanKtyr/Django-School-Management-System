@@ -34,7 +34,7 @@ def fee_management(request):
     return render(request, "fees/fee_list.html", {"students": students, "payments": payments})
 
 
-# ✅ नया `submit_fee` function add करें:
+
 def submit_fee(request):
     if request.method == "POST":
         student_id = request.POST.get("student_id")

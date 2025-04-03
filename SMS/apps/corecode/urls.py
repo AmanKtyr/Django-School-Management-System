@@ -11,7 +11,7 @@ from .views import (
     SessionDeleteView,
     SessionListView,
     SessionUpdateView,
-    site_config_view,  # Corrected import
+    site_config_view,  
     SubjectCreateView,
     SubjectDeleteView,
     SubjectListView,
@@ -21,6 +21,7 @@ from .views import (
     TermListView,
     TermUpdateView,
     college_profile_view,
+    fee_settings,  
 )
 
 urlpatterns = [
@@ -65,4 +66,5 @@ urlpatterns = [
     path("college-profile/", college_profile_view, name="college-profile"),
     path('site-config/', site_config_view, name='site_config'),
     path('college-profile/', college_profile_view, name='college_profile'),  
+     path("fees/settings/", fee_settings, name="fee_settings"),
 ]

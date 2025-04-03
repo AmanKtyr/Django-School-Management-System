@@ -16,8 +16,8 @@
                 <label class="form-label">Class</label>
                 <select class="form-select" name="class_filter" onchange="this.form.submit()">
                     <option value="">All Classes</option>
-                    {% for class in classes %}
-                        <option value="{{ class }}" {% if request.GET.class_filter == class %}selected{% endif %}>{{ class }}</option>
+                    {% for current_class in current_class %}
+                        <option value="{{ current_class }}" {% if request.GET.class_filter == current_class %}selected{% endif %}>{{ current_class }}</option>
                     {% endfor %}
                 </select>
             </div>
