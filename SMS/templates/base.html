@@ -1,5 +1,6 @@
 {% load static %}
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -419,7 +420,8 @@
 
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <li class="nav-header">Others</li>
-            <li class="nav-item has-treeview">
+           
+              <li class="nav-item has-treeview  {% if request.resolver_match.url_name in 'sessions classes subjects fee_settings terms  ' %}menu-open{% endif %}">
                 <a href="#" class="nav-link">
                     <i class="nav-icon fas fa-copy" style="color: #ff6600;"></i>
                     <p>
@@ -430,31 +432,31 @@
                 
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
-                        <a href="{% url 'sessions' %}" class="nav-link">
+                        <a href="{% url 'sessions' %}" class="nav-link {% if request.resolver_match.url_name == 'sessions' %}active{% endif %}" >
                             <i class="nav-icon fas fa-bars" style="color: #0099cc;"></i>
                             <p>Sessions</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'terms' %}" class="nav-link">
+                        <a href="{% url 'terms' %}" class="nav-link {% if request.resolver_match.url_name == 'terms' %}active{% endif %}">
                             <i class="nav-icon fas fa-bars" style="color: #ff3366;"></i>
                             <p>Terms</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'subjects' %}" class="nav-link">
+                        <a href="{% url 'subjects' %}" class="nav-link {% if request.resolver_match.url_name == 'subjects' %}active{% endif %}" >
                             <i class="nav-icon fas fa-bars" style="color: #33cc33;"></i>
                             <p>Subjects</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'classes' %}" class="nav-link">
+                        <a href="{% url 'classes' %}" class="nav-link {% if request.resolver_match.url_name == 'classes' %}active{% endif %}">
                             <i class="nav-icon fas fa-bars" style="color: #cc3300;"></i>
                             <p>Classes</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                      <a href="{% url 'fee_settings' %}" class="nav-link">
+                      <a href="{% url 'fee_settings' %}" class="nav-link {% if request.resolver_match.url_name == 'fee_settings' %}active{% endif %}" >
                           <i class="nav-icon fas fa-bars" style="color: #cc3300;"></i>
                           <p>Fee Settings</p>
                       </a>
