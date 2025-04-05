@@ -24,6 +24,12 @@
 {% endblock breadcrumb %}
 
 {% block content %}
+
+<form method="get">
+  {{ myFilter.form.as_p }}
+  <button type="submit">Filter</button>
+</form>
+
   <div class="table-responsive">
     <table id="studenttable" class="table table-bordered table-hover" data-page-length='100'>
       <thead class="thead-dark">

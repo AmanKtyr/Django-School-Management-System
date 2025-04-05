@@ -12,14 +12,22 @@ from django.shortcuts import render
 from apps.finance.models import Invoice
 
 from .models import Student, StudentBulkUpload
-
+from .filters import StudentFilter
 
 class StudentListView(LoginRequiredMixin, ListView):
     model = Student
     template_name = "students/student_list.html"
-    context_object_name = "students"  
+    context_object_name = "students"
 
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        self.myFilter = StudentFilter(self.request.GET, queryset=queryset)
+        return self.myFilter.qs
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["myFilter"] = self.myFilter
+        return context
 
 class StudentDetailView(LoginRequiredMixin, DetailView):
     model = Student

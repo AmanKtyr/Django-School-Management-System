@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     "apps.result",
     "apps.NonTeachingStaffs",
     "apps.attendance",
-    'apps.fees',  
+    'apps.fees',
+    'django_filters',  
 ]
 
 MIDDLEWARE = [
