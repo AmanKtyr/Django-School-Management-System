@@ -1,0 +1,44 @@
+<div class="card shadow p-3 mb-4">
+    <h5 class="mb-3">🔍 Filter</h5>
+    <form method="GET" class="row g-3" id="filter-form">
+        <div class="col-md-4">
+            {{ filter_form.class_name.label_tag }}
+            {{ filter_form.class_name }}
+        </div>
+        <div class="col-md-4">
+            {{ filter_form.section.label_tag }}
+            {{ filter_form.section }}
+        </div>
+        {% if show_search %}
+        <div class="col-md-4">
+            <label class="form-label">Search</label>
+            <input type="text" class="form-control" name="search" placeholder="Search..." value="{{ request.GET.search }}">
+        </div>
+        {% endif %}
+    </form>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const classSelect = document.getElementById('class-filter');
+    const sectionSelect = document.getElementById('section-filter');
+
+    classSelect.addEventListener('change', function() {
+        const classId = this.value;
+        // Clear section selection when class changes
+        sectionSelect.innerHTML = '<option value="">-- All Sections --</option>';
+        
+        if(classId) {
+            fetch(`/api/get-sections/${classId}/`)
+                .then(response => response.json())
+                .then(data => {
+                    data.sections.forEach(section => {
+                        const option = new Option(section.name, section.id);
+                        sectionSelect.add(option);
+                    });
+                });
+        }
+        document.getElementById('filter-form').submit();
+    });
+});
+</script>

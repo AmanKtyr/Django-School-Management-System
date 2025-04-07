@@ -10,6 +10,7 @@ from django.views.generic.edit import CreateView, DeleteView, UpdateView
 from django.shortcuts import render
 
 from apps.finance.models import Invoice
+from apps.corecode.filters import ClassSectionFilterForm
 
 from .models import Student, StudentBulkUpload
 from .filters import StudentFilter
@@ -21,12 +22,19 @@ class StudentListView(LoginRequiredMixin, ListView):
 
     def get_queryset(self):
         queryset = super().get_queryset()
-        self.myFilter = StudentFilter(self.request.GET, queryset=queryset)
-        return self.myFilter.qs
+        self.filter_form = ClassSectionFilterForm(self.request.GET)
+        
+        if self.filter_form.is_valid():
+            if self.filter_form.cleaned_data['class_name']:
+                queryset = queryset.filter(current_class=self.filter_form.cleaned_data['class_name'])
+            if self.filter_form.cleaned_data['section']:
+                queryset = queryset.filter(section=self.filter_form.cleaned_data['section'])
+        
+        return queryset
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["myFilter"] = self.myFilter
+        context["filter_form"] = self.filter_form
         return context
 
 class StudentDetailView(LoginRequiredMixin, DetailView):

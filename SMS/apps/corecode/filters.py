@@ -1,30 +1,44 @@
 # filters.py या forms.py
 from django import forms
-from .models import current_class, Section
+from .models import StudentClass
+from apps.students.models import Student
 
 class ClassSectionFilterForm(forms.Form):
     class_name = forms.ModelChoiceField(
-        queryset=current_class.objects.all(),
+        queryset=StudentClass.objects.all(),
         required=False,
-        empty_label="-- सभी कक्षाएं --",
-        label="कक्षा चुनें",
-        widget=forms.Select(attrs={'current_class': 'form-select', 'onchange': 'this.form.submit()'}),
+        empty_label="-- All Classes--",
+        label="Select Class",
+        widget=forms.Select(attrs={
+            'class': 'form-select',
+            'onchange': 'this.form.submit()',
+            'id': 'class-filter'
+        }),
     )
     
-    section = forms.ModelChoiceField(
-        queryset=Section.objects.all(),
+    section = forms.ChoiceField(
+        choices=[],
         required=False,
-        empty_label="-- सभी सेक्शन --",
-        label="सेक्शन चुनें",
-        widget=forms.Select(attrs={'current_class': 'form-select', 'onchange': 'this.form.submit()'}),
+        label="Select Section",
+        widget=forms.Select(attrs={
+            'class': 'form-select',
+            'onchange': 'this.form.submit()',
+            'id': 'section-filter'
+        }),
     )
-    
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        # यदि क्लास चुनी गई है तो सेक्शन क्वेरीसेट फिल्टर करें
-        if 'class_name' in self.data and self.data['class_name']:
+        # Get unique sections from Student model
+        sections = Student.objects.values_list('section', flat=True).distinct()
+        section_choices = [('', '-- All Sections --')] + [(section, section) for section in sections if section]
+        self.fields['section'].choices = section_choices
+
+        if 'class_name' in self.data:
             try:
                 class_id = int(self.data['class_name'])
-                self.fields['section'].queryset = Section.objects.filter(class_name_id=class_id)
+                sections = Student.objects.filter(current_class_id=class_id).values_list('section', flat=True).distinct()
+                section_choices = [('', '-- All Sections --')] + [(section, section) for section in sections if section]
+                self.fields['section'].choices = section_choices
             except (ValueError, TypeError):
                 pass
