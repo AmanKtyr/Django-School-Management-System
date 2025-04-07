@@ -1,5 +1,5 @@
 from django.urls import path
-
+from . import views
 from .views import (
     ClassCreateView,
     ClassDeleteView,
@@ -11,7 +11,6 @@ from .views import (
     SessionDeleteView,
     SessionListView,
     SessionUpdateView,
-    site_config_view,  
     SubjectCreateView,
     SubjectDeleteView,
     SubjectListView,
@@ -20,13 +19,11 @@ from .views import (
     TermDeleteView,
     TermListView,
     TermUpdateView,
-    college_profile_view,
-    fee_settings,  
 )
 
 urlpatterns = [
     path("", IndexView.as_view(), name="home"),
-    path("site-config", site_config_view, name="configs"),  # Corrected view
+    path("site-config", views.site_config_view, name="configs"),  # Corrected view
     path(
         "current-session/", CurrentSessionAndTermView.as_view(), name="current-session"
     ),
@@ -62,9 +59,11 @@ urlpatterns = [
         SubjectDeleteView.as_view(),
         name="subject-delete",
     ),
-    path('siteconfig/', site_config_view, name='siteconfig'),
-    path("college-profile/", college_profile_view, name="college-profile"),
-    path('site-config/', site_config_view, name='site_config'),
-    path('college-profile/', college_profile_view, name='college_profile'),  
-     path("fees/settings/", fee_settings, name="fee_settings"),
+    path('siteconfig/', views.site_config_view, name='siteconfig'),
+    path("college-profile/", views.college_profile_view, name="college-profile"),
+    path('site-config/', views.site_config_view, name='site_config'),
+    path('college-profile/', views.college_profile_view, name='college_profile'),  
+    path("fees/settings/", views.fee_settings, name="fee_settings"),
+    path('api/get-fee-settings/<int:class_id>/<str:section>/', views.get_fee_settings, name='get_fee_settings'),
+    path('fees/settings/list/', views.fee_settings_list, name='fee_settings_list'),
 ]

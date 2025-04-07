@@ -3,12 +3,8 @@ from django.db import models
 from django.urls import reverse
 from django.utils import timezone
 import random
-
 from io import BytesIO
 from django.core.files.base import ContentFile
-
-from apps.corecode.models import StudentClass
-
 
 class Student(models.Model):
     STATUS_CHOICES = [("active", "Active"), ("inactive", "Inactive")]
@@ -38,7 +34,10 @@ class Student(models.Model):
 
     date_of_birth = models.DateField(default=timezone.now)
     current_class = models.ForeignKey(
-        StudentClass, on_delete=models.SET_NULL, blank=True, null=True
+        'corecode.StudentClass',
+        on_delete=models.SET_NULL,
+        blank=True,
+        null=True
     )
     section = models.CharField(max_length=10, blank=True)
     date_of_admission = models.DateField(default=timezone.now)

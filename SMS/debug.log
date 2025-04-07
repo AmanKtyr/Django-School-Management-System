@@ -4926,3 +4926,230 @@ WARNING 2025-04-07 13:06:55,158 Not Found: /api/get-sections/5/
 WARNING 2025-04-07 13:06:55,159 "GET /api/get-sections/5/ HTTP/1.1" 404 9980
 INFO 2025-04-07 13:06:55,193 "GET /student/list?class_name=5&section=&search= HTTP/1.1" 200 25105
 INFO 2025-04-07 13:06:56,888 "GET /student/list?class_name=5&section=A&search= HTTP/1.1" 200 25105
+INFO 2025-04-07 16:51:20,459 Watching for file changes with StatReloader
+INFO 2025-04-07 16:51:25,147 "GET / HTTP/1.1" 302 0
+INFO 2025-04-07 16:51:25,186 "GET /accounts/login/?next=/ HTTP/1.1" 200 5723
+WARNING 2025-04-07 16:51:25,842 Not Found: /favicon.ico
+WARNING 2025-04-07 16:51:25,842 "GET /favicon.ico HTTP/1.1" 404 9956
+INFO 2025-04-07 16:51:28,310 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-04-07 16:51:28,347 "GET / HTTP/1.1" 200 28422
+INFO 2025-04-07 16:51:32,627 "GET /fees/settings/ HTTP/1.1" 200 28866
+INFO 2025-04-07 16:53:50,034 D:\Sipher Web\Django School Management System\SMS\apps\corecode\models.py changed, reloading.
+INFO 2025-04-07 16:53:50,957 Watching for file changes with StatReloader
+INFO 2025-04-07 16:57:18,041 Watching for file changes with StatReloader
+INFO 2025-04-07 16:58:09,441 D:\Sipher Web\Django School Management System\SMS\apps\students\models.py changed, reloading.
+INFO 2025-04-07 16:58:10,436 Watching for file changes with StatReloader
+INFO 2025-04-07 16:59:25,034 Watching for file changes with StatReloader
+INFO 2025-04-07 16:59:28,751 "GET /fees/settings/ HTTP/1.1" 200 28407
+WARNING 2025-04-07 16:59:31,084 Not Found: /api/get-sections/5/
+WARNING 2025-04-07 16:59:31,085 "GET /api/get-sections/5/ HTTP/1.1" 404 10300
+INFO 2025-04-07 16:59:31,116 "GET /fees/settings/?class_name=5&section= HTTP/1.1" 200 28375
+INFO 2025-04-07 16:59:32,644 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 28375
+INFO 2025-04-07 16:59:46,415 "POST /fees/settings/?class_name=5&section=A HTTP/1.1" 200 28524
+WARNING 2025-04-07 16:59:56,890 Not Found: /api/get-sections/6/
+WARNING 2025-04-07 16:59:56,891 "GET /api/get-sections/6/ HTTP/1.1" 404 10300
+INFO 2025-04-07 16:59:56,961 "GET /fees/settings/?class_name=6&section= HTTP/1.1" 200 28343
+WARNING 2025-04-07 16:59:59,544 Not Found: /api/get-sections/5/
+WARNING 2025-04-07 16:59:59,546 "GET /api/get-sections/5/ HTTP/1.1" 404 10300
+INFO 2025-04-07 16:59:59,573 "GET /fees/settings/?class_name=5&section= HTTP/1.1" 200 28375
+INFO 2025-04-07 17:00:01,314 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 28375
+INFO 2025-04-07 17:00:14,761 "POST /fees/settings/?class_name=5&section=A HTTP/1.1" 200 28524
+INFO 2025-04-07 17:01:17,127 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-07 17:01:18,316 Watching for file changes with StatReloader
+INFO 2025-04-07 17:01:34,314 "POST /fees/settings/?class_name=5&section=A HTTP/1.1" 200 28888
+INFO 2025-04-07 17:01:38,309 "GET /api/get-fee-settings/6/A/ HTTP/1.1" 200 18
+WARNING 2025-04-07 17:01:38,327 Not Found: /api/get-sections/6/
+WARNING 2025-04-07 17:01:38,327 "GET /api/get-sections/6/ HTTP/1.1" 404 10300
+INFO 2025-04-07 17:01:38,354 "GET /fees/settings/?class_name=6&section= HTTP/1.1" 200 26960
+WARNING 2025-04-07 17:01:41,187 Not Found: /api/get-sections/5/
+WARNING 2025-04-07 17:01:41,187 "GET /api/get-sections/5/ HTTP/1.1" 404 10300
+INFO 2025-04-07 17:01:41,215 "GET /fees/settings/?class_name=5&section= HTTP/1.1" 200 26992
+INFO 2025-04-07 17:01:42,618 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 28464
+ERROR 2025-04-07 17:01:55,647 Internal Server Error: /fees/settings/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\views.py", line 363, in fee_settings
+    FeeStructure.objects.create(
+    ^^^^^^^^^^^^
+NameError: name 'FeeStructure' is not defined
+ERROR 2025-04-07 17:01:55,654 "POST /fees/settings/?class_name=5&section=A HTTP/1.1" 500 77517
+INFO 2025-04-07 17:02:21,459 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-07 17:02:22,852 Watching for file changes with StatReloader
+INFO 2025-04-07 17:02:24,330 "POST /fees/settings/?class_name=5&section=A HTTP/1.1" 302 0
+INFO 2025-04-07 17:02:24,394 "GET /fees/settings/ HTTP/1.1" 200 27444
+WARNING 2025-04-07 17:02:27,596 Not Found: /api/get-sections/5/
+WARNING 2025-04-07 17:02:27,597 "GET /api/get-sections/5/ HTTP/1.1" 404 10300
+INFO 2025-04-07 17:02:27,626 "GET /fees/settings/?class_name=5&section= HTTP/1.1" 200 26992
+INFO 2025-04-07 17:02:29,146 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 30030
+INFO 2025-04-07 17:04:45,907 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-07 17:04:47,312 Watching for file changes with StatReloader
+INFO 2025-04-07 17:04:55,444 D:\Sipher Web\Django School Management System\SMS\apps\corecode\urls.py changed, reloading.
+INFO 2025-04-07 17:04:56,493 Watching for file changes with StatReloader
+INFO 2025-04-07 17:05:13,255 D:\Sipher Web\Django School Management System\SMS\apps\corecode\models.py changed, reloading.
+INFO 2025-04-07 17:05:14,319 Watching for file changes with StatReloader
+INFO 2025-04-07 17:05:27,985 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 30261
+INFO 2025-04-07 17:05:29,570 "GET /fees/settings/list/ HTTP/1.1" 200 22919
+INFO 2025-04-07 17:05:34,676 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 30261
+INFO 2025-04-07 17:05:59,782 "GET /fees/settings/list/ HTTP/1.1" 200 22919
+INFO 2025-04-07 17:07:53,102 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-07 17:07:54,446 Watching for file changes with StatReloader
+INFO 2025-04-07 17:07:54,847 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 30261
+WARNING 2025-04-07 17:08:18,495 Not Found: /api/get-sections/6/
+WARNING 2025-04-07 17:08:18,496 "GET /api/get-sections/6/ HTTP/1.1" 404 10578
+INFO 2025-04-07 17:08:18,518 "GET /fees/settings/?class_name=6&section= HTTP/1.1" 200 27191
+INFO 2025-04-07 17:08:18,548 "GET /api/get-fee-settings/6/A/ HTTP/1.1" 200 18
+INFO 2025-04-07 17:08:30,289 "GET /fees/settings/list/ HTTP/1.1" 200 27941
+WARNING 2025-04-07 17:08:52,222 Not Found: /api/get-sections/5/
+WARNING 2025-04-07 17:08:52,225 "GET /api/get-sections/5/ HTTP/1.1" 404 10578
+INFO 2025-04-07 17:08:52,251 "GET /fees/settings/?class_name=5&section= HTTP/1.1" 200 27223
+INFO 2025-04-07 17:08:54,154 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 30261
+INFO 2025-04-07 17:10:23,685 "GET /fees/settings/list/ HTTP/1.1" 200 27941
+INFO 2025-04-07 17:10:34,630 "GET /fees/settings/ HTTP/1.1" 200 27255
+WARNING 2025-04-07 17:10:36,572 Not Found: /api/get-sections/5/
+WARNING 2025-04-07 17:10:36,581 "GET /api/get-sections/5/ HTTP/1.1" 404 10578
+INFO 2025-04-07 17:10:36,631 "GET /fees/settings/?class_name=5&section= HTTP/1.1" 200 27223
+INFO 2025-04-07 17:10:37,747 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 30261
+INFO 2025-04-07 17:10:49,851 "POST /fees/settings/?class_name=5&section=A HTTP/1.1" 302 0
+INFO 2025-04-07 17:10:49,897 "GET /fees/settings/ HTTP/1.1" 200 27675
+INFO 2025-04-07 17:10:53,398 "GET /fees/settings/list/ HTTP/1.1" 200 27941
+INFO 2025-04-07 17:11:08,674 "GET /fees/settings/ HTTP/1.1" 200 27255
+WARNING 2025-04-07 17:11:10,391 Not Found: /api/get-sections/5/
+WARNING 2025-04-07 17:11:10,391 "GET /api/get-sections/5/ HTTP/1.1" 404 10578
+INFO 2025-04-07 17:11:10,417 "GET /fees/settings/?class_name=5&section= HTTP/1.1" 200 27223
+INFO 2025-04-07 17:11:11,741 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 32016
+INFO 2025-04-07 17:11:52,220 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-07 17:11:53,523 Watching for file changes with StatReloader
+INFO 2025-04-07 17:11:56,644 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 36907
+WARNING 2025-04-07 17:12:15,136 Not Found: /api/get-sections/6/
+WARNING 2025-04-07 17:12:15,138 "GET /api/get-sections/6/ HTTP/1.1" 404 10578
+INFO 2025-04-07 17:12:15,167 "GET /fees/settings/?class_name=6&section= HTTP/1.1" 200 34879
+INFO 2025-04-07 17:12:27,063 "POST /fees/settings/?class_name=6&section= HTTP/1.1" 302 0
+INFO 2025-04-07 17:12:27,083 "GET /fees/settings/ HTTP/1.1" 200 31864
+WARNING 2025-04-07 17:12:27,177 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+INFO 2025-04-07 17:12:29,492 "GET /fees/settings/list/ HTTP/1.1" 200 29858
+WARNING 2025-04-07 17:12:38,177 Not Found: /api/get-sections/6/
+WARNING 2025-04-07 17:12:38,178 "GET /api/get-sections/6/ HTTP/1.1" 404 10578
+INFO 2025-04-07 17:12:38,213 "GET /fees/settings/?class_name=6&section= HTTP/1.1" 200 34979
+INFO 2025-04-07 17:13:53,092 "GET /fees/settings/?class_name=6&section= HTTP/1.1" 200 34979
+INFO 2025-04-07 17:16:04,268 "GET /fees/settings/?class_name=6&section= HTTP/1.1" 200 33703
+WARNING 2025-04-07 17:16:04,358 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+WARNING 2025-04-07 17:16:09,967 Not Found: /api/get-sections/5/
+WARNING 2025-04-07 17:16:09,967 "GET /api/get-sections/5/ HTTP/1.1" 404 10578
+INFO 2025-04-07 17:16:10,001 "GET /fees/settings/?class_name=5&section= HTTP/1.1" 200 33735
+WARNING 2025-04-07 17:16:10,090 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+INFO 2025-04-07 17:16:12,447 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 33735
+WARNING 2025-04-07 17:16:12,509 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+INFO 2025-04-07 17:16:19,087 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 36907
+INFO 2025-04-07 17:18:09,419 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 36061
+INFO 2025-04-07 17:18:58,573 "GET /fees/settings/list/ HTTP/1.1" 200 29858
+INFO 2025-04-07 17:19:10,312 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 36907
+INFO 2025-04-07 17:19:15,418 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 36907
+INFO 2025-04-07 17:21:32,029 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 34370
+INFO 2025-04-07 17:22:02,041 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 36907
+INFO 2025-04-07 17:23:54,839 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 36542
+INFO 2025-04-07 17:24:04,493 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 35675
+INFO 2025-04-07 17:24:10,624 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 36907
+INFO 2025-04-07 17:24:33,412 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 37336
+INFO 2025-04-07 17:25:46,256 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 37594
+INFO 2025-04-07 17:26:13,190 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 37593
+WARNING 2025-04-07 17:26:17,117 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-07 17:26:57,383 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 34978
+WARNING 2025-04-07 17:26:58,226 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-07 17:28:58,036 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 37923
+INFO 2025-04-07 17:29:11,516 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 34978
+INFO 2025-04-07 17:29:24,646 "GET /fees/settings/list/ HTTP/1.1" 200 29858
+INFO 2025-04-07 17:32:03,816 "GET /fees/settings/list/ HTTP/1.1" 200 30192
+INFO 2025-04-07 17:32:05,192 "GET /fees/settings/ HTTP/1.1" 200 28556
+WARNING 2025-04-07 17:32:05,277 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+WARNING 2025-04-07 17:32:07,961 Not Found: /api/get-sections/5/
+WARNING 2025-04-07 17:32:07,962 "GET /api/get-sections/5/ HTTP/1.1" 404 10578
+INFO 2025-04-07 17:32:07,989 "GET /fees/settings/?class_name=5&section= HTTP/1.1" 200 31770
+INFO 2025-04-07 17:32:10,341 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 32642
+WARNING 2025-04-07 17:32:19,442 Not Found: /api/get-sections/6/
+WARNING 2025-04-07 17:32:19,442 "GET /api/get-sections/6/ HTTP/1.1" 404 10578
+INFO 2025-04-07 17:32:19,482 "GET /fees/settings/?class_name=6&section= HTTP/1.1" 200 31835
+WARNING 2025-04-07 17:32:22,602 Not Found: /api/get-sections/7/
+WARNING 2025-04-07 17:32:22,604 "GET /api/get-sections/7/ HTTP/1.1" 404 10578
+INFO 2025-04-07 17:32:22,637 "GET /fees/settings/?class_name=7&section= HTTP/1.1" 200 31738
+INFO 2025-04-07 17:33:45,751 "GET /fees/settings/?class_name=7&section= HTTP/1.1" 200 31863
+INFO 2025-04-07 17:34:59,312 "GET /fees/settings/?class_name=7&section= HTTP/1.1" 200 32785
+ERROR 2025-04-07 17:36:06,585 Internal Server Error: /fees/settings/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\views.py", line 376, in fee_settings
+    return render(request, 'corecode/fee_settings.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 577, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 307: 'endblock'. Did you forget to register or load this tag?
+ERROR 2025-04-07 17:36:06,595 "GET /fees/settings/?class_name=7&section= HTTP/1.1" 500 172340
+INFO 2025-04-07 17:37:23,757 "GET /fees/settings/?class_name=7&section= HTTP/1.1" 200 33327
+WARNING 2025-04-07 17:37:29,905 Not Found: /api/get-sections/5/
+WARNING 2025-04-07 17:37:29,906 "GET /api/get-sections/5/ HTTP/1.1" 404 10578
+INFO 2025-04-07 17:37:29,936 "GET /fees/settings/?class_name=5&section= HTTP/1.1" 200 33359
+INFO 2025-04-07 17:37:33,770 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 33360
+INFO 2025-04-07 17:37:37,785 "GET /fees/settings/list/ HTTP/1.1" 200 30192
+INFO 2025-04-07 17:37:44,883 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 33689
+INFO 2025-04-07 17:38:16,729 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 33302
+INFO 2025-04-07 17:39:02,728 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 33285
+INFO 2025-04-07 17:39:10,711 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 33300
+INFO 2025-04-07 17:41:26,628 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 32820
+INFO 2025-04-07 17:41:54,218 "GET /fees/settings/list/ HTTP/1.1" 200 30192

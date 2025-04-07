@@ -106,14 +106,29 @@ class CollegeProfile(models.Model):
 
 
 # fees settings
-class FeeSetting(models.Model):
-    class_name = models.CharField(max_length=100)
-    frequency = models.CharField(max_length=50)
-    fee_type = models.CharField(max_length=100)
-    amount = models.FloatField()
-    due_date = models.DateField()
-    late_fee = models.FloatField(null=True, blank=True)
-    discount = models.FloatField(null=True, blank=True)
+class FeeSettings(models.Model):
+    class_name = models.ForeignKey('StudentClass', on_delete=models.CASCADE)
+    section = models.CharField(max_length=20)
+    frequency = models.CharField(max_length=20)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        unique_together = ['class_name', 'section']
 
     def __str__(self):
-        return f"{self.class_name} - {self.fee_type}"
+        return f"{self.class_name} - {self.section}"
+
+    def get_total_fees(self):
+        return sum(fee.amount - fee.discount for fee in self.fees.all())
+
+class FeeStructure(models.Model):
+    fee_settings = models.ForeignKey(FeeSettings, on_delete=models.CASCADE, related_name='fees')
+    fee_type = models.CharField(max_length=100)
+    amount = models.DecimalField(max_digits=10, decimal_places=2)
+    due_date = models.DateField()
+    late_fee = models.DecimalField(max_digits=10, decimal_places=2, default=0)
+    discount = models.DecimalField(max_digits=10, decimal_places=2, default=0)
+
+    def __str__(self):
+        return f"{self.fee_type} - {self.fee_settings}"

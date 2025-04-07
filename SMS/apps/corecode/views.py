@@ -2,11 +2,13 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
-from django.shortcuts import HttpResponseRedirect, redirect, render, get_object_or_404
+from django.shortcuts import HttpResponseRedirect, redirect, render, get_object_or_404, HttpResponse
+from django.http import JsonResponse
 from django.urls import reverse_lazy
 from django.views.generic import ListView, TemplateView, View
 from django.views.generic.edit import CreateView, DeleteView, UpdateView
 
+from .filters import ClassSectionFilterForm
 
 from .forms import (
     AcademicSessionForm,
@@ -25,7 +27,8 @@ from .models import (
     StudentClass,
     Subject,
     CollegeProfile,
-    FeeSetting
+    FeeSettings,
+    FeeStructure
 )
 
 
@@ -290,27 +293,116 @@ def site_config(request):
 
 
 def fee_settings(request):
-    if request.method == "POST":
-        class_name = request.POST.get("class")
-        frequency = request.POST.get("frequency")
-        fee_types = request.POST.getlist("fee_type[]")
-        amounts = request.POST.getlist("amount[]")
-        due_dates = request.POST.getlist("due_date[]")
-        late_fees = request.POST.getlist("late_fee[]")
-        discounts = request.POST.getlist("discount[]")
-
-        for i in range(len(fee_types)):
-            FeeSetting.objects.create(
-                class_name=class_name,
-                frequency=frequency,
-                fee_type=fee_types[i],
-                amount=float(amounts[i]) if amounts[i] else 0,
-                due_date=due_dates[i],
-                late_fee=float(late_fees[i]) if late_fees[i] else 0,
-                discount=float(discounts[i]) if discounts[i] else 0
+    if request.method == 'POST':
+        class_id = request.POST.get('class_id')
+        section = request.POST.get('section', '')  # Optional section
+        frequency = request.POST.get('frequency')
+        
+        if class_id:
+            # Create or update fee settings
+            fee_settings, created = FeeSettings.objects.get_or_create(
+                class_name_id=class_id,
+                section=section
             )
+            
+            fee_settings.frequency = frequency
+            fee_settings.save()
+            
+            # Clear existing fees
+            fee_settings.fees.all().delete()
+            
+            # Add new fees
+            fee_types = request.POST.getlist('fee_type[]')
+            amounts = request.POST.getlist('amount[]')
+            due_dates = request.POST.getlist('due_date[]')
+            late_fees = request.POST.getlist('late_fee[]')
+            discounts = request.POST.getlist('discount[]')
+            
+            for i in range(len(fee_types)):
+                FeeStructure.objects.create(
+                    fee_settings=fee_settings,
+                    fee_type=fee_types[i],
+                    amount=amounts[i],
+                    due_date=due_dates[i],
+                    late_fee=late_fees[i] or 0,
+                    discount=discounts[i] or 0
+                )
+            
+            messages.success(request, 'Fee settings saved successfully!')
+            return redirect('fee_settings')
+    
+    # Get selected class and section from GET parameters
+    selected_class_id = request.GET.get('class_name')
+    selected_section = request.GET.get('section', '')
+    
+    filter_form = ClassSectionFilterForm(request.GET)
+    
+    context = {
+        'filter_form': filter_form,
+        'selected_class': None,
+        'selected_section': selected_section,
+        'existing_fees': None
+    }
+    
+    if selected_class_id:
+        try:
+            selected_class = StudentClass.objects.get(id=selected_class_id)
+            context['selected_class'] = selected_class
+            
+            # Try to get existing fee settings
+            try:
+                fee_settings = FeeSettings.objects.get(
+                    class_name=selected_class,
+                    section=selected_section
+                )
+                context['existing_fees'] = fee_settings.fees.all()
+                context['fee_settings'] = fee_settings
+            except FeeSettings.DoesNotExist:
+                # If no settings exist with section, try without section
+                if selected_section:
+                    try:
+                        fee_settings = FeeSettings.objects.get(
+                            class_name=selected_class,
+                            section=''
+                        )
+                        context['existing_fees'] = fee_settings.fees.all()
+                        context['fee_settings'] = fee_settings
+                    except FeeSettings.DoesNotExist:
+                        pass
+        except StudentClass.DoesNotExist:
+            messages.error(request, 'Invalid class selected')
+            return redirect('fee_settings')
 
-        return redirect("fee_settings")
+    return render(request, 'corecode/fee_settings.html', context)
 
-    fees = FeeSetting.objects.all()
-    return render(request, "corecode/fee_settings.html", {"fees": fees})
+def get_fee_settings(request, class_id, section):
+    try:
+        fee_settings = FeeSettings.objects.get(class_name_id=class_id, section=section)
+        fees = fee_settings.fees.all().values(
+            'fee_type', 'amount', 'due_date', 'late_fee', 'discount'
+        )
+        return JsonResponse({
+            'settings': {
+                'frequency': fee_settings.frequency,
+                'fees': list(fees)
+            }
+        })
+    except FeeSettings.DoesNotExist:
+        return JsonResponse({'settings': None})
+
+def fee_settings_list(request):
+    fee_settings_list = FeeSettings.objects.all().order_by('class_name', 'section')
+    
+    # Calculate statistics
+    total_classes = fee_settings_list.count()
+    total_fees = sum(setting.get_total_fees() for setting in fee_settings_list)
+    active_settings = fee_settings_list.count()  # Assuming all settings are active
+    
+    context = {
+        'fee_settings_list': fee_settings_list,
+        'total_classes': total_classes,
+        'total_fees': total_fees,
+        'active_settings': active_settings,
+    }
+    
+    return render(request, 'corecode/fee_settings_list.html', context)
