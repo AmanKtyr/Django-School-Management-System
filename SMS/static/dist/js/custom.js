@@ -1,6 +1,13 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  // Hide control sidebar
+  $(document).ready(function() {
+    $('.control-sidebar').remove();
+    $('[data-widget="control-sidebar"]').remove();
+    $('body').removeClass('control-sidebar-slide-open');
+  });
+
   // Toggle the side navigation
   $("#sidebarToggle, #sidebarToggleTop").on('click', function(e) {
     $("body").toggleClass("sidebar-toggled");
@@ -46,9 +53,38 @@
     e.preventDefault();
   });
 
+  // Make table rows clickable
+  $('.clickable-row').css('cursor', 'pointer');
+  $(".clickable-row").click(function () {
+    window.location = $(this).data("href");
+  });
+
+  // Loader functions
+  function showLoader() {
+    document.querySelector('.loader-wrapper').classList.remove('loader-hidden');
+  }
+
+  function hideLoader() {
+    document.querySelector('.loader-wrapper').classList.add('loader-hidden');
+  }
+
+  // Show loader when page starts loading
+  document.addEventListener('DOMContentLoaded', function() {
+    hideLoader();
+  });
+
+  // Show loader before page unload
+  window.addEventListener('beforeunload', function() {
+    showLoader();
+  });
+
+  // For AJAX requests
+  $(document).ajaxStart(function() {
+    showLoader();
+  });
+
+  $(document).ajaxStop(function() {
+    hideLoader();
+  });
+
 })(jQuery); // End of use strict
-
-
-
-
-// admin dashboard

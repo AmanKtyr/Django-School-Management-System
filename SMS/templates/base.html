@@ -10,6 +10,94 @@
 
   <title>{{ profile.college_name | default:"MySchool" }}</title>
 
+  <!-- Critical CSS inlined to prevent FOUC (Flash of Unstyled Content) -->
+  <style>
+    /* Critical styles to prevent flash */
+    body {
+      visibility: hidden;
+      font-family: 'Poppins', sans-serif !important;
+      background-color: #f8f9fa !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      height: 100% !important;
+      overflow-x: hidden !important;
+    }
+
+    /* Hide Control Sidebar immediately */
+    .control-sidebar, .control-sidebar-dark, .control-sidebar-bg {
+      display: none !important;
+      width: 0 !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      right: -300px !important;
+      position: absolute !important;
+    }
+
+    /* Navbar Styles */
+    .navbar {
+      background: linear-gradient(90deg, black, #1E3C72) !important;
+      color: white !important;
+    }
+
+    /* Initial Sidebar Styles - will be overridden by sidebar-fix.css */
+    .sidebar, .main-sidebar {
+      background: linear-gradient(90deg, black, #1E3C72) !important;
+      color: white !important;
+    }
+
+    /* Loader Styles */
+    .loader-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+  </style>
+
+  <!-- Preload CSS to prevent styling flash -->
+  <link rel="stylesheet" href="{% static 'dist/css/preload.css' %}">
+
+  <!-- Immediate script to handle page load -->
+  <script>
+    // Show loader first
+    document.addEventListener('DOMContentLoaded', function() {
+      var loaderWrapper = document.querySelector('.loader-wrapper');
+      if (loaderWrapper) {
+        loaderWrapper.style.display = 'flex';
+        loaderWrapper.style.visibility = 'visible';
+        loaderWrapper.style.opacity = '1';
+        loaderWrapper.classList.remove('loader-hidden');
+      }
+
+      // Keep body hidden until styles are loaded
+      document.body.style.visibility = 'hidden';
+    });
+
+    // When everything is loaded
+    window.onload = function() {
+      // Make body visible
+      document.body.style.visibility = 'visible';
+
+      // Hide loader after a short delay
+      setTimeout(function() {
+        var loaderWrapper = document.querySelector('.loader-wrapper');
+        if (loaderWrapper) {
+          loaderWrapper.classList.add('loader-hidden');
+          setTimeout(function() {
+            loaderWrapper.style.display = 'none';
+          }, 500);
+        }
+      }, 800);
+    };
+  </script>
+
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="{% static 'plugins/fontawesome-free/css/all.min.css' %}">
   <link rel="stylesheet" href="{% static 'plugins/toastr/toastr.min.css' %}">
@@ -28,156 +116,35 @@
   <link rel="stylesheet" href="{% static 'plugins/Datatables/datatables.min.css' %}" />
   <!-- Theme style -->
   <link rel="stylesheet" href="{% static 'dist/css/adminlte.min.css' %}">
-  
-  <link rel="stylesheet" href="{% static 'dist/css/style.css' %}">
+
   <!-- Google Font: Source Sans Pro -->
   <link
     href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f8f9fa;
-    }
-    .wrapper {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    .navbar {
-      background: linear-gradient(90deg, black, #1E3C72);
-      color: white;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      height: 45px; /* Reduced height */
-      display: flex;
-      align-items: center; /* Center-align items */
-    }
-    .navbar .nav-link {
-      color: white !important;
-      padding: 5px 10px; /* Adjusted padding for better alignment */
-      transition: color 0.3s ease, transform 0.3s ease;
-      text-decoration: none; /* Remove underline */
-    }
-    .navbar .nav-link:hover {
-      color: #ffc107 !important;
-      transform: scale(1.1);
-      text-decoration: none; 
-    }
-    .sidebar {
-      background: linear-gradient(90deg, black, #1E3C72);
-      color: white;
-      height: calc(100vh - 50px);
-      width: 250px; 
-      overflow-y: auto;
-      padding: 10px; 
-      scrollbar-width: thin;
-      scrollbar-color: #495057 #212529;
-      /*text-transform: uppercase; */
-    }
-    .sidebar::-webkit-scrollbar {
-      width: 6px; /* Smaller scrollbar */
-    }
-    .sidebar::-webkit-scrollbar-thumb {
-      background-color: #495057;
-      border-radius: 4px;
-    }
-    .sidebar .nav-link {
-      color: white !important;
-      padding: 8px 15px; 
-      border-radius: 5px; 
-      transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease;
-      text-decoration: none; 
-    }
-    .sidebar .nav-link:hover {
-      color: #ffc107 !important;
-      background-color: #495057;
-      transform: translateX(5px);
-      text-decoration: none; 
-    }
-    .sidebar .nav-link.active {
-      background-color: #1E3C72; 
-      color: #ffc107 !important;
-      font-weight: bold;
-    }
-    .sidebar .nav-header {
-      color: #ced4da;
-      font-weight: lighter;
-      margin-top: 0rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-size: 10px; 
-    }
-    .content-wrapper {
-      flex: 1;
-      padding: 20px;
-      background-color: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    .card {
-      border: none;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-   
-    .card-header {
-      background: linear-gradient(90deg, #4e54c8, #8f94fb);
-      color: white;
-      border-radius: 10px 10px 0 0;
-    }
-    .breadcrumb {
-      background: transparent;
-    }
-    .breadcrumb-item a {
-      color: #4e54c8;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    .breadcrumb-item a:hover {
-      color: #8f94fb;
-      text-decoration: underline;
-    }
-    .footer {
-      background: linear-gradient(90deg, black, #1E3C72);
-      color: white;
-      text-align: center;
-      padding: 10px 0; 
-      font-size: 14px; 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 15px; 
-    }
-    .footer i {
-      color: #ffc107;
-      transition: transform 0.3s ease;
-    }
-    .footer i:hover {
-      transform: scale(1.2);
-    }
-    
-    .brand-link {
-      background: linear-gradient(90deg, black, #1E3C72); /* Match sidebar background */
-      color: white !important; /* Match sidebar text color */
-      text-align: center; /* Center-align text */
-      font-weight: bold; /* Make it stand out */
-      padding: 10px; /* Add some padding for better spacing */
-      text-decoration: none; /* Remove underline */
-      display: block; /* Ensure it spans the full width */
-    }
-    .brand-link:hover {
-      color: #ffc107 !important;
-      text-decoration: none; 
-    }
-  </style>
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="{% static 'dist/css/style.css' %}">
+
+  <!-- Sidebar fix styles (must be last to override all other styles) -->
+  <link rel="stylesheet" href="{% static 'dist/css/sidebar-fix.css' %}">
 </head>
 
-<body
-  class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
   <div class="wrapper">
+  <!-- Loader -->
+  <div class="loader-wrapper">
+    <div class="loader">
+      <div class="school-logo">
+        <i class="fas fa-graduation-cap"></i>
+      </div>
+    </div>
+    <div class="loading-text">LOADING</div>
+    <div class="loader-progress">
+      <div class="loader-progress-bar"></div>
+    </div>
+    <div class="loader-tagline">{{ profile.college_name | default:"MySchool" }} - Empowering Education</div>
+  </div>
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand navbar-dark">
       <!-- Left navbar links -->
@@ -307,7 +274,7 @@
                 </ul>
             </li>
 
-         
+
 
           <li class="nav-header">Finance</li>
           <li class="nav-item has-treeview {% if request.resolver_match.url_name in 'invoice-list' %}menu-open{% endif %}">
@@ -321,7 +288,7 @@
               <ul class="nav nav-treeview">
                   <li class="nav-item">
                       <a href="{% url 'invoice-list' %}" class="nav-link {% if request.resolver_match.url_name == 'invoice-list' %}active{% endif %}">
-                       
+
                           <i class="fas fa-file-invoice-dollar nav-icon" style="color: #ff9900;"></i>
                           <p>Invoices</p>
                       </a>
@@ -424,7 +391,7 @@
 
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <li class="nav-header">Others</li>
-           
+
               <li class="nav-item has-treeview  {% if request.resolver_match.url_name in 'sessions classes subjects fee_settings terms  ' %}menu-open{% endif %}">
                 <a href="#" class="nav-link">
                     <i class="nav-icon fas fa-copy" style="color: #ff6600;"></i>
@@ -433,7 +400,7 @@
                         <i class="fas fa-angle-left right"></i>
                     </p>
                 </a>
-                
+
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
                         <a href="{% url 'sessions' %}" class="nav-link {% if request.resolver_match.url_name == 'sessions' %}active{% endif %}" >
@@ -480,12 +447,12 @@
   </nav>
 </div>
 
-    
+
 {% comment %} sidebar {% endcomment %}
-      
+
     </aside>
 
-    
+
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
@@ -495,7 +462,7 @@
             <div class="col-sm-8">
               <h5>{% block breadcrumb-left %}{% endblock breadcrumb-left %}</h5>
               <h1>{% block title %}{% endblock title %}</h1>
-              
+
             </div>
             <div class="col-sm-4">
               <ol class="breadcrumb float-sm-right">
@@ -506,10 +473,10 @@
         </div><!-- /.container-fluid -->
       </section>
       <!-- Main content -->
-      
+
       <section class="content" >
-    
-        
+
+
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
@@ -543,20 +510,14 @@
     <!-- /.content-wrapper -->
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="main-footer">
       <p>&copy; {{ site_config.schoolname | default:"MySchool" }} - All Rights Reserved
       <i class="fas fa-heart"></i>
-      <i class="fas fa-graduation-cap"></i>
-
-      <p
+      <i class="fas fa-graduation-cap"></i></p>
     </footer>
     <!-- /.footer -->
 
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-      <!-- Control sidebar content goes here -->
-    </aside>
-    <!-- /.control-sidebar -->
+    <!-- Control Sidebar removed -->
 
 
   </div>
@@ -580,7 +541,43 @@
 
   <!-- OPTIONAL SCRIPTS -->
   <script src="{% static 'dist/js/demo.js' %}"></script>
+  <script>
+    // Initialize functionality after page load
+    $(window).on('load', function() {
+      // Make sure all links with the active class have the correct styling
+      $('.nav-link.active').css({
+        'background-color': '#1E3C72',
+        'color': '#ffc107',
+        'font-weight': 'bold'
+      });
+
+      // Remove control sidebar completely
+      $('.control-sidebar, .control-sidebar-dark, .control-sidebar-bg').remove();
+      $('[data-widget="control-sidebar"]').remove();
+      $('body').removeClass('control-sidebar-slide-open');
+      $('body').removeClass('control-sidebar-open');
+
+      // Fix content width
+      $('.content-wrapper, .main-footer, .main-header').css('margin-right', '0');
+
+      // Add a class to the body to ensure our CSS takes effect
+      $('body').addClass('no-control-sidebar');
+
+      // Sidebar toggle is handled by sidebar-fix.js
+    });
+  </script>
   <script src="{% static 'dist/js/custom.js' %}"></script>
+
+  <!-- Sidebar fix script (must be last) -->
+  <script>
+    // Ensure jQuery and AdminLTE are loaded before loading sidebar-fix.js
+    $(document).ready(function() {
+      // Load sidebar-fix.js dynamically to ensure it runs after everything else
+      var script = document.createElement('script');
+      script.src = "{% static 'dist/js/sidebar-fix.js' %}";
+      document.body.appendChild(script);
+    });
+  </script>
 
 
   {% comment %} for dashboard chart {% endcomment %}
@@ -598,24 +595,29 @@
 
   <script src="{% static 'plugins/Datatables/datatables.min.js' %}"></script>
 
-  <script>
-    (function ($) {
-      $('.clickable-row').css('cursor', 'pointer');
-      $(".clickable-row").click(function () {
-        window.location = $(this).data("href");
-      });
-    })(jQuery)
-
-  </script>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   {% block morejs %}
 
   {% endblock morejs %}
 
+  <!-- All JavaScript moved to custom.js -->
 
+  <!-- Force CSS reload -->
+  <script>
+    // Force CSS reload by adding a timestamp to the CSS file URL
+    document.addEventListener('DOMContentLoaded', function() {
+      const links = document.getElementsByTagName('link');
+      for (let i = 0; i < links.length; i++) {
+        if (links[i].rel === 'stylesheet' && links[i].href.includes('style.css')) {
+          const timestamp = new Date().getTime();
+          links[i].href = links[i].href.split('?')[0] + '?v=' + timestamp;
+        }
+      }
+    });
+  </script>
 
+  </div> <!-- End of wrapper -->
 </body>
 
 </html>
