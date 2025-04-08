@@ -1,6 +1,28 @@
 {% extends 'base.html' %}
 {% load widget_tweaks %}
+{% load breadcrumb_tags %}
 
+{% block breadcrumb-left %}
+<div class="breadcrumb-container">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-chevron">
+      <li class="breadcrumb-item">
+        <a href="{% url 'home' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-home"></i> Home
+        </a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="#" class="text-decoration-none fw-bold">
+          <i class="fas fa-copy"></i> Management
+        </a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        <i class="fas fa-clock"></i> Academic Terms
+      </li>
+    </ol>
+  </nav>
+</div>
+{% endblock breadcrumb-left %}
 
 {% block title %}
 Academic Term
@@ -13,7 +35,7 @@ Academic Term
     Add new term
   </a>
 {% endblock breadcrumb %}
-  
+
 
 {% block content %}
   <div class="row">
@@ -53,7 +75,7 @@ Academic Term
             </button>
           </div>
           <div class="modal-body">
-            
+
               {% csrf_token %}
 
               {% for field in form %}
@@ -62,7 +84,7 @@ Academic Term
                     {{ field|add_class:"form-control" }}
                   </div>
               {% endfor %}
-            
+
           </div>
 
           <div class="modal-footer">

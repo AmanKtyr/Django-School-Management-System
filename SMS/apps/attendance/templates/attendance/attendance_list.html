@@ -1,15 +1,22 @@
 {% extends 'base.html' %}
 
 {% block breadcrumb-left %}
-<div class="container">
+<div class="breadcrumb-container">
   <nav aria-label="breadcrumb">
-    <ol class="breadcrumb bg-light p-3 rounded shadow-sm">
+    <ol class="breadcrumb breadcrumb-chevron">
       <li class="breadcrumb-item">
-        <a href="#" class="text-decoration-none text-primary fw-bold">
-          <i class="bi bi-calendar-check"></i> Attendance
+        <a href="{% url 'home' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-home"></i> Home
         </a>
       </li>
-      <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+      <li class="breadcrumb-item">
+        <a href="{% url 'attendance:attendance_list' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-calendar-check"></i> Attendance
+        </a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        <i class="fas fa-tachometer-alt"></i> Dashboard
+      </li>
     </ol>
   </nav>
 </div>
@@ -57,14 +64,14 @@
         <label for="class-select" class="fw-bold fs-5 text-dark mb-0">
           <i class="bi bi-ui-checks-grid text-primary"></i> Select Class:
         </label>
-        <select id="class-select" name="class_id" 
+        <select id="class-select" name="class_id"
           class="form-select form-control-lg shadow-sm border-1 border-primary px-4 py-2 rounded-3 fw-bold text-dark"
           style="width: 225px; transition: 0.3s ease-in-out;"
           onchange="this.form.submit()">
           <option value="" class="fw-bold text-secondary">📌 Choose a Class</option>
           {% for class in classes %}
-          <option value="{{ class.id }}" 
-            class="fw-bold text-dark" 
+          <option value="{{ class.id }}"
+            class="fw-bold text-dark"
             {% if class.id|stringformat:"s" == selected_class_id %}selected{% endif %}>
             {{ class.name }}
           </option>
@@ -128,9 +135,9 @@
     $(".attendance-btn").click(function () {
       let studentId = $(this).closest(".attendance-buttons").data("student");
       let selectedValue = $(this).data("value");
-      
+
       $(this).siblings().removeClass("active btn-success btn-warning btn-danger text-white");
-      
+
       if (selectedValue === "present") {
         $(this).addClass("active btn-success text-white");
       } else if (selectedValue === "leave") {
@@ -144,8 +151,8 @@
 
 <!-- JavaScript for Dynamic Date -->
 <script>
-  document.getElementById("current-date").innerText = new Date().toLocaleDateString('en-GB', { 
-    day: '2-digit', month: 'long', year: 'numeric' 
+  document.getElementById("current-date").innerText = new Date().toLocaleDateString('en-GB', {
+    day: '2-digit', month: 'long', year: 'numeric'
   });
 </script>
 

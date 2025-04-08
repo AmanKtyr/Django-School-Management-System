@@ -1,5 +1,32 @@
 {% extends 'base.html' %}
 
+{% block breadcrumb-left %}
+<div class="breadcrumb-container">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-chevron">
+      <li class="breadcrumb-item">
+        <a href="{% url 'home' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-home"></i> Home
+        </a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="{% url 'student-list' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-user-graduate"></i> Students
+        </a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="{% url 'student-list' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-list"></i> List
+        </a>
+      </li>
+      <li class="breadcrumb-item active text-danger" aria-current="page">
+        <i class="fas fa-trash-alt"></i> Delete
+      </li>
+    </ol>
+  </nav>
+</div>
+{% endblock breadcrumb-left %}
+
 {% block title %} Delete Confirmation - {{ object }} {% endblock title %}
 
 {% block content %}
@@ -44,7 +71,7 @@
         <h4 class="text-danger">
             <i class="fa fa-exclamation-triangle warning-icon"></i> Confirm Deletion
         </h4>
-        
+
         <div class="alert alert-warning mt-3" role="alert">
             <p>Are you sure you want to delete <strong>{{ object }}</strong>?</p>
             <p class="text-danger"><strong>All associated data will be permanently removed!</strong></p>

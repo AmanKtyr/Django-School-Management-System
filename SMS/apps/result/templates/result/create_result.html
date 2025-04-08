@@ -1,5 +1,26 @@
 {% extends 'base.html' %}
 
+{% block breadcrumb-left %}
+<div class="breadcrumb-container">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-chevron">
+      <li class="breadcrumb-item">
+        <a href="{% url 'home' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-home"></i> Home
+        </a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="#" class="text-decoration-none fw-bold">
+          <i class="fas fa-clipboard-list"></i> Results
+        </a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        <i class="fas fa-plus-circle"></i> Create Results
+      </li>
+    </ol>
+  </nav>
+</div>
+{% endblock breadcrumb-left %}
 
 {% block title %}
   Select Student(s) <span class="small">and then click on proceed</span>

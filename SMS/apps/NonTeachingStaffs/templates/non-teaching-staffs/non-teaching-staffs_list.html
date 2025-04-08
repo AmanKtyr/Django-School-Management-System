@@ -3,15 +3,22 @@
 {% comment %} {% block title %}Non Teaching Staffs{% endblock title %} {% endcomment %}
 
 {% block breadcrumb-left %}
-<div class="container ">
+<div class="breadcrumb-container">
   <nav aria-label="breadcrumb">
-    <ol class="breadcrumb bg-light p-3 rounded shadow-sm">
+    <ol class="breadcrumb breadcrumb-chevron">
       <li class="breadcrumb-item">
-        <a href="{% url 'non-teaching-staffs-list' %}" class="text-decoration-none text-primary fw-bold">
-          <i class="bi bi-people"></i>Non Teaching staffs
+        <a href="{% url 'home' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-home"></i> Home
         </a>
       </li>
-      <li class="breadcrumb-item active" aria-current="page">List</li>
+      <li class="breadcrumb-item">
+        <a href="{% url 'non-teaching-staffs-list' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-users"></i> Non Teaching Staffs
+        </a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        <i class="fas fa-list"></i> List
+      </li>
     </ol>
   </nav>
 </div>

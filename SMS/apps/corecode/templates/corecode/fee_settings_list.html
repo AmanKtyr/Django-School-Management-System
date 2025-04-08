@@ -1,5 +1,35 @@
 {% extends "base.html" %}
 {% load static %}
+{% load breadcrumb_tags %}
+
+{% block breadcrumb-left %}
+<div class="breadcrumb-container">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-chevron">
+      <li class="breadcrumb-item">
+        <a href="{% url 'home' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-home"></i> Home
+        </a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="#" class="text-decoration-none fw-bold">
+          <i class="fas fa-copy"></i> Management
+        </a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="{% url 'fee_settings' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-money-bill-wave"></i> Fee Settings
+        </a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        <i class="fas fa-list"></i> Fee Structure List
+      </li>
+    </ol>
+  </nav>
+</div>
+{% endblock breadcrumb-left %}
+
+{% block title %}Fee Structure List{% endblock title %}
 
 {% block content %}
 <style>
@@ -198,7 +228,7 @@
                                 </div>
                             </td>
                             <td>
-                                <a href="{% url 'fee_settings' %}?class_name={{ setting.class_name.id }}&section={{ setting.section }}" 
+                                <a href="{% url 'fee_settings' %}?class_name={{ setting.class_name.id }}&section={{ setting.section }}"
                                    class="btn btn-edit">
                                     <i class="fas fa-edit me-2"></i>Edit
                                 </a>

@@ -1,8 +1,27 @@
 {% extends 'base.html' %}
 
+{% block breadcrumb-left %}
+<div class="breadcrumb-container">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-chevron">
+      <li class="breadcrumb-item">
+        <a href="{% url 'home' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-home"></i> Home
+        </a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        <i class="fas fa-tachometer-alt"></i> Dashboard
+      </li>
+    </ol>
+  </nav>
+</div>
+{% endblock breadcrumb-left %}
+
+{% block title %}Dashboard{% endblock title %}
+
 {% block content %}
 <div class="container mt-0">
-  <h2 class="text-center mb-4">Admin Dashboard</h2>
+  {% comment %} <h2 class="text-center mb-4">Admin Dashboard</h2>/ {% endcomment %}
   <div class="row g-4">
       <!-- Dashboard Cards -->
       <div class="col-md-3">

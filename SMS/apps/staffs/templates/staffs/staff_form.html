@@ -1,20 +1,27 @@
 {% extends 'base.html' %}
 
 {% block breadcrumb-left %}
-<div class="container ">
+<div class="breadcrumb-container">
   <nav aria-label="breadcrumb">
-    <ol class="breadcrumb bg-light p-3 rounded shadow-sm">
+    <ol class="breadcrumb breadcrumb-chevron">
       <li class="breadcrumb-item">
-        <a href="{% url 'staff-list' %}" class="text-decoration-none text-primary fw-bold">
-          <i class="bi bi-people"></i> Teaching staffs
+        <a href="{% url 'home' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-home"></i> Home
         </a>
       </li>
       <li class="breadcrumb-item">
-        <a href="{% url 'staff-list' %}" class="text-decoration-none text-primary fw-bold">
-          List
+        <a href="{% url 'staff-list' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-chalkboard-teacher"></i> Teaching Staffs
         </a>
       </li>
-      <li class="breadcrumb-item active" aria-current="page">Form</li>
+      <li class="breadcrumb-item">
+        <a href="{% url 'staff-list' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-list"></i> List
+        </a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        <i class="fas fa-plus-circle"></i> Form
+      </li>
     </ol>
   </nav>
 </div>

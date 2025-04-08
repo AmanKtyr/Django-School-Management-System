@@ -1,21 +1,28 @@
-{% extends 'base.html' %} 
-{% load static %} 
+{% extends 'base.html' %}
+{% load static %}
 
 {% block breadcrumb-left %}
-<div class="container ">
+<div class="breadcrumb-container">
   <nav aria-label="breadcrumb">
-    <ol class="breadcrumb bg-light p-3 rounded shadow-sm">
+    <ol class="breadcrumb breadcrumb-chevron">
       <li class="breadcrumb-item">
-        <a href="{% url 'staff-list' %}" class="text-decoration-none text-primary fw-bold">
-          <i class="bi bi-people"></i> Teaching staffs
+        <a href="{% url 'home' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-home"></i> Home
         </a>
       </li>
       <li class="breadcrumb-item">
-        <a href="{% url 'staff-list' %}" class="text-decoration-none text-primary fw-bold">
-          List
+        <a href="{% url 'staff-list' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-chalkboard-teacher"></i> Teaching Staffs
         </a>
       </li>
-      <li class="breadcrumb-item active" aria-current="page">Details</li>
+      <li class="breadcrumb-item">
+        <a href="{% url 'staff-list' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-list"></i> List
+        </a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        <i class="fas fa-info-circle"></i> Details
+      </li>
     </ol>
   </nav>
 </div>
@@ -39,38 +46,38 @@
   </div>
 </div>
 {% endblock content-header %}
- 
 
-{% block content %} 
-<div class="row">   
-  <div class="col-md-4">     
-    <div class="card shadow-lg p-4 mb-4 border-primary rounded-4 text-center">       
-      {% if object.passport %}         
-      <img src="{{ object.passport.url }}" class="rounded-circle border border-3 border-primary img-fluid shadow" style="width: 150px; height: 150px; ">       
-      {% else %}         
-      <img src="{% static 'dist/img/teacher-dp.jpg' %}" class="rounded-circle border border-3 border-secondary img-fluid shadow" style="width: 150px; height: 150px; ">       
-      {% endif %}       
-      <div class="mt-3">         
-        <h4 class="text-primary"> {{ object.fullname }} </h4>         
-        <h5 class="text-muted">📌 {{ object.registration_number }}</h5>         
-        <h5 class="text-muted">📕 {{ object.Subject_specification }}</h5>         
-        <span class="badge bg-gradient-info text-white shadow">⚤ {{ object.get_gender_display }}</span>       
-      </div>     
-    </div>   
-  </div>    
 
-  <div class="col-md-8">     
-    <div class="card shadow-lg p-4 border-info rounded-4">       
-      <h4 class="mb-3 text-info">📋 Personal Information</h4>       
-      <ul class="list-group list-group-flush">         
-        <li class="list-group-item d-flex justify-content-between"><strong>🎂 Date of Birth:</strong> {{ object.date_of_birth }}</li>         
-        <li class="list-group-item d-flex justify-content-between"><strong>📞 Mobile Number:</strong> {{ object.mobile_number }}</li>         
-        <li class="list-group-item d-flex justify-content-between"><strong>🪪 Aadhar No:</strong> {{ object.aadhar}}</li>         
-        <li class="list-group-item d-flex justify-content-between"><strong>📕 Subject Specification:</strong> {{ object.Subject_specification }}</li>         
-        <li class="list-group-item d-flex justify-content-between"><strong>🏠 Address:</strong> {{ object.address }}</li>         
-        <li class="list-group-item d-flex justify-content-between"><strong>📝 Comments:</strong> {{ object.others }}</li>       
-      </ul>     
-    </div>   
-  </div> 
-</div> 
+{% block content %}
+<div class="row">
+  <div class="col-md-4">
+    <div class="card shadow-lg p-4 mb-4 border-primary rounded-4 text-center">
+      {% if object.passport %}
+      <img src="{{ object.passport.url }}" class="rounded-circle border border-3 border-primary img-fluid shadow" style="width: 150px; height: 150px; ">
+      {% else %}
+      <img src="{% static 'dist/img/teacher-dp.jpg' %}" class="rounded-circle border border-3 border-secondary img-fluid shadow" style="width: 150px; height: 150px; ">
+      {% endif %}
+      <div class="mt-3">
+        <h4 class="text-primary"> {{ object.fullname }} </h4>
+        <h5 class="text-muted">📌 {{ object.registration_number }}</h5>
+        <h5 class="text-muted">📕 {{ object.Subject_specification }}</h5>
+        <span class="badge bg-gradient-info text-white shadow">⚤ {{ object.get_gender_display }}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-8">
+    <div class="card shadow-lg p-4 border-info rounded-4">
+      <h4 class="mb-3 text-info">📋 Personal Information</h4>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item d-flex justify-content-between"><strong>🎂 Date of Birth:</strong> {{ object.date_of_birth }}</li>
+        <li class="list-group-item d-flex justify-content-between"><strong>📞 Mobile Number:</strong> {{ object.mobile_number }}</li>
+        <li class="list-group-item d-flex justify-content-between"><strong>🪪 Aadhar No:</strong> {{ object.aadhar}}</li>
+        <li class="list-group-item d-flex justify-content-between"><strong>📕 Subject Specification:</strong> {{ object.Subject_specification }}</li>
+        <li class="list-group-item d-flex justify-content-between"><strong>🏠 Address:</strong> {{ object.address }}</li>
+        <li class="list-group-item d-flex justify-content-between"><strong>📝 Comments:</strong> {{ object.others }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
 {% endblock content %}

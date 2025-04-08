@@ -1,9 +1,35 @@
 
 {% extends 'base.html' %}
 
+{% block breadcrumb-left %}
+<div class="breadcrumb-container">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-chevron">
+      <li class="breadcrumb-item">
+        <a href="{% url 'home' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-home"></i> Home
+        </a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="#" class="text-decoration-none fw-bold">
+          <i class="fas fa-money-bill-wave"></i> Finance
+        </a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="{% url 'invoice-list' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-file-invoice-dollar"></i> Invoices
+        </a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        <i class="fas fa-upload"></i> Bulk Upload
+      </li>
+    </ol>
+  </nav>
+</div>
+{% endblock breadcrumb-left %}
 
 {% block title %}
-Upload School Bills from excel
+Upload School Bills from Excel
 {% endblock title %}
 
 

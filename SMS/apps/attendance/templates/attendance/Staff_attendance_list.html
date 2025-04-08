@@ -1,5 +1,29 @@
 {% extends 'base.html' %}
 
+{% block breadcrumb-left %}
+<div class="breadcrumb-container">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-chevron">
+      <li class="breadcrumb-item">
+        <a href="{% url 'home' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-home"></i> Home
+        </a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="{% url 'attendance:attendance_list' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-calendar-check"></i> Attendance
+        </a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        <i class="fas fa-chalkboard-teacher"></i> Staff Attendance
+      </li>
+    </ol>
+  </nav>
+</div>
+{% endblock breadcrumb-left %}
+
+{% block title %}Staff Attendance{% endblock title %}
+
 {% block content %}
 <div class="container mt-4">
     <h2>Staff Attendance List</h2>
