@@ -5153,3 +5153,605 @@ INFO 2025-04-07 17:39:02,728 "GET /fees/settings/?class_name=5&section=A HTTP/1.
 INFO 2025-04-07 17:39:10,711 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 33300
 INFO 2025-04-07 17:41:26,628 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 32820
 INFO 2025-04-07 17:41:54,218 "GET /fees/settings/list/ HTTP/1.1" 200 30192
+INFO 2025-04-07 17:42:08,647 "GET /fees/settings/?class_name=6&section= HTTP/1.1" 200 32031
+INFO 2025-04-07 17:42:11,884 "GET /fees/settings/list/ HTTP/1.1" 200 30192
+INFO 2025-04-07 17:45:27,789 "GET /fees/settings/list/ HTTP/1.1" 200 30192
+INFO 2025-04-07 17:45:29,798 "GET /fees/settings/ HTTP/1.1" 200 23574
+WARNING 2025-04-07 17:45:29,876 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+INFO 2025-04-07 17:45:35,565 "GET /fees/settings/ HTTP/1.1" 200 28661
+WARNING 2025-04-07 17:45:35,618 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+INFO 2025-04-07 17:45:42,103 "GET /fees/settings/ HTTP/1.1" 200 28661
+WARNING 2025-04-07 17:45:42,159 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+WARNING 2025-04-07 17:45:45,273 Not Found: /api/get-sections/5/
+WARNING 2025-04-07 17:45:45,274 "GET /api/get-sections/5/ HTTP/1.1" 404 10578
+INFO 2025-04-07 17:45:45,304 "GET /fees/settings/?class_name=5&section= HTTP/1.1" 200 31966
+INFO 2025-04-07 17:45:57,465 "GET /fees/settings/?class_name=5&section= HTTP/1.1" 200 28363
+INFO 2025-04-07 17:46:08,131 "GET /fees/settings/?class_name=5&section= HTTP/1.1" 200 31966
+INFO 2025-04-07 17:47:19,993 "GET /fees/settings/?class_name=5&section= HTTP/1.1" 200 31982
+INFO 2025-04-07 17:47:25,330 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 32836
+ERROR 2025-04-07 17:47:48,602 Internal Server Error: /fees/settings/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\views.py", line 326, in fee_settings
+    due_date=due_dates[i],
+             ~~~~~~~~~^^^
+IndexError: list index out of range
+ERROR 2025-04-07 17:47:48,603 "POST /fees/settings/?class_name=5&section=A HTTP/1.1" 500 75998
+INFO 2025-04-07 17:49:10,561 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-07 17:49:11,904 Watching for file changes with StatReloader
+ERROR 2025-04-07 17:49:13,484 Internal Server Error: /fees/settings/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: corecode_feestructure.due_date
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\views.py", line 342, in fee_settings
+    FeeStructure.objects.create(
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1854, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1881, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: corecode_feestructure.due_date
+ERROR 2025-04-07 17:49:13,491 "POST /fees/settings/?class_name=5&section=A HTTP/1.1" 500 170108
+INFO 2025-04-07 17:49:15,625 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 31379
+INFO 2025-04-07 17:49:24,991 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-07 17:49:26,063 Watching for file changes with StatReloader
+INFO 2025-04-07 17:49:26,743 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 31379
+INFO 2025-04-07 17:49:32,313 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 31376
+INFO 2025-04-07 17:49:55,411 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-07 17:49:56,698 Watching for file changes with StatReloader
+INFO 2025-04-07 17:50:04,798 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-07 17:50:06,179 Watching for file changes with StatReloader
+INFO 2025-04-07 17:50:08,071 D:\Sipher Web\Django School Management System\SMS\apps\corecode\models.py changed, reloading.
+INFO 2025-04-07 17:50:09,139 Watching for file changes with StatReloader
+INFO 2025-04-07 17:50:25,066 Watching for file changes with StatReloader
+INFO 2025-04-07 17:50:27,156 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 31376
+INFO 2025-04-07 17:50:28,515 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 31376
+INFO 2025-04-07 17:50:28,926 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 31376
+INFO 2025-04-07 17:50:33,464 "GET /fees/settings/list/ HTTP/1.1" 200 30191
+INFO 2025-04-07 17:50:38,716 "GET /student/list HTTP/1.1" 200 25820
+INFO 2025-04-07 17:50:43,330 "GET /fees/settings/ HTTP/1.1" 200 28017
+WARNING 2025-04-07 17:50:43,394 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+INFO 2025-04-07 17:51:07,393 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-07 17:51:09,668 Watching for file changes with StatReloader
+INFO 2025-04-07 17:51:22,857 "GET /fees/settings/ HTTP/1.1" 200 28661
+WARNING 2025-04-07 17:51:22,919 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+WARNING 2025-04-07 17:51:24,876 Not Found: /api/get-sections/5/
+WARNING 2025-04-07 17:51:24,877 "GET /api/get-sections/5/ HTTP/1.1" 404 10578
+INFO 2025-04-07 17:51:24,910 "GET /fees/settings/?class_name=5&section= HTTP/1.1" 200 31966
+INFO 2025-04-07 17:51:26,536 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 32820
+INFO 2025-04-07 17:52:02,271 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 32820
+INFO 2025-04-07 17:52:06,043 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 32820
+INFO 2025-04-07 17:52:36,684 "GET /fees/settings/list/ HTTP/1.1" 200 30192
+INFO 2025-04-07 17:53:37,370 "GET /student/list HTTP/1.1" 200 25820
+INFO 2025-04-07 17:53:38,694 "GET /student/3/ HTTP/1.1" 200 25221
+INFO 2025-04-07 17:53:39,047 "GET /static/dist/img/avatar.png HTTP/1.1" 200 2044603
+INFO 2025-04-07 17:54:26,869 "GET /fees/settings/ HTTP/1.1" 200 28661
+WARNING 2025-04-07 17:54:26,947 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+INFO 2025-04-07 17:54:31,618 "GET /fees/settings/list/ HTTP/1.1" 200 30192
+INFO 2025-04-07 18:02:21,123 "GET /fees/settings/list/ HTTP/1.1" 200 29811
+INFO 2025-04-07 18:02:32,836 "GET /fees/settings/list/ HTTP/1.1" 200 29810
+INFO 2025-04-07 18:02:39,086 "GET /fees/settings/list/ HTTP/1.1" 200 30192
+INFO 2025-04-07 18:13:45,785 "GET /student/list HTTP/1.1" 200 25820
+INFO 2025-04-07 18:13:51,818 "GET /student/3/ HTTP/1.1" 200 25221
+INFO 2025-04-08 10:33:16,070 Watching for file changes with StatReloader
+INFO 2025-04-08 10:33:20,687 "GET / HTTP/1.1" 302 0
+INFO 2025-04-08 10:33:20,892 "GET /accounts/login/?next=/ HTTP/1.1" 200 5723
+WARNING 2025-04-08 10:33:21,773 Not Found: /favicon.ico
+WARNING 2025-04-08 10:33:21,773 "GET /favicon.ico HTTP/1.1" 404 10554
+INFO 2025-04-08 10:36:23,031 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-04-08 10:36:23,065 "GET / HTTP/1.1" 200 28756
+INFO 2025-04-08 10:36:25,986 "GET /student/list HTTP/1.1" 200 25820
+WARNING 2025-04-08 10:36:28,517 Not Found: /api/get-sections/5/
+WARNING 2025-04-08 10:36:28,518 "GET /api/get-sections/5/ HTTP/1.1" 404 10578
+INFO 2025-04-08 10:36:28,546 "GET /student/list?class_name=5&section=&search= HTTP/1.1" 200 25423
+INFO 2025-04-08 10:36:30,437 "GET /student/list?class_name=5&section=A&search= HTTP/1.1" 200 25423
+INFO 2025-04-08 10:36:49,133 "GET /student/list?class_name=5&section=A&search=ak HTTP/1.1" 200 25425
+INFO 2025-04-08 10:36:56,021 "GET /student/create/ HTTP/1.1" 200 30165
+INFO 2025-04-08 10:36:59,079 "GET /student/create/ HTTP/1.1" 200 30165
+INFO 2025-04-08 10:37:00,093 "GET /student/list HTTP/1.1" 200 25820
+INFO 2025-04-08 10:37:02,388 "GET /student/3/ HTTP/1.1" 200 25221
+ERROR 2025-04-08 10:39:57,545 Internal Server Error: /student/3/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 682, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse some characters: object.current_status|lower| == 'active'||lower|yesno:'success,danger'
+ERROR 2025-04-08 10:39:57,552 "GET /student/3/ HTTP/1.1" 500 234594
+ERROR 2025-04-08 10:40:28,036 Internal Server Error: /student/3/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 240, in do_block
+    parser.invalid_block_tag(endblock, "endblock", acceptable_endblocks)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 567, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 285: 'endblock', expected 'endblock' or 'endblock extra_js'. Did you forget to register or load this tag?
+ERROR 2025-04-08 10:40:28,040 "GET /student/3/ HTTP/1.1" 500 186529
+INFO 2025-04-08 10:40:56,353 "GET /student/3/ HTTP/1.1" 200 26416
+INFO 2025-04-08 10:41:39,768 "GET /student/3/ HTTP/1.1" 200 25221
+INFO 2025-04-08 11:00:51,287 "GET /fees/ HTTP/1.1" 200 24115
+INFO 2025-04-08 11:01:13,303 "GET /fees/settings/ HTTP/1.1" 200 28661
+WARNING 2025-04-08 11:01:13,413 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+WARNING 2025-04-08 11:01:16,834 Not Found: /api/get-sections/5/
+WARNING 2025-04-08 11:01:16,834 "GET /api/get-sections/5/ HTTP/1.1" 404 10578
+INFO 2025-04-08 11:01:16,867 "GET /fees/settings/?class_name=5&section= HTTP/1.1" 200 31966
+INFO 2025-04-08 11:01:18,274 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 32820
+INFO 2025-04-08 11:01:34,859 "GET /fees/ HTTP/1.1" 200 24115
+INFO 2025-04-08 11:09:23,939 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-08 11:09:25,363 Watching for file changes with StatReloader
+INFO 2025-04-08 11:09:28,951 "GET /fees/ HTTP/1.1" 200 24163
+INFO 2025-04-08 11:10:57,826 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-08 11:10:59,113 Watching for file changes with StatReloader
+INFO 2025-04-08 11:11:06,243 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-08 11:11:07,163 Watching for file changes with StatReloader
+INFO 2025-04-08 11:11:28,787 D:\Sipher Web\Django School Management System\SMS\apps\corecode\filters.py changed, reloading.
+INFO 2025-04-08 11:11:29,667 Watching for file changes with StatReloader
+INFO 2025-04-08 11:13:07,874 D:\Sipher Web\Django School Management System\SMS\apps\fees\urls.py changed, reloading.
+INFO 2025-04-08 11:13:08,777 Watching for file changes with StatReloader
+INFO 2025-04-08 11:13:20,950 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-08 11:13:21,955 Watching for file changes with StatReloader
+ERROR 2025-04-08 11:13:24,664 Internal Server Error: /fees/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\fees\views.py", line 12, in fee_list
+    payments = FeePayment.objects.all().order_by('-payment_date')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1708, in order_by
+    obj.query.add_ordering(*field_names)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\query.py", line 2288, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1802, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'payment_date' into field. Choices are: amount, date, id, payment_method, student, student_id
+ERROR 2025-04-08 11:13:24,669 "GET /fees/ HTTP/1.1" 500 92330
+INFO 2025-04-08 11:14:05,452 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-08 11:14:06,637 Watching for file changes with StatReloader
+INFO 2025-04-08 11:15:17,201 "GET /fees/ HTTP/1.1" 200 24445
+ERROR 2025-04-08 11:15:19,274 Internal Server Error: /fees/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\fees\views.py", line 17, in fee_list
+    payments = payments.filter(student__current_class=filter_form.cleaned_data['class_name'])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1481, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1499, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1506, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1560, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1369, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1346, in check_query_object_type
+    raise ValueError(
+ValueError: Cannot query "10": Must be "Student" instance.
+ERROR 2025-04-08 11:15:19,279 "GET /fees/?class_name=5&section=&search= HTTP/1.1" 500 119218
+ERROR 2025-04-08 11:15:24,900 Internal Server Error: /fees/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\fees\views.py", line 17, in fee_list
+    payments = payments.filter(student__current_class=filter_form.cleaned_data['class_name'])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1481, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1499, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1506, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1560, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1369, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1346, in check_query_object_type
+    raise ValueError(
+ValueError: Cannot query "10": Must be "Student" instance.
+ERROR 2025-04-08 11:15:24,902 "GET /fees/?class_name=5&section=A&search= HTTP/1.1" 500 119226
+ERROR 2025-04-08 11:15:34,181 Internal Server Error: /fees/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\fees\views.py", line 17, in fee_list
+    payments = payments.filter(student__current_class=filter_form.cleaned_data['class_name'])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1481, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1499, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1506, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1560, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1369, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1346, in check_query_object_type
+    raise ValueError(
+ValueError: Cannot query "10": Must be "Student" instance.
+ERROR 2025-04-08 11:15:34,183 "GET /fees/?class_name=5&section=A&search= HTTP/1.1" 500 119226
+INFO 2025-04-08 11:16:10,196 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-08 11:16:11,336 Watching for file changes with StatReloader
+INFO 2025-04-08 11:16:24,217 D:\Sipher Web\Django School Management System\SMS\apps\fees\models.py changed, reloading.
+INFO 2025-04-08 11:16:25,952 Watching for file changes with StatReloader
+INFO 2025-04-08 11:24:22,851 Watching for file changes with StatReloader
+ERROR 2025-04-08 11:24:26,396 Internal Server Error: /fees/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: fees_feepayment.status
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\fees\views.py", line 34, in fee_list
+    return render(request, 'fees/fee_list.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: fees_feepayment.status
+ERROR 2025-04-08 11:24:26,407 "GET /fees/?class_name=5&section=A&search= HTTP/1.1" 500 239484
+INFO 2025-04-08 11:28:55,470 Watching for file changes with StatReloader
+INFO 2025-04-08 11:28:58,526 "GET /fees/?class_name=5&section=A&search= HTTP/1.1" 200 24445
+INFO 2025-04-08 11:29:02,584 "GET /fees/?class_name=5&section=A&search= HTTP/1.1" 200 24445
+INFO 2025-04-08 11:30:20,121 D:\Sipher Web\Django School Management System\SMS\apps\fees\models.py changed, reloading.
+INFO 2025-04-08 11:30:21,077 Watching for file changes with StatReloader
+INFO 2025-04-08 11:30:27,269 D:\Sipher Web\Django School Management System\SMS\apps\fees\models.py changed, reloading.
+INFO 2025-04-08 11:30:28,277 Watching for file changes with StatReloader
+INFO 2025-04-08 11:30:48,431 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-08 11:30:49,995 Watching for file changes with StatReloader
+INFO 2025-04-08 11:32:41,608 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-08 11:32:43,777 Watching for file changes with StatReloader
+INFO 2025-04-08 11:33:38,447 D:\Sipher Web\Django School Management System\SMS\apps\fees\models.py changed, reloading.
+INFO 2025-04-08 11:33:39,769 Watching for file changes with StatReloader
+INFO 2025-04-08 11:34:14,672 Watching for file changes with StatReloader
+INFO 2025-04-08 11:37:55,221 "GET /fees/?class_name=5&section=A&search= HTTP/1.1" 200 24437
+INFO 2025-04-08 11:37:58,807 "GET /fees/?class_name=5&section=A&search= HTTP/1.1" 200 24437
+INFO 2025-04-08 11:38:01,811 "GET /fees/?class_name=5&section=A&search= HTTP/1.1" 200 24437
+WARNING 2025-04-08 11:38:04,357 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-08 11:38:05,961 "GET /fees/?class_name=5&section=A&search= HTTP/1.1" 200 24437
+INFO 2025-04-08 11:38:06,280 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-04-08 11:38:06,312 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-04-08 11:38:06,324 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-04-08 11:38:06,360 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-04-08 11:38:06,380 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-04-08 11:38:06,438 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-04-08 11:38:06,544 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-04-08 11:38:06,548 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80704
+INFO 2025-04-08 11:38:06,577 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-04-08 11:38:06,592 "GET /static/dist/css/style.css HTTP/1.1" 200 1483
+INFO 2025-04-08 11:38:06,677 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-04-08 11:38:06,681 "GET /static/dist/js/custom.js HTTP/1.1" 200 1569
+INFO 2025-04-08 11:38:06,689 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-04-08 11:38:06,814 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-04-08 11:38:06,905 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-04-08 11:38:07,025 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-04-08 11:38:07,035 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+INFO 2025-04-08 11:38:07,040 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 318045
+INFO 2025-04-08 11:38:07,534 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+WARNING 2025-04-08 11:38:07,685 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+WARNING 2025-04-08 11:38:07,997 Not Found: /favicon.ico
+WARNING 2025-04-08 11:38:07,998 "GET /favicon.ico HTTP/1.1" 404 10554
+INFO 2025-04-08 11:38:26,214 Watching for file changes with StatReloader
+INFO 2025-04-08 11:38:29,246 "GET / HTTP/1.1" 200 28756
+INFO 2025-04-08 11:38:34,884 "GET /fees/ HTTP/1.1" 200 24437
+INFO 2025-04-08 11:38:36,437 "GET /fees/?class_name=5&section=&search= HTTP/1.1" 200 24437
+INFO 2025-04-08 11:38:37,801 "GET /fees/?class_name=5&section=A&search= HTTP/1.1" 200 24437
+INFO 2025-04-08 11:39:45,039 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-08 11:39:46,244 Watching for file changes with StatReloader
+INFO 2025-04-08 11:39:49,183 "GET /fees/?class_name=5&section=A&search= HTTP/1.1" 200 25886
+INFO 2025-04-08 11:41:14,054 "GET /fees/ HTTP/1.1" 200 26348
