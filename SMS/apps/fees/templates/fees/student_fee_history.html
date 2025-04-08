@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">Fee History - {{ student.fullname }}</h4>
+        </div>
+        <div class="card-body">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <p><strong>Class:</strong> {{ student.current_class }}</p>
+                    <p><strong>Registration Number:</strong> {{ student.registration_number }}</p>
+                </div>
+                <div class="col-md-6">
+                    <p><strong>Section:</strong> {{ student.section }}</p>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-hover table-bordered">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Date</th>
+                            <th>Amount (₹)</th>
+                            <th>Category</th>
+                            <th>Payment Method</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for payment in payments %}
+                        <tr>
+                            <td>{{ payment.date|date:"d-m-Y" }}</td>
+                            <td>{{ payment.amount }}</td>
+                            <td>{{ payment.fee_category }}</td>
+                            <td>{{ payment.payment_method }}</td>
+                            <td>
+                                <span class="badge {% if payment.status == 'Paid' %}bg-success{% else %}bg-warning{% endif %}">
+                                    {{ payment.status }}
+                                </span>
+                            </td>
+                        </tr>
+                        {% empty %}
+                        <tr>
+                            <td colspan="5" class="text-center">No payment records found</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="text-end mt-3">
+                <a href="{% url 'fees:fee_list' %}" class="btn btn-secondary">Back to Fee List</a>
+                <a href="{% url 'fees:add_fee_payment' student.id %}" class="btn btn-primary">Add New Payment</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

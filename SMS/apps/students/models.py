@@ -5,6 +5,7 @@ from django.utils import timezone
 import random
 from io import BytesIO
 from django.core.files.base import ContentFile
+from django.db.models import Sum
 
 class Student(models.Model):
     STATUS_CHOICES = [("active", "Active"), ("inactive", "Inactive")]
@@ -16,7 +17,7 @@ class Student(models.Model):
     current_status = models.CharField(
         max_length=10, choices=STATUS_CHOICES, default="active"
     )
-    registration_number = models.CharField(max_length=200, unique=True)
+    registration_number = models.CharField(max_length=200, unique=True, null=True, blank=True)
     fullname = models.CharField(max_length=200)
     
     gender = models.CharField(max_length=10, choices=GENDER_CHOICES, default="male")
@@ -64,14 +65,39 @@ class Student(models.Model):
 
 
 
-    def registration_number(self):
-      if self.date_of_admission:
-        year_suffix = str(self.date_of_admission.year)[-2:]  # Extract last 2 digits of year
-      else:
-        year_suffix = "25"  # Default if date_of_admission is missing
+    def generate_registration_number(self):
+        """Generate registration number only once during creation"""
+        if not self.registration_number:
+            year_suffix = str(self.date_of_admission.year)[-2:]
+            unique_number = str(random.randint(1000, 9999))
+            current_class = self.current_class.name if self.current_class else "00"
+            self.registration_number = f"{year_suffix}{current_class}{unique_number}"
+        return self.registration_number
 
-      unique_number = str(random.randint(1000, 9999))
-      return f"{year_suffix}{self.current_class}{unique_number}"
+    def save(self, *args, **kwargs):
+        if not self.registration_number:
+            self.registration_number = self.generate_registration_number()
+        super().save(*args, **kwargs)
+
+    def get_total_fee(self):
+        """Calculate total fee for the student"""
+        from apps.fees.models import FeePayment
+        return FeePayment.objects.filter(
+            student=self,
+            status='Paid'
+        ).aggregate(total=Sum('amount'))['total'] or 0
+
+    def get_paid_fee(self):
+        """Calculate total paid fee for the student"""
+        from apps.fees.models import FeePayment
+        return FeePayment.objects.filter(
+            student=self,
+            status='Paid'
+        ).aggregate(total=Sum('amount'))['total'] or 0
+
+    def get_due_fee(self):
+        """Calculate due fee for the student"""
+        return self.get_total_fee() - self.get_paid_fee()
 
     class Meta:
         ordering = ["fullname",]

@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">Add Fee Payment for {{ student.fullname }}</h4>
+        </div>
+        <div class="card-body">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <p><strong>Class:</strong> {{ student.current_class }}</p>
+                    <p><strong>Registration Number:</strong> {{ student.registration_number }}</p>
+                </div>
+                <div class="col-md-6">
+                    <p><strong>Section:</strong> {{ student.section }}</p>
+                </div>
+            </div>
+
+            <form method="POST">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="amount" class="form-label">Amount (₹)</label>
+                    <input type="number" class="form-control" id="amount" name="amount" required step="0.01">
+                </div>
+
+                <div class="mb-3">
+                    <label for="payment_method" class="form-label">Payment Method</label>
+                    <select class="form-select" id="payment_method" name="payment_method" required>
+                        <option value="">Select Payment Method</option>
+                        <option value="Cash">Cash</option>
+                        <option value="Online">Online</option>
+                        <option value="Bank Transfer">Bank Transfer</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="fee_category" class="form-label">Fee Category</label>
+                    <select class="form-select" id="fee_category" name="fee_category" required>
+                        <option value="">Select Fee Category</option>
+                        <option value="Regular">Regular Fee</option>
+                        <option value="Transport">Transport Fee</option>
+                        <option value="Library">Library Fee</option>
+                        <option value="Laboratory">Laboratory Fee</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="text-end">
+                    <a href="{% url 'fees:fee_list' %}" class="btn btn-secondary">Cancel</a>
+                    <button type="submit" class="btn btn-primary">Submit Payment</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

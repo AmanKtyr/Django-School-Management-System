@@ -1,7 +1,10 @@
 from django.urls import path
-from .views import fee_list, submit_fee  # Changed fee_management to fee_list
+from . import views
+
+app_name = 'fees'
 
 urlpatterns = [
-    path("", fee_list, name="fee_list"),  # Changed fee_management to fee_list
-    path("submit/", submit_fee, name="submit_fee"),
+    path('', views.fee_list, name='fee_list'),
+    path('add-payment/<int:student_id>/', views.add_fee_payment, name='add_fee_payment'),
+    path('history/<int:student_id>/', views.student_fee_history, name='student_fee_history'),
 ]

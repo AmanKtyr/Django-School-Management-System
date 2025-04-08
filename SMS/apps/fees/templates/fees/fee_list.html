@@ -10,7 +10,7 @@
 
     <!-- Class Section Filter -->
     <div class="card shadow p-3 mb-4">
-        <h5 class="mb-3">🔍 Filter</h5>
+        <h5 class="mb-3">🔍 Filter Students</h5>
         <form method="GET" class="row g-3" id="filter-form">
             <div class="col-md-4">
                 {{ filter_form.class_name.label_tag }}
@@ -27,48 +27,62 @@
         </form>
     </div>
 
-    <!-- Students Table -->
+    <!-- Students Table - Only show when filter is applied -->
+    {% if request.GET.class_name or request.GET.section or request.GET.search %}
     <div class="card shadow p-4">
+        <h5 class="mb-3">Filtered Students</h5>
         <div class="table-responsive">
             <table class="table table-hover table-bordered text-center">
                 <thead class="table-dark">
                     <tr>
+                        <th>S/N</th>
                         <th>Student Name</th>
                         <th>Registration Number</th>
                         <th>Class</th>
                         <th>Section</th>
+                        <th>Total Fee (₹)</th>
+                        <th>Fee Paid (₹)</th>
+                        <th>Due Fee (₹)</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
                     {% for student in students %}
                     <tr>
+                        <td>{{ forloop.counter }}</td>
                         <td>{{ student.fullname }}</td>
                         <td>{{ student.registration_number }}</td>
                         <td>{{ student.current_class }}</td>
                         <td>{{ student.section }}</td>
+                        <td>{{ student.total_fee|default:"0.00" }}</td>
+                        <td>{{ student.paid_fee|default:"0.00" }}</td>
+                        <td class="{% if student.due_fee > 0 %}text-danger{% else %}text-success{% endif %} fw-bold">
+                            {{ student.due_fee|default:"0.00" }}
+                        </td>
                         <td>
-                            <a href="#" class="btn btn-sm btn-primary">Add Fee Payment</a>
-                            <a href="#" class="btn btn-sm btn-info">View History</a>
+                            <a href="{% url 'fees:add_fee_payment' student.id %}" class="btn btn-sm btn-primary">Add Payment</a>
+                            <a href="{% url 'fees:student_fee_history' student.id %}" class="btn btn-sm btn-info">View History</a>
                         </td>
                     </tr>
                     {% empty %}
                     <tr>
-                        <td colspan="5" class="text-center">No students found in selected class/section</td>
+                        <td colspan="9" class="text-center">No students found in selected class/section</td>
                     </tr>
                     {% endfor %}
                 </tbody>
             </table>
         </div>
     </div>
+    {% endif %}
 
-    <!-- Recent Payments Section -->
-    <div class="card shadow p-4 mt-4">
+    <!-- Recent Payments Section - Always visible -->
+    <div class="card shadow p-4 {% if not request.GET.class_name and not request.GET.section and not request.GET.search %}mt-0{% else %}mt-4{% endif %}">
         <h5 class="mb-3">Recent Fee Payments</h5>
         <div class="table-responsive">
             <table class="table table-hover table-bordered text-center">
                 <thead class="table-dark">
                     <tr>
+                        <th>S/N</th>
                         <th>Student Name</th>
                         <th>Roll No</th>
                         <th>Class</th>
@@ -84,6 +98,7 @@
                 <tbody>
                     {% for payment in recent_payments %}
                     <tr>
+                        <td>{{ forloop.counter }}</td>
                         <td>{{ payment.student.fullname }}</td>
                         <td>{{ payment.student.registration_number }}</td>
                         <td>{{ payment.student.current_class }}</td>
@@ -103,7 +118,7 @@
                     </tr>
                     {% empty %}
                     <tr>
-                        <td colspan="10" class="text-center">No fee records found</td>
+                        <td colspan="11" class="text-center">No fee records found</td>
                     </tr>
                     {% endfor %}
                 </tbody>

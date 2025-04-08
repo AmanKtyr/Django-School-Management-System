@@ -28,5 +28,6 @@ urlpatterns = [
     path("finance/", include("apps.finance.urls")),
     path("result/", include("apps.result.urls")),
     path("non-teaching-staffs/", include("apps.NonTeachingStaffs.urls")),
-    path("fees/", include("apps.fees.urls")), 
+   # Added namespace
+     path('fees/', include('apps.fees.urls', namespace='fees')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
