@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% load widget_tweaks %}
-{% load breadcrumb_tags %}
 
 {% block breadcrumb-left %}
 <div class="breadcrumb-container">
@@ -30,7 +29,7 @@ Classes
 
 
 {% block breadcrumb %}
-  <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#modal1">
+  <a class="btn btn-primary" href="#" id="addClassBtn">
     <i class="fa fa-plus"></i>
     Add new class
   </a>
@@ -61,7 +60,7 @@ Classes
   </div>
 
 
-  <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
     <div class="modal-dialog">
       <div class="modal-content">
         <form action="{% url 'class-create' %}" method="POST">
@@ -95,3 +94,19 @@ Classes
 
 {% endblock content %}
 
+{% block morejs %}
+<script>
+  $(document).ready(function() {
+    // Handle the Add Class button click
+    $('#addClassBtn').on('click', function(e) {
+      e.preventDefault();
+      $('#modal1').modal('show');
+    });
+
+    // Ensure modal doesn't show automatically
+    $('#modal1').modal({
+      show: false
+    });
+  });
+</script>
+{% endblock morejs %}

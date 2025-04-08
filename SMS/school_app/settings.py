@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django.contrib.humanize",
     "widget_tweaks",
-    "apps.corecode",
+    "apps.corecode.apps.CorecodeConfig",
     "apps.students",
     "apps.staffs",
     "apps.finance",
@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     "apps.NonTeachingStaffs",
     "apps.attendance",
     'apps.fees',
-    'django_filters',  
+    'django_filters',
 ]
 
 MIDDLEWARE = [

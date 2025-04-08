@@ -129,12 +129,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add animation effect to breadcrumb items
     breadcrumbItems.forEach((item, index) => {
         item.style.opacity = '0';
-        item.style.transform = 'translateY(5px)';
-        item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        item.style.transition = 'opacity 0.3s ease';
 
         setTimeout(() => {
             item.style.opacity = '1';
-            item.style.transform = 'translateY(0)';
         }, 100 * (index + 1));
     });
 });

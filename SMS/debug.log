@@ -7703,3 +7703,286 @@ INFO 2025-04-08 23:08:23,949 "GET /student/list HTTP/1.1" 200 27092
 INFO 2025-04-08 23:08:24,019 "GET /static/dist/css/style.css HTTP/1.1" 304 0
 INFO 2025-04-08 23:08:24,193 "GET /static/dist/css/style.css?v=1744133904187 HTTP/1.1" 200 22879
 INFO 2025-04-08 23:08:24,202 "GET /static/dist/js/sidebar-fix.js HTTP/1.1" 304 0
+ERROR 2025-04-08 23:12:36,372 Internal Server Error: /fees/settings/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 1035, in find_library
+    return parser.libraries[name]
+           ~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'breadcrumb_tags'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\views.py", line 376, in fee_settings
+    return render(request, 'corecode/fee_settings.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 1097, in load
+    lib = find_library(parser, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 1037, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'breadcrumb_tags' is not a registered tag library. Must be one of:
+cache
+humanize
+i18n
+l10n
+static
+tz
+widget_tweaks
+ERROR 2025-04-08 23:12:36,380 "GET /fees/settings/ HTTP/1.1" 500 217398
+INFO 2025-04-08 23:13:24,606 D:\Sipher Web\Django School Management System\SMS\apps\corecode\apps.py changed, reloading.
+INFO 2025-04-08 23:13:25,688 Watching for file changes with StatReloader
+INFO 2025-04-08 23:13:31,421 "GET /fees/settings/ HTTP/1.1" 200 30350
+INFO 2025-04-08 23:13:31,514 "GET /static/dist/css/preload.css HTTP/1.1" 304 0
+INFO 2025-04-08 23:13:31,520 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-08 23:13:31,524 "GET /static/dist/css/sidebar-fix.css HTTP/1.1" 304 0
+WARNING 2025-04-08 23:13:31,560 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+INFO 2025-04-08 23:13:31,854 "GET /static/dist/js/sidebar-fix.js HTTP/1.1" 304 0
+INFO 2025-04-08 23:13:31,881 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 304 0
+INFO 2025-04-08 23:13:31,945 "GET /static/dist/css/style.css?v=1744134211842 HTTP/1.1" 200 22879
+WARNING 2025-04-08 23:13:38,071 Not Found: /api/get-sections/6/
+WARNING 2025-04-08 23:13:38,073 "GET /api/get-sections/6/ HTTP/1.1" 404 10578
+INFO 2025-04-08 23:13:38,107 "GET /fees/settings/?class_name=6&section= HTTP/1.1" 200 33784
+INFO 2025-04-08 23:13:38,460 "GET /static/dist/css/style.css?v=1744134218450 HTTP/1.1" 200 22879
+WARNING 2025-04-08 23:13:48,304 Not Found: /api/get-sections/5/
+WARNING 2025-04-08 23:13:48,304 "GET /api/get-sections/5/ HTTP/1.1" 404 10578
+ERROR 2025-04-08 23:13:48,369 Internal Server Error: /fees/settings/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'try'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\views.py", line 376, in fee_settings
+    return render(request, 'corecode/fee_settings.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 577, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 4: 'try'. Did you forget to register or load this tag?
+ERROR 2025-04-08 23:13:48,374 "GET /fees/settings/?class_name=5&section= HTTP/1.1" 500 206172
+WARNING 2025-04-08 23:14:02,432 Not Found: /api/get-sections/6/
+WARNING 2025-04-08 23:14:02,433 "GET /api/get-sections/6/ HTTP/1.1" 404 10578
+ERROR 2025-04-08 23:14:02,538 Internal Server Error: /fees/settings/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'try'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\views.py", line 376, in fee_settings
+    return render(request, 'corecode/fee_settings.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 577, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 4: 'try'. Did you forget to register or load this tag?
+ERROR 2025-04-08 23:14:02,553 "GET /fees/settings/?class_name=6&section= HTTP/1.1" 500 206670
+INFO 2025-04-08 23:14:34,696 "GET /fees/settings/?class_name=6&section= HTTP/1.1" 200 33785
+INFO 2025-04-08 23:14:35,000 "GET /static/dist/css/style.css?v=1744134274995 HTTP/1.1" 200 22879
+WARNING 2025-04-08 23:14:37,569 Not Found: /api/get-sections/5/
+WARNING 2025-04-08 23:14:37,571 "GET /api/get-sections/5/ HTTP/1.1" 404 10578
+INFO 2025-04-08 23:14:37,607 "GET /fees/settings/?class_name=5&section= HTTP/1.1" 200 33688
+INFO 2025-04-08 23:14:37,809 "GET /static/dist/css/style.css?v=1744134277798 HTTP/1.1" 200 22879
+INFO 2025-04-08 23:14:42,349 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 34542
+INFO 2025-04-08 23:14:42,536 "GET /static/dist/css/style.css?v=1744134282532 HTTP/1.1" 200 22879
+INFO 2025-04-08 23:14:46,091 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 34542
+INFO 2025-04-08 23:14:46,283 "GET /static/dist/css/style.css?v=1744134286274 HTTP/1.1" 200 22879
+INFO 2025-04-08 23:15:49,406 D:\Sipher Web\Django School Management System\SMS\apps\corecode\templatetags\__init__.py changed, reloading.
+INFO 2025-04-08 23:15:50,672 Watching for file changes with StatReloader
+INFO 2025-04-08 23:16:00,506 D:\Sipher Web\Django School Management System\SMS\apps\corecode\templatetags\breadcrumb_tags.py changed, reloading.
+INFO 2025-04-08 23:16:01,568 Watching for file changes with StatReloader
+INFO 2025-04-08 23:16:33,458 D:\Sipher Web\Django School Management System\SMS\school_app\settings.py changed, reloading.
+INFO 2025-04-08 23:16:34,513 Watching for file changes with StatReloader
+INFO 2025-04-08 23:17:09,008 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 34542
+INFO 2025-04-08 23:17:09,079 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-08 23:17:09,079 "GET /static/dist/js/custom.js HTTP/1.1" 304 0
+INFO 2025-04-08 23:17:09,238 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 304 0
+INFO 2025-04-08 23:17:09,299 "GET /static/dist/css/style.css?v=1744134429226 HTTP/1.1" 200 22879
+INFO 2025-04-08 23:17:12,128 "GET /class/list/ HTTP/1.1" 200 27549
+INFO 2025-04-08 23:17:12,483 "GET /static/dist/css/style.css?v=1744134432466 HTTP/1.1" 200 22879
+INFO 2025-04-08 23:20:13,288 "GET /class/list/ HTTP/1.1" 200 27549
+INFO 2025-04-08 23:20:13,383 "GET /static/dist/css/preload.css HTTP/1.1" 304 0
+INFO 2025-04-08 23:20:13,385 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-08 23:20:13,411 "GET /static/dist/css/sidebar-fix.css HTTP/1.1" 304 0
+INFO 2025-04-08 23:20:13,582 "GET /static/dist/css/style.css?v=1744134613567 HTTP/1.1" 200 22879
+INFO 2025-04-08 23:20:13,590 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 304 0
+INFO 2025-04-08 23:20:13,595 "GET /static/dist/js/sidebar-fix.js HTTP/1.1" 304 0
+INFO 2025-04-08 23:21:32,101 "GET /class/list/ HTTP/1.1" 200 27837
+INFO 2025-04-08 23:21:32,505 "GET /static/dist/css/style.css?v=1744134692498 HTTP/1.1" 200 22879
+INFO 2025-04-08 23:21:54,940 "GET /class/list/ HTTP/1.1" 200 27837
+INFO 2025-04-08 23:21:55,360 "GET /static/dist/css/style.css?v=1744134715350 HTTP/1.1" 200 22879
+INFO 2025-04-08 23:21:57,755 "GET /subject/list/ HTTP/1.1" 200 25585
+INFO 2025-04-08 23:21:57,953 "GET /static/dist/css/style.css?v=1744134717925 HTTP/1.1" 200 22879
+INFO 2025-04-08 23:22:03,609 "GET /subject/list/ HTTP/1.1" 200 25585
+INFO 2025-04-08 23:22:03,772 "GET /static/dist/css/style.css?v=1744134723762 HTTP/1.1" 200 22879
+INFO 2025-04-08 23:23:18,358 "GET /subject/list/ HTTP/1.1" 200 25585
+INFO 2025-04-08 23:23:18,545 "GET /static/dist/css/style.css?v=1744134798531 HTTP/1.1" 200 22879
+INFO 2025-04-08 23:23:18,549 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 304 0
+INFO 2025-04-08 23:23:26,033 "GET /subject/list/ HTTP/1.1" 200 25585
+INFO 2025-04-08 23:23:26,110 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-08 23:23:26,393 "GET /static/dist/css/style.css?v=1744134806377 HTTP/1.1" 200 22879
+INFO 2025-04-08 23:25:01,509 "GET /subject/list/ HTTP/1.1" 200 25585
+INFO 2025-04-08 23:25:01,619 "GET /static/dist/css/sidebar-fix.css HTTP/1.1" 304 0
+INFO 2025-04-08 23:25:01,947 "GET /static/dist/css/style.css?v=1744134901934 HTTP/1.1" 200 22848
+INFO 2025-04-08 23:25:05,585 "GET /subject/list/ HTTP/1.1" 200 25585
+INFO 2025-04-08 23:25:05,867 "GET /static/dist/css/style.css?v=1744134905855 HTTP/1.1" 200 22848
+INFO 2025-04-08 23:26:33,556 "GET /subject/list/ HTTP/1.1" 200 25585
+INFO 2025-04-08 23:26:33,639 "GET /static/dist/css/preload.css HTTP/1.1" 304 0
+INFO 2025-04-08 23:26:33,955 "GET /static/dist/js/sidebar-fix.js HTTP/1.1" 304 0
+INFO 2025-04-08 23:26:33,957 "GET /static/dist/css/style.css?v=1744134993942 HTTP/1.1" 200 22641
+INFO 2025-04-08 23:27:15,707 "GET /subject/list/ HTTP/1.1" 200 25585
+INFO 2025-04-08 23:27:15,785 "GET /static/dist/css/style.css HTTP/1.1" 200 22604
+INFO 2025-04-08 23:27:15,795 "GET /static/dist/js/custom.js HTTP/1.1" 304 0
+INFO 2025-04-08 23:27:16,004 "GET /static/dist/css/style.css?v=1744135035993 HTTP/1.1" 200 22604
+INFO 2025-04-08 23:27:16,006 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 200 5833
+INFO 2025-04-08 23:27:26,515 "POST /subject/create/ HTTP/1.1" 302 0
+INFO 2025-04-08 23:27:26,545 "GET /subject/list/ HTTP/1.1" 200 26013
+INFO 2025-04-08 23:27:26,615 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-08 23:27:26,811 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 304 0
+INFO 2025-04-08 23:27:26,813 "GET /static/dist/css/style.css?v=1744135046796 HTTP/1.1" 200 22604

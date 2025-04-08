@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% load widget_tweaks %}
-{% load breadcrumb_tags %}
 
 {% block breadcrumb-left %}
 <div class="breadcrumb-container">
@@ -30,7 +29,7 @@ Academic Sessions
 
 
 {% block breadcrumb %}
-  <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#modal1">
+  <a class="btn btn-primary" href="#" id="addSessionBtn">
     <i class="fa fa-plus"></i>
     Add new session
   </a>
@@ -64,7 +63,7 @@ Academic Sessions
   </div>
 
 
-  <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
     <div class="modal-dialog">
       <div class="modal-content">
         <form action="{% url 'session-create' %}" method="POST">

@@ -1,4 +1,5 @@
 {% load static %}
+{% comment %}Try to load breadcrumb_tags if available{% endcomment %}
 
 
 <!DOCTYPE html>
@@ -541,10 +542,9 @@
   <!-- ./wrapper -->
 
   <!-- REQUIRED SCRIPTS -->
-  <!-- jQuery -->
-  <script src="{% static 'plugins/jquery/jquery.min.js' %}"></script>
-  <script src="{% static 'dist/js/jquery.formset.js' %}"> </script>
+  <!-- jQuery (only load one version to avoid conflicts) -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="{% static 'dist/js/jquery.formset.js' %}"></script>
 
   <!-- Bootstrap -->
   <script src="{% static 'plugins/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
