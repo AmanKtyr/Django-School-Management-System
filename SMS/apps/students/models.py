@@ -5,7 +5,7 @@ from django.utils import timezone
 import random
 from io import BytesIO
 from django.core.files.base import ContentFile
-from django.db.models import Sum
+from django.db.models import Sum, Max
 
 class Student(models.Model):
     STATUS_CHOICES = [("active", "Active"), ("inactive", "Inactive")]
@@ -19,7 +19,7 @@ class Student(models.Model):
     )
     registration_number = models.CharField(max_length=200, unique=True, null=True, blank=True)
     fullname = models.CharField(max_length=200)
-    
+
     gender = models.CharField(max_length=10, choices=GENDER_CHOICES, default="male")
     category = models.CharField(max_length=10, choices=category, default="N/A")
 
@@ -30,7 +30,7 @@ class Student(models.Model):
     code='invalid_aadhar'
     )
     aadhar = models.CharField(validators=[aadhar_validator], max_length=12, blank=True)
-    
+
 
 
     date_of_birth = models.DateField(default=timezone.now)
@@ -66,12 +66,47 @@ class Student(models.Model):
 
 
     def generate_registration_number(self):
-        """Generate registration number only once during creation"""
+        """Generate sequential registration number based on class and section"""
         if not self.registration_number:
+            # Get year suffix (last 2 digits of admission year)
             year_suffix = str(self.date_of_admission.year)[-2:]
-            unique_number = str(random.randint(1000, 9999))
+
+            # Get class name
             current_class = self.current_class.name if self.current_class else "00"
-            self.registration_number = f"{year_suffix}{current_class}{unique_number}"
+
+            # Get section (default to 'A' if empty)
+            section = self.section if self.section else "A"
+
+            # Find the highest number for this class and section
+            class_section_students = Student.objects.filter(
+                current_class=self.current_class,
+                section=section
+            )
+
+            # Extract the sequence number from existing registration numbers
+            max_number = 0
+            for student in class_section_students:
+                if student.registration_number and len(student.registration_number) >= 3:
+                    try:
+                        # Try to extract the sequence number from the end of the registration number
+                        seq_number = int(student.registration_number[-3:])
+                        if seq_number > max_number:
+                            max_number = seq_number
+                    except (ValueError, IndexError):
+                        pass
+
+            # Generate the next sequence number (1-200 range)
+            next_number = max_number + 1
+            if next_number > 200:
+                next_number = 1  # Reset if exceeds 200
+
+            # Format the sequence number to be 3 digits (e.g., 001, 012, 123)
+            formatted_number = f"{next_number:03d}"
+
+            # Create the registration number in format: YYClassSection###
+            # Example: 25 + 11 + A + 001 = 2511A001
+            self.registration_number = f"{year_suffix}{current_class}{section}{formatted_number}"
+
         return self.registration_number
 
     def save(self, *args, **kwargs):
@@ -111,4 +146,44 @@ class Student(models.Model):
 
 class StudentBulkUpload(models.Model):
     date_uploaded = models.DateTimeField(auto_now=True)
-    csv_file = models.FileField(upload_to="students/bulkupload/")    
+    csv_file = models.FileField(upload_to="students/bulkupload/")
+
+
+class StudentDocument(models.Model):
+    """Model for storing student documents"""
+    student = models.ForeignKey(Student, on_delete=models.CASCADE, related_name='documents')
+
+    # Document files with their numbers
+    aadhar_card = models.FileField(upload_to="students/documents/aadhar/", blank=True, null=True)
+    aadhar_card_number = models.CharField(max_length=50, blank=True)
+
+    parent_photo = models.FileField(upload_to="students/documents/parent_photo/", blank=True, null=True)
+    parent_photo_number = models.CharField(max_length=50, blank=True)
+
+    parent_id_proof = models.FileField(upload_to="students/documents/parent_id/", blank=True, null=True)
+    parent_id_proof_number = models.CharField(max_length=50, blank=True)
+
+    previous_marksheet = models.FileField(upload_to="students/documents/marksheet/", blank=True, null=True)
+    previous_marksheet_number = models.CharField(max_length=50, blank=True)
+
+    transfer_certificate = models.FileField(upload_to="students/documents/transfer/", blank=True, null=True)
+    transfer_certificate_number = models.CharField(max_length=50, blank=True)
+
+    character_certificate = models.FileField(upload_to="students/documents/character/", blank=True, null=True)
+    character_certificate_number = models.CharField(max_length=50, blank=True)
+
+    caste_certificate = models.FileField(upload_to="students/documents/caste/", blank=True, null=True)
+    caste_certificate_number = models.CharField(max_length=50, blank=True)
+
+    medical_certificate = models.FileField(upload_to="students/documents/medical/", blank=True, null=True)
+    medical_certificate_number = models.CharField(max_length=50, blank=True)
+
+    other_document = models.FileField(upload_to="students/documents/other/", blank=True, null=True)
+    other_document_number = models.CharField(max_length=50, blank=True)
+
+    # Upload timestamps
+    date_uploaded = models.DateTimeField(auto_now_add=True)
+    last_updated = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"Documents for {self.student.fullname}"

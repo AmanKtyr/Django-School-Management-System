@@ -11,18 +11,18 @@
         </a>
       </li>
       <li class="breadcrumb-item active" aria-current="page">
-        <i class="fas fa-cog"></i> System Settings
+        <i class="fas fa-cog"></i> College Settings
       </li>
     </ol>
   </nav>
 </div>
 {% endblock breadcrumb-left %}
 
-{% block title %}System Settings{% endblock title %}
+{% block title %}College Settings{% endblock title %}
 
 {% block content %}
 <div class="container ">
-  <h2 class="mb-4 text-center">{{ title }}</h2>
+  {% comment %} <h2 class="mb-4 text-center">{{ title }}</h2> {% endcomment %}
   <form method="POST" enctype="multipart/form-data" class="p-4 border rounded bg-light shadow" id="siteConfigForm">
     {% csrf_token %}
     {{ form.non_field_errors }}

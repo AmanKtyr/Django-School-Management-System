@@ -1,7 +1,5 @@
 /* Preload CSS to prevent styling flash */
-body {
-  /* Body visibility is controlled by JavaScript */
-}
+
 
 /* Hide Control Sidebar immediately */
 .control-sidebar, .control-sidebar-dark, .control-sidebar-bg {
