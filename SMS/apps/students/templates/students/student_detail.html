@@ -67,6 +67,38 @@
 </div>
 
 {% block content %}
+<!-- Document Upload Reminder Modal - Only shown for first-time login -->
+{% if not documents %}
+<div class="modal fade" id="documentUploadModal" tabindex="-1" aria-labelledby="documentUploadModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="documentUploadModalLabel"><i class="fas fa-file-upload me-2"></i>Welcome to Your Student Profile!</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="text-center mb-3">
+          <i class="fas fa-exclamation-circle text-warning" style="font-size: 3rem;"></i>
+        </div>
+        <h5 class="text-center mb-3">Please Upload Your Documents</h5>
+        <p class="mb-4">To complete your registration, please upload your important documents like Aadhar Card, Previous Marksheet, etc. This will help us maintain your complete student record.</p>
+        <div class="alert alert-info">
+          <i class="fas fa-info-circle me-2"></i> You can upload your documents now or later from your profile page.
+        </div>
+      </div>
+      <div class="modal-footer bg-light">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Remind Me Later</button>
+        <a href="{% url 'upload-student-documents' object.id %}" class="btn btn-primary">
+          <i class="fas fa-file-upload me-2"></i>Upload Documents Now
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+
+
 <div class="container-fluid px-4 py-3">
   <div class="row g-4">
     <!-- Left Column - Student Profile Card -->
@@ -83,9 +115,14 @@
           <div class="position-relative mb-4">
             <div class="student-photo-container p-2 rounded-circle mx-auto" style="background: linear-gradient(135deg, #3498db, #2980b9); width: 190px; height: 190px;">
               {% if object.passport %}
-                <img src="{{ object.passport.url }}" class="student-photo shadow mx-auto" alt="{{ object.fullname }}">
+                <img src="{{ object.passport.url }}" class="student-photo shadow mx-auto"
+                     alt="{{ object.fullname }}"
+                     style="width: 170px; height: 170px; object-fit: cover; border-radius: 50%;">
               {% else %}
-                <img src="{% static 'dist/img/avatar.png' %}" class="student-photo shadow mx-auto" alt="{{ object.fullname }}">
+                <img src="{% static 'dist/img/avatar.png' %}" class="student-photo shadow mx-auto"
+                     alt="{{ object.fullname }}"
+                     style="width: 170px; height: 170px; object-fit: cover; border-radius: 50%;"
+                     onerror="this.src='{% static 'dist/img/avatar.png' %}'">
               {% endif %}
             </div>
             <div class="position-absolute bottom-0 end-0 translate-middle">
@@ -196,7 +233,7 @@
               <h4 class="mb-0"><i class="fas fa-file-alt me-2"></i>Student Documents</h4>
             </div>
             <div class="card-body p-3">
-              <div class="alert alert-info bg-light border-start border-info border-4 shadow-sm">
+              <div class="alert alert-info  border-1 shadow-sm">
                 <p class="mb-0"><i class="fas fa-info-circle text-info me-2"></i> The following documents have been uploaded for this student.</p>
               </div>
 
@@ -324,7 +361,7 @@
                 </table>
               </div>
               {% else %}
-                <div class="alert alert-info bg-light border-start border-info border-4 shadow-sm">
+                <div class="alert alert-info  border-1 shadow-sm">
                   <p class="mb-0 text-center"><i class="fas fa-info-circle text-info me-2"></i> There is no payment history for {{ object }}</p>
                 </div>
               {% endif %}
@@ -354,6 +391,7 @@
   </div>
 </div>
 
+
 <!-- Add some JavaScript for animations -->
 <script>
   document.addEventListener('DOMContentLoaded', function() {
@@ -369,6 +407,12 @@
         section.style.transform = 'translateY(0)';
       }, 100 * (index + 1));
     });
+
+    // Show document upload modal for first-time login
+    {% if not documents %}
+    const documentModal = new bootstrap.Modal(document.getElementById('documentUploadModal'));
+    documentModal.show();
+    {% endif %}
   });
 </script>
 

@@ -48,10 +48,7 @@ class StudentDetailView(LoginRequiredMixin, DetailView):
         context["payments"] = Invoice.objects.filter(student=self.object)
 
         # Get student documents if they exist
-        try:
-            context["documents"] = StudentDocument.objects.get(student=self.object)
-        except StudentDocument.DoesNotExist:
-            context["documents"] = None
+        context['documents'] = StudentDocument.objects.filter(student=self.object).first()
 
         return context
 
