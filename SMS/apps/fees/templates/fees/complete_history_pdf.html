@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Fee Receipt</title>
+    <title>Complete Payment History</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -10,7 +10,7 @@
             padding: 20px;
             color: #333;
         }
-        .receipt-container {
+        .history-container {
             max-width: 800px;
             margin: 0 auto;
             border: 1px solid #ddd;
@@ -67,14 +67,18 @@
             padding-top: 5px;
             margin-top: 30px;
         }
+        .total-row {
+            background-color: #f5f5f5;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-    <div class="receipt-container">
+    <div class="history-container">
         <div class="header">
             <div>
-                <h2>Fee Receipt</h2>
-                <p>Receipt #{{ payment.id }}</p>
+                <h2>Complete Payment History</h2>
+                <p>Generated on: {{ generation_date|date:"d M Y H:i" }}</p>
             </div>
             <div class="school-info">
                 <h3>School Management System</h3>
@@ -85,45 +89,58 @@
         <div class="info-section">
             <div class="student-info">
                 <h4>Student Information</h4>
-                <p><strong>Name:</strong> {{ payment.student.fullname }}</p>
-                <p><strong>Registration No:</strong> {{ payment.student.registration_number }}</p>
-                <p><strong>Class:</strong> {{ payment.student.current_class }}</p>
-                <p><strong>Section:</strong> {{ payment.student.section }}</p>
+                <p><strong>Name:</strong> {{ student.fullname }}</p>
+                <p><strong>Registration No:</strong> {{ student.registration_number }}</p>
+                <p><strong>Class:</strong> {{ student.current_class }}</p>
+                <p><strong>Section:</strong> {{ student.section }}</p>
             </div>
             <div class="payment-info">
-                <h4>Payment Details</h4>
-                <p><strong>Date:</strong> {{ payment.date|date:"d M Y" }}</p>
-                <p><strong>Payment Method:</strong> {{ payment.payment_method }}</p>
-                {% if payment.transaction_id %}
-                <p><strong>Transaction ID:</strong> {{ payment.transaction_id }}</p>
-                {% endif %}
-                <p><strong>Status:</strong> {{ payment.status }}</p>
+                <h4>Payment Summary</h4>
+                <p><strong>Total Payments:</strong> {{ payments|length }}</p>
+                <p><strong>Total Amount Paid:</strong> ₹{{ total_paid|floatformat:2 }}</p>
             </div>
         </div>
 
         <table>
             <thead>
                 <tr>
-                    <th>Fee Category</th>
-                    <th class="text-end">Amount</th>
+                    <th>Date</th>
+                    <th>Amount (₹)</th>
+                    <th>Category</th>
+                    <th>Payment Method</th>
+                    <th>Transaction ID</th>
+                    <th>Status</th>
                 </tr>
             </thead>
             <tbody>
+                {% for payment in payments %}
                 <tr>
-                    <td>{{ payment.fee_category }}</td>
+                    <td>{{ payment.date|date:"d-m-Y" }}</td>
                     <td class="text-end">₹{{ payment.amount|floatformat:2 }}</td>
+                    <td>{{ payment.fee_category }}</td>
+                    <td>{{ payment.payment_method }}</td>
+                    <td>
+                        {% if payment.transaction_id %}
+                            {{ payment.transaction_id }}
+                        {% else %}
+                            -
+                        {% endif %}
+                    </td>
+                    <td>{{ payment.status }}</td>
                 </tr>
-                <tr>
-                    <td class="text-end"><strong>Total</strong></td>
-                    <td class="text-end"><strong>₹{{ payment.amount|floatformat:2 }}</strong></td>
+                {% endfor %}
+                <tr class="total-row">
+                    <td><strong>Total</strong></td>
+                    <td class="text-end"><strong>₹{{ total_paid|floatformat:2 }}</strong></td>
+                    <td colspan="4"></td>
                 </tr>
             </tbody>
         </table>
 
         <div class="footer">
             <div>
-                <p>Thank you for your payment!</p>
-                <p><small>This is a computer-generated receipt and does not require a signature.</small></p>
+                <p>Thank you for your payments!</p>
+                <p><small>This is a computer-generated document and does not require a signature.</small></p>
             </div>
             <div>
                 <div class="signature">

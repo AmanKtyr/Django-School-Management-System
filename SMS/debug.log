@@ -13504,3 +13504,557 @@ INFO 2025-04-11 16:30:16,809 "GET /static/dist/css/style.css?v=1744369216799 HTT
 INFO 2025-04-11 16:30:22,008 "GET /fees/receipt/4/?format=html HTTP/1.1" 200 26695
 INFO 2025-04-11 16:30:22,544 "GET /static/dist/css/style.css?v=1744369222536 HTTP/1.1" 200 22604
 INFO 2025-04-11 16:30:26,360 "GET /fees/receipt/4/ HTTP/1.1" 200 4301
+INFO 2025-04-11 16:31:14,716 "GET /fees/history/8/ HTTP/1.1" 200 24694
+INFO 2025-04-11 16:31:15,066 "GET /static/dist/css/style.css?v=1744369275057 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:31:17,112 "GET /fees/ HTTP/1.1" 200 50262
+INFO 2025-04-11 16:31:17,472 "GET /static/dist/css/style.css?v=1744369277467 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:31:23,499 "GET /fees/ HTTP/1.1" 200 50262
+INFO 2025-04-11 16:31:23,635 "GET /static/dist/css/style.css?v=1744369283627 HTTP/1.1" 200 22604
+WARNING 2025-04-11 16:31:48,148 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-11 16:33:12,017 "GET /fees/ HTTP/1.1" 200 50262
+INFO 2025-04-11 16:33:12,431 "GET /static/dist/css/style.css?v=1744369392426 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:33:14,445 "GET /fees/ HTTP/1.1" 200 50262
+INFO 2025-04-11 16:33:14,761 "GET /static/dist/css/style.css?v=1744369394758 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:33:15,353 "GET /fees/ HTTP/1.1" 200 50262
+INFO 2025-04-11 16:33:15,527 "GET /static/dist/css/style.css?v=1744369395516 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:33:15,813 "GET /fees/ HTTP/1.1" 200 50262
+INFO 2025-04-11 16:33:15,990 "GET /static/dist/css/style.css?v=1744369395985 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:33:16,571 "GET /fees/ HTTP/1.1" 200 50262
+INFO 2025-04-11 16:33:16,777 "GET /static/dist/css/style.css?v=1744369396772 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:36:19,263 "GET /fees/?class_name=5&section=&search= HTTP/1.1" 200 61164
+INFO 2025-04-11 16:36:19,458 "GET /static/dist/css/style.css?v=1744369579450 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:36:39,507 "GET /fees/add-payment/1/ HTTP/1.1" 200 28055
+INFO 2025-04-11 16:36:39,788 "GET /static/dist/css/style.css?v=1744369599784 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:38:56,972 "GET /fees/?class_name=5&section=&search= HTTP/1.1" 200 61164
+INFO 2025-04-11 16:38:57,331 "GET /static/dist/css/style.css?v=1744369737325 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:38:58,957 "GET /fees/add-payment/1/ HTTP/1.1" 200 28055
+INFO 2025-04-11 16:38:59,234 "GET /static/dist/css/style.css?v=1744369739229 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:39:34,751 "GET /fees/ HTTP/1.1" 200 50262
+INFO 2025-04-11 16:39:34,952 "GET /static/dist/css/style.css?v=1744369774945 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:42:05,371 D:\Sipher Web\Django School Management System\SMS\apps\fees\models.py changed, reloading.
+INFO 2025-04-11 16:42:07,719 Watching for file changes with StatReloader
+INFO 2025-04-11 16:44:38,610 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-11 16:44:40,473 Watching for file changes with StatReloader
+INFO 2025-04-11 16:46:54,321 "GET /fees/ HTTP/1.1" 200 50410
+INFO 2025-04-11 16:46:54,777 "GET /static/dist/css/style.css?v=1744370214680 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:48:19,702 "GET /fees/ HTTP/1.1" 200 50410
+INFO 2025-04-11 16:48:20,043 "GET /static/dist/css/style.css?v=1744370300040 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:48:50,218 "GET /fees/receipt/4/ HTTP/1.1" 200 4301
+INFO 2025-04-11 16:49:01,926 "GET /fees/?class_name=5&section=&search= HTTP/1.1" 200 61312
+INFO 2025-04-11 16:49:02,233 "GET /static/dist/css/style.css?v=1744370342227 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:49:06,222 "GET /fees/add-payment/1/ HTTP/1.1" 200 28559
+INFO 2025-04-11 16:49:06,377 "GET /static/dist/css/style.css?v=1744370346366 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:49:19,058 "POST /fees/add-payment/1/ HTTP/1.1" 200 28736
+INFO 2025-04-11 16:49:19,195 "GET /static/dist/css/style.css?v=1744370359191 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:50:57,938 "POST /fees/add-payment/1/ HTTP/1.1" 200 28736
+INFO 2025-04-11 16:50:58,316 "GET /static/dist/css/style.css?v=1744370458307 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:51:44,311 "POST /fees/add-payment/1/ HTTP/1.1" 200 28736
+INFO 2025-04-11 16:51:44,398 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-11 16:51:44,633 "GET /static/dist/css/style.css?v=1744370504627 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:51:55,346 "GET /fees/ HTTP/1.1" 200 50410
+INFO 2025-04-11 16:51:55,621 "GET /static/dist/css/style.css?v=1744370515613 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:51:58,121 "GET /fees/?class_name=6&section=&search= HTTP/1.1" 200 61308
+INFO 2025-04-11 16:51:58,307 "GET /static/dist/css/style.css?v=1744370518302 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:52:03,494 "GET /fees/add-payment/8/ HTTP/1.1" 200 28550
+INFO 2025-04-11 16:52:03,669 "GET /static/dist/css/style.css?v=1744370523662 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:52:24,505 "GET /static/dist/css/style.css?v=1744370544500 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:52:25,548 "GET /fees/add-payment/8/ HTTP/1.1" 200 28550
+WARNING 2025-04-11 16:52:26,182 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+WARNING 2025-04-11 16:52:29,699 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-11 16:52:30,222 "GET /fees/add-payment/8/ HTTP/1.1" 200 28550
+INFO 2025-04-11 16:52:30,327 "GET /static/dist/css/preload.css HTTP/1.1" 200 1863
+INFO 2025-04-11 16:52:30,349 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-04-11 16:52:30,363 "GET /static/dist/css/style.css HTTP/1.1" 200 22604
+INFO 2025-04-11 16:52:30,386 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-04-11 16:52:30,388 "GET /static/dist/css/sidebar-fix.css HTTP/1.1" 200 9004
+INFO 2025-04-11 16:52:30,406 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-04-11 16:52:30,410 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-04-11 16:52:30,412 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-04-11 16:52:30,422 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-04-11 16:52:30,424 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-04-11 16:52:30,472 "GET /static/dist/js/custom.js HTTP/1.1" 200 2597
+INFO 2025-04-11 16:52:30,474 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-04-11 16:52:30,484 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-04-11 16:52:30,684 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-04-11 16:52:31,105 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-04-11 16:52:31,169 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-04-11 16:52:31,293 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-04-11 16:52:31,308 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+WARNING 2025-04-11 16:52:31,704 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-11 16:52:31,773 "GET /static/dist/css/style.css?v=1744370551758 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:52:31,803 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 200 9593
+INFO 2025-04-11 16:52:31,820 "GET /static/dist/js/sidebar-fix.js HTTP/1.1" 200 2621
+WARNING 2025-04-11 16:52:32,394 Not Found: /favicon.ico
+WARNING 2025-04-11 16:52:32,394 "GET /favicon.ico HTTP/1.1" 404 10403
+INFO 2025-04-11 16:54:10,783 "GET /fees/add-payment/8/ HTTP/1.1" 200 28550
+INFO 2025-04-11 16:54:11,219 "GET /static/dist/css/style.css?v=1744370651195 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:54:20,030 "POST /fees/add-payment/8/ HTTP/1.1" 200 28727
+INFO 2025-04-11 16:54:20,279 "GET /static/dist/css/style.css?v=1744370660274 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:55:33,001 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-11 16:55:34,220 Watching for file changes with StatReloader
+INFO 2025-04-11 16:56:07,359 "POST /fees/add-payment/8/ HTTP/1.1" 200 28861
+INFO 2025-04-11 16:56:07,707 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 304 0
+INFO 2025-04-11 16:56:07,775 "GET /static/dist/css/style.css?v=1744370767692 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:57:20,147 "POST /fees/add-payment/8/ HTTP/1.1" 200 29571
+INFO 2025-04-11 16:57:20,465 "GET /static/dist/css/style.css?v=1744370840460 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:58:53,876 "POST /fees/add-payment/8/ HTTP/1.1" 200 29572
+INFO 2025-04-11 16:58:54,257 "GET /static/dist/css/style.css?v=1744370934250 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:59:11,766 "POST /fees/add-payment/8/ HTTP/1.1" 200 29581
+INFO 2025-04-11 16:59:12,065 "GET /static/dist/css/style.css?v=1744370952057 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:59:30,906 "POST /fees/add-payment/8/ HTTP/1.1" 200 29581
+INFO 2025-04-11 16:59:31,336 "GET /static/dist/css/style.css?v=1744370971330 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:59:35,981 "GET /fees/ HTTP/1.1" 200 50410
+INFO 2025-04-11 16:59:36,193 "GET /static/dist/css/style.css?v=1744370976187 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:59:41,031 "GET /fees/?class_name=5&section=&search= HTTP/1.1" 200 61312
+INFO 2025-04-11 16:59:41,235 "GET /static/dist/css/style.css?v=1744370981226 HTTP/1.1" 200 22604
+INFO 2025-04-11 16:59:44,210 "GET /fees/add-payment/1/ HTTP/1.1" 200 28673
+INFO 2025-04-11 16:59:44,429 "GET /static/dist/css/style.css?v=1744370984405 HTTP/1.1" 200 22604
+WARNING 2025-04-11 17:00:18,209 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-11 17:00:19,183 "GET /fees/add-payment/1/ HTTP/1.1" 200 28673
+INFO 2025-04-11 17:00:19,301 "GET /static/dist/css/preload.css HTTP/1.1" 200 1863
+INFO 2025-04-11 17:00:19,306 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-04-11 17:00:19,322 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-04-11 17:00:19,326 "GET /static/dist/css/style.css HTTP/1.1" 200 22604
+INFO 2025-04-11 17:00:19,331 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-04-11 17:00:19,341 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-04-11 17:00:19,345 "GET /static/dist/css/sidebar-fix.css HTTP/1.1" 200 9004
+INFO 2025-04-11 17:00:19,350 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-04-11 17:00:19,361 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-04-11 17:00:19,363 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-04-11 17:00:19,382 "GET /static/dist/js/custom.js HTTP/1.1" 200 2597
+INFO 2025-04-11 17:00:19,391 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-04-11 17:00:19,438 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-04-11 17:00:19,464 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-04-11 17:00:19,562 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-04-11 17:00:23,075 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-04-11 17:00:23,317 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-04-11 17:00:23,325 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+WARNING 2025-04-11 17:00:23,827 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-11 17:00:23,854 "GET /static/dist/css/style.css?v=1744371023828 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:00:23,895 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 200 9593
+INFO 2025-04-11 17:00:23,898 "GET /static/dist/js/sidebar-fix.js HTTP/1.1" 200 2621
+WARNING 2025-04-11 17:00:24,554 Not Found: /favicon.ico
+WARNING 2025-04-11 17:00:24,555 "GET /favicon.ico HTTP/1.1" 404 10403
+INFO 2025-04-11 17:00:32,171 "POST /fees/add-payment/1/ HTTP/1.1" 200 29632
+INFO 2025-04-11 17:00:32,512 "GET /static/dist/css/style.css?v=1744371032507 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:03:16,099 "POST /fees/add-payment/1/ HTTP/1.1" 200 29632
+INFO 2025-04-11 17:03:16,519 "GET /static/dist/css/style.css?v=1744371196493 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:03:21,182 "GET /fees/ HTTP/1.1" 200 50410
+INFO 2025-04-11 17:03:21,588 "GET /static/dist/css/style.css?v=1744371201577 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:04:00,471 "GET /fees/ HTTP/1.1" 200 50419
+INFO 2025-04-11 17:04:00,856 "GET /static/dist/css/style.css?v=1744371240849 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:04:52,386 "GET /fees/ HTTP/1.1" 200 50419
+INFO 2025-04-11 17:04:52,728 "GET /static/dist/css/style.css?v=1744371292723 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:04:52,740 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 304 0
+INFO 2025-04-11 17:04:55,093 "GET /fees/?class_name=5&section=&search= HTTP/1.1" 200 61321
+INFO 2025-04-11 17:04:55,439 "GET /static/dist/css/style.css?v=1744371295430 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:04:59,168 "GET /fees/add-payment/1/ HTTP/1.1" 200 28702
+INFO 2025-04-11 17:04:59,335 "GET /static/dist/css/style.css?v=1744371299317 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:05:33,649 "POST /fees/add-payment/1/ HTTP/1.1" 200 29977
+INFO 2025-04-11 17:05:33,829 "GET /static/dist/css/style.css?v=1744371333822 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:07:41,359 "GET /fees/ HTTP/1.1" 200 50419
+INFO 2025-04-11 17:07:41,582 "GET /static/dist/css/style.css?v=1744371461573 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:07:51,070 "GET /fees/ HTTP/1.1" 200 50419
+INFO 2025-04-11 17:07:51,365 "GET /static/dist/css/style.css?v=1744371471357 HTTP/1.1" 200 22604
+WARNING 2025-04-11 17:07:57,018 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-11 17:09:13,642 "GET /fees/ HTTP/1.1" 200 50419
+INFO 2025-04-11 17:09:14,030 "GET /static/dist/css/style.css?v=1744371554025 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:09:16,390 "GET /fees/?class_name=5&section=&search= HTTP/1.1" 200 61321
+INFO 2025-04-11 17:09:16,733 "GET /static/dist/css/style.css?v=1744371556728 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:09:19,271 "GET /fees/add-payment/1/ HTTP/1.1" 200 28754
+INFO 2025-04-11 17:09:19,438 "GET /static/dist/css/style.css?v=1744371559425 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:09:28,099 "POST /fees/add-payment/1/ HTTP/1.1" 200 30015
+INFO 2025-04-11 17:09:28,274 "GET /static/dist/css/style.css?v=1744371568262 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:09:44,055 "POST /fees/add-payment/1/ HTTP/1.1" 302 0
+INFO 2025-04-11 17:09:44,098 "GET /student/1/ HTTP/1.1" 200 38594
+INFO 2025-04-11 17:09:44,263 "GET /static/dist/img/avatar.png HTTP/1.1" 200 2121881
+INFO 2025-04-11 17:09:44,447 "GET /static/dist/css/style.css?v=1744371584437 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:09:44,455 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 304 0
+INFO 2025-04-11 17:09:50,081 "GET /fees/history/1/ HTTP/1.1" 200 26961
+INFO 2025-04-11 17:09:50,239 "GET /static/dist/css/style.css?v=1744371590227 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:09:57,648 "GET /fees/ HTTP/1.1" 200 54674
+INFO 2025-04-11 17:09:57,836 "GET /static/dist/css/style.css?v=1744371597824 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:10:11,129 "GET /fees/?class_name=5&section=&search= HTTP/1.1" 200 65259
+INFO 2025-04-11 17:10:11,318 "GET /static/dist/css/style.css?v=1744371611314 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:10:14,521 "GET /fees/add-payment/1/ HTTP/1.1" 200 27734
+INFO 2025-04-11 17:10:14,683 "GET /static/dist/css/style.css?v=1744371614669 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:10:22,920 "GET /fees/add-payment/1/ HTTP/1.1" 200 27734
+INFO 2025-04-11 17:10:23,082 "GET /static/dist/css/style.css?v=1744371623062 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:10:30,902 "GET /fees/add-payment/1/ HTTP/1.1" 200 27734
+INFO 2025-04-11 17:10:31,067 "GET /static/dist/css/style.css?v=1744371631061 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:10:33,342 "GET /fees/ HTTP/1.1" 200 54674
+INFO 2025-04-11 17:10:33,514 "GET /static/dist/css/style.css?v=1744371633508 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:10:53,024 "GET /student/1/ HTTP/1.1" 200 38441
+INFO 2025-04-11 17:10:53,198 "GET /static/dist/css/style.css?v=1744371653192 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:10:59,812 "GET /fees/history/1/ HTTP/1.1" 200 26961
+INFO 2025-04-11 17:10:59,980 "GET /static/dist/css/style.css?v=1744371659975 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:11:05,832 "GET /fees/add-payment/1/ HTTP/1.1" 200 27734
+INFO 2025-04-11 17:11:05,998 "GET /static/dist/css/style.css?v=1744371665992 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:11:08,527 "GET /student/list HTTP/1.1" 200 28825
+INFO 2025-04-11 17:11:08,741 "GET /static/dist/css/style.css?v=1744371668733 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:11:11,367 "GET /fees/ HTTP/1.1" 200 54674
+INFO 2025-04-11 17:11:11,575 "GET /static/dist/css/style.css?v=1744371671570 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:11:13,704 "GET /fees/?class_name=6&section=&search= HTTP/1.1" 200 65572
+INFO 2025-04-11 17:11:13,890 "GET /static/dist/css/style.css?v=1744371673885 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:11:16,980 "GET /fees/?class_name=5&section=&search= HTTP/1.1" 200 65259
+INFO 2025-04-11 17:11:17,170 "GET /static/dist/css/style.css?v=1744371677162 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:11:23,262 "GET /fees/add-payment/2/ HTTP/1.1" 200 28754
+INFO 2025-04-11 17:11:23,426 "GET /static/dist/css/style.css?v=1744371683420 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:11:35,050 "POST /fees/add-payment/2/ HTTP/1.1" 200 30026
+INFO 2025-04-11 17:11:35,203 "GET /static/dist/css/style.css?v=1744371695195 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:11:43,157 "POST /fees/add-payment/2/ HTTP/1.1" 302 0
+INFO 2025-04-11 17:11:43,192 "GET /student/2/ HTTP/1.1" 200 41874
+INFO 2025-04-11 17:11:43,378 "GET /static/dist/css/style.css?v=1744371703375 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:11:56,084 "GET /fees/history/2/ HTTP/1.1" 200 24931
+INFO 2025-04-11 17:11:56,258 "GET /static/dist/css/style.css?v=1744371716248 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:11:58,182 "GET /fees/ HTTP/1.1" 200 58934
+INFO 2025-04-11 17:11:58,358 "GET /static/dist/css/style.css?v=1744371718353 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:12:01,516 "GET /fees/?class_name=5&section=&search= HTTP/1.1" 200 69516
+INFO 2025-04-11 17:12:01,724 "GET /static/dist/css/style.css?v=1744371721716 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:12:04,137 "GET /fees/add-payment/2/ HTTP/1.1" 200 28754
+INFO 2025-04-11 17:12:04,296 "GET /static/dist/css/style.css?v=1744371724290 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:12:13,783 "GET /fees/history/2/ HTTP/1.1" 200 24931
+INFO 2025-04-11 17:12:13,977 "GET /static/dist/css/style.css?v=1744371733969 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:12:21,440 "GET /fees/ HTTP/1.1" 200 58934
+INFO 2025-04-11 17:12:21,615 "GET /static/dist/css/style.css?v=1744371741611 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:12:28,564 "GET /fees/?class_name=5&section=&search= HTTP/1.1" 200 69516
+INFO 2025-04-11 17:12:28,759 "GET /static/dist/css/style.css?v=1744371748751 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:12:31,194 "GET /fees/?class_name=5&section=A&search= HTTP/1.1" 200 69516
+INFO 2025-04-11 17:12:31,385 "GET /static/dist/css/style.css?v=1744371751381 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:12:33,731 "GET /fees/add-payment/2/ HTTP/1.1" 200 28754
+INFO 2025-04-11 17:12:33,910 "GET /static/dist/css/style.css?v=1744371753903 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:12:36,671 "GET /student/2/ HTTP/1.1" 200 41704
+INFO 2025-04-11 17:12:36,875 "GET /static/dist/css/style.css?v=1744371756868 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:12:43,961 "GET /fees/history/2/ HTTP/1.1" 200 24931
+INFO 2025-04-11 17:12:44,133 "GET /static/dist/css/style.css?v=1744371764128 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:12:53,581 "GET /fees/ HTTP/1.1" 200 58934
+INFO 2025-04-11 17:12:53,783 "GET /static/dist/css/style.css?v=1744371773779 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:13:10,331 "GET /fees/?class_name=3&section=&search= HTTP/1.1" 200 69194
+INFO 2025-04-11 17:13:10,632 "GET /static/dist/css/style.css?v=1744371790628 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:13:12,836 "GET /fees/add-payment/3/ HTTP/1.1" 200 27731
+INFO 2025-04-11 17:13:12,998 "GET /static/dist/css/style.css?v=1744371792994 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:14:39,644 "POST /fees/add-payment/3/ HTTP/1.1" 302 0
+INFO 2025-04-11 17:14:39,680 "GET /student/3/ HTTP/1.1" 200 41276
+INFO 2025-04-11 17:14:39,898 "GET /static/dist/css/style.css?v=1744371879885 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:14:43,380 "GET /fees/history/3/ HTTP/1.1" 200 24946
+INFO 2025-04-11 17:14:43,720 "GET /static/dist/css/style.css?v=1744371883709 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:14:55,031 "GET /fees/ HTTP/1.1" 200 63034
+INFO 2025-04-11 17:14:55,224 "GET /static/dist/css/style.css?v=1744371895215 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:14:55,234 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 304 0
+INFO 2025-04-11 17:15:30,606 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-11 17:15:32,511 Watching for file changes with StatReloader
+INFO 2025-04-11 17:15:45,395 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-11 17:15:46,590 Watching for file changes with StatReloader
+INFO 2025-04-11 17:15:50,842 "GET /fees/history/2/ HTTP/1.1" 200 24931
+INFO 2025-04-11 17:15:51,184 "GET /static/dist/css/style.css?v=1744371951092 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:16:35,476 "GET /fees/history/2/ HTTP/1.1" 200 25118
+INFO 2025-04-11 17:16:35,815 "GET /static/dist/css/style.css?v=1744371995806 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:16:41,222 "GET /student/2/ HTTP/1.1" 200 41704
+INFO 2025-04-11 17:16:41,616 "GET /static/dist/css/style.css?v=1744372001601 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:19:33,275 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-11 17:19:35,047 Watching for file changes with StatReloader
+INFO 2025-04-11 17:20:08,093 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-11 17:20:09,429 Watching for file changes with StatReloader
+INFO 2025-04-11 17:20:19,773 D:\Sipher Web\Django School Management System\SMS\apps\fees\urls.py changed, reloading.
+INFO 2025-04-11 17:20:21,838 Watching for file changes with StatReloader
+INFO 2025-04-11 17:21:27,789 "GET /fees/history/2/ HTTP/1.1" 200 26662
+INFO 2025-04-11 17:21:28,138 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 304 0
+INFO 2025-04-11 17:21:28,212 "GET /static/dist/css/style.css?v=1744372288128 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:21:31,290 "GET /fees/receipt/6/?format=html HTTP/1.1" 200 26847
+INFO 2025-04-11 17:21:31,957 "GET /static/dist/css/style.css?v=1744372291946 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:21:39,753 "GET /fees/receipt/6/ HTTP/1.1" 200 4445
+INFO 2025-04-11 17:21:47,353 "GET /fees/add-payment/2/ HTTP/1.1" 200 28754
+INFO 2025-04-11 17:21:47,639 "GET /static/dist/css/style.css?v=1744372307631 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:21:52,746 "GET /fees/payment-history-pdf/2/ HTTP/1.1" 200 4295
+INFO 2025-04-11 17:22:03,352 "GET /fees/receipt/6/?format=html HTTP/1.1" 200 26847
+INFO 2025-04-11 17:22:03,928 "GET /static/dist/css/style.css?v=1744372323923 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:22:08,632 "GET /fees/history/2/ HTTP/1.1" 200 26662
+INFO 2025-04-11 17:22:08,933 "GET /static/dist/css/style.css?v=1744372328906 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:22:19,216 "GET /fees/ HTTP/1.1" 200 63034
+INFO 2025-04-11 17:22:19,406 "GET /static/dist/css/style.css?v=1744372339401 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:22:22,890 "GET /fees/history/3/ HTTP/1.1" 200 26677
+INFO 2025-04-11 17:22:23,054 "GET /static/dist/css/style.css?v=1744372343038 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:22:26,186 "GET /fees/receipt/7/?format=html HTTP/1.1" 200 26718
+INFO 2025-04-11 17:22:26,806 "GET /static/dist/css/style.css?v=1744372346801 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:22:29,786 "GET /fees/receipt/7/ HTTP/1.1" 200 4307
+INFO 2025-04-11 17:22:56,353 "GET /fees/ HTTP/1.1" 200 63034
+INFO 2025-04-11 17:22:56,702 "GET /static/dist/css/style.css?v=1744372376686 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:22:58,806 "GET /fees/?class_name=6&section=&search= HTTP/1.1" 200 73932
+INFO 2025-04-11 17:22:58,999 "GET /static/dist/css/style.css?v=1744372378989 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:23:00,570 "GET /fees/?class_name=6&section=B&search= HTTP/1.1" 200 66156
+INFO 2025-04-11 17:23:00,763 "GET /static/dist/css/style.css?v=1744372380754 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:23:03,093 "GET /fees/?class_name=6&section=A&search= HTTP/1.1" 200 73932
+INFO 2025-04-11 17:23:03,286 "GET /static/dist/css/style.css?v=1744372383280 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:23:06,041 "GET /fees/add-payment/9/ HTTP/1.1" 200 29128
+INFO 2025-04-11 17:23:06,217 "GET /static/dist/css/style.css?v=1744372386200 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:23:15,817 "POST /fees/add-payment/9/ HTTP/1.1" 302 0
+INFO 2025-04-11 17:23:15,847 "GET /fees/history/9/ HTTP/1.1" 200 27766
+INFO 2025-04-11 17:23:16,036 "GET /static/dist/css/style.css?v=1744372396028 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:23:34,377 "GET /fees/receipt/8/?format=html HTTP/1.1" 200 26720
+INFO 2025-04-11 17:23:34,994 "GET /static/dist/css/style.css?v=1744372414985 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:23:44,401 "GET /fees/payment-history-pdf/9/?format=html HTTP/1.1" 200 4805
+INFO 2025-04-11 17:24:10,053 "GET /fees/receipt/8/?format=html HTTP/1.1" 200 26720
+INFO 2025-04-11 17:24:10,586 "GET /static/dist/css/style.css?v=1744372450574 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:24:19,477 "GET /fees/payment-history-pdf/3/?format=html HTTP/1.1" 200 4803
+INFO 2025-04-11 17:24:29,213 "GET /fees/receipt/7/?format=html HTTP/1.1" 200 26718
+INFO 2025-04-11 17:24:29,710 "GET /static/dist/css/style.css?v=1744372469706 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:24:48,108 "GET /fees/ HTTP/1.1" 200 67135
+INFO 2025-04-11 17:24:48,446 "GET /static/dist/css/style.css?v=1744372488424 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:24:52,885 "GET /fees/receipt/8/ HTTP/1.1" 200 4300
+INFO 2025-04-11 17:25:33,670 "GET /fees/?class_name=5&section=&search= HTTP/1.1" 200 77717
+INFO 2025-04-11 17:25:34,032 "GET /static/dist/css/style.css?v=1744372534027 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:25:35,988 "GET /fees/?class_name=5&section=A&search= HTTP/1.1" 200 77717
+INFO 2025-04-11 17:25:36,334 "GET /static/dist/css/style.css?v=1744372536330 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:25:43,552 "GET /fees/receipt/2/ HTTP/1.1" 200 4302
+INFO 2025-04-11 17:25:47,206 "GET /fees/history/1/ HTTP/1.1" 200 30741
+INFO 2025-04-11 17:25:47,368 "GET /static/dist/css/style.css?v=1744372547363 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:25:49,791 "GET /fees/receipt/5/?format=html HTTP/1.1" 200 26847
+INFO 2025-04-11 17:25:50,306 "GET /static/dist/css/style.css?v=1744372550301 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:26:52,339 "GET /fees/payment-history-pdf/1/?format=html HTTP/1.1" 200 6566
+INFO 2025-04-11 17:27:05,391 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-11 17:27:06,431 Watching for file changes with StatReloader
+INFO 2025-04-11 17:27:22,607 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-11 17:27:23,665 Watching for file changes with StatReloader
+INFO 2025-04-11 17:27:39,262 "GET /fees/ HTTP/1.1" 200 67135
+INFO 2025-04-11 17:27:39,746 "GET /static/dist/css/style.css?v=1744372659652 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:28:24,792 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-11 17:28:26,152 Watching for file changes with StatReloader
+INFO 2025-04-11 17:28:54,352 "GET /fees/ HTTP/1.1" 200 67135
+INFO 2025-04-11 17:28:54,697 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 304 0
+INFO 2025-04-11 17:28:54,760 "GET /static/dist/css/style.css?v=1744372734685 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:28:56,881 "GET /fees/?class_name=5&section=&search= HTTP/1.1" 200 77717
+INFO 2025-04-11 17:28:57,268 "GET /static/dist/css/style.css?v=1744372737260 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:29:00,114 "GET /fees/add-payment/2/ HTTP/1.1" 200 28754
+INFO 2025-04-11 17:29:00,291 "GET /static/dist/css/style.css?v=1744372740273 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:29:08,622 "POST /fees/add-payment/2/ HTTP/1.1" 302 0
+INFO 2025-04-11 17:29:08,721 "GET /fees/receipt/9/ HTTP/1.1" 200 4302
+INFO 2025-04-11 17:29:28,796 "POST /fees/add-payment/2/ HTTP/1.1" 302 0
+INFO 2025-04-11 17:29:28,876 "GET /fees/receipt/10/ HTTP/1.1" 200 4302
+INFO 2025-04-11 17:29:35,981 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-11 17:29:37,459 Watching for file changes with StatReloader
+INFO 2025-04-11 17:30:01,046 "GET /fees/ HTTP/1.1" 200 75366
+INFO 2025-04-11 17:30:01,529 "GET /static/dist/css/style.css?v=1744372801461 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:30:07,340 "GET /fees/?class_name=5&section=&search= HTTP/1.1" 200 85243
+INFO 2025-04-11 17:30:07,721 "GET /static/dist/css/style.css?v=1744372807713 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:30:10,335 "GET /fees/add-payment/2/ HTTP/1.1" 200 28055
+INFO 2025-04-11 17:30:10,493 "GET /static/dist/css/style.css?v=1744372810479 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:30:20,287 "POST /fees/add-payment/2/ HTTP/1.1" 302 0
+INFO 2025-04-11 17:30:20,328 "GET /student/2/ HTTP/1.1" 200 42368
+INFO 2025-04-11 17:30:20,533 "GET /static/dist/css/style.css?v=1744372820527 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:30:49,593 "GET /student/2/ HTTP/1.1" 200 42198
+INFO 2025-04-11 17:30:49,666 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-11 17:30:49,923 "GET /static/dist/css/style.css?v=1744372849917 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:30:53,813 "GET /fees/add-payment/2/ HTTP/1.1" 200 28055
+INFO 2025-04-11 17:30:53,994 "GET /static/dist/css/style.css?v=1744372853985 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:30:57,058 "GET /fees/ HTTP/1.1" 200 74665
+INFO 2025-04-11 17:30:57,246 "GET /static/dist/css/style.css?v=1744372857233 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:31:00,331 "GET /fees/history/2/ HTTP/1.1" 200 26065
+INFO 2025-04-11 17:31:00,486 "GET /static/dist/css/style.css?v=1744372860478 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:31:10,868 "GET /fees/receipt/5/?format=html HTTP/1.1" 200 26698
+INFO 2025-04-11 17:31:11,171 "GET /static/dist/css/style.css?v=1744372871166 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:31:14,155 "GET /fees/history/1/ HTTP/1.1" 200 26063
+INFO 2025-04-11 17:31:14,315 "GET /static/dist/css/style.css?v=1744372874305 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:31:22,111 "GET /fees/ HTTP/1.1" 200 74665
+INFO 2025-04-11 17:31:22,311 "GET /static/dist/css/style.css?v=1744372882305 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:31:26,959 "GET /fees/receipt/11/?format=html HTTP/1.1" 200 26694
+INFO 2025-04-11 17:31:27,617 "GET /static/dist/css/style.css?v=1744372887610 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:31:38,069 "GET /fees/ HTTP/1.1" 200 74665
+INFO 2025-04-11 17:31:38,430 "GET /static/dist/css/style.css?v=1744372898420 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:31:43,461 "GET /fees/receipt/7/?format=html HTTP/1.1" 200 26689
+INFO 2025-04-11 17:31:44,182 "GET /static/dist/css/style.css?v=1744372904177 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:32:46,761 "GET /fees/?class_name=5&section=&search= HTTP/1.1" 200 85249
+INFO 2025-04-11 17:32:47,158 "GET /static/dist/css/style.css?v=1744372967154 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:33:18,851 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-11 17:33:20,514 Watching for file changes with StatReloader
+INFO 2025-04-11 17:33:32,285 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-11 17:33:33,464 Watching for file changes with StatReloader
+INFO 2025-04-11 17:34:03,227 "GET /fees/?class_name=5&section=&search= HTTP/1.1" 200 85249
+INFO 2025-04-11 17:34:03,983 "GET /static/dist/css/style.css?v=1744373043650 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:34:34,119 "GET /fees/?class_name=5&section=&search= HTTP/1.1" 200 85249
+INFO 2025-04-11 17:34:34,457 "GET /static/dist/css/style.css?v=1744373074450 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:34:36,541 "GET /fees/add-payment/2/ HTTP/1.1" 200 28055
+INFO 2025-04-11 17:34:36,713 "GET /static/dist/css/style.css?v=1744373076700 HTTP/1.1" 200 22604
+ERROR 2025-04-11 17:34:43,822 Internal Server Error: /fees/add-payment/2/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\fees\views.py", line 136, in add_fee_payment
+    remaining_amount -= fee_amount
+TypeError: unsupported operand type(s) for -=: 'float' and 'decimal.Decimal'
+ERROR 2025-04-11 17:34:43,822 "POST /fees/add-payment/2/ HTTP/1.1" 500 80650
+INFO 2025-04-11 17:35:27,549 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-11 17:35:29,006 Watching for file changes with StatReloader
+INFO 2025-04-11 17:35:38,254 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-11 17:35:39,881 Watching for file changes with StatReloader
+INFO 2025-04-11 17:35:48,722 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-11 17:35:50,309 Watching for file changes with StatReloader
+INFO 2025-04-11 17:35:54,963 "POST /fees/add-payment/2/ HTTP/1.1" 302 0
+INFO 2025-04-11 17:35:55,108 "GET /fees/receipt/13/ HTTP/1.1" 200 4304
+INFO 2025-04-11 17:35:59,927 "GET /fees/add-payment/2/ HTTP/1.1" 200 27395
+INFO 2025-04-11 17:36:00,345 "GET /static/dist/css/style.css?v=1744373160270 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:36:26,451 D:\Sipher Web\Django School Management System\SMS\apps\fees\models.py changed, reloading.
+INFO 2025-04-11 17:36:28,113 Watching for file changes with StatReloader
+INFO 2025-04-11 17:36:43,579 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-11 17:36:45,040 Watching for file changes with StatReloader
+INFO 2025-04-11 17:37:01,729 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-11 17:37:02,928 Watching for file changes with StatReloader
+INFO 2025-04-11 17:37:16,314 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-11 17:37:17,440 Watching for file changes with StatReloader
+INFO 2025-04-11 17:37:48,013 "GET /fees/add-payment/2/ HTTP/1.1" 200 27651
+INFO 2025-04-11 17:37:48,268 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 304 0
+INFO 2025-04-11 17:37:48,313 "GET /static/dist/css/style.css?v=1744373268250 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:37:57,904 "GET /fees/ HTTP/1.1" 200 74677
+INFO 2025-04-11 17:37:58,311 "GET /static/dist/css/style.css?v=1744373278290 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:38:00,353 "GET /fees/?class_name=5&section=&search= HTTP/1.1" 200 84949
+INFO 2025-04-11 17:38:00,564 "GET /static/dist/css/style.css?v=1744373280555 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:38:08,543 "GET /fees/?class_name=6&section=&search= HTTP/1.1" 200 85573
+INFO 2025-04-11 17:38:08,743 "GET /static/dist/css/style.css?v=1744373288736 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:38:12,593 "GET /fees/add-payment/9/ HTTP/1.1" 200 29043
+INFO 2025-04-11 17:38:12,753 "GET /static/dist/css/style.css?v=1744373292743 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:38:23,472 "POST /fees/add-payment/9/ HTTP/1.1" 302 0
+INFO 2025-04-11 17:38:23,572 "GET /fees/receipt/14/ HTTP/1.1" 200 4302
+INFO 2025-04-11 17:38:36,908 D:\Sipher Web\Django School Management System\SMS\apps\fees\models.py changed, reloading.
+INFO 2025-04-11 17:38:38,904 Watching for file changes with StatReloader
+INFO 2025-04-11 17:38:51,920 "GET /fees/add-payment/9/ HTTP/1.1" 200 28777
+INFO 2025-04-11 17:38:52,311 "GET /static/dist/css/style.css?v=1744373332231 HTTP/1.1" 200 22604
+ERROR 2025-04-11 17:39:01,130 Internal Server Error: /fees/add-payment/9/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\fees\views.py", line 136, in add_fee_payment
+    remaining_amount -= fee_amount
+TypeError: unsupported operand type(s) for -=: 'float' and 'decimal.Decimal'
+ERROR 2025-04-11 17:39:01,136 "POST /fees/add-payment/9/ HTTP/1.1" 500 80502
+INFO 2025-04-11 17:39:04,193 "GET /fees/add-payment/9/ HTTP/1.1" 200 28046
+INFO 2025-04-11 17:39:04,337 "GET /static/dist/css/style.css?v=1744373344333 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:39:05,254 "GET /fees/add-payment/9/ HTTP/1.1" 200 28046
+INFO 2025-04-11 17:39:05,409 "GET /static/dist/css/style.css?v=1744373345397 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:39:07,841 "GET /fees/ HTTP/1.1" 200 54328
+INFO 2025-04-11 17:39:08,017 "GET /static/dist/css/style.css?v=1744373348009 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:39:10,621 "GET /fees/?class_name=6&section=&search= HTTP/1.1" 200 65228
+INFO 2025-04-11 17:39:10,807 "GET /static/dist/css/style.css?v=1744373350800 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:39:14,676 "GET /fees/add-payment/9/ HTTP/1.1" 200 28046
+INFO 2025-04-11 17:39:14,841 "GET /static/dist/css/style.css?v=1744373354826 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:39:25,092 "POST /fees/add-payment/9/ HTTP/1.1" 302 0
+INFO 2025-04-11 17:39:25,133 "GET /student/9/ HTTP/1.1" 200 41973
+INFO 2025-04-11 17:39:25,342 "GET /static/dist/css/style.css?v=1744373365336 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:39:31,298 "GET /fees/add-payment/9/ HTTP/1.1" 200 28046
+INFO 2025-04-11 17:39:31,468 "GET /static/dist/css/style.css?v=1744373371459 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:39:44,162 "GET /fees/ HTTP/1.1" 200 58391
+INFO 2025-04-11 17:39:44,346 "GET /static/dist/css/style.css?v=1744373384338 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:39:47,395 "GET /fees/history/9/ HTTP/1.1" 200 25167
+INFO 2025-04-11 17:39:47,556 "GET /static/dist/css/style.css?v=1744373387549 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:42:07,830 "GET /fees/ HTTP/1.1" 200 58391
+INFO 2025-04-11 17:42:08,111 "GET /static/dist/css/style.css?v=1744373528100 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:42:14,490 "GET /fees/history/9/ HTTP/1.1" 200 25167
+INFO 2025-04-11 17:42:14,799 "GET /static/dist/css/style.css?v=1744373534780 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:42:28,629 D:\Sipher Web\Django School Management System\SMS\apps\fees\models.py changed, reloading.
+INFO 2025-04-11 17:42:30,635 Watching for file changes with StatReloader
+INFO 2025-04-11 17:43:21,857 "GET /fees/history/9/ HTTP/1.1" 200 25167
+INFO 2025-04-11 17:43:22,140 "GET /static/dist/css/style.css?v=1744373602055 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:43:58,717 "GET /fees/history/9/ HTTP/1.1" 200 25167
+INFO 2025-04-11 17:43:59,096 "GET /static/dist/css/style.css?v=1744373639087 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:44:12,471 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-11 17:44:14,336 Watching for file changes with StatReloader
+INFO 2025-04-11 17:44:25,927 "GET /fees/history/9/ HTTP/1.1" 200 25167
+INFO 2025-04-11 17:44:26,449 "GET /static/dist/css/style.css?v=1744373666259 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:44:39,024 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-11 17:44:40,228 Watching for file changes with StatReloader
+INFO 2025-04-11 17:45:18,090 "GET /fees/history/9/ HTTP/1.1" 200 26894
+INFO 2025-04-11 17:45:18,569 "GET /static/dist/css/style.css?v=1744373718472 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:45:52,450 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-11 17:45:53,489 Watching for file changes with StatReloader
+INFO 2025-04-11 17:46:09,915 D:\Sipher Web\Django School Management System\SMS\apps\fees\urls.py changed, reloading.
+INFO 2025-04-11 17:46:11,312 Watching for file changes with StatReloader
+INFO 2025-04-11 17:46:13,948 "GET /fees/history/9/ HTTP/1.1" 200 27421
+INFO 2025-04-11 17:46:14,367 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 304 0
+INFO 2025-04-11 17:46:14,412 "GET /static/dist/css/style.css?v=1744373774347 HTTP/1.1" 200 22604
+ERROR 2025-04-11 17:46:27,994 Internal Server Error: /fees/complete-history/9/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\fees\views.py", line 230, in generate_complete_history
+    return render(request, 'fees/complete_history.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: fees/complete_history.html
+ERROR 2025-04-11 17:46:27,998 "GET /fees/complete-history/9/?format=html HTTP/1.1" 500 97141
+INFO 2025-04-11 17:46:36,893 "GET /fees/receipt/6/?format=html HTTP/1.1" 200 26689
+INFO 2025-04-11 17:46:37,446 "GET /static/dist/css/style.css?v=1744373797432 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:46:45,617 "GET /fees/receipt/5/?format=html HTTP/1.1" 200 26695
+INFO 2025-04-11 17:46:46,170 "GET /static/dist/css/style.css?v=1744373806165 HTTP/1.1" 200 22604
+ERROR 2025-04-11 17:46:53,850 Internal Server Error: /fees/complete-history/9/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\fees\views.py", line 230, in generate_complete_history
+    return render(request, 'fees/complete_history.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: fees/complete_history.html
+ERROR 2025-04-11 17:46:53,851 "GET /fees/complete-history/9/?format=html HTTP/1.1" 500 97141
+ERROR 2025-04-11 17:47:10,988 Internal Server Error: /fees/complete-history/9/
+ERROR 2025-04-11 17:47:10,989 "GET /fees/complete-history/9/ HTTP/1.1" 500 52
+INFO 2025-04-11 17:47:44,616 "GET /fees/history/9/ HTTP/1.1" 200 27421
+INFO 2025-04-11 17:47:44,924 "GET /static/dist/css/style.css?v=1744373864910 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:47:46,404 "GET /fees/complete-history/9/?format=html HTTP/1.1" 200 27656
+INFO 2025-04-11 17:47:47,038 "GET /static/dist/css/style.css?v=1744373867034 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:48:02,631 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-11 17:48:03,918 Watching for file changes with StatReloader
+INFO 2025-04-11 17:48:06,579 "GET /fees/receipt/6/?format=html HTTP/1.1" 200 26718
+INFO 2025-04-11 17:48:17,012 "GET /fees/receipt/6/?format=html HTTP/1.1" 200 26718
+INFO 2025-04-11 17:48:17,571 "GET /static/dist/css/style.css?v=1744373897503 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:50:23,717 "GET /fees/history/9/ HTTP/1.1" 200 27421
+INFO 2025-04-11 17:50:24,030 "GET /static/dist/css/style.css?v=1744374024022 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:50:41,558 "GET /fees/ HTTP/1.1" 200 58391
+INFO 2025-04-11 17:50:41,923 "GET /static/dist/css/style.css?v=1744374041917 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:50:44,844 "GET /fees/history/9/ HTTP/1.1" 200 27421
+INFO 2025-04-11 17:50:45,009 "GET /static/dist/css/style.css?v=1744374044995 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:50:50,937 "GET /fees/complete-history/9/?format=html HTTP/1.1" 200 27656
+INFO 2025-04-11 17:50:51,503 "GET /static/dist/css/style.css?v=1744374051498 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:54:36,713 "GET /fees/history/9/ HTTP/1.1" 200 27425
+INFO 2025-04-11 17:54:37,050 "GET /static/dist/css/style.css?v=1744374277037 HTTP/1.1" 200 22604
+INFO 2025-04-11 17:54:48,514 "GET /fees/ HTTP/1.1" 200 58391
+INFO 2025-04-11 17:54:48,868 "GET /static/dist/css/style.css?v=1744374288857 HTTP/1.1" 200 22604

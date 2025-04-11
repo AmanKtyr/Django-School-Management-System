@@ -34,6 +34,7 @@ class FeePayment(models.Model):
     student = models.ForeignKey('students.Student', on_delete=models.CASCADE)
     amount = models.DecimalField(max_digits=10, decimal_places=2)
     payment_method = models.CharField(max_length=50, choices=PAYMENT_METHODS)
+    transaction_id = models.CharField(max_length=100, blank=True, null=True, help_text="Required for online or bank transfers")
     date = models.DateTimeField(default=timezone.now)
     status = models.CharField(max_length=20, choices=PAYMENT_STATUS, default="Pending")
     fee_category = models.CharField(max_length=50, default="Regular")

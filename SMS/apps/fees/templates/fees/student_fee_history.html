@@ -27,7 +27,7 @@
 <div class="container mt-4">
     <div class="card shadow">
         <div class="card-header bg-primary text-white">
-            <h4 class="mb-0">Fee History - {{ student.fullname }}</h4>
+            <h4 class="mb-0">Payment History - {{ student.fullname }}</h4>
         </div>
         <div class="card-body">
             <div class="row mb-3">
@@ -48,7 +48,9 @@
                             <th>Amount (₹)</th>
                             <th>Category</th>
                             <th>Payment Method</th>
+                            <th>Transaction ID</th>
                             <th>Status</th>
+                            <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -59,23 +61,50 @@
                             <td>{{ payment.fee_category }}</td>
                             <td>{{ payment.payment_method }}</td>
                             <td>
+                                {% if payment.transaction_id %}
+                                    {{ payment.transaction_id }}
+                                {% else %}
+                                    <span class="text-muted">-</span>
+                                {% endif %}
+                            </td>
+                            <td>
                                 <span class="badge {% if payment.status == 'Paid' %}bg-success{% else %}bg-warning{% endif %}">
                                     {{ payment.status }}
                                 </span>
                             </td>
+                            <td>
+                                <div class="btn-group">
+                                    <a href="{% url 'fees:generate_receipt' payment.id %}?format=html" class="btn btn-sm btn-info" target="_blank">
+                                        <i class="fas fa-eye"></i> View
+                                    </a>
+                                    <a href="{% url 'fees:generate_receipt' payment.id %}" class="btn btn-sm btn-primary">
+                                        <i class="fas fa-download"></i> Download
+                                    </a>
+                                </div>
+                            </td>
                         </tr>
                         {% empty %}
                         <tr>
-                            <td colspan="5" class="text-center">No payment records found</td>
+                            <td colspan="7" class="text-center">No payment records found</td>
                         </tr>
                         {% endfor %}
                     </tbody>
                 </table>
             </div>
 
-            <div class="text-end mt-3">
-                <a href="{% url 'fees:fee_list' %}" class="btn btn-secondary">Back to Fee List</a>
-                <a href="{% url 'fees:add_fee_payment' student.id %}" class="btn btn-primary">Add New Payment</a>
+            <div class="d-flex justify-content-between mt-3">
+                <div>
+                    <a href="{% url 'fees:generate_complete_history' student.id %}?format=html" class="btn btn-info" target="_blank">
+                        <i class="fas fa-file-alt me-1"></i> View Complete History
+                    </a>
+                    <a href="{% url 'fees:generate_complete_history' student.id %}" class="btn btn-success">
+                        <i class="fas fa-download me-1"></i> Download Complete History
+                    </a>
+                </div>
+                <div>
+                    <a href="{% url 'fees:fee_list' %}" class="btn btn-secondary">Back to Fee List</a>
+                    <a href="{% url 'fees:add_fee_payment' student.id %}" class="btn btn-primary">Add New Payment</a>
+                </div>
             </div>
         </div>
     </div>

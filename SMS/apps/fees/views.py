@@ -102,13 +102,20 @@ def add_fee_payment(request, student_id):
             payment_method = request.POST.get('payment_method')
             fee_category = request.POST.get('fee_category')
             fee_type = request.POST.get('fee_type')
+            transaction_id = request.POST.get('transaction_id')
+
+            # Validate transaction ID for online or bank transfers
+            if payment_method in ['Online', 'Bank Transfer'] and not transaction_id:
+                messages.error(request, 'Transaction ID is required for online or bank transfer payments')
+                return redirect('fees:add_fee_payment', student_id=student.id)
 
             # Create new fee payment
-            FeePayment.objects.create(
+            new_payment = FeePayment.objects.create(
                 student=student,
                 amount=amount,
                 payment_method=payment_method,
                 fee_category=fee_category,
+                transaction_id=transaction_id,
                 status='Paid'
             )
 
@@ -144,7 +151,8 @@ def add_fee_payment(request, student_id):
                 else:
                     messages.info(request, 'Payment recorded, but no specific fees were fully covered.')
 
-            return redirect('student-detail', pk=student.id)
+            # Redirect to payment history page instead of student detail
+            return redirect('fees:student_fee_history', student_id=student.id)
 
         except ValueError:
             messages.error(request, 'Please enter a valid amount')
@@ -192,6 +200,50 @@ def generate_receipt(request, payment_id):
         # Create PDF response
         response = HttpResponse(content_type='application/pdf')
         filename = f"Receipt_{payment.student.fullname}_{payment.id}.pdf"
+        response['Content-Disposition'] = f'attachment; filename="{filename}"'
+
+        # Convert HTML to PDF
+        pisa_status = pisa.CreatePDF(html, dest=response)
+
+        # Return PDF response if successful
+        if pisa_status.err:
+            return HttpResponse('PDF generation error', status=500)
+
+        return response
+    except Exception as e:
+        # Log the error for debugging
+        print(f"PDF Generation Error: {str(e)}")
+        return HttpResponse(f'Error generating PDF: {str(e)}', status=500)
+
+@login_required
+def generate_complete_history(request, student_id):
+    student = get_object_or_404(Student, id=student_id)
+    payments = FeePayment.objects.filter(student=student).order_by('-date')
+
+    # For HTML view (preview)
+    if request.GET.get('format') == 'html':
+        context = {
+            'student': student,
+            'payments': payments,
+            'total_paid': sum(payment.amount for payment in payments)
+        }
+        return render(request, 'fees/complete_history.html', context)
+
+    # For PDF generation
+    try:
+        # Use a simplified template without base.html for PDF generation
+        template = get_template('fees/complete_history_pdf.html')
+        context = {
+            'student': student,
+            'payments': payments,
+            'total_paid': sum(payment.amount for payment in payments),
+            'generation_date': timezone.now()
+        }
+        html = template.render(context)
+
+        # Create PDF response
+        response = HttpResponse(content_type='application/pdf')
+        filename = f"Payment_History_{student.fullname}.pdf"
         response['Content-Disposition'] = f'attachment; filename="{filename}"'
 
         # Convert HTML to PDF

@@ -62,6 +62,9 @@
                             <h6 class="text-muted">Payment Details</h6>
                             <p class="mb-1"><strong>Date:</strong> {{ payment.date|date:"d M Y" }}</p>
                             <p class="mb-1"><strong>Payment Method:</strong> {{ payment.payment_method }}</p>
+                            {% if payment.transaction_id %}
+                            <p class="mb-1"><strong>Transaction ID:</strong> {{ payment.transaction_id }}</p>
+                            {% endif %}
                             <p class="mb-1"><strong>Status:</strong> {{ payment.status }}</p>
                         </div>
                     </div>
