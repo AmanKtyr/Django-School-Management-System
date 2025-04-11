@@ -1,6 +1,28 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block breadcrumb-left %}
+<div class="breadcrumb-container">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-chevron">
+      <li class="breadcrumb-item">
+        <a href="{% url 'home' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-home"></i> Home
+        </a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="{% url 'fees:fee_list' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-money-bill-wave"></i> Fee Management
+        </a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        <i class="fas fa-history"></i> Payment History
+      </li>
+    </ol>
+  </nav>
+</div>
+{% endblock breadcrumb-left %}
+
 {% block content %}
 <div class="container mt-4">
     <div class="card shadow">

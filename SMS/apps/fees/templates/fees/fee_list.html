@@ -1,77 +1,107 @@
 {% extends 'base.html' %}
 {% load static %}
 
-
+{% block breadcrumb-left %}
+<div class="breadcrumb-container">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-chevron">
+      <li class="breadcrumb-item">
+        <a href="{% url 'home' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-home"></i> Home
+        </a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        <i class="fas fa-money-bill-wave"></i> Fee Management
+      </li>
+    </ol>
+  </nav>
+</div>
+{% endblock breadcrumb-left %}
 
 {% block content %}
-<!-- Page Header -->
-<div class="bg-primary text-white py-4 mb-4 rounded-bottom shadow">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <h1 class="fw-bold"><i class="fas fa-money-bill-wave me-3"></i>Fee Management</h1>
-                <p class="opacity-75">Manage student fees, payments, and financial records</p>
-            </div>
-            <div class="col-md-6 text-md-end">
-                <a href="#" class="btn btn-light"><i class="fas fa-file-excel me-2"></i>Export to Excel</a>
-                <a href="#" class="btn btn-light ms-2"><i class="fas fa-print me-2"></i>Print Report</a>
-            </div>
-        </div>
-    </div>
-</div>
+<div class="container py-4">
+    <h2 class="h3 mb-4">
+        <i class="fas fa-money-bill-wave text-primary me-2"></i>
+        Fee Submit
+    </h2>
 
-<div class="container">
-    <!-- Stats Cards -->
-    <div class="row mb-4">
-        <div class="col-md-3 mb-4 mb-md-0">
-            <div class="card bg-primary bg-gradient text-white shadow h-100">
-                <div class="card-body p-3">
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="rounded-circle bg-white text-primary p-3 me-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
-                            <i class="fas fa-users fa-lg"></i>
+    <div class="row g-4">
+        <!-- Total Students -->
+        <div class="col-xl-3 col-md-6">
+            <div class="card border-0 h-100" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef);">
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0 me-3">
+                            <div class="rounded-circle p-3 d-flex align-items-center justify-content-center"
+                                 style="width: 48px; height: 48px; background: linear-gradient(135deg, #1E3C72, #2A5298);">
+                                <i class="fas fa-users text-white"></i>
+                            </div>
                         </div>
-                        <h5 class="card-title mb-0">Total Students</h5>
+                        <div class="flex-grow-1">
+                            <h6 class="text-muted mb-1">Total Students</h6>
+                            <h2 class="mb-0" style="color: #1E3C72;">{{ students|length }}</h2>
+                        </div>
                     </div>
-                    <h2 class="display-6 fw-bold mb-0">{{ students|length }}</h2>
                 </div>
             </div>
         </div>
-        <div class="col-md-3 mb-4 mb-md-0">
-            <div class="card bg-success bg-gradient text-white shadow h-100">
-                <div class="card-body p-3">
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="rounded-circle bg-white text-success p-3 me-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
-                            <i class="fas fa-check-circle fa-lg"></i>
+
+        <!-- Recent Payments -->
+        <div class="col-xl-3 col-md-6">
+            <div class="card border-0 h-100" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef);">
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0 me-3">
+                            <div class="rounded-circle p-3 d-flex align-items-center justify-content-center"
+                                 style="width: 48px; height: 48px; background: linear-gradient(135deg, #2ecc71, #27ae60);">
+                                <i class="fas fa-check-circle text-white"></i>
+                            </div>
                         </div>
-                        <h5 class="card-title mb-0">Recent Payments</h5>
+                        <div class="flex-grow-1">
+                            <h6 class="text-muted mb-1">Recent Payments</h6>
+                            <h2 class="mb-0" style="color: #27ae60;">{{ recent_payments|length }}</h2>
+                        </div>
                     </div>
-                    <h2 class="display-6 fw-bold mb-0">{{ recent_payments|length }}</h2>
                 </div>
             </div>
         </div>
-        <div class="col-md-3 mb-4 mb-md-0">
-            <div class="card bg-warning bg-gradient text-white shadow h-100">
-                <div class="card-body p-3">
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="rounded-circle bg-white text-warning p-3 me-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
-                            <i class="fas fa-exclamation-circle fa-lg"></i>
+
+        <!-- Pending Fees -->
+        <div class="col-xl-3 col-md-6">
+            <div class="card border-0 h-100" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef);">
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0 me-3">
+                            <div class="rounded-circle p-3 d-flex align-items-center justify-content-center"
+                                 style="width: 48px; height: 48px; background: linear-gradient(135deg, #f1c40f, #f39c12);">
+                                <i class="fas fa-exclamation-circle text-white"></i>
+                            </div>
                         </div>
-                        <h5 class="card-title mb-0">Pending Fees</h5>
+                        <div class="flex-grow-1">
+                            <h6 class="text-muted mb-1">Pending Fees</h6>
+                            <h2 class="mb-0" style="color: #f39c12;">{{ students|length }}</h2>
+                        </div>
                     </div>
-                    <h2 class="display-6 fw-bold mb-0">{{ students|length }}</h2>
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
-            <div class="card bg-info bg-gradient text-white shadow h-100">
-                <div class="card-body p-3">
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="rounded-circle bg-white text-info p-3 me-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
-                            <i class="fas fa-calendar-alt fa-lg"></i>
+
+        <!-- Today's Date -->
+        <div class="col-xl-3 col-md-6">
+            <div class="card border-0 h-100" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef);">
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0 me-3">
+                            <div class="rounded-circle p-3 d-flex align-items-center justify-content-center"
+                                 style="width: 48px; height: 48px; background: linear-gradient(135deg, #3498db, #2980b9);">
+                                <i class="fas fa-calendar-alt text-white"></i>
+                            </div>
                         </div>
-                        <h5 class="card-title mb-0">Today's Date</h5>
+                        <div class="flex-grow-1">
+                            <h6 class="text-muted mb-1">Today's Date</h6>
+                            <h2 class="mb-0" style="color: #2980b9;">{{ today|date:"d M" }}</h2>
+                        </div>
                     </div>
-                    <h2 class="display-6 fw-bold mb-0">{{ today|date:"d M" }}</h2>
                 </div>
             </div>
         </div>
@@ -119,14 +149,13 @@
             <div class="d-flex align-items-center">
                 <span class="badge bg-primary rounded-pill me-2 px-3 py-2">{{ students|length }} Students</span>
                 <div class="dropdown">
-                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="studentListDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fas fa-ellipsis-v"></i>
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-file-excel me-2"></i>Export Results</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-print me-2"></i>Print List</a></li>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="studentListDropdown">
+                        <li><a class="dropdown-item" href="#" onclick="window.print();"><i class="fas fa-print me-2"></i>Print List</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-sync-alt me-2"></i>Refresh Data</a></li>
+                        <li><a class="dropdown-item" href="{% url 'fees:fee_list' %}"><i class="fas fa-sync-alt me-2"></i>Refresh Data</a></li>
                     </ul>
                 </div>
             </div>
@@ -202,14 +231,14 @@
                                         <i class="fas fa-credit-card me-1"></i> Pay
                                     </a>
                                     <div class="dropdown">
-                                        <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                        <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" id="actionDropdown{{ student.id }}" data-bs-toggle="dropdown" aria-expanded="false">
                                             <i class="fas fa-ellipsis-h"></i>
                                         </button>
-                                        <ul class="dropdown-menu dropdown-menu-end">
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="actionDropdown{{ student.id }}">
                                             <li><a class="dropdown-item" href="{% url 'fees:student_fee_history' student.id %}"><i class="fas fa-history me-2"></i>Payment History</a></li>
                                             <li><a class="dropdown-item" href="{% url 'student-detail' pk=student.id %}"><i class="fas fa-user me-2"></i>View Profile</a></li>
                                             <li><hr class="dropdown-divider"></li>
-                                            <li><a class="dropdown-item" href="#"><i class="fas fa-file-invoice me-2"></i>Generate Receipt</a></li>
+                                            <li><a class="dropdown-item" href="{% url 'fees:generate_receipt' student.id %}"><i class="fas fa-file-invoice me-2"></i>Generate Receipt</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -239,19 +268,18 @@
         <div class="card-header bg-light d-flex justify-content-between align-items-center">
             <div>
                 <h5 class="mb-0"><i class="fas fa-history me-2"></i>Recent Fee Transactions</h5>
-                <p class="text-muted mb-0 small">Latest fee payments across all classes</p>
+                <p class="text-muted text-success mb-0 small">Latest fee payments across all classes</p>
             </div>
             <div class="d-flex align-items-center">
                 <span class="badge bg-success rounded-pill me-2 px-3 py-2">{{ recent_payments|length }} Transactions</span>
                 <div class="dropdown">
-                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="paymentDropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="recentTransactionsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fas fa-ellipsis-v"></i>
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="paymentDropdownMenuButton">
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-file-excel me-2"></i>Export Transactions</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-print me-2"></i>Print Report</a></li>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="recentTransactionsDropdown">
+                        <li><a class="dropdown-item" href="#" onclick="window.print();"><i class="fas fa-print me-2"></i>Print Report</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-chart-line me-2"></i>View Analytics</a></li>
+                        <li><a class="dropdown-item" href="{% url 'fees:fee_list' %}"><i class="fas fa-sync-alt me-2"></i>Refresh Data</a></li>
                     </ul>
                 </div>
             </div>
@@ -321,10 +349,10 @@
                                         <i class="fas fa-file-invoice me-1"></i> Receipt
                                     </a>
                                     <div class="dropdown">
-                                        <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                        <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" id="paymentDropdown{{ payment.id }}" data-bs-toggle="dropdown" aria-expanded="false">
                                             <i class="fas fa-ellipsis-h"></i>
                                         </button>
-                                        <ul class="dropdown-menu dropdown-menu-end">
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="paymentDropdown{{ payment.id }}">
                                             <li><a class="dropdown-item" href="{% url 'fees:student_fee_history' payment.student.id %}"><i class="fas fa-history me-2"></i>Payment History</a></li>
                                             <li><a class="dropdown-item" href="{% url 'student-detail' pk=payment.student.id %}"><i class="fas fa-user me-2"></i>Student Profile</a></li>
                                             <li><hr class="dropdown-divider"></li>
@@ -373,6 +401,45 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             card.classList.add('shadow');
         }, 100 * index);
+    });
+
+    // Fix for dropdowns
+    // Ensure all dropdowns are properly initialized
+    const dropdownToggleList = document.querySelectorAll('[data-bs-toggle="dropdown"]');
+    dropdownToggleList.forEach(function (dropdownToggle) {
+        // Make sure the dropdown is properly initialized
+        dropdownToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const dropdownMenu = this.nextElementSibling;
+            if (dropdownMenu.classList.contains('show')) {
+                dropdownMenu.classList.remove('show');
+                this.setAttribute('aria-expanded', 'false');
+            } else {
+                // Close all other dropdowns first
+                document.querySelectorAll('.dropdown-menu.show').forEach(function(menu) {
+                    menu.classList.remove('show');
+                    if (menu.previousElementSibling) {
+                        menu.previousElementSibling.setAttribute('aria-expanded', 'false');
+                    }
+                });
+
+                // Open this dropdown
+                dropdownMenu.classList.add('show');
+                this.setAttribute('aria-expanded', 'true');
+            }
+        });
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.dropdown')) {
+            document.querySelectorAll('.dropdown-menu.show').forEach(function(menu) {
+                menu.classList.remove('show');
+                if (menu.previousElementSibling) {
+                    menu.previousElementSibling.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
     });
 });
 </script>

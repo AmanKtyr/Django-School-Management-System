@@ -1,5 +1,32 @@
 {% extends 'base.html' %}
 
+{% block breadcrumb-left %}
+<div class="breadcrumb-container no-print">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-chevron">
+      <li class="breadcrumb-item">
+        <a href="{% url 'home' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-home"></i> Home
+        </a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="{% url 'fees:fee_list' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-money-bill-wave"></i> Fee Management
+        </a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="{% url 'fees:student_fee_history' payment.student.id %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-history"></i> Payment History
+        </a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        <i class="fas fa-file-invoice"></i> Receipt
+      </li>
+    </ol>
+  </nav>
+</div>
+{% endblock breadcrumb-left %}
+
 {% block content %}
 <div class="container mt-4 receipt-container">
     <div class="row">
@@ -15,6 +42,9 @@
                             <img src="https://via.placeholder.com/150x50?text=School+Logo" alt="School Logo" class="img-fluid" style="max-height: 80px;">
                             <p class="mb-0"><strong>School Management System</strong></p>
                             <p class="text-muted">123 School Street, City</p>
+                            <a href="{% url 'fees:generate_receipt' payment.id %}" class="btn btn-primary mt-2 no-print">
+                                <i class="fas fa-download me-1"></i> Download PDF
+                            </a>
                         </div>
                     </div>
 
@@ -47,11 +77,11 @@
                             <tbody>
                                 <tr>
                                     <td>{{ payment.fee_category }}</td>
-                                    <td class="text-end">₹{{ payment.amount }}</td>
+                                    <td class="text-end">₹{{ payment.amount|floatformat:2 }}</td>
                                 </tr>
                                 <tr>
                                     <td class="text-end"><strong>Total</strong></td>
-                                    <td class="text-end"><strong>₹{{ payment.amount }}</strong></td>
+                                    <td class="text-end"><strong>₹{{ payment.amount|floatformat:2 }}</strong></td>
                                 </tr>
                             </tbody>
                         </table>

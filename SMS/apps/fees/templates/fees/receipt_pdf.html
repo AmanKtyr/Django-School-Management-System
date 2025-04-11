@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Fee Receipt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .receipt-container {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .school-info {
+            text-align: right;
+        }
+        .student-info, .payment-info {
+            margin-bottom: 20px;
+        }
+        .info-section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f5f5f5;
+        }
+        .text-end {
+            text-align: right;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        .signature {
+            text-align: right;
+            border-top: 1px solid #333;
+            display: inline-block;
+            padding-top: 5px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="receipt-container">
+        <div class="header">
+            <div>
+                <h2>Fee Receipt</h2>
+                <p>Receipt #{{ payment.id }}</p>
+            </div>
+            <div class="school-info">
+                <h3>School Management System</h3>
+                <p>123 School Street, City</p>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <div class="student-info">
+                <h4>Student Information</h4>
+                <p><strong>Name:</strong> {{ payment.student.fullname }}</p>
+                <p><strong>Registration No:</strong> {{ payment.student.registration_number }}</p>
+                <p><strong>Class:</strong> {{ payment.student.current_class }}</p>
+                <p><strong>Section:</strong> {{ payment.student.section }}</p>
+            </div>
+            <div class="payment-info">
+                <h4>Payment Details</h4>
+                <p><strong>Date:</strong> {{ payment.date|date:"d M Y" }}</p>
+                <p><strong>Payment Method:</strong> {{ payment.payment_method }}</p>
+                <p><strong>Status:</strong> {{ payment.status }}</p>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Fee Category</th>
+                    <th class="text-end">Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ payment.fee_category }}</td>
+                    <td class="text-end">₹{{ payment.amount|floatformat:2 }}</td>
+                </tr>
+                <tr>
+                    <td class="text-end"><strong>Total</strong></td>
+                    <td class="text-end"><strong>₹{{ payment.amount|floatformat:2 }}</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="footer">
+            <div>
+                <p>Thank you for your payment!</p>
+                <p><small>This is a computer-generated receipt and does not require a signature.</small></p>
+            </div>
+            <div>
+                <div class="signature">
+                    <p><strong>Authorized Signature</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

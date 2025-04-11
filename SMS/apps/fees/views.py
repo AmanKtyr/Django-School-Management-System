@@ -181,22 +181,28 @@ def generate_receipt(request, payment_id):
         return render(request, 'fees/receipt.html', context)
 
     # For PDF generation
-    template = get_template('fees/receipt.html')
-    context = {
-        'payment': payment
-    }
-    html = template.render(context)
+    try:
+        # Use a simplified template without base.html for PDF generation
+        template = get_template('fees/receipt_pdf.html')
+        context = {
+            'payment': payment
+        }
+        html = template.render(context)
 
-    # Create PDF response
-    response = HttpResponse(content_type='application/pdf')
-    filename = f"Receipt_{payment.student.fullname}_{payment.id}.pdf"
-    response['Content-Disposition'] = f'attachment; filename="{filename}"'
+        # Create PDF response
+        response = HttpResponse(content_type='application/pdf')
+        filename = f"Receipt_{payment.student.fullname}_{payment.id}.pdf"
+        response['Content-Disposition'] = f'attachment; filename="{filename}"'
 
-    # Convert HTML to PDF
-    pisa_status = pisa.CreatePDF(html, dest=response)
+        # Convert HTML to PDF
+        pisa_status = pisa.CreatePDF(html, dest=response)
 
-    # Return PDF response if successful
-    if pisa_status.err:
-        return HttpResponse('PDF generation error', status=500)
+        # Return PDF response if successful
+        if pisa_status.err:
+            return HttpResponse('PDF generation error', status=500)
 
-    return response
+        return response
+    except Exception as e:
+        # Log the error for debugging
+        print(f"PDF Generation Error: {str(e)}")
+        return HttpResponse(f'Error generating PDF: {str(e)}', status=500)

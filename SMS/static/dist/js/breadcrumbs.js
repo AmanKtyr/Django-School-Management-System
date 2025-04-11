@@ -5,6 +5,7 @@
  * 2. Adds appropriate icons based on breadcrumb content
  * 3. Applies consistent styling to all breadcrumbs
  * 4. Adds subtle animation effects for a professional look
+ * 5. Ensures proper navigation between related pages
  */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -135,4 +136,90 @@ document.addEventListener('DOMContentLoaded', function() {
             item.style.opacity = '1';
         }, 100 * (index + 1));
     });
+
+    // Fix navigation for fee-related pages
+    // This ensures proper breadcrumb navigation between related fee pages
+    const currentPath = window.location.pathname;
+
+    // Helper function to check if we're on a specific page
+    const isOnPage = (urlPattern) => currentPath.includes(urlPattern);
+
+    // Fix navigation for fee-related pages
+    if (isOnPage('/fees/')) {
+        // Make sure fee management links are properly connected
+        const feeManagementLinks = document.querySelectorAll('a[href*="fee_list"]');
+        feeManagementLinks.forEach(link => {
+            // Ensure the link is properly styled
+            link.classList.add('text-decoration-none', 'fw-bold');
+
+            // Make sure it has the correct icon
+            if (!link.querySelector('i.fas.fa-money-bill-wave')) {
+                const existingIcon = link.querySelector('i');
+                if (existingIcon) {
+                    existingIcon.className = 'fas fa-money-bill-wave';
+                } else {
+                    const icon = document.createElement('i');
+                    icon.className = 'fas fa-money-bill-wave me-2';
+                    link.insertBefore(icon, link.firstChild);
+                }
+            }
+        });
+
+        // Fix student fee history links
+        if (isOnPage('/fees/history/')) {
+            const historyLinks = document.querySelectorAll('a[href*="student_fee_history"]');
+            historyLinks.forEach(link => {
+                link.classList.add('text-decoration-none', 'fw-bold');
+
+                if (!link.querySelector('i.fas.fa-history')) {
+                    const existingIcon = link.querySelector('i');
+                    if (existingIcon) {
+                        existingIcon.className = 'fas fa-history';
+                    } else {
+                        const icon = document.createElement('i');
+                        icon.className = 'fas fa-history me-2';
+                        link.insertBefore(icon, link.firstChild);
+                    }
+                }
+            });
+        }
+
+        // Fix add payment links
+        if (isOnPage('/fees/add-payment/')) {
+            const paymentLinks = document.querySelectorAll('a[href*="add_fee_payment"]');
+            paymentLinks.forEach(link => {
+                link.classList.add('text-decoration-none', 'fw-bold');
+
+                if (!link.querySelector('i.fas.fa-credit-card')) {
+                    const existingIcon = link.querySelector('i');
+                    if (existingIcon) {
+                        existingIcon.className = 'fas fa-credit-card';
+                    } else {
+                        const icon = document.createElement('i');
+                        icon.className = 'fas fa-credit-card me-2';
+                        link.insertBefore(icon, link.firstChild);
+                    }
+                }
+            });
+        }
+
+        // Fix receipt links
+        if (isOnPage('/fees/receipt/')) {
+            const receiptLinks = document.querySelectorAll('a[href*="generate_receipt"]');
+            receiptLinks.forEach(link => {
+                link.classList.add('text-decoration-none', 'fw-bold');
+
+                if (!link.querySelector('i.fas.fa-file-invoice')) {
+                    const existingIcon = link.querySelector('i');
+                    if (existingIcon) {
+                        existingIcon.className = 'fas fa-file-invoice';
+                    } else {
+                        const icon = document.createElement('i');
+                        icon.className = 'fas fa-file-invoice me-2';
+                        link.insertBefore(icon, link.firstChild);
+                    }
+                }
+            });
+        }
+    }
 });

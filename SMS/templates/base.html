@@ -287,7 +287,7 @@
                   </p>
               </a>
               <ul class="nav nav-treeview">
-       
+                  
                   <li class="nav-item">
                       <a href="{% url 'fees:fee_list' %}" class="nav-link {% if request.resolver_match.url_name == 'fee_list' %}active{% endif %}">
                           <i class="fas fa-user-graduate nav-icon" style="color: #33cc33;"></i>
@@ -541,7 +541,7 @@
   <script src="{% static 'dist/js/jquery.formset.js' %}"></script>
 
   <!-- Bootstrap -->
-  <script src="{% static 'plugins/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <!-- Bootstrap JS is loaded from CDN below -->
   <script src="{% static 'plugins/toastr/toastr.min.js' %}"></script>
   <!-- overlayScrollbars -->
   <script
