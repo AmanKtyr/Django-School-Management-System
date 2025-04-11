@@ -10456,3 +10456,499 @@ INFO 2025-04-11 11:45:50,294 "GET /student/list?class_name=5&section=&search= HT
 INFO 2025-04-11 11:45:50,617 "GET /static/dist/css/style.css?v=1744352150611 HTTP/1.1" 200 22604
 INFO 2025-04-11 11:45:56,300 "GET /student/1/ HTTP/1.1" 200 35443
 INFO 2025-04-11 11:45:56,490 "GET /static/dist/css/style.css?v=1744352156485 HTTP/1.1" 200 22604
+INFO 2025-04-11 11:46:01,713 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 11:46:01,911 "GET /static/dist/css/style.css?v=1744352161901 HTTP/1.1" 200 22604
+INFO 2025-04-11 11:46:03,329 "GET /student/8/ HTTP/1.1" 200 35437
+INFO 2025-04-11 11:46:03,484 "GET /static/dist/css/style.css?v=1744352163480 HTTP/1.1" 200 22604
+INFO 2025-04-11 11:46:13,408 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 11:46:13,614 "GET /static/dist/css/style.css?v=1744352173607 HTTP/1.1" 200 22604
+INFO 2025-04-11 11:46:14,880 "GET /student/9/ HTTP/1.1" 200 38315
+INFO 2025-04-11 11:46:15,080 "GET /static/dist/css/style.css?v=1744352175070 HTTP/1.1" 200 22604
+INFO 2025-04-11 11:46:19,888 "GET /student/create/ HTTP/1.1" 200 31434
+INFO 2025-04-11 11:46:20,057 "GET /static/dist/css/style.css?v=1744352180046 HTTP/1.1" 200 22604
+INFO 2025-04-11 11:46:21,829 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 11:46:22,017 "GET /static/dist/css/style.css?v=1744352182011 HTTP/1.1" 200 22604
+INFO 2025-04-11 11:46:27,034 "GET /student/9/ HTTP/1.1" 200 38315
+INFO 2025-04-11 11:46:27,201 "GET /static/dist/css/style.css?v=1744352187194 HTTP/1.1" 200 22604
+INFO 2025-04-11 11:46:32,063 "GET /student/9/ HTTP/1.1" 200 38315
+INFO 2025-04-11 11:46:32,217 "GET /static/dist/css/style.css?v=1744352192214 HTTP/1.1" 200 22604
+INFO 2025-04-11 11:53:19,272 Watching for file changes with StatReloader
+INFO 2025-04-11 11:53:22,812 "GET /student/9/ HTTP/1.1" 200 38667
+INFO 2025-04-11 11:53:23,048 "GET /static/dist/js/particles-config.js HTTP/1.1" 200 1476
+INFO 2025-04-11 11:53:23,180 "GET /static/dist/css/style.css?v=1744352603174 HTTP/1.1" 200 22604
+INFO 2025-04-11 11:53:44,299 "GET /student/list HTTP/1.1" 200 29490
+INFO 2025-04-11 11:53:44,388 "GET /static/dist/js/particles-config.js HTTP/1.1" 304 0
+INFO 2025-04-11 11:53:44,632 "GET /static/dist/css/style.css?v=1744352624626 HTTP/1.1" 200 22604
+INFO 2025-04-11 11:53:47,084 "GET / HTTP/1.1" 200 30549
+INFO 2025-04-11 11:53:47,298 "GET /static/dist/css/style.css?v=1744352627292 HTTP/1.1" 200 22604
+INFO 2025-04-11 11:54:42,831 "GET / HTTP/1.1" 200 30573
+INFO 2025-04-11 11:54:42,902 "GET /static/dist/js/particles-config.js HTTP/1.1" 304 0
+INFO 2025-04-11 11:54:43,082 "GET /static/dist/css/style.css?v=1744352683075 HTTP/1.1" 200 22604
+INFO 2025-04-11 11:56:52,102 "GET / HTTP/1.1" 200 30598
+INFO 2025-04-11 11:56:52,207 "GET /static/dist/js/particles-config.js HTTP/1.1" 200 2833
+INFO 2025-04-11 11:56:52,479 "GET /static/dist/css/style.css?v=1744352812474 HTTP/1.1" 200 24057
+INFO 2025-04-11 11:57:44,756 "GET / HTTP/1.1" 200 30197
+INFO 2025-04-11 11:57:45,198 "GET /static/dist/css/style.css?v=1744352865191 HTTP/1.1" 200 22604
+INFO 2025-04-11 11:58:59,704 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 11:59:00,085 "GET /static/dist/css/style.css?v=1744352940074 HTTP/1.1" 200 22604
+INFO 2025-04-11 11:59:07,219 "GET /student/8/ HTTP/1.1" 200 35437
+INFO 2025-04-11 11:59:07,565 "GET /static/dist/css/style.css?v=1744352947560 HTTP/1.1" 200 22604
+INFO 2025-04-11 11:59:15,170 "GET /student/8/ HTTP/1.1" 200 35437
+INFO 2025-04-11 11:59:15,323 "GET /static/dist/css/style.css?v=1744352955318 HTTP/1.1" 200 22604
+INFO 2025-04-11 11:59:55,115 "GET /student/8/ HTTP/1.1" 200 35437
+INFO 2025-04-11 11:59:55,302 "GET /static/dist/css/style.css?v=1744352995297 HTTP/1.1" 200 22604
+INFO 2025-04-11 11:59:58,199 "GET / HTTP/1.1" 200 30197
+INFO 2025-04-11 11:59:58,521 "GET /static/dist/css/style.css?v=1744352998515 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:00:00,748 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 12:00:00,990 "GET /static/dist/css/style.css?v=1744353000985 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:00:02,207 "GET /student/3/ HTTP/1.1" 200 39222
+INFO 2025-04-11 12:00:02,434 "GET /static/dist/css/style.css?v=1744353002426 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:04:10,949 "GET /student/3/ HTTP/1.1" 200 39222
+INFO 2025-04-11 12:04:11,214 "GET /static/dist/css/style.css?v=1744353251206 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:11:50,044 "GET /student/3/ HTTP/1.1" 200 39597
+INFO 2025-04-11 12:11:50,395 "GET /static/dist/css/style.css?v=1744353710388 HTTP/1.1" 200 22604
+WARNING 2025-04-11 12:12:34,784 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-11 12:13:13,921 "GET /media/students/documents/parent_id/Screenshot_7-4-2025_155959_127_IA8tC0N.0.0.1.jpeg HTTP/1.1" 200 156258
+INFO 2025-04-11 12:14:51,230 "GET / HTTP/1.1" 200 30197
+INFO 2025-04-11 12:14:51,820 "GET /static/dist/css/style.css?v=1744353891815 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:14:55,209 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 12:14:55,571 "GET /static/dist/css/style.css?v=1744353895566 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:14:56,561 "GET /student/5/ HTTP/1.1" 200 35577
+INFO 2025-04-11 12:14:56,746 "GET /static/dist/css/style.css?v=1744353896742 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:15:02,980 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 12:15:03,168 "GET /static/dist/css/style.css?v=1744353903158 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:15:04,286 "GET /student/5/ HTTP/1.1" 200 35577
+INFO 2025-04-11 12:15:04,463 "GET /static/dist/css/style.css?v=1744353904455 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:15:07,822 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 12:15:08,032 "GET /static/dist/css/style.css?v=1744353908025 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:15:09,247 "GET /student/2/ HTTP/1.1" 200 38690
+INFO 2025-04-11 12:15:09,428 "GET /static/dist/css/style.css?v=1744353909421 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:15:19,304 "GET /student/2/ HTTP/1.1" 200 38372
+INFO 2025-04-11 12:15:19,616 "GET /static/dist/css/style.css?v=1744353919612 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:19:24,714 "GET /student/2/ HTTP/1.1" 200 38372
+INFO 2025-04-11 12:19:24,939 "GET /static/dist/css/style.css?v=1744354164934 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:19:30,343 "GET /staff/list/ HTTP/1.1" 200 23901
+INFO 2025-04-11 12:19:30,732 "GET /static/dist/css/style.css?v=1744354170691 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:19:32,688 "GET /staff/1/ HTTP/1.1" 200 25518
+INFO 2025-04-11 12:19:32,752 "GET /static/dist/img/teacher-dp.jpg HTTP/1.1" 200 14750
+INFO 2025-04-11 12:19:32,883 "GET /static/dist/css/style.css?v=1744354172878 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:19:35,779 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 23617
+INFO 2025-04-11 12:19:35,985 "GET /static/dist/css/style.css?v=1744354175971 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:19:39,378 "GET /staff/list/ HTTP/1.1" 200 23901
+INFO 2025-04-11 12:19:39,573 "GET /static/dist/css/style.css?v=1744354179565 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:19:40,929 "GET /staff/1/ HTTP/1.1" 200 25518
+INFO 2025-04-11 12:19:41,120 "GET /static/dist/css/style.css?v=1744354181104 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:19:47,860 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 12:19:48,067 "GET /static/dist/css/style.css?v=1744354188060 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:19:49,448 "GET /student/3/ HTTP/1.1" 200 39222
+INFO 2025-04-11 12:19:49,649 "GET /static/dist/css/style.css?v=1744354189647 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:20:47,914 "GET /student/3/ HTTP/1.1" 200 39222
+INFO 2025-04-11 12:20:48,091 "GET /static/dist/css/style.css?v=1744354248085 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:21:50,211 "GET /student/3/upload-documents/ HTTP/1.1" 200 34726
+INFO 2025-04-11 12:21:50,589 "GET /static/dist/css/style.css?v=1744354310581 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:21:52,883 "GET /student/3/ HTTP/1.1" 200 39222
+INFO 2025-04-11 12:21:53,215 "GET /static/dist/css/style.css?v=1744354313181 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:21:59,944 "GET /student/3/upload-documents/ HTTP/1.1" 200 34726
+INFO 2025-04-11 12:22:00,112 "GET /static/dist/css/style.css?v=1744354320106 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:22:14,046 "GET /student/3/ HTTP/1.1" 200 39222
+INFO 2025-04-11 12:22:14,211 "GET /static/dist/css/style.css?v=1744354334205 HTTP/1.1" 200 22604
+ERROR 2025-04-11 12:24:27,951 Internal Server Error: /student/3/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: students/student_detail.html
+ERROR 2025-04-11 12:24:27,953 "GET /student/3/ HTTP/1.1" 500 89956
+ERROR 2025-04-11 12:32:52,216 Internal Server Error: /student/3/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 494, in parse
+    command = token.contents.split()[0]
+              ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 496, in parse
+    raise self.error(token, "Empty block tag on line %d" % token.lineno)
+django.template.exceptions.TemplateSyntaxError: Empty block tag on line 317
+ERROR 2025-04-11 12:32:52,220 "GET /student/3/ HTTP/1.1" 500 244084
+ERROR 2025-04-11 12:34:51,017 Internal Server Error: /student/3/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: students/student_detail.html
+ERROR 2025-04-11 12:34:51,017 "GET /student/3/ HTTP/1.1" 500 89956
+ERROR 2025-04-11 12:35:42,771 Internal Server Error: /student/3/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'eelse>'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 567, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 309: 'eelse>', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+ERROR 2025-04-11 12:35:42,776 "GET /student/3/ HTTP/1.1" 500 253138
+INFO 2025-04-11 12:35:51,429 "GET /static/dist/css/style.css?v=1744355151416 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:35:54,041 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 12:35:54,111 "GET /static/dist/css/preload.css HTTP/1.1" 304 0
+INFO 2025-04-11 12:35:54,118 "GET /static/dist/css/style.css HTTP/1.1" 200 22604
+INFO 2025-04-11 12:35:54,334 "GET /static/dist/css/style.css?v=1744355154329 HTTP/1.1" 200 22604
+ERROR 2025-04-11 12:35:56,043 Internal Server Error: /student/5/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'eelse>'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 567, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 309: 'eelse>', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+ERROR 2025-04-11 12:35:56,047 "GET /student/5/ HTTP/1.1" 500 252986
+INFO 2025-04-11 12:37:18,307 "GET / HTTP/1.1" 200 30197
+INFO 2025-04-11 12:37:19,138 "GET /static/dist/css/style.css?v=1744355239128 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:37:21,236 "GET / HTTP/1.1" 200 30197
+INFO 2025-04-11 12:37:21,652 "GET /static/dist/css/style.css?v=1744355241645 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:37:23,833 "GET / HTTP/1.1" 200 30197
+INFO 2025-04-11 12:37:24,090 "GET /static/dist/css/style.css?v=1744355244075 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:37:24,308 "GET / HTTP/1.1" 200 30197
+INFO 2025-04-11 12:37:24,653 "GET /static/dist/css/style.css?v=1744355244640 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:37:26,556 "GET / HTTP/1.1" 200 30197
+INFO 2025-04-11 12:37:26,823 "GET /static/dist/css/style.css?v=1744355246816 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:37:27,358 "GET / HTTP/1.1" 200 30197
+INFO 2025-04-11 12:37:27,637 "GET /static/dist/css/style.css?v=1744355247629 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:37:58,395 "GET / HTTP/1.1" 200 30197
+INFO 2025-04-11 12:37:58,772 "GET /static/dist/css/style.css?v=1744355278767 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:38:00,764 "GET /student/5/ HTTP/1.1" 200 35540
+INFO 2025-04-11 12:38:00,859 "GET /static/dist/img/avatar.png HTTP/1.1" 304 0
+INFO 2025-04-11 12:38:01,169 "GET /static/dist/css/style.css?v=1744355281162 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:38:09,046 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 12:38:09,322 "GET /static/dist/css/style.css?v=1744355289307 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:38:10,936 "GET /student/8/ HTTP/1.1" 200 35542
+INFO 2025-04-11 12:38:11,149 "GET /static/dist/css/style.css?v=1744355291142 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:38:13,593 "GET /student/8/upload-documents/ HTTP/1.1" 200 33496
+INFO 2025-04-11 12:38:13,823 "GET /static/dist/css/style.css?v=1744355293816 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:38:18,514 "POST /student/8/upload-documents/ HTTP/1.1" 302 0
+INFO 2025-04-11 12:38:18,561 "GET /student/8/ HTTP/1.1" 200 38745
+INFO 2025-04-11 12:38:18,801 "GET /static/dist/css/style.css?v=1744355298792 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:38:28,723 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 12:38:28,978 "GET /static/dist/css/style.css?v=1744355308967 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:38:30,697 "GET /student/9/ HTTP/1.1" 200 38596
+INFO 2025-04-11 12:38:30,938 "GET /static/dist/css/style.css?v=1744355310919 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:38:34,083 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 12:38:34,347 "GET /static/dist/css/style.css?v=1744355314336 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:38:37,222 "GET /student/6/ HTTP/1.1" 200 38546
+INFO 2025-04-11 12:38:37,354 "GET /media/students/passports/theach-dp.jpg HTTP/1.1" 304 0
+INFO 2025-04-11 12:38:37,492 "GET /static/dist/css/style.css?v=1744355317480 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:38:40,532 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 12:38:40,802 "GET /static/dist/css/style.css?v=1744355320797 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:38:43,258 "GET /student/1/ HTTP/1.1" 200 35548
+INFO 2025-04-11 12:38:43,488 "GET /static/dist/css/style.css?v=1744355323481 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:38:48,329 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 12:38:48,575 "GET /static/dist/css/style.css?v=1744355328564 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:38:53,910 "GET /student/2/ HTTP/1.1" 200 38653
+INFO 2025-04-11 12:38:54,199 "GET /static/dist/css/style.css?v=1744355334189 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:38:57,343 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 12:38:57,585 "GET /static/dist/css/style.css?v=1744355337578 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:39:00,069 "GET /student/8/ HTTP/1.1" 200 38598
+INFO 2025-04-11 12:39:00,295 "GET /static/dist/css/style.css?v=1744355340285 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:39:04,038 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 12:39:04,314 "GET /static/dist/css/style.css?v=1744355344303 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:39:06,634 "GET /student/9/ HTTP/1.1" 200 38596
+INFO 2025-04-11 12:39:06,913 "GET /static/dist/css/style.css?v=1744355346907 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:39:09,950 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 12:39:10,207 "GET /static/dist/css/style.css?v=1744355350202 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:39:11,993 "GET /student/6/ HTTP/1.1" 200 38546
+INFO 2025-04-11 12:39:12,231 "GET /static/dist/css/style.css?v=1744355352224 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:39:14,647 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 12:39:14,922 "GET /static/dist/css/style.css?v=1744355354911 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:39:16,598 "GET /student/7/ HTTP/1.1" 200 38578
+INFO 2025-04-11 12:39:16,853 "GET /static/dist/css/style.css?v=1744355356846 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:39:19,075 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 12:39:19,332 "GET /static/dist/css/style.css?v=1744355359316 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:39:21,020 "GET /student/1/ HTTP/1.1" 200 35548
+INFO 2025-04-11 12:39:21,253 "GET /static/dist/css/style.css?v=1744355361245 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:39:25,110 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 12:39:25,378 "GET /static/dist/css/style.css?v=1744355365367 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:39:27,469 "GET /student/1/ HTTP/1.1" 200 35548
+INFO 2025-04-11 12:39:27,723 "GET /static/dist/css/style.css?v=1744355367714 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:39:31,860 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 12:39:32,126 "GET /static/dist/css/style.css?v=1744355372112 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:39:34,406 "GET /student/6/ HTTP/1.1" 200 38546
+INFO 2025-04-11 12:39:34,659 "GET /static/dist/css/style.css?v=1744355374653 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:39:39,588 "GET /finance/list/ HTTP/1.1" 200 24228
+INFO 2025-04-11 12:39:39,827 "GET /static/dist/css/style.css?v=1744355379818 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:39:45,983 "GET /finance/create/ HTTP/1.1" 200 27808
+INFO 2025-04-11 12:39:46,058 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-11 12:39:46,211 "GET /static/dist/css/style.css?v=1744355386204 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:39:49,092 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 12:39:49,370 "GET /static/dist/css/style.css?v=1744355389360 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:39:57,499 "GET /finance/list/ HTTP/1.1" 200 24228
+INFO 2025-04-11 12:39:57,769 "GET /static/dist/css/style.css?v=1744355397757 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:40:02,130 "GET /finance/1/detail/ HTTP/1.1" 200 26640
+INFO 2025-04-11 12:40:02,347 "GET /static/dist/css/style.css?v=1744355402340 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:40:13,788 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 12:40:14,106 "GET /static/dist/css/style.css?v=1744355414101 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:40:15,693 "GET /student/9/ HTTP/1.1" 200 38596
+INFO 2025-04-11 12:40:15,927 "GET /static/dist/css/style.css?v=1744355415920 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:40:18,795 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 12:40:19,090 "GET /static/dist/css/style.css?v=1744355419083 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:40:21,557 "GET /student/8/ HTTP/1.1" 200 38598
+INFO 2025-04-11 12:40:21,799 "GET /static/dist/css/style.css?v=1744355421787 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:40:26,246 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 12:40:26,520 "GET /static/dist/css/style.css?v=1744355426515 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:40:28,064 "GET /student/5/ HTTP/1.1" 200 35540
+INFO 2025-04-11 12:40:28,306 "GET /static/dist/css/style.css?v=1744355428299 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:40:33,462 "GET /student/list HTTP/1.1" 200 29138
+INFO 2025-04-11 12:40:33,700 "GET /static/dist/css/style.css?v=1744355433691 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:40:35,135 "GET /student/3/ HTTP/1.1" 200 39560
+INFO 2025-04-11 12:40:35,434 "GET /static/dist/css/style.css?v=1744355435424 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:41:54,421 "GET / HTTP/1.1" 200 30197
+INFO 2025-04-11 12:41:54,916 "GET /static/dist/css/style.css?v=1744355514897 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:41:57,469 "GET /student/3/ HTTP/1.1" 200 39547
+INFO 2025-04-11 12:41:57,852 "GET /static/dist/css/style.css?v=1744355517843 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:42:37,665 "GET /student/3/ HTTP/1.1" 200 39399
+INFO 2025-04-11 12:42:38,118 "GET /static/dist/css/style.css?v=1744355558109 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:43:01,875 "GET /student/3/ HTTP/1.1" 200 39439
+INFO 2025-04-11 12:43:02,261 "GET /static/dist/css/style.css?v=1744355582253 HTTP/1.1" 200 22604
+WARNING 2025-04-11 12:43:50,001 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-11 12:50:00,899 "GET /student/3/ HTTP/1.1" 200 40164
+INFO 2025-04-11 12:50:01,003 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-11 12:50:01,384 "GET /static/dist/css/style.css?v=1744356001373 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:50:02,480 "GET /student/3/upload-documents/ HTTP/1.1" 200 34726
+INFO 2025-04-11 12:50:02,767 "GET /static/dist/css/style.css?v=1744356002763 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:50:05,336 "GET /student/3/ HTTP/1.1" 200 40164
+INFO 2025-04-11 12:50:05,514 "GET /static/dist/css/style.css?v=1744356005510 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:52:01,230 "GET /student/3/ HTTP/1.1" 200 40156
+INFO 2025-04-11 12:52:01,624 "GET /static/dist/css/style.css?v=1744356121618 HTTP/1.1" 200 22604
+INFO 2025-04-11 12:52:32,118 "GET /student/3/ HTTP/1.1" 200 40232
+INFO 2025-04-11 12:52:32,461 "GET /static/dist/css/style.css?v=1744356152454 HTTP/1.1" 200 22604
