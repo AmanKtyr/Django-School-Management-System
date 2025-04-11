@@ -49,6 +49,7 @@ class Student(models.Model):
     mobile_number = models.CharField(
         validators=[mobile_num_regex], max_length=13, blank=True
     )
+    email_id = models.EmailField(max_length=254, blank=True)
 
     Father_name = models.CharField(max_length=255, null=False, blank=False)
 

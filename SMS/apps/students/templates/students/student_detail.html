@@ -132,12 +132,12 @@
           </div>
 
           <!-- Student Basic Info -->
-          <h3 class="student-name mb-2">{{ object.fullname }}</h3>
+          <h3 class="student-name text-bold mb-2">{{ object.fullname }}</h3>
           <div class="d-flex justify-content-center align-items-center mb-3">
-            <span class="badge bg-light text-dark border me-2 px-3 py-2">
+            <span class="badge bg-light text-bold  border me-2 px-3 py-2">
               <i class="fas fa-id-card text-primary me-1"></i> {{ object.registration_number }}
             </span>
-            <span class="student-class badge bg-gradient-info text-white shadow px-3 py-2">
+            <span class="student-class badge bg-gradient-info text-bold  text-white shadow px-3 py-2">
               <i class="fas fa-graduation-cap me-1"></i> {{ object.current_class }} {{ object.section }}
             </span>
           </div>
@@ -174,19 +174,23 @@
               <ul class="info-list list-group list-group-flush">
                 <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                   <div><i class="fas fa-birthday-cake text-primary me-2"></i> <strong>Date of Birth</strong></div>
-                  <span class="badge bg-light text-dark border px-3 py-2">{{ object.date_of_birth }}</span>
+                  <span class="badge bg-light text-dark border px-3 py-2 fs-6 fw-bold">{{ object.date_of_birth }}</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                   <div><i class="fas fa-venus-mars text-primary me-2"></i> <strong>Gender</strong></div>
-                  <span class="badge bg-light text-dark border px-3 py-2">{{ object.get_gender_display }}</span>
+                  <span class="badge bg-light text-dark border px-3 py-2 fs-6 fw-bold">{{ object.get_gender_display }}</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                   <div><i class="fas fa-id-card text-primary me-2"></i> <strong>Aadhar Number</strong></div>
-                  <span class="badge bg-light text-dark border px-3 py-2">{{ object.aadhar }}</span>
+                  <span class="badge bg-light text-dark border px-3 py-2 fs-6 fw-bold">{{ object.aadhar }}</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                   <div><i class="fas fa-phone text-primary me-2"></i> <strong>Mobile Number</strong></div>
-                  <span class="badge bg-light text-dark border px-3 py-2">{{ object.mobile_number }}</span>
+                  <span class="badge bg-light text-dark border px-3 py-2 fs-6 fw-bold">{{ object.mobile_number }}</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                  <div><i class="fas fa-phone text-primary me-2"></i> <strong>Email Id</strong></div>
+                  <span class="badge bg-light text-dark border px-3 py-2 fs-6 fw-bold">{{ object.email_id }}</span>
                 </li>
               </ul>
             </div>
@@ -203,19 +207,19 @@
               <ul class="info-list list-group list-group-flush">
                 <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                   <div><i class="fas fa-user-friends text-primary me-2"></i> <strong>Parent Name</strong></div>
-                  <span class="badge bg-light text-dark border px-3 py-2">{{ object.Father_name }}</span>
+                  <span class="badge bg-light text-dark border px-3 py-2 fs-6 fw-bold">{{ object.Father_name }}</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                   <div><i class="fas fa-mobile-alt text-primary me-2"></i> <strong>Father Mobile</strong></div>
-                  <span class="badge bg-light text-dark border px-3 py-2">{{ object.Father_mobile_number }}</span>
+                  <span class="badge bg-light text-dark border px-3 py-2 fs-6 fw-bold">{{ object.Father_mobile_number }}</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                   <div><i class="fas fa-id-card-alt text-primary me-2"></i> <strong>Father Aadhar</strong></div>
-                  <span class="badge bg-light text-dark border px-3 py-2">{{ object.Father_aadhar }}</span>
+                  <span class="badge bg-light text-dark border px-3 py-2 fs-6 fw-bold">{{ object.Father_aadhar }}</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                   <div><i class="fas fa-map-marker-alt text-primary me-2"></i> <strong>Address</strong></div>
-                  <span class="badge bg-light text-dark border px-3 py-2">{{ object.address }}</span>
+                  <span class="badge bg-light text-dark border px-3 py-2 fs-6 fw-bold">{{ object.address }}</span>
                 </li>
               </ul>
             </div>

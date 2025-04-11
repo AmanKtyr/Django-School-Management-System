@@ -10,9 +10,7 @@ Add secondrory color
 #1E3C72 
 #6610f2
 
-Student  form
-name  to Full name
-form devided in Student  Info, family info, documentation
+
 
 ### **Updated Sidebar Menu for ERP**
 - **Dashboard**  
@@ -64,4 +62,8 @@ main ye chahata hu ki jab students ki attendance save karu to vo top  par
 Add invoice and students fees sections
 Add PostgreSQL  in my project
 make page not found 
+Add Attendence section in student profile 
+delete invoice from everywhere
 
+
+Add mail, Blood group in student profile
