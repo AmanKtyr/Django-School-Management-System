@@ -7,6 +7,8 @@ from django.http import JsonResponse
 from django.urls import reverse_lazy
 from django.views.generic import ListView, TemplateView, View
 from django.views.generic.edit import CreateView, DeleteView, UpdateView
+from apps.students.models import Student
+from apps.fees.models import PendingFee
 
 from .filters import ClassSectionFilterForm
 
@@ -17,7 +19,7 @@ from .forms import (
     SiteConfigForm,
     StudentClassForm,
     SubjectForm,
-    SiteConfigFormSet,  
+    SiteConfigFormSet,
     CollegeProfileForm
 )
 from .models import (
@@ -35,7 +37,7 @@ from .models import (
 class IndexView(LoginRequiredMixin, TemplateView):
     template_name = "index.html"
 
-    
+
 
 
 def site_config_view(request):
@@ -44,7 +46,7 @@ def site_config_view(request):
         form = CollegeProfileForm(request.POST, request.FILES, instance=profile)
         if form.is_valid():
             form.save()
-            return redirect('college_profile') 
+            return redirect('college_profile')
     else:
         form = CollegeProfileForm(instance=profile)
     return render(request, 'corecode/siteconfig.html', {'form': form, 'title': 'Site Configuration'})
@@ -283,7 +285,7 @@ def site_config(request):
         if form.is_valid():
             form.save()
             messages.success(request, "College profile updated successfully.")
-            return redirect('college-profile')  
+            return redirect('college-profile')
         else:
             messages.error(request, "Please correct the errors below.")
     else:
@@ -297,58 +299,95 @@ def fee_settings(request):
         class_id = request.POST.get('class_id')
         section = request.POST.get('section', '')  # Optional section
         frequency = request.POST.get('frequency')
-        
+
         if class_id:
             # Create or update fee settings
             fee_settings, created = FeeSettings.objects.get_or_create(
                 class_name_id=class_id,
                 section=section
             )
-            
+
             fee_settings.frequency = frequency
             fee_settings.save()
-            
+
             # Clear existing fees
             fee_settings.fees.all().delete()
-            
+
             # Add new fees
             fee_types = request.POST.getlist('fee_type[]')
             amounts = request.POST.getlist('amount[]')
-            due_dates = request.POST.getlist('due_date[]')
+            # Get the single due date from the form
+            due_date = request.POST.get('due_date')
+
+            # If due date is not provided, use today's date
+            if not due_date:
+                from django.utils import timezone
+                due_date = timezone.now().date()
+
             late_fees = request.POST.getlist('late_fee[]')
             discounts = request.POST.getlist('discount[]')
-            
+
+            # Create fee structures
+            fee_structures = []
             for i in range(len(fee_types)):
-                FeeStructure.objects.create(
+                fee_structure = FeeStructure.objects.create(
                     fee_settings=fee_settings,
                     fee_type=fee_types[i],
                     amount=amounts[i],
-                    due_date=due_dates[i],
-                    late_fee=late_fees[i] or 0,
-                    discount=discounts[i] or 0
+                    due_date=due_date,  # Use the single due date for all fees
+                    late_fee=late_fees[i] if i < len(late_fees) else 0,
+                    discount=discounts[i] if i < len(discounts) else 0
                 )
-            
-            messages.success(request, 'Fee settings saved successfully!')
+                fee_structures.append(fee_structure)
+
+            # Create pending fees for all students in this class
+            students = Student.objects.filter(current_class_id=class_id, section=section, current_status='active')
+
+            # If no students found with specific section, try without section filter
+            if not students.exists() and section:
+                students = Student.objects.filter(current_class_id=class_id, current_status='active')
+
+            # Create pending fees for each student
+            for student in students:
+                # Delete any existing pending fees for this student that match the fee types
+                PendingFee.objects.filter(
+                    student=student,
+                    fee_type__in=[fs.fee_type for fs in fee_structures],
+                    paid=False
+                ).delete()
+
+                # Create new pending fees
+                for fs in fee_structures:
+                    PendingFee.objects.create(
+                        student=student,
+                        fee_type=fs.fee_type,
+                        amount=fs.amount,
+                        due_date=fs.due_date,  # This now uses the single due date
+                        late_fee=fs.late_fee,
+                        discount=fs.discount
+                    )
+
+            messages.success(request, f'Fee settings saved successfully! Pending fees created for {students.count()} students.')
             return redirect('fee_settings')
-    
+
     # Get selected class and section from GET parameters
     selected_class_id = request.GET.get('class_name')
     selected_section = request.GET.get('section', '')
-    
+
     filter_form = ClassSectionFilterForm(request.GET)
-    
+
     context = {
         'filter_form': filter_form,
         'selected_class': None,
         'selected_section': selected_section,
         'existing_fees': None
     }
-    
+
     if selected_class_id:
         try:
             selected_class = StudentClass.objects.get(id=selected_class_id)
             context['selected_class'] = selected_class
-            
+
             # Try to get existing fee settings
             try:
                 fee_settings = FeeSettings.objects.get(
@@ -392,17 +431,17 @@ def get_fee_settings(request, class_id, section):
 
 def fee_settings_list(request):
     fee_settings_list = FeeSettings.objects.all().order_by('class_name', 'section')
-    
+
     # Calculate statistics
     total_classes = fee_settings_list.count()
     total_fees = sum(setting.get_total_fees() for setting in fee_settings_list)
     active_settings = fee_settings_list.count()  # Assuming all settings are active
-    
+
     context = {
         'fee_settings_list': fee_settings_list,
         'total_classes': total_classes,
         'total_fees': total_fees,
         'active_settings': active_settings,
     }
-    
+
     return render(request, 'corecode/fee_settings_list.html', context)

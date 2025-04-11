@@ -50,6 +50,26 @@ class StudentDetailView(LoginRequiredMixin, DetailView):
         # Get student documents if they exist
         context['documents'] = StudentDocument.objects.filter(student=self.object).first()
 
+        # Get pending fees
+        from apps.fees.models import PendingFee, FeePayment
+        from django.db.models import Sum
+
+        # Get all pending fees that are not paid
+        pending_fees = PendingFee.objects.filter(student=self.object, paid=False).order_by('due_date')
+        context['pending_fees'] = pending_fees
+
+        # Calculate total pending amount
+        total_pending = sum(fee.get_discounted_amount() for fee in pending_fees)
+        context['total_pending_amount'] = total_pending
+
+        # Get payment history
+        payment_history = FeePayment.objects.filter(student=self.object).order_by('-date')[:5]
+        context['payment_history'] = payment_history
+
+        # Calculate total paid amount
+        total_paid = FeePayment.objects.filter(student=self.object, status='Paid').aggregate(total=Sum('amount'))['total'] or 0
+        context['total_paid_amount'] = total_paid
+
         return context
 
 

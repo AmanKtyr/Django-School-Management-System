@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4 receipt-container">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row mb-4">
+                        <div class="col-6">
+                            <h2 class="mb-0">Fee Receipt</h2>
+                            <p class="text-muted">Receipt #{{ payment.id }}</p>
+                        </div>
+                        <div class="col-6 text-end">
+                            <img src="https://via.placeholder.com/150x50?text=School+Logo" alt="School Logo" class="img-fluid" style="max-height: 80px;">
+                            <p class="mb-0"><strong>School Management System</strong></p>
+                            <p class="text-muted">123 School Street, City</p>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <div class="row mb-4">
+                        <div class="col-6">
+                            <h6 class="text-muted">Student Information</h6>
+                            <p class="mb-1"><strong>Name:</strong> {{ payment.student.fullname }}</p>
+                            <p class="mb-1"><strong>Registration No:</strong> {{ payment.student.registration_number }}</p>
+                            <p class="mb-1"><strong>Class:</strong> {{ payment.student.current_class }}</p>
+                            <p class="mb-1"><strong>Section:</strong> {{ payment.student.section }}</p>
+                        </div>
+                        <div class="col-6 text-end">
+                            <h6 class="text-muted">Payment Details</h6>
+                            <p class="mb-1"><strong>Date:</strong> {{ payment.date|date:"d M Y" }}</p>
+                            <p class="mb-1"><strong>Payment Method:</strong> {{ payment.payment_method }}</p>
+                            <p class="mb-1"><strong>Status:</strong> {{ payment.status }}</p>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Fee Category</th>
+                                    <th class="text-end">Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>{{ payment.fee_category }}</td>
+                                    <td class="text-end">₹{{ payment.amount }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-end"><strong>Total</strong></td>
+                                    <td class="text-end"><strong>₹{{ payment.amount }}</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-6">
+                            <p class="mb-1">Thank you for your payment!</p>
+                            <p class="text-muted small">This is a computer-generated receipt and does not require a signature.</p>
+                        </div>
+                        <div class="col-6 text-end">
+                            <div class="border-top pt-2">
+                                <p class="mb-0"><strong>Authorized Signature</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    @media print {
+        body * {
+            visibility: hidden;
+        }
+        .receipt-container, .receipt-container * {
+            visibility: visible;
+        }
+        .receipt-container {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+        .no-print {
+            display: none;
+        }
+    }
+</style>
+{% endblock %}
