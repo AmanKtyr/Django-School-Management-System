@@ -23,9 +23,9 @@ urlpatterns = [
     path("student/", include("apps.students.urls")),
 
      path('attendance/', include(('apps.attendance.urls', 'attendance'))),
-     
+
     path("staff/", include("apps.staffs.urls")),
-    path("finance/", include("apps.finance.urls")),
+    # Finance app removed
     path("result/", include("apps.result.urls")),
     path("non-teaching-staffs/", include("apps.NonTeachingStaffs.urls")),
    # Added namespace

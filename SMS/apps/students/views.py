@@ -11,7 +11,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
-from apps.finance.models import Invoice
+# Finance app removed
 from apps.corecode.filters import ClassSectionFilterForm
 
 from .models import Student, StudentBulkUpload, StudentDocument
@@ -45,7 +45,7 @@ class StudentDetailView(LoginRequiredMixin, DetailView):
 
     def get_context_data(self, **kwargs):
         context = super(StudentDetailView, self).get_context_data(**kwargs)
-        context["payments"] = Invoice.objects.filter(student=self.object)
+        # Finance/Invoice references removed
 
         # Get student documents if they exist
         context['documents'] = StudentDocument.objects.filter(student=self.object).first()
