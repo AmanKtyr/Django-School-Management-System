@@ -172,7 +172,9 @@ def student_fee_history(request, student_id):
 
     context = {
         'student': student,
-        'payments': payments
+        'payments': payments,
+        'total_paid': sum(payment.amount for payment in payments),
+        'generation_date': timezone.now()
     }
     return render(request, 'fees/student_fee_history.html', context)
 
@@ -183,17 +185,40 @@ def generate_receipt(request, payment_id):
 
     # For HTML view (preview)
     if request.GET.get('format') == 'html':
+        # Get college profile for receipt header
+        from apps.corecode.models import CollegeProfile, AcademicSession, AcademicTerm
+        profile = CollegeProfile.objects.first()
+
+        # Get current session and term
+        current_session = AcademicSession.objects.filter(current=True).first()
+        current_term = AcademicTerm.objects.filter(current=True).first()
+
         context = {
-            'payment': payment
+            'payment': payment,
+            'profile': profile,
+            'current_session': current_session.name if current_session else 'Current Session',
+            'current_term': current_term.name if current_term else 'Current Term'
         }
         return render(request, 'fees/receipt.html', context)
 
     # For PDF generation
     try:
+        # Get college profile for receipt header
+        from apps.corecode.models import CollegeProfile, AcademicSession, AcademicTerm
+        profile = CollegeProfile.objects.first()
+
+        # Get current session and term
+        current_session = AcademicSession.objects.filter(current=True).first()
+        current_term = AcademicTerm.objects.filter(current=True).first()
+
         # Use a simplified template without base.html for PDF generation
         template = get_template('fees/receipt_pdf.html')
         context = {
-            'payment': payment
+            'payment': payment,
+            'profile': profile,
+            'generation_date': timezone.now(),
+            'current_session': current_session.name if current_session else 'Current Session',
+            'current_term': current_term.name if current_term else 'Current Term'
         }
         html = template.render(context)
 
@@ -220,24 +245,30 @@ def generate_complete_history(request, student_id):
     student = get_object_or_404(Student, id=student_id)
     payments = FeePayment.objects.filter(student=student).order_by('-date')
 
-    # For HTML view (preview)
+    # For HTML view (preview), redirect to student_fee_history
     if request.GET.get('format') == 'html':
-        context = {
-            'student': student,
-            'payments': payments,
-            'total_paid': sum(payment.amount for payment in payments)
-        }
-        return render(request, 'fees/complete_history.html', context)
+        return redirect('fees:student_fee_history', student_id=student_id)
 
     # For PDF generation
     try:
+        # Get college profile for receipt header
+        from apps.corecode.models import CollegeProfile, AcademicSession, AcademicTerm
+        profile = CollegeProfile.objects.first()
+
+        # Get current session and term
+        current_session = AcademicSession.objects.filter(current=True).first()
+        current_term = AcademicTerm.objects.filter(current=True).first()
+
         # Use a simplified template without base.html for PDF generation
         template = get_template('fees/complete_history_pdf.html')
         context = {
             'student': student,
             'payments': payments,
             'total_paid': sum(payment.amount for payment in payments),
-            'generation_date': timezone.now()
+            'generation_date': timezone.now(),
+            'profile': profile,
+            'current_session': current_session.name if current_session else 'Current Session',
+            'current_term': current_term.name if current_term else 'Current Term'
         }
         html = template.render(context)
 
