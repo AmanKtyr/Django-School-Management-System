@@ -62,8 +62,9 @@ urlpatterns = [
     path('siteconfig/', views.site_config_view, name='siteconfig'),
     path("college-profile/", views.college_profile_view, name="college-profile"),
     path('site-config/', views.site_config_view, name='site_config'),
-    path('college-profile/', views.college_profile_view, name='college_profile'),  
+    path('college-profile/', views.college_profile_view, name='college_profile'),
     path("fees/settings/", views.fee_settings, name="fee_settings"),
     path('api/get-fee-settings/<int:class_id>/<str:section>/', views.get_fee_settings, name='get_fee_settings'),
     path('fees/settings/list/', views.fee_settings_list, name='fee_settings_list'),
+    path('api/get-sections/<int:class_id>/', views.get_sections_by_class, name='get_sections_by_class'),
 ]

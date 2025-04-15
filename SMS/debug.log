@@ -14525,3 +14525,391 @@ INFO 2025-04-15 12:36:28,111 "GET /fees/history/9/ HTTP/1.1" 200 31197
 INFO 2025-04-15 12:36:28,428 "GET /static/dist/css/style.css?v=1744700788420 HTTP/1.1" 200 22604
 INFO 2025-04-15 12:36:34,362 "GET /fees/receipt/8/?format=html HTTP/1.1" 200 30570
 INFO 2025-04-15 12:36:34,977 "GET /static/dist/css/style.css?v=1744700794971 HTTP/1.1" 200 22604
+INFO 2025-04-15 12:37:16,014 "GET /fees/receipt/8/?format=html HTTP/1.1" 200 30570
+INFO 2025-04-15 12:37:16,351 "GET /static/dist/css/style.css?v=1744700836339 HTTP/1.1" 200 22604
+INFO 2025-04-15 12:37:20,463 "GET /fees/receipt/8/ HTTP/1.1" 200 4316
+INFO 2025-04-15 12:39:22,104 "GET /attendance/attendance_list/ HTTP/1.1" 200 27385
+INFO 2025-04-15 12:39:22,585 "GET /static/dist/css/style.css?v=1744700962567 HTTP/1.1" 200 22604
+INFO 2025-04-15 12:40:19,495 D:\Sipher Web\Django School Management System\SMS\apps\attendance\models.py changed, reloading.
+INFO 2025-04-15 12:40:20,625 Watching for file changes with StatReloader
+INFO 2025-04-15 12:42:45,743 "GET /attendance/attendance_list/ HTTP/1.1" 200 27410
+INFO 2025-04-15 12:42:46,178 "GET /static/dist/css/style.css?v=1744701166090 HTTP/1.1" 200 22604
+INFO 2025-04-15 12:42:51,590 "GET /attendance/attendance_list/?class_id=5 HTTP/1.1" 200 31321
+INFO 2025-04-15 12:42:51,930 "GET /static/dist/css/style.css?v=1744701171924 HTTP/1.1" 200 22604
+INFO 2025-04-15 12:43:07,184 "GET /fees/ HTTP/1.1" 200 70583
+INFO 2025-04-15 12:43:07,563 "GET /static/dist/css/style.css?v=1744701187550 HTTP/1.1" 200 22604
+INFO 2025-04-15 12:43:23,060 "GET /attendance/attendance_list/ HTTP/1.1" 200 29319
+INFO 2025-04-15 12:43:23,236 "GET /static/dist/css/style.css?v=1744701203222 HTTP/1.1" 200 22604
+INFO 2025-04-15 12:43:37,723 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-04-15 12:43:39,063 Watching for file changes with StatReloader
+INFO 2025-04-15 12:43:46,705 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-04-15 12:43:47,995 Watching for file changes with StatReloader
+INFO 2025-04-15 12:43:50,874 "GET /fees/ HTTP/1.1" 200 70583
+INFO 2025-04-15 12:43:51,272 "GET /static/dist/css/style.css?v=1744701231208 HTTP/1.1" 200 22604
+INFO 2025-04-15 12:43:54,036 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-04-15 12:43:55,155 Watching for file changes with StatReloader
+INFO 2025-04-15 12:44:03,315 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-04-15 12:44:05,282 Watching for file changes with StatReloader
+INFO 2025-04-15 12:45:38,845 D:\Sipher Web\Django School Management System\SMS\apps\corecode\urls.py changed, reloading.
+INFO 2025-04-15 12:45:39,906 Watching for file changes with StatReloader
+INFO 2025-04-15 12:45:56,279 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-15 12:45:57,278 Watching for file changes with StatReloader
+INFO 2025-04-15 12:46:58,678 "GET /attendance/attendance_list/ HTTP/1.1" 200 30603
+INFO 2025-04-15 12:46:59,249 "GET /static/dist/css/style.css?v=1744701419108 HTTP/1.1" 200 22604
+INFO 2025-04-15 12:47:32,077 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-04-15 12:47:33,520 Watching for file changes with StatReloader
+INFO 2025-04-15 12:47:39,399 "GET /attendance/attendance_list/ HTTP/1.1" 200 31444
+INFO 2025-04-15 12:47:39,816 "GET /static/dist/css/style.css?v=1744701459735 HTTP/1.1" 200 22604
+INFO 2025-04-15 12:47:41,248 "GET /api/get-sections/5/ HTTP/1.1" 200 40
+INFO 2025-04-15 12:47:41,281 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-15 HTTP/1.1" 200 35170
+INFO 2025-04-15 12:47:41,657 "GET /static/dist/css/style.css?v=1744701461653 HTTP/1.1" 200 22604
+INFO 2025-04-15 12:47:47,284 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 35167
+INFO 2025-04-15 12:47:47,498 "GET /static/dist/css/style.css?v=1744701467489 HTTP/1.1" 200 22604
+INFO 2025-04-15 12:47:50,907 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-04-15 12:47:51,988 Watching for file changes with StatReloader
+INFO 2025-04-15 12:49:13,645 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 37711
+INFO 2025-04-15 12:49:14,102 "GET /static/dist/css/style.css?v=1744701554002 HTTP/1.1" 200 22604
+INFO 2025-04-15 12:49:30,362 "POST /attendance/submit_attendance/ HTTP/1.1" 200 72
+INFO 2025-04-15 12:49:35,252 "POST /attendance/submit_attendance/ HTTP/1.1" 200 72
+INFO 2025-04-15 12:49:48,074 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 37715
+INFO 2025-04-15 12:49:48,400 "GET /static/dist/css/style.css?v=1744701588392 HTTP/1.1" 200 22604
+INFO 2025-04-15 12:49:50,827 "GET /api/get-sections/6/ HTTP/1.1" 200 40
+INFO 2025-04-15 12:49:50,865 "GET /attendance/attendance_list/?class_id=6&section=&attendance_date=2025-04-15 HTTP/1.1" 200 37712
+INFO 2025-04-15 12:49:51,065 "GET /static/dist/css/style.css?v=1744701591057 HTTP/1.1" 200 22604
+INFO 2025-04-15 12:49:54,813 "POST /attendance/submit_attendance/ HTTP/1.1" 200 72
+INFO 2025-04-15 12:50:02,196 "GET /api/get-sections/5/ HTTP/1.1" 200 40
+INFO 2025-04-15 12:50:02,245 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-15 HTTP/1.1" 200 37718
+INFO 2025-04-15 12:50:02,461 "GET /static/dist/css/style.css?v=1744701602452 HTTP/1.1" 200 22604
+INFO 2025-04-15 12:50:22,537 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-14 HTTP/1.1" 200 37714
+INFO 2025-04-15 12:50:22,732 "GET /static/dist/css/style.css?v=1744701622728 HTTP/1.1" 200 22604
+INFO 2025-04-15 12:50:34,941 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-14 HTTP/1.1" 200 37714
+INFO 2025-04-15 12:50:35,102 "GET /static/dist/css/style.css?v=1744701635097 HTTP/1.1" 200 22604
+INFO 2025-04-15 12:50:50,857 Watching for file changes with StatReloader
+INFO 2025-04-15 12:50:53,969 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-14 HTTP/1.1" 200 37714
+INFO 2025-04-15 12:50:54,191 "GET /static/dist/css/style.css?v=1744701654183 HTTP/1.1" 200 22604
+INFO 2025-04-15 12:56:19,948 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-14 HTTP/1.1" 200 46351
+INFO 2025-04-15 12:56:20,385 "GET /static/dist/css/style.css?v=1744701980380 HTTP/1.1" 200 22604
+INFO 2025-04-15 12:56:27,358 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-04-15 12:56:27,492 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-04-15 12:56:32,383 Watching for file changes with StatReloader
+INFO 2025-04-15 12:56:32,466 Watching for file changes with StatReloader
+INFO 2025-04-15 12:56:38,544 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-15 HTTP/1.1" 200 50624
+INFO 2025-04-15 12:56:39,317 "GET /static/dist/css/style.css?v=1744701999183 HTTP/1.1" 200 22604
+INFO 2025-04-15 12:56:48,411 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-04-15 12:56:48,550 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-04-15 12:56:51,487 Watching for file changes with StatReloader
+INFO 2025-04-15 12:56:51,560 Watching for file changes with StatReloader
+INFO 2025-04-15 12:57:15,127 Watching for file changes with StatReloader
+INFO 2025-04-15 12:57:28,542 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-15 HTTP/1.1" 200 50624
+INFO 2025-04-15 12:57:29,392 "GET /static/dist/css/style.css?v=1744702049191 HTTP/1.1" 200 22604
+INFO 2025-04-15 12:57:43,475 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-15 HTTP/1.1" 200 50624
+INFO 2025-04-15 12:57:44,438 "GET /static/dist/css/style.css?v=1744702064431 HTTP/1.1" 200 22604
+INFO 2025-04-15 13:01:14,396 Watching for file changes with StatReloader
+ERROR 2025-04-15 13:01:21,483 Internal Server Error: /attendance/attendance_list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 1035, in find_library
+    return parser.libraries[name]
+           ~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'attendance_extras'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py", line 143, in attendance_list
+    return render(request, 'attendance/attendance_list.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 1097, in load
+    lib = find_library(parser, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 1037, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'attendance_extras' is not a registered tag library. Must be one of:
+breadcrumb_tags
+cache
+humanize
+i18n
+l10n
+static
+tz
+widget_tweaks
+ERROR 2025-04-15 13:01:21,496 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-15 HTTP/1.1" 500 250261
+INFO 2025-04-15 13:03:15,553 Watching for file changes with StatReloader
+INFO 2025-04-15 13:03:17,794 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-15 HTTP/1.1" 200 56552
+INFO 2025-04-15 13:03:18,412 "GET /static/dist/css/style.css?v=1744702398390 HTTP/1.1" 200 22604
+INFO 2025-04-15 13:03:36,844 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-15 HTTP/1.1" 200 56552
+INFO 2025-04-15 13:03:37,327 "GET /static/dist/css/style.css?v=1744702417311 HTTP/1.1" 200 22604
+INFO 2025-04-15 14:51:22,709 Watching for file changes with StatReloader
+INFO 2025-04-15 14:51:36,872 Watching for file changes with StatReloader
+INFO 2025-04-15 14:51:44,664 "GET / HTTP/1.1" 302 0
+INFO 2025-04-15 14:51:44,740 "GET /accounts/login/?next=/ HTTP/1.1" 200 5717
+INFO 2025-04-15 14:51:45,107 "GET /static/dist/css/login-page.css HTTP/1.1" 200 9070
+INFO 2025-04-15 14:51:45,197 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-04-15 14:51:45,348 "GET /static/dist/img/bg.jpg HTTP/1.1" 200 3093083
+INFO 2025-04-15 14:51:45,349 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+WARNING 2025-04-15 14:51:46,091 Not Found: /favicon.ico
+WARNING 2025-04-15 14:51:46,096 "GET /favicon.ico HTTP/1.1" 404 10704
+INFO 2025-04-15 14:51:49,186 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-04-15 14:51:49,416 "GET / HTTP/1.1" 200 29884
+INFO 2025-04-15 14:51:50,199 "GET /static/dist/css/style.css?v=1744708909965 HTTP/1.1" 200 22604
+INFO 2025-04-15 14:52:03,518 "GET /fees/ HTTP/1.1" 200 70583
+INFO 2025-04-15 14:52:03,851 "GET /static/dist/css/style.css?v=1744708923839 HTTP/1.1" 200 22604
+INFO 2025-04-15 14:52:08,417 "GET /attendance/attendance_list/ HTTP/1.1" 200 37953
+INFO 2025-04-15 14:52:08,592 "GET /static/dist/css/style.css?v=1744708928587 HTTP/1.1" 200 22604
+INFO 2025-04-15 14:52:14,546 "GET /attendance/attendance_list/?class_id=&section=&attendance_date=2025-04-15 HTTP/1.1" 200 37953
+INFO 2025-04-15 14:52:14,732 "GET /static/dist/css/style.css?v=1744708934723 HTTP/1.1" 200 22604
+INFO 2025-04-15 14:52:30,908 "GET /api/get-sections/5/ HTTP/1.1" 200 40
+INFO 2025-04-15 14:52:30,957 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-15 HTTP/1.1" 200 56552
+INFO 2025-04-15 14:52:31,197 "GET /static/dist/css/style.css?v=1744708951192 HTTP/1.1" 200 22604
+INFO 2025-04-15 14:53:27,415 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-14 HTTP/1.1" 200 56548
+INFO 2025-04-15 14:53:28,238 "GET /static/dist/css/style.css?v=1744709008223 HTTP/1.1" 200 22604
+INFO 2025-04-15 14:53:37,325 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-14 HTTP/1.1" 200 56550
+INFO 2025-04-15 14:53:37,715 "GET /static/dist/css/style.css?v=1744709017710 HTTP/1.1" 200 22604
+INFO 2025-04-15 14:53:42,685 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-15 HTTP/1.1" 200 56554
+INFO 2025-04-15 14:53:43,004 "GET /static/dist/css/style.css?v=1744709022990 HTTP/1.1" 200 22604
+INFO 2025-04-15 14:53:48,681 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-15 HTTP/1.1" 200 56554
+INFO 2025-04-15 14:53:48,963 "GET /static/dist/css/style.css?v=1744709028945 HTTP/1.1" 200 22604
+INFO 2025-04-15 14:54:43,467 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-15 HTTP/1.1" 200 56801
+INFO 2025-04-15 14:54:43,967 "GET /static/dist/css/style.css?v=1744709083951 HTTP/1.1" 200 22604
+INFO 2025-04-15 14:55:57,325 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 57123
+INFO 2025-04-15 14:55:57,881 "GET /static/dist/css/style.css?v=1744709157872 HTTP/1.1" 200 22604
+INFO 2025-04-15 14:57:00,365 "POST /attendance/submit_attendance/ HTTP/1.1" 200 102
+INFO 2025-04-15 14:57:20,036 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 57160
+INFO 2025-04-15 14:57:20,367 "GET /static/dist/css/style.css?v=1744709240352 HTTP/1.1" 200 22604
+INFO 2025-04-15 14:57:49,594 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 57160
+INFO 2025-04-15 14:57:49,832 "GET /static/dist/css/style.css?v=1744709269825 HTTP/1.1" 200 22604
+INFO 2025-04-15 14:58:09,317 "GET /api/get-sections/6/ HTTP/1.1" 200 40
+INFO 2025-04-15 14:58:09,361 "GET /attendance/attendance_list/?class_id=6&section=&attendance_date=2025-04-15 HTTP/1.1" 200 57154
+INFO 2025-04-15 14:58:09,594 "GET /static/dist/css/style.css?v=1744709289578 HTTP/1.1" 200 22604
+INFO 2025-04-15 14:58:43,817 Watching for file changes with StatReloader
+INFO 2025-04-15 14:58:52,057 "GET /attendance/attendance_list/?class_id=6&section=&attendance_date=2025-04-15 HTTP/1.1" 200 57154
+INFO 2025-04-15 14:58:52,286 "GET /static/dist/css/style.css?v=1744709332277 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:01:02,285 "GET /attendance/attendance_list/?class_id=6&section=&attendance_date=2025-04-15 HTTP/1.1" 200 60179
+INFO 2025-04-15 15:01:02,733 "GET /static/dist/css/style.css?v=1744709462728 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:01:31,970 "GET /attendance/attendance_list/?class_id=6&section=&attendance_date=2025-04-15 HTTP/1.1" 200 61322
+INFO 2025-04-15 15:01:32,328 "GET /static/dist/css/style.css?v=1744709492323 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:02:22,695 "GET /attendance/attendance_list/?class_id=6&section=&attendance_date=2025-04-15 HTTP/1.1" 200 68666
+INFO 2025-04-15 15:02:22,982 "GET /static/dist/css/style.css?v=1744709542974 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:03:21,740 "GET /attendance/attendance_list/?class_id=&section=&attendance_date=2025-04-15 HTTP/1.1" 200 43067
+INFO 2025-04-15 15:03:22,128 "GET /static/dist/css/style.css?v=1744709602093 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:03:43,128 "GET /api/get-sections/5/ HTTP/1.1" 200 40
+INFO 2025-04-15 15:03:43,228 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-15 HTTP/1.1" 200 71353
+INFO 2025-04-15 15:03:43,668 "GET /static/dist/css/style.css?v=1744709623651 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:04:29,907 "GET /api/get-sections/6/ HTTP/1.1" 200 40
+INFO 2025-04-15 15:04:30,067 "GET /attendance/attendance_list/?class_id=6&section=&attendance_date=2025-04-15 HTTP/1.1" 200 72245
+WARNING 2025-04-15 15:04:30,789 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-15 15:04:30,900 "GET /static/dist/css/style.css?v=1744709670873 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:05:35,931 Watching for file changes with StatReloader
+INFO 2025-04-15 15:05:43,445 "GET /attendance/attendance_list/?class_id=6&section=&attendance_date=2025-04-15 HTTP/1.1" 200 73650
+INFO 2025-04-15 15:05:43,980 "GET /static/dist/css/style.css?v=1744709743973 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:06:17,401 "GET /api/get-sections/3/ HTTP/1.1" 200 40
+INFO 2025-04-15 15:06:17,468 "GET /attendance/attendance_list/?class_id=3&section=&attendance_date=2025-04-15 HTTP/1.1" 200 73634
+INFO 2025-04-15 15:06:17,896 "GET /static/dist/css/style.css?v=1744709777862 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:07:00,710 "GET /attendance/attendance_list/?class_id=3&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 73638
+INFO 2025-04-15 15:07:00,968 "GET /static/dist/css/style.css?v=1744709820956 HTTP/1.1" 200 22604
+WARNING 2025-04-15 15:07:20,903 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-15 15:08:09,884 "GET /attendance/attendance_list/?class_id=3&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 73642
+INFO 2025-04-15 15:08:10,352 "GET /static/dist/css/style.css?v=1744709890345 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:08:18,969 "GET /attendance/attendance_list/?class_id=3&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 73631
+INFO 2025-04-15 15:08:19,265 "GET /static/dist/css/style.css?v=1744709899258 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:08:31,420 "GET /api/get-sections/5/ HTTP/1.1" 200 40
+INFO 2025-04-15 15:08:31,468 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-15 HTTP/1.1" 200 73645
+INFO 2025-04-15 15:08:31,667 "GET /static/dist/css/style.css?v=1744709911659 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:08:34,820 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 73649
+INFO 2025-04-15 15:08:35,036 "GET /static/dist/css/style.css?v=1744709915032 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:09:43,440 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 73635
+INFO 2025-04-15 15:09:43,864 "GET /static/dist/css/style.css?v=1744709983859 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:11:04,915 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 74140
+INFO 2025-04-15 15:11:05,302 "GET /static/dist/css/style.css?v=1744710065297 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:12:21,121 D:\Sipher Web\Django School Management System\SMS\apps\attendance\models.py changed, reloading.
+INFO 2025-04-15 15:12:21,128 D:\Sipher Web\Django School Management System\SMS\apps\attendance\models.py changed, reloading.
+INFO 2025-04-15 15:12:21,137 D:\Sipher Web\Django School Management System\SMS\apps\attendance\models.py changed, reloading.
+INFO 2025-04-15 15:12:25,010 Watching for file changes with StatReloader
+INFO 2025-04-15 15:12:25,102 Watching for file changes with StatReloader
+INFO 2025-04-15 15:12:25,205 Watching for file changes with StatReloader
+ERROR 2025-04-15 15:13:14,289 Internal Server Error: /attendance/attendance_list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: attendance_attendance.is_holiday
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py", line 67, in attendance_list
+    attendance_dict = {record.student.id: record for record in attendance_records}
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: attendance_attendance.is_holiday
+ERROR 2025-04-15 15:13:14,305 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 500 154527
+INFO 2025-04-15 15:14:03,543 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-04-15 15:14:04,856 Watching for file changes with StatReloader
+INFO 2025-04-15 15:14:54,996 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-04-15 15:14:56,408 Watching for file changes with StatReloader
+INFO 2025-04-15 15:15:27,246 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-04-15 15:15:28,619 Watching for file changes with StatReloader
+INFO 2025-04-15 15:15:54,460 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 77920
+INFO 2025-04-15 15:15:55,112 "GET /static/dist/css/style.css?v=1744710354984 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:16:54,542 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 78213
+INFO 2025-04-15 15:16:54,980 "GET /static/dist/css/style.css?v=1744710414973 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:17:57,123 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 81016
+INFO 2025-04-15 15:17:57,552 "GET /static/dist/css/style.css?v=1744710477548 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:19:46,627 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 82582
+INFO 2025-04-15 15:19:47,113 "GET /static/dist/css/style.css?v=1744710587105 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:20:41,642 Watching for file changes with StatReloader
+INFO 2025-04-15 15:20:52,871 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 82973
+INFO 2025-04-15 15:20:53,353 "GET /static/dist/css/style.css?v=1744710653344 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:21:13,080 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 82964
+INFO 2025-04-15 15:21:13,393 "GET /static/dist/css/style.css?v=1744710673388 HTTP/1.1" 200 22604
+WARNING 2025-04-15 15:22:11,961 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-15 15:22:35,538 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 82952
+INFO 2025-04-15 15:22:36,038 "GET /static/dist/css/style.css?v=1744710756031 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:23:37,379 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 82383
+INFO 2025-04-15 15:23:37,791 "GET /static/dist/css/style.css?v=1744710817783 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:23:54,527 "POST /attendance/submit_attendance/ HTTP/1.1" 200 163
+INFO 2025-04-15 15:24:08,368 "POST /attendance/submit_attendance/ HTTP/1.1" 200 163
+INFO 2025-04-15 15:24:14,713 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 82952
+INFO 2025-04-15 15:24:15,049 "GET /static/dist/css/style.css?v=1744710855045 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:24:26,966 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 82952
+INFO 2025-04-15 15:24:27,180 "GET /static/dist/css/style.css?v=1744710867176 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:25:57,721 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 82952
+INFO 2025-04-15 15:25:58,035 "GET /static/dist/css/style.css?v=1744710958030 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:26:34,194 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 82952
+INFO 2025-04-15 15:26:34,512 "GET /static/dist/css/style.css?v=1744710994503 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:26:54,802 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 82952
+INFO 2025-04-15 15:26:55,038 "GET /static/dist/css/style.css?v=1744711015031 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:27:12,522 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-04-15 15:27:13,865 Watching for file changes with StatReloader
+INFO 2025-04-15 15:27:43,562 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 82940
+INFO 2025-04-15 15:27:43,938 "GET /static/dist/css/style.css?v=1744711063849 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:27:44,522 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-04-15 15:27:46,432 Watching for file changes with StatReloader
+INFO 2025-04-15 15:27:52,009 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-04-15 15:27:53,050 Watching for file changes with StatReloader
+INFO 2025-04-15 15:28:07,116 D:\Sipher Web\Django School Management System\SMS\apps\attendance\urls.py changed, reloading.
+INFO 2025-04-15 15:28:08,644 Watching for file changes with StatReloader
+INFO 2025-04-15 15:28:39,585 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 83257
+INFO 2025-04-15 15:28:40,123 "GET /static/dist/css/style.css?v=1744711120009 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:30:06,032 Watching for file changes with StatReloader
+INFO 2025-04-15 15:30:19,945 "GET /attendance/holidays/ HTTP/1.1" 200 42562
+INFO 2025-04-15 15:30:20,583 "GET /static/dist/css/style.css?v=1744711220571 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:30:50,849 "GET /student/list HTTP/1.1" 200 29130
+INFO 2025-04-15 15:30:51,200 "GET /static/dist/css/style.css?v=1744711251182 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:31:01,264 "GET /staff/list/ HTTP/1.1" 200 23893
+INFO 2025-04-15 15:31:01,441 "GET /static/dist/css/style.css?v=1744711261434 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:31:07,397 "GET /attendance/holidays/ HTTP/1.1" 200 42562
+INFO 2025-04-15 15:31:07,554 "GET /static/dist/css/style.css?v=1744711267549 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:31:53,767 "POST /attendance/holidays/add/ HTTP/1.1" 200 65
+INFO 2025-04-15 15:32:07,831 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-15 HTTP/1.1" 200 83257
+INFO 2025-04-15 15:32:08,180 "GET /static/dist/css/style.css?v=1744711328171 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:32:18,614 "GET /attendance/holidays/ HTTP/1.1" 200 43838
+INFO 2025-04-15 15:32:18,797 "GET /static/dist/css/style.css?v=1744711338785 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:32:41,042 "GET /staff/list/ HTTP/1.1" 200 23893
+INFO 2025-04-15 15:32:41,249 "GET /static/dist/css/style.css?v=1744711361242 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:32:44,626 "GET /attendance/attendance_list/ HTTP/1.1" 200 50780
+INFO 2025-04-15 15:32:44,794 "GET /static/dist/css/style.css?v=1744711364787 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:32:57,581 "GET /static/dist/css/style.css?v=1744711377571 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:33:51,847 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-04-15 15:33:53,593 Watching for file changes with StatReloader
+INFO 2025-04-15 15:34:15,934 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-04-15 15:34:17,549 Watching for file changes with StatReloader
+INFO 2025-04-15 15:34:34,327 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-04-15 15:34:35,564 Watching for file changes with StatReloader
+INFO 2025-04-15 15:35:32,972 D:\Sipher Web\Django School Management System\SMS\school_app\settings.py changed, reloading.
+INFO 2025-04-15 15:35:34,112 Watching for file changes with StatReloader
+INFO 2025-04-15 15:35:48,767 Watching for file changes with StatReloader
+INFO 2025-04-15 15:35:55,177 "GET /attendance/holidays/ HTTP/1.1" 200 41611
+INFO 2025-04-15 15:35:55,640 "GET /static/dist/css/style.css?v=1744711555550 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:36:05,981 "GET /attendance/holidays/ HTTP/1.1" 200 41611
+INFO 2025-04-15 15:36:06,599 "GET /static/dist/css/style.css?v=1744711566587 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:36:19,658 "POST /attendance/holidays/add/ HTTP/1.1" 302 0
+INFO 2025-04-15 15:36:19,698 "GET /attendance/holidays/ HTTP/1.1" 200 44008
+INFO 2025-04-15 15:36:20,007 "GET /static/dist/css/style.css?v=1744711579990 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:36:28,764 "GET /attendance/attendance_list/ HTTP/1.1" 200 50780
+INFO 2025-04-15 15:36:28,986 "GET /static/dist/css/style.css?v=1744711588975 HTTP/1.1" 200 22604

@@ -429,6 +429,22 @@ def get_fee_settings(request, class_id, section):
     except FeeSettings.DoesNotExist:
         return JsonResponse({'settings': None})
 
+
+def get_sections_by_class(request, class_id):
+    """API endpoint to get sections for a specific class"""
+    from apps.students.models import Student
+
+    # Get all unique sections for students in this class
+    sections = Student.objects.filter(
+        current_class_id=class_id,
+        current_status='active'
+    ).values_list('section', flat=True).distinct()
+
+    # Format the sections for the response
+    section_data = [{'id': section, 'name': section} for section in sections if section]
+
+    return JsonResponse({'sections': section_data})
+
 def fee_settings_list(request):
     fee_settings_list = FeeSettings.objects.all().order_by('class_name', 'section')
 

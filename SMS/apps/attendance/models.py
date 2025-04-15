@@ -1,20 +1,40 @@
 from django.db import models
-from apps.corecode.models import StudentClass   
+from apps.corecode.models import StudentClass
 from apps.students.models import Student
 from django.utils.timezone import now
+
+class Holiday(models.Model):
+    date = models.DateField(unique=True)
+    name = models.CharField(max_length=100)
+    description = models.TextField(blank=True, null=True)
+
+    def __str__(self):
+        return f"{self.name} ({self.date})"
 
 class Attendance(models.Model):
     ATTENDANCE_CHOICES = [
         ('Present', 'Present'),
         ('Absent', 'Absent'),
         ('Leave', 'Leave'),
+        ('Holiday', 'Holiday'),
+        ('Sunday', 'Sunday'),
     ]
     student = models.ForeignKey(Student, on_delete=models.CASCADE, related_name="attendance")
     status = models.CharField(max_length=10, choices=ATTENDANCE_CHOICES, default='Absent')
-    date = models.DateField(auto_now_add=True)
+    date = models.DateField(default=now)
+    comment = models.TextField(blank=True, null=True)
+    is_holiday = models.BooleanField(default=False)
+    holiday_name = models.CharField(max_length=100, blank=True, null=True)
+
+    class Meta:
+        unique_together = ['student', 'date']
 
     def __str__(self):
         return f"{self.student.fullname} - {self.status} ({self.date})"
+
+    @property
+    def is_sunday(self):
+        return self.date.weekday() == 6  # 6 represents Sunday
 
 class StudentAttendance(models.Model):
     GENDER_CHOICES = [
