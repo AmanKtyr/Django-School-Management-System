@@ -35,9 +35,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 5px;
-            border-bottom: 1px solid #3498db;
-            padding-bottom: 5px;
         }
         .logo-section {
             display: flex;
@@ -50,7 +47,6 @@
         }
         .school-info {
             text-align: right;
-            font-size: 9pt;
         }
         .receipt-title {
             text-align: center;
@@ -206,7 +202,7 @@
         <!-- Watermark -->
         <div class="watermark">PAID</div>
 
-        <!-- Header with logo and school info (more compact) -->
+        <!-- Header with logo and school info (more organized) -->
         <div class="header">
             <div class="logo-section">
                 {% if profile.college_logo %}
@@ -314,10 +310,10 @@
             <table style="margin-bottom:0; width:100%;">
                 <thead>
                     <tr>
-                        <th style="width:10%; padding:3px; background-color:#3498db; color:white; font-size:8pt; text-align:center;">S.No</th>
-                        <th style="width:50%; padding:3px; background-color:#3498db; color:white; font-size:8pt;">Fee Category</th>
+                        <th style="width:8%; padding:3px; background-color:#3498db; color:white; font-size:8pt; text-align:center;">S/N</th>
+                        <th style="width:47%; padding:3px; background-color:#3498db; color:white; font-size:8pt;">Fee Category</th>
                         <th style="width:20%; padding:3px; background-color:#3498db; color:white; font-size:8pt; text-align:center;">Date</th>
-                        <th style="width:20%; padding:3px; background-color:#3498db; color:white; font-size:8pt; text-align:right;">Amount</th>
+                        <th style="width:25%; padding:3px; background-color:#3498db; color:white; font-size:8pt; text-align:right;">Amount</th>
                     </tr>
                 </thead>
                 <tbody>

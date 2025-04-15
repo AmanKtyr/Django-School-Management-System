@@ -141,6 +141,7 @@
         <table style="margin-bottom:5px;">
             <thead>
                 <tr>
+                    <th style="padding:3px; text-align:center; width:5%;">S/N</th>
                     <th style="padding:3px;">Date</th>
                     <th style="padding:3px;">Amount (₹)</th>
                     <th style="padding:3px;">Category</th>
@@ -152,6 +153,7 @@
             <tbody>
                 {% for payment in payments %}
                 <tr>
+                    <td style="padding:3px; text-align:center;">{{ forloop.counter }}</td>
                     <td style="padding:3px;">{{ payment.date|date:"d-m-Y" }}</td>
                     <td class="text-end" style="padding:3px;">₹{{ payment.amount|floatformat:2 }}</td>
                     <td style="padding:3px;">{{ payment.fee_category }}</td>
@@ -167,7 +169,7 @@
                 </tr>
                 {% endfor %}
                 <tr class="total-row">
-                    <td style="padding:3px;"><strong>Total</strong></td>
+                    <td colspan="2" style="padding:3px; text-align:right;"><strong>Total</strong></td>
                     <td class="text-end" style="padding:3px;"><strong>₹{{ total_paid|floatformat:2 }}</strong></td>
                     <td colspan="4" style="padding:3px;"></td>
                 </tr>
