@@ -23,9 +23,18 @@
 </div>
 {% endblock breadcrumb-left %}
 
-{% block title %}
-Holiday Management
-{% endblock title %}
+{% block title-icon %}fas fa-calendar-minus{% endblock title-icon %}
+
+{% block title %}Holiday Management{% endblock title %}
+
+{% block subtitle %}Configure and manage holidays for attendance tracking{% endblock subtitle %}
+
+{% block page-actions %}
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addHolidayModal">
+  <i class="fas fa-plus-circle me-2"></i> Add New Holiday
+</button>
+{% endblock page-actions %}
+
 
 {% block content %}
 <div class="container mt-4">

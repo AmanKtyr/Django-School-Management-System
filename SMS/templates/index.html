@@ -17,7 +17,17 @@
 </div>
 {% endblock breadcrumb-left %}
 
+{% block title-icon %}fas fa-tachometer-alt{% endblock title-icon %}
+
 {% block title %}Dashboard{% endblock title %}
+
+{% block subtitle %}Welcome to the school management system dashboard{% endblock subtitle %}
+
+{% block page-actions %}
+<a href="{% url 'current-session' %}" class="btn btn-sm btn-outline-primary">
+  <i class="fas fa-calendar-alt"></i> Current Session: {{ current_session }}
+</a>
+{% endblock page-actions %}
 
 {% block content %}
 <div class="container mt-0">

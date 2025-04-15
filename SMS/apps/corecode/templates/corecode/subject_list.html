@@ -23,17 +23,21 @@
 </div>
 {% endblock breadcrumb-left %}
 
-{% block title %}
-Subjects
-{% endblock title %}
+{% block title-icon %}fas fa-book{% endblock title-icon %}
+
+{% block title %}Subjects{% endblock title %}
+
+{% block subtitle %}Manage academic subjects taught in the school{% endblock subtitle %}
 
 
 {% block breadcrumb %}
-  <a class="btn btn-primary" href="#" id="addSubjectBtn">
-    <i class="fa fa-plus"></i>
-    Add new subject
-  </a>
 {% endblock breadcrumb %}
+
+{% block page-actions %}
+  <a class="btn btn-primary" href="#" id="addSubjectBtn">
+    <i class="fas fa-plus me-2"></i> Add New Subject
+  </a>
+{% endblock page-actions %}
 
 
 {% block content %}

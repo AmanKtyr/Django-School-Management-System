@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
 
-{% block title %}
-<span class="card-title"><strong>{{ object}}</strong> about to be
-  deleted!</span>
-{% endblock title %}
+{% block title-icon %}fas fa-trash-alt{% endblock title-icon %}
+
+{% block title %}Confirm Deletion{% endblock title %}
+
+{% block subtitle %}<strong>{{ object }}</strong> is about to be deleted{% endblock subtitle %}
 
 
 {% block content %}

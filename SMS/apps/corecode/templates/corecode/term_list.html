@@ -23,17 +23,21 @@
 </div>
 {% endblock breadcrumb-left %}
 
-{% block title %}
-Academic Term
-{% endblock title %}
+{% block title-icon %}fas fa-clock{% endblock title-icon %}
+
+{% block title %}Academic Terms{% endblock title %}
+
+{% block subtitle %}Manage academic terms for the school year{% endblock subtitle %}
 
 
 {% block breadcrumb %}
-  <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#modal1">
-    <i class="fa fa-plus"></i>
-    Add new term
-  </a>
 {% endblock breadcrumb %}
+
+{% block page-actions %}
+  <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#modal1">
+    <i class="fas fa-plus me-2"></i> Add New Term
+  </a>
+{% endblock page-actions %}
 
 
 {% block content %}

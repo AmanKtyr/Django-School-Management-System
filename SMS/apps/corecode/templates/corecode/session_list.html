@@ -23,17 +23,21 @@
 </div>
 {% endblock breadcrumb-left %}
 
-{% block title %}
-Academic Sessions
-{% endblock title %}
+{% block title-icon %}fas fa-calendar-alt{% endblock title-icon %}
+
+{% block title %}Academic Sessions{% endblock title %}
+
+{% block subtitle %}Manage academic years and sessions{% endblock subtitle %}
 
 
 {% block breadcrumb %}
-  <a class="btn btn-primary" href="#" id="addSessionBtn">
-    <i class="fa fa-plus"></i>
-    Add new session
-  </a>
 {% endblock breadcrumb %}
+
+{% block page-actions %}
+  <a class="btn btn-primary" href="#" id="addSessionBtn">
+    <i class="fas fa-plus me-2"></i> Add New Session
+  </a>
+{% endblock page-actions %}
 
 
 {% block content %}

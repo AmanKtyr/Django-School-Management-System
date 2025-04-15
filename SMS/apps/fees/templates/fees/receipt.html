@@ -27,6 +27,23 @@
 </div>
 {% endblock breadcrumb-left %}
 
+{% block title-icon %}fas fa-file-invoice{% endblock title-icon %}
+
+{% block title %}Fee Receipt{% endblock title %}
+
+{% block subtitle %}Payment receipt for {{ payment.student.fullname }}{% endblock subtitle %}
+
+{% block page-actions %}
+<div class="no-print">
+  <button onclick="window.print()" class="btn btn-outline-primary me-2">
+    <i class="fas fa-print me-1"></i> Print
+  </button>
+  <a href="{% url 'fees:generate_receipt' payment.id %}" class="btn btn-primary">
+    <i class="fas fa-download me-1"></i> Download PDF
+  </a>
+</div>
+{% endblock page-actions %}
+
 {% block content %}
 <div class="container mt-4 receipt-container position-relative">
     <!-- Watermark -->
@@ -55,9 +72,6 @@
                             <p class="mb-1"><strong>Receipt #:</strong> {{ payment.id }}</p>
                             <p class="mb-1"><strong>Session:</strong> {{ current_session }}</p>
                             <p class="mb-1"><strong>Term:</strong> {{ current_term }}</p>
-                            <a href="{% url 'fees:generate_receipt' payment.id %}" class="btn btn-primary mt-2 no-print">
-                                <i class="fas fa-download me-1"></i> Download PDF
-                            </a>
                         </div>
                     </div>
 

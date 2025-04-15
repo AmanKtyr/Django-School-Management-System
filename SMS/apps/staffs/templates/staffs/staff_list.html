@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 
-{% comment %} {% block title %}Teaching staffs{% endblock title %} {% endcomment %}
+{% block title-icon %}fas fa-chalkboard-teacher{% endblock title-icon %}
+
+{% block title %}Teaching Staff{% endblock title %}
+
+{% block subtitle %}View and manage all teaching staff members{% endblock subtitle %}
 
 {% block breadcrumb-left %}
 <div class="breadcrumb-container">
@@ -25,9 +29,13 @@
 {% endblock breadcrumb-left %}
 
 {% block breadcrumb %}
-<a class="btn btn-primary" href="{% url 'staff-create' %}"><i
-    class="fas fa-plus"></i> New staff</a>
 {% endblock breadcrumb %}
+
+{% block page-actions %}
+<a class="btn btn-primary" href="{% url 'staff-create' %}">
+  <i class="fas fa-plus"></i> New Staff
+</a>
+{% endblock page-actions %}
 
 {% block content %}
   <table id="stafftable" class="table table-bordered table-hover table-striped">

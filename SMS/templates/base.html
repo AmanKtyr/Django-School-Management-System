@@ -480,7 +480,6 @@
                 </nav>
               </div>
               {% endblock breadcrumb-left %}
-              <h1>{% block title %}{% endblock title %}</h1>
             </div>
             <div class="col-sm-4">
               <ol class="breadcrumb float-sm-right">
@@ -490,8 +489,32 @@
           </div>
         </div><!-- /.container-fluid -->
       </section>
-      <!-- Main content -->
 
+      <!-- Professional Page Title Section -->
+      <div class="page-title-section">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <div class="page-title-container">
+                <div class="page-title-icon">
+                  <i class="{% block title-icon %}fas fa-file-alt{% endblock title-icon %}"></i>
+                </div>
+                <div class="page-title-content">
+                  <h1 class="page-title">{% block title %}{% endblock title %}</h1>
+                  <p class="page-subtitle">{% block subtitle %}{% endblock subtitle %}</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="page-actions text-md-end">
+                {% block page-actions %}{% endblock page-actions %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main content -->
       <section class="content" >
 
 

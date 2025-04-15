@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 
-{% comment %} {% block title %}Students{% endblock title %} {% endcomment %}
+{% block title-icon %}fas fa-user-graduate{% endblock title-icon %}
+
+{% block title %}Student List{% endblock title %}
+
+{% block subtitle %}View and manage all students enrolled in the school{% endblock subtitle %}
 {% block breadcrumb-left %}
 <div class="breadcrumb-container">
   <nav aria-label="breadcrumb">
@@ -24,11 +28,16 @@
 {% endblock breadcrumb-left %}
 
 {% block breadcrumb %}
-<a class="btn btn-primary" href="{% url 'student-create' %}"><i
-    class="fas fa-plus"></i> New student</a>
-<a class="btn btn-primary" href="{% url 'student-upload' %}"><i
-    class="fas fa-upload"></i> Upload students</a>
 {% endblock breadcrumb %}
+
+{% block page-actions %}
+<a class="btn btn-primary" href="{% url 'student-create' %}">
+  <i class="fas fa-plus"></i> New Student
+</a>
+<a class="btn btn-outline-primary" href="{% url 'student-upload' %}">
+  <i class="fas fa-upload"></i> Upload Students
+</a>
+{% endblock page-actions %}
 
 {% block content %}
 

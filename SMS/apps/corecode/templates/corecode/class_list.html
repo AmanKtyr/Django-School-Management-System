@@ -23,16 +23,19 @@
 </div>
 {% endblock breadcrumb-left %}
 
-{% block title %}
-Classes
-{% endblock title %}
+{% block title-icon %}fas fa-school{% endblock title-icon %}
 
+{% block title %}Class Management{% endblock title %}
+
+{% block subtitle %}Create and manage school classes{% endblock subtitle %}
+
+{% block page-actions %}
+<a class="btn btn-primary" href="#" id="addClassBtn">
+  <i class="fas fa-plus me-2"></i> Add New Class
+</a>
+{% endblock page-actions %}
 
 {% block breadcrumb %}
-  <a class="btn btn-primary" href="#" id="addClassBtn">
-    <i class="fa fa-plus"></i>
-    Add new class
-  </a>
 {% endblock breadcrumb %}
 
 

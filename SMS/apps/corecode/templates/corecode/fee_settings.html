@@ -23,7 +23,17 @@
 </div>
 {% endblock breadcrumb-left %}
 
+{% block title-icon %}fas fa-money-bill-wave{% endblock title-icon %}
+
 {% block title %}Fee Settings{% endblock title %}
+
+{% block subtitle %}Configure and manage fee structure for different classes{% endblock subtitle %}
+
+{% block page-actions %}
+<a href="{% url 'fee_settings_list' %}" class="btn btn-outline-primary">
+  <i class="fas fa-list me-2"></i>View All Settings
+</a>
+{% endblock page-actions %}
 
 {% block content %}
 <head>
@@ -155,16 +165,7 @@
         </div>
         {% endif %}
 
-        <!-- Header -->
-        <div class="card-header-custom mb-4">
-            <div>
-                <h2>Fee Configuration</h2>
-                <p>Manage and setup class-wise fee structure</p>
-            </div>
-            <a href="{% url 'fee_settings_list' %}" class="btn btn-view">
-                <i class="fas fa-list me-2"></i>View All Settings
-            </a>
-        </div>
+
 
         <!-- Filter Card -->
         <div class="card-custom">

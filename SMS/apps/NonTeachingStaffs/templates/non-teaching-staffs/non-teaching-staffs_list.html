@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 
-{% comment %} {% block title %}Non Teaching Staffs{% endblock title %} {% endcomment %}
+{% block title-icon %}fas fa-users{% endblock title-icon %}
+
+{% block title %}Non-Teaching Staffs{% endblock title %}
+
+{% block subtitle %}View and manage all non-teaching staff members{% endblock subtitle %}
 
 {% block breadcrumb-left %}
 <div class="breadcrumb-container">
@@ -13,7 +17,7 @@
       </li>
       <li class="breadcrumb-item">
         <a href="{% url 'non-teaching-staffs-list' %}" class="text-decoration-none fw-bold">
-          <i class="fas fa-users"></i> Non Teaching Staffs
+          <i class="fas fa-users"></i> Non-Teaching Staffs
         </a>
       </li>
       <li class="breadcrumb-item active" aria-current="page">
@@ -24,14 +28,14 @@
 </div>
 {% endblock breadcrumb-left %}
 
-{% block breadcrumb %}
+{% block page-actions %}
 <a class="btn btn-primary" href="{% url 'non-teaching-staffs-create' %}">
-  <i class="fas fa-plus"></i> New staff
+  <i class="fas fa-plus"></i> New Staff
 </a>
-{% endblock breadcrumb %}
+{% endblock page-actions %}
 
 {% block content %}
-  <table id="stafftable" class="table table-bordered table-hover">
+  <table id="stafftable" class="table table-bordered table-hover table-striped">
     <thead class="thead-dark">
       <tr>
         <th>S/N</th>

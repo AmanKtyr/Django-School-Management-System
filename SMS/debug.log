@@ -14913,3 +14913,369 @@ INFO 2025-04-15 15:36:19,698 "GET /attendance/holidays/ HTTP/1.1" 200 44008
 INFO 2025-04-15 15:36:20,007 "GET /static/dist/css/style.css?v=1744711579990 HTTP/1.1" 200 22604
 INFO 2025-04-15 15:36:28,764 "GET /attendance/attendance_list/ HTTP/1.1" 200 50780
 INFO 2025-04-15 15:36:28,986 "GET /static/dist/css/style.css?v=1744711588975 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:36:50,953 "GET /api/get-sections/5/ HTTP/1.1" 200 40
+INFO 2025-04-15 15:36:51,036 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-15 HTTP/1.1" 200 82831
+INFO 2025-04-15 15:36:51,327 "GET /static/dist/css/style.css?v=1744711611318 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:37:10,477 "GET / HTTP/1.1" 200 30189
+INFO 2025-04-15 15:37:10,690 "GET /static/dist/css/style.css?v=1744711630682 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:37:39,886 "GET /attendance/holidays/ HTTP/1.1" 200 43476
+INFO 2025-04-15 15:37:40,217 "GET /static/dist/css/style.css?v=1744711660208 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:38:22,255 "GET /attendance/attendance_list/ HTTP/1.1" 200 50780
+INFO 2025-04-15 15:38:22,592 "GET /static/dist/css/style.css?v=1744711702588 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:38:41,801 "GET /attendance/attendance_list/ HTTP/1.1" 200 50780
+INFO 2025-04-15 15:38:42,085 "GET /static/dist/css/style.css?v=1744711722082 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:38:43,638 "GET /attendance/holidays/ HTTP/1.1" 200 43456
+INFO 2025-04-15 15:38:43,799 "GET /static/dist/css/style.css?v=1744711723790 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:40:31,661 "GET /attendance/holidays/ HTTP/1.1" 200 43456
+INFO 2025-04-15 15:40:31,853 "GET /static/dist/css/style.css?v=1744711831843 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:40:43,378 "GET /student/list HTTP/1.1" 200 29130
+INFO 2025-04-15 15:40:43,698 "GET /static/dist/css/style.css?v=1744711843687 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:40:46,759 "GET /student/list HTTP/1.1" 200 29130
+INFO 2025-04-15 15:40:46,912 "GET /static/dist/css/style.css?v=1744711846904 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:40:49,348 "GET /api/get-sections/5/ HTTP/1.1" 200 40
+INFO 2025-04-15 15:40:49,394 "GET /student/list?class_name=5&section=&search= HTTP/1.1" 200 26821
+INFO 2025-04-15 15:40:49,582 "GET /static/dist/css/style.css?v=1744711849574 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:40:51,244 "GET /student/list?class_name=5&section=A&search= HTTP/1.1" 200 26821
+INFO 2025-04-15 15:40:51,427 "GET /static/dist/css/style.css?v=1744711851419 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:41:07,345 "GET / HTTP/1.1" 200 30189
+INFO 2025-04-15 15:41:07,562 "GET /static/dist/css/style.css?v=1744711867552 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:41:10,330 "GET / HTTP/1.1" 200 30189
+INFO 2025-04-15 15:41:10,536 "GET /static/dist/css/style.css?v=1744711870521 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:42:13,068 "GET / HTTP/1.1" 200 31294
+INFO 2025-04-15 15:42:13,282 "GET /static/dist/css/style.css?v=1744711933275 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:44:08,384 "GET / HTTP/1.1" 200 31317
+INFO 2025-04-15 15:44:08,744 "GET /static/dist/css/style.css?v=1744712048739 HTTP/1.1" 200 26860
+INFO 2025-04-15 15:44:13,819 "GET /student/list HTTP/1.1" 200 30258
+INFO 2025-04-15 15:44:14,196 "GET /static/dist/css/style.css?v=1744712054176 HTTP/1.1" 200 26860
+INFO 2025-04-15 15:44:22,853 "GET /student/list HTTP/1.1" 200 29130
+INFO 2025-04-15 15:44:23,019 "GET /static/dist/css/style.css?v=1744712063012 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:44:25,413 "GET /student/create/ HTTP/1.1" 200 31826
+INFO 2025-04-15 15:44:25,588 "GET /static/dist/css/style.css?v=1744712065582 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:44:29,026 "GET /student/list HTTP/1.1" 200 29130
+INFO 2025-04-15 15:44:29,209 "GET /static/dist/css/style.css?v=1744712069207 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:44:36,515 "GET /student/create/ HTTP/1.1" 200 31826
+INFO 2025-04-15 15:44:36,689 "GET /static/dist/css/style.css?v=1744712076676 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:44:39,866 "GET /attendance/attendance_list/ HTTP/1.1" 200 50780
+INFO 2025-04-15 15:44:40,058 "GET /static/dist/css/style.css?v=1744712080051 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:44:42,468 "GET /attendance/holidays/ HTTP/1.1" 200 43456
+INFO 2025-04-15 15:44:42,635 "GET /static/dist/css/style.css?v=1744712082626 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:44:45,130 "GET /fees/ HTTP/1.1" 200 70888
+INFO 2025-04-15 15:44:45,305 "GET /static/dist/css/style.css?v=1744712085301 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:44:55,208 "GET /result/create/ HTTP/1.1" 200 25556
+INFO 2025-04-15 15:44:55,454 "GET /static/dist/css/style.css?v=1744712095450 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:44:58,769 "GET / HTTP/1.1" 200 30189
+INFO 2025-04-15 15:44:58,998 "GET /static/dist/css/style.css?v=1744712098986 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:47:09,155 "GET / HTTP/1.1" 200 30156
+INFO 2025-04-15 15:47:09,435 "GET /static/dist/css/style.css?v=1744712229424 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:47:37,825 "GET / HTTP/1.1" 200 30937
+INFO 2025-04-15 15:47:38,170 "GET /static/dist/css/style.css?v=1744712258166 HTTP/1.1" 200 22604
+INFO 2025-04-15 15:48:45,315 "GET / HTTP/1.1" 200 31129
+INFO 2025-04-15 15:48:45,557 "GET /static/dist/css/style.css?v=1744712325552 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:48:54,431 "GET /student/list HTTP/1.1" 200 29955
+INFO 2025-04-15 15:48:54,826 "GET /static/dist/css/style.css?v=1744712334812 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:49:02,329 "GET /student/create/ HTTP/1.1" 200 32574
+INFO 2025-04-15 15:49:02,509 "GET /static/dist/css/style.css?v=1744712342501 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:49:07,106 "GET /staff/list/ HTTP/1.1" 200 24708
+INFO 2025-04-15 15:49:07,304 "GET /static/dist/css/style.css?v=1744712347289 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:49:09,862 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 24357
+INFO 2025-04-15 15:49:10,053 "GET /static/dist/css/style.css?v=1744712350047 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:49:12,478 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 24357
+INFO 2025-04-15 15:49:12,653 "GET /static/dist/css/style.css?v=1744712352638 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:49:13,666 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 24357
+INFO 2025-04-15 15:49:13,857 "GET /static/dist/css/style.css?v=1744712353844 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:49:19,111 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 24357
+INFO 2025-04-15 15:49:19,297 "GET /static/dist/css/style.css?v=1744712359285 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:49:19,845 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 24357
+INFO 2025-04-15 15:49:20,006 "GET /static/dist/css/style.css?v=1744712360000 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:49:20,250 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 24357
+INFO 2025-04-15 15:49:20,431 "GET /static/dist/css/style.css?v=1744712360419 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:49:20,681 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 24357
+INFO 2025-04-15 15:49:20,861 "GET /static/dist/css/style.css?v=1744712360848 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:49:28,099 "GET /staff/list/ HTTP/1.1" 200 24708
+INFO 2025-04-15 15:49:28,319 "GET /static/dist/css/style.css?v=1744712368311 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:49:32,533 "GET /attendance/attendance_list/ HTTP/1.1" 200 51528
+INFO 2025-04-15 15:49:32,728 "GET /static/dist/css/style.css?v=1744712372718 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:49:52,238 "GET /fees/settings/ HTTP/1.1" 200 30937
+WARNING 2025-04-15 15:49:52,325 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+INFO 2025-04-15 15:49:52,465 "GET /static/dist/css/style.css?v=1744712392458 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:49:55,207 "GET /class/list/ HTTP/1.1" 200 27150
+INFO 2025-04-15 15:49:55,417 "GET /static/dist/css/style.css?v=1744712395403 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:49:58,767 "GET /subject/list/ HTTP/1.1" 200 26603
+INFO 2025-04-15 15:49:59,033 "GET /static/dist/css/style.css?v=1744712399015 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:50:56,639 "GET / HTTP/1.1" 200 31129
+INFO 2025-04-15 15:50:56,883 "GET /static/dist/css/style.css?v=1744712456874 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:51:01,753 "GET /current-session/ HTTP/1.1" 200 25222
+INFO 2025-04-15 15:51:02,091 "GET /static/dist/css/style.css?v=1744712462072 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:51:22,777 "GET /student/list HTTP/1.1" 200 29955
+INFO 2025-04-15 15:51:22,978 "GET /static/dist/css/style.css?v=1744712482972 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:51:39,011 "GET /student/create/ HTTP/1.1" 200 32574
+INFO 2025-04-15 15:51:39,186 "GET /static/dist/css/style.css?v=1744712499177 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:51:46,309 "GET /staff/list/ HTTP/1.1" 200 24708
+INFO 2025-04-15 15:51:46,483 "GET /static/dist/css/style.css?v=1744712506476 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:51:48,076 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 24357
+INFO 2025-04-15 15:51:48,265 "GET /static/dist/css/style.css?v=1744712508255 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:52:32,485 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 24357
+INFO 2025-04-15 15:52:32,827 "GET /static/dist/css/style.css?v=1744712552815 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:52:34,993 "GET /attendance/attendance_list/ HTTP/1.1" 200 51528
+INFO 2025-04-15 15:52:35,391 "GET /static/dist/css/style.css?v=1744712555382 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:52:36,781 "GET /attendance/attendance_list/ HTTP/1.1" 200 51528
+INFO 2025-04-15 15:52:36,944 "GET /static/dist/css/style.css?v=1744712556938 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:52:55,609 "GET /attendance/attendance_list/ HTTP/1.1" 200 51608
+INFO 2025-04-15 15:52:55,758 "GET /static/dist/css/style.css?v=1744712575753 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:53:57,425 "GET /attendance/attendance_list/ HTTP/1.1" 200 51363
+INFO 2025-04-15 15:53:57,628 "GET /static/dist/css/style.css?v=1744712637620 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:54:06,339 "GET /attendance/attendance_list/ HTTP/1.1" 200 51608
+INFO 2025-04-15 15:54:06,631 "GET /static/dist/css/style.css?v=1744712646628 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:54:19,355 "GET /result/create/ HTTP/1.1" 200 26304
+INFO 2025-04-15 15:54:19,681 "GET /static/dist/css/style.css?v=1744712659657 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:54:28,722 "GET /result/view/all HTTP/1.1" 200 23449
+INFO 2025-04-15 15:54:28,894 "GET /static/dist/css/style.css?v=1744712668889 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:54:33,038 "GET /result/create/ HTTP/1.1" 200 26304
+INFO 2025-04-15 15:54:33,238 "GET /static/dist/css/style.css?v=1744712673229 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:54:38,348 "GET /session/list/ HTTP/1.1" 200 26197
+INFO 2025-04-15 15:54:38,522 "GET /static/dist/css/style.css?v=1744712678505 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:54:41,613 "GET /term/list/ HTTP/1.1" 200 26822
+INFO 2025-04-15 15:54:41,798 "GET /static/dist/css/style.css?v=1744712681787 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:54:46,230 "GET /subject/list/ HTTP/1.1" 200 26603
+INFO 2025-04-15 15:54:46,414 "GET /static/dist/css/style.css?v=1744712686398 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:54:50,134 "GET /class/list/ HTTP/1.1" 200 27184
+INFO 2025-04-15 15:54:50,307 "GET /static/dist/css/style.css?v=1744712690298 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:54:55,663 "GET /fees/settings/ HTTP/1.1" 200 30937
+WARNING 2025-04-15 15:54:55,762 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+INFO 2025-04-15 15:54:55,936 "GET /static/dist/css/style.css?v=1744712695929 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:55:05,545 "GET /fees/settings/list/ HTTP/1.1" 200 34705
+INFO 2025-04-15 15:55:05,762 "GET /static/dist/css/style.css?v=1744712705756 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:55:13,649 "GET / HTTP/1.1" 200 31129
+INFO 2025-04-15 15:55:13,872 "GET /static/dist/css/style.css?v=1744712713860 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:55:16,542 "GET /attendance/attendance_list/ HTTP/1.1" 200 51608
+INFO 2025-04-15 15:55:16,756 "GET /static/dist/css/style.css?v=1744712716749 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:57:16,348 "GET /session/list/ HTTP/1.1" 200 26197
+INFO 2025-04-15 15:57:16,701 "GET /static/dist/css/style.css?v=1744712836689 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:57:33,099 "GET /student/list HTTP/1.1" 200 29955
+INFO 2025-04-15 15:57:33,475 "GET /static/dist/css/style.css?v=1744712853462 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:57:47,960 "GET /attendance/attendance_list/ HTTP/1.1" 200 51006
+INFO 2025-04-15 15:57:48,167 "GET /static/dist/css/style.css?v=1744712868151 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:57:53,005 "GET /attendance/attendance_list/ HTTP/1.1" 200 51006
+INFO 2025-04-15 15:57:53,204 "GET /static/dist/css/style.css?v=1744712873197 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:58:26,840 "GET /attendance/attendance_list/ HTTP/1.1" 200 51205
+INFO 2025-04-15 15:58:27,013 "GET /static/dist/css/style.css?v=1744712907007 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:58:59,695 "GET /attendance/attendance_list/ HTTP/1.1" 200 51205
+INFO 2025-04-15 15:58:59,980 "GET /static/dist/css/style.css?v=1744712939976 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:59:38,583 "GET /attendance/attendance_list/ HTTP/1.1" 200 51205
+INFO 2025-04-15 15:59:38,793 "GET /static/dist/css/style.css?v=1744712978788 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:59:46,406 "GET /attendance/attendance_list/ HTTP/1.1" 200 51205
+INFO 2025-04-15 15:59:46,689 "GET /static/dist/css/style.css?v=1744712986686 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:59:46,851 "GET /attendance/attendance_list/ HTTP/1.1" 200 51205
+INFO 2025-04-15 15:59:47,061 "GET /static/dist/css/style.css?v=1744712987054 HTTP/1.1" 200 25949
+WARNING 2025-04-15 15:59:49,937 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-15 15:59:50,914 "GET /attendance/attendance_list/ HTTP/1.1" 200 51205
+INFO 2025-04-15 15:59:51,007 "GET /static/dist/css/preload.css HTTP/1.1" 200 1863
+INFO 2025-04-15 15:59:51,024 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-04-15 15:59:51,039 "GET /static/dist/css/style.css HTTP/1.1" 200 25949
+INFO 2025-04-15 15:59:51,051 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-04-15 15:59:51,055 "GET /static/dist/css/sidebar-fix.css HTTP/1.1" 200 9004
+INFO 2025-04-15 15:59:51,057 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-04-15 15:59:51,069 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-04-15 15:59:51,078 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-04-15 15:59:51,089 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-04-15 15:59:51,103 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-04-15 15:59:51,115 "GET /static/dist/js/custom.js HTTP/1.1" 200 2597
+INFO 2025-04-15 15:59:51,122 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-04-15 15:59:51,147 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-04-15 15:59:51,254 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-04-15 15:59:51,381 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-04-15 15:59:51,769 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-04-15 15:59:51,833 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+INFO 2025-04-15 15:59:52,099 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-04-15 15:59:52,249 "GET /static/dist/js/sidebar-fix.js HTTP/1.1" 200 2621
+INFO 2025-04-15 15:59:52,252 "GET /static/dist/css/style.css?v=1744712992201 HTTP/1.1" 200 25949
+INFO 2025-04-15 15:59:52,312 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 200 9593
+WARNING 2025-04-15 15:59:52,424 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+WARNING 2025-04-15 15:59:53,432 Not Found: /favicon.ico
+WARNING 2025-04-15 15:59:53,433 "GET /favicon.ico HTTP/1.1" 404 10704
+INFO 2025-04-15 16:00:01,948 "GET /api/get-sections/5/ HTTP/1.1" 200 40
+INFO 2025-04-15 16:00:02,030 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-15 HTTP/1.1" 200 83514
+INFO 2025-04-15 16:00:02,537 "GET /static/dist/css/style.css?v=1744713002523 HTTP/1.1" 200 25949
+INFO 2025-04-15 16:00:18,509 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-15 HTTP/1.1" 200 83514
+INFO 2025-04-15 16:00:18,752 "GET /static/dist/css/style.css?v=1744713018747 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:00:23,725 "GET /attendance/attendance_list/ HTTP/1.1" 200 51323
+INFO 2025-04-15 16:00:23,915 "GET /static/dist/css/style.css?v=1744713023911 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:00:35,625 "GET /class/list/ HTTP/1.1" 200 27184
+INFO 2025-04-15 16:00:35,812 "GET /static/dist/css/style.css?v=1744713035787 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:00:53,479 "GET /api/get-sections/5/ HTTP/1.1" 200 40
+INFO 2025-04-15 16:00:53,570 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-15 HTTP/1.1" 200 83872
+INFO 2025-04-15 16:00:53,848 "GET /static/dist/css/style.css?v=1744713053842 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:01:11,687 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-12 HTTP/1.1" 200 83869
+INFO 2025-04-15 16:01:11,763 "GET /static/dist/css/style.css HTTP/1.1" 200 28381
+INFO 2025-04-15 16:01:11,952 "GET /static/dist/css/style.css?v=1744713071943 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:01:19,776 "POST /attendance/submit_attendance/ HTTP/1.1" 200 174
+INFO 2025-04-15 16:01:24,838 "GET /attendance/attendance_list/?class_id=5&section=&attendance_date=2025-04-12 HTTP/1.1" 200 83876
+INFO 2025-04-15 16:01:24,908 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-15 16:01:24,908 "GET /static/dist/js/custom.js HTTP/1.1" 304 0
+INFO 2025-04-15 16:01:25,127 "GET /static/dist/css/style.css?v=1744713085112 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:01:47,461 "GET /attendance/attendance_list/ HTTP/1.1" 200 51681
+INFO 2025-04-15 16:01:47,520 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-15 16:01:47,648 "GET /static/dist/css/style.css?v=1744713107642 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:01:49,261 "GET /attendance/holidays/ HTTP/1.1" 200 44454
+INFO 2025-04-15 16:01:49,448 "GET /static/dist/css/style.css?v=1744713109441 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:01:55,496 "GET /fees/ HTTP/1.1" 200 71936
+INFO 2025-04-15 16:01:55,685 "GET /static/dist/css/style.css?v=1744713115682 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:01:59,427 "GET /fees/ HTTP/1.1" 200 71936
+INFO 2025-04-15 16:01:59,477 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-15 16:01:59,572 "GET /static/dist/css/style.css?v=1744713119569 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:02:12,710 "GET /result/create/ HTTP/1.1" 200 26304
+INFO 2025-04-15 16:02:12,770 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-15 16:02:12,904 "GET /static/dist/css/style.css?v=1744713132899 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:02:16,807 "GET /student/create/ HTTP/1.1" 200 32574
+INFO 2025-04-15 16:02:16,975 "GET /static/dist/css/style.css?v=1744713136969 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:02:18,660 "GET /student/list HTTP/1.1" 200 29955
+INFO 2025-04-15 16:02:18,848 "GET /static/dist/css/style.css?v=1744713138843 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:02:21,521 "GET /staff/list/ HTTP/1.1" 200 24708
+INFO 2025-04-15 16:02:21,687 "GET /static/dist/css/style.css?v=1744713141681 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:02:23,119 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 24357
+INFO 2025-04-15 16:02:23,302 "GET /static/dist/css/style.css?v=1744713143288 HTTP/1.1" 200 28381
+ERROR 2025-04-15 16:03:47,414 Internal Server Error: /non-teaching-staffs/list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 240, in do_block
+    parser.invalid_block_tag(endblock, "endblock", acceptable_endblocks)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 567, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 35: 'endblock', expected 'endblock' or 'endblock page-actions'. Did you forget to register or load this tag?
+ERROR 2025-04-15 16:03:47,414 "GET /non-teaching-staffs/list/ HTTP/1.1" 500 186120
+INFO 2025-04-15 16:04:16,493 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 24433
+INFO 2025-04-15 16:04:16,564 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-15 16:04:16,564 "GET /static/dist/js/custom.js HTTP/1.1" 304 0
+INFO 2025-04-15 16:04:16,780 "GET /static/dist/css/style.css?v=1744713256771 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:04:24,836 "GET /non-teaching-staffs/create/ HTTP/1.1" 200 27220
+INFO 2025-04-15 16:04:25,011 "GET /static/dist/css/style.css?v=1744713264997 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:04:39,991 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 24433
+INFO 2025-04-15 16:04:40,052 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-15 16:04:40,182 "GET /static/dist/css/style.css?v=1744713280171 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:04:45,688 "GET /staff/list/ HTTP/1.1" 200 24708
+INFO 2025-04-15 16:04:45,858 "GET /static/dist/css/style.css?v=1744713285850 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:04:47,243 "GET /staff/1/ HTTP/1.1" 200 26258
+INFO 2025-04-15 16:04:47,310 "GET /static/dist/img/teacher-dp.jpg HTTP/1.1" 200 14750
+INFO 2025-04-15 16:04:47,411 "GET /static/dist/css/style.css?v=1744713287404 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:05:04,709 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 24433
+INFO 2025-04-15 16:05:04,949 "GET /static/dist/css/style.css?v=1744713304941 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:05:05,596 "GET /staff/list/ HTTP/1.1" 200 24708
+INFO 2025-04-15 16:05:05,770 "GET /static/dist/css/style.css?v=1744713305762 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:05:21,085 "GET /student/list HTTP/1.1" 200 29955
+INFO 2025-04-15 16:05:21,151 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-15 16:05:21,295 "GET /static/dist/css/style.css?v=1744713321293 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:05:28,679 "GET /student/create/ HTTP/1.1" 200 32574
+INFO 2025-04-15 16:05:28,856 "GET /static/dist/css/style.css?v=1744713328848 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:05:35,957 "GET /student/3/ HTTP/1.1" 200 41516
+INFO 2025-04-15 16:05:36,038 "GET /static/dist/img/avatar.png HTTP/1.1" 200 2121881
+INFO 2025-04-15 16:05:36,138 "GET /static/dist/css/style.css?v=1744713336130 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:05:44,223 "GET /student/list HTTP/1.1" 200 29955
+INFO 2025-04-15 16:05:44,424 "GET /static/dist/css/style.css?v=1744713344420 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:05:46,049 "GET /student/8/ HTTP/1.1" 200 42695
+INFO 2025-04-15 16:05:46,219 "GET /static/dist/css/style.css?v=1744713346210 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:07:45,433 "GET /fees/history/8/ HTTP/1.1" 200 28218
+INFO 2025-04-15 16:07:45,500 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-15 16:07:45,505 "GET /static/dist/js/custom.js HTTP/1.1" 304 0
+INFO 2025-04-15 16:07:45,630 "GET /static/dist/css/style.css?v=1744713465625 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:12:35,345 "GET /fees/history/8/ HTTP/1.1" 200 28218
+INFO 2025-04-15 16:12:35,434 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-15 16:12:35,434 "GET /static/dist/js/custom.js HTTP/1.1" 304 0
+INFO 2025-04-15 16:12:35,712 "GET /static/dist/css/style.css?v=1744713755704 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:12:53,486 "GET /fees/history/8/ HTTP/1.1" 200 28218
+INFO 2025-04-15 16:12:53,854 "GET /static/dist/css/style.css?v=1744713773849 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:15:10,900 "GET /fees/history/8/ HTTP/1.1" 200 28218
+INFO 2025-04-15 16:15:10,957 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-15 16:15:11,095 "GET /static/dist/css/style.css?v=1744713911088 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:15:49,048 "GET /fees/history/8/ HTTP/1.1" 200 28218
+INFO 2025-04-15 16:15:49,131 "GET /static/dist/js/custom.js HTTP/1.1" 304 0
+INFO 2025-04-15 16:15:49,330 "GET /static/dist/css/style.css?v=1744713949325 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:15:56,578 "GET /fees/history/8/ HTTP/1.1" 200 28218
+INFO 2025-04-15 16:15:56,813 "GET /static/dist/css/style.css?v=1744713956809 HTTP/1.1" 200 28381
+WARNING 2025-04-15 16:15:59,412 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-15 16:15:59,868 "GET /fees/history/8/ HTTP/1.1" 200 28218
+INFO 2025-04-15 16:15:59,953 "GET /static/dist/css/preload.css HTTP/1.1" 200 1863
+INFO 2025-04-15 16:15:59,969 "GET /static/dist/css/style.css HTTP/1.1" 200 28381
+INFO 2025-04-15 16:15:59,977 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-04-15 16:15:59,980 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-04-15 16:15:59,993 "GET /static/dist/css/sidebar-fix.css HTTP/1.1" 200 9004
+INFO 2025-04-15 16:16:00,045 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-04-15 16:16:00,100 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-04-15 16:16:00,113 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-04-15 16:16:00,195 "GET /static/dist/js/custom.js HTTP/1.1" 200 2597
+INFO 2025-04-15 16:16:00,207 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-04-15 16:16:00,214 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-04-15 16:16:00,261 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-04-15 16:16:00,267 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-04-15 16:16:00,345 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-04-15 16:16:00,408 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-04-15 16:16:00,659 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-04-15 16:16:00,914 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-04-15 16:16:00,924 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+INFO 2025-04-15 16:16:01,443 "GET /static/dist/css/style.css?v=1744713961347 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:16:01,552 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 200 9593
+INFO 2025-04-15 16:16:01,556 "GET /static/dist/js/sidebar-fix.js HTTP/1.1" 200 2621
+WARNING 2025-04-15 16:16:01,569 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+WARNING 2025-04-15 16:16:01,994 Not Found: /favicon.ico
+WARNING 2025-04-15 16:16:01,995 "GET /favicon.ico HTTP/1.1" 404 10704
+INFO 2025-04-15 16:16:06,352 "GET /fees/ HTTP/1.1" 200 71936
+INFO 2025-04-15 16:16:06,729 "GET /static/dist/css/style.css?v=1744713966724 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:17:21,932 "GET /fees/history/8/ HTTP/1.1" 200 28558
+INFO 2025-04-15 16:17:22,303 "GET /static/dist/css/style.css?v=1744714042298 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:28:11,647 "GET /fees/history/8/ HTTP/1.1" 200 28130
+INFO 2025-04-15 16:28:11,730 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-15 16:28:11,734 "GET /static/dist/js/custom.js HTTP/1.1" 304 0
+INFO 2025-04-15 16:28:11,998 "GET /static/dist/css/style.css?v=1744714691992 HTTP/1.1" 200 28381
+INFO 2025-04-15 16:28:14,482 "GET /fees/receipt/4/?format=html HTTP/1.1" 200 31740
+INFO 2025-04-15 16:28:14,690 "GET /media/college_logos/college_lgoooo_wLVF410.jpg HTTP/1.1" 200 31795
+INFO 2025-04-15 16:28:15,011 "GET /static/dist/css/style.css?v=1744714695003 HTTP/1.1" 200 28381
