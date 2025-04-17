@@ -479,12 +479,60 @@
             </li>
         </ul>
 
+
           <li class="nav-header">Settings</li>
-          <li class="nav-item">
-              <a href="{% url 'configs' %}" class="nav-link">
-                  <i class="nav-icon fas fa-cog" style="color: #3333cc;"></i>
-                  <p>System Settings</p>
+          <li class="nav-item has-treeview {% if 'system-settings' in request.path %}menu-open{% endif %}">
+              <a href="#" class="nav-link {% if 'system-settings' in request.path %}active{% endif %}">
+                  <i class="nav-icon fas fa-cogs" style="color: #3333cc;"></i>
+                  <p>
+                      System Settings
+                      <i class="fas fa-angle-left right"></i>
+                  </p>
               </a>
+              <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                      <a href="{% url 'system_settings_dashboard' %}" class="nav-link {% if request.resolver_match.url_name == 'system_settings_dashboard' %}active{% endif %}">
+                          <i class="nav-icon fas fa-tachometer-alt" style="color: #6610f2;"></i>
+                          <p>Dashboard</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="{% url 'general_settings' %}" class="nav-link {% if request.resolver_match.url_name == 'general_settings' %}active{% endif %}">
+                          <i class="nav-icon fas fa-server" style="color: #6610f2;"></i>
+                          <p>General Settings</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="{% url 'academic_settings' %}" class="nav-link {% if request.resolver_match.url_name == 'academic_settings' %}active{% endif %}">
+                          <i class="nav-icon fas fa-calendar-alt" style="color: #fd7e14;"></i>
+                          <p>Academic Settings</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="{% url 'database_management' %}" class="nav-link {% if request.resolver_match.url_name == 'database_management' %}active{% endif %}">
+                          <i class="nav-icon fas fa-database" style="color: #e83e8c;"></i>
+                          <p>Database Management</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="{% url 'backup_restore' %}" class="nav-link {% if request.resolver_match.url_name == 'backup_restore' %}active{% endif %}">
+                          <i class="nav-icon fas fa-file-export" style="color: #28a745;"></i>
+                          <p>Backup & Restore</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="{% url 'user_permissions' %}" class="nav-link {% if request.resolver_match.url_name == 'user_permissions' %}active{% endif %}">
+                          <i class="nav-icon fas fa-users-cog" style="color: #dc3545;"></i>
+                          <p>User Permissions</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="{% url 'security_logs' %}" class="nav-link {% if request.resolver_match.url_name == 'security_logs' %}active{% endif %}">
+                          <i class="nav-icon fas fa-shield-alt" style="color: #17a2b8;"></i>
+                          <p>Security & Logs</p>
+                      </a>
+                  </li>
+              </ul>
           </li>
       </ul>
   </nav>

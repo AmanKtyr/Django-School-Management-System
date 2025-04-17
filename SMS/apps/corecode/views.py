@@ -1,5 +1,5 @@
 from django.contrib import messages
-from django.contrib.auth import logout
+from django.contrib.auth import logout, get_user_model
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
@@ -8,8 +8,11 @@ from django.http import JsonResponse
 from django.urls import reverse_lazy
 from django.views.generic import ListView, TemplateView, View
 from django.views.generic.edit import CreateView, DeleteView, UpdateView
+from datetime import datetime
 from apps.students.models import Student
 from apps.fees.models import PendingFee
+
+User = get_user_model()
 
 from .filters import ClassSectionFilterForm
 
@@ -419,6 +422,207 @@ def custom_logout_view(request):
     """Custom logout view that shows a goodbye page"""
     logout(request)
     return render(request, 'registration/logout.html')
+
+
+
+
+
+@login_required
+def general_settings(request):
+    """General Settings view"""
+    profile = get_object_or_404(CollegeProfile)
+    if request.method == 'POST':
+        form = CollegeProfileForm(request.POST, request.FILES, instance=profile)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "General settings updated successfully.")
+            return redirect('general_settings')
+    else:
+        form = CollegeProfileForm(instance=profile)
+
+    context = {
+        'active_tab': 'general',
+        'form': form
+    }
+    return render(request, 'corecode/general_settings.html', context)
+
+
+@login_required
+def academic_settings(request):
+    """Academic Settings view"""
+    if request.method == 'POST':
+        form = CurrentSessionForm(request.POST)
+        if form.is_valid():
+            session = form.cleaned_data["current_session"]
+            term = form.cleaned_data["current_term"]
+            AcademicSession.objects.filter(name=session).update(current=True)
+            AcademicSession.objects.exclude(name=session).update(current=False)
+            AcademicTerm.objects.filter(name=term).update(current=True)
+            AcademicTerm.objects.exclude(name=term).update(current=False)
+            messages.success(request, "Current session and term updated successfully.")
+            return redirect('academic_settings')
+    else:
+        form = CurrentSessionForm()
+
+    sessions = AcademicSession.objects.all().order_by('-name')
+    terms = AcademicTerm.objects.all()
+
+    context = {
+        'active_tab': 'academic',
+        'form': form,
+        'sessions': sessions,
+        'terms': terms
+    }
+    return render(request, 'corecode/academic_settings.html', context)
+
+
+@login_required
+def database_management(request):
+    """Database Management view"""
+    context = {
+        'active_tab': 'database',
+        'db_size': '12.4 MB',
+        'last_optimized': '2023-04-10 09:15 AM',
+        'total_tables': 32,
+        'total_records': 5842
+    }
+    return render(request, 'corecode/database_management.html', context)
+
+
+@login_required
+def backup_restore(request):
+    """Backup & Restore view"""
+    context = {
+        'active_tab': 'backup',
+        'current_date': datetime.now().strftime('%Y_%m_%d')
+    }
+    return render(request, 'corecode/backup_restore.html', context)
+
+
+@login_required
+def user_permissions(request):
+    """User Permissions view"""
+    context = {
+        'active_tab': 'permissions',
+        'users': User.objects.all().order_by('username')
+    }
+    return render(request, 'corecode/user_permissions.html', context)
+
+
+@login_required
+def security_logs(request):
+    """Security & Logs view"""
+    context = {
+        'active_tab': 'security'
+    }
+    return render(request, 'corecode/security_logs.html', context)
+
+
+@login_required
+def system_settings_dashboard(request):
+    """System Settings Dashboard"""
+    context = {
+        'active_tab': 'dashboard',
+        'system_version': '2.5.1',
+        'last_updated': '2023-04-10',
+        'uptime': '7 days, 14 hours',
+        'last_backup': '2023-04-15 08:30 AM',
+        'storage_usage': 45
+    }
+    return render(request, 'corecode/system_settings_dashboard.html', context)
+
+
+@login_required
+def general_settings(request):
+    """General Settings Page"""
+    profile = CollegeProfile.objects.first()
+    if request.method == 'POST':
+        form = CollegeProfileForm(request.POST, request.FILES, instance=profile)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "General settings updated successfully.")
+            return redirect('general_settings')
+    else:
+        form = CollegeProfileForm(instance=profile)
+
+    context = {
+        'active_tab': 'general',
+        'form': form
+    }
+    return render(request, 'corecode/general_settings.html', context)
+
+
+@login_required
+def academic_settings(request):
+    """Academic Settings Page"""
+    if request.method == 'POST':
+        form = CurrentSessionForm(request.POST)
+        if form.is_valid():
+            session = form.cleaned_data["current_session"]
+            term = form.cleaned_data["current_term"]
+            AcademicSession.objects.filter(name=session).update(current=True)
+            AcademicSession.objects.exclude(name=session).update(current=False)
+            AcademicTerm.objects.filter(name=term).update(current=True)
+            AcademicTerm.objects.exclude(name=term).update(current=False)
+            messages.success(request, "Current session and term updated successfully.")
+            return redirect('academic_settings')
+    else:
+        form = CurrentSessionForm()
+
+    sessions = AcademicSession.objects.all().order_by('-name')
+    terms = AcademicTerm.objects.all()
+
+    context = {
+        'active_tab': 'academic',
+        'form': form,
+        'sessions': sessions,
+        'terms': terms
+    }
+    return render(request, 'corecode/academic_settings.html', context)
+
+
+@login_required
+def database_management(request):
+    """Database Management Page"""
+    context = {
+        'active_tab': 'database',
+        'db_size': '12.4 MB',
+        'last_optimized': '2023-04-10 09:15 AM',
+        'total_tables': 32,
+        'total_records': 5842
+    }
+    return render(request, 'corecode/database_management.html', context)
+
+
+@login_required
+def backup_restore(request):
+    """Backup & Restore Page"""
+    context = {
+        'active_tab': 'backup',
+        'current_date': datetime.now().strftime('%Y_%m_%d')
+    }
+    return render(request, 'corecode/backup_restore.html', context)
+
+
+@login_required
+def user_permissions(request):
+    """User Permissions Page"""
+    User = get_user_model()
+    users = User.objects.all().order_by('username')
+    context = {
+        'active_tab': 'permissions',
+        'users': users
+    }
+    return render(request, 'corecode/user_permissions.html', context)
+
+
+@login_required
+def security_logs(request):
+    """Security & Logs Page"""
+    context = {
+        'active_tab': 'security'
+    }
+    return render(request, 'corecode/security_logs.html', context)
 
 
 def site_config(request):

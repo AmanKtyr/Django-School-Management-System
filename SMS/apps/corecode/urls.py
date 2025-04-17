@@ -68,4 +68,13 @@ urlpatterns = [
     path('fees/settings/list/', views.fee_settings_list, name='fee_settings_list'),
     path('api/get-sections/<int:class_id>/', views.get_sections_by_class, name='get_sections_by_class'),
     path('logout/', views.custom_logout_view, name='logout'),
+
+    # System Settings URLs
+    path('system-settings/', views.system_settings_dashboard, name='system_settings_dashboard'),
+    path('system-settings/general/', views.general_settings, name='general_settings'),
+    path('system-settings/academic/', views.academic_settings, name='academic_settings'),
+    path('system-settings/database/', views.database_management, name='database_management'),
+    path('system-settings/backup-restore/', views.backup_restore, name='backup_restore'),
+    path('system-settings/user-permissions/', views.user_permissions, name='user_permissions'),
+    path('system-settings/security-logs/', views.security_logs, name='security_logs'),
 ]

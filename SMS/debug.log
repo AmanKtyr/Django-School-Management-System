@@ -17547,3 +17547,203 @@ INFO 2025-04-17 12:49:35,959 "GET /accounts/login/?next=/ HTTP/1.1" 200 5717
 INFO 2025-04-17 12:49:40,943 "POST /accounts/login/ HTTP/1.1" 302 0
 INFO 2025-04-17 12:49:40,996 "GET / HTTP/1.1" 200 55751
 INFO 2025-04-17 12:49:41,192 "GET /static/dist/css/style.css?v=1744874381186 HTTP/1.1" 200 42552
+INFO 2025-04-17 12:53:06,439 "GET /site-config HTTP/1.1" 200 33170
+INFO 2025-04-17 12:53:06,546 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-17 12:53:06,845 "GET /static/dist/css/style.css?v=1744874586834 HTTP/1.1" 200 42552
+INFO 2025-04-17 12:54:08,033 "GET /site-config HTTP/1.1" 200 35135
+INFO 2025-04-17 12:54:08,375 "GET /static/dist/css/style.css?v=1744874648354 HTTP/1.1" 200 42552
+INFO 2025-04-17 12:54:18,494 Watching for file changes with StatReloader
+INFO 2025-04-17 12:54:19,770 "GET /fees/settings/ HTTP/1.1" 200 37434
+INFO 2025-04-17 12:54:19,850 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+WARNING 2025-04-17 12:54:19,876 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+INFO 2025-04-17 12:54:20,132 "GET /static/dist/css/style.css?v=1744874660110 HTTP/1.1" 200 42552
+INFO 2025-04-17 12:54:31,950 "GET / HTTP/1.1" 200 57701
+INFO 2025-04-17 12:54:32,545 "GET /static/dist/css/style.css?v=1744874672540 HTTP/1.1" 200 42552
+INFO 2025-04-17 12:54:36,324 "GET /fees/settings/ HTTP/1.1" 200 37434
+WARNING 2025-04-17 12:54:36,432 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+INFO 2025-04-17 12:54:36,721 "GET /static/dist/css/style.css?v=1744874676715 HTTP/1.1" 200 42552
+INFO 2025-04-17 12:54:40,462 "GET /site-config HTTP/1.1" 200 35135
+INFO 2025-04-17 12:54:40,628 "GET /static/dist/css/style.css?v=1744874680617 HTTP/1.1" 200 42552
+INFO 2025-04-17 12:54:43,693 "GET /current-session/ HTTP/1.1" 200 31746
+INFO 2025-04-17 12:54:43,860 "GET /static/dist/css/style.css?v=1744874683849 HTTP/1.1" 200 42552
+INFO 2025-04-17 12:55:02,193 "GET /term/list/ HTTP/1.1" 200 33353
+INFO 2025-04-17 12:55:02,365 "GET /static/dist/css/style.css?v=1744874702355 HTTP/1.1" 200 42552
+INFO 2025-04-17 12:55:12,733 "GET /session/list/ HTTP/1.1" 200 32733
+INFO 2025-04-17 12:55:12,893 "GET /static/dist/css/style.css?v=1744874712883 HTTP/1.1" 200 42552
+INFO 2025-04-17 12:55:16,017 "GET /subject/list/ HTTP/1.1" 200 33127
+INFO 2025-04-17 12:55:16,182 "GET /static/dist/css/style.css?v=1744874716172 HTTP/1.1" 200 42552
+INFO 2025-04-17 12:57:13,816 "GET /subject/list/ HTTP/1.1" 200 33090
+INFO 2025-04-17 12:57:13,902 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-17 12:57:14,156 "GET /static/dist/css/style.css?v=1744874834147 HTTP/1.1" 200 42552
+INFO 2025-04-17 12:57:24,970 Watching for file changes with StatReloader
+INFO 2025-04-17 12:57:27,728 "GET /current-session/ HTTP/1.1" 200 31709
+INFO 2025-04-17 12:57:28,052 "GET /static/dist/css/style.css?v=1744874848046 HTTP/1.1" 200 42552
+INFO 2025-04-17 12:57:31,370 "GET / HTTP/1.1" 200 57664
+INFO 2025-04-17 12:57:31,951 "GET /static/dist/css/style.css?v=1744874851947 HTTP/1.1" 200 42552
+INFO 2025-04-17 12:57:34,472 "GET /current-session/ HTTP/1.1" 200 31709
+INFO 2025-04-17 12:57:34,779 "GET /static/dist/css/style.css?v=1744874854773 HTTP/1.1" 200 42552
+INFO 2025-04-17 12:58:42,101 "GET /current-session/ HTTP/1.1" 200 31709
+INFO 2025-04-17 12:58:42,185 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-17 12:58:42,438 "GET /static/dist/css/style.css?v=1744874922431 HTTP/1.1" 200 42552
+INFO 2025-04-17 12:58:55,750 "GET /current-session/ HTTP/1.1" 200 31709
+INFO 2025-04-17 12:58:56,074 "GET /static/dist/css/style.css?v=1744874936070 HTTP/1.1" 200 42552
+INFO 2025-04-17 12:58:57,873 "GET /current-session/ HTTP/1.1" 200 31709
+INFO 2025-04-17 12:58:58,021 "GET /static/dist/css/style.css?v=1744874938015 HTTP/1.1" 200 42552
+INFO 2025-04-17 12:59:15,533 "GET /current-session/ HTTP/1.1" 200 31712
+INFO 2025-04-17 12:59:15,707 "GET /static/dist/css/style.css?v=1744874955703 HTTP/1.1" 200 42552
+INFO 2025-04-17 12:59:23,239 "GET /current-session/ HTTP/1.1" 200 31712
+INFO 2025-04-17 12:59:23,379 "GET /static/dist/css/style.css?v=1744874963373 HTTP/1.1" 200 42552
+INFO 2025-04-17 12:59:28,412 "GET /site-config HTTP/1.1" 200 35101
+INFO 2025-04-17 12:59:28,598 "GET /static/dist/css/style.css?v=1744874968571 HTTP/1.1" 200 42552
+INFO 2025-04-17 12:59:36,409 "GET /current-session/ HTTP/1.1" 200 31712
+INFO 2025-04-17 12:59:36,555 "GET /static/dist/css/style.css?v=1744874976551 HTTP/1.1" 200 42552
+INFO 2025-04-17 12:59:44,231 Watching for file changes with StatReloader
+INFO 2025-04-17 12:59:56,252 "GET / HTTP/1.1" 200 57667
+INFO 2025-04-17 12:59:57,166 "GET /static/dist/css/style.css?v=1744874997101 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:00:18,239 "GET / HTTP/1.1" 200 57380
+INFO 2025-04-17 13:00:18,312 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-17 13:00:18,653 "GET /static/dist/css/style.css?v=1744875018647 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:00:29,380 "GET /site-config HTTP/1.1" 200 34813
+INFO 2025-04-17 13:00:29,546 "GET /static/dist/css/style.css?v=1744875029542 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:02:04,238 "GET /site-config HTTP/1.1" 200 35087
+INFO 2025-04-17 13:02:04,326 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-17 13:02:04,636 "GET /static/dist/css/style.css?v=1744875124630 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:02:36,987 "GET /site-config HTTP/1.1" 200 35107
+INFO 2025-04-17 13:02:37,372 "GET /static/dist/css/style.css?v=1744875157363 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:04:10,848 "GET /site-config HTTP/1.1" 200 35107
+INFO 2025-04-17 13:04:10,919 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-17 13:04:11,072 "GET /static/dist/css/style.css?v=1744875251068 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:04:43,355 "GET /site-config HTTP/1.1" 200 35107
+INFO 2025-04-17 13:04:43,615 "GET /static/dist/css/style.css?v=1744875283612 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:05:31,284 "GET /site-config HTTP/1.1" 200 35107
+INFO 2025-04-17 13:05:31,463 "GET /static/dist/css/style.css?v=1744875331456 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:06:27,605 "GET /site-config HTTP/1.1" 200 35107
+INFO 2025-04-17 13:06:27,697 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-17 13:06:27,946 "GET /static/dist/css/style.css?v=1744875387937 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:06:29,851 "GET /site-config HTTP/1.1" 200 35107
+INFO 2025-04-17 13:06:30,170 "GET /static/dist/css/style.css?v=1744875390166 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:07:23,353 "GET /site-config HTTP/1.1" 200 35107
+INFO 2025-04-17 13:07:23,537 "GET /static/dist/css/style.css?v=1744875443528 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:10:29,101 "GET /site-config HTTP/1.1" 200 35107
+INFO 2025-04-17 13:10:29,196 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-17 13:10:29,439 "GET /static/dist/css/style.css?v=1744875629434 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:11:03,213 "GET /site-config HTTP/1.1" 200 35107
+INFO 2025-04-17 13:11:03,474 "GET /static/dist/css/style.css?v=1744875663468 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:13:00,347 "GET /site-config HTTP/1.1" 200 35107
+INFO 2025-04-17 13:13:00,529 "GET /static/dist/css/style.css?v=1744875780524 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:13:58,658 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-17 13:14:00,324 Watching for file changes with StatReloader
+INFO 2025-04-17 13:14:08,907 "GET /site-config HTTP/1.1" 200 35107
+INFO 2025-04-17 13:14:08,999 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-17 13:14:09,383 "GET /static/dist/css/style.css?v=1744875849284 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:14:10,340 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-17 13:14:11,827 Watching for file changes with StatReloader
+INFO 2025-04-17 13:14:20,869 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-17 13:14:21,877 Watching for file changes with StatReloader
+INFO 2025-04-17 13:14:33,899 D:\Sipher Web\Django School Management System\SMS\apps\corecode\urls.py changed, reloading.
+INFO 2025-04-17 13:14:34,957 Watching for file changes with StatReloader
+INFO 2025-04-17 13:14:49,489 "GET /site-config HTTP/1.1" 200 35107
+INFO 2025-04-17 13:14:49,892 "GET /static/dist/css/style.css?v=1744875889820 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:14:55,653 "GET /site-config HTTP/1.1" 200 35107
+INFO 2025-04-17 13:14:55,953 "GET /static/dist/css/style.css?v=1744875895949 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:17:51,425 "GET /site-config HTTP/1.1" 200 35107
+INFO 2025-04-17 13:17:51,498 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-17 13:17:51,652 "GET /static/dist/css/style.css?v=1744876071647 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:17:53,347 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-17 13:17:55,184 Watching for file changes with StatReloader
+INFO 2025-04-17 13:18:27,305 "GET /site-config HTTP/1.1" 200 35107
+INFO 2025-04-17 13:18:27,606 "GET /static/dist/css/style.css?v=1744876107549 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:18:36,294 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-17 13:18:38,241 Watching for file changes with StatReloader
+INFO 2025-04-17 13:18:47,105 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-17 13:18:49,560 Watching for file changes with StatReloader
+INFO 2025-04-17 13:19:02,501 D:\Sipher Web\Django School Management System\SMS\apps\corecode\urls.py changed, reloading.
+INFO 2025-04-17 13:19:03,674 Watching for file changes with StatReloader
+INFO 2025-04-17 13:19:17,889 D:\Sipher Web\Django School Management System\SMS\apps\corecode\urls.py changed, reloading.
+INFO 2025-04-17 13:19:19,011 Watching for file changes with StatReloader
+INFO 2025-04-17 13:19:41,148 D:\Sipher Web\Django School Management System\SMS\apps\corecode\urls.py changed, reloading.
+INFO 2025-04-17 13:19:42,280 Watching for file changes with StatReloader
+INFO 2025-04-17 13:21:00,383 "GET /site-config HTTP/1.1" 200 35532
+INFO 2025-04-17 13:21:00,814 "GET /static/dist/css/style.css?v=1744876260736 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:21:12,720 "GET /system-settings/academic/ HTTP/1.1" 200 49579
+INFO 2025-04-17 13:21:13,057 "GET /static/dist/css/style.css?v=1744876273030 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:21:21,653 "GET /system-settings/database/ HTTP/1.1" 200 55340
+INFO 2025-04-17 13:21:21,828 "GET /static/dist/css/style.css?v=1744876281820 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:21:28,054 "GET /system-settings/ HTTP/1.1" 200 42924
+INFO 2025-04-17 13:21:28,118 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-17 13:21:28,256 "GET /static/dist/css/style.css?v=1744876288249 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:21:54,465 "GET /system-settings/backup-restore/ HTTP/1.1" 200 61149
+INFO 2025-04-17 13:21:54,669 "GET /static/dist/css/style.css?v=1744876314653 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:22:15,478 "GET /system-settings/ HTTP/1.1" 200 42924
+INFO 2025-04-17 13:22:15,669 "GET /static/dist/css/style.css?v=1744876335660 HTTP/1.1" 200 42552
+ERROR 2025-04-17 13:22:32,969 Internal Server Error: /system-settings/security-logs/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\views.py", line 625, in security_logs
+    return render(request, 'corecode/security_logs.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: corecode/security_logs.html
+ERROR 2025-04-17 13:22:32,973 "GET /system-settings/security-logs/ HTTP/1.1" 500 95593
+INFO 2025-04-17 13:23:08,228 "GET /system-settings/general/ HTTP/1.1" 200 45182
+INFO 2025-04-17 13:23:08,427 "GET /static/dist/css/style.css?v=1744876388416 HTTP/1.1" 200 42552
+ERROR 2025-04-17 13:23:37,021 Internal Server Error: /system-settings/user-permissions/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\views.py", line 616, in user_permissions
+    return render(request, 'corecode/user_permissions.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: corecode/user_permissions.html
+ERROR 2025-04-17 13:23:37,021 "GET /system-settings/user-permissions/ HTTP/1.1" 500 96511
+INFO 2025-04-17 13:23:41,666 "GET /system-settings/backup-restore/ HTTP/1.1" 200 61149
+INFO 2025-04-17 13:23:41,860 "GET /static/dist/css/style.css?v=1744876421836 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:23:43,938 "GET /system-settings/database/ HTTP/1.1" 200 55340
+INFO 2025-04-17 13:23:44,139 "GET /static/dist/css/style.css?v=1744876424123 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:24:32,875 "GET /session/list/ HTTP/1.1" 200 33131
+INFO 2025-04-17 13:24:33,210 "GET /static/dist/css/style.css?v=1744876473201 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:24:47,012 "GET /term/list/ HTTP/1.1" 200 33757
+INFO 2025-04-17 13:24:47,307 "GET /static/dist/css/style.css?v=1744876487285 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:24:52,108 "GET /current-session/ HTTP/1.1" 200 32153
+INFO 2025-04-17 13:24:52,273 "GET /static/dist/css/style.css?v=1744876492261 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:24:55,746 "GET /term/create/?next=current-session/ HTTP/1.1" 200 31782
+INFO 2025-04-17 13:24:55,898 "GET /static/dist/css/style.css?v=1744876495892 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:24:58,697 "GET /current-session/ HTTP/1.1" 200 32153
+INFO 2025-04-17 13:24:58,868 "GET /static/dist/css/style.css?v=1744876498859 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:25:06,821 "GET /subject/list/ HTTP/1.1" 200 33540
+INFO 2025-04-17 13:25:06,978 "GET /static/dist/css/style.css?v=1744876506967 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:25:14,122 "GET /class/list/ HTTP/1.1" 200 34079
+INFO 2025-04-17 13:25:14,291 "GET /static/dist/css/style.css?v=1744876514276 HTTP/1.1" 200 42552
+INFO 2025-04-17 13:25:27,009 "GET /session/list/ HTTP/1.1" 200 33131
+INFO 2025-04-17 13:25:27,068 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-17 13:25:27,191 "GET /static/dist/css/style.css?v=1744876527182 HTTP/1.1" 200 42552
