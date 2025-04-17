@@ -502,7 +502,7 @@
                           <p>General Settings</p>
                       </a>
                   </li>
-                  <li class="nav-item">
+                  {% comment %} <li class="nav-item">
                       <a href="{% url 'academic_settings' %}" class="nav-link {% if request.resolver_match.url_name == 'academic_settings' %}active{% endif %}">
                           <i class="nav-icon fas fa-calendar-alt" style="color: #fd7e14;"></i>
                           <p>Academic Settings</p>
@@ -531,7 +531,7 @@
                           <i class="nav-icon fas fa-shield-alt" style="color: #17a2b8;"></i>
                           <p>Security & Logs</p>
                       </a>
-                  </li>
+                  </li> {% endcomment %}
               </ul>
           </li>
       </ul>
