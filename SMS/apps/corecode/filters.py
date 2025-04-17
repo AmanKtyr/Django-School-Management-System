@@ -10,18 +10,16 @@ class ClassSectionFilterForm(forms.Form):
         label="Select Class",
         widget=forms.Select(attrs={
             'class': 'form-select',
-            'onchange': 'this.form.submit()',
             'id': 'class-filter'
         }),
     )
-    
+
     section = forms.ChoiceField(
         choices=[],
         required=False,
         label="Select Section",
         widget=forms.Select(attrs={
             'class': 'form-select',
-            'onchange': 'this.form.submit()',
             'id': 'section-filter'
         }),
     )

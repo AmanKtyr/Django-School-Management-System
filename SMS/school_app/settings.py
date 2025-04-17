@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     "apps.corecode.apps.CorecodeConfig",
     "apps.students",
     "apps.staffs",
-    "apps.result",
+    # "apps.result", # Removed
     "apps.NonTeachingStaffs",
     "apps.attendance",
     'apps.fees',

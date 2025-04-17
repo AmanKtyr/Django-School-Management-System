@@ -166,52 +166,51 @@
       </div>
     </div>
     <div class="card-body collapse show" id="filterCollapse">
-      <form method="GET" action="" id="filter-form">
-        <div class="row g-3">
-          <div class="col-md-4">
-            <label for="class-filter" class="form-label fw-bold">
-              <i class="fas fa-chalkboard text-primary me-1"></i> Select Class:
-            </label>
-            <div class="input-group">
-              <span class="input-group-text bg-primary text-white"><i class="fas fa-graduation-cap"></i></span>
-              <select id="class-filter" name="class_id" class="form-select form-control">
-                <option value="" class="fw-bold text-secondary">Choose a Class</option>
-                {% for class in classes %}
-                <option value="{{ class.id }}" class="fw-bold text-dark"
-                  {% if class.id|stringformat:"s" == selected_class_id %}selected{% endif %}>
-                  {{ class.name }}
-                </option>
-                {% endfor %}
-              </select>
-            </div>
-          </div>
+      <form method="GET" action="" id="filter-form" class="row g-3">
+        <div class="col-md-3">
+          <label for="class-filter" class="form-label fw-bold">
+            <i class="fas fa-chalkboard text-primary me-1"></i> Select Class:
+          </label>
+          <select id="class-filter" name="class_id" class="form-select">
+            <option value="" class="fw-bold text-secondary">Choose a Class</option>
+            {% for class in classes %}
+            <option value="{{ class.id }}" class="fw-bold text-dark"
+              {% if class.id|stringformat:"s" == selected_class_id %}selected{% endif %}>
+              {{ class.name }}
+            </option>
+            {% endfor %}
+          </select>
+        </div>
 
-          <div class="col-md-4">
-            <label for="section-filter" class="form-label fw-bold">
-              <i class="fas fa-door-open text-primary me-1"></i> Select Section:
-            </label>
-            <div class="input-group">
-              <span class="input-group-text bg-secondary text-white"><i class="fas fa-puzzle-piece"></i></span>
-              <select id="section-filter" name="section" class="form-select form-control">
-                <option value="" class="fw-bold text-secondary">Choose a Section</option>
-                {% if sections %}
-                  {% for section in sections %}
-                  <option value="{{ section }}" class="fw-bold text-dark"
-                    {% if section == selected_section %}selected{% endif %}>
-                    {{ section }}
-                  </option>
-                  {% endfor %}
-                {% endif %}
-              </select>
-            </div>
-          </div>
+        <div class="col-md-2">
+          <label for="section-filter" class="form-label fw-bold">
+            <i class="fas fa-door-open text-primary me-1"></i> Select Section:
+          </label>
+          <select id="section-filter" name="section" class="form-select">
+            <option value="" class="fw-bold text-secondary">Choose a Section</option>
+            {% if sections %}
+              {% for section in sections %}
+              <option value="{{ section }}" class="fw-bold text-dark"
+                {% if section == selected_section %}selected{% endif %}>
+                {{ section }}
+              </option>
+              {% endfor %}
+            {% endif %}
+          </select>
+        </div>
 
-          <div class="col-md-4">
+        <div class="col-md-3">
+          <label class="form-label fw-bold">&nbsp;</label>
+          <button type="submit" class="btn btn-primary w-70">
+              <i class="fas fa-filter me-2"></i>Apply Filter
+          </button>
+        </div>
+
+        <div class="col-md-4">
             <label for="attendance-date" class="form-label fw-bold">
               <i class="fas fa-calendar-alt text-primary me-1"></i> Attendance Date:
             </label>
             <div class="input-group">
-              <span class="input-group-text bg-info text-white"><i class="fas fa-calendar"></i></span>
               <input type="date" id="attendance-date" name="attendance_date"
                      class="form-control"
                      value="{{ attendance_date|date:'Y-m-d' }}">
@@ -221,7 +220,8 @@
             </div>
             <small class="text-muted mt-1 d-block"><i class="fas fa-info-circle me-1"></i> You can only take attendance for today or update the past week's attendance</small>
           </div>
-        </div>
+
+          
       </form>
     </div>
     <div class="card-footer bg-light">
@@ -811,14 +811,10 @@
           });
       }
 
-      // Submit the form
-      $('#filter-form').submit();
+      // Don't auto-submit, wait for Apply Filter button
     });
 
-    // Handle section filter change
-    $('#section-filter').on('change', function() {
-      $('#filter-form').submit();
-    });
+    // Don't auto-submit on section change, wait for Apply Filter button
 
     // Handle attendance button clicks
     $(".attendance-btn").click(function () {

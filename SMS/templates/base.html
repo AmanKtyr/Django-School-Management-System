@@ -11,6 +11,17 @@
 
   <title>{{ profile.college_name | default:"MySchool" }}</title>
 
+  <!-- Favicon -->
+  {% if profile.college_logo %}
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'dist/img/favicon/apple-touch-icon.png' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'dist/img/favicon/favicon-32x32.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'dist/img/favicon/favicon-16x16.png' %}">
+  <link rel="icon" href="{% static 'dist/img/favicon/favicon.ico' %}">
+  {% else %}
+  <!-- Default favicon if no college logo is available -->
+  <link rel="icon" href="{% static 'dist/img/favicon/default-favicon.ico' %}">
+  {% endif %}
+
   <!-- Critical CSS inlined to prevent FOUC (Flash of Unstyled Content) -->
   <style>
     /* Critical styles to prevent flash */
@@ -353,55 +364,7 @@
           </li>
 
 
-          <li class="nav-header">Exams</li>
-          <li class="nav-item has-treeview">
-              <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-pen" style="color: #ff6600; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);"></i>
-                  <p>Examinations<i class="fas fa-angle-left right"></i></p>
-              </a>
-              <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                      <a href="#" class="nav-link">
-                          <i class="fas fa-calendar-alt nav-icon" style="color: #00ccff;"></i>
-                          <p>Exam Schedule</p>
-                      </a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="#" class="nav-link">
-                          <i class="fas fa-poll nav-icon" style="color: #ff33cc;"></i>
-                          <p>Exam Results</p>
-                      </a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="#" class="nav-link">
-                          <i class="fas fa-gavel nav-icon" style="color: #66ff66;"></i>
-                          <p>Exam Rules</p>
-                      </a>
-                  </li>
-              </ul>
-          </li>
 
-          <li class="nav-header">Examinations</li>
-          <li class="nav-item has-treeview">
-              <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-clipboard-list" style="color: #ff5050;"></i>
-                  <p>Results<i class="fas fa-angle-left right"></i></p>
-              </a>
-              <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                      <a href="{% url 'create-result' %}" class="nav-link">
-                          <i class="fas fa-file-alt nav-icon" style="color: #6600cc;"></i>
-                          <p>Create Results</p>
-                      </a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="{% url 'view-results' %}" class="nav-link">
-                          <i class="fas fa-eye nav-icon" style="color: #ffcc00;"></i>
-                          <p>View Results</p>
-                      </a>
-                  </li>
-              </ul>
-          </li>
 
           <li class="nav-header">Documents</li>
           <li class="nav-item has-treeview">
@@ -423,11 +386,11 @@
                       </a>
                   </li>
                   <li class="nav-item">
-                      <a href="#" class="nav-link">
-                          <i class="fas fa-file-alt nav-icon" style="color: #ff3366;"></i>
-                          <p>Exam Documents</p>
-                      </a>
-                  </li>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-file-alt nav-icon" style="color: #ff3366;"></i>
+                        <p>Exam Documents</p>
+                    </a>
+                </li>
               </ul>
           </li>
 

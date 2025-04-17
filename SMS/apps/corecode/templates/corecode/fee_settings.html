@@ -301,12 +301,18 @@ $(document).ready(function () {
 
     $('#class-filter').change(function () {
         $('#selectedClassId').val($(this).val());
-        $('#filter-form').submit();
+        // Don't auto-submit, wait for Apply Filter button
     });
 
     $('#section-filter').change(function () {
         $('#selectedSection').val($(this).val());
-        $('#filter-form').submit();
+        // Don't auto-submit, wait for Apply Filter button
+    });
+
+    // Update hidden fields when form is submitted
+    $('#filter-form').on('submit', function() {
+        $('#selectedClassId').val($('#class-filter').val());
+        $('#selectedSection').val($('#section-filter').val());
     });
 });
 </script>

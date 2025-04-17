@@ -133,23 +133,7 @@
             </div>
         </div>
         <div class="card-body collapse show" id="filterCollapse">
-            <form method="GET" class="row g-3" id="filter-form">
-                <div class="col-md-4">
-                    <label class="form-label"><i class="fas fa-school me-2"></i>Class</label>
-                    {{ filter_form.class_name }}
-                </div>
-                <div class="col-md-4">
-                    <label class="form-label"><i class="fas fa-door-open me-2"></i>Section</label>
-                    {{ filter_form.section }}
-                </div>
-                <div class="col-md-4">
-                    <label class="form-label"><i class="fas fa-search me-2"></i>Search</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control" name="search" placeholder="Name or Registration No." value="{{ request.GET.search }}">
-                        <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
-                    </div>
-                </div>
-            </form>
+            {% include 'includes/class_section_filter.html' with filter_form=filter_form show_search=True %}
         </div>
     </div>
 
@@ -400,14 +384,27 @@
 {% block extra_js %}
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Auto-submit form when filters change
+    // No auto-submit, form will be submitted when Apply Filter button is clicked
     const form = document.getElementById('filter-form');
-    const formInputs = form.querySelectorAll('select, input[type="text"]');
+    const classSelect = document.getElementById('class-filter');
+    const sectionSelect = document.getElementById('section-filter');
 
-    formInputs.forEach(input => {
-        input.addEventListener('change', function() {
-            form.submit();
-        });
+    // Update sections when class changes
+    classSelect.addEventListener('change', function() {
+        const classId = this.value;
+        // Clear section selection when class changes
+        sectionSelect.innerHTML = '<option value="">-- All Sections --</option>';
+
+        if(classId) {
+            fetch(`/api/get-sections/${classId}/`)
+                .then(response => response.json())
+                .then(data => {
+                    data.sections.forEach(section => {
+                        const option = new Option(section.name, section.id);
+                        sectionSelect.add(option);
+                    });
+                });
+        }
     });
 
     // Add animation effects
