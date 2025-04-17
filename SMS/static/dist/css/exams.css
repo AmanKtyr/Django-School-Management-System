@@ -1,0 +1,242 @@
+/* Exam Module Styles */
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0.5rem;
+    height: 100%;
+    width: 2px;
+    background-color: #e3e6ec;
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-item-marker {
+    position: absolute;
+    left: -1.5rem;
+    width: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-item-marker-text {
+    font-size: 0.75rem;
+    color: #a2acba;
+    margin-bottom: 0.25rem;
+    white-space: nowrap;
+}
+
+.timeline-item-marker-indicator {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 100%;
+    background-color: #fff;
+    border: 2px solid #e3e6ec;
+}
+
+.timeline-item-content {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    border-left: 3px solid #e3e6ec;
+    margin-left: 0.5rem;
+    background-color: #f8f9fa;
+    font-size: 0.875rem;
+}
+
+/* Exam Card Styles */
+.exam-card {
+    transition: all 0.2s ease-in-out;
+    border: none;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(33, 40, 50, 0.15);
+}
+
+.exam-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 2rem 0 rgba(33, 40, 50, 0.25);
+}
+
+.exam-card .card-header {
+    padding: 1rem 1.35rem;
+    margin-bottom: 0;
+    background-color: rgba(33, 40, 50, 0.03);
+    border-bottom: 1px solid rgba(33, 40, 50, 0.125);
+}
+
+.exam-card .card-footer {
+    padding: 1rem 1.35rem;
+    background-color: rgba(33, 40, 50, 0.03);
+    border-top: 1px solid rgba(33, 40, 50, 0.125);
+}
+
+/* Exam Status Badges */
+.badge-pending {
+    background-color: #f4a100;
+    color: #fff;
+}
+
+.badge-ongoing {
+    background-color: #0061f2;
+    color: #fff;
+}
+
+.badge-completed {
+    background-color: #00ac69;
+    color: #fff;
+}
+
+.badge-cancelled {
+    background-color: #e81500;
+    color: #fff;
+}
+
+/* Seat Plan Styles */
+.seat-plan {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.seat {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.seat-empty {
+    background-color: #e3e6ec;
+    color: #687281;
+}
+
+.seat-assigned {
+    background-color: #0061f2;
+    color: #fff;
+}
+
+.seat-absent {
+    background-color: #e81500;
+    color: #fff;
+}
+
+/* Print Styles for Admit Cards and Result Cards */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    .print-only {
+        display: block !important;
+    }
+    
+    .admit-card {
+        page-break-inside: avoid;
+        margin: 0;
+        padding: 0;
+        border: 1px solid #000;
+    }
+    
+    .result-card {
+        page-break-inside: avoid;
+        margin: 0;
+        padding: 0;
+        border: 1px solid #000;
+    }
+}
+
+/* Responsive Tables */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 767.98px) {
+    .table-responsive-md {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* Custom Form Styles */
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #0061f2;
+    box-shadow: 0 0 0 0.25rem rgba(0, 97, 242, 0.25);
+}
+
+/* Question Paper Upload Zone */
+.upload-zone {
+    border: 2px dashed #a2acba;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.upload-zone:hover {
+    border-color: #0061f2;
+    background-color: rgba(0, 97, 242, 0.05);
+}
+
+.upload-zone i {
+    font-size: 3rem;
+    color: #a2acba;
+    margin-bottom: 1rem;
+}
+
+.upload-zone:hover i {
+    color: #0061f2;
+}
+
+/* Marks Entry Table */
+.marks-table th, .marks-table td {
+    vertical-align: middle;
+}
+
+.marks-table input[type="number"] {
+    width: 5rem;
+}
+
+/* Result Analysis Charts */
+.chart-container {
+    position: relative;
+    height: 300px;
+    margin-bottom: 1.5rem;
+}
+
+/* Invigilator Schedule Card */
+.invigilator-card {
+    border-left: 5px solid #0061f2;
+}
+
+.invigilator-card.chief {
+    border-left: 5px solid #e81500;
+}

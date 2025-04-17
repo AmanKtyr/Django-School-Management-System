@@ -1,0 +1,291 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load widget_tweaks %}
+
+{% block breadcrumb-left %}
+<div class="breadcrumb-container">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-chevron">
+      <li class="breadcrumb-item">
+        <a href="{% url 'home' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-home"></i> Home
+        </a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="{% url 'exams:dashboard' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-graduation-cap"></i> Examination
+        </a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        <i class="fas fa-id-card"></i> Admit Cards
+      </li>
+    </ol>
+  </nav>
+</div>
+{% endblock breadcrumb-left %}
+
+{% block title-icon %}fas fa-id-card{% endblock title-icon %}
+
+{% block title %}Admit Cards{% endblock title %}
+
+{% block subtitle %}Generate and manage student admit cards{% endblock subtitle %}
+
+{% block content %}
+<div class="container-fluid">
+  <!-- Filter Card -->
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <div class="card shadow-sm border-0 rounded-3">
+        <div class="card-header bg-primary text-white">
+          <h5 class="mb-0"><i class="fas fa-filter me-2"></i>Filter Admit Cards</h5>
+        </div>
+        <div class="card-body">
+          <form method="get" class="row g-3">
+            <div class="col-md-3">
+              <label for="exam" class="form-label">Exam</label>
+              <select name="exam" id="exam" class="form-select">
+                <option value="">-- All Exams --</option>
+                <!-- Options would be populated dynamically -->
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="class" class="form-label">Class</label>
+              <select name="class" id="class" class="form-select">
+                <option value="">-- All Classes --</option>
+                <!-- Options would be populated dynamically -->
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="section" class="form-label">Section</label>
+              <input type="text" name="section" id="section" class="form-control" placeholder="Enter section">
+            </div>
+            <div class="col-md-3">
+              <label for="printed" class="form-label">Print Status</label>
+              <select name="printed" id="printed" class="form-select">
+                <option value="">-- All --</option>
+                <option value="1">Printed</option>
+                <option value="0">Not Printed</option>
+              </select>
+            </div>
+            <div class="col-md-12 d-flex justify-content-end">
+              <button type="submit" class="btn btn-primary me-2">
+                <i class="fas fa-filter me-1"></i> Apply Filter
+              </button>
+              <a href="{% url 'exams:admit_card_list' %}" class="btn btn-secondary me-2">
+                <i class="fas fa-redo me-1"></i> Reset
+              </a>
+              <a href="{% url 'exams:admit_card_generate' %}" class="btn btn-success">
+                <i class="fas fa-plus me-1"></i> Generate Admit Cards
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bulk Actions -->
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <div class="card shadow-sm border-0 rounded-3">
+        <div class="card-header bg-success text-white">
+          <h5 class="mb-0"><i class="fas fa-tasks me-2"></i>Bulk Actions</h5>
+        </div>
+        <div class="card-body">
+          <form method="post" action="{% url 'exams:admit_card_bulk_action' %}" class="row g-3">
+            {% csrf_token %}
+            <div class="col-md-4">
+              <label for="bulk_exam" class="form-label">Select Exam</label>
+              <select name="bulk_exam" id="bulk_exam" class="form-select" required>
+                <option value="">-- Select Exam --</option>
+                <!-- Options would be populated dynamically -->
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="bulk_class" class="form-label">Select Class</label>
+              <select name="bulk_class" id="bulk_class" class="form-select">
+                <option value="">-- All Classes --</option>
+                <!-- Options would be populated dynamically -->
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="bulk_action" class="form-label">Action</label>
+              <div class="d-flex">
+                <select name="bulk_action" id="bulk_action" class="form-select me-2" required>
+                  <option value="">-- Select Action --</option>
+                  <option value="generate">Generate Admit Cards</option>
+                  <option value="print">Print Selected</option>
+                  <option value="delete">Delete Selected</option>
+                </select>
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-play me-1"></i> Execute
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Admit Cards List -->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card shadow-sm border-0 rounded-3">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+          <h5 class="mb-0"><i class="fas fa-id-card me-2"></i>Admit Cards</h5>
+          <div>
+            <a href="{% url 'exams:admit_card_generate' %}" class="btn btn-light btn-sm">
+              <i class="fas fa-plus me-1"></i> Generate
+            </a>
+            <a href="#" class="btn btn-light btn-sm ms-2" id="printSelectedBtn">
+              <i class="fas fa-print me-1"></i> Print Selected
+            </a>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-hover table-striped" id="admitCardTable">
+              <thead class="table-light">
+                <tr>
+                  <th>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="selectAll">
+                      <label class="form-check-label" for="selectAll"></label>
+                    </div>
+                  </th>
+                  <th>S/N</th>
+                  <th>Student</th>
+                  <th>Class</th>
+                  <th>Roll Number</th>
+                  <th>Exam</th>
+                  <th>Generated On</th>
+                  <th>Print Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for card in admit_cards %}
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input card-checkbox" type="checkbox" value="{{ card.id }}" id="card{{ card.id }}">
+                      <label class="form-check-label" for="card{{ card.id }}"></label>
+                    </div>
+                  </td>
+                  <td>{{ forloop.counter }}</td>
+                  <td>{{ card.student.fullname }}</td>
+                  <td>{{ card.student.current_class.name }} {{ card.student.current_section|default:"" }}</td>
+                  <td>{{ card.roll_number }}</td>
+                  <td>{{ card.exam.name }}</td>
+                  <td>{{ card.generated_on|date:"d M, Y" }}</td>
+                  <td>
+                    {% if card.is_printed %}
+                      <span class="badge bg-success">Printed</span>
+                    {% else %}
+                      <span class="badge bg-warning">Not Printed</span>
+                    {% endif %}
+                  </td>
+                  <td>
+                    <div class="btn-group" role="group">
+                      <a href="{% url 'exams:admit_card_view' card.id %}" class="btn btn-sm btn-outline-info" target="_blank">
+                        <i class="fas fa-eye"></i>
+                      </a>
+                      <a href="{% url 'exams:admit_card_print' card.id %}" class="btn btn-sm btn-outline-primary" target="_blank">
+                        <i class="fas fa-print"></i>
+                      </a>
+                      <a href="{% url 'exams:admit_card_delete' card.id %}" class="btn btn-sm btn-outline-danger">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                {% empty %}
+                <tr>
+                  <td colspan="9" class="text-center py-4">
+                    <div class="d-flex flex-column align-items-center">
+                      <i class="fas fa-id-card fa-3x text-muted mb-3"></i>
+                      <h5 class="text-muted">No admit cards found</h5>
+                      <p class="text-muted">Generate admit cards for students to get started</p>
+                      <a href="{% url 'exams:admit_card_generate' %}" class="btn btn-primary mt-2">
+                        <i class="fas fa-plus me-1"></i> Generate Admit Cards
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
+
+{% block morejs %}
+<script>
+  $(document).ready(function() {
+    $('#admitCardTable').DataTable({
+      "paging": true,
+      "lengthChange": true,
+      "searching": true,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+      "columnDefs": [
+        { "orderable": false, "targets": [0, 8] }
+      ],
+      "language": {
+        "emptyTable": "No admit cards found",
+        "zeroRecords": "No matching records found",
+        "info": "Showing _START_ to _END_ of _TOTAL_ entries",
+        "infoEmpty": "Showing 0 to 0 of 0 entries",
+        "infoFiltered": "(filtered from _MAX_ total entries)",
+        "search": "Search:",
+        "paginate": {
+          "first": "First",
+          "last": "Last",
+          "next": "Next",
+          "previous": "Previous"
+        }
+      }
+    });
+    
+    // Select all checkbox
+    $('#selectAll').on('change', function() {
+      $('.card-checkbox').prop('checked', $(this).prop('checked'));
+    });
+    
+    // Print selected button
+    $('#printSelectedBtn').on('click', function(e) {
+      e.preventDefault();
+      
+      var selectedIds = [];
+      $('.card-checkbox:checked').each(function() {
+        selectedIds.push($(this).val());
+      });
+      
+      if (selectedIds.length === 0) {
+        alert('Please select at least one admit card to print.');
+        return;
+      }
+      
+      // Open print page with selected IDs
+      var url = "{% url 'exams:admit_card_print_bulk' %}?ids=" + selectedIds.join(',');
+      window.open(url, '_blank');
+    });
+    
+    // Class and section filter dependency
+    $('#class').on('change', function() {
+      var classId = $(this).val();
+      if (classId) {
+        // This would be implemented with an AJAX call to get sections
+        // For now, just a placeholder
+      }
+    });
+  });
+</script>
+{% endblock morejs %}

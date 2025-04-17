@@ -1,0 +1,394 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block breadcrumb-left %}
+<div class="breadcrumb-container">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-chevron">
+      <li class="breadcrumb-item">
+        <a href="{% url 'home' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-home"></i> Home
+        </a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="{% url 'exams:dashboard' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-graduation-cap"></i> Examination
+        </a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="{% url 'exams:exam_list' %}" class="text-decoration-none fw-bold">
+          <i class="fas fa-calendar-alt"></i> Exams
+        </a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        <i class="fas fa-eye"></i> {{ exam.name }}
+      </li>
+    </ol>
+  </nav>
+</div>
+{% endblock breadcrumb-left %}
+
+{% block title-icon %}fas fa-eye{% endblock title-icon %}
+
+{% block title %}{{ exam.name }}{% endblock title %}
+
+{% block subtitle %}{{ exam.exam_type.name }} - {{ exam.session.name }} {{ exam.term.name }}{% endblock subtitle %}
+
+{% block content %}
+<div class="container-fluid">
+  <!-- Exam Details Card -->
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <div class="card shadow">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+          <h5 class="mb-0"><i class="fas fa-info-circle me-2"></i>Exam Details</h5>
+          <div>
+            <a href="{% url 'exams:exam_update' exam.id %}" class="btn btn-light btn-sm me-2">
+              <i class="fas fa-edit me-1"></i> Edit
+            </a>
+            <a href="{% url 'exams:exam_delete' exam.id %}" class="btn btn-danger btn-sm">
+              <i class="fas fa-trash me-1"></i> Delete
+            </a>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="width: 30%">Exam Name</th>
+                  <td>{{ exam.name }}</td>
+                </tr>
+                <tr>
+                  <th>Exam Type</th>
+                  <td>{{ exam.exam_type.name }}</td>
+                </tr>
+                <tr>
+                  <th>Academic Session</th>
+                  <td>{{ exam.session.name }}</td>
+                </tr>
+                <tr>
+                  <th>Term</th>
+                  <td>{{ exam.term.name }}</td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-md-6">
+              <table class="table table-bordered">
+                <tr>
+                  <th style="width: 30%">Start Date</th>
+                  <td>{{ exam.start_date|date:"d M, Y" }}</td>
+                </tr>
+                <tr>
+                  <th>End Date</th>
+                  <td>{{ exam.end_date|date:"d M, Y" }}</td>
+                </tr>
+                <tr>
+                  <th>Status</th>
+                  <td>
+                    {% if exam.status == 'pending' %}
+                      <span class="badge bg-warning">Pending</span>
+                    {% elif exam.status == 'ongoing' %}
+                      <span class="badge bg-success">Ongoing</span>
+                    {% elif exam.status == 'completed' %}
+                      <span class="badge bg-info">Completed</span>
+                    {% elif exam.status == 'cancelled' %}
+                      <span class="badge bg-danger">Cancelled</span>
+                    {% endif %}
+                  </td>
+                </tr>
+                <tr>
+                  <th>Description</th>
+                  <td>{{ exam.description|default:"No description provided" }}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Actions -->
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <div class="card shadow">
+        <div class="card-header bg-success text-white">
+          <h5 class="mb-0"><i class="fas fa-bolt me-2"></i>Quick Actions</h5>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <a href="#" class="btn btn-outline-primary w-100 py-3 d-flex align-items-center">
+                <i class="fas fa-calendar-plus fa-2x me-3"></i>
+                <div class="text-start">
+                  <div class="fw-bold">Add Schedule</div>
+                  <small>Create exam schedule</small>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 mb-3">
+              <a href="#" class="btn btn-outline-success w-100 py-3 d-flex align-items-center">
+                <i class="fas fa-file-upload fa-2x me-3"></i>
+                <div class="text-start">
+                  <div class="fw-bold">Upload Question Paper</div>
+                  <small>Add question papers</small>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 mb-3">
+              <a href="#" class="btn btn-outline-warning w-100 py-3 d-flex align-items-center">
+                <i class="fas fa-id-card fa-2x me-3"></i>
+                <div class="text-start">
+                  <div class="fw-bold">Generate Admit Cards</div>
+                  <small>Create admit cards</small>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 mb-3">
+              <a href="#" class="btn btn-outline-info w-100 py-3 d-flex align-items-center">
+                <i class="fas fa-clipboard-check fa-2x me-3"></i>
+                <div class="text-start">
+                  <div class="fw-bold">Enter Marks</div>
+                  <small>Record exam scores</small>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Exam Schedule -->
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <div class="card shadow">
+        <div class="card-header bg-info text-white d-flex justify-content-between align-items-center">
+          <h5 class="mb-0"><i class="fas fa-calendar-alt me-2"></i>Exam Schedule</h5>
+          <a href="#" class="btn btn-light btn-sm">
+            <i class="fas fa-plus me-1"></i> Add Schedule
+          </a>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-hover" id="scheduleTable">
+              <thead>
+                <tr>
+                  <th>S/N</th>
+                  <th>Subject</th>
+                  <th>Class</th>
+                  <th>Section</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Duration</th>
+                  <th>Venue</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for schedule in schedules %}
+                <tr>
+                  <td>{{ forloop.counter }}</td>
+                  <td>{{ schedule.subject.name }}</td>
+                  <td>{{ schedule.student_class.name }}</td>
+                  <td>{{ schedule.section|default:"-" }}</td>
+                  <td>{{ schedule.date|date:"d M, Y" }}</td>
+                  <td>{{ schedule.start_time|time:"h:i A" }} - {{ schedule.end_time|time:"h:i A" }}</td>
+                  <td>{{ schedule.duration_minutes }} mins</td>
+                  <td>{{ schedule.venue|default:"-" }}</td>
+                  <td>
+                    <div class="btn-group" role="group">
+                      <a href="#" class="btn btn-sm btn-outline-primary">
+                        <i class="fas fa-edit"></i>
+                      </a>
+                      <a href="#" class="btn btn-sm btn-outline-danger">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                {% empty %}
+                <tr>
+                  <td colspan="9" class="text-center">No schedules found. <a href="#">Add one now</a>.</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Question Papers -->
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <div class="card shadow">
+        <div class="card-header bg-warning text-white d-flex justify-content-between align-items-center">
+          <h5 class="mb-0"><i class="fas fa-file-alt me-2"></i>Question Papers</h5>
+          <a href="#" class="btn btn-light btn-sm">
+            <i class="fas fa-plus me-1"></i> Add Question Paper
+          </a>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-hover" id="paperTable">
+              <thead>
+                <tr>
+                  <th>S/N</th>
+                  <th>Subject</th>
+                  <th>Class</th>
+                  <th>Section</th>
+                  <th>Total Marks</th>
+                  <th>Passing Marks</th>
+                  <th>Type</th>
+                  <th>Created By</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for paper in question_papers %}
+                <tr>
+                  <td>{{ forloop.counter }}</td>
+                  <td>{{ paper.subject.name }}</td>
+                  <td>{{ paper.student_class.name }}</td>
+                  <td>{{ paper.section|default:"-" }}</td>
+                  <td>{{ paper.total_marks }}</td>
+                  <td>{{ paper.passing_marks }}</td>
+                  <td>
+                    {% if paper.generation_type == 'auto' %}
+                      <span class="badge bg-success">Auto-Generated</span>
+                    {% else %}
+                      <span class="badge bg-primary">Manually Uploaded</span>
+                    {% endif %}
+                  </td>
+                  <td>{{ paper.created_by.fullname|default:"-" }}</td>
+                  <td>
+                    <div class="btn-group" role="group">
+                      {% if paper.file %}
+                      <a href="{{ paper.file.url }}" class="btn btn-sm btn-outline-info" target="_blank">
+                        <i class="fas fa-download"></i>
+                      </a>
+                      {% endif %}
+                      <a href="#" class="btn btn-sm btn-outline-primary">
+                        <i class="fas fa-edit"></i>
+                      </a>
+                      <a href="#" class="btn btn-sm btn-outline-danger">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                {% empty %}
+                <tr>
+                  <td colspan="9" class="text-center">No question papers found. <a href="#">Add one now</a>.</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Statistics -->
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card bg-primary text-white mb-4 shadow">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <h5 class="card-title mb-0">Seat Allocations</h5>
+              <h2 class="mt-2 mb-0">{{ seat_allocations }}</h2>
+            </div>
+            <i class="fas fa-chair fa-3x opacity-50"></i>
+          </div>
+        </div>
+        <div class="card-footer d-flex align-items-center justify-content-between">
+          <a class="small text-white stretched-link" href="#">View Details</a>
+          <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card bg-success text-white mb-4 shadow">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <h5 class="card-title mb-0">Invigilators</h5>
+              <h2 class="mt-2 mb-0">{{ invigilator_assignments }}</h2>
+            </div>
+            <i class="fas fa-user-tie fa-3x opacity-50"></i>
+          </div>
+        </div>
+        <div class="card-footer d-flex align-items-center justify-content-between">
+          <a class="small text-white stretched-link" href="#">View Details</a>
+          <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card bg-warning text-white mb-4 shadow">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <h5 class="card-title mb-0">Admit Cards</h5>
+              <h2 class="mt-2 mb-0">{{ admit_cards }}</h2>
+            </div>
+            <i class="fas fa-id-card fa-3x opacity-50"></i>
+          </div>
+        </div>
+        <div class="card-footer d-flex align-items-center justify-content-between">
+          <a class="small text-white stretched-link" href="#">View Details</a>
+          <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card bg-info text-white mb-4 shadow">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <h5 class="card-title mb-0">Marks Entries</h5>
+              <h2 class="mt-2 mb-0">{{ marks }}</h2>
+            </div>
+            <i class="fas fa-clipboard-check fa-3x opacity-50"></i>
+          </div>
+        </div>
+        <div class="card-footer d-flex align-items-center justify-content-between">
+          <a class="small text-white stretched-link" href="#">View Details</a>
+          <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
+
+{% block morejs %}
+<script>
+  $(document).ready(function() {
+    $('#scheduleTable').DataTable({
+      "paging": true,
+      "lengthChange": true,
+      "searching": true,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+    
+    $('#paperTable').DataTable({
+      "paging": true,
+      "lengthChange": true,
+      "searching": true,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
+{% endblock morejs %}

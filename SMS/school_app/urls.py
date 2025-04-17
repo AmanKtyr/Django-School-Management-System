@@ -30,4 +30,6 @@ urlpatterns = [
     path("non-teaching-staffs/", include("apps.NonTeachingStaffs.urls")),
    # Added namespace
      path('fees/', include('apps.fees.urls', namespace='fees')),
+    # Exams app
+    path('exams/', include('apps.exams.urls', namespace='exams')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

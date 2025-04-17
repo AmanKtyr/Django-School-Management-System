@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "apps.NonTeachingStaffs",
     "apps.attendance",
     'apps.fees',
+    'apps.exams',
     'django_filters',
 ]
 
