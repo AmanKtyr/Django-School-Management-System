@@ -67,4 +67,5 @@ urlpatterns = [
     path('api/get-fee-settings/<int:class_id>/<str:section>/', views.get_fee_settings, name='get_fee_settings'),
     path('fees/settings/list/', views.fee_settings_list, name='fee_settings_list'),
     path('api/get-sections/<int:class_id>/', views.get_sections_by_class, name='get_sections_by_class'),
+    path('logout/', views.custom_logout_view, name='logout'),
 ]

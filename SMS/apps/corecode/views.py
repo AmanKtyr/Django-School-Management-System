@@ -1,4 +1,5 @@
 from django.contrib import messages
+from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
@@ -411,6 +412,13 @@ class CurrentSessionAndTermView(LoginRequiredMixin, View):
 def college_profile_view(request):
     profile = get_object_or_404(CollegeProfile)
     return render(request, 'corecode/college_profile.html', {'profile': profile})
+
+
+@login_required
+def custom_logout_view(request):
+    """Custom logout view that shows a goodbye page"""
+    logout(request)
+    return render(request, 'registration/logout.html')
 
 
 def site_config(request):

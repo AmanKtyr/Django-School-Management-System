@@ -84,8 +84,8 @@
               <div class="d-flex justify-content-between align-items-center mb-3">
                   <h5 class="mb-0"><i class="fas fa-chart-line text-primary me-2"></i> Attendance Rate</h5>
                   <div class="chart-actions">
-                      <button class="btn btn-sm btn-outline-primary" onclick="toggleChartType('attendanceChart', 'line')"><i class="fas fa-chart-line"></i></button>
-                      <button class="btn btn-sm btn-outline-primary" onclick="toggleChartType('attendanceChart', 'bar')"><i class="fas fa-chart-bar"></i></button>
+                      <button class="btn btn-sm btn-outline-primary active" id="attendanceLineBtn" onclick="changeChartType('attendanceChart', 'line')"><i class="fas fa-chart-line"></i></button>
+                      <button class="btn btn-sm btn-outline-primary" id="attendanceBarBtn" onclick="changeChartType('attendanceChart', 'bar')"><i class="fas fa-chart-bar"></i></button>
                   </div>
               </div>
               <div class="chart-wrapper">
@@ -98,8 +98,8 @@
               <div class="d-flex justify-content-between align-items-center mb-3">
                   <h5 class="mb-0"><i class="fas fa-chart-bar text-success me-2"></i> Fees Collection</h5>
                   <div class="chart-actions">
-                      <button class="btn btn-sm btn-outline-success" onclick="toggleChartType('feesChart', 'bar')"><i class="fas fa-chart-bar"></i></button>
-                      <button class="btn btn-sm btn-outline-success" onclick="toggleChartType('feesChart', 'line')"><i class="fas fa-chart-line"></i></button>
+                      <button class="btn btn-sm btn-outline-success active" id="feesBarBtn" onclick="changeChartType('feesChart', 'bar')"><i class="fas fa-chart-bar"></i></button>
+                      <button class="btn btn-sm btn-outline-success" id="feesLineBtn" onclick="changeChartType('feesChart', 'line')"><i class="fas fa-chart-line"></i></button>
                   </div>
               </div>
               <div class="chart-wrapper">
@@ -343,12 +343,12 @@
       Chart.defaults.elements.point.radius = 4;
       Chart.defaults.elements.point.hoverRadius = 6;
 
-      // Store chart instances for toggling
-      let charts = {};
+      // Store chart instances
+      window.charts = {};
 
       // Attendance Chart
       const attendanceCtx = document.getElementById('attendanceChart').getContext('2d');
-      charts.attendanceChart = new Chart(attendanceCtx, {
+      window.charts.attendanceChart = new Chart(attendanceCtx, {
           type: 'line',
           data: {
               labels: {{ attendance_months|safe }},
@@ -409,7 +409,7 @@
       // Ensure fee data is properly formatted as numbers
       const formattedFeeData = feeData.map(value => parseFloat(value) || 0);
 
-      charts.feesChart = new Chart(feesCtx, {
+      window.charts.feesChart = new Chart(feesCtx, {
           type: 'bar',
           data: {
               labels: {{ months|safe }},
@@ -475,7 +475,7 @@
 
       // Class Distribution Chart
       const classDistCtx = document.getElementById('classDistributionChart').getContext('2d');
-      charts.classDistributionChart = new Chart(classDistCtx, {
+      window.charts.classDistributionChart = new Chart(classDistCtx, {
           type: 'doughnut',
           data: {
               labels: {{ class_labels|safe }},
@@ -532,25 +532,57 @@
           }
       });
 
-      // Function to toggle chart type
-      window.toggleChartType = function(chartId, newType) {
-          const chart = charts[chartId];
-          if (!chart) return;
+      // Function to change chart type
+      window.changeChartType = function(chartId, newType) {
+          console.log('Changing chart type for:', chartId, 'to:', newType);
 
-          // Save current data and options
-          const data = chart.data;
-          const options = chart.options;
+          try {
+              // Get the chart instance
+              const chart = window.charts[chartId];
 
-          // Destroy current chart
-          chart.destroy();
+              if (!chart) {
+                  console.error('Chart not found:', chartId);
+                  return;
+              }
 
-          // Create new chart with new type
-          const ctx = document.getElementById(chartId).getContext('2d');
-          charts[chartId] = new Chart(ctx, {
-              type: newType,
-              data: data,
-              options: options
-          });
+              // Save current data and options
+              const data = chart.data;
+              const options = chart.options;
+
+              // Destroy current chart
+              chart.destroy();
+
+              // Create new chart with new type
+              const ctx = document.getElementById(chartId).getContext('2d');
+              window.charts[chartId] = new Chart(ctx, {
+                  type: newType,
+                  data: data,
+                  options: options
+              });
+
+              // Update button states
+              if (chartId === 'attendanceChart') {
+                  if (newType === 'line') {
+                      document.getElementById('attendanceLineBtn').classList.add('active');
+                      document.getElementById('attendanceBarBtn').classList.remove('active');
+                  } else {
+                      document.getElementById('attendanceLineBtn').classList.remove('active');
+                      document.getElementById('attendanceBarBtn').classList.add('active');
+                  }
+              } else if (chartId === 'feesChart') {
+                  if (newType === 'bar') {
+                      document.getElementById('feesBarBtn').classList.add('active');
+                      document.getElementById('feesLineBtn').classList.remove('active');
+                  } else {
+                      document.getElementById('feesBarBtn').classList.remove('active');
+                      document.getElementById('feesLineBtn').classList.add('active');
+                  }
+              }
+
+              console.log('Chart changed successfully');
+          } catch (error) {
+              console.error('Error changing chart type:', error);
+          }
       };
   });
 </script>
