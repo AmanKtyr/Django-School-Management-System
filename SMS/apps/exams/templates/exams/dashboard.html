@@ -29,29 +29,6 @@
     </div>
 
     <!-- Add a quick access card in your dashboard cards section -->
-    <div class="row">
-        <!-- Existing dashboard cards -->
-        
-        <!-- Add this new card -->
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-left-info shadow h-100 py-2">
-                <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                        <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                                User Guide
-                            </div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                <a href="{% url 'exams:exam_guide' %}" class="text-decoration-none">
-                                    <i class="fas fa-book-reader me-2"></i>How to Use
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Dashboard Overview Cards -->
     <div class="row">
@@ -195,6 +172,57 @@
                     </div>
                     <h6 class="fw-bold text-secondary">Exam Settings</h6>
                     <p class="text-muted small mb-0">Configure exam types</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Document Management Section -->
+          <div class="mb-4">
+            <h6 class="text-info fw-bold mb-3"><i class="fas fa-file-alt me-2"></i>Document Management</h6>
+            <div class="row g-3">
+              <div class="col-md-3 col-sm-6">
+                <a href="{% url 'exams:document_management' %}" class="card h-100 border-0 shadow-sm text-decoration-none hover-lift" data-bs-toggle="tooltip" data-bs-placement="top" title="Centralized document management system">
+                  <div class="card-body text-center p-3">
+                    <div class="rounded-circle bg-info bg-opacity-10 p-3 d-inline-block mb-2">
+                      <i class="fas fa-file-archive fa-2x text-info"></i>
+                    </div>
+                    <h6 class="fw-bold text-info">Document Center</h6>
+                    <p class="text-muted small mb-0">Manage all documents</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <a href="{% url 'exams:document_archive' %}" class="card h-100 border-0 shadow-sm text-decoration-none hover-lift" data-bs-toggle="tooltip" data-bs-placement="top" title="Access document archive">
+                  <div class="card-body text-center p-3">
+                    <div class="rounded-circle bg-secondary bg-opacity-10 p-3 d-inline-block mb-2">
+                      <i class="fas fa-archive fa-2x text-secondary"></i>
+                    </div>
+                    <h6 class="fw-bold text-secondary">Document Archive</h6>
+                    <p class="text-muted small mb-0">Access past documents</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <a href="{% url 'exams:document_generate' doc_type='templates' %}" class="card h-100 border-0 shadow-sm text-decoration-none hover-lift" data-bs-toggle="tooltip" data-bs-placement="top" title="Download document templates">
+                  <div class="card-body text-center p-3">
+                    <div class="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block mb-2">
+                      <i class="fas fa-file-download fa-2x text-primary"></i>
+                    </div>
+                    <h6 class="fw-bold text-primary">Templates</h6>
+                    <p class="text-muted small mb-0">Download templates</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <a href="{% url 'exams:document_generate' doc_type='bulk' %}" class="card h-100 border-0 shadow-sm text-decoration-none hover-lift" data-bs-toggle="tooltip" data-bs-placement="top" title="Generate documents in bulk">
+                  <div class="card-body text-center p-3">
+                    <div class="rounded-circle bg-success bg-opacity-10 p-3 d-inline-block mb-2">
+                      <i class="fas fa-copy fa-2x text-success"></i>
+                    </div>
+                    <h6 class="fw-bold text-success">Bulk Generate</h6>
+                    <p class="text-muted small mb-0">Create multiple docs</p>
                   </div>
                 </a>
               </div>

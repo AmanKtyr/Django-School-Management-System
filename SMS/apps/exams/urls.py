@@ -59,6 +59,12 @@ urlpatterns = [
     # Report Cards
     path('report-cards/<int:student_id>/<int:exam_id>/', views.report_card, name='report_card'),
 
+    # Document Management
+    path('documents/', views.document_management, name='document_management'),
+    path('documents/archive/', views.document_archive, name='document_archive'),
+    path('documents/generate/<str:doc_type>/', views.document_generate, name='document_generate'),
+    path('documents/download/<str:doc_type>/<int:doc_id>/', views.document_download, name='document_download'),
+
     # API Endpoints for AJAX
     path('api/get-subjects/<int:class_id>/', views.get_subjects, name='get_subjects'),
     path('api/get-students/<int:class_id>/<str:section>/', views.get_students, name='get_students'),

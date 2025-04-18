@@ -19,6 +19,15 @@
     background: linear-gradient(135deg, #1E3C72, #2A5298) !important;
 }
 
+/* Custom cursor */
+body {
+    cursor: url('/static/dist/img/pencil-cursor.png'), auto;
+}
+
+a, button, .btn, input, select, textarea, [role="button"] {
+    cursor: url('/static/dist/img/pen-cursor.png'), pointer !important;
+}
+
 /* Timeline Styles - Enhanced */
 .timeline {
     position: relative;
@@ -399,6 +408,25 @@
     img {
         max-width: 100% !important;
     }
+
+    /* A4 size optimization */
+    @page {
+        size: A4;
+        margin: 0.5cm;
+    }
+
+    /* QR codes and barcodes should print clearly */
+    .qr-code, .barcode {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    /* Ensure watermarks print with proper opacity */
+    .watermark {
+        opacity: 0.07 !important;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
 }
 
 /* Responsive Tables - Enhanced */
@@ -711,6 +739,162 @@
 
 .bg-gradient-secondary {
     background: linear-gradient(135deg, #6c757d, #495057) !important;
+}
+
+/* Document Management Styles */
+.document-card {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(33, 40, 50, 0.15);
+}
+
+.document-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 0.5rem 2rem 0 rgba(33, 40, 50, 0.2);
+}
+
+.document-card .card-header {
+    background: linear-gradient(135deg, rgba(30, 60, 114, 0.05), rgba(42, 82, 152, 0.1));
+    border-bottom: 1px solid rgba(33, 40, 50, 0.1);
+    padding: 1rem 1.25rem;
+}
+
+.document-card .card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.document-card .document-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.document-card:hover .document-icon {
+    transform: scale(1.1);
+}
+
+.document-card .document-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.document-card .document-meta {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+.document-card .document-actions {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+/* Document Archive */
+.document-archive {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(33, 40, 50, 0.15);
+}
+
+.document-archive .archive-header {
+    background: linear-gradient(135deg, #1E3C72, #2A5298);
+    color: #fff;
+    padding: 1.25rem;
+    border-radius: 0.75rem 0.75rem 0 0;
+}
+
+.document-archive .archive-body {
+    padding: 1.25rem;
+    background-color: #fff;
+    border-radius: 0 0 0.75rem 0.75rem;
+}
+
+.document-archive .archive-search {
+    margin-bottom: 1.5rem;
+}
+
+.document-archive .archive-list {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.document-archive .archive-item {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.document-archive .archive-item:hover {
+    background-color: rgba(30, 60, 114, 0.05);
+}
+
+.document-archive .archive-item-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.document-archive .archive-item-details {
+    flex: 1;
+}
+
+.document-archive .archive-item-title {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: #2c3e50;
+}
+
+.document-archive .archive-item-meta {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+.document-archive .archive-item-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* QR Code and Barcode Styles */
+.qr-code {
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.barcode-container {
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0.75rem;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    border: 1px solid #e9ecef;
+}
+
+/* Document Watermark */
+.document-watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    font-size: 8rem;
+    font-weight: 700;
+    color: rgba(30, 60, 114, 0.05);
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 0;
+    text-transform: uppercase;
 }
 
 /* Avatar Styles */

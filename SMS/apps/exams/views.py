@@ -1,16 +1,23 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from django.http import HttpResponse, JsonResponse
+from django.http import HttpResponse, JsonResponse, FileResponse
 from django.template.loader import get_template
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from django.contrib.messages.views import SuccessMessageMixin
-from django.db.models import Count, Q
+from django.db.models import Count, Q, Sum
 from django.utils import timezone
+from django.conf import settings
 from xhtml2pdf import pisa
 from datetime import datetime, date, timedelta
+import os
+import io
+import zipfile
+import qrcode
+import base64
+from PIL import Image, ImageDraw, ImageFont
 
 # Import admit card views
 from .admit_card_views import (
@@ -1167,3 +1174,363 @@ def exam_guide(request):
         'title': 'Examination Guide',
     }
     return render(request, 'exams/exam_guide.html', context)
+
+# Document Management Views
+@login_required
+def document_management(request):
+    """View for the document management dashboard"""
+    # Get counts for dashboard cards
+    admit_cards_count = AdmitCard.objects.count()
+    question_papers_count = QuestionPaper.objects.count()
+    report_cards_count = Mark.objects.filter(status='published').values('student').distinct().count()
+
+    # Get recent documents
+    recent_admit_cards = AdmitCard.objects.select_related('student', 'exam').order_by('-generated_on')[:5]
+    recent_question_papers = QuestionPaper.objects.select_related('exam', 'subject', 'student_class').order_by('-created_at')[:5]
+
+    # Get document statistics
+    document_stats = {
+        'total_documents': admit_cards_count + question_papers_count + report_cards_count,
+        'printed_documents': AdmitCard.objects.filter(is_printed=True).count(),
+        'pending_documents': AdmitCard.objects.filter(is_printed=False).count(),
+    }
+
+    context = {
+        'admit_cards_count': admit_cards_count,
+        'question_papers_count': question_papers_count,
+        'report_cards_count': report_cards_count,
+        'recent_admit_cards': recent_admit_cards,
+        'recent_question_papers': recent_question_papers,
+        'document_stats': document_stats,
+        'exams': Exam.objects.all().order_by('-start_date'),
+        'classes': StudentClass.objects.all().order_by('name'),
+    }
+
+    return render(request, 'exams/document_management.html', context)
+
+@login_required
+def document_archive(request):
+    """View for the document archive"""
+    # Get filter parameters
+    doc_type = request.GET.get('type', 'all')
+    exam_id = request.GET.get('exam')
+    class_id = request.GET.get('class')
+    date_from = request.GET.get('date_from')
+    date_to = request.GET.get('date_to')
+    search_query = request.GET.get('search', '')
+
+    # Initialize document lists
+    admit_cards = AdmitCard.objects.select_related('student', 'exam')
+    question_papers = QuestionPaper.objects.select_related('exam', 'subject', 'student_class')
+
+    # Apply filters
+    if exam_id:
+        admit_cards = admit_cards.filter(exam_id=exam_id)
+        question_papers = question_papers.filter(exam_id=exam_id)
+
+    if class_id:
+        admit_cards = admit_cards.filter(student__current_class_id=class_id)
+        question_papers = question_papers.filter(student_class_id=class_id)
+
+    if date_from:
+        try:
+            date_from = datetime.strptime(date_from, '%Y-%m-%d').date()
+            admit_cards = admit_cards.filter(generated_on__date__gte=date_from)
+            question_papers = question_papers.filter(created_at__date__gte=date_from)
+        except ValueError:
+            pass
+
+    if date_to:
+        try:
+            date_to = datetime.strptime(date_to, '%Y-%m-%d').date()
+            admit_cards = admit_cards.filter(generated_on__date__lte=date_to)
+            question_papers = question_papers.filter(created_at__date__lte=date_to)
+        except ValueError:
+            pass
+
+    if search_query:
+        admit_cards = admit_cards.filter(
+            Q(student__fullname__icontains=search_query) |
+            Q(exam__name__icontains=search_query) |
+            Q(roll_number__icontains=search_query)
+        )
+        question_papers = question_papers.filter(
+            Q(subject__name__icontains=search_query) |
+            Q(exam__name__icontains=search_query) |
+            Q(student_class__name__icontains=search_query)
+        )
+
+    # Filter by document type
+    if doc_type == 'admit_cards':
+        question_papers = QuestionPaper.objects.none()
+    elif doc_type == 'question_papers':
+        admit_cards = AdmitCard.objects.none()
+
+    # Order the results
+    admit_cards = admit_cards.order_by('-generated_on')
+    question_papers = question_papers.order_by('-created_at')
+
+    context = {
+        'admit_cards': admit_cards[:50],  # Limit to 50 for performance
+        'question_papers': question_papers[:50],  # Limit to 50 for performance
+        'exams': Exam.objects.all().order_by('-start_date'),
+        'classes': StudentClass.objects.all().order_by('name'),
+        'doc_type': doc_type,
+        'search_query': search_query,
+        'selected_exam': exam_id,
+        'selected_class': class_id,
+        'date_from': date_from if isinstance(date_from, date) else '',
+        'date_to': date_to if isinstance(date_to, date) else '',
+    }
+
+    return render(request, 'exams/document_archive.html', context)
+
+@login_required
+def document_generate(request, doc_type):
+    """View for generating documents"""
+    if doc_type == 'templates':
+        # Show template download page
+        templates = [
+            {
+                'name': 'Admit Card Template',
+                'description': 'Standard template for admit cards',
+                'icon': 'id-card',
+                'color': 'primary',
+                'file_type': 'PDF',
+                'file_size': '125 KB',
+            },
+            {
+                'name': 'Question Paper Template',
+                'description': 'Standard template for question papers',
+                'icon': 'file-alt',
+                'color': 'danger',
+                'file_type': 'DOCX',
+                'file_size': '45 KB',
+            },
+            {
+                'name': 'Answer Sheet Template',
+                'description': 'Standard template for answer sheets',
+                'icon': 'edit',
+                'color': 'success',
+                'file_type': 'PDF',
+                'file_size': '78 KB',
+            },
+            {
+                'name': 'Report Card Template',
+                'description': 'Standard template for report cards',
+                'icon': 'file-pdf',
+                'color': 'warning',
+                'file_type': 'PDF',
+                'file_size': '156 KB',
+            },
+            {
+                'name': 'Attendance Sheet Template',
+                'description': 'Standard template for attendance sheets',
+                'icon': 'clipboard-check',
+                'color': 'info',
+                'file_type': 'PDF',
+                'file_size': '92 KB',
+            },
+            {
+                'name': 'Marks Entry Template',
+                'description': 'Excel template for bulk marks entry',
+                'icon': 'file-excel',
+                'color': 'success',
+                'file_type': 'XLSX',
+                'file_size': '38 KB',
+            },
+        ]
+
+        context = {
+            'templates': templates,
+        }
+
+        return render(request, 'exams/document_templates.html', context)
+
+    elif doc_type == 'bulk':
+        # Show bulk generation page
+        if request.method == 'POST':
+            doc_type = request.POST.get('doc_type')
+            exam_id = request.POST.get('exam')
+            class_id = request.POST.get('class')
+            section = request.POST.get('section')
+
+            if not exam_id or not class_id or not doc_type:
+                messages.error(request, 'Please select exam, class, and document type.')
+                return redirect('exams:document_generate', doc_type='bulk')
+
+            exam = get_object_or_404(Exam, pk=exam_id)
+            student_class = get_object_or_404(StudentClass, pk=class_id)
+
+            # Get students based on filters
+            students_query = Student.objects.filter(current_class=student_class)
+            if section:
+                students_query = students_query.filter(section=section)
+
+            if doc_type == 'admit_cards':
+                # Generate admit cards in bulk
+                # This would be implemented with a more complex function in a real application
+                for student in students_query:
+                    # Check if admit card already exists
+                    if not AdmitCard.objects.filter(exam=exam, student=student).exists():
+                        # Generate roll number
+                        roll_number = f"EX{exam.id}-{student.registration_number}"
+
+                        # Create admit card
+                        AdmitCard.objects.create(
+                            exam=exam,
+                            student=student,
+                            roll_number=roll_number
+                        )
+
+                messages.success(request, f'Generated {students_query.count()} admit cards successfully.')
+                return redirect('exams:admit_card_list')
+
+            elif doc_type == 'report_cards':
+                # Redirect to results page with filters
+                return redirect(f'exams:results?exam={exam_id}&class={class_id}&section={section or ""}')
+
+            else:
+                messages.error(request, 'Invalid document type selected.')
+                return redirect('exams:document_generate', doc_type='bulk')
+
+        context = {
+            'exams': Exam.objects.all().order_by('-start_date'),
+            'classes': StudentClass.objects.all().order_by('name'),
+        }
+
+        return render(request, 'exams/document_bulk_generate.html', context)
+
+    else:
+        messages.error(request, 'Invalid document type.')
+        return redirect('exams:document_management')
+
+@login_required
+def document_download(request, doc_type, doc_id):
+    """View for downloading documents"""
+    if doc_type == 'admit_card':
+        admit_card = get_object_or_404(AdmitCard, pk=doc_id)
+
+        # Mark as printed if not already
+        if not admit_card.is_printed:
+            admit_card.is_printed = True
+            admit_card.printed_on = timezone.now()
+            admit_card.save()
+
+        # Get exam schedules for this exam
+        exam_schedules = ExamSchedule.objects.filter(
+            exam=admit_card.exam,
+            student_class=admit_card.student.current_class
+        ).order_by('date', 'start_time')
+
+        if admit_card.student.section:
+            exam_schedules = exam_schedules.filter(
+                Q(section='') | Q(section=admit_card.student.section)
+            )
+
+        # Generate QR code for the admit card
+        qr = qrcode.QRCode(
+            version=1,
+            error_correction=qrcode.constants.ERROR_CORRECT_L,
+            box_size=10,
+            border=4,
+        )
+        qr.add_data(f"ADMIT-CARD-{admit_card.id}-{admit_card.student.registration_number}")
+        qr.make(fit=True)
+        qr_img = qr.make_image(fill_color="black", back_color="white")
+
+        # Convert QR code to base64 for embedding in PDF
+        buffer = io.BytesIO()
+        qr_img.save(buffer, format="PNG")
+        qr_code_base64 = base64.b64encode(buffer.getvalue()).decode()
+
+        context = {
+            'admit_card': admit_card,
+            'exam_schedules': exam_schedules,
+            'qr_code_base64': qr_code_base64,
+            'generation_date': timezone.now().date(),
+        }
+
+        # Render PDF template
+        template = get_template('exams/admit_card_pdf.html')
+        html = template.render(context)
+
+        # Create PDF
+        response = HttpResponse(content_type='application/pdf')
+        response['Content-Disposition'] = f'attachment; filename="admit_card_{admit_card.student.fullname}.pdf"'
+
+        # Generate PDF
+        pisa_status = pisa.CreatePDF(html, dest=response)
+        if pisa_status.err:
+            return HttpResponse('PDF generation error')
+
+        return response
+
+    elif doc_type == 'question_paper':
+        paper = get_object_or_404(QuestionPaper, pk=doc_id)
+
+        if not paper.file:
+            messages.error(request, 'No file available for download.')
+            return redirect('exams:question_paper_list')
+
+        # Prepare response with appropriate content type
+        response = HttpResponse(paper.file, content_type='application/octet-stream')
+        response['Content-Disposition'] = f'attachment; filename="{paper.file.name.split("/")[-1]}"'
+
+        return response
+
+    elif doc_type == 'report_card':
+        # This would be implemented with a more complex function in a real application
+        # For now, redirect to the report card view
+        student_id, exam_id = doc_id.split('-')
+        return redirect('exams:report_card', student_id=student_id, exam_id=exam_id)
+
+    elif doc_type == 'template':
+        # Download template file
+        template_name = request.GET.get('name', '')
+
+        if not template_name:
+            messages.error(request, 'Template name not specified.')
+            return redirect('exams:document_generate', doc_type='templates')
+
+        # Map template names to file paths
+        template_files = {
+            'admit_card': 'templates/admit_card_template.pdf',
+            'question_paper': 'templates/question_paper_template.docx',
+            'answer_sheet': 'templates/answer_sheet_template.pdf',
+            'report_card': 'templates/report_card_template.pdf',
+            'attendance_sheet': 'templates/attendance_sheet_template.pdf',
+            'marks_entry': 'templates/marks_entry_template.xlsx',
+        }
+
+        if template_name not in template_files:
+            messages.error(request, 'Invalid template name.')
+            return redirect('exams:document_generate', doc_type='templates')
+
+        file_path = os.path.join(settings.MEDIA_ROOT, 'exams', template_files[template_name])
+
+        # Check if file exists
+        if not os.path.exists(file_path):
+            # Create a dummy file for demonstration
+            messages.warning(request, 'Template file not found. Generating a sample template.')
+
+            # Create a simple PDF file
+            buffer = io.BytesIO()
+            response = HttpResponse(content_type='application/pdf')
+            response['Content-Disposition'] = f'attachment; filename="{template_name}_template.pdf"'
+
+            # Generate a simple PDF with a message
+            html = f"<html><body><h1>{template_name.replace('_', ' ').title()} Template</h1><p>This is a sample template file.</p></body></html>"
+            pisa_status = pisa.CreatePDF(html, dest=response)
+
+            if pisa_status.err:
+                return HttpResponse('PDF generation error')
+
+            return response
+
+        # Serve the file
+        return FileResponse(open(file_path, 'rb'), as_attachment=True, filename=os.path.basename(file_path))
+
+    else:
+        messages.error(request, 'Invalid document type.')
+        return redirect('exams:document_management')
