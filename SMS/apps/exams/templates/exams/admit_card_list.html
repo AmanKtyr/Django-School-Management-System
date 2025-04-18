@@ -281,49 +281,7 @@
       window.open(url, '_blank');
     });
 
-    // Class and section filter dependency
-    $('#class').on('change', function() {
-      var classId = $(this).val();
-      var sectionSelect = $('#section');
-
-      // Show loading indicator
-      sectionSelect.html('<option value="">Loading sections...</option>');
-
-      if (classId) {
-        // Fetch sections for this class using the API
-        fetch(`/api/get-sections/${classId}/`)
-          .then(response => response.json())
-          .then(data => {
-            // Reset dropdown with default option
-            sectionSelect.html('<option value="">-- All Sections --</option>');
-
-            // Add sections from this class only
-            if (data.sections && data.sections.length > 0) {
-              data.sections.forEach(section => {
-                const option = new Option(section.name, section.name);
-                sectionSelect.append(option);
-              });
-            } else {
-              // If no sections found
-              const option = new Option('No sections found', '');
-              option.disabled = true;
-              sectionSelect.append(option);
-            }
-          })
-          .catch(error => {
-            console.error('Error fetching sections:', error);
-            sectionSelect.html('<option value="">-- All Sections --</option><option disabled>Error loading sections</option>');
-          });
-      } else {
-        // If no class selected, just show the default option
-        sectionSelect.html('<option value="">-- All Sections --</option>');
-      }
-    });
-
-    // Trigger change event if class is already selected on page load
-    if ($('#class').val()) {
-      $('#class').trigger('change');
-    }
+    // Class-section filter functionality is handled by the global class-section-filter.js script
   });
 </script>
 {% endblock morejs %}

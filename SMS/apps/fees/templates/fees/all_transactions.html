@@ -135,9 +135,9 @@
                     <label class="form-label">Section</label>
                     <select name="section" class="form-select" id="section-filter">
                         <option value="">-- All Sections --</option>
-                        {% for section_value, section_name in sections %}
-                            <option value="{{ section_value }}" {% if filter_params.section == section_value %}selected{% endif %}>{{ section_name }}</option>
-                        {% endfor %}
+                        {% if filter_params.section %}
+                            <option value="{{ filter_params.section }}" selected>{{ filter_params.section }}</option>
+                        {% endif %}
                     </select>
                 </div>
                 <div class="col-md-3">
@@ -485,59 +485,7 @@
             }, 16);
         }
 
-        // Handle class and section filters
-        const classFilter = document.getElementById('class-filter');
-        const sectionFilter = document.getElementById('section-filter');
-
-        if (classFilter) {
-            classFilter.addEventListener('change', function() {
-                const classId = this.value;
-
-                // Clear section selection when class changes
-                if (sectionFilter) {
-                    // Show loading indicator
-                    sectionFilter.innerHTML = '<option value="">Loading sections...</option>';
-
-                    if (classId) {
-                        // Fetch sections for this class
-                        fetch(`/api/get-sections/${classId}/`)
-                            .then(response => response.json())
-                            .then(data => {
-                                // Reset dropdown with default option
-                                sectionFilter.innerHTML = '<option value="">-- All Sections --</option>';
-
-                                // Add sections from this class only
-                                if (data.sections && data.sections.length > 0) {
-                                    data.sections.forEach(section => {
-                                        const option = document.createElement('option');
-                                        option.value = section.id;
-                                        option.textContent = section.name;
-                                        sectionFilter.appendChild(option);
-                                    });
-                                } else {
-                                    // If no sections found
-                                    const option = document.createElement('option');
-                                    option.disabled = true;
-                                    option.textContent = 'No sections found for this class';
-                                    sectionFilter.appendChild(option);
-                                }
-                            })
-                            .catch(error => {
-                                console.error('Error fetching sections:', error);
-                                sectionFilter.innerHTML = '<option value="">-- All Sections --</option><option disabled>Error loading sections</option>';
-                            });
-                    } else {
-                        // If no class selected, just show the default option
-                        sectionFilter.innerHTML = '<option value="">-- All Sections --</option>';
-                    }
-                }
-            });
-
-            // Trigger change event if class is already selected on page load
-            if (classFilter.value) {
-                classFilter.dispatchEvent(new Event('change'));
-            }
-        }
+        // Class-section filter functionality is handled by the global class-section-filter.js script
     });
 </script>
 {% endblock extra_js %}

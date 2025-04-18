@@ -26,6 +26,17 @@ class ClassSectionFilterForm(forms.Form):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        sections = Student.objects.values_list('section', flat=True).distinct()
-        section_choices = [('', '-- All Sections --')] + [(section, section) for section in sections if section]
-        self.fields['section'].choices = section_choices
+
+        # Initialize with just the default option
+        self.fields['section'].choices = [('', '-- All Sections --')]
+
+        # If a class is selected, get sections for that class
+        if args and args[0] and 'class_name' in args[0] and args[0]['class_name']:
+            class_id = args[0]['class_name']
+            sections = Student.objects.filter(
+                current_class_id=class_id,
+                current_status='active'
+            ).values_list('section', flat=True).distinct()
+
+            section_choices = [('', '-- All Sections --')] + [(section, section) for section in sections if section]
+            self.fields['section'].choices = section_choices

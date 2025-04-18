@@ -221,7 +221,7 @@
             <small class="text-muted mt-1 d-block"><i class="fas fa-info-circle me-1"></i> You can only take attendance for today or update the past week's attendance</small>
           </div>
 
-          
+
       </form>
     </div>
     <div class="card-footer bg-light">
@@ -792,29 +792,7 @@
       $('#filter-form').submit();
     });
 
-    // Handle class filter change
-    $('#class-filter').on('change', function() {
-      const classId = $(this).val();
-
-      // Clear section selection when class changes
-      $('#section-filter').html('<option value="">📌 Choose a Section</option>');
-
-      if (classId) {
-        // Fetch sections for this class
-        fetch(`/api/get-sections/${classId}/`)
-          .then(response => response.json())
-          .then(data => {
-            data.sections.forEach(section => {
-              const option = new Option(section.name, section.name);
-              $('#section-filter').append(option);
-            });
-          });
-      }
-
-      // Don't auto-submit, wait for Apply Filter button
-    });
-
-    // Don't auto-submit on section change, wait for Apply Filter button
+    // Class-section filter functionality is handled by the global class-section-filter.js script
 
     // Handle attendance button clicks
     $(".attendance-btn").click(function () {
@@ -1008,34 +986,14 @@
     });
   });
 
-  // Quick start form functionality
+  // Class-section filter functionality is handled by the global class-section-filter.js script
+  // Additional functionality for the quick-start form
   $('#quick-class-filter').on('change', function() {
     const classId = $(this).val();
     const sectionSelect = $('#quick-section-filter');
 
-    // Reset section dropdown
-    sectionSelect.html('<option value="">Choose a Section</option>');
+    // Disable/enable section dropdown based on class selection
     sectionSelect.prop('disabled', !classId);
-
-    if (classId) {
-      // Show loading indicator
-      sectionSelect.html('<option value="">Loading sections...</option>');
-
-      // Fetch sections for this class
-      fetch(`/api/get-sections/${classId}/`)
-        .then(response => response.json())
-        .then(data => {
-          sectionSelect.html('<option value="">Choose a Section</option>');
-          data.sections.forEach(section => {
-            const option = new Option(section.name, section.name);
-            sectionSelect.append(option);
-          });
-        })
-        .catch(error => {
-          console.error('Error fetching sections:', error);
-          sectionSelect.html('<option value="">Error loading sections</option>');
-        });
-    }
   });
 
   // Take attendance button functionality

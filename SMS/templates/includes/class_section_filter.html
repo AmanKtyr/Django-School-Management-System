@@ -1,3 +1,5 @@
+{% load static %}
+
 <div class="card shadow p-3 mb-4">
     <h5 class="mb-3">🔍 Filter</h5>
     <form method="GET" class="row g-3" id="filter-form">
@@ -24,27 +26,5 @@
     </form>
 </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const classSelect = document.getElementById('class-filter');
-    const sectionSelect = document.getElementById('section-filter');
-
-    classSelect.addEventListener('change', function() {
-        const classId = this.value;
-        // Clear section selection when class changes
-        sectionSelect.innerHTML = '<option value="">-- All Sections --</option>';
-
-        if(classId) {
-            fetch(`/api/get-sections/${classId}/`)
-                .then(response => response.json())
-                .then(data => {
-                    data.sections.forEach(section => {
-                        const option = new Option(section.name, section.id);
-                        sectionSelect.add(option);
-                    });
-                });
-        }
-        // Form will be submitted only when the Apply Filter button is clicked
-    });
-});
-</script>
+<!-- Class-Section filter functionality is loaded from the global JS file -->
+<script src="{% static 'dist/js/class-section-filter.js' %}"></script>

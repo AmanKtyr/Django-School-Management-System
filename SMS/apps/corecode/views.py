@@ -804,6 +804,9 @@ def get_sections_by_class(request, class_id):
     # Format the sections for the response
     section_data = [{'id': section, 'name': section} for section in sections if section]
 
+    # Sort sections alphabetically
+    section_data = sorted(section_data, key=lambda x: x['name'])
+
     return JsonResponse({'sections': section_data})
 
 def fee_settings_list(request):
