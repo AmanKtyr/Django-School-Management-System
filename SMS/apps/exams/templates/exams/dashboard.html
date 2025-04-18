@@ -1,36 +1,63 @@
-{% extends 'base.html' %}
+{% extends 'exams/base_exams.html' %}
 {% load static %}
-
-{% block breadcrumb-left %}
-<div class="breadcrumb-container">
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb breadcrumb-chevron">
-      <li class="breadcrumb-item">
-        <a href="{% url 'home' %}" class="text-decoration-none fw-bold">
-          <i class="fas fa-home"></i> Home
-        </a>
-      </li>
-      <li class="breadcrumb-item active" aria-current="page">
-        <i class="fas fa-graduation-cap"></i> Examination
-      </li>
-    </ol>
-  </nav>
-</div>
-{% endblock breadcrumb-left %}
-
-{% block title-icon %}fas fa-graduation-cap{% endblock title-icon %}
 
 {% block title %}Examination Management{% endblock title %}
 
-{% block subtitle %}Comprehensive examination management system{% endblock subtitle %}
+{% block subtitle %}Comprehensive examination management system for educational institutions{% endblock subtitle %}
+
+{% block page-actions %}
+<a href="{% url 'exams:exam_create' %}" class="btn btn-primary">
+  <i class="fas fa-plus-circle me-2"></i> Create New Exam
+</a>
+{% endblock page-actions %}
 
 {% block content %}
 <div class="container-fluid exams-container">
-  <!-- Dashboard Overview Cards -->
-  <div class="row">
+    <!-- Add this new section at the top of your dashboard -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="alert alert-info d-flex align-items-center justify-content-between">
+                <div>
+                    <i class="fas fa-info-circle me-2"></i>
+                    <span>New to the examination system? Check out our comprehensive guide!</span>
+                </div>
+                <a href="{% url 'exams:exam_guide' %}" class="btn btn-info btn-sm">
+                    <i class="fas fa-book-reader me-2"></i>View Guide
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add a quick access card in your dashboard cards section -->
+    <div class="row">
+        <!-- Existing dashboard cards -->
+        
+        <!-- Add this new card -->
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                User Guide
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                <a href="{% url 'exams:exam_guide' %}" class="text-decoration-none">
+                                    <i class="fas fa-book-reader me-2"></i>How to Use
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard Overview Cards -->
+    <div class="row">
     <div class="col-md-3">
       <div class="card border-0 rounded-3 shadow-sm mb-4">
-        <div class="card-body bg-primary bg-gradient text-white rounded-top">
+        <div class="card-body bg-gradient  rounded-top">
           <div class="d-flex justify-content-between align-items-center">
             <div>
               <h5 class="card-title mb-0 fw-bold">Upcoming Exams</h5>
@@ -42,7 +69,7 @@
           </div>
         </div>
         <div class="card-footer bg-white border-0 rounded-bottom">
-          <a class="btn btn-primary btn-sm w-100" href="{% url 'exams:exam_list' %}">
+          <a class="btn btn-danger btn-sm w-100" href="{% url 'exams:exam_list' %}">
             <i class="fas fa-eye me-1"></i> View Details
           </a>
         </div>
@@ -50,7 +77,7 @@
     </div>
     <div class="col-md-3">
       <div class="card border-0 rounded-3 shadow-sm mb-4">
-        <div class="card-body bg-success bg-gradient text-white rounded-top">
+        <div class="card-body  bg-gradient  rounded-top">
           <div class="d-flex justify-content-between align-items-center">
             <div>
               <h5 class="card-title mb-0 fw-bold">Active Exams</h5>
@@ -70,7 +97,7 @@
     </div>
     <div class="col-md-3">
       <div class="card border-0 rounded-3 shadow-sm mb-4">
-        <div class="card-body bg-warning bg-gradient text-white rounded-top">
+        <div class="card-body  bg-gradient  rounded-top">
           <div class="d-flex justify-content-between align-items-center">
             <div>
               <h5 class="card-title mb-0 fw-bold">Pending Results</h5>
@@ -90,7 +117,7 @@
     </div>
     <div class="col-md-3">
       <div class="card border-0 rounded-3 shadow-sm mb-4">
-        <div class="card-body bg-info bg-gradient text-white rounded-top">
+        <div class="card-body  bg-gradient  rounded-top">
           <div class="d-flex justify-content-between align-items-center">
             <div>
               <h5 class="card-title mb-0 fw-bold">Published Results</h5>
@@ -114,98 +141,165 @@
   <div class="row mb-4">
     <div class="col-md-12">
       <div class="card border-0 rounded-3 shadow-sm">
-        <div class="card-header bg-primary bg-gradient text-white rounded-top">
+        <div class="card-header bg-primary bg-gradient text-white rounded-top d-flex justify-content-between align-items-center">
           <h5 class="mb-0 fw-bold"><i class="fas fa-bolt me-2"></i>Quick Actions</h5>
+          <div>
+            <button type="button" class="btn btn-sm btn-light" data-bs-toggle="tooltip" data-bs-placement="left" title="These are the most common actions you'll need for exam management">
+              <i class="fas fa-question-circle"></i> Help
+            </button>
+          </div>
         </div>
         <div class="card-body py-4">
-          <div class="row g-3">
-            <div class="col-md-3 col-sm-6">
-              <a href="{% url 'exams:exam_create' %}" class="card h-100 border-0 shadow-sm text-decoration-none hover-lift">
-                <div class="card-body text-center p-4">
-                  <div class="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block mb-3">
-                    <i class="fas fa-plus-circle fa-2x text-primary"></i>
+          <!-- Exam Setup Section -->
+          <div class="mb-4">
+            <h6 class="text-primary fw-bold mb-3"><i class="fas fa-cogs me-2"></i>Exam Setup</h6>
+            <div class="row g-3">
+              <div class="col-md-3 col-sm-6">
+                <a href="{% url 'exams:exam_create' %}" class="card h-100 border-0 shadow-sm text-decoration-none hover-lift" data-bs-toggle="tooltip" data-bs-placement="top" title="Create a new examination">
+                  <div class="card-body text-center p-3">
+                    <div class="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block mb-2">
+                      <i class="fas fa-plus-circle fa-2x text-primary"></i>
+                    </div>
+                    <h6 class="fw-bold text-primary">Create Exam</h6>
+                    <p class="text-muted small mb-0">Add a new examination</p>
                   </div>
-                  <h5 class="fw-bold text-primary">Create Exam</h5>
-                  <p class="text-muted mb-0">Add a new examination</p>
-                </div>
-              </a>
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <a href="{% url 'exams:exam_schedule_list' %}" class="card h-100 border-0 shadow-sm text-decoration-none hover-lift" data-bs-toggle="tooltip" data-bs-placement="top" title="Manage exam schedules and timetables">
+                  <div class="card-body text-center p-3">
+                    <div class="rounded-circle bg-success bg-opacity-10 p-3 d-inline-block mb-2">
+                      <i class="fas fa-calendar-alt fa-2x text-success"></i>
+                    </div>
+                    <h6 class="fw-bold text-success">Exam Schedule</h6>
+                    <p class="text-muted small mb-0">Manage exam timetables</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <a href="{% url 'exams:question_paper_list' %}" class="card h-100 border-0 shadow-sm text-decoration-none hover-lift" data-bs-toggle="tooltip" data-bs-placement="top" title="Upload and manage question papers">
+                  <div class="card-body text-center p-3">
+                    <div class="rounded-circle bg-danger bg-opacity-10 p-3 d-inline-block mb-2">
+                      <i class="fas fa-file-alt fa-2x text-danger"></i>
+                    </div>
+                    <h6 class="fw-bold text-danger">Question Papers</h6>
+                    <p class="text-muted small mb-0">Manage exam papers</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <a href="{% url 'exams:exam_type_list' %}" class="card h-100 border-0 shadow-sm text-decoration-none hover-lift" data-bs-toggle="tooltip" data-bs-placement="top" title="Configure exam types and settings">
+                  <div class="card-body text-center p-3">
+                    <div class="rounded-circle bg-secondary bg-opacity-10 p-3 d-inline-block mb-2">
+                      <i class="fas fa-cog fa-2x text-secondary"></i>
+                    </div>
+                    <h6 class="fw-bold text-secondary">Exam Settings</h6>
+                    <p class="text-muted small mb-0">Configure exam types</p>
+                  </div>
+                </a>
+              </div>
             </div>
-            <div class="col-md-3 col-sm-6">
-              <a href="{% url 'exams:exam_schedule_list' %}" class="card h-100 border-0 shadow-sm text-decoration-none hover-lift">
-                <div class="card-body text-center p-4">
-                  <div class="rounded-circle bg-success bg-opacity-10 p-3 d-inline-block mb-3">
-                    <i class="fas fa-calendar-alt fa-2x text-success"></i>
+          </div>
+
+          <!-- Exam Execution Section -->
+          <div class="mb-4">
+            <h6 class="text-success fw-bold mb-3"><i class="fas fa-tasks me-2"></i>Exam Execution</h6>
+            <div class="row g-3">
+              <div class="col-md-3 col-sm-6">
+                <a href="{% url 'exams:admit_card_list' %}" class="card h-100 border-0 shadow-sm text-decoration-none hover-lift" data-bs-toggle="tooltip" data-bs-placement="top" title="Generate and print admit cards for students">
+                  <div class="card-body text-center p-3">
+                    <div class="rounded-circle bg-warning bg-opacity-10 p-3 d-inline-block mb-2">
+                      <i class="fas fa-id-card fa-2x text-warning"></i>
+                    </div>
+                    <h6 class="fw-bold text-warning">Admit Cards</h6>
+                    <p class="text-muted small mb-0">Generate student cards</p>
                   </div>
-                  <h5 class="fw-bold text-success">Exam Schedule</h5>
-                  <p class="text-muted mb-0">Manage exam timetables</p>
-                </div>
-              </a>
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <a href="#" class="card h-100 border-0 shadow-sm text-decoration-none hover-lift" data-bs-toggle="tooltip" data-bs-placement="top" title="Manage exam rooms and seating arrangements">
+                  <div class="card-body text-center p-3">
+                    <div class="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block mb-2">
+                      <i class="fas fa-chair fa-2x text-primary"></i>
+                    </div>
+                    <h6 class="fw-bold text-primary">Seating Plan</h6>
+                    <p class="text-muted small mb-0">Arrange exam seating</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <a href="#" class="card h-100 border-0 shadow-sm text-decoration-none hover-lift" data-bs-toggle="tooltip" data-bs-placement="top" title="Assign invigilators to exam rooms">
+                  <div class="card-body text-center p-3">
+                    <div class="rounded-circle bg-info bg-opacity-10 p-3 d-inline-block mb-2">
+                      <i class="fas fa-user-shield fa-2x text-info"></i>
+                    </div>
+                    <h6 class="fw-bold text-info">Invigilators</h6>
+                    <p class="text-muted small mb-0">Assign exam supervisors</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <a href="#" class="card h-100 border-0 shadow-sm text-decoration-none hover-lift" data-bs-toggle="tooltip" data-bs-placement="top" title="Track student attendance for exams">
+                  <div class="card-body text-center p-3">
+                    <div class="rounded-circle bg-success bg-opacity-10 p-3 d-inline-block mb-2">
+                      <i class="fas fa-user-check fa-2x text-success"></i>
+                    </div>
+                    <h6 class="fw-bold text-success">Attendance</h6>
+                    <p class="text-muted small mb-0">Track exam attendance</p>
+                  </div>
+                </a>
+              </div>
             </div>
-            <div class="col-md-3 col-sm-6">
-              <a href="{% url 'exams:question_paper_list' %}" class="card h-100 border-0 shadow-sm text-decoration-none hover-lift">
-                <div class="card-body text-center p-4">
-                  <div class="rounded-circle bg-danger bg-opacity-10 p-3 d-inline-block mb-3">
-                    <i class="fas fa-file-alt fa-2x text-danger"></i>
+          </div>
+
+          <!-- Results & Analysis Section -->
+          <div>
+            <h6 class="text-danger fw-bold mb-3"><i class="fas fa-chart-line me-2"></i>Results & Analysis</h6>
+            <div class="row g-3">
+              <div class="col-md-3 col-sm-6">
+                <a href="{% url 'exams:marks_entry' %}" class="card h-100 border-0 shadow-sm text-decoration-none hover-lift" data-bs-toggle="tooltip" data-bs-placement="top" title="Enter and manage student marks">
+                  <div class="card-body text-center p-3">
+                    <div class="rounded-circle bg-info bg-opacity-10 p-3 d-inline-block mb-2">
+                      <i class="fas fa-clipboard-check fa-2x text-info"></i>
+                    </div>
+                    <h6 class="fw-bold text-info">Enter Marks</h6>
+                    <p class="text-muted small mb-0">Record exam scores</p>
                   </div>
-                  <h5 class="fw-bold text-danger">Question Papers</h5>
-                  <p class="text-muted mb-0">Manage exam papers</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <a href="{% url 'exams:admit_card_list' %}" class="card h-100 border-0 shadow-sm text-decoration-none hover-lift">
-                <div class="card-body text-center p-4">
-                  <div class="rounded-circle bg-warning bg-opacity-10 p-3 d-inline-block mb-3">
-                    <i class="fas fa-id-card fa-2x text-warning"></i>
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <a href="{% url 'exams:results' %}" class="card h-100 border-0 shadow-sm text-decoration-none hover-lift" data-bs-toggle="tooltip" data-bs-placement="top" title="View and publish exam results">
+                  <div class="card-body text-center p-3">
+                    <div class="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block mb-2">
+                      <i class="fas fa-chart-bar fa-2x text-primary"></i>
+                    </div>
+                    <h6 class="fw-bold text-primary">Results</h6>
+                    <p class="text-muted small mb-0">View & publish results</p>
                   </div>
-                  <h5 class="fw-bold text-warning">Admit Cards</h5>
-                  <p class="text-muted mb-0">Generate student cards</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <a href="{% url 'exams:marks_entry' %}" class="card h-100 border-0 shadow-sm text-decoration-none hover-lift">
-                <div class="card-body text-center p-4">
-                  <div class="rounded-circle bg-info bg-opacity-10 p-3 d-inline-block mb-3">
-                    <i class="fas fa-clipboard-check fa-2x text-info"></i>
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <a href="#" class="card h-100 border-0 shadow-sm text-decoration-none hover-lift" data-bs-toggle="tooltip" data-bs-placement="top" title="Generate report cards for students">
+                  <div class="card-body text-center p-3">
+                    <div class="rounded-circle bg-danger bg-opacity-10 p-3 d-inline-block mb-2">
+                      <i class="fas fa-file-pdf fa-2x text-danger"></i>
+                    </div>
+                    <h6 class="fw-bold text-danger">Report Cards</h6>
+                    <p class="text-muted small mb-0">Generate student reports</p>
                   </div>
-                  <h5 class="fw-bold text-info">Enter Marks</h5>
-                  <p class="text-muted mb-0">Record exam scores</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <a href="{% url 'exams:results' %}" class="card h-100 border-0 shadow-sm text-decoration-none hover-lift">
-                <div class="card-body text-center p-4">
-                  <div class="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block mb-3">
-                    <i class="fas fa-chart-bar fa-2x text-primary"></i>
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <a href="#" class="card h-100 border-0 shadow-sm text-decoration-none hover-lift" data-bs-toggle="tooltip" data-bs-placement="top" title="Analyze exam performance and statistics">
+                  <div class="card-body text-center p-3">
+                    <div class="rounded-circle bg-warning bg-opacity-10 p-3 d-inline-block mb-2">
+                      <i class="fas fa-chart-pie fa-2x text-warning"></i>
+                    </div>
+                    <h6 class="fw-bold text-warning">Analytics</h6>
+                    <p class="text-muted small mb-0">Performance insights</p>
                   </div>
-                  <h5 class="fw-bold text-primary">Results</h5>
-                  <p class="text-muted mb-0">View & publish results</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <a href="{% url 'exams:exam_type_list' %}" class="card h-100 border-0 shadow-sm text-decoration-none hover-lift">
-                <div class="card-body text-center p-4">
-                  <div class="rounded-circle bg-success bg-opacity-10 p-3 d-inline-block mb-3">
-                    <i class="fas fa-list-alt fa-2x text-success"></i>
-                  </div>
-                  <h5 class="fw-bold text-success">Exam Types</h5>
-                  <p class="text-muted mb-0">Manage exam categories</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <a href="#" class="card h-100 border-0 shadow-sm text-decoration-none hover-lift">
-                <div class="card-body text-center p-4">
-                  <div class="rounded-circle bg-secondary bg-opacity-10 p-3 d-inline-block mb-3">
-                    <i class="fas fa-cog fa-2x text-secondary"></i>
-                  </div>
-                  <h5 class="fw-bold text-secondary">Settings</h5>
-                  <p class="text-muted mb-0">Configure exam module</p>
-                </div>
-              </a>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -218,7 +312,7 @@
     <!-- Upcoming Exams -->
     <div class="col-md-6">
       <div class="card border-0 rounded-3 shadow-sm mb-4">
-        <div class="card-header bg-primary bg-gradient text-white rounded-top d-flex justify-content-between align-items-center">
+        <div class="card-header  bg-gradient text-white rounded-top d-flex justify-content-between align-items-center">
           <h5 class="mb-0 fw-bold"><i class="fas fa-calendar me-2"></i>Upcoming Exams</h5>
           <a href="{% url 'exams:exam_list' %}" class="btn btn-sm btn-light">
             <i class="fas fa-external-link-alt me-1"></i> View All
@@ -340,52 +434,111 @@
   <div class="row">
     <div class="col-md-12">
       <div class="card border-0 rounded-3 shadow-sm mb-4">
-        <div class="card-header bg-info bg-gradient text-white rounded-top">
+        <div class="card-header bg-info bg-gradient text-white rounded-top d-flex justify-content-between align-items-center">
           <h5 class="mb-0 fw-bold"><i class="fas fa-chart-pie me-2"></i>Examination Statistics</h5>
+          <div>
+            <select class="form-select form-select-sm" id="statsFilter">
+              <option value="current">Current Term</option>
+              <option value="previous">Previous Term</option>
+              <option value="yearly">Yearly Overview</option>
+            </select>
+          </div>
         </div>
         <div class="card-body p-4">
-          <div class="row g-4">
-            <div class="col-md-3">
+          <div class="row mb-4">
+            <div class="col-md-8">
+              <!-- Performance Chart -->
               <div class="card h-100 border-0 shadow-sm">
-                <div class="card-body text-center">
-                  <div class="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block mb-3">
-                    <i class="fas fa-users fa-2x text-primary"></i>
+                <div class="card-body">
+                  <h6 class="fw-bold mb-3">Exam Performance Trends</h6>
+                  <div class="chart-container" style="position: relative; height:250px;">
+                    <canvas id="performanceChart"></canvas>
                   </div>
-                  <h3 class="fw-bold">0</h3>
-                  <p class="text-muted mb-0">Total Students</p>
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
+              <!-- Key Metrics -->
               <div class="card h-100 border-0 shadow-sm">
-                <div class="card-body text-center">
-                  <div class="rounded-circle bg-success bg-opacity-10 p-3 d-inline-block mb-3">
-                    <i class="fas fa-check-circle fa-2x text-success"></i>
+                <div class="card-body">
+                  <h6 class="fw-bold mb-3">Key Metrics</h6>
+                  <div class="d-flex align-items-center mb-3 p-3 bg-light rounded">
+                    <div class="rounded-circle bg-primary bg-opacity-10 p-3 me-3">
+                      <i class="fas fa-users text-primary"></i>
+                    </div>
+                    <div>
+                      <h3 class="mb-0 fw-bold counter">{{ total_students|default:"0" }}</h3>
+                      <p class="text-muted mb-0">Total Students</p>
+                    </div>
                   </div>
-                  <h3 class="fw-bold">0%</h3>
-                  <p class="text-muted mb-0">Average Pass Rate</p>
+                  <div class="d-flex align-items-center mb-3 p-3 bg-light rounded">
+                    <div class="rounded-circle bg-success bg-opacity-10 p-3 me-3">
+                      <i class="fas fa-check-circle text-success"></i>
+                    </div>
+                    <div>
+                      <h3 class="mb-0 fw-bold counter">{{ pass_rate|default:"0" }}%</h3>
+                      <p class="text-muted mb-0">Average Pass Rate</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center p-3 bg-light rounded">
+                    <div class="rounded-circle bg-warning bg-opacity-10 p-3 me-3">
+                      <i class="fas fa-star text-warning"></i>
+                    </div>
+                    <div>
+                      <h3 class="mb-0 fw-bold counter">{{ top_performers|default:"0" }}</h3>
+                      <p class="text-muted mb-0">Top Performers</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
-              <div class="card h-100 border-0 shadow-sm">
-                <div class="card-body text-center">
-                  <div class="rounded-circle bg-warning bg-opacity-10 p-3 d-inline-block mb-3">
-                    <i class="fas fa-star fa-2x text-warning"></i>
+          </div>
+
+          <!-- Subject Performance -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <h6 class="fw-bold mb-3">Subject Performance</h6>
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <thead class="table-light">
+                        <tr>
+                          <th>S/N</th>
+                          <th>Subject</th>
+                          <th>Pass Rate</th>
+                          <th>Average Score</th>
+                          <th>Highest Score</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for i in "12345"|make_list %}
+                        <tr>
+                          <td>{{ forloop.counter }}</td>
+                          <td>Subject {{ forloop.counter }}</td>
+                          <td>
+                            <div class="progress" style="height: 8px;">
+                              <div class="progress-bar bg-success" role="progressbar" style="width: {{ forloop.counter|add:"60" }}%;" aria-valuenow="{{ forloop.counter|add:"60" }}" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small class="text-muted">{{ forloop.counter|add:"60" }}%</small>
+                          </td>
+                          <td>{{ forloop.counter|add:"60" }}/100</td>
+                          <td>{{ forloop.counter|add:"80" }}/100</td>
+                          <td>
+                            {% if forloop.counter < 3 %}
+                              <span class="badge bg-success">Good</span>
+                            {% elif forloop.counter < 5 %}
+                              <span class="badge bg-warning">Average</span>
+                            {% else %}
+                              <span class="badge bg-danger">Needs Improvement</span>
+                            {% endif %}
+                          </td>
+                        </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
                   </div>
-                  <h3 class="fw-bold">0</h3>
-                  <p class="text-muted mb-0">Top Performers</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card h-100 border-0 shadow-sm">
-                <div class="card-body text-center">
-                  <div class="rounded-circle bg-danger bg-opacity-10 p-3 d-inline-block mb-3">
-                    <i class="fas fa-exclamation-triangle fa-2x text-danger"></i>
-                  </div>
-                  <h3 class="fw-bold">0</h3>
-                  <p class="text-muted mb-0">Needs Improvement</p>
                 </div>
               </div>
             </div>
@@ -422,39 +575,140 @@
 </style>
 {% endblock morecss %}
 
-{% block morejs %}
+{% block exam-js %}
+<!-- Chart.js library -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 <script>
   $(document).ready(function() {
     // Add smooth scrolling
     $('a[href*="#"]').on('click', function(e) {
-      e.preventDefault();
-      $('html, body').animate(
-        {
-          scrollTop: $($(this).attr('href')).offset().top - 100,
-        },
-        500,
-        'linear'
-      );
+      if (this.hash !== '') {
+        e.preventDefault();
+        $('html, body').animate(
+          {
+            scrollTop: $(this.hash).offset().top - 100,
+          },
+          500,
+          'linear'
+        );
+      }
     });
-
-    // Add tooltip initialization
-    $('[data-bs-toggle="tooltip"]').tooltip();
 
     // Add counter animation for statistics
     $('.counter').each(function() {
+      const finalValue = $(this).text() || '0';
       $(this).prop('Counter', 0).animate(
         {
-          Counter: $(this).text()
+          Counter: parseFloat(finalValue)
         },
         {
           duration: 2000,
           easing: 'swing',
           step: function(now) {
             $(this).text(Math.ceil(now));
+          },
+          complete: function() {
+            // Ensure the final value is displayed correctly
+            $(this).text(finalValue);
           }
         }
       );
     });
+
+    // Initialize performance chart
+    const ctx = document.getElementById('performanceChart').getContext('2d');
+    const performanceChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+        datasets: [
+          {
+            label: 'Average Score',
+            data: [65, 70, 68, 72, 75, 78],
+            borderColor: '#4e73df',
+            backgroundColor: 'rgba(78, 115, 223, 0.05)',
+            tension: 0.3,
+            fill: true
+          },
+          {
+            label: 'Pass Rate',
+            data: [75, 78, 76, 79, 82, 85],
+            borderColor: '#1cc88a',
+            backgroundColor: 'rgba(28, 200, 138, 0.05)',
+            tension: 0.3,
+            fill: true
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            position: 'top',
+          },
+          tooltip: {
+            mode: 'index',
+            intersect: false,
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 100,
+            ticks: {
+              callback: function(value) {
+                return value + '%';
+              }
+            }
+          }
+        },
+        interaction: {
+          mode: 'nearest',
+          axis: 'x',
+          intersect: false
+        }
+      }
+    });
+
+    // Handle stats filter change
+    $('#statsFilter').on('change', function() {
+      const value = $(this).val();
+      let newData;
+
+      // Simulate different data for different filters
+      if (value === 'current') {
+        newData = {
+          'Average Score': [65, 70, 68, 72, 75, 78],
+          'Pass Rate': [75, 78, 76, 79, 82, 85]
+        };
+      } else if (value === 'previous') {
+        newData = {
+          'Average Score': [60, 65, 63, 68, 70, 72],
+          'Pass Rate': [70, 72, 71, 75, 78, 80]
+        };
+      } else {
+        newData = {
+          'Average Score': [62, 67, 65, 70, 72, 75],
+          'Pass Rate': [72, 75, 73, 77, 80, 82]
+        };
+      }
+
+      // Update chart data
+      performanceChart.data.datasets[0].data = newData['Average Score'];
+      performanceChart.data.datasets[1].data = newData['Pass Rate'];
+      performanceChart.update();
+
+      // Show a toast notification
+      toastr.info('Statistics updated for ' + $(this).find('option:selected').text());
+    });
+
+    // Help button functionality
+    $('.btn-help').on('click', function() {
+      // Show a help modal or tooltip with guidance
+      toastr.info('Click on any card to access that feature. Use the filters to view different data.');
+    });
   });
 </script>
-{% endblock morejs %}
+{% endblock exam-js %}

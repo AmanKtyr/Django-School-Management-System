@@ -365,7 +365,7 @@
 
           <li class="nav-header">Examinations</li>
           <li class="nav-item has-treeview {% if 'exams' in request.path %}menu-open{% endif %}">
-              <a href="#" class="nav-link {% if 'exams' in request.path %}active{% endif %}">
+              <a href="{% url 'exams:dashboard' %}" class="nav-link {% if 'exams' in request.path %}active{% endif %}">
                   <i class="nav-icon fas fa-graduation-cap" style="color: #ff9900; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);"></i>
                   <p>
                       Examinations
@@ -373,6 +373,7 @@
                   </p>
               </a>
               <ul class="nav nav-treeview">
+                  <!-- Main Exam Management -->
                   <li class="nav-item">
                       <a href="{% url 'exams:dashboard' %}" class="nav-link {% if request.resolver_match.url_name == 'dashboard' and 'exams' in request.path %}active{% endif %}">
                           <i class="fas fa-tachometer-alt nav-icon" style="color: #ff9900;"></i>
@@ -382,13 +383,7 @@
                   <li class="nav-item">
                       <a href="{% url 'exams:exam_list' %}" class="nav-link {% if request.resolver_match.url_name == 'exam_list' %}active{% endif %}">
                           <i class="fas fa-list-alt nav-icon" style="color: #ff6600;"></i>
-                          <p>Exams</p>
-                      </a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="{% url 'exams:exam_type_list' %}" class="nav-link {% if request.resolver_match.url_name == 'exam_type_list' %}active{% endif %}">
-                          <i class="fas fa-tags nav-icon" style="color: #ff9900;"></i>
-                          <p>Exam Types</p>
+                          <p>Manage Exams</p>
                       </a>
                   </li>
                   <li class="nav-item">
@@ -397,6 +392,8 @@
                           <p>Exam Schedule</p>
                       </a>
                   </li>
+
+                  <!-- Exam Preparation -->
                   <li class="nav-item">
                       <a href="{% url 'exams:question_paper_list' %}" class="nav-link {% if request.resolver_match.url_name == 'question_paper_list' %}active{% endif %}">
                           <i class="fas fa-file-alt nav-icon" style="color: #ff3366;"></i>
@@ -409,6 +406,8 @@
                           <p>Admit Cards</p>
                       </a>
                   </li>
+
+                  <!-- Results & Analysis -->
                   <li class="nav-item">
                       <a href="{% url 'exams:marks_entry' %}" class="nav-link {% if request.resolver_match.url_name == 'marks_entry' %}active{% endif %}">
                           <i class="fas fa-clipboard-check nav-icon" style="color: #33cc33;"></i>
@@ -418,7 +417,15 @@
                   <li class="nav-item">
                       <a href="{% url 'exams:results' %}" class="nav-link {% if request.resolver_match.url_name == 'results' %}active{% endif %}">
                           <i class="fas fa-chart-bar nav-icon" style="color: #3399ff;"></i>
-                          <p>Results</p>
+                          <p>Results & Reports</p>
+                      </a>
+                  </li>
+
+                  <!-- Configuration -->
+                  <li class="nav-item">
+                      <a href="{% url 'exams:exam_type_list' %}" class="nav-link {% if request.resolver_match.url_name == 'exam_type_list' %}active{% endif %}">
+                          <i class="fas fa-cog nav-icon" style="color: #9933cc;"></i>
+                          <p>Exam Settings</p>
                       </a>
                   </li>
               </ul>

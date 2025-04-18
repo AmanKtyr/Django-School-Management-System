@@ -1158,3 +1158,12 @@ def get_exam_details(request, exam_id):
     }
 
     return JsonResponse(data)
+
+# Add this new view
+@login_required
+def exam_guide(request):
+    """View for the examination system guide"""
+    context = {
+        'title': 'Examination Guide',
+    }
+    return render(request, 'exams/exam_guide.html', context)

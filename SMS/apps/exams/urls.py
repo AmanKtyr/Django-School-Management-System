@@ -6,6 +6,8 @@ app_name = 'exams'
 urlpatterns = [
     # Dashboard
     path('', views.exam_dashboard, name='dashboard'),
+    # Guide
+    path('guide/', views.exam_guide, name='exam_guide'),
 
     # Exam Types
     path('exam-types/', views.ExamTypeListView.as_view(), name='exam_type_list'),
