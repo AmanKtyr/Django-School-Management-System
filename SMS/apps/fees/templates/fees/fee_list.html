@@ -28,6 +28,9 @@
 <a href="{% url 'fees:fee_list' %}" class="btn btn-outline-primary me-2">
   <i class="fas fa-sync-alt me-1"></i> Refresh
 </a>
+<a href="{% url 'fees:all_transactions' %}" class="btn btn-outline-success me-2">
+  <i class="fas fa-exchange-alt me-1"></i> All Transactions
+</a>
 <button type="button" class="btn btn-primary" onclick="window.print();">
   <i class="fas fa-print me-1"></i> Print Report
 </button>
@@ -277,6 +280,7 @@
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="recentTransactionsDropdown">
                         <li><a class="dropdown-item" href="#" onclick="window.print();"><i class="fas fa-print me-2"></i>Print Report</a></li>
+                        <li><a class="dropdown-item" href="{% url 'fees:all_transactions' %}"><i class="fas fa-exchange-alt me-2"></i>View All Transactions</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="{% url 'fees:fee_list' %}"><i class="fas fa-sync-alt me-2"></i>Refresh Data</a></li>
                     </ul>
@@ -376,6 +380,11 @@
                     </tbody>
                 </table>
             </div>
+        </div>
+        <div class="card-footer bg-light text-center">
+            <a href="{% url 'fees:all_transactions' %}" class="btn btn-primary">
+                <i class="fas fa-exchange-alt me-2"></i>View All Transactions
+            </a>
         </div>
     </div>
 </div>

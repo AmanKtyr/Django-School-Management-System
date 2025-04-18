@@ -7,6 +7,7 @@ from django.utils import timezone
 from django.http import HttpResponse
 from django.template.loader import get_template
 from xhtml2pdf import pisa
+from django.core.paginator import Paginator
 from .models import FeePayment, PendingFee
 from apps.corecode.filters import ClassSectionFilterForm
 from apps.students.models import Student
@@ -289,3 +290,86 @@ def generate_complete_history(request, student_id):
         # Log the error for debugging
         print(f"PDF Generation Error: {str(e)}")
         return HttpResponse(f'Error generating PDF: {str(e)}', status=500)
+
+@login_required
+def all_transactions(request):
+    # Start with all transactions
+    transactions = FeePayment.objects.all().select_related('student').order_by('-date')
+
+    # Initialize filter parameters
+    payment_method = request.GET.get('payment_method', '')
+    status = request.GET.get('status', '')
+    date_from = request.GET.get('date_from', '')
+    date_to = request.GET.get('date_to', '')
+    search = request.GET.get('search', '')
+    fee_category = request.GET.get('fee_category', '')
+    class_name = request.GET.get('class_name', '')
+    section = request.GET.get('section', '')
+
+    # Apply filters
+    if payment_method:
+        transactions = transactions.filter(payment_method=payment_method)
+
+    if status:
+        transactions = transactions.filter(status=status)
+
+    if fee_category:
+        transactions = transactions.filter(fee_category=fee_category)
+
+    if date_from:
+        transactions = transactions.filter(date__gte=date_from)
+
+    if date_to:
+        transactions = transactions.filter(date__lte=date_to)
+
+    if class_name:
+        transactions = transactions.filter(student__current_class_id=class_name)
+
+    if section:
+        transactions = transactions.filter(student__section=section)
+
+    if search:
+        transactions = transactions.filter(
+            Q(student__fullname__icontains=search) |
+            Q(student__registration_number__icontains=search) |
+            Q(transaction_id__icontains=search)
+        )
+
+    # Calculate totals
+    total_amount = transactions.aggregate(total=Sum('amount'))['total'] or 0
+
+    # Pagination
+    paginator = Paginator(transactions, 25)  # Show 25 transactions per page
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+
+    # Get classes and sections for filters
+    from apps.corecode.models import StudentClass
+    classes = StudentClass.objects.all().order_by('name')
+
+    # Get unique sections
+    sections = Student.objects.values_list('section', flat=True).distinct()
+    section_choices = [(section, section) for section in sections if section]
+
+    context = {
+        'page_obj': page_obj,
+        'total_amount': total_amount,
+        'total_transactions': transactions.count(),
+        'payment_methods': FeePayment.PAYMENT_METHODS,
+        'payment_statuses': FeePayment.PAYMENT_STATUS,
+        'now': timezone.now(),
+        'classes': classes,
+        'sections': section_choices,
+        'filter_params': {
+            'payment_method': payment_method,
+            'status': status,
+            'date_from': date_from,
+            'date_to': date_to,
+            'search': search,
+            'fee_category': fee_category,
+            'class_name': class_name,
+            'section': section
+        }
+    }
+
+    return render(request, 'fees/all_transactions.html', context)

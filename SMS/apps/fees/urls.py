@@ -9,4 +9,5 @@ urlpatterns = [
     path('history/<int:student_id>/', views.student_fee_history, name='student_fee_history'),
     path('receipt/<int:payment_id>/', views.generate_receipt, name='generate_receipt'),
     path('complete-history/<int:student_id>/', views.generate_complete_history, name='generate_complete_history'),
+    path('transactions/', views.all_transactions, name='all_transactions'),
 ]

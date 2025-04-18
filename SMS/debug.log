@@ -19345,3 +19345,777 @@ INFO 2025-04-17 17:39:50,053 "GET /exams/admit-cards/1/print/ HTTP/1.1" 200 7557
 INFO 2025-04-17 17:39:50,199 "GET /static/dist/img/logo.png HTTP/1.1" 200 10380
 INFO 2025-04-17 17:40:21,520 "GET /exams/admit-cards/generate/ HTTP/1.1" 200 44120
 INFO 2025-04-17 17:40:21,805 "GET /static/dist/css/style.css?v=1744891821802 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:41:19,945 "GET /exams/exams/ HTTP/1.1" 200 34956
+INFO 2025-04-17 17:41:20,281 "GET /static/dist/css/style.css?v=1744891880275 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:41:53,501 "GET /exams/marks/ HTTP/1.1" 200 36673
+INFO 2025-04-17 17:41:53,868 "GET /static/dist/css/style.css?v=1744891913847 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:41:59,774 "GET /exams/marks/?exam=1&subject=2&student_class=5&section= HTTP/1.1" 200 36837
+INFO 2025-04-17 17:41:59,944 "GET /static/dist/css/style.css?v=1744891919936 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:42:06,376 "GET /exams/marks/?exam=1&subject=2&student_class=6&section= HTTP/1.1" 200 48098
+INFO 2025-04-17 17:42:06,542 "GET /static/dist/css/style.css?v=1744891926536 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:42:32,698 "POST /exams/marks/?exam=1&subject=2&student_class=6&section= HTTP/1.1" 200 48098
+INFO 2025-04-17 17:42:32,858 "GET /static/dist/css/style.css?v=1744891952844 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:42:42,115 "GET / HTTP/1.1" 200 56785
+INFO 2025-04-17 17:42:42,340 "GET /static/dist/css/style.css?v=1744891962335 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:42:50,060 "GET /student/list HTTP/1.1" 200 36500
+INFO 2025-04-17 17:42:50,268 "GET /static/dist/css/style.css?v=1744891970261 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:42:52,204 "GET /student/3/ HTTP/1.1" 200 47858
+INFO 2025-04-17 17:42:52,401 "GET /static/dist/css/style.css?v=1744891972389 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:42:52,413 "GET /static/dist/img/avatar.png HTTP/1.1" 200 2121881
+INFO 2025-04-17 17:43:45,970 "GET /exams/question-papers/ HTTP/1.1" 200 37680
+INFO 2025-04-17 17:43:46,065 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-17 17:43:46,377 "GET /static/dist/css/style.css?v=1744892026362 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:43:49,036 "GET /exams/question-papers/create/ HTTP/1.1" 200 37128
+INFO 2025-04-17 17:43:49,377 "GET /static/dist/css/style.css?v=1744892029369 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:44:16,368 "GET /exams/question-papers/ HTTP/1.1" 200 37680
+INFO 2025-04-17 17:44:16,716 "GET /static/dist/css/style.css?v=1744892056710 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:44:33,259 "GET /exams/results/ HTTP/1.1" 200 45273
+INFO 2025-04-17 17:44:33,454 "GET /static/dist/css/style.css?v=1744892073450 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:44:51,365 "GET /exams/results/?exam=1&student_class=6&section=&status= HTTP/1.1" 200 45273
+INFO 2025-04-17 17:44:51,536 "GET /static/dist/css/style.css?v=1744892091536 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:44:55,319 "GET /exams/marks/ HTTP/1.1" 200 36673
+INFO 2025-04-17 17:44:55,498 "GET /static/dist/css/style.css?v=1744892095491 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:45:01,347 "GET /exams/marks/?exam=1&subject=2&student_class=6&section= HTTP/1.1" 200 48098
+INFO 2025-04-17 17:45:01,549 "GET /static/dist/css/style.css?v=1744892101541 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:45:10,937 "POST /exams/marks/?exam=1&subject=2&student_class=6&section= HTTP/1.1" 200 48098
+INFO 2025-04-17 17:45:11,099 "GET /static/dist/css/style.css?v=1744892111094 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:45:24,552 "POST /exams/marks/?exam=1&subject=2&student_class=6&section= HTTP/1.1" 200 48098
+INFO 2025-04-17 17:45:24,703 "GET /static/dist/css/style.css?v=1744892124698 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:45:37,185 "GET /exams/results/ HTTP/1.1" 200 45273
+INFO 2025-04-17 17:45:37,378 "GET /static/dist/css/style.css?v=1744892137377 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:45:43,233 "GET /exams/results/?exam=1&student_class=6&section=&status= HTTP/1.1" 200 45273
+INFO 2025-04-17 17:45:43,385 "GET /static/dist/css/style.css?v=1744892143381 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:45:57,808 "GET /exams/results/?exam=1&student_class=6&section=&status=finalized HTTP/1.1" 200 45281
+INFO 2025-04-17 17:45:57,980 "GET /static/dist/css/style.css?v=1744892157975 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:46:34,715 "GET /exams/ HTTP/1.1" 200 45322
+INFO 2025-04-17 17:46:35,060 "GET /static/dist/css/style.css?v=1744892195055 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:46:37,320 "GET /exams/exams/ HTTP/1.1" 200 34956
+INFO 2025-04-17 17:46:37,577 "GET /static/dist/css/style.css?v=1744892197573 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:46:40,675 "GET /static/dist/css/style.css?v=1744892200671 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:46:42,059 "GET /exams/marks/ HTTP/1.1" 200 36673
+INFO 2025-04-17 17:46:42,252 "GET /static/dist/css/style.css?v=1744892202247 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:46:47,566 "GET /exams/results/ HTTP/1.1" 200 45273
+INFO 2025-04-17 17:46:47,748 "GET /static/dist/css/style.css?v=1744892207741 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:46:59,300 "GET /exams/results/?exam=1&student_class=6&section=A&status= HTTP/1.1" 200 45274
+INFO 2025-04-17 17:46:59,469 "GET /static/dist/css/style.css?v=1744892219465 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:47:09,480 "GET /exams/marks/ HTTP/1.1" 200 36673
+INFO 2025-04-17 17:47:09,670 "GET /static/dist/css/style.css?v=1744892229657 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:47:17,480 "GET /exams/marks/?exam=1&subject=2&student_class=5&section=A HTTP/1.1" 200 36837
+INFO 2025-04-17 17:47:17,642 "GET /static/dist/css/style.css?v=1744892237637 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:47:26,979 "GET /exams/marks/?exam=1&subject=2&student_class=6&section=A HTTP/1.1" 200 48101
+INFO 2025-04-17 17:47:27,152 "GET /static/dist/css/style.css?v=1744892247148 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:47:48,789 "POST /exams/marks/?exam=1&subject=2&student_class=6&section=A HTTP/1.1" 200 48101
+INFO 2025-04-17 17:47:49,075 "GET /static/dist/css/style.css?v=1744892269066 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:48:01,571 "POST /exams/marks/?exam=1&subject=2&student_class=6&section=A HTTP/1.1" 200 48101
+INFO 2025-04-17 17:48:01,731 "GET /static/dist/css/style.css?v=1744892281717 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:48:05,025 "GET /exams/ HTTP/1.1" 200 45322
+INFO 2025-04-17 17:48:05,222 "GET /static/dist/css/style.css?v=1744892285217 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:48:07,700 "GET /exams/marks/ HTTP/1.1" 200 36673
+INFO 2025-04-17 17:48:07,854 "GET /static/dist/css/style.css?v=1744892287848 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:48:09,718 "GET /static/dist/css/style.css?v=1744892289712 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:48:10,559 "GET /exams/results/ HTTP/1.1" 200 45273
+INFO 2025-04-17 17:48:10,760 "GET /static/dist/css/style.css?v=1744892290756 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:48:20,419 "GET /exams/results/?exam=1&student_class=6&section=A&status=published HTTP/1.1" 200 45282
+INFO 2025-04-17 17:48:20,583 "GET /static/dist/css/style.css?v=1744892300578 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:48:28,285 "GET /exams/results/?exam=1&student_class=6&section=A&status= HTTP/1.1" 200 45274
+INFO 2025-04-17 17:48:28,439 "GET /static/dist/css/style.css?v=1744892308435 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:48:36,961 "GET /exams/schedules/ HTTP/1.1" 200 36881
+INFO 2025-04-17 17:48:37,128 "GET /static/dist/css/style.css?v=1744892317124 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:48:40,181 "GET /exams/schedules/1/update/ HTTP/1.1" 200 37312
+INFO 2025-04-17 17:48:40,333 "GET /static/dist/css/style.css?v=1744892320327 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:48:42,580 "GET /static/dist/css/style.css?v=1744892322575 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:49:11,178 "GET /exams/schedules/?exam=1&student_class=5&subject=1&date_from=2025-04-18&date_to=2025-04-18 HTTP/1.1" 200 36739
+INFO 2025-04-17 17:49:11,378 "GET /static/dist/css/style.css?v=1744892351361 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:49:14,825 "GET /exams/schedules/create/ HTTP/1.1" 200 37235
+INFO 2025-04-17 17:49:14,980 "GET /static/dist/css/style.css?v=1744892354973 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:49:34,627 "POST /exams/schedules/create/ HTTP/1.1" 302 0
+INFO 2025-04-17 17:49:34,666 "GET /exams/schedules/ HTTP/1.1" 200 37891
+INFO 2025-04-17 17:49:34,836 "GET /static/dist/css/style.css?v=1744892374834 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:49:42,608 "GET /exams/schedules/create/ HTTP/1.1" 200 37235
+INFO 2025-04-17 17:49:42,797 "GET /static/dist/css/style.css?v=1744892382791 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:49:49,508 "GET /exams/schedules/ HTTP/1.1" 200 37742
+INFO 2025-04-17 17:49:49,682 "GET /static/dist/css/style.css?v=1744892389681 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:49:52,138 "GET /exams/schedules/2/update/ HTTP/1.1" 200 37311
+INFO 2025-04-17 17:49:52,294 "GET /static/dist/css/style.css?v=1744892392290 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:49:56,224 "GET /static/dist/css/style.css?v=1744892396216 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:50:18,748 "GET /exams/admit-cards/ HTTP/1.1" 200 40892
+INFO 2025-04-17 17:50:18,927 "GET /static/dist/css/style.css?v=1744892418922 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:50:36,009 "GET /exams/admit-cards/print-bulk/?ids=1,2 HTTP/1.1" 200 11600
+INFO 2025-04-17 17:51:03,198 "GET / HTTP/1.1" 302 0
+INFO 2025-04-17 17:51:03,249 "GET /accounts/login/?next=/ HTTP/1.1" 200 5717
+WARNING 2025-04-17 17:51:04,166 Not Found: /favicon.ico
+WARNING 2025-04-17 17:51:04,166 "GET /favicon.ico HTTP/1.1" 404 12956
+INFO 2025-04-17 17:51:06,545 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-04-17 17:51:06,602 "GET / HTTP/1.1" 200 56785
+INFO 2025-04-17 17:51:06,995 "GET /static/dist/css/style.css?v=1744892466987 HTTP/1.1" 200 42552
+WARNING 2025-04-17 17:51:07,134 "GET /static/dist/img/favicon/favicon.ico HTTP/1.1" 404 1898
+WARNING 2025-04-17 17:51:07,192 "GET /static/dist/img/favicon/favicon-32x32.png HTTP/1.1" 404 1916
+WARNING 2025-04-17 17:51:07,271 "GET /static/dist/img/favicon/favicon-16x16.png HTTP/1.1" 404 1916
+INFO 2025-04-17 17:51:12,227 "GET /student/create/ HTTP/1.1" 200 38916
+INFO 2025-04-17 17:51:12,403 "GET /static/dist/css/style.css?v=1744892472390 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:51:24,629 "GET /system-settings/ HTTP/1.1" 200 42371
+INFO 2025-04-17 17:51:24,804 "GET /static/dist/css/style.css?v=1744892484791 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:51:29,459 "GET /system-settings/ HTTP/1.1" 200 42371
+INFO 2025-04-17 17:51:29,598 "GET /static/dist/css/style.css?v=1744892489589 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:51:31,088 "GET /system-settings/general/ HTTP/1.1" 200 44629
+INFO 2025-04-17 17:51:31,300 "GET /static/dist/css/style.css?v=1744892491292 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:51:40,978 "GET /college-profile/ HTTP/1.1" 200 32059
+INFO 2025-04-17 17:51:41,142 "GET /static/dist/css/style.css?v=1744892501136 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:52:30,132 "GET /fees/ HTTP/1.1" 200 83801
+INFO 2025-04-17 17:52:30,340 "GET /static/dist/css/style.css?v=1744892550336 HTTP/1.1" 200 42552
+INFO 2025-04-17 17:52:44,469 "GET /fees/receipt/10/ HTTP/1.1" 200 4302
+INFO 2025-04-17 19:21:24,678 Watching for file changes with StatReloader
+INFO 2025-04-17 19:21:31,446 "GET / HTTP/1.1" 302 0
+INFO 2025-04-17 19:21:31,502 "GET /accounts/login/?next=/ HTTP/1.1" 200 5717
+WARNING 2025-04-17 19:21:32,725 Not Found: /favicon.ico
+WARNING 2025-04-17 19:21:32,726 "GET /favicon.ico HTTP/1.1" 404 12956
+INFO 2025-04-17 19:21:59,224 "GET /accounts/login/?next=/ HTTP/1.1" 200 5717
+WARNING 2025-04-17 19:21:59,709 Not Found: /favicon.ico
+WARNING 2025-04-17 19:21:59,710 "GET /favicon.ico HTTP/1.1" 404 12956
+INFO 2025-04-17 19:24:22,007 "GET /accounts/login/?next=/ HTTP/1.1" 200 5717
+INFO 2025-04-17 19:24:30,033 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-04-17 19:24:30,172 "GET / HTTP/1.1" 200 56785
+INFO 2025-04-17 19:24:30,512 "GET /static/dist/css/preload.css HTTP/1.1" 200 1863
+INFO 2025-04-17 19:24:30,515 "GET /static/dist/css/style.css HTTP/1.1" 200 42552
+INFO 2025-04-17 19:24:30,529 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-04-17 19:24:30,540 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-04-17 19:24:30,672 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-04-17 19:24:30,684 "GET /static/dist/css/sidebar-fix.css HTTP/1.1" 200 9004
+INFO 2025-04-17 19:24:30,687 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-04-17 19:24:30,723 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-04-17 19:24:30,725 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-04-17 19:24:30,733 "GET /static/dist/js/custom.js HTTP/1.1" 200 2597
+INFO 2025-04-17 19:24:30,774 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-04-17 19:24:31,438 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-04-17 19:24:31,704 "GET /static/dist/css/style.css?v=1744898071699 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:24:31,777 "GET /static/dist/js/sidebar-fix.js HTTP/1.1" 200 2621
+INFO 2025-04-17 19:24:31,779 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 200 9593
+WARNING 2025-04-17 19:24:31,939 "GET /static/dist/img/favicon/favicon.ico HTTP/1.1" 404 1898
+WARNING 2025-04-17 19:24:32,019 "GET /static/dist/img/favicon/favicon-32x32.png HTTP/1.1" 404 1916
+WARNING 2025-04-17 19:24:32,074 "GET /static/dist/img/favicon/favicon-16x16.png HTTP/1.1" 404 1916
+INFO 2025-04-17 19:25:07,608 "GET /student/create/ HTTP/1.1" 200 38916
+INFO 2025-04-17 19:25:08,050 "GET /static/dist/css/style.css?v=1744898108037 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:26:50,284 "POST /student/create/ HTTP/1.1" 200 39444
+INFO 2025-04-17 19:26:50,570 "GET /static/dist/css/style.css?v=1744898210567 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:27:01,934 "POST /student/create/ HTTP/1.1" 200 39445
+INFO 2025-04-17 19:27:02,122 "GET /static/dist/css/style.css?v=1744898222115 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:27:09,453 "POST /student/create/ HTTP/1.1" 200 39446
+INFO 2025-04-17 19:27:09,633 "GET /static/dist/css/style.css?v=1744898229629 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:27:15,548 "POST /student/create/ HTTP/1.1" 200 39427
+INFO 2025-04-17 19:27:15,731 "GET /static/dist/css/style.css?v=1744898235727 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:27:28,068 "POST /student/create/ HTTP/1.1" 302 0
+INFO 2025-04-17 19:27:28,177 "GET /student/10/ HTTP/1.1" 200 44827
+INFO 2025-04-17 19:27:28,265 "GET /static/dist/img/avatar.png HTTP/1.1" 200 2121881
+INFO 2025-04-17 19:27:28,411 "GET /static/dist/css/style.css?v=1744898248404 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:27:50,021 "GET /student/10/upload-documents/ HTTP/1.1" 200 40563
+INFO 2025-04-17 19:27:50,227 "GET /static/dist/css/style.css?v=1744898270219 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:28:05,523 "POST /student/10/upload-documents/ HTTP/1.1" 302 0
+INFO 2025-04-17 19:28:05,612 "GET /student/10/ HTTP/1.1" 200 47905
+INFO 2025-04-17 19:28:05,806 "GET /static/dist/css/style.css?v=1744898285796 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:28:15,562 "GET /media/students/documents/aadhar/college_logo.jpg HTTP/1.1" 200 7080
+INFO 2025-04-17 19:28:31,101 "GET /subject/list/ HTTP/1.1" 200 32987
+INFO 2025-04-17 19:28:31,272 "GET /static/dist/css/style.css?v=1744898311266 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:28:40,056 "POST /subject/create/ HTTP/1.1" 302 0
+INFO 2025-04-17 19:28:40,090 "GET /subject/list/ HTTP/1.1" 200 33413
+INFO 2025-04-17 19:28:40,276 "GET /static/dist/css/style.css?v=1744898320273 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:28:43,688 "GET /class/list/ HTTP/1.1" 200 33526
+INFO 2025-04-17 19:28:43,856 "GET /static/dist/css/style.css?v=1744898323852 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:28:49,324 "POST /class/create/ HTTP/1.1" 302 0
+INFO 2025-04-17 19:28:49,369 "GET /class/list/ HTTP/1.1" 200 33944
+INFO 2025-04-17 19:28:49,553 "GET /static/dist/css/style.css?v=1744898329546 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:28:52,896 "GET /class/8/update/ HTTP/1.1" 200 30910
+INFO 2025-04-17 19:28:53,104 "GET /static/dist/css/style.css?v=1744898333097 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:28:56,612 "POST /class/8/update/ HTTP/1.1" 302 0
+INFO 2025-04-17 19:28:56,655 "GET /class/list/ HTTP/1.1" 200 33943
+INFO 2025-04-17 19:28:56,972 "GET /static/dist/css/style.css?v=1744898336957 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:29:11,064 "GET /fees/settings/ HTTP/1.1" 200 37824
+WARNING 2025-04-17 19:29:11,102 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+INFO 2025-04-17 19:29:11,257 "GET /static/dist/css/style.css?v=1744898351252 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:29:15,366 "GET /api/get-sections/8/ HTTP/1.1" 200 16
+INFO 2025-04-17 19:29:17,446 "GET /fees/settings/?class_name=8&section= HTTP/1.1" 200 41161
+INFO 2025-04-17 19:29:17,647 "GET /static/dist/css/style.css?v=1744898357638 HTTP/1.1" 200 42552
+ERROR 2025-04-17 19:29:54,076 Internal Server Error: /fees/settings/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1817, in to_python
+    decimal_value = decimal.Decimal(value)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+decimal.InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\views.py", line 684, in fee_settings
+    fee_structure = FeeStructure.objects.create(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1854, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1880, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1805, in as_sql
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1740, in prepare_value
+    return field.get_db_prep_save(value, connection=self.connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1012, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1833, in get_db_prep_value
+    value = super().get_db_prep_value(value, connection, prepared)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1005, in get_db_prep_value
+    value = self.get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1840, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1819, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“” value must be a decimal number.']
+ERROR 2025-04-17 19:29:54,089 "POST /fees/settings/?class_name=8&section= HTTP/1.1" 500 158619
+INFO 2025-04-17 19:30:00,046 "GET /static/dist/css/style.css?v=1744898400037 HTTP/1.1" 200 42552
+ERROR 2025-04-17 19:30:05,007 Internal Server Error: /fees/settings/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1817, in to_python
+    decimal_value = decimal.Decimal(value)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+decimal.InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\corecode\views.py", line 684, in fee_settings
+    fee_structure = FeeStructure.objects.create(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1854, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1880, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1805, in as_sql
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1740, in prepare_value
+    return field.get_db_prep_save(value, connection=self.connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1012, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1833, in get_db_prep_value
+    value = super().get_db_prep_value(value, connection, prepared)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1005, in get_db_prep_value
+    value = self.get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1840, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1819, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“” value must be a decimal number.']
+ERROR 2025-04-17 19:30:05,012 "POST /fees/settings/?class_name=8&section= HTTP/1.1" 500 158560
+INFO 2025-04-17 19:30:10,726 "GET /static/dist/css/style.css?v=1744898410711 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:30:13,637 "POST /fees/settings/?class_name=8&section= HTTP/1.1" 302 0
+INFO 2025-04-17 19:30:13,690 "GET /fees/settings/ HTTP/1.1" 200 38433
+WARNING 2025-04-17 19:30:13,729 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+INFO 2025-04-17 19:30:13,872 "GET /static/dist/css/style.css?v=1744898413865 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:30:21,919 "GET /api/get-sections/8/ HTTP/1.1" 200 16
+INFO 2025-04-17 19:30:23,074 "GET /fees/settings/?class_name=8&section= HTTP/1.1" 200 41260
+INFO 2025-04-17 19:30:23,267 "GET /static/dist/css/style.css?v=1744898423255 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:30:28,538 "GET /fees/settings/list/ HTTP/1.1" 200 44873
+INFO 2025-04-17 19:30:28,709 "GET /static/dist/css/style.css?v=1744898428704 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:30:41,580 "GET /student/list HTTP/1.1" 200 36944
+INFO 2025-04-17 19:30:41,793 "GET /static/dist/css/style.css?v=1744898441784 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:30:47,136 "GET /student/10/ HTTP/1.1" 200 47758
+INFO 2025-04-17 19:30:47,316 "GET /static/dist/css/style.css?v=1744898447308 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:30:49,984 "GET /student/10/update/ HTTP/1.1" 200 39057
+INFO 2025-04-17 19:30:50,158 "GET /static/dist/css/style.css?v=1744898450155 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:30:55,205 "POST /student/10/update/ HTTP/1.1" 302 0
+INFO 2025-04-17 19:30:55,269 "GET /student/10/ HTTP/1.1" 200 47901
+INFO 2025-04-17 19:30:55,474 "GET /static/dist/css/style.css?v=1744898455469 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:30:59,930 "GET /student/10/ HTTP/1.1" 200 47758
+INFO 2025-04-17 19:31:00,141 "GET /static/dist/css/style.css?v=1744898460133 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:31:06,193 "GET /student/create/ HTTP/1.1" 200 38948
+INFO 2025-04-17 19:31:06,465 "GET /static/dist/css/style.css?v=1744898466458 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:31:39,360 "GET /student/list HTTP/1.1" 200 36944
+INFO 2025-04-17 19:31:39,561 "GET /static/dist/css/style.css?v=1744898499550 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:31:44,740 "GET /student/3/ HTTP/1.1" 200 47858
+INFO 2025-04-17 19:31:44,952 "GET /static/dist/css/style.css?v=1744898504945 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:31:47,099 "GET /static/dist/css/style.css?v=1744898507093 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:31:49,075 "GET /student/8/ HTTP/1.1" 200 49037
+INFO 2025-04-17 19:31:49,257 "GET /static/dist/css/style.css?v=1744898509250 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:31:59,456 "GET /fees/history/8/ HTTP/1.1" 200 34472
+INFO 2025-04-17 19:31:59,615 "GET /static/dist/css/style.css?v=1744898519609 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:32:04,452 "GET /fees/receipt/4/ HTTP/1.1" 200 4316
+INFO 2025-04-17 19:32:18,748 "GET /fees/receipt/4/?format=html HTTP/1.1" 200 38082
+INFO 2025-04-17 19:32:19,247 "GET /static/dist/css/style.css?v=1744898539242 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:33:25,712 "GET /fees/complete-history/8/ HTTP/1.1" 200 4605
+INFO 2025-04-17 19:33:48,781 "GET /static/dist/css/style.css?v=1744898628775 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:33:52,680 "GET /fees/ HTTP/1.1" 200 83865
+INFO 2025-04-17 19:33:52,861 "GET /static/dist/css/style.css?v=1744898632857 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:34:04,809 "GET /api/get-sections/5/ HTTP/1.1" 200 40
+INFO 2025-04-17 19:34:04,830 "GET /api/get-sections/5/ HTTP/1.1" 200 40
+INFO 2025-04-17 19:34:06,861 "GET /fees/?class_name=5&section=A&search= HTTP/1.1" 200 94767
+INFO 2025-04-17 19:34:07,058 "GET /static/dist/css/style.css?v=1744898647045 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:34:19,924 "GET /fees/add-payment/2/ HTTP/1.1" 200 35935
+INFO 2025-04-17 19:34:20,103 "GET /static/dist/css/style.css?v=1744898660096 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:34:30,926 "POST /fees/add-payment/2/ HTTP/1.1" 302 0
+INFO 2025-04-17 19:34:30,990 "GET /fees/add-payment/2/ HTTP/1.1" 200 36112
+INFO 2025-04-17 19:34:31,270 "GET /static/dist/css/style.css?v=1744898671261 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:34:44,242 "POST /fees/add-payment/2/ HTTP/1.1" 302 0
+INFO 2025-04-17 19:34:44,293 "GET /fees/add-payment/2/ HTTP/1.1" 200 36112
+INFO 2025-04-17 19:34:44,471 "GET /static/dist/css/style.css?v=1744898684468 HTTP/1.1" 200 42552
+ERROR 2025-04-17 19:35:02,135 Internal Server Error: /fees/add-payment/2/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\fees\views.py", line 143, in add_fee_payment
+    remaining_amount -= fee_amount
+TypeError: unsupported operand type(s) for -=: 'float' and 'decimal.Decimal'
+ERROR 2025-04-17 19:35:02,142 "POST /fees/add-payment/2/ HTTP/1.1" 500 80668
+INFO 2025-04-17 19:35:03,411 "GET /fees/add-payment/2/ HTTP/1.1" 200 34916
+INFO 2025-04-17 19:35:03,602 "GET /static/dist/css/style.css?v=1744898703589 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:35:17,170 "GET /static/dist/css/style.css?v=1744898717166 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:35:19,965 "GET /fees/ HTTP/1.1" 200 83872
+INFO 2025-04-17 19:35:20,155 "GET /static/dist/css/style.css?v=1744898720140 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:35:25,382 "GET /fees/history/2/ HTTP/1.1" 200 34477
+INFO 2025-04-17 19:35:25,680 "GET /static/dist/css/style.css?v=1744898725669 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:35:27,799 "GET /static/dist/css/style.css?v=1744898727790 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:35:30,230 "GET /student/2/ HTTP/1.1" 200 48445
+INFO 2025-04-17 19:35:30,432 "GET /static/dist/css/style.css?v=1744898730425 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:35:45,707 "GET /attendance/attendance_list/ HTTP/1.1" 200 57751
+INFO 2025-04-17 19:35:45,886 "GET /static/dist/css/style.css?v=1744898745881 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:35:50,010 "GET /api/get-sections/5/ HTTP/1.1" 200 40
+INFO 2025-04-17 19:35:52,496 "GET /attendance/attendance_list/?class_id=5&section=A&attendance_date=2025-04-17 HTTP/1.1" 200 91091
+INFO 2025-04-17 19:35:52,769 "GET /static/dist/css/style.css?v=1744898752765 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:36:11,929 "POST /attendance/submit_attendance/ HTTP/1.1" 200 177
+INFO 2025-04-17 19:36:45,755 "GET /attendance/holidays/ HTTP/1.1" 200 50787
+INFO 2025-04-17 19:36:45,940 "GET /static/dist/css/style.css?v=1744898805935 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:37:09,687 "POST /attendance/holidays/add/ HTTP/1.1" 302 0
+INFO 2025-04-17 19:37:09,738 "GET /attendance/holidays/ HTTP/1.1" 200 53172
+INFO 2025-04-17 19:37:09,942 "GET /static/dist/css/style.css?v=1744898829933 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:37:22,559 "GET /attendance/attendance_list/ HTTP/1.1" 200 57751
+INFO 2025-04-17 19:37:22,739 "GET /static/dist/css/style.css?v=1744898842731 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:37:37,715 "GET /api/get-sections/5/ HTTP/1.1" 200 40
+INFO 2025-04-17 19:37:39,354 "GET /attendance/attendance_list/?class_id=5&section=A HTTP/1.1" 200 91101
+INFO 2025-04-17 19:37:39,754 "GET /static/dist/css/style.css?v=1744898859751 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:37:51,287 "GET /staff/list/ HTTP/1.1" 200 31050
+INFO 2025-04-17 19:37:51,489 "GET /static/dist/css/style.css?v=1744898871482 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:37:53,162 "GET /staff/create/ HTTP/1.1" 200 35253
+INFO 2025-04-17 19:37:53,338 "GET /static/dist/css/style.css?v=1744898873327 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:37:55,514 "GET /static/dist/css/style.css?v=1744898875504 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:37:59,425 "GET /staff/1/ HTTP/1.1" 200 32600
+INFO 2025-04-17 19:37:59,459 "GET /static/dist/img/teacher-dp.jpg HTTP/1.1" 200 14750
+INFO 2025-04-17 19:37:59,615 "GET /static/dist/css/style.css?v=1744898879611 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:38:08,802 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 30775
+INFO 2025-04-17 19:38:08,995 "GET /static/dist/css/style.css?v=1744898888985 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:38:11,147 "GET /non-teaching-staffs/create/ HTTP/1.1" 200 33562
+INFO 2025-04-17 19:38:11,334 "GET /static/dist/css/style.css?v=1744898891317 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:38:29,559 "POST /non-teaching-staffs/create/ HTTP/1.1" 302 0
+INFO 2025-04-17 19:38:29,662 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 32613
+INFO 2025-04-17 19:38:29,721 "GET /static/dist/img/worker.svg HTTP/1.1" 200 14909
+INFO 2025-04-17 19:38:29,862 "GET /static/dist/css/style.css?v=1744898909859 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:38:40,952 "GET /system-settings/general/ HTTP/1.1" 200 44629
+INFO 2025-04-17 19:38:41,146 "GET /static/dist/css/style.css?v=1744898921141 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:38:45,063 "GET /college-profile/ HTTP/1.1" 200 32059
+INFO 2025-04-17 19:38:45,256 "GET /static/dist/css/style.css?v=1744898925246 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:39:11,765 "GET /system-settings/ HTTP/1.1" 200 42371
+INFO 2025-04-17 19:39:11,943 "GET /static/dist/css/style.css?v=1744898951938 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:40:25,479 "GET /system-settings/general/ HTTP/1.1" 200 44629
+INFO 2025-04-17 19:40:25,846 "GET /static/dist/css/style.css?v=1744899025834 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:40:36,263 "POST /system-settings/general/ HTTP/1.1" 302 0
+INFO 2025-04-17 19:40:36,365 "GET /system-settings/general/ HTTP/1.1" 200 44767
+INFO 2025-04-17 19:40:36,595 "GET /static/dist/css/style.css?v=1744899036588 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:40:44,375 "GET /system-settings/academic/ HTTP/1.1" 200 49008
+INFO 2025-04-17 19:40:44,560 "GET /static/dist/css/style.css?v=1744899044550 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:40:56,181 "GET /system-settings/database/ HTTP/1.1" 200 54769
+INFO 2025-04-17 19:40:56,385 "GET /static/dist/css/style.css?v=1744899056374 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:41:06,051 "GET /system-settings/backup-restore/ HTTP/1.1" 200 60578
+INFO 2025-04-17 19:41:06,241 "GET /static/dist/css/style.css?v=1744899066237 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:41:12,022 "GET / HTTP/1.1" 200 56785
+INFO 2025-04-17 19:41:12,254 "GET /static/dist/css/style.css?v=1744899072249 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:41:18,273 "GET /student/list HTTP/1.1" 200 36932
+INFO 2025-04-17 19:41:18,515 "GET /static/dist/css/style.css?v=1744899078508 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:41:36,419 "GET /student/list HTTP/1.1" 200 36932
+INFO 2025-04-17 19:41:36,636 "GET /static/dist/css/style.css?v=1744899096625 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:41:51,645 "GET /student/create/ HTTP/1.1" 200 38936
+INFO 2025-04-17 19:41:51,978 "GET /static/dist/css/style.css?v=1744899111970 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:41:55,943 "GET /student/list HTTP/1.1" 200 36932
+INFO 2025-04-17 19:41:56,185 "GET /static/dist/css/style.css?v=1744899116179 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:41:57,674 "GET /student/5/ HTTP/1.1" 200 44670
+INFO 2025-04-17 19:41:57,883 "GET /static/dist/css/style.css?v=1744899117880 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:42:16,029 "GET /student/5/upload-documents/ HTTP/1.1" 200 40564
+INFO 2025-04-17 19:42:16,235 "GET /static/dist/css/style.css?v=1744899136228 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:43:12,211 "GET /student/list HTTP/1.1" 200 36932
+INFO 2025-04-17 19:43:12,449 "GET /static/dist/css/style.css?v=1744899192441 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:43:20,019 "GET /student/10/ HTTP/1.1" 200 47746
+INFO 2025-04-17 19:43:20,206 "GET /static/dist/css/style.css?v=1744899200199 HTTP/1.1" 200 42552
+INFO 2025-04-17 19:45:14,570 "GET /logout/ HTTP/1.1" 200 6175
+INFO 2025-04-17 19:45:19,690 "GET / HTTP/1.1" 302 0
+INFO 2025-04-17 19:45:19,706 "GET /accounts/login/?next=/ HTTP/1.1" 200 5711
+INFO 2025-04-17 19:46:21,128 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-04-17 19:46:21,184 "GET / HTTP/1.1" 200 56785
+INFO 2025-04-17 19:46:21,595 "GET /static/dist/css/style.css?v=1744899381592 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:24:16,856 Watching for file changes with StatReloader
+INFO 2025-04-18 10:24:24,395 "GET / HTTP/1.1" 302 0
+INFO 2025-04-18 10:24:24,437 "GET /accounts/login/?next=/ HTTP/1.1" 200 5711
+WARNING 2025-04-18 10:24:25,277 Not Found: /favicon.ico
+WARNING 2025-04-18 10:24:25,279 "GET /favicon.ico HTTP/1.1" 404 12956
+INFO 2025-04-18 10:24:28,642 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-04-18 10:24:29,050 "GET / HTTP/1.1" 200 56785
+INFO 2025-04-18 10:24:29,459 "GET /static/dist/css/preload.css HTTP/1.1" 304 0
+INFO 2025-04-18 10:24:29,466 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-18 10:24:29,531 "GET /static/dist/js/custom.js HTTP/1.1" 304 0
+INFO 2025-04-18 10:24:32,051 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 304 0
+INFO 2025-04-18 10:24:32,093 "GET /static/dist/css/style.css?v=1744952072008 HTTP/1.1" 200 42552
+WARNING 2025-04-18 10:24:32,526 "GET /static/dist/img/favicon/favicon.ico HTTP/1.1" 404 1898
+WARNING 2025-04-18 10:24:32,543 "GET /static/dist/img/favicon/favicon-32x32.png HTTP/1.1" 404 1916
+WARNING 2025-04-18 10:24:32,558 "GET /static/dist/img/favicon/favicon-16x16.png HTTP/1.1" 404 1916
+INFO 2025-04-18 10:26:14,978 "GET /site-config HTTP/1.1" 200 34964
+INFO 2025-04-18 10:26:15,350 "GET /static/dist/css/style.css?v=1744952175338 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:26:22,553 "POST /site-config HTTP/1.1" 302 0
+INFO 2025-04-18 10:26:22,585 "GET /college-profile/ HTTP/1.1" 200 32074
+INFO 2025-04-18 10:26:22,870 "GET /static/dist/css/style.css?v=1744952182865 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:26:30,937 "GET /student/list HTTP/1.1" 200 36956
+INFO 2025-04-18 10:26:31,132 "GET /static/dist/css/style.css?v=1744952191127 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:26:33,486 "GET /student/3/ HTTP/1.1" 200 47870
+INFO 2025-04-18 10:26:33,545 "GET /static/dist/img/avatar.png HTTP/1.1" 304 0
+INFO 2025-04-18 10:26:33,662 "GET /static/dist/css/style.css?v=1744952193652 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:26:47,077 "GET /static/dist/css/style.css?v=1744952207070 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:26:49,670 "GET /student/10/ HTTP/1.1" 200 47770
+INFO 2025-04-18 10:26:49,840 "GET /static/dist/css/style.css?v=1744952209832 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:26:58,271 "GET /fees/settings/ HTTP/1.1" 200 37836
+WARNING 2025-04-18 10:26:58,340 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+INFO 2025-04-18 10:26:58,496 "GET /static/dist/css/style.css?v=1744952218490 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:27:01,505 "GET /api/get-sections/8/ HTTP/1.1" 200 40
+INFO 2025-04-18 10:27:03,687 "GET /fees/settings/?class_name=8&section=A HTTP/1.1" 200 41273
+INFO 2025-04-18 10:27:03,853 "GET /static/dist/css/style.css?v=1744952223845 HTTP/1.1" 200 42552
+ERROR 2025-04-18 10:27:27,077 Internal Server Error: /fees/settings/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1817, in to_python
+    decimal_value = decimal.Decimal(value)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+decimal.InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py", line 684, in fee_settings
+    fee_structure = FeeStructure.objects.create(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1854, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1880, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1805, in as_sql
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1740, in prepare_value
+    return field.get_db_prep_save(value, connection=self.connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1012, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1833, in get_db_prep_value
+    value = super().get_db_prep_value(value, connection, prepared)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1005, in get_db_prep_value
+    value = self.get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1840, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1819, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“” value must be a decimal number.']
+ERROR 2025-04-18 10:27:27,084 "POST /fees/settings/?class_name=8&section=A HTTP/1.1" 500 159244
+INFO 2025-04-18 10:27:41,134 "GET /static/dist/css/style.css?v=1744952261131 HTTP/1.1" 200 42552
+ERROR 2025-04-18 10:29:39,999 Internal Server Error: /fees/settings/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1817, in to_python
+    decimal_value = decimal.Decimal(value)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+decimal.InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py", line 684, in fee_settings
+    fee_structure = FeeStructure.objects.create(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1854, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1880, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1805, in as_sql
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1740, in prepare_value
+    return field.get_db_prep_save(value, connection=self.connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1012, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1833, in get_db_prep_value
+    value = super().get_db_prep_value(value, connection, prepared)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1005, in get_db_prep_value
+    value = self.get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1840, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1819, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“” value must be a decimal number.']
+ERROR 2025-04-18 10:29:39,999 "POST /fees/settings/?class_name=8&section=A HTTP/1.1" 500 159245
+INFO 2025-04-18 10:30:46,128 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-18 10:30:48,277 Watching for file changes with StatReloader
+INFO 2025-04-18 10:30:57,379 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-18 10:30:58,930 Watching for file changes with StatReloader
+INFO 2025-04-18 10:31:12,592 "POST /fees/settings/?class_name=8&section=A HTTP/1.1" 302 0
+INFO 2025-04-18 10:31:12,657 "GET /fees/settings/ HTTP/1.1" 200 38445
+WARNING 2025-04-18 10:31:12,746 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+INFO 2025-04-18 10:31:13,158 "GET /static/dist/css/style.css?v=1744952473041 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:31:32,269 "GET /fees/settings/list/ HTTP/1.1" 200 46800
+INFO 2025-04-18 10:31:32,623 "GET /static/dist/css/style.css?v=1744952492609 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:31:46,528 "GET /student/list HTTP/1.1" 200 36956
+INFO 2025-04-18 10:31:46,733 "GET /static/dist/css/style.css?v=1744952506727 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:31:49,019 "GET /student/10/ HTTP/1.1" 200 48590
+INFO 2025-04-18 10:31:49,192 "GET /static/dist/css/style.css?v=1744952509182 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:32:23,695 "GET /fees/ HTTP/1.1" 200 83884
+INFO 2025-04-18 10:32:24,022 "GET /static/dist/css/style.css?v=1744952544015 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:33:41,385 "GET /fees/ HTTP/1.1" 200 83884
+INFO 2025-04-18 10:33:41,585 "GET /static/dist/css/style.css?v=1744952621578 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:33:57,916 "GET /api/get-sections/5/ HTTP/1.1" 200 40
+INFO 2025-04-18 10:33:57,950 "GET /api/get-sections/5/ HTTP/1.1" 200 40
+INFO 2025-04-18 10:34:02,131 "GET /api/get-sections/6/ HTTP/1.1" 200 40
+INFO 2025-04-18 10:34:02,150 "GET /api/get-sections/6/ HTTP/1.1" 200 40
+INFO 2025-04-18 10:34:04,201 "GET /api/get-sections/7/ HTTP/1.1" 200 16
+INFO 2025-04-18 10:34:04,231 "GET /api/get-sections/7/ HTTP/1.1" 200 16
+INFO 2025-04-18 10:34:06,150 "GET /api/get-sections/8/ HTTP/1.1" 200 40
+INFO 2025-04-18 10:34:06,185 "GET /api/get-sections/8/ HTTP/1.1" 200 40
+INFO 2025-04-18 10:34:10,582 "GET /api/get-sections/3/ HTTP/1.1" 200 40
+INFO 2025-04-18 10:34:10,606 "GET /api/get-sections/3/ HTTP/1.1" 200 40
+INFO 2025-04-18 10:34:13,750 "GET /api/get-sections/5/ HTTP/1.1" 200 40
+INFO 2025-04-18 10:34:13,769 "GET /api/get-sections/5/ HTTP/1.1" 200 40
+INFO 2025-04-18 10:34:29,414 "GET / HTTP/1.1" 200 56815
+INFO 2025-04-18 10:34:29,774 "GET /static/dist/css/style.css?v=1744952669770 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:34:35,929 "GET /staff/list/ HTTP/1.1" 200 31062
+INFO 2025-04-18 10:34:36,134 "GET /static/dist/css/style.css?v=1744952676123 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:34:41,552 "GET /fees/ HTTP/1.1" 200 83884
+INFO 2025-04-18 10:34:41,731 "GET /static/dist/css/style.css?v=1744952681726 HTTP/1.1" 200 42552
+WARNING 2025-04-18 10:34:48,180 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-18 10:34:50,065 "GET /fees/ HTTP/1.1" 200 83884
+INFO 2025-04-18 10:34:50,150 "GET /static/dist/css/preload.css HTTP/1.1" 200 1863
+INFO 2025-04-18 10:34:50,181 "GET /static/dist/css/style.css HTTP/1.1" 200 42552
+INFO 2025-04-18 10:34:50,200 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-04-18 10:34:50,214 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-04-18 10:34:50,278 "GET /static/dist/css/sidebar-fix.css HTTP/1.1" 200 9004
+INFO 2025-04-18 10:34:50,297 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-04-18 10:34:50,298 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-04-18 10:34:50,301 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-04-18 10:34:50,314 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-04-18 10:34:50,314 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-04-18 10:34:50,314 "GET /static/dist/js/custom.js HTTP/1.1" 200 2597
+INFO 2025-04-18 10:34:50,329 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-04-18 10:34:50,342 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-04-18 10:34:50,466 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-04-18 10:34:50,563 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-04-18 10:34:50,891 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+INFO 2025-04-18 10:34:50,895 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-04-18 10:34:51,200 "GET /static/dist/css/style.css?v=1744952691086 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:34:51,214 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 200 9593
+INFO 2025-04-18 10:34:51,219 "GET /static/dist/js/sidebar-fix.js HTTP/1.1" 200 2621
+WARNING 2025-04-18 10:34:51,250 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-18 10:34:51,415 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+WARNING 2025-04-18 10:34:51,785 "GET /static/dist/img/favicon/favicon.ico HTTP/1.1" 404 1898
+WARNING 2025-04-18 10:34:51,813 "GET /static/dist/img/favicon/favicon-32x32.png HTTP/1.1" 404 1916
+WARNING 2025-04-18 10:34:51,827 "GET /static/dist/img/favicon/favicon-16x16.png HTTP/1.1" 404 1916
+INFO 2025-04-18 10:36:01,810 "GET /fees/receipt/11/?format=html HTTP/1.1" 200 38101
+INFO 2025-04-18 10:36:02,059 "GET /media/college_logos/college_lgoooo_wLVF410.jpg HTTP/1.1" 200 31795
+INFO 2025-04-18 10:36:02,464 "GET /static/dist/css/style.css?v=1744952762446 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:36:43,577 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-18 10:36:45,564 Watching for file changes with StatReloader
+INFO 2025-04-18 10:37:19,222 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-18 10:37:20,898 Watching for file changes with StatReloader
+INFO 2025-04-18 10:37:23,425 "GET /student/list HTTP/1.1" 200 36956
+INFO 2025-04-18 10:37:23,968 "GET /static/dist/css/style.css?v=1744952843864 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:37:31,567 D:\Sipher Web\Django School Management System\SMS\apps\fees\urls.py changed, reloading.
+INFO 2025-04-18 10:37:32,645 Watching for file changes with StatReloader
+INFO 2025-04-18 10:37:59,895 "GET /fees/ HTTP/1.1" 200 83884
+INFO 2025-04-18 10:38:00,393 "GET /static/dist/css/style.css?v=1744952880304 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:38:54,517 "GET /fees/ HTTP/1.1" 200 84017
+INFO 2025-04-18 10:38:54,896 "GET /static/dist/css/style.css?v=1744952934888 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:39:07,390 "GET /fees/transactions/ HTTP/1.1" 200 74048
+INFO 2025-04-18 10:39:07,787 "GET /static/dist/css/style.css?v=1744952947764 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:39:26,275 "GET /fees/ HTTP/1.1" 200 84400
+INFO 2025-04-18 10:39:26,491 "GET /static/dist/css/style.css?v=1744952966472 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:39:41,376 "GET /fees/ HTTP/1.1" 200 84400
+INFO 2025-04-18 10:39:41,547 "GET /static/dist/css/style.css?v=1744952981544 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:39:42,642 "GET /fees/transactions/ HTTP/1.1" 200 74048
+INFO 2025-04-18 10:39:42,824 "GET /static/dist/css/style.css?v=1744952982818 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:41:24,237 "GET /fees/transactions/ HTTP/1.1" 200 74038
+INFO 2025-04-18 10:41:24,453 "GET /static/dist/css/style.css?v=1744953084448 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:41:38,691 "GET /fees/transactions/ HTTP/1.1" 200 74027
+INFO 2025-04-18 10:41:39,081 "GET /static/dist/css/style.css?v=1744953099078 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:42:31,835 "GET /fees/transactions/ HTTP/1.1" 200 74017
+INFO 2025-04-18 10:42:32,027 "GET /static/dist/css/style.css?v=1744953152020 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:42:38,117 "GET /fees/transactions/ HTTP/1.1" 200 74006
+INFO 2025-04-18 10:42:38,386 "GET /static/dist/css/style.css?v=1744953158382 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:42:51,615 "GET /fees/transactions/ HTTP/1.1" 200 73999
+INFO 2025-04-18 10:42:51,808 "GET /static/dist/css/style.css?v=1744953171801 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:43:12,789 "GET /fees/transactions/ HTTP/1.1" 200 73981
+INFO 2025-04-18 10:43:12,973 "GET /static/dist/css/style.css?v=1744953192967 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:43:29,746 "GET /fees/transactions/ HTTP/1.1" 200 73973
+INFO 2025-04-18 10:43:29,939 "GET /static/dist/css/style.css?v=1744953209934 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:44:32,352 "GET /fees/receipt/4/?format=html HTTP/1.1" 200 38097
+INFO 2025-04-18 10:44:32,882 "GET /static/dist/css/style.css?v=1744953272877 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:44:44,373 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-18 10:44:45,865 Watching for file changes with StatReloader
+INFO 2025-04-18 10:45:10,080 "GET /fees/transactions/ HTTP/1.1" 200 74008
+INFO 2025-04-18 10:45:10,530 "GET /static/dist/css/style.css?v=1744953310431 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:45:28,788 "GET /fees/transactions/ HTTP/1.1" 200 74721
+INFO 2025-04-18 10:45:29,089 "GET /static/dist/css/style.css?v=1744953329079 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:47:26,218 "GET /fees/transactions/ HTTP/1.1" 200 74948
+INFO 2025-04-18 10:47:26,455 "GET /static/dist/css/style.css?v=1744953446449 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:47:46,543 "GET /fees/transactions/ HTTP/1.1" 200 75135
+INFO 2025-04-18 10:47:46,836 "GET /static/dist/css/style.css?v=1744953466834 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:50:28,104 "GET /student/list HTTP/1.1" 200 36956
+INFO 2025-04-18 10:50:28,541 "GET /static/dist/css/style.css?v=1744953628517 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:50:36,673 "GET /static/dist/css/style.css?v=1744953636636 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:50:54,847 "GET /fees/transactions/ HTTP/1.1" 200 75189
+INFO 2025-04-18 10:50:55,004 "GET /static/dist/css/style.css?v=1744953654999 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:51:09,784 "GET /fees/transactions/ HTTP/1.1" 200 75911
+INFO 2025-04-18 10:51:09,948 "GET /static/dist/css/style.css?v=1744953669941 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:51:26,362 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-18 10:51:28,009 Watching for file changes with StatReloader
+INFO 2025-04-18 10:51:39,323 D:\Sipher Web\Django School Management System\SMS\apps\fees\views.py changed, reloading.
+INFO 2025-04-18 10:51:40,625 Watching for file changes with StatReloader
+INFO 2025-04-18 10:51:50,081 "GET /fees/transactions/ HTTP/1.1" 200 76827
+INFO 2025-04-18 10:51:50,356 "GET /static/dist/css/style.css?v=1744953710275 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:52:09,328 "GET /fees/transactions/ HTTP/1.1" 200 76827
+INFO 2025-04-18 10:52:09,738 "GET /static/dist/css/style.css?v=1744953729734 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:52:29,093 "GET /fees/transactions/ HTTP/1.1" 200 76827
+INFO 2025-04-18 10:52:29,262 "GET /static/dist/css/style.css?v=1744953749255 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:54:14,880 "GET /fees/transactions/ HTTP/1.1" 200 76827
+INFO 2025-04-18 10:54:15,131 "GET /static/dist/css/style.css?v=1744953855125 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:54:22,684 "GET /fees/transactions/?payment_method=&status=&date_from=&date_to=&class_name=&section=&fee_category=&search=ak HTTP/1.1" 200 57087
+INFO 2025-04-18 10:54:23,124 "GET /static/dist/css/style.css?v=1744953863086 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:55:02,288 "GET /fees/transactions/ HTTP/1.1" 200 76827
+INFO 2025-04-18 10:55:02,510 "GET /static/dist/css/style.css?v=1744953902503 HTTP/1.1" 200 42552
+WARNING 2025-04-18 10:55:34,617 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-18 10:56:22,957 "GET /fees/transactions/ HTTP/1.1" 200 76827
+INFO 2025-04-18 10:56:23,274 "GET /static/dist/css/style.css?v=1744953983269 HTTP/1.1" 200 42552
+INFO 2025-04-18 10:56:41,439 "GET /exams/admit-cards/ HTTP/1.1" 200 42403
+INFO 2025-04-18 10:56:41,742 "GET /static/dist/css/style.css?v=1744954001735 HTTP/1.1" 200 42552

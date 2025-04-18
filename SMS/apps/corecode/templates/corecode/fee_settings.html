@@ -214,18 +214,18 @@
                                 {% for fee in existing_fees %}
                                 <tr class="fee-row">
                                     <td><input type="text" class="form-control" name="fee_type[]" value="{{ fee.fee_type }}" required></td>
-                                    <td><input type="number" class="form-control amount" name="amount[]" value="{{ fee.amount }}" required></td>
-                                    <td><input type="number" class="form-control" name="late_fee[]" value="{{ fee.late_fee }}"></td>
-                                    <td><input type="number" class="form-control discount" name="discount[]" value="{{ fee.discount }}"></td>
+                                    <td><input type="number" class="form-control amount" name="amount[]" value="{{ fee.amount }}" min="0" step="0.01" required></td>
+                                    <td><input type="number" class="form-control" name="late_fee[]" value="{{ fee.late_fee|default:0 }}" min="0" step="0.01"></td>
+                                    <td><input type="number" class="form-control discount" name="discount[]" value="{{ fee.discount|default:0 }}" min="0" step="0.01"></td>
                                     <td><button type="button" class="btn-remove-fee"><i class="fas fa-trash"></i></button></td>
                                 </tr>
                                 {% endfor %}
                             {% else %}
                                 <tr class="fee-row">
                                     <td><input type="text" class="form-control" name="fee_type[]" placeholder="e.g., Tuition Fee" required></td>
-                                    <td><input type="number" class="form-control amount" name="amount[]" required></td>
-                                    <td><input type="number" class="form-control" name="late_fee[]"></td>
-                                    <td><input type="number" class="form-control discount" name="discount[]"></td>
+                                    <td><input type="number" class="form-control amount" name="amount[]" min="0" step="0.01" required></td>
+                                    <td><input type="number" class="form-control" name="late_fee[]" min="0" step="0.01" value="0"></td>
+                                    <td><input type="number" class="form-control discount" name="discount[]" min="0" step="0.01" value="0"></td>
                                     <td><button type="button" class="btn-remove-fee"><i class="fas fa-trash"></i></button></td>
                                 </tr>
                             {% endif %}
@@ -282,9 +282,9 @@ $(document).ready(function () {
         const newRow = `
         <tr class="fee-row">
             <td><input type="text" class="form-control" name="fee_type[]" placeholder="e.g., Tuition Fee" required></td>
-            <td><input type="number" class="form-control amount" name="amount[]" required></td>
-            <td><input type="number" class="form-control" name="late_fee[]"></td>
-            <td><input type="number" class="form-control discount" name="discount[]"></td>
+            <td><input type="number" class="form-control amount" name="amount[]" min="0" step="0.01" required></td>
+            <td><input type="number" class="form-control" name="late_fee[]" min="0" step="0.01" value="0"></td>
+            <td><input type="number" class="form-control discount" name="discount[]" min="0" step="0.01" value="0"></td>
             <td><button type="button" class="btn-remove-fee"><i class="fas fa-trash"></i></button></td>
         </tr>`;
         $("#feeTable tbody").append(newRow);

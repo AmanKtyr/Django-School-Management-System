@@ -57,7 +57,10 @@
             </div>
             <div class="col-md-3">
               <label for="section" class="form-label">Section</label>
-              <input type="text" name="section" id="section" class="form-control" placeholder="Enter section">
+              <select name="section" id="section" class="form-select">
+                <option value="">-- All Sections --</option>
+                <!-- Options will be populated dynamically based on class selection -->
+              </select>
             </div>
             <div class="col-md-3">
               <label for="printed" class="form-label">Print Status</label>
@@ -253,39 +256,74 @@
         }
       }
     });
-    
+
     // Select all checkbox
     $('#selectAll').on('change', function() {
       $('.card-checkbox').prop('checked', $(this).prop('checked'));
     });
-    
+
     // Print selected button
     $('#printSelectedBtn').on('click', function(e) {
       e.preventDefault();
-      
+
       var selectedIds = [];
       $('.card-checkbox:checked').each(function() {
         selectedIds.push($(this).val());
       });
-      
+
       if (selectedIds.length === 0) {
         alert('Please select at least one admit card to print.');
         return;
       }
-      
+
       // Open print page with selected IDs
       var url = "{% url 'exams:admit_card_print_bulk' %}?ids=" + selectedIds.join(',');
       window.open(url, '_blank');
     });
-    
+
     // Class and section filter dependency
     $('#class').on('change', function() {
       var classId = $(this).val();
+      var sectionSelect = $('#section');
+
+      // Show loading indicator
+      sectionSelect.html('<option value="">Loading sections...</option>');
+
       if (classId) {
-        // This would be implemented with an AJAX call to get sections
-        // For now, just a placeholder
+        // Fetch sections for this class using the API
+        fetch(`/api/get-sections/${classId}/`)
+          .then(response => response.json())
+          .then(data => {
+            // Reset dropdown with default option
+            sectionSelect.html('<option value="">-- All Sections --</option>');
+
+            // Add sections from this class only
+            if (data.sections && data.sections.length > 0) {
+              data.sections.forEach(section => {
+                const option = new Option(section.name, section.name);
+                sectionSelect.append(option);
+              });
+            } else {
+              // If no sections found
+              const option = new Option('No sections found', '');
+              option.disabled = true;
+              sectionSelect.append(option);
+            }
+          })
+          .catch(error => {
+            console.error('Error fetching sections:', error);
+            sectionSelect.html('<option value="">-- All Sections --</option><option disabled>Error loading sections</option>');
+          });
+      } else {
+        // If no class selected, just show the default option
+        sectionSelect.html('<option value="">-- All Sections --</option>');
       }
     });
+
+    // Trigger change event if class is already selected on page load
+    if ($('#class').val()) {
+      $('#class').trigger('change');
+    }
   });
 </script>
 {% endblock morejs %}

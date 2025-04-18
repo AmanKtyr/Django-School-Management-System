@@ -681,13 +681,18 @@ def fee_settings(request):
             # Create fee structures
             fee_structures = []
             for i in range(len(fee_types)):
+                # Handle empty values for decimal fields
+                amount = amounts[i] if amounts[i] else 0
+                late_fee = late_fees[i] if i < len(late_fees) and late_fees[i] else 0
+                discount = discounts[i] if i < len(discounts) and discounts[i] else 0
+
                 fee_structure = FeeStructure.objects.create(
                     fee_settings=fee_settings,
                     fee_type=fee_types[i],
-                    amount=amounts[i],
+                    amount=amount,
                     due_date=due_date,  # Use the single due date for all fees
-                    late_fee=late_fees[i] if i < len(late_fees) else 0,
-                    discount=discounts[i] if i < len(discounts) else 0
+                    late_fee=late_fee,
+                    discount=discount
                 )
                 fee_structures.append(fee_structure)
 
@@ -709,13 +714,18 @@ def fee_settings(request):
 
                 # Create new pending fees
                 for fs in fee_structures:
+                    # Ensure all decimal values are valid
+                    amount = fs.amount if fs.amount else 0
+                    late_fee = fs.late_fee if fs.late_fee else 0
+                    discount = fs.discount if fs.discount else 0
+
                     PendingFee.objects.create(
                         student=student,
                         fee_type=fs.fee_type,
-                        amount=fs.amount,
+                        amount=amount,
                         due_date=fs.due_date,  # This now uses the single due date
-                        late_fee=fs.late_fee,
-                        discount=fs.discount
+                        late_fee=late_fee,
+                        discount=discount
                     )
 
             messages.success(request, f'Fee settings saved successfully! Pending fees created for {students.count()} students.')
