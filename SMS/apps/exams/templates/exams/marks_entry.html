@@ -31,7 +31,7 @@
 {% block subtitle %}Record and manage student examination marks{% endblock subtitle %}
 
 {% block content %}
-<div class="container-fluid">
+<div class="container-fluid exams-container">
   <!-- Filter Card -->
   <div class="row mb-4">
     <div class="col-md-12">
@@ -115,7 +115,7 @@
             <input type="hidden" name="subject_id" value="{{ selected_subject }}">
             <input type="hidden" name="class_id" value="{{ selected_class }}">
             <input type="hidden" name="section" value="{{ selected_section }}">
-            
+
             <div class="table-responsive">
               <table class="table table-hover table-striped marks-table">
                 <thead class="table-light">
@@ -136,8 +136,8 @@
                     <td>{{ student.registration_number }}</td>
                     <td>{{ student.fullname }}</td>
                     <td>
-                      <input type="number" name="marks_{{ student.id }}" id="marks_{{ student.id }}" 
-                             class="form-control form-control-sm marks-input" min="0" max="{{ max_marks }}" 
+                      <input type="number" name="marks_{{ student.id }}" id="marks_{{ student.id }}"
+                             class="form-control form-control-sm marks-input" min="0" max="{{ max_marks }}"
                              value="{{ student.marks|default:'' }}" required>
                     </td>
                     <td>
@@ -155,8 +155,8 @@
                       </span>
                     </td>
                     <td>
-                      <input type="text" name="remarks_{{ student.id }}" id="remarks_{{ student.id }}" 
-                             class="form-control form-control-sm" value="{{ student.remarks|default:'' }}" 
+                      <input type="text" name="remarks_{{ student.id }}" id="remarks_{{ student.id }}"
+                             class="form-control form-control-sm" value="{{ student.remarks|default:'' }}"
                              placeholder="Optional">
                     </td>
                   </tr>
@@ -174,7 +174,7 @@
                 </tbody>
               </table>
             </div>
-            
+
             <div class="row mt-4">
               <div class="col-md-6">
                 <div class="card border">
@@ -188,7 +188,7 @@
                         <p><strong>Passing Marks:</strong> {{ passing_marks }}</p>
                       </div>
                       <div class="col-md-6">
-                        <p><strong>Status:</strong> 
+                        <p><strong>Status:</strong>
                           <span class="badge {% if marks_status == 'draft' %}bg-warning{% elif marks_status == 'finalized' %}bg-primary{% else %}bg-success{% endif %}">
                             {{ marks_status|title }}
                           </span>
@@ -239,7 +239,7 @@
       </div>
     </div>
   </div>
-  
+
   <!-- Statistics Card -->
   <div class="row mt-4">
     <div class="col-md-12">
@@ -282,7 +282,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="row mt-4">
             <div class="col-md-6">
               <div class="card border h-100">
@@ -310,7 +310,7 @@
     </div>
   </div>
   {% endif %}
-  
+
   <!-- Import Modal -->
   <div class="modal fade" id="importModal" tabindex="-1" aria-labelledby="importModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -357,42 +357,42 @@
       var marks = parseFloat($(this).val()) || 0;
       var maxMarks = {{ max_marks|default:100 }};
       var passingMarks = {{ passing_marks|default:40 }};
-      
+
       // Update pass/fail status
       if (marks >= passingMarks) {
         $('#pass_fail_' + studentId).text('Pass').removeClass('bg-danger').addClass('bg-success');
       } else {
         $('#pass_fail_' + studentId).text('Fail').removeClass('bg-success').addClass('bg-danger');
       }
-      
+
       // Update grade
       var grade = calculateGrade(marks, maxMarks);
       $('#grade_' + studentId).text(grade);
     });
-    
+
     // Calculate button click
     $('#calculateBtn').on('click', function() {
       if (confirm('This will auto-calculate pass/fail status and grades for all students. Continue?')) {
         $('.marks-input').trigger('change');
       }
     });
-    
+
     // Import button click
     $('#importBtn').on('click', function() {
       $('#importModal').modal('show');
     });
-    
+
     // Import submit button click
     $('#importSubmitBtn').on('click', function() {
       // This would be implemented with AJAX in a real application
       alert('Import functionality would be implemented with AJAX in a real application.');
       $('#importModal').modal('hide');
     });
-    
+
     // Function to calculate grade based on marks
     function calculateGrade(marks, maxMarks) {
       var percentage = (marks / maxMarks) * 100;
-      
+
       if (percentage >= 90) return 'A+';
       else if (percentage >= 80) return 'A';
       else if (percentage >= 70) return 'B+';
@@ -401,12 +401,12 @@
       else if (percentage >= 40) return 'C';
       else return 'F';
     }
-    
+
     {% if show_marks_form %}
     // Initialize charts
     var gradeCtx = document.getElementById('gradeChart').getContext('2d');
     var passFailCtx = document.getElementById('passFailChart').getContext('2d');
-    
+
     var gradeChart = new Chart(gradeCtx, {
       type: 'bar',
       data: {
@@ -459,7 +459,7 @@
         }
       }
     });
-    
+
     var passFailChart = new Chart(passFailCtx, {
       type: 'pie',
       data: {

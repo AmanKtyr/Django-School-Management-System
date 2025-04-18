@@ -31,7 +31,7 @@
 {% block subtitle %}View and publish examination results{% endblock subtitle %}
 
 {% block content %}
-<div class="container-fluid">
+<div class="container-fluid exams-container">
   <!-- Filter Card -->
   <div class="row mb-4">
     <div class="col-md-12">
@@ -223,7 +223,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="row">
             <div class="col-md-12">
               <div class="card border">
@@ -271,7 +271,7 @@
       </div>
     </div>
   </div>
-  
+
   <!-- Export Modal -->
   <div class="modal fade" id="exportModal" tabindex="-1" aria-labelledby="exportModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -372,12 +372,12 @@
         }
       }
     });
-    
+
     // Select all checkbox
     $('#selectAll').on('change', function() {
       $('.result-checkbox').prop('checked', $(this).prop('checked'));
     });
-    
+
     // Publish button click
     $('#publishBtn').on('click', function() {
       var selectedIds = getSelectedIds();
@@ -385,13 +385,13 @@
         alert('Please select at least one result to publish.');
         return;
       }
-      
+
       if (confirm('Are you sure you want to publish the selected results? This will make them visible to students and parents.')) {
         // This would be implemented with AJAX in a real application
         alert('Publish functionality would be implemented with AJAX in a real application.');
       }
     });
-    
+
     // Print button click
     $('#printBtn').on('click', function() {
       var selectedIds = getSelectedIds();
@@ -399,24 +399,24 @@
         alert('Please select at least one result to print.');
         return;
       }
-      
+
       // Open print page with selected IDs
       var url = "{% url 'exams:result_print_bulk' %}?ids=" + selectedIds.join(',');
       window.open(url, '_blank');
     });
-    
+
     // Export button click
     $('#exportBtn').on('click', function() {
       $('#exportModal').modal('show');
     });
-    
+
     // Export submit button click
     $('#exportSubmitBtn').on('click', function() {
       // This would be implemented with AJAX in a real application
       alert('Export functionality would be implemented with AJAX in a real application.');
       $('#exportModal').modal('hide');
     });
-    
+
     // Function to get selected result IDs
     function getSelectedIds() {
       var selectedIds = [];
@@ -425,11 +425,11 @@
       });
       return selectedIds;
     }
-    
+
     // Initialize charts
     var classCtx = document.getElementById('classChart').getContext('2d');
     var subjectCtx = document.getElementById('subjectChart').getContext('2d');
-    
+
     var classChart = new Chart(classCtx, {
       type: 'bar',
       data: {
@@ -461,7 +461,7 @@
         }
       }
     });
-    
+
     var subjectChart = new Chart(subjectCtx, {
       type: 'bar',
       data: {

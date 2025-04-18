@@ -242,7 +242,7 @@ body.sidebar-collapse.sidebar-closed .main-footer {
 /* Content Styles */
 .content-wrapper {
   flex: 1 !important;
-  padding: 20px !important;
+  padding: 15px !important;
   background-color: #ffffff !important;
   border-radius: 10px !important;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
@@ -593,8 +593,8 @@ body.sidebar-toggled .content-wrapper {
 
 /* Professional Page Title Styles */
 .page-title-section {
-  padding: 15px 0 25px 0 !important;
-  margin-bottom: 20px !important;
+  padding: 10px 0 15px 0 !important;
+  margin-bottom: 15px !important;
   position: relative !important;
   overflow: hidden !important;
 }
@@ -818,6 +818,29 @@ body.sidebar-toggled .content-wrapper {
     margin-top: 15px !important;
     justify-content: flex-start !important;
   }
+
+  .container-fluid {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+
+  .content-wrapper {
+    padding: 10px !important;
+  }
+
+  .row {
+    margin-left: -5px !important;
+    margin-right: -5px !important;
+  }
+
+  .col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12,
+  .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12,
+  .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12,
+  .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12,
+  .col-xl, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
 }
 
 /* Enhanced Card Styles */
@@ -827,7 +850,7 @@ body.sidebar-toggled .content-wrapper {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1) !important;
   transition: all 0.3s ease !important;
   overflow: hidden !important;
-  margin-bottom: 24px !important;
+  margin-bottom: 15px !important;
 }
 
 .card:hover {
@@ -1302,6 +1325,68 @@ body.no-control-sidebar .wrapper {
   width: calc(100% - 250px) !important;
   padding-bottom: 60px !important; /* Add padding for footer */
   min-height: calc(100vh - 60px) !important; /* Ensure content takes up full height minus footer */
+}
+
+/* Custom container-fluid styles to reduce padding */
+.container-fluid {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Improve spacing in forms and tables */
+.form-group {
+  margin-bottom: 10px !important;
+}
+
+.table th, .table td {
+  padding: 0.5rem !important;
+}
+
+/* Reduce spacing in cards */
+.card-body {
+  padding: 15px !important;
+}
+
+.card-header {
+  padding: 10px 15px !important;
+}
+
+/* Optimized layout for student pages */
+.student-container .container-fluid,
+.fees-container .container-fluid {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.student-container .row,
+.fees-container .row {
+  margin-left: -5px !important;
+  margin-right: -5px !important;
+}
+
+.student-container .col,
+.student-container [class*="col-"],
+.fees-container .col,
+.fees-container [class*="col-"] {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.student-container .card,
+.fees-container .card {
+  margin-bottom: 10px !important;
+}
+
+.student-container .card-body,
+.fees-container .card-body {
+  padding: 10px !important;
+}
+
+.student-container .form-group,
+.fees-container .form-group {
+  margin-bottom: 8px !important;
 }
 
 /* When sidebar is collapsed */

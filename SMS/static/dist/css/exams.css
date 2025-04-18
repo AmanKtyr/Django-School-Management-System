@@ -145,18 +145,18 @@
     .no-print {
         display: none !important;
     }
-    
+
     .print-only {
         display: block !important;
     }
-    
+
     .admit-card {
         page-break-inside: avoid;
         margin: 0;
         padding: 0;
         border: 1px solid #000;
     }
-    
+
     .result-card {
         page-break-inside: avoid;
         margin: 0;
@@ -169,6 +169,7 @@
 .table-responsive {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    margin-bottom: 0.5rem;
 }
 
 @media (max-width: 767.98px) {
@@ -178,6 +179,35 @@
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
     }
+}
+
+/* Optimized layout for exams pages */
+.exams-container .container-fluid {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.exams-container .row {
+    margin-left: -5px !important;
+    margin-right: -5px !important;
+}
+
+.exams-container .col,
+.exams-container [class*="col-"] {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.exams-container .card {
+    margin-bottom: 10px !important;
+}
+
+.exams-container .card-body {
+    padding: 10px !important;
+}
+
+.exams-container .form-group {
+    margin-bottom: 8px !important;
 }
 
 /* Custom Form Styles */
