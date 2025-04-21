@@ -102,9 +102,9 @@
                 </td>
                 <td class="text-center">
                   <div class="btn-group btn-group-sm">
-                    <a href="{% url 'class-update' object.id %}" class="btn btn-outline-primary" title="Edit Class">
+                    <button type="button" class="btn btn-outline-primary edit-class-btn" data-class-id="{{ object.id }}" title="Edit Class">
                       <i class="fa fa-edit"></i>
-                    </a>
+                    </button>
                     <button type="button" class="btn btn-outline-info view-class-details" data-class-id="{{ object.id }}" title="View Details">
                       <i class="fa fa-eye"></i>
                     </button>
@@ -198,13 +198,46 @@
         </div>
       </div>
       <div class="modal-footer">
-        <a href="#" id="editClassLink" class="btn btn-primary">
+        <button type="button" id="editClassFromDetailsBtn" class="btn btn-primary">
           <i class="fas fa-edit me-1"></i> Edit Class
-        </a>
+        </button>
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
           <i class="fas fa-times me-1"></i> Close
         </button>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- Edit Class Modal -->
+<div class="modal fade" id="editClassModal" tabindex="-1" aria-labelledby="editClassModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form id="editClassForm">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="editClassModalLabel">
+            <i class="fas fa-edit me-2"></i> Edit Class
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          {% csrf_token %}
+          <input type="hidden" id="editClassId" name="class_id">
+          <div class="mb-3">
+            <label for="editClassName" class="form-label fw-bold">Class Name</label>
+            <input type="text" class="form-control" id="editClassName" name="name" required>
+            <div class="invalid-feedback">Please enter a class name.</div>
+          </div>
+        </div>
+        <div class="modal-footer bg-light">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            <i class="fas fa-times me-1"></i> Cancel
+          </button>
+          <button type="submit" class="btn btn-primary" id="saveEditClassBtn">
+            <i class="fas fa-save me-1"></i> Save Changes
+          </button>
+        </div>
+      </form>
     </div>
   </div>
 </div>
@@ -279,6 +312,20 @@
       sortTable(sortType);
     });
 
+    // Edit class button click
+    $('.edit-class-btn').on('click', function() {
+      var classId = $(this).data('class-id');
+      var className = $(this).closest('tr').data('class-name');
+
+      // Populate the edit form
+      $('#editClassId').val(classId);
+      $('#editClassName').val(className);
+
+      // Show the edit modal
+      var editModal = new bootstrap.Modal(document.getElementById('editClassModal'));
+      editModal.show();
+    });
+
     // View class details
     $('.view-class-details').on('click', function() {
       var classId = $(this).data('class-id');
@@ -289,13 +336,91 @@
       $('#detailClassName').text(className);
       $('#detailStudentCount').text(studentCount);
       $('#detailSections').html(sections);
-      $('#editClassLink').attr('href', '/class/' + classId + '/update/');
+
+      // Store class ID for edit button
+      $('#editClassFromDetailsBtn').data('class-id', classId);
+      $('#editClassFromDetailsBtn').data('class-name', className);
 
       // Load subjects for this class
       loadSubjectsForClass(classId);
 
       var detailsModal = new bootstrap.Modal(document.getElementById('classDetailsModal'));
       detailsModal.show();
+    });
+
+    // Edit class from details modal
+    $('#editClassFromDetailsBtn').on('click', function() {
+      var classId = $(this).data('class-id');
+      var className = $(this).data('class-name');
+
+      // Close the details modal
+      var detailsModal = bootstrap.Modal.getInstance(document.getElementById('classDetailsModal'));
+      detailsModal.hide();
+
+      // Populate the edit form
+      $('#editClassId').val(classId);
+      $('#editClassName').val(className);
+
+      // Show the edit modal
+      var editModal = new bootstrap.Modal(document.getElementById('editClassModal'));
+      editModal.show();
+    });
+
+    // Handle edit class form submission
+    $('#editClassForm').on('submit', function(e) {
+      e.preventDefault();
+
+      var classId = $('#editClassId').val();
+      var className = $('#editClassName').val();
+
+      if (!className.trim()) {
+        $('#editClassName').addClass('is-invalid');
+        return false;
+      }
+
+      // Show loading state
+      var $btn = $('#saveEditClassBtn');
+      var originalHtml = $btn.html();
+      $btn.html('<i class="fas fa-spinner fa-spin me-1"></i> Saving...');
+      $btn.prop('disabled', true);
+
+      // Make AJAX call to update class
+      $.ajax({
+        url: '/api/class/' + classId + '/update/',
+        type: 'POST',
+        data: {
+          name: className,
+          csrfmiddlewaretoken: $('input[name="csrfmiddlewaretoken"]').val()
+        },
+        success: function(response) {
+          // Close modal
+          var editModal = bootstrap.Modal.getInstance(document.getElementById('editClassModal'));
+          editModal.hide();
+
+          // Show success message
+          alert('Class updated successfully!');
+
+          // Update the UI
+          var row = $('.class-row[data-class-id="' + classId + '"]');
+          row.data('class-name', className);
+          row.find('td:nth-child(2) span').text(className);
+
+          // Reset button
+          $btn.html(originalHtml);
+          $btn.prop('disabled', false);
+        },
+        error: function(xhr) {
+          var errorMsg = 'Failed to update class';
+          if (xhr.responseJSON && xhr.responseJSON.error) {
+            errorMsg = xhr.responseJSON.error;
+          }
+          alert(errorMsg);
+
+          // Reset button
+          $btn.html(originalHtml);
+          $btn.prop('disabled', false);
+        }
+      });
     });
 
     // Load student counts and sections for each class

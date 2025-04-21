@@ -23439,3 +23439,115 @@ INFO 2025-04-21 12:08:55,453 "GET /subject/2/data/ HTTP/1.1" 200 162
 INFO 2025-04-21 12:08:55,468 "GET /api/all-assignments/ HTTP/1.1" 200 1022
 INFO 2025-04-21 12:09:00,990 "GET /subject/2/exams/ HTTP/1.1" 200 71
 INFO 2025-04-21 12:09:01,017 "GET /subject/2/data/ HTTP/1.1" 200 162
+INFO 2025-04-21 12:09:46,319 "GET /subject/4/data/ HTTP/1.1" 200 122
+INFO 2025-04-21 12:10:02,501 "GET /class/list/ HTTP/1.1" 200 51758
+INFO 2025-04-21 12:10:02,859 "GET /static/dist/css/style.css?v=1745217602837 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:10:02,938 "GET /class/4/data/ HTTP/1.1" 200 60
+INFO 2025-04-21 12:10:02,955 "GET /class/8/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:10:02,970 "GET /class/6/data/ HTTP/1.1" 200 64
+INFO 2025-04-21 12:10:02,999 "GET /class/7/data/ HTTP/1.1" 200 57
+INFO 2025-04-21 12:10:03,020 "GET /class/5/data/ HTTP/1.1" 200 88
+INFO 2025-04-21 12:10:03,042 "GET /class/3/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:10:05,060 "GET /class/5/update/ HTTP/1.1" 200 31239
+INFO 2025-04-21 12:10:05,208 "GET /static/dist/css/style.css?v=1745217605203 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:13:03,985 "GET /class/5/update/ HTTP/1.1" 200 31239
+INFO 2025-04-21 12:13:04,168 "GET /static/dist/css/style.css?v=1745217784155 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:13:06,125 "GET /class/5/update/ HTTP/1.1" 200 31239
+INFO 2025-04-21 12:13:06,419 "GET /static/dist/css/style.css?v=1745217786411 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:13:07,025 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-21 12:13:08,518 Watching for file changes with StatReloader
+INFO 2025-04-21 12:13:16,190 D:\Sipher Web\Django School Management System\SMS\apps\corecode\urls.py changed, reloading.
+INFO 2025-04-21 12:13:17,375 Watching for file changes with StatReloader
+INFO 2025-04-21 12:13:29,248 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-21 12:13:30,352 Watching for file changes with StatReloader
+INFO 2025-04-21 12:13:40,255 D:\Sipher Web\Django School Management System\SMS\apps\corecode\urls.py changed, reloading.
+INFO 2025-04-21 12:13:41,333 Watching for file changes with StatReloader
+INFO 2025-04-21 12:13:48,020 D:\Sipher Web\Django School Management System\SMS\apps\corecode\urls.py changed, reloading.
+INFO 2025-04-21 12:13:48,972 Watching for file changes with StatReloader
+INFO 2025-04-21 12:13:58,817 "GET /class/list/ HTTP/1.1" 200 56412
+INFO 2025-04-21 12:13:59,399 "GET /class/5/data/ HTTP/1.1" 200 88
+INFO 2025-04-21 12:13:59,453 "GET /static/dist/css/style.css?v=1745217839350 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:13:59,470 "GET /class/4/data/ HTTP/1.1" 200 60
+INFO 2025-04-21 12:13:59,506 "GET /class/6/data/ HTTP/1.1" 200 64
+INFO 2025-04-21 12:13:59,545 "GET /class/8/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:13:59,576 "GET /class/7/data/ HTTP/1.1" 200 57
+INFO 2025-04-21 12:13:59,598 "GET /class/3/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:14:04,226 "GET /class/list/ HTTP/1.1" 200 56412
+INFO 2025-04-21 12:14:04,586 "GET /static/dist/css/style.css?v=1745217844577 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:14:04,666 "GET /class/5/data/ HTTP/1.1" 200 88
+INFO 2025-04-21 12:14:04,707 "GET /class/8/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:14:04,723 "GET /class/6/data/ HTTP/1.1" 200 64
+INFO 2025-04-21 12:14:04,757 "GET /class/4/data/ HTTP/1.1" 200 60
+INFO 2025-04-21 12:14:04,768 "GET /class/7/data/ HTTP/1.1" 200 57
+INFO 2025-04-21 12:14:04,783 "GET /class/3/data/ HTTP/1.1" 200 55
+WARNING 2025-04-21 12:14:11,099 Not Found: /class/5/update/
+WARNING 2025-04-21 12:14:11,099 "GET /class/5/update/ HTTP/1.1" 404 15885
+INFO 2025-04-21 12:14:45,214 "GET /subject/list/ HTTP/1.1" 200 92422
+INFO 2025-04-21 12:14:45,585 "GET /static/dist/css/style.css?v=1745217885577 HTTP/1.1" 200 46591
+ERROR 2025-04-21 12:14:45,614 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 12:14:45,624 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 12:14:45,687 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 12:14:45,719 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 12:14:45,754 "GET /api/all-assignments/ HTTP/1.1" 200 1022
+INFO 2025-04-21 12:14:45,788 "GET /subject/4/data/ HTTP/1.1" 200 122
+INFO 2025-04-21 12:14:45,811 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 12:14:45,823 "GET /subject/2/data/ HTTP/1.1" 200 162
+INFO 2025-04-21 12:14:48,826 "GET /term/list/ HTTP/1.1" 200 33532
+INFO 2025-04-21 12:14:49,137 "GET /static/dist/css/style.css?v=1745217889124 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:14:56,742 "GET /session/list/ HTTP/1.1" 200 32906
+INFO 2025-04-21 12:14:56,917 "GET /static/dist/css/style.css?v=1745217896901 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:17:31,463 "GET /session/list/ HTTP/1.1" 200 34334
+INFO 2025-04-21 12:17:31,671 "GET /static/dist/css/style.css?v=1745218051657 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:18:34,923 "GET /term/list/ HTTP/1.1" 200 36311
+INFO 2025-04-21 12:18:35,316 "GET /static/dist/css/style.css?v=1745218115282 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:19:59,801 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-21 12:20:01,166 Watching for file changes with StatReloader
+INFO 2025-04-21 12:20:11,455 D:\Sipher Web\Django School Management System\SMS\apps\corecode\urls.py changed, reloading.
+INFO 2025-04-21 12:20:12,553 Watching for file changes with StatReloader
+INFO 2025-04-21 12:20:45,845 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-21 12:20:47,080 Watching for file changes with StatReloader
+INFO 2025-04-21 12:21:02,528 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-21 12:21:04,178 Watching for file changes with StatReloader
+INFO 2025-04-21 12:21:13,424 D:\Sipher Web\Django School Management System\SMS\apps\corecode\urls.py changed, reloading.
+INFO 2025-04-21 12:21:14,539 Watching for file changes with StatReloader
+INFO 2025-04-21 12:21:22,416 D:\Sipher Web\Django School Management System\SMS\apps\corecode\urls.py changed, reloading.
+INFO 2025-04-21 12:21:23,545 Watching for file changes with StatReloader
+INFO 2025-04-21 12:21:32,566 D:\Sipher Web\Django School Management System\SMS\apps\corecode\urls.py changed, reloading.
+INFO 2025-04-21 12:21:33,670 Watching for file changes with StatReloader
+INFO 2025-04-21 12:21:38,872 "GET /session/list/ HTTP/1.1" 200 41122
+INFO 2025-04-21 12:21:39,621 "GET /static/dist/css/style.css?v=1745218299528 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:21:43,848 "GET /session/list/ HTTP/1.1" 200 41122
+INFO 2025-04-21 12:21:44,418 "GET /static/dist/css/style.css?v=1745218304411 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:21:51,594 "GET /fees/settings/ HTTP/1.1" 200 37290
+WARNING 2025-04-21 12:21:51,709 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+INFO 2025-04-21 12:21:51,938 "GET /static/dist/css/style.css?v=1745218311931 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:21:57,452 "GET /term/list/ HTTP/1.1" 200 42907
+INFO 2025-04-21 12:21:58,107 "GET /static/dist/css/style.css?v=1745218318098 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:23:32,495 "GET /fees/settings/list/ HTTP/1.1" 200 47116
+INFO 2025-04-21 12:23:32,822 "GET /static/dist/css/style.css?v=1745218412814 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:23:36,942 "GET /fees/settings/?class_name=6&section= HTTP/1.1" 200 40810
+INFO 2025-04-21 12:23:37,149 "GET /static/dist/css/style.css?v=1745218417126 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:23:37,163 "GET /api/get-sections/6/ HTTP/1.1" 200 40
+INFO 2025-04-21 12:23:37,186 "GET /api/get-sections/6/ HTTP/1.1" 200 40
+INFO 2025-04-21 12:23:37,211 "GET /api/get-sections/6/ HTTP/1.1" 200 40
+INFO 2025-04-21 12:23:43,646 "GET /static/dist/css/style.css?v=1745218423636 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:23:48,292 "GET /term/list/ HTTP/1.1" 200 42907
+INFO 2025-04-21 12:23:48,543 "GET /static/dist/css/style.css?v=1745218428536 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:23:51,884 "GET /subject/list/ HTTP/1.1" 200 92422
+INFO 2025-04-21 12:23:52,066 "GET /static/dist/css/style.css?v=1745218432057 HTTP/1.1" 200 46591
+ERROR 2025-04-21 12:23:52,114 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 12:23:52,121 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 12:23:52,133 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 12:23:52,190 "GET /api/all-assignments/ HTTP/1.1" 200 1022
+INFO 2025-04-21 12:23:52,241 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 12:23:52,262 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 12:23:52,292 "GET /subject/4/data/ HTTP/1.1" 200 122
+INFO 2025-04-21 12:23:52,315 "GET /subject/2/data/ HTTP/1.1" 200 162
+INFO 2025-04-21 12:24:00,342 "GET /class/list/ HTTP/1.1" 200 56412
+INFO 2025-04-21 12:24:00,510 "GET /static/dist/css/style.css?v=1745218440498 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:24:00,620 "GET /class/4/data/ HTTP/1.1" 200 60
+INFO 2025-04-21 12:24:00,661 "GET /class/5/data/ HTTP/1.1" 200 88
+INFO 2025-04-21 12:24:00,689 "GET /class/7/data/ HTTP/1.1" 200 57
+INFO 2025-04-21 12:24:00,706 "GET /class/8/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:24:00,729 "GET /class/6/data/ HTTP/1.1" 200 64
+INFO 2025-04-21 12:24:00,745 "GET /class/3/data/ HTTP/1.1" 200 55

@@ -220,25 +220,7 @@ class SessionCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
         return context
 
 
-class SessionUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
-    model = AcademicSession
-    form_class = AcademicSessionForm
-    success_url = reverse_lazy("sessions")
-    success_message = "Session successfully updated."
-    template_name = "corecode/mgt_form.html"
-
-    def form_valid(self, form):
-        obj = self.object
-        if obj.current == False:
-            terms = (
-                AcademicSession.objects.filter(current=True)
-                .exclude(name=obj.name)
-                .exists()
-            )
-            if not terms:
-                messages.warning(self.request, "You must set a session to current.")
-                return redirect("session-list")
-        return super().form_valid(form)
+# SessionUpdateView removed - now using AJAX update
 
 
 class SessionDeleteView(LoginRequiredMixin, DeleteView):
@@ -274,25 +256,7 @@ class TermCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     success_message = "New term successfully added"
 
 
-class TermUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
-    model = AcademicTerm
-    form_class = AcademicTermForm
-    success_url = reverse_lazy("terms")
-    success_message = "Term successfully updated."
-    template_name = "corecode/mgt_form.html"
-
-    def form_valid(self, form):
-        obj = self.object
-        if obj.current == False:
-            terms = (
-                AcademicTerm.objects.filter(current=True)
-                .exclude(name=obj.name)
-                .exists()
-            )
-            if not terms:
-                messages.warning(self.request, "You must set a term to current.")
-                return redirect("term")
-        return super().form_valid(form)
+# TermUpdateView removed - now using AJAX update
 
 
 class TermDeleteView(LoginRequiredMixin, DeleteView):
@@ -328,12 +292,7 @@ class ClassCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     success_message = "New class successfully added"
 
 
-class ClassUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
-    model = StudentClass
-    fields = ["name"]
-    success_url = reverse_lazy("classes")
-    success_message = "class successfully updated."
-    template_name = "corecode/mgt_form.html"
+# ClassUpdateView removed - now using AJAX update
 
 
 class ClassDeleteView(LoginRequiredMixin, DeleteView):
@@ -1184,3 +1143,136 @@ def fee_settings_list(request):
     }
 
     return render(request, 'corecode/fee_settings_list.html', context)
+
+
+@login_required
+def update_class_ajax(request, class_id):
+    """API endpoint to update a class via AJAX"""
+    if request.method != 'POST':
+        return JsonResponse({'error': 'Only POST method is allowed'}, status=405)
+
+    try:
+        student_class = StudentClass.objects.get(id=class_id)
+
+        # Get the new name from POST data
+        name = request.POST.get('name')
+
+        if not name:
+            return JsonResponse({'error': 'Class name is required'}, status=400)
+
+        # Check if name already exists for another class
+        if StudentClass.objects.filter(name=name).exclude(id=class_id).exists():
+            return JsonResponse({'error': 'A class with this name already exists'}, status=400)
+
+        # Update the class name
+        student_class.name = name
+        student_class.save()
+
+        return JsonResponse({
+            'success': True,
+            'message': 'Class updated successfully',
+            'class': {
+                'id': student_class.id,
+                'name': student_class.name
+            }
+        })
+    except StudentClass.DoesNotExist:
+        return JsonResponse({'error': 'Class not found'}, status=404)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
+
+@login_required
+def update_session_ajax(request, session_id):
+    """API endpoint to update an academic session via AJAX"""
+    if request.method != 'POST':
+        return JsonResponse({'error': 'Only POST method is allowed'}, status=405)
+
+    try:
+        session = AcademicSession.objects.get(id=session_id)
+
+        # Get the data from POST
+        name = request.POST.get('name')
+        current = request.POST.get('current') == 'true'
+
+        if not name:
+            return JsonResponse({'error': 'Session name is required'}, status=400)
+
+        # Check if name already exists for another session
+        if AcademicSession.objects.filter(name=name).exclude(id=session_id).exists():
+            return JsonResponse({'error': 'A session with this name already exists'}, status=400)
+
+        # Update the session
+        session.name = name
+
+        # Handle current status
+        if current:
+            # Set all other sessions as not current
+            AcademicSession.objects.all().update(current=False)
+            session.current = True
+        else:
+            session.current = False
+
+        session.save()
+
+        return JsonResponse({
+            'success': True,
+            'message': 'Session updated successfully',
+            'session': {
+                'id': session.id,
+                'name': session.name,
+                'current': session.current
+            }
+        })
+    except AcademicSession.DoesNotExist:
+        return JsonResponse({'error': 'Session not found'}, status=404)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
+
+@login_required
+def update_term_ajax(request, term_id):
+    """API endpoint to update an academic term via AJAX"""
+    if request.method != 'POST':
+        return JsonResponse({'error': 'Only POST method is allowed'}, status=405)
+
+    try:
+        term = AcademicTerm.objects.get(id=term_id)
+
+        # Get the data from POST
+        name = request.POST.get('name')
+        current = request.POST.get('current') == 'true'
+
+        if not name:
+            return JsonResponse({'error': 'Term name is required'}, status=400)
+
+        # Check if name already exists for another term
+        if AcademicTerm.objects.filter(name=name).exclude(id=term_id).exists():
+            return JsonResponse({'error': 'A term with this name already exists'}, status=400)
+
+        # Update the term
+        term.name = name
+
+        # Handle current status
+        if current:
+            # Set all other terms as not current
+            AcademicTerm.objects.all().update(current=False)
+            term.current = True
+        else:
+            term.current = False
+
+        term.save()
+
+        return JsonResponse({
+            'success': True,
+            'message': 'Term updated successfully',
+            'term': {
+                'id': term.id,
+                'name': term.name,
+                'current': term.current
+            }
+        })
+    except AcademicTerm.DoesNotExist:
+        return JsonResponse({'error': 'Term not found'}, status=404)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
