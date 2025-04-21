@@ -28,9 +28,10 @@ class Staff(models.Model):
     Subject_specification = models.TextField(blank=True)
     address = models.TextField(blank=True)
     others = models.TextField(blank=True)
+    passport = models.ImageField(blank=True, upload_to="staffs/passports/")
 
 
-   
+
     def registration_number(self):
       if self.date_of_registration:
         year_suffix = str(self. date_of_registration.year)[-2:]  # Extract last 2 digits of year
@@ -41,7 +42,7 @@ class Staff(models.Model):
       return f"{year_suffix}{unique_number}"
 
     def __str__(self):
-        return f"{self.surname} {self.firstname}"
+        return f"{self.fullname}"
 
     def get_absolute_url(self):
         return reverse("staff-detail", kwargs={"pk": self.pk})

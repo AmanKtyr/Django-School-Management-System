@@ -1466,6 +1466,357 @@ body.no-control-sidebar .wrapper {
   margin-bottom: 8px !important;
 }
 
+/* Staff List Page Styles */
+.clickable-row {
+  cursor: pointer !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.clickable-row:hover {
+  background-color: rgba(30, 60, 114, 0.05) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.staff-avatar {
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50% !important;
+  background-color: #e9ecef !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #1E3C72 !important;
+  font-size: 18px !important;
+}
+
+.empty-state {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 30px !important;
+  color: #6c757d !important;
+}
+
+/* DataTable Customizations */
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter {
+  margin-bottom: 15px !important;
+}
+
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_paginate {
+  margin-top: 15px !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  border-radius: 4px !important;
+  margin: 0 2px !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  background: linear-gradient(135deg, #1E3C72, #2A5298) !important;
+  border-color: #1E3C72 !important;
+  color: white !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background: #e9ecef !important;
+  border-color: #dee2e6 !important;
+}
+
+/* Custom Badge Styles */
+.badge {
+  padding: 0.4em 0.6em !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.5px !important;
+  border-radius: 4px !important;
+}
+
+.badge.bg-success {
+  background: linear-gradient(135deg, #28a745, #20c997) !important;
+}
+
+.badge.bg-secondary {
+  background: linear-gradient(135deg, #6c757d, #495057) !important;
+  color: white !important;
+}
+
+.badge.bg-info {
+  background: linear-gradient(135deg, #17a2b8, #0dcaf0) !important;
+}
+
+.badge.bg-danger {
+  background: linear-gradient(135deg, #dc3545, #f44336) !important;
+}
+
+.badge.bg-primary {
+  background: linear-gradient(135deg, #1E3C72, #2A5298) !important;
+}
+
+/* Staff Profile Page Styles */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #1E3C72, #2A5298) !important;
+}
+
+/* Profile Header Styles */
+.profile-header-cover {
+  background: linear-gradient(135deg, #1E3C72, #2A5298) !important;
+  position: relative !important;
+}
+
+.profile-header-img {
+  margin-top: -50px !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+.profile-header-img img {
+  width: 100px !important;
+  height: 100px !important;
+  object-fit: cover !important;
+}
+
+.profile-header-content {
+  padding-bottom: 20px !important;
+}
+
+.profile-header-tab {
+  background-color: transparent !important;
+  margin-bottom: -20px !important;
+}
+
+.profile-header-tab .nav-tabs {
+  border-bottom: none !important;
+}
+
+.profile-header-tab .nav-link {
+  color: #495057 !important;
+  border: none !important;
+  padding: 0.75rem 1.25rem !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+  background-color: transparent !important;
+}
+
+.profile-header-tab .nav-link:hover {
+  color: #1E3C72 !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: transparent !important;
+}
+
+.profile-header-tab .nav-link.active {
+  color: #1E3C72 !important;
+  background-color: white !important;
+  border-radius: 0.25rem 0.25rem 0 0 !important;
+  font-weight: 600 !important;
+}
+
+/* Contact Icon Styles */
+.contact-icon {
+  width: 36px !important;
+  height: 36px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Profile Edit Button */
+.profile-edit-button .btn {
+  padding: 0.5rem 1.25rem !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+  border: none !important;
+}
+
+.profile-edit-button .btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+.profile-edit-button .btn-warning {
+  background: linear-gradient(135deg, #f39c12, #e67e22) !important;
+}
+
+/* Action Buttons in Header */
+.action-buttons {
+  display: flex !important;
+  align-items: center !important;
+  white-space: nowrap !important;
+}
+
+.action-btn {
+  padding: 0.5rem 1rem !important;
+  margin-right: 0.5rem !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  border-radius: 0.25rem !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: auto !important;
+}
+
+.action-btn i {
+  margin-right: 0.5rem !important;
+}
+
+.action-btn.btn-warning {
+  background: linear-gradient(135deg, #f39c12, #e67e22) !important;
+  border: none !important;
+}
+
+.action-btn.btn-primary {
+  background: linear-gradient(135deg, #1E3C72, #2A5298) !important;
+  border: none !important;
+}
+
+.action-btn.btn-outline-secondary {
+  border: 1px solid #ced4da !important;
+  background: white !important;
+}
+
+.action-btn.btn-outline-secondary:hover {
+  background: #f8f9fa !important;
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+  min-width: 200px !important;
+  padding: 0.5rem 0 !important;
+  margin: 0.125rem 0 0 !important;
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+  border-radius: 0.25rem !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  z-index: 1000 !important;
+}
+
+.dropdown-menu-end {
+  right: 0 !important;
+  left: auto !important;
+}
+
+.dropdown-item {
+  padding: 0.5rem 1rem !important;
+  clear: both !important;
+  font-weight: 400 !important;
+  color: #212529 !important;
+  text-align: inherit !important;
+  white-space: nowrap !important;
+  background-color: transparent !important;
+  border: 0 !important;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  color: #16181b !important;
+  text-decoration: none !important;
+  background-color: #f8f9fa !important;
+}
+
+.dropdown-divider {
+  height: 0 !important;
+  margin: 0.5rem 0 !important;
+  overflow: hidden !important;
+  border-top: 1px solid #e9ecef !important;
+}
+
+.info-group label {
+  color: #6c757d !important;
+  font-size: 0.8rem !important;
+  margin-bottom: 0.2rem !important;
+}
+
+.info-group p {
+  font-size: 1rem !important;
+  color: #212529 !important;
+}
+
+.fw-medium {
+  font-weight: 500 !important;
+}
+
+/* Timeline Styles */
+.timeline {
+  position: relative !important;
+  padding-left: 30px !important;
+}
+
+.timeline-item {
+  position: relative !important;
+  padding-bottom: 25px !important;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0 !important;
+}
+
+.timeline-marker {
+  position: absolute !important;
+  left: -30px !important;
+  top: 0 !important;
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 50% !important;
+  background-color: #1E3C72 !important;
+  z-index: 2 !important;
+}
+
+.timeline-item:not(:last-child):before {
+  content: '' !important;
+  position: absolute !important;
+  left: -23px !important;
+  top: 15px !important;
+  height: calc(100% - 15px) !important;
+  width: 2px !important;
+  background-color: #dee2e6 !important;
+}
+
+.timeline-content {
+  background-color: #f8f9fa !important;
+  padding: 15px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Tab Styles */
+.nav-tabs .nav-link {
+  color: white !important;
+  border: none !important;
+  padding: 0.75rem 1.25rem !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border-color: transparent !important;
+}
+
+.nav-tabs .nav-link.active {
+  color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-bottom: 2px solid #ffffff !important;
+  font-weight: 600 !important;
+}
+
+.tab-content {
+  padding-top: 1.5rem !important;
+  background-color: white !important;
+  border-radius: 0 0 0.25rem 0.25rem !important;
+}
+
+/* Print Modal Styles */
+.modal-header.bg-primary {
+  background: linear-gradient(135deg, #1E3C72, #2A5298) !important;
+}
+
+#printPreviewContent {
+  max-height: 70vh !important;
+  overflow-y: auto !important;
+}
+
 /* When sidebar is collapsed */
 body.sidebar-collapse .content-wrapper {
   margin-left: 4.6rem !important;

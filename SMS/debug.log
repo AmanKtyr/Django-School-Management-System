@@ -28014,3 +28014,1989 @@ INFO 2025-04-21 14:45:56,193 "GET /subject/1/data/ HTTP/1.1" 200 137
 INFO 2025-04-21 14:45:56,215 "GET /api/all-assignments/ HTTP/1.1" 200 1022
 INFO 2025-04-21 14:45:56,241 "GET /subject/2/data/ HTTP/1.1" 200 162
 INFO 2025-04-21 14:45:56,257 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 14:53:23,706 "GET /student/list HTTP/1.1" 200 36719
+INFO 2025-04-21 14:53:24,065 "GET /static/dist/css/style.css?v=1745227404055 HTTP/1.1" 200 46591
+INFO 2025-04-21 14:53:26,836 "GET /student/create/ HTTP/1.1" 200 41396
+INFO 2025-04-21 14:53:27,159 "GET /static/dist/css/style.css?v=1745227407153 HTTP/1.1" 200 46591
+INFO 2025-04-21 14:58:05,776 "GET /staff/list/ HTTP/1.1" 200 31378
+INFO 2025-04-21 14:58:06,210 "GET /static/dist/css/style.css?v=1745227686171 HTTP/1.1" 200 46591
+INFO 2025-04-21 14:58:52,054 "GET /staff/list/ HTTP/1.1" 200 31378
+INFO 2025-04-21 14:58:52,468 "GET /static/dist/css/style.css?v=1745227732460 HTTP/1.1" 200 46591
+INFO 2025-04-21 14:59:07,416 "GET /staff/list/ HTTP/1.1" 200 31378
+INFO 2025-04-21 14:59:07,714 "GET /static/dist/css/style.css?v=1745227747702 HTTP/1.1" 200 46591
+INFO 2025-04-21 14:59:15,263 "GET /system-settings/general/ HTTP/1.1" 200 44960
+INFO 2025-04-21 14:59:15,362 "GET /media/college_logos/college_lgoooo_wLVF410.jpg HTTP/1.1" 200 31795
+INFO 2025-04-21 14:59:15,463 "GET /static/dist/css/style.css?v=1745227755452 HTTP/1.1" 200 46591
+INFO 2025-04-21 14:59:41,621 "POST /system-settings/general/ HTTP/1.1" 302 0
+INFO 2025-04-21 14:59:41,807 "GET /system-settings/general/ HTTP/1.1" 200 45114
+INFO 2025-04-21 14:59:41,994 "GET /static/dist/css/style.css?v=1745227781990 HTTP/1.1" 200 46591
+INFO 2025-04-21 14:59:48,331 "GET /college-profile/ HTTP/1.1" 200 32391
+INFO 2025-04-21 14:59:48,507 "GET /static/dist/css/style.css?v=1745227788497 HTTP/1.1" 200 46591
+INFO 2025-04-21 14:59:58,121 "GET /system-settings/security-logs/ HTTP/1.1" 200 40920
+INFO 2025-04-21 14:59:58,303 "GET /static/dist/css/style.css?v=1745227798294 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:00:23,940 "GET /staff/list/ HTTP/1.1" 200 47531
+INFO 2025-04-21 15:00:24,173 "GET /static/dist/css/style.css?v=1745227824165 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:00:45,006 "GET /student/list HTTP/1.1" 200 36719
+INFO 2025-04-21 15:00:45,216 "GET /static/dist/css/style.css?v=1745227845207 HTTP/1.1" 200 46591
+WARNING 2025-04-21 15:01:11,299 Not Found: /staff/list/1/
+WARNING 2025-04-21 15:01:11,299 "GET /staff/list/1/ HTTP/1.1" 404 20080
+WARNING 2025-04-21 15:01:11,437 Not Found: /favicon.ico
+WARNING 2025-04-21 15:01:11,437 "GET /favicon.ico HTTP/1.1" 404 18854
+WARNING 2025-04-21 15:01:14,464 Not Found: /staff/list/1/
+WARNING 2025-04-21 15:01:14,464 "GET /staff/list/1/ HTTP/1.1" 404 20080
+INFO 2025-04-21 15:01:59,169 "GET /staff/1/ HTTP/1.1" 200 37303
+INFO 2025-04-21 15:01:59,243 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 15:01:59,268 "GET /static/dist/img/teacher-dp.jpg HTTP/1.1" 200 14750
+INFO 2025-04-21 15:01:59,397 "GET /static/dist/css/style.css?v=1745227919392 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:02:14,724 "GET /static/dist/css/style.css?v=1745227934716 HTTP/1.1" 200 46591
+WARNING 2025-04-21 15:02:16,109 Not Found: /staff/list/1/
+WARNING 2025-04-21 15:02:16,109 "GET /staff/list/1/ HTTP/1.1" 404 20080
+INFO 2025-04-21 15:02:20,484 "GET /staff/1/ HTTP/1.1" 200 37303
+INFO 2025-04-21 15:02:20,668 "GET /static/dist/css/style.css?v=1745227940659 HTTP/1.1" 200 46591
+WARNING 2025-04-21 15:02:23,544 Not Found: /staff/list/1/
+WARNING 2025-04-21 15:02:23,544 "GET /staff/list/1/ HTTP/1.1" 404 20080
+INFO 2025-04-21 15:02:41,436 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 31349
+INFO 2025-04-21 15:02:41,662 "GET /static/dist/css/style.css?v=1745227961650 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:02:46,354 "GET /staff/list/ HTTP/1.1" 200 47531
+INFO 2025-04-21 15:02:46,546 "GET /static/dist/css/style.css?v=1745227966537 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:03:53,395 "GET /staff/list/ HTTP/1.1" 200 47531
+INFO 2025-04-21 15:03:53,614 "GET /static/dist/css/style.css?v=1745228033609 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:03:55,407 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 44480
+INFO 2025-04-21 15:03:55,726 "GET /static/dist/css/style.css?v=1745228035719 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:03:59,403 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 44480
+INFO 2025-04-21 15:03:59,532 "GET /static/dist/css/style.css?v=1745228039525 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:06:01,337 "GET /staff/list/ HTTP/1.1" 200 48989
+INFO 2025-04-21 15:06:01,543 "GET /static/dist/css/style.css?v=1745228161539 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:06:03,086 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 44480
+INFO 2025-04-21 15:06:03,411 "GET /static/dist/css/style.css?v=1745228163401 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:06:11,752 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 44480
+INFO 2025-04-21 15:06:11,910 "GET /static/dist/css/style.css?v=1745228171898 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:06:16,719 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 32798
+INFO 2025-04-21 15:06:16,808 "GET /static/dist/img/worker.svg HTTP/1.1" 200 14909
+INFO 2025-04-21 15:06:16,909 "GET /static/dist/css/style.css?v=1745228176898 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:06:32,049 "GET /staff/list/ HTTP/1.1" 200 48989
+INFO 2025-04-21 15:06:32,248 "GET /static/dist/css/style.css?v=1745228192235 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:07:19,816 "GET /attendance/holidays/ HTTP/1.1" 200 54011
+INFO 2025-04-21 15:07:20,054 "GET /static/dist/css/style.css?v=1745228240033 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:07:24,796 "GET /attendance/attendance_list/ HTTP/1.1" 200 56764
+INFO 2025-04-21 15:07:25,177 "GET /static/dist/css/style.css?v=1745228245166 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:07:30,562 "GET /fees/ HTTP/1.1" 200 83777
+INFO 2025-04-21 15:07:30,782 "GET /static/dist/css/style.css?v=1745228250769 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:07:41,113 "GET /session/list/ HTTP/1.1" 200 41122
+INFO 2025-04-21 15:07:41,299 "GET /static/dist/css/style.css?v=1745228261289 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:07:44,529 "GET /exams/schedules/ HTTP/1.1" 200 40225
+INFO 2025-04-21 15:07:44,719 "GET /static/dist/css/style.css?v=1745228264714 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:07:50,043 "GET /staff/list/ HTTP/1.1" 200 49530
+INFO 2025-04-21 15:07:50,258 "GET /static/dist/css/style.css?v=1745228270247 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:07:59,837 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 46469
+INFO 2025-04-21 15:08:00,046 "GET /static/dist/css/style.css?v=1745228280033 HTTP/1.1" 200 46591
+WARNING 2025-04-21 15:08:08,412 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-21 15:08:09,283 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 46469
+INFO 2025-04-21 15:08:09,362 "GET /static/dist/css/preload.css HTTP/1.1" 200 1863
+INFO 2025-04-21 15:08:09,403 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-04-21 15:08:09,425 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-04-21 15:08:09,433 "GET /static/dist/css/sidebar-fix.css HTTP/1.1" 200 9004
+INFO 2025-04-21 15:08:09,442 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-04-21 15:08:09,542 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-04-21 15:08:09,560 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-04-21 15:08:09,728 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-04-21 15:08:09,737 "GET /static/dist/js/custom.js HTTP/1.1" 200 2597
+INFO 2025-04-21 15:08:09,756 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-04-21 15:08:09,797 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-04-21 15:08:09,831 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-04-21 15:08:09,855 "GET /static/dist/js/class-section-filter.js HTTP/1.1" 200 3704
+INFO 2025-04-21 15:08:09,937 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-04-21 15:08:10,009 "GET /static/dist/css/style.css HTTP/1.1" 200 46591
+INFO 2025-04-21 15:08:10,213 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-04-21 15:08:10,259 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-04-21 15:08:10,278 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+INFO 2025-04-21 15:08:10,411 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+WARNING 2025-04-21 15:08:11,808 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-21 15:08:11,933 "GET /static/dist/css/style.css?v=1745228291864 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:08:11,935 "GET /static/dist/js/sidebar-fix.js HTTP/1.1" 200 2621
+INFO 2025-04-21 15:08:11,976 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 200 9593
+WARNING 2025-04-21 15:08:12,768 "GET /static/dist/img/favicon/favicon.ico HTTP/1.1" 404 1898
+WARNING 2025-04-21 15:08:12,796 "GET /static/dist/img/favicon/favicon-32x32.png HTTP/1.1" 404 1916
+WARNING 2025-04-21 15:08:12,816 "GET /static/dist/img/favicon/favicon-16x16.png HTTP/1.1" 404 1916
+INFO 2025-04-21 15:12:25,696 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 47008
+WARNING 2025-04-21 15:12:26,866 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-21 15:12:26,946 "GET /static/dist/css/style.css?v=1745228546937 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:12:32,696 "GET /staff/list/ HTTP/1.1" 200 51017
+INFO 2025-04-21 15:12:33,126 "GET /static/dist/css/style.css?v=1745228553119 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:12:35,626 "GET /staff/list/ HTTP/1.1" 200 51017
+INFO 2025-04-21 15:12:35,802 "GET /static/dist/css/style.css?v=1745228555794 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:12:59,020 "GET /staff/list/ HTTP/1.1" 200 51735
+INFO 2025-04-21 15:12:59,364 "GET /static/dist/css/style.css?v=1745228579358 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:12:59,604 "GET /staff/list/ HTTP/1.1" 200 51735
+INFO 2025-04-21 15:12:59,771 "GET /static/dist/css/style.css?v=1745228579765 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:16:48,125 "GET /staff/list/ HTTP/1.1" 200 51908
+INFO 2025-04-21 15:16:48,420 "GET /static/dist/css/style.css?v=1745228808412 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:16:49,858 "GET /staff/list/ HTTP/1.1" 200 51908
+INFO 2025-04-21 15:16:50,238 "GET /static/dist/css/style.css?v=1745228810232 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:17:13,966 "GET /exams/ HTTP/1.1" 200 65981
+INFO 2025-04-21 15:17:14,184 "GET /static/dist/css/style.css?v=1745228834172 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:17:34,354 "GET /fees/ HTTP/1.1" 200 83777
+INFO 2025-04-21 15:17:34,622 "GET /static/dist/css/style.css?v=1745228854610 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:17:43,485 "GET /fees/transactions/ HTTP/1.1" 200 80350
+INFO 2025-04-21 15:17:43,703 "GET /static/dist/css/style.css?v=1745228863695 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:17:55,296 "GET /fees/receipt/12/?format=html HTTP/1.1" 200 38409
+INFO 2025-04-21 15:17:55,549 "GET /media/college_logos/college_lgoooo_wLVF410.jpg HTTP/1.1" 200 31795
+INFO 2025-04-21 15:17:55,902 "GET /static/dist/css/style.css?v=1745228875893 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:18:14,202 "GET /fees/ HTTP/1.1" 200 83777
+INFO 2025-04-21 15:18:14,537 "GET /static/dist/css/style.css?v=1745228894532 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:18:25,010 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-04-21 15:18:25,034 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-04-21 15:18:25,059 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-04-21 15:18:27,245 "GET /fees/?class_name=5&section=A&search= HTTP/1.1" 200 98708
+INFO 2025-04-21 15:18:27,472 "GET /static/dist/css/style.css?v=1745228907460 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:18:27,509 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-04-21 15:18:27,540 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-04-21 15:18:27,569 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-04-21 15:18:27,630 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-04-21 15:18:47,028 "GET /fees/?class_name=5&section=A&search= HTTP/1.1" 200 98708
+INFO 2025-04-21 15:18:47,223 "GET /static/dist/css/style.css?v=1745228927212 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:18:47,254 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-04-21 15:18:47,288 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-04-21 15:18:47,331 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-04-21 15:18:47,362 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-04-21 15:18:51,760 "GET /staff/list/ HTTP/1.1" 200 52077
+INFO 2025-04-21 15:18:52,150 "GET /static/dist/css/style.css?v=1745228932142 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:18:52,854 "GET /staff/list/ HTTP/1.1" 200 52077
+INFO 2025-04-21 15:18:53,027 "GET /static/dist/css/style.css?v=1745228933022 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:19:31,190 "GET /staff/list/ HTTP/1.1" 200 52077
+INFO 2025-04-21 15:19:31,385 "GET /static/dist/css/style.css?v=1745228971379 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:20:05,760 "GET /staff/list/ HTTP/1.1" 200 31378
+INFO 2025-04-21 15:20:06,117 "GET /static/dist/css/style.css?v=1745229006110 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:24:31,657 "GET /staff/list/ HTTP/1.1" 200 31378
+INFO 2025-04-21 15:24:32,048 "GET /static/dist/css/style.css?v=1745229272035 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:24:56,432 "GET /staff/list/ HTTP/1.1" 200 41229
+INFO 2025-04-21 15:24:56,799 "GET /static/dist/css/style.css?v=1745229296793 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:25:48,719 "GET /staff/list/ HTTP/1.1" 200 41229
+INFO 2025-04-21 15:25:48,938 "GET /static/dist/css/style.css?v=1745229348932 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:26:29,750 "GET /staff/1/ HTTP/1.1" 200 32928
+INFO 2025-04-21 15:26:29,851 "GET /static/dist/img/teacher-dp.jpg HTTP/1.1" 200 14750
+INFO 2025-04-21 15:26:30,120 "GET /static/dist/css/style.css?v=1745229390109 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:26:49,651 "GET /staff/1/ HTTP/1.1" 200 32928
+INFO 2025-04-21 15:26:50,109 "GET /static/dist/css/style.css?v=1745229410099 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:26:54,727 "GET /staff/list/ HTTP/1.1" 200 41229
+INFO 2025-04-21 15:26:54,785 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 15:26:54,928 "GET /static/dist/css/style.css?v=1745229414917 HTTP/1.1" 200 46591
+WARNING 2025-04-21 15:27:19,725 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-21 15:27:57,769 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 31349
+INFO 2025-04-21 15:27:58,206 "GET /static/dist/css/style.css?v=1745229478191 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:28:17,845 "GET /staff/list/ HTTP/1.1" 200 41229
+INFO 2025-04-21 15:28:18,223 "GET /static/dist/css/style.css?v=1745229498210 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:28:20,178 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 31349
+INFO 2025-04-21 15:28:20,410 "GET /static/dist/css/style.css?v=1745229500396 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:28:25,078 "GET /staff/list/ HTTP/1.1" 200 41229
+INFO 2025-04-21 15:28:25,271 "GET /static/dist/css/style.css?v=1745229505240 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:28:38,363 "GET /staff/list/ HTTP/1.1" 200 41229
+INFO 2025-04-21 15:28:38,727 "GET /static/dist/css/style.css?v=1745229518719 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:28:58,096 "GET /staff/create/ HTTP/1.1" 200 35581
+INFO 2025-04-21 15:28:58,297 "GET /static/dist/css/style.css?v=1745229538290 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:29:12,133 "GET /staff/create/ HTTP/1.1" 200 35581
+INFO 2025-04-21 15:29:12,317 "GET /static/dist/css/style.css?v=1745229552301 HTTP/1.1" 200 46591
+WARNING 2025-04-21 15:29:15,364 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-21 15:29:42,112 "GET /staff/create/ HTTP/1.1" 200 39372
+INFO 2025-04-21 15:29:42,556 "GET /static/dist/css/style.css?v=1745229582547 HTTP/1.1" 200 46591
+WARNING 2025-04-21 15:30:22,273 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-21 15:30:30,790 D:\Sipher Web\Django School Management System\SMS\apps\staffs\models.py changed, reloading.
+INFO 2025-04-21 15:30:32,745 Watching for file changes with StatReloader
+INFO 2025-04-21 15:30:49,114 "GET /staff/create/ HTTP/1.1" 200 39372
+INFO 2025-04-21 15:30:49,564 "GET /static/dist/css/style.css?v=1745229649482 HTTP/1.1" 200 46591
+ERROR 2025-04-21 15:31:06,050 Internal Server Error: /staff/list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: staffs_staff.registration_number
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: staffs_staff.registration_number
+ERROR 2025-04-21 15:31:06,060 "GET /staff/list/ HTTP/1.1" 500 235320
+WARNING 2025-04-21 15:31:06,291 Not Found: /favicon.ico
+WARNING 2025-04-21 15:31:06,291 "GET /favicon.ico HTTP/1.1" 404 18854
+INFO 2025-04-21 15:31:08,979 D:\Sipher Web\Django School Management System\SMS\apps\staffs\views.py changed, reloading.
+INFO 2025-04-21 15:31:10,122 Watching for file changes with StatReloader
+ERROR 2025-04-21 15:31:15,001 Internal Server Error: /staff/list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: staffs_staff.registration_number
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: staffs_staff.registration_number
+ERROR 2025-04-21 15:31:15,011 "GET /staff/list/ HTTP/1.1" 500 235529
+INFO 2025-04-21 15:31:17,160 "GET /static/dist/css/style.css?v=1745229677083 HTTP/1.1" 200 46591
+ERROR 2025-04-21 15:31:20,490 Internal Server Error: /staff/list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: staffs_staff.registration_number
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: staffs_staff.registration_number
+ERROR 2025-04-21 15:31:20,493 "GET /staff/list/ HTTP/1.1" 500 235392
+INFO 2025-04-21 15:31:24,955 D:\Sipher Web\Django School Management System\SMS\apps\staffs\urls.py changed, reloading.
+INFO 2025-04-21 15:31:26,146 Watching for file changes with StatReloader
+INFO 2025-04-21 15:31:45,773 "GET /session/list/ HTTP/1.1" 200 41122
+INFO 2025-04-21 15:31:46,042 "GET /static/dist/css/style.css?v=1745229705981 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:32:48,226 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 31349
+INFO 2025-04-21 15:32:48,656 "GET /static/dist/css/style.css?v=1745229768626 HTTP/1.1" 200 46591
+ERROR 2025-04-21 15:32:51,615 Internal Server Error: /staff/list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: staffs_staff.registration_number
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: staffs_staff.registration_number
+ERROR 2025-04-21 15:32:51,620 "GET /staff/list/ HTTP/1.1" 500 235404
+ERROR 2025-04-21 15:33:11,609 Internal Server Error: /staff/list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: staffs_staff.registration_number
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: staffs_staff.registration_number
+ERROR 2025-04-21 15:33:11,611 "GET /staff/list/ HTTP/1.1" 500 235404
+INFO 2025-04-21 15:33:28,049 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 31349
+INFO 2025-04-21 15:33:28,405 "GET /static/dist/css/style.css?v=1745229808390 HTTP/1.1" 200 46591
+ERROR 2025-04-21 15:33:30,115 Internal Server Error: /staff/list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: staffs_staff.registration_number
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: staffs_staff.registration_number
+ERROR 2025-04-21 15:33:30,118 "GET /staff/list/ HTTP/1.1" 500 235404
+INFO 2025-04-21 15:34:09,899 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 31349
+INFO 2025-04-21 15:34:10,340 "GET /static/dist/css/style.css?v=1745229850325 HTTP/1.1" 200 46591
+ERROR 2025-04-21 15:34:11,799 Internal Server Error: /staff/list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: staffs_staff.registration_number
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: staffs_staff.registration_number
+ERROR 2025-04-21 15:34:11,802 "GET /staff/list/ HTTP/1.1" 500 235404
+ERROR 2025-04-21 15:34:19,774 Internal Server Error: /staff/list/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: staffs_staff.registration_number
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: staffs_staff.registration_number
+ERROR 2025-04-21 15:34:19,777 "GET /staff/list/ HTTP/1.1" 500 235404
+INFO 2025-04-21 15:34:26,407 D:\Sipher Web\Django School Management System\SMS\apps\staffs\urls.py changed, reloading.
+INFO 2025-04-21 15:34:29,032 Watching for file changes with StatReloader
+INFO 2025-04-21 15:34:34,790 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 31349
+INFO 2025-04-21 15:34:35,292 "GET /static/dist/css/style.css?v=1745229875200 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:34:35,881 "GET /staff/list/ HTTP/1.1" 200 31378
+INFO 2025-04-21 15:34:36,075 "GET /static/dist/css/style.css?v=1745229876066 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:34:37,691 "GET /staff/1/ HTTP/1.1" 200 32928
+INFO 2025-04-21 15:34:37,867 "GET /static/dist/css/style.css?v=1745229877857 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:34:49,213 "GET /student/list HTTP/1.1" 200 36719
+INFO 2025-04-21 15:34:49,415 "GET /static/dist/css/style.css?v=1745229889407 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:34:52,878 "GET /student/create/ HTTP/1.1" 200 41396
+INFO 2025-04-21 15:34:53,052 "GET /static/dist/css/style.css?v=1745229893046 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:34:56,082 "GET /staff/list/ HTTP/1.1" 200 31378
+INFO 2025-04-21 15:34:56,269 "GET /static/dist/css/style.css?v=1745229896261 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:35:04,977 "GET /staff/create/ HTTP/1.1" 200 35581
+INFO 2025-04-21 15:35:05,153 "GET /static/dist/css/style.css?v=1745229905146 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:35:33,442 "GET / HTTP/1.1" 200 57135
+INFO 2025-04-21 15:35:33,723 "GET /static/dist/css/style.css?v=1745229933713 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:35:44,476 "GET /site-config HTTP/1.1" 200 35311
+INFO 2025-04-21 15:35:44,661 "GET /static/dist/css/style.css?v=1745229944651 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:35:52,334 "GET / HTTP/1.1" 200 57135
+INFO 2025-04-21 15:35:52,521 "GET /static/dist/css/style.css?v=1745229952512 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:36:01,487 "GET /staff/list/ HTTP/1.1" 200 31378
+INFO 2025-04-21 15:36:01,701 "GET /static/dist/css/style.css?v=1745229961691 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:37:28,929 "GET /staff/list/ HTTP/1.1" 200 31378
+INFO 2025-04-21 15:37:29,360 "GET /static/dist/css/style.css?v=1745230049350 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:40:26,351 "GET /staff/list/ HTTP/1.1" 200 31378
+INFO 2025-04-21 15:40:26,755 "GET /static/dist/css/style.css?v=1745230226745 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:44:40,842 "GET /staff/list/ HTTP/1.1" 200 38242
+INFO 2025-04-21 15:44:41,295 "GET /static/dist/css/style.css?v=1745230481290 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:45:36,368 "GET /staff/1/ HTTP/1.1" 200 32928
+INFO 2025-04-21 15:45:36,770 "GET /static/dist/css/style.css?v=1745230536738 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:45:39,388 "GET /static/dist/css/style.css?v=1745230539376 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:45:55,215 "GET /staff/list/ HTTP/1.1" 200 38242
+INFO 2025-04-21 15:45:55,567 "GET /static/dist/css/style.css?v=1745230555560 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:45:57,369 Watching for file changes with StatReloader
+INFO 2025-04-21 15:46:49,566 "GET /staff/list/ HTTP/1.1" 200 31378
+INFO 2025-04-21 15:46:49,955 "GET /static/dist/css/style.css?v=1745230609944 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:47:01,286 "GET / HTTP/1.1" 200 57135
+INFO 2025-04-21 15:47:01,684 "GET /static/dist/css/style.css?v=1745230621675 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:48:28,329 "GET / HTTP/1.1" 200 57135
+INFO 2025-04-21 15:48:28,391 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 15:48:28,577 "GET /static/dist/css/style.css?v=1745230708571 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:48:30,875 "GET /staff/list/ HTTP/1.1" 200 39889
+INFO 2025-04-21 15:48:31,248 "GET /static/dist/css/style.css?v=1745230711235 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:48:35,159 "GET /staff/1/ HTTP/1.1" 200 32928
+INFO 2025-04-21 15:48:35,347 "GET /static/dist/css/style.css?v=1745230715339 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:48:41,622 "GET /staff/list/ HTTP/1.1" 200 39889
+INFO 2025-04-21 15:48:41,781 "GET /static/dist/css/style.css?v=1745230721772 HTTP/1.1" 200 46591
+INFO 2025-04-21 15:50:04,799 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 31349
+INFO 2025-04-21 15:50:05,037 "GET /static/dist/css/style.css?v=1745230805028 HTTP/1.1" 200 48855
+INFO 2025-04-21 15:50:23,397 "GET /staff/list/ HTTP/1.1" 200 39889
+INFO 2025-04-21 15:50:23,763 "GET /static/dist/css/style.css?v=1745230823747 HTTP/1.1" 200 48855
+INFO 2025-04-21 15:52:45,672 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 41018
+INFO 2025-04-21 15:52:46,078 "GET /static/dist/css/style.css?v=1745230966063 HTTP/1.1" 200 48855
+INFO 2025-04-21 15:52:49,440 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 32798
+INFO 2025-04-21 15:52:49,537 "GET /static/dist/img/worker.svg HTTP/1.1" 200 14909
+INFO 2025-04-21 15:52:49,745 "GET /static/dist/css/style.css?v=1745230969737 HTTP/1.1" 200 48855
+INFO 2025-04-21 15:52:54,147 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 32798
+INFO 2025-04-21 15:52:54,310 "GET /static/dist/css/style.css?v=1745230974299 HTTP/1.1" 200 48855
+INFO 2025-04-21 15:53:17,670 "GET /staff/list/ HTTP/1.1" 200 39889
+INFO 2025-04-21 15:53:17,895 "GET /static/dist/css/style.css?v=1745230997880 HTTP/1.1" 200 48855
+INFO 2025-04-21 15:53:20,710 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 41018
+INFO 2025-04-21 15:53:20,895 "GET /static/dist/css/style.css?v=1745231000872 HTTP/1.1" 200 48855
+INFO 2025-04-21 15:58:45,607 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 46301
+INFO 2025-04-21 15:58:46,023 "GET /static/dist/css/style.css?v=1745231325981 HTTP/1.1" 200 51080
+INFO 2025-04-21 15:59:02,603 "GET /static/dist/css/style.css?v=1745231342581 HTTP/1.1" 200 51080
+INFO 2025-04-21 15:59:06,853 "GET /staff/list/ HTTP/1.1" 200 39889
+INFO 2025-04-21 15:59:07,030 "GET /static/dist/css/style.css?v=1745231347014 HTTP/1.1" 200 51080
+INFO 2025-04-21 15:59:10,270 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 41018
+INFO 2025-04-21 15:59:10,445 "GET /static/dist/css/style.css?v=1745231350432 HTTP/1.1" 200 51080
+INFO 2025-04-21 16:01:21,218 "GET /staff/list/ HTTP/1.1" 200 39889
+INFO 2025-04-21 16:01:21,422 "GET /static/dist/css/style.css?v=1745231481412 HTTP/1.1" 200 51080
+INFO 2025-04-21 16:01:23,201 "GET /staff/1/ HTTP/1.1" 200 46611
+INFO 2025-04-21 16:01:23,511 "GET /static/dist/css/style.css?v=1745231483505 HTTP/1.1" 200 51080
+INFO 2025-04-21 16:01:44,149 "GET /staff/list/ HTTP/1.1" 200 39889
+INFO 2025-04-21 16:01:44,333 "GET /static/dist/css/style.css?v=1745231504314 HTTP/1.1" 200 51080
+INFO 2025-04-21 16:04:01,163 "GET /staff/list/ HTTP/1.1" 200 40940
+INFO 2025-04-21 16:04:01,356 "GET /static/dist/css/style.css?v=1745231641349 HTTP/1.1" 200 51080
+INFO 2025-04-21 16:04:08,759 "GET /staff/1/update/ HTTP/1.1" 200 35628
+INFO 2025-04-21 16:04:09,034 "GET /static/dist/css/style.css?v=1745231649029 HTTP/1.1" 200 51080
+INFO 2025-04-21 16:04:13,243 "GET /staff/1/ HTTP/1.1" 200 46611
+INFO 2025-04-21 16:04:13,477 "GET /static/dist/css/style.css?v=1745231653471 HTTP/1.1" 200 51080
+INFO 2025-04-21 16:04:35,184 "GET /staff/list/ HTTP/1.1" 200 40940
+INFO 2025-04-21 16:04:35,390 "GET /static/dist/css/style.css?v=1745231675376 HTTP/1.1" 200 51080
+INFO 2025-04-21 16:04:43,822 "GET /staff/list/ HTTP/1.1" 200 40893
+INFO 2025-04-21 16:04:43,984 "GET /static/dist/css/style.css?v=1745231683978 HTTP/1.1" 200 51080
+INFO 2025-04-21 16:04:56,662 "GET /staff/list/ HTTP/1.1" 200 40940
+INFO 2025-04-21 16:04:56,837 "GET /static/dist/css/style.css?v=1745231696821 HTTP/1.1" 200 51080
+INFO 2025-04-21 16:05:08,128 "GET /staff/1/ HTTP/1.1" 200 46611
+INFO 2025-04-21 16:05:08,285 "GET /static/dist/css/style.css?v=1745231708279 HTTP/1.1" 200 51080
+WARNING 2025-04-21 16:05:13,026 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-21 16:07:19,507 "GET /staff/1/ HTTP/1.1" 200 46611
+INFO 2025-04-21 16:07:19,910 "GET /static/dist/css/style.css?v=1745231839900 HTTP/1.1" 200 51092
+INFO 2025-04-21 16:07:31,520 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 41018
+INFO 2025-04-21 16:07:31,904 "GET /static/dist/css/style.css?v=1745231851892 HTTP/1.1" 200 51092
+INFO 2025-04-21 16:07:35,435 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 46312
+INFO 2025-04-21 16:07:35,626 "GET /static/dist/css/style.css?v=1745231855620 HTTP/1.1" 200 51092
+INFO 2025-04-21 16:08:36,996 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 46312
+INFO 2025-04-21 16:08:37,213 "GET /static/dist/css/style.css?v=1745231917194 HTTP/1.1" 200 51209
+INFO 2025-04-21 16:10:56,395 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 46312
+INFO 2025-04-21 16:10:56,800 "GET /static/dist/css/style.css?v=1745232056792 HTTP/1.1" 200 51209
+INFO 2025-04-21 16:11:09,260 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 48635
+INFO 2025-04-21 16:11:09,640 "GET /static/dist/css/style.css?v=1745232069630 HTTP/1.1" 200 51209
+INFO 2025-04-21 16:11:15,409 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 48635
+INFO 2025-04-21 16:11:15,476 "GET /static/dist/css/style.css HTTP/1.1" 200 51209
+INFO 2025-04-21 16:11:15,601 "GET /static/dist/css/style.css?v=1745232075597 HTTP/1.1" 200 51209
+INFO 2025-04-21 16:11:22,624 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 48635
+INFO 2025-04-21 16:11:22,804 "GET /static/dist/css/style.css?v=1745232082796 HTTP/1.1" 200 51209
+INFO 2025-04-21 16:11:23,079 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 48635
+INFO 2025-04-21 16:11:23,256 "GET /static/dist/css/style.css?v=1745232083249 HTTP/1.1" 200 51209
+INFO 2025-04-21 16:11:23,426 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 48635
+INFO 2025-04-21 16:11:23,598 "GET /static/dist/css/style.css?v=1745232083593 HTTP/1.1" 200 51209
+INFO 2025-04-21 16:11:23,775 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 48635
+INFO 2025-04-21 16:11:23,971 "GET /static/dist/css/style.css?v=1745232083963 HTTP/1.1" 200 51209
+INFO 2025-04-21 16:11:24,158 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 48635
+INFO 2025-04-21 16:11:24,328 "GET /static/dist/css/style.css?v=1745232084325 HTTP/1.1" 200 51209
+INFO 2025-04-21 16:11:55,772 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 48635
+INFO 2025-04-21 16:11:55,827 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:11:56,013 "GET /static/dist/css/style.css?v=1745232116007 HTTP/1.1" 200 51209
+INFO 2025-04-21 16:12:05,505 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 41018
+INFO 2025-04-21 16:12:05,694 "GET /static/dist/css/style.css?v=1745232125676 HTTP/1.1" 200 51209
+INFO 2025-04-21 16:12:08,178 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 48635
+INFO 2025-04-21 16:12:08,344 "GET /static/dist/css/style.css?v=1745232128337 HTTP/1.1" 200 51209
+INFO 2025-04-21 16:12:10,180 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 48635
+INFO 2025-04-21 16:12:10,337 "GET /static/dist/css/style.css?v=1745232130330 HTTP/1.1" 200 51209
+INFO 2025-04-21 16:12:17,300 "GET /staff/list/ HTTP/1.1" 200 40940
+INFO 2025-04-21 16:12:17,499 "GET /static/dist/css/style.css?v=1745232137469 HTTP/1.1" 200 51209
+INFO 2025-04-21 16:12:19,401 "GET /staff/1/ HTTP/1.1" 200 48716
+INFO 2025-04-21 16:12:19,460 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:12:19,586 "GET /static/dist/css/style.css?v=1745232139579 HTTP/1.1" 200 51209
+INFO 2025-04-21 16:12:51,759 "GET /staff/1/ HTTP/1.1" 200 48716
+INFO 2025-04-21 16:12:51,821 "GET /static/dist/css/style.css HTTP/1.1" 200 52695
+INFO 2025-04-21 16:12:51,966 "GET /static/dist/css/style.css?v=1745232171957 HTTP/1.1" 200 52695
+INFO 2025-04-21 16:13:04,014 "GET /staff/list/ HTTP/1.1" 200 40940
+INFO 2025-04-21 16:13:04,081 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:13:04,220 "GET /static/dist/css/style.css?v=1745232184212 HTTP/1.1" 200 52695
+INFO 2025-04-21 16:13:05,780 "GET /staff/1/ HTTP/1.1" 200 48716
+INFO 2025-04-21 16:13:05,960 "GET /static/dist/css/style.css?v=1745232185950 HTTP/1.1" 200 52695
+INFO 2025-04-21 16:13:08,332 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 41018
+INFO 2025-04-21 16:13:08,410 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:13:08,554 "GET /static/dist/css/style.css?v=1745232188543 HTTP/1.1" 200 52695
+INFO 2025-04-21 16:13:09,690 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 48432
+INFO 2025-04-21 16:13:09,886 "GET /static/dist/css/style.css?v=1745232189882 HTTP/1.1" 200 52695
+INFO 2025-04-21 16:13:34,690 "GET /non-teaching-staffs/1/update/ HTTP/1.1" 200 33900
+INFO 2025-04-21 16:13:34,763 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:13:34,894 "GET /static/dist/css/style.css?v=1745232214891 HTTP/1.1" 200 52695
+INFO 2025-04-21 16:14:28,467 "GET /staff/list/ HTTP/1.1" 200 40940
+INFO 2025-04-21 16:14:28,555 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:14:28,708 "GET /static/dist/css/style.css?v=1745232268700 HTTP/1.1" 200 52695
+INFO 2025-04-21 16:14:49,184 "GET /staff/1/ HTTP/1.1" 200 49187
+INFO 2025-04-21 16:14:49,270 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:14:49,529 "GET /static/dist/css/style.css?v=1745232289510 HTTP/1.1" 200 52695
+INFO 2025-04-21 16:14:52,948 "GET /staff/1/update/ HTTP/1.1" 200 35628
+INFO 2025-04-21 16:14:53,133 "GET /static/dist/css/style.css?v=1745232293122 HTTP/1.1" 200 52695
+INFO 2025-04-21 16:15:04,827 "GET /staff/1/update/ HTTP/1.1" 200 35628
+INFO 2025-04-21 16:15:04,892 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:15:05,033 "GET /static/dist/css/style.css?v=1745232305028 HTTP/1.1" 200 52695
+INFO 2025-04-21 16:16:14,735 "GET /staff/1/ HTTP/1.1" 200 49187
+INFO 2025-04-21 16:16:14,796 "GET /static/dist/css/style.css HTTP/1.1" 200 53147
+INFO 2025-04-21 16:16:14,961 "GET /static/dist/css/style.css?v=1745232374957 HTTP/1.1" 200 53147
+INFO 2025-04-21 16:16:43,920 "GET /staff/1/ HTTP/1.1" 200 49162
+INFO 2025-04-21 16:16:44,007 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:16:44,324 "GET /static/dist/css/style.css?v=1745232404315 HTTP/1.1" 200 53147
+INFO 2025-04-21 16:17:18,821 "GET /staff/1/ HTTP/1.1" 200 49162
+INFO 2025-04-21 16:17:18,877 "GET /static/dist/css/style.css HTTP/1.1" 200 54155
+INFO 2025-04-21 16:17:19,031 "GET /static/dist/css/style.css?v=1745232439027 HTTP/1.1" 200 54155
+INFO 2025-04-21 16:17:26,156 "GET /staff/1/ HTTP/1.1" 200 49162
+INFO 2025-04-21 16:17:26,205 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:17:26,364 "GET /static/dist/css/style.css?v=1745232446358 HTTP/1.1" 200 54155
+INFO 2025-04-21 16:17:34,701 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 41018
+INFO 2025-04-21 16:17:34,763 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:17:34,925 "GET /static/dist/css/style.css?v=1745232454915 HTTP/1.1" 200 54155
+INFO 2025-04-21 16:17:45,842 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 48892
+INFO 2025-04-21 16:17:45,893 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:17:46,025 "GET /static/dist/css/style.css?v=1745232466021 HTTP/1.1" 200 54155
+INFO 2025-04-21 16:18:47,725 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 48910
+INFO 2025-04-21 16:18:47,781 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:18:47,922 "GET /static/dist/css/style.css?v=1745232527918 HTTP/1.1" 200 54155
+INFO 2025-04-21 16:18:51,824 "GET / HTTP/1.1" 200 57135
+INFO 2025-04-21 16:18:52,204 "GET /static/dist/css/style.css?v=1745232532197 HTTP/1.1" 200 54155
+INFO 2025-04-21 16:18:55,280 "GET /staff/list/ HTTP/1.1" 200 40940
+INFO 2025-04-21 16:18:55,473 "GET /static/dist/css/style.css?v=1745232535450 HTTP/1.1" 200 54155
+INFO 2025-04-21 16:18:58,111 "GET /staff/1/ HTTP/1.1" 200 49441
+INFO 2025-04-21 16:18:58,174 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:18:58,306 "GET /static/dist/css/style.css?v=1745232538298 HTTP/1.1" 200 54155
+INFO 2025-04-21 16:19:06,502 "GET /staff/1/ HTTP/1.1" 200 49441
+INFO 2025-04-21 16:19:06,656 "GET /static/dist/css/style.css?v=1745232546650 HTTP/1.1" 200 54155
+INFO 2025-04-21 16:19:18,629 "GET /staff/1/update/ HTTP/1.1" 200 35628
+INFO 2025-04-21 16:19:18,694 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:19:18,827 "GET /static/dist/css/style.css?v=1745232558819 HTTP/1.1" 200 54155
+INFO 2025-04-21 16:19:32,644 "GET /staff/1/ HTTP/1.1" 200 49441
+INFO 2025-04-21 16:19:32,697 "GET /static/dist/css/style.css HTTP/1.1" 200 55172
+INFO 2025-04-21 16:19:32,846 "GET /static/dist/css/style.css?v=1745232572836 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:19:46,960 "GET /staff/1/ HTTP/1.1" 200 49441
+INFO 2025-04-21 16:19:47,022 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:19:47,164 "GET /static/dist/css/style.css?v=1745232587159 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:19:54,946 "GET /static/dist/css/style.css?v=1745232587159 HTTP/1.1" 304 0
+WARNING 2025-04-21 16:19:55,478 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-21 16:20:28,488 "GET /staff/list/ HTTP/1.1" 200 40940
+INFO 2025-04-21 16:20:28,588 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:20:28,860 "GET /static/dist/css/style.css?v=1745232628851 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:20:30,220 "GET /staff/1/ HTTP/1.1" 200 49441
+INFO 2025-04-21 16:20:30,545 "GET /static/dist/css/style.css?v=1745232630527 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:20:38,085 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 41018
+INFO 2025-04-21 16:20:38,142 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:20:38,278 "GET /static/dist/css/style.css?v=1745232638268 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:20:39,730 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 49171
+INFO 2025-04-21 16:20:39,905 "GET /static/dist/css/style.css?v=1745232639900 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:22:56,806 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 49171
+INFO 2025-04-21 16:22:56,875 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:22:57,056 "GET /static/dist/css/style.css?v=1745232777049 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:25:21,258 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 49171
+INFO 2025-04-21 16:25:21,328 "GET /static/dist/css/style.css HTTP/1.1" 200 56686
+INFO 2025-04-21 16:25:21,631 "GET /static/dist/css/style.css?v=1745232921622 HTTP/1.1" 200 56686
+INFO 2025-04-21 16:25:37,498 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 49171
+INFO 2025-04-21 16:25:37,561 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:25:37,764 "GET /static/dist/css/style.css?v=1745232937757 HTTP/1.1" 200 56686
+INFO 2025-04-21 16:25:37,977 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 49171
+INFO 2025-04-21 16:25:38,132 "GET /static/dist/css/style.css?v=1745232938127 HTTP/1.1" 200 56686
+INFO 2025-04-21 16:25:38,347 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 49171
+INFO 2025-04-21 16:25:38,511 "GET /static/dist/css/style.css?v=1745232938504 HTTP/1.1" 200 56686
+INFO 2025-04-21 16:25:38,712 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 49171
+INFO 2025-04-21 16:25:38,854 "GET /static/dist/css/style.css?v=1745232938846 HTTP/1.1" 200 56686
+INFO 2025-04-21 16:28:19,729 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 49171
+INFO 2025-04-21 16:28:19,794 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:28:19,965 "GET /static/dist/css/style.css?v=1745233099961 HTTP/1.1" 200 56686
+INFO 2025-04-21 16:28:31,724 "GET /staff/list/ HTTP/1.1" 200 40940
+INFO 2025-04-21 16:28:32,080 "GET /static/dist/css/style.css?v=1745233112062 HTTP/1.1" 200 56686
+INFO 2025-04-21 16:28:33,573 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 41018
+INFO 2025-04-21 16:28:33,771 "GET /static/dist/css/style.css?v=1745233113746 HTTP/1.1" 200 56686
+INFO 2025-04-21 16:28:34,989 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 49171
+INFO 2025-04-21 16:28:35,167 "GET /static/dist/css/style.css?v=1745233115160 HTTP/1.1" 200 56686
+INFO 2025-04-21 16:28:39,975 "GET /staff/list/ HTTP/1.1" 200 40940
+INFO 2025-04-21 16:28:40,033 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:28:40,179 "GET /static/dist/css/style.css?v=1745233120172 HTTP/1.1" 200 56686
+INFO 2025-04-21 16:29:51,042 "GET /staff/list/ HTTP/1.1" 200 40940
+INFO 2025-04-21 16:29:51,099 "GET /static/dist/css/style.css HTTP/1.1" 200 60415
+INFO 2025-04-21 16:29:51,225 "GET /static/dist/css/style.css?v=1745233191217 HTTP/1.1" 200 60415
+ERROR 2025-04-21 16:29:53,909 Internal Server Error: /staff/1/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'mul'
+ERROR 2025-04-21 16:29:53,929 "GET /staff/1/ HTTP/1.1" 500 253141
+ERROR 2025-04-21 16:30:01,562 Internal Server Error: /staff/1/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'mul'
+ERROR 2025-04-21 16:30:01,564 "GET /staff/1/ HTTP/1.1" 500 253409
+INFO 2025-04-21 16:30:10,779 "GET /staff/list/ HTTP/1.1" 200 40940
+INFO 2025-04-21 16:30:10,889 "GET /static/dist/css/style.css HTTP/1.1" 200 55172
+INFO 2025-04-21 16:30:11,175 "GET /static/dist/css/style.css?v=1745233211153 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:30:12,341 "GET /staff/1/ HTTP/1.1" 200 49441
+INFO 2025-04-21 16:30:12,406 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:30:12,544 "GET /static/dist/css/style.css?v=1745233212534 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:30:22,475 "GET /staff/1/ HTTP/1.1" 200 49441
+INFO 2025-04-21 16:30:22,523 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:30:22,631 "GET /static/dist/css/style.css?v=1745233222627 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:30:27,331 "GET /staff/1/ HTTP/1.1" 200 49441
+INFO 2025-04-21 16:30:27,380 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:30:27,482 "GET /static/dist/css/style.css?v=1745233227479 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:30:27,690 "GET /staff/1/ HTTP/1.1" 200 49441
+INFO 2025-04-21 16:30:27,846 "GET /static/dist/css/style.css?v=1745233227841 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:33:02,387 D:\Sipher Web\Django School Management System\SMS\apps\staffs\models.py changed, reloading.
+INFO 2025-04-21 16:33:03,777 Watching for file changes with StatReloader
+INFO 2025-04-21 16:34:49,559 "GET /staff/1/ HTTP/1.1" 200 49722
+INFO 2025-04-21 16:34:49,643 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:34:49,899 "GET /static/dist/css/style.css?v=1745233489815 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:34:57,055 "GET /staff/1/ HTTP/1.1" 200 49722
+INFO 2025-04-21 16:34:57,414 "GET /static/dist/css/style.css?v=1745233497407 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:35:13,139 "GET /staff/1/ HTTP/1.1" 200 50234
+INFO 2025-04-21 16:35:13,364 "GET /static/dist/css/style.css?v=1745233513360 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:36:48,692 "GET /staff/1/ HTTP/1.1" 200 54999
+WARNING 2025-04-21 16:36:48,779 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+INFO 2025-04-21 16:36:48,779 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:36:48,926 "GET /static/dist/css/style.css?v=1745233608915 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:38:07,263 "GET /staff/1/ HTTP/1.1" 200 63806
+INFO 2025-04-21 16:38:07,361 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+WARNING 2025-04-21 16:38:07,384 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+WARNING 2025-04-21 16:38:07,391 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+INFO 2025-04-21 16:38:07,639 "GET /static/dist/css/style.css?v=1745233687629 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:38:24,687 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 41018
+INFO 2025-04-21 16:38:25,035 "GET /static/dist/css/style.css?v=1745233705016 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:38:26,294 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 49171
+INFO 2025-04-21 16:38:26,494 "GET /static/dist/css/style.css?v=1745233706485 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:39:00,238 "GET /staff/list/ HTTP/1.1" 200 40940
+INFO 2025-04-21 16:39:00,304 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 16:39:00,466 "GET /static/dist/css/style.css?v=1745233740453 HTTP/1.1" 200 55172
+ERROR 2025-04-21 16:39:02,762 Internal Server Error: /staff/1/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 710, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' == 'active' ? 'success' : 'secondary'' from 'object.current_status == 'active' ? 'success' : 'secondary''
+ERROR 2025-04-21 16:39:02,762 "GET /staff/1/ HTTP/1.1" 500 241159
+ERROR 2025-04-21 16:39:05,510 Internal Server Error: /staff/1/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 710, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' == 'active' ? 'success' : 'secondary'' from 'object.current_status == 'active' ? 'success' : 'secondary''
+ERROR 2025-04-21 16:39:05,513 "GET /staff/1/ HTTP/1.1" 500 241159
+ERROR 2025-04-21 16:39:09,887 Internal Server Error: /staff/1/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 710, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' == 'active' ? 'success' : 'secondary'' from 'object.current_status == 'active' ? 'success' : 'secondary''
+ERROR 2025-04-21 16:39:09,891 "GET /staff/1/ HTTP/1.1" 500 241159
+INFO 2025-04-21 16:39:28,579 "GET /staff/1/ HTTP/1.1" 200 66332
+WARNING 2025-04-21 16:39:28,666 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+WARNING 2025-04-21 16:39:28,689 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+INFO 2025-04-21 16:39:29,228 "GET /static/dist/css/style.css?v=1745233769053 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:41:46,669 "GET /staff/1/ HTTP/1.1" 200 66332
+INFO 2025-04-21 16:41:46,747 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+WARNING 2025-04-21 16:41:46,756 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+WARNING 2025-04-21 16:41:46,765 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+INFO 2025-04-21 16:41:46,941 "GET /static/dist/css/style.css?v=1745233906933 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:42:09,553 "GET /staff/1/update/ HTTP/1.1" 200 36028
+INFO 2025-04-21 16:42:09,903 "GET /static/dist/css/style.css?v=1745233929890 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:43:02,748 "GET /staff/1/ HTTP/1.1" 200 67895
+INFO 2025-04-21 16:43:02,819 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+WARNING 2025-04-21 16:43:02,828 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+INFO 2025-04-21 16:43:02,980 "GET /static/dist/css/style.css?v=1745233982971 HTTP/1.1" 200 55172
+WARNING 2025-04-21 16:43:03,028 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+INFO 2025-04-21 16:46:30,179 "GET /staff/1/ HTTP/1.1" 200 70316
+INFO 2025-04-21 16:46:30,272 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+WARNING 2025-04-21 16:46:30,287 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+WARNING 2025-04-21 16:46:30,303 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+INFO 2025-04-21 16:46:30,635 "GET /static/dist/css/style.css?v=1745234190620 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:47:20,608 "GET /staff/1/ HTTP/1.1" 200 70316
+WARNING 2025-04-21 16:47:20,734 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+WARNING 2025-04-21 16:47:20,746 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+INFO 2025-04-21 16:47:21,051 "GET /static/dist/css/style.css?v=1745234241043 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:48:03,286 "GET /staff/1/ HTTP/1.1" 200 74336
+WARNING 2025-04-21 16:48:03,384 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+WARNING 2025-04-21 16:48:03,395 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+WARNING 2025-04-21 16:48:03,479 "GET /static/dist/img/pattern-bg.png HTTP/1.1" 404 1883
+INFO 2025-04-21 16:48:03,627 "GET /static/dist/css/style.css?v=1745234283617 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:48:48,138 "GET /staff/1/ HTTP/1.1" 200 74336
+INFO 2025-04-21 16:48:48,218 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+WARNING 2025-04-21 16:48:48,241 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+WARNING 2025-04-21 16:48:48,257 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+WARNING 2025-04-21 16:48:48,383 "GET /static/dist/img/pattern-bg.png HTTP/1.1" 404 1883
+INFO 2025-04-21 16:48:48,555 "GET /static/dist/css/style.css?v=1745234328537 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:49:00,529 "GET /staff/1/ HTTP/1.1" 200 74336
+WARNING 2025-04-21 16:49:00,616 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+WARNING 2025-04-21 16:49:00,645 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+WARNING 2025-04-21 16:49:00,739 "GET /static/dist/img/pattern-bg.png HTTP/1.1" 404 1883
+INFO 2025-04-21 16:49:00,919 "GET /static/dist/css/style.css?v=1745234340900 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:49:23,619 "GET /staff/1/ HTTP/1.1" 200 74336
+WARNING 2025-04-21 16:49:23,676 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+WARNING 2025-04-21 16:49:23,676 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+WARNING 2025-04-21 16:49:23,692 "GET /static/dist/img/pattern-bg.png HTTP/1.1" 404 1883
+INFO 2025-04-21 16:49:23,786 "GET /static/dist/css/style.css?v=1745234363779 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:50:30,784 "GET /staff/1/ HTTP/1.1" 200 74780
+WARNING 2025-04-21 16:50:30,867 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+WARNING 2025-04-21 16:50:30,870 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+INFO 2025-04-21 16:50:31,090 "GET /static/dist/css/style.css?v=1745234431043 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:50:43,808 "GET /staff/1/ HTTP/1.1" 200 74830
+INFO 2025-04-21 16:50:43,886 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+WARNING 2025-04-21 16:50:43,905 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+WARNING 2025-04-21 16:50:43,919 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+INFO 2025-04-21 16:50:44,519 "GET /static/dist/css/style.css?v=1745234444469 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:50:52,186 "GET /staff/1/update/ HTTP/1.1" 200 36028
+INFO 2025-04-21 16:50:52,371 "GET /static/dist/css/style.css?v=1745234452356 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:51:01,281 "GET /staff/1/ HTTP/1.1" 200 74830
+WARNING 2025-04-21 16:51:01,365 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+WARNING 2025-04-21 16:51:01,370 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+INFO 2025-04-21 16:51:01,489 "GET /static/dist/css/style.css?v=1745234461470 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:52:21,461 "GET /staff/1/ HTTP/1.1" 200 76174
+WARNING 2025-04-21 16:52:21,584 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+WARNING 2025-04-21 16:52:21,590 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+INFO 2025-04-21 16:52:21,695 "GET /static/dist/css/style.css?v=1745234541654 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:52:58,532 "GET /staff/1/ HTTP/1.1" 200 77334
+INFO 2025-04-21 16:52:58,575 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+WARNING 2025-04-21 16:52:58,604 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+WARNING 2025-04-21 16:52:58,614 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+INFO 2025-04-21 16:52:59,041 "GET /static/dist/css/style.css?v=1745234579022 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:53:38,741 D:\Sipher Web\Django School Management System\SMS\apps\staffs\models.py changed, reloading.
+INFO 2025-04-21 16:53:41,111 Watching for file changes with StatReloader
+INFO 2025-04-21 16:53:47,847 "GET /staff/1/ HTTP/1.1" 200 49441
+INFO 2025-04-21 16:53:48,279 "GET /static/dist/css/style.css?v=1745234628198 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:54:01,130 D:\Sipher Web\Django School Management System\SMS\apps\staffs\models.py changed, reloading.
+INFO 2025-04-21 16:54:03,746 Watching for file changes with StatReloader
+INFO 2025-04-21 16:54:11,445 "GET /staff/1/ HTTP/1.1" 200 74336
+WARNING 2025-04-21 16:54:11,509 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+WARNING 2025-04-21 16:54:11,510 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+WARNING 2025-04-21 16:54:11,526 "GET /static/dist/img/pattern-bg.png HTTP/1.1" 404 1883
+INFO 2025-04-21 16:54:11,764 "GET /static/dist/css/style.css?v=1745234651658 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:54:29,456 "GET /staff/1/ HTTP/1.1" 200 74336
+WARNING 2025-04-21 16:54:29,527 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+WARNING 2025-04-21 16:54:29,528 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+WARNING 2025-04-21 16:54:29,586 "GET /static/dist/img/pattern-bg.png HTTP/1.1" 404 1883
+INFO 2025-04-21 16:54:29,710 "GET /static/dist/css/style.css?v=1745234669692 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:54:32,922 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 41018
+INFO 2025-04-21 16:54:33,094 "GET /static/dist/css/style.css?v=1745234673077 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:54:35,130 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 49171
+INFO 2025-04-21 16:54:35,309 "GET /static/dist/css/style.css?v=1745234675306 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:54:37,997 "GET /staff/list/ HTTP/1.1" 200 40940
+INFO 2025-04-21 16:54:38,167 "GET /static/dist/css/style.css?v=1745234678158 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:54:39,436 "GET /staff/1/ HTTP/1.1" 200 74336
+WARNING 2025-04-21 16:54:39,552 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+WARNING 2025-04-21 16:54:39,555 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+WARNING 2025-04-21 16:54:39,558 "GET /static/dist/img/pattern-bg.png HTTP/1.1" 404 1883
+INFO 2025-04-21 16:54:39,623 "GET /static/dist/css/style.css?v=1745234679615 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:55:29,745 "GET /staff/1/ HTTP/1.1" 200 73052
+INFO 2025-04-21 16:55:29,804 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+WARNING 2025-04-21 16:55:29,823 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+WARNING 2025-04-21 16:55:29,829 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+WARNING 2025-04-21 16:55:29,862 "GET /static/dist/img/pattern-bg.png HTTP/1.1" 404 1883
+INFO 2025-04-21 16:55:29,980 "GET /static/dist/css/style.css?v=1745234729970 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:55:45,088 "GET /staff/1/ HTTP/1.1" 200 74336
+WARNING 2025-04-21 16:55:45,184 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+WARNING 2025-04-21 16:55:45,201 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+WARNING 2025-04-21 16:55:45,287 "GET /static/dist/img/pattern-bg.png HTTP/1.1" 404 1883
+INFO 2025-04-21 16:55:45,434 "GET /static/dist/css/style.css?v=1745234745420 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:56:06,404 "GET /staff/1/ HTTP/1.1" 200 74350
+WARNING 2025-04-21 16:56:06,479 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+WARNING 2025-04-21 16:56:06,479 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+WARNING 2025-04-21 16:56:06,507 "GET /static/dist/img/pattern-bg.png HTTP/1.1" 404 1883
+INFO 2025-04-21 16:56:06,643 "GET /static/dist/css/style.css?v=1745234766629 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:56:22,449 "GET /staff/1/ HTTP/1.1" 200 73043
+WARNING 2025-04-21 16:56:22,516 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+WARNING 2025-04-21 16:56:22,523 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+WARNING 2025-04-21 16:56:22,557 "GET /static/dist/img/pattern-bg.png HTTP/1.1" 404 1883
+INFO 2025-04-21 16:56:22,665 "GET /static/dist/css/style.css?v=1745234782658 HTTP/1.1" 200 55172
+INFO 2025-04-21 16:59:11,635 "GET /staff/1/ HTTP/1.1" 200 73043
+INFO 2025-04-21 16:59:11,708 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+WARNING 2025-04-21 16:59:11,725 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+WARNING 2025-04-21 16:59:11,727 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+WARNING 2025-04-21 16:59:11,741 "GET /static/dist/img/pattern-bg.png HTTP/1.1" 404 1883
+INFO 2025-04-21 16:59:11,875 "GET /static/dist/css/style.css?v=1745234951870 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:00:01,223 "GET /staff/1/ HTTP/1.1" 200 73043
+WARNING 2025-04-21 17:00:01,311 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+WARNING 2025-04-21 17:00:01,328 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+WARNING 2025-04-21 17:00:01,412 "GET /static/dist/img/pattern-bg.png HTTP/1.1" 404 1883
+INFO 2025-04-21 17:00:01,574 "GET /static/dist/css/style.css?v=1745235001561 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:04:37,177 "GET /static/dist/css/style.css?v=1745235001561 HTTP/1.1" 304 0
+WARNING 2025-04-21 17:04:37,506 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+WARNING 2025-04-21 17:05:05,574 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-21 17:06:02,070 "GET /staff/1/ HTTP/1.1" 200 73033
+INFO 2025-04-21 17:06:02,160 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+WARNING 2025-04-21 17:06:02,179 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+WARNING 2025-04-21 17:06:02,193 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+WARNING 2025-04-21 17:06:02,316 "GET /static/dist/img/pattern-bg.png HTTP/1.1" 404 1883
+INFO 2025-04-21 17:06:02,554 "GET /static/dist/css/style.css?v=1745235362517 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:11:37,992 "GET /staff/1/ HTTP/1.1" 200 73033
+INFO 2025-04-21 17:11:38,096 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+WARNING 2025-04-21 17:11:38,171 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+WARNING 2025-04-21 17:11:38,205 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+WARNING 2025-04-21 17:11:38,295 "GET /static/dist/img/pattern-bg.png HTTP/1.1" 404 1883
+INFO 2025-04-21 17:11:38,545 "GET /static/dist/css/style.css?v=1745235698502 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:11:40,982 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 41018
+INFO 2025-04-21 17:11:41,376 "GET /static/dist/css/style.css?v=1745235701357 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:11:42,625 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50567
+INFO 2025-04-21 17:11:42,842 "GET /static/dist/css/style.css?v=1745235702820 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:16:26,660 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50567
+INFO 2025-04-21 17:16:26,757 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 17:16:27,022 "GET /static/dist/css/style.css?v=1745235987014 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:16:31,245 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50567
+INFO 2025-04-21 17:16:31,519 "GET /static/dist/css/style.css?v=1745235991514 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:23:39,971 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50567
+INFO 2025-04-21 17:23:40,035 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 17:23:40,233 "GET /static/dist/css/style.css?v=1745236420226 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:25:04,919 Watching for file changes with StatReloader
+INFO 2025-04-21 17:25:37,610 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50567
+INFO 2025-04-21 17:25:38,178 "GET /static/dist/css/style.css?v=1745236538091 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:29:49,291 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50567
+INFO 2025-04-21 17:29:49,386 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-21 17:29:49,674 "GET /static/dist/css/style.css?v=1745236789669 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:31:26,829 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50567
+INFO 2025-04-21 17:31:27,356 "GET /static/dist/css/style.css?v=1745236887331 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:32:00,523 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50567
+INFO 2025-04-21 17:32:00,923 "GET /static/dist/css/style.css?v=1745236920917 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:32:03,462 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 41018
+INFO 2025-04-21 17:32:03,657 "GET /static/dist/css/style.css?v=1745236923632 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:32:49,035 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 41018
+INFO 2025-04-21 17:32:49,380 "GET /static/dist/css/style.css?v=1745236969369 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:32:54,041 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 41018
+INFO 2025-04-21 17:32:54,328 "GET /static/dist/css/style.css?v=1745236974317 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:33:00,019 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 41018
+INFO 2025-04-21 17:33:00,185 "GET /static/dist/css/style.css?v=1745236980178 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:33:19,438 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50567
+INFO 2025-04-21 17:33:19,637 "GET /static/dist/css/style.css?v=1745236999628 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:33:21,358 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50567
+INFO 2025-04-21 17:33:21,509 "GET /static/dist/css/style.css?v=1745237001502 HTTP/1.1" 200 55172
+WARNING 2025-04-21 17:33:53,412 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-21 17:33:54,335 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50567
+INFO 2025-04-21 17:33:54,415 "GET /static/dist/css/preload.css HTTP/1.1" 200 1863
+INFO 2025-04-21 17:33:54,421 "GET /static/dist/css/style.css HTTP/1.1" 200 55172
+INFO 2025-04-21 17:33:54,443 "GET /static/dist/css/sidebar-fix.css HTTP/1.1" 200 9004
+INFO 2025-04-21 17:33:54,474 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-04-21 17:33:54,489 "GET /static/dist/img/worker.svg HTTP/1.1" 200 14909
+INFO 2025-04-21 17:33:54,510 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-04-21 17:33:54,536 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-04-21 17:33:54,731 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-04-21 17:33:54,751 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-04-21 17:33:54,807 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-04-21 17:33:54,858 "GET /static/dist/js/custom.js HTTP/1.1" 200 2597
+INFO 2025-04-21 17:33:54,873 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-04-21 17:33:54,882 "GET /static/dist/js/class-section-filter.js HTTP/1.1" 200 3704
+INFO 2025-04-21 17:33:55,019 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-04-21 17:33:55,144 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-04-21 17:33:55,287 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-04-21 17:33:55,441 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-04-21 17:33:55,524 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-04-21 17:33:55,818 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+INFO 2025-04-21 17:33:56,107 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+WARNING 2025-04-21 17:33:56,327 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-21 17:33:56,399 "GET /static/dist/css/style.css?v=1745237036391 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:33:56,459 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 200 9593
+INFO 2025-04-21 17:33:56,467 "GET /static/dist/js/sidebar-fix.js HTTP/1.1" 200 2621
+WARNING 2025-04-21 17:33:57,055 "GET /static/dist/img/favicon/favicon.ico HTTP/1.1" 404 1898
+WARNING 2025-04-21 17:33:57,073 "GET /static/dist/img/favicon/favicon-32x32.png HTTP/1.1" 404 1916
+WARNING 2025-04-21 17:33:57,092 "GET /static/dist/img/favicon/favicon-16x16.png HTTP/1.1" 404 1916
+INFO 2025-04-21 17:34:24,848 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50567
+INFO 2025-04-21 17:34:25,187 "GET /static/dist/css/style.css?v=1745237065179 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:35:36,850 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50567
+INFO 2025-04-21 17:35:37,212 "GET /static/dist/css/style.css?v=1745237137207 HTTP/1.1" 200 55172
+WARNING 2025-04-21 17:35:41,892 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-21 17:35:43,790 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50567
+INFO 2025-04-21 17:35:43,872 "GET /static/dist/css/preload.css HTTP/1.1" 200 1863
+INFO 2025-04-21 17:35:43,878 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-04-21 17:35:43,904 "GET /static/dist/css/sidebar-fix.css HTTP/1.1" 200 9004
+INFO 2025-04-21 17:35:43,907 "GET /static/dist/css/style.css HTTP/1.1" 200 55172
+INFO 2025-04-21 17:35:43,913 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-04-21 17:35:43,922 "GET /static/dist/img/worker.svg HTTP/1.1" 200 14909
+INFO 2025-04-21 17:35:43,931 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-04-21 17:35:43,939 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-04-21 17:35:43,960 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-04-21 17:35:43,970 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-04-21 17:35:44,022 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-04-21 17:35:44,054 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-04-21 17:35:44,079 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-04-21 17:35:44,110 "GET /static/dist/js/custom.js HTTP/1.1" 200 2597
+INFO 2025-04-21 17:35:44,120 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-04-21 17:35:44,167 "GET /static/dist/js/class-section-filter.js HTTP/1.1" 200 3704
+INFO 2025-04-21 17:35:44,252 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-04-21 17:35:44,408 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-04-21 17:35:44,418 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+INFO 2025-04-21 17:35:44,537 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+WARNING 2025-04-21 17:35:44,689 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-21 17:35:44,794 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 200 9593
+INFO 2025-04-21 17:35:44,794 "GET /static/dist/js/sidebar-fix.js HTTP/1.1" 200 2621
+INFO 2025-04-21 17:35:44,795 "GET /static/dist/css/style.css?v=1745237144744 HTTP/1.1" 200 55172
+WARNING 2025-04-21 17:35:45,130 "GET /static/dist/img/favicon/favicon.ico HTTP/1.1" 404 1898
+WARNING 2025-04-21 17:35:45,162 "GET /static/dist/img/favicon/favicon-32x32.png HTTP/1.1" 404 1916
+WARNING 2025-04-21 17:35:45,186 "GET /static/dist/img/favicon/favicon-16x16.png HTTP/1.1" 404 1916
+INFO 2025-04-21 17:38:25,930 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50571
+INFO 2025-04-21 17:38:26,332 "GET /static/dist/css/style.css?v=1745237306325 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:38:47,529 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50571
+INFO 2025-04-21 17:38:47,795 "GET /static/dist/css/style.css?v=1745237327786 HTTP/1.1" 200 55172
+WARNING 2025-04-21 17:39:23,157 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-21 17:39:24,922 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50571
+INFO 2025-04-21 17:39:25,010 "GET /static/dist/css/preload.css HTTP/1.1" 200 1863
+INFO 2025-04-21 17:39:25,028 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-04-21 17:39:25,030 "GET /static/dist/css/style.css HTTP/1.1" 200 55172
+INFO 2025-04-21 17:39:25,048 "GET /static/dist/css/sidebar-fix.css HTTP/1.1" 200 9004
+INFO 2025-04-21 17:39:25,055 "GET /static/dist/img/worker.svg HTTP/1.1" 200 14909
+INFO 2025-04-21 17:39:25,056 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-04-21 17:39:25,067 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-04-21 17:39:25,076 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-04-21 17:39:25,093 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-04-21 17:39:25,099 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-04-21 17:39:25,164 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-04-21 17:39:25,166 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-04-21 17:39:25,184 "GET /static/dist/js/custom.js HTTP/1.1" 200 2597
+INFO 2025-04-21 17:39:25,187 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-04-21 17:39:25,210 "GET /static/dist/js/class-section-filter.js HTTP/1.1" 200 3704
+INFO 2025-04-21 17:39:25,263 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-04-21 17:39:25,377 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-04-21 17:39:25,546 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-04-21 17:39:25,576 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-04-21 17:39:25,588 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+INFO 2025-04-21 17:39:25,860 "GET /static/dist/js/sidebar-fix.js HTTP/1.1" 200 2621
+INFO 2025-04-21 17:39:25,910 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 200 9593
+INFO 2025-04-21 17:39:25,910 "GET /static/dist/css/style.css?v=1745237365835 HTTP/1.1" 200 55172
+WARNING 2025-04-21 17:39:25,911 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+WARNING 2025-04-21 17:39:26,413 "GET /static/dist/img/favicon/favicon.ico HTTP/1.1" 404 1898
+WARNING 2025-04-21 17:39:26,459 "GET /static/dist/img/favicon/favicon-32x32.png HTTP/1.1" 404 1916
+WARNING 2025-04-21 17:39:26,473 "GET /static/dist/img/favicon/favicon-16x16.png HTTP/1.1" 404 1916
+INFO 2025-04-21 17:40:59,403 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50571
+INFO 2025-04-21 17:41:00,070 "GET /static/dist/css/style.css?v=1745237460057 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:41:02,644 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50571
+INFO 2025-04-21 17:41:03,002 "GET /static/dist/css/style.css?v=1745237462993 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:41:03,328 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50571
+INFO 2025-04-21 17:41:03,493 "GET /static/dist/css/style.css?v=1745237463487 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:41:03,781 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50571
+INFO 2025-04-21 17:41:03,950 "GET /static/dist/css/style.css?v=1745237463939 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:42:55,966 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50571
+INFO 2025-04-21 17:42:56,165 "GET /static/dist/css/style.css?v=1745237576156 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:44:41,287 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50571
+INFO 2025-04-21 17:44:41,621 "GET /static/dist/css/style.css?v=1745237681615 HTTP/1.1" 200 55172
+WARNING 2025-04-21 17:48:21,429 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-21 17:48:23,005 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50571
+INFO 2025-04-21 17:48:23,084 "GET /static/dist/css/preload.css HTTP/1.1" 200 1863
+INFO 2025-04-21 17:48:23,088 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-04-21 17:48:23,095 "GET /static/dist/css/style.css HTTP/1.1" 200 55172
+INFO 2025-04-21 17:48:23,095 "GET /static/dist/css/sidebar-fix.css HTTP/1.1" 200 9004
+INFO 2025-04-21 17:48:23,105 "GET /static/dist/img/worker.svg HTTP/1.1" 200 14909
+INFO 2025-04-21 17:48:23,105 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-04-21 17:48:23,120 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-04-21 17:48:23,138 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-04-21 17:48:23,144 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-04-21 17:48:23,172 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-04-21 17:48:23,228 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-04-21 17:48:23,230 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-04-21 17:48:23,287 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-04-21 17:48:23,309 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-04-21 17:48:23,321 "GET /static/dist/js/custom.js HTTP/1.1" 200 2597
+INFO 2025-04-21 17:48:23,363 "GET /static/dist/js/class-section-filter.js HTTP/1.1" 200 3704
+INFO 2025-04-21 17:48:23,405 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-04-21 17:48:23,542 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-04-21 17:48:23,674 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-04-21 17:48:23,676 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+WARNING 2025-04-21 17:48:24,039 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-04-21 17:48:24,113 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 200 9593
+INFO 2025-04-21 17:48:24,122 "GET /static/dist/js/sidebar-fix.js HTTP/1.1" 200 2621
+INFO 2025-04-21 17:48:24,125 "GET /static/dist/css/style.css?v=1745237904041 HTTP/1.1" 200 55172
+WARNING 2025-04-21 17:48:24,639 "GET /static/dist/img/favicon/favicon.ico HTTP/1.1" 404 1898
+WARNING 2025-04-21 17:48:24,676 "GET /static/dist/img/favicon/favicon-32x32.png HTTP/1.1" 404 1916
+WARNING 2025-04-21 17:48:24,694 "GET /static/dist/img/favicon/favicon-16x16.png HTTP/1.1" 404 1916
+INFO 2025-04-21 17:48:58,283 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50571
+INFO 2025-04-21 17:48:58,710 "GET /static/dist/css/style.css?v=1745237938703 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:49:12,944 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50571
+INFO 2025-04-21 17:49:13,148 "GET /static/dist/css/style.css?v=1745237953139 HTTP/1.1" 200 55172
+INFO 2025-04-21 17:49:24,192 "GET /non-teaching-staffs/1/ HTTP/1.1" 200 50571
+INFO 2025-04-21 17:49:24,350 "GET /static/dist/css/style.css?v=1745237964341 HTTP/1.1" 200 55172
