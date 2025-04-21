@@ -121,17 +121,17 @@
                   </div>
                 </td>
                 <td class="text-center">
-                  <div class="d-flex justify-content-center gap-1">
-                    <button type="button" class="btn btn-sm btn-primary edit-subject-btn" data-subject-id="{{ object.id }}" title="Edit Subject">
+                  <div class="btn-group btn-group-sm">
+                    <button type="button" class="btn btn-outline-primary edit-subject-btn" data-subject-id="{{ object.id }}" title="Edit Subject">
                       <i class="fa fa-edit"></i>
                     </button>
-                    <button type="button" class="btn btn-sm btn-info text-white view-subject-details" data-subject-id="{{ object.id }}" title="View Details">
+                    <button type="button" class="btn btn-outline-info view-subject-details" data-subject-id="{{ object.id }}" title="View Details">
                       <i class="fa fa-eye"></i>
                     </button>
-                    <button type="button" class="btn btn-sm btn-success quick-assign-btn" data-subject-id="{{ object.id }}" title="Quick Assign to Class">
-                      <i class="fa fa-link"></i>
+                    <button type="button" class="btn btn-outline-success quick-assign-btn" data-subject-id="{{ object.id }}" data-subject-name="{{ object }}" title="Quick Assign">
+                      <i class="fa fa-user-plus"></i>
                     </button>
-                    <a href="{% url 'subject-delete' object.id %}" class="btn btn-sm btn-danger" title="Delete Subject">
+                    <a href="{% url 'subject-delete' object.id %}" class="btn btn-outline-danger" title="Delete Subject">
                       <i class="fa fa-trash-alt"></i>
                     </a>
                   </div>
@@ -1201,25 +1201,38 @@
       rows.sort(function(a, b) {
         var keyA, keyB;
 
-        if (sortType === 'name-asc' || sortType === 'name-desc') {
-          keyA = $(a).data('subject-name').toUpperCase();
-          keyB = $(b).data('subject-name').toUpperCase();
-        } else if (sortType === 'classes-asc' || sortType === 'classes-desc') {
-          keyA = parseInt($(a).find('.class-count').text()) || 0;
-          keyB = parseInt($(b).find('.class-count').text()) || 0;
+        switch(sortType) {
+          case 'name-asc':
+          case 'name-desc':
+            keyA = $(a).find('td:nth-child(2)').text().toUpperCase();
+            keyB = $(b).find('td:nth-child(2)').text().toUpperCase();
+            break;
+          case 'classes-asc':
+          case 'classes-desc':
+            keyA = parseInt($(a).find('.class-count').text()) || 0;
+            keyB = parseInt($(b).find('.class-count').text()) || 0;
+            break;
+          default:
+            return 0;
         }
 
-        if (sortType === 'name-asc' || sortType === 'classes-asc') {
-          return keyA > keyB ? 1 : -1;
+        if (sortType.endsWith('-asc')) {
+          return keyA > keyB ? 1 : keyA < keyB ? -1 : 0;
         } else {
-          return keyA < keyB ? 1 : -1;
+          return keyA < keyB ? 1 : keyA > keyB ? -1 : 0;
         }
       });
 
+      // Reorder the table
       $.each(rows, function(index, row) {
         $('#subjectTable tbody').append(row);
-        $(row).find('td:first').text(index + 1); // Update the serial numbers
+        // Update the counter column
+        $(row).find('td:first').text(index + 1);
       });
+
+      // Update sort indicator
+      $('.sort-option').removeClass('active');
+      $(`[data-sort="${sortType}"]`).addClass('active');
     }
 
     // Function to update empty state when filtering

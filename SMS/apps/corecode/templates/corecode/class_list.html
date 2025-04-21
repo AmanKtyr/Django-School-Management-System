@@ -1213,25 +1213,38 @@
       rows.sort(function(a, b) {
         var keyA, keyB;
 
-        if (sortType === 'name-asc' || sortType === 'name-desc') {
-          keyA = $(a).data('class-name').toUpperCase();
-          keyB = $(b).data('class-name').toUpperCase();
-        } else if (sortType === 'students-asc' || sortType === 'students-desc') {
-          keyA = parseInt($(a).find('.student-count').text()) || 0;
-          keyB = parseInt($(b).find('.student-count').text()) || 0;
+        switch(sortType) {
+          case 'name-asc':
+          case 'name-desc':
+            keyA = $(a).find('td:nth-child(2)').text().toUpperCase();
+            keyB = $(b).find('td:nth-child(2)').text().toUpperCase();
+            break;
+          case 'students-asc':
+          case 'students-desc':
+            keyA = parseInt($(a).find('.student-count').text()) || 0;
+            keyB = parseInt($(b).find('.student-count').text()) || 0;
+            break;
+          default:
+            return 0;
         }
 
-        if (sortType === 'name-asc' || sortType === 'students-asc') {
-          return keyA > keyB ? 1 : -1;
+        if (sortType.endsWith('-asc')) {
+          return keyA > keyB ? 1 : keyA < keyB ? -1 : 0;
         } else {
-          return keyA < keyB ? 1 : -1;
+          return keyA < keyB ? 1 : keyA > keyB ? -1 : 0;
         }
       });
 
+      // Reorder the table
       $.each(rows, function(index, row) {
         $('#classTable tbody').append(row);
-        $(row).find('td:first').text(index + 1); // Update the serial numbers
+        // Update the counter column
+        $(row).find('td:first').text(index + 1);
       });
+
+      // Update sort indicator
+      $('.sort-option').removeClass('active');
+      $(`[data-sort="${sortType}"]`).addClass('active');
     }
 
     // Function to update empty state when filtering
