@@ -161,6 +161,25 @@ class FeeStructure(models.Model):
         return f"{self.fee_type} - {self.fee_settings}"
 
 
+class Section(models.Model):
+    """Model for class sections"""
+    name = models.CharField(max_length=10)
+    student_class = models.ForeignKey(StudentClass, on_delete=models.CASCADE, related_name='sections')
+    description = models.TextField(blank=True, null=True)
+    is_active = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['student_class__name', 'name']
+        unique_together = ['student_class', 'name']
+        verbose_name = 'Section'
+        verbose_name_plural = 'Sections'
+
+    def __str__(self):
+        return f"{self.student_class.name} - {self.name}"
+
+
 class ClassTeacher(models.Model):
     """Model for assigning class teachers to classes and sections"""
     student_class = models.ForeignKey(StudentClass, on_delete=models.CASCADE, related_name='class_teachers')

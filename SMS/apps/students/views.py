@@ -13,9 +13,11 @@ from django.contrib import messages
 
 # Finance app removed
 from apps.corecode.filters import ClassSectionFilterForm
+from apps.corecode.models import Section
 
 from .models import Student, StudentBulkUpload, StudentDocument
 from .filters import StudentFilter
+from .forms import StudentForm
 
 class StudentListView(LoginRequiredMixin, ListView):
     model = Student
@@ -76,16 +78,18 @@ class StudentDetailView(LoginRequiredMixin, DetailView):
 
 class StudentCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     model = Student
-    fields = [f.name for f in Student._meta.fields if f.name != 'registration_number']
+    form_class = StudentForm
     success_message = "New student successfully added."
 
-    def get_form(self):
-        """add date picker in forms"""
-        form = super(StudentCreateView, self).get_form()
-        form.fields["aadhar"].widget=widgets.TextInput(attrs={"row":2})
-        form.fields["date_of_birth"].widget = widgets.DateInput(attrs={"type": "date"})
-        form.fields["address"].widget = widgets.Textarea(attrs={"rows": 2})
-        form.fields["others"].widget = widgets.Textarea(attrs={"rows": 2})
+    def get_form(self, form_class=None):
+        form = super().get_form(form_class)
+
+        # Add AJAX functionality to update sections when class changes
+        form.fields['current_class'].widget.attrs.update({
+            'class': 'form-select',
+            'onchange': 'loadSections(this.value)'
+        })
+
         return form
 
     def get_success_url(self):
@@ -95,20 +99,18 @@ class StudentCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
 
 class StudentUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
     model = Student
-    fields = [f.name for f in Student._meta.fields if f.name != 'registration_number']
+    form_class = StudentForm
     success_message = "Record successfully updated."
 
-    def get_form(self):
-        """add date picker in forms"""
-        form = super(StudentUpdateView, self).get_form()
-        form.fields["aadhar"].widget=widgets.TextInput(attrs={"row":2})
-        form.fields["date_of_birth"].widget = widgets.DateInput(attrs={"type": "date"})
-        form.fields["date_of_admission"].widget = widgets.DateInput(
-            attrs={"type": "date"}
-        )
-        form.fields["address"].widget = widgets.Textarea(attrs={"rows": 2})
-        form.fields["others"].widget = widgets.Textarea(attrs={"rows": 2})
-        # form.fields['passport'].widget = widgets.FileInput()
+    def get_form(self, form_class=None):
+        form = super().get_form(form_class)
+
+        # Add AJAX functionality to update sections when class changes
+        form.fields['current_class'].widget.attrs.update({
+            'class': 'form-select',
+            'onchange': 'loadSections(this.value)'
+        })
+
         return form
 
 
@@ -222,4 +224,22 @@ def upload_student_documents(request, pk):
     }
 
     return render(request, 'students/upload_documents.html', context)
+
+
+@login_required
+def get_sections_for_class(request, class_id):
+    """API endpoint to get sections for a class for the student form"""
+    try:
+        # Get sections from the Section model
+        sections = Section.objects.filter(
+            student_class_id=class_id,
+            is_active=True
+        ).values_list('name', flat=True)
+
+        # Format sections for the response
+        section_data = [{'id': section, 'name': section} for section in sections]
+
+        return JsonResponse({'sections': section_data})
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
 

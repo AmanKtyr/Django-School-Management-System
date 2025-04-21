@@ -37,7 +37,8 @@ from .models import (
     FeeSettings,
     FeeStructure,
     ClassSubject,
-    ClassTeacher
+    ClassTeacher,
+    Section
 )
 
 
@@ -755,21 +756,34 @@ def get_fee_settings(request, class_id, section):
 
 def get_sections_by_class(request, class_id):
     """API endpoint to get sections for a specific class"""
-    from apps.students.models import Student
+    try:
+        # First, get sections from the Section model
+        model_sections = Section.objects.filter(
+            student_class_id=class_id,
+            is_active=True
+        ).values('name')
 
-    # Get all unique sections for students in this class
-    sections = Student.objects.filter(
-        current_class_id=class_id,
-        current_status='active'
-    ).values_list('section', flat=True).distinct()
+        model_section_names = [s['name'] for s in model_sections]
 
-    # Format the sections for the response
-    section_data = [{'id': section, 'name': section} for section in sections if section]
+        # Then, get any additional sections from students that might not be in the model
+        from apps.students.models import Student
+        student_sections = Student.objects.filter(
+            current_class_id=class_id,
+            current_status='active'
+        ).values_list('section', flat=True).distinct()
 
-    # Sort sections alphabetically
-    section_data = sorted(section_data, key=lambda x: x['name'])
+        # Combine both sources of sections
+        all_sections = set(model_section_names + list(student_sections))
 
-    return JsonResponse({'sections': section_data})
+        # Format the sections for the response
+        section_data = [{'id': section, 'name': section} for section in all_sections if section]
+
+        # Sort sections alphabetically
+        section_data = sorted(section_data, key=lambda x: x['name'])
+
+        return JsonResponse({'sections': section_data})
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
 
 
 @login_required
@@ -788,14 +802,23 @@ def get_class_data(request, class_id):
             current_status='active'
         ).count()
 
-        # Get sections
-        sections = Student.objects.filter(
+        # Get sections from the Section model
+        model_sections = Section.objects.filter(
+            student_class=student_class,
+            is_active=True
+        ).values_list('name', flat=True)
+
+        # Get sections from students
+        student_sections = Student.objects.filter(
             current_class=student_class,
             current_status='active'
         ).values_list('section', flat=True).distinct()
 
+        # Combine both sources of sections
+        all_sections = set(list(model_sections) + list(student_sections))
+
         # Format sections
-        sections_list = [section for section in sections if section]
+        sections_list = [section for section in all_sections if section]
 
         # Get subjects for this class (if available)
         try:
@@ -1414,5 +1437,177 @@ def remove_class_teacher(request, class_teacher_id):
         })
     except ClassTeacher.DoesNotExist:
         return JsonResponse({'error': 'Class teacher assignment not found'}, status=404)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
+
+@login_required
+def get_all_sections(request):
+    """API endpoint to get all sections"""
+    try:
+        sections = Section.objects.filter(is_active=True).select_related('student_class')
+
+        sections_list = [{
+            'id': section.id,
+            'name': section.name,
+            'class_id': section.student_class.id,
+            'class_name': section.student_class.name,
+            'description': section.description or ''
+        } for section in sections]
+
+        return JsonResponse(sections_list, safe=False)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
+
+@login_required
+def get_class_sections(request, class_id):
+    """API endpoint to get sections for a specific class"""
+    try:
+        # Get the class
+        student_class = StudentClass.objects.get(id=class_id)
+
+        # Get sections for this class
+        sections = Section.objects.filter(student_class=student_class, is_active=True)
+
+        sections_list = [{
+            'id': section.id,
+            'name': section.name,
+            'description': section.description or ''
+        } for section in sections]
+
+        return JsonResponse({
+            'class_name': student_class.name,
+            'sections': sections_list
+        })
+    except StudentClass.DoesNotExist:
+        return JsonResponse({'error': 'Class not found'}, status=404)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
+
+@login_required
+def add_section(request):
+    """API endpoint to add a section to a class"""
+    if request.method != 'POST':
+        return JsonResponse({'error': 'Only POST method is allowed'}, status=405)
+
+    try:
+        # Parse JSON data
+        data = json.loads(request.body)
+        class_id = data.get('class_id')
+        section_name = data.get('name')
+        description = data.get('description', '')
+
+        if not class_id:
+            return JsonResponse({'error': 'Class ID is required'}, status=400)
+
+        if not section_name:
+            return JsonResponse({'error': 'Section name is required'}, status=400)
+
+        # Get the class
+        student_class = StudentClass.objects.get(id=class_id)
+
+        # Check if section already exists
+        if Section.objects.filter(student_class=student_class, name=section_name).exists():
+            return JsonResponse({'error': 'Section already exists for this class'}, status=400)
+
+        # Create the section
+        section = Section.objects.create(
+            student_class=student_class,
+            name=section_name,
+            description=description,
+            is_active=True
+        )
+
+        return JsonResponse({
+            'success': True,
+            'message': 'Section added successfully',
+            'section': {
+                'id': section.id,
+                'name': section.name,
+                'class_id': student_class.id,
+                'class_name': student_class.name,
+                'description': section.description or ''
+            }
+        })
+    except StudentClass.DoesNotExist:
+        return JsonResponse({'error': 'Class not found'}, status=404)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
+
+@login_required
+def update_section(request, section_id):
+    """API endpoint to update a section"""
+    if request.method != 'POST':
+        return JsonResponse({'error': 'Only POST method is allowed'}, status=405)
+
+    try:
+        # Get the section
+        section = Section.objects.get(id=section_id)
+
+        # Parse JSON data
+        data = json.loads(request.body)
+        section_name = data.get('name')
+        description = data.get('description')
+
+        if section_name:
+            # Check if name already exists for another section in the same class
+            if Section.objects.filter(student_class=section.student_class, name=section_name).exclude(id=section_id).exists():
+                return JsonResponse({'error': 'Section name already exists for this class'}, status=400)
+            section.name = section_name
+
+        if description is not None:
+            section.description = description
+
+        section.save()
+
+        return JsonResponse({
+            'success': True,
+            'message': 'Section updated successfully',
+            'section': {
+                'id': section.id,
+                'name': section.name,
+                'class_id': section.student_class.id,
+                'class_name': section.student_class.name,
+                'description': section.description or ''
+            }
+        })
+    except Section.DoesNotExist:
+        return JsonResponse({'error': 'Section not found'}, status=404)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
+
+@login_required
+def delete_section(request, section_id):
+    """API endpoint to delete a section"""
+    if request.method != 'POST':
+        return JsonResponse({'error': 'Only POST method is allowed'}, status=405)
+
+    try:
+        # Get the section
+        section = Section.objects.get(id=section_id)
+
+        # Check if section is being used by students
+        from apps.students.models import Student
+        if Student.objects.filter(current_class=section.student_class, section=section.name).exists():
+            # Instead of deleting, mark as inactive
+            section.is_active = False
+            section.save()
+            return JsonResponse({
+                'success': True,
+                'message': 'Section marked as inactive because it is being used by students'
+            })
+        else:
+            # Delete the section
+            section.delete()
+            return JsonResponse({
+                'success': True,
+                'message': 'Section deleted successfully'
+            })
+    except Section.DoesNotExist:
+        return JsonResponse({'error': 'Section not found'}, status=404)
     except Exception as e:
         return JsonResponse({'error': str(e)}, status=500)

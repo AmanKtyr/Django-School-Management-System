@@ -46,3 +46,64 @@
   {% endif %}
 </form>
 {% endblock content %}
+
+{% block morejs %}
+<script>
+  // Function to load sections for a class
+  function loadSections(classId) {
+    if (!classId) {
+      // Clear the section dropdown if no class is selected
+      var sectionField = document.querySelector('select[name="section"]');
+      sectionField.innerHTML = '<option value="">-- Select Section --</option>';
+      return;
+    }
+
+    // Make AJAX call to get sections for this class
+    $.ajax({
+      url: '/student/api/class/' + classId + '/sections/',
+      type: 'GET',
+      success: function(data) {
+        var sectionField = document.querySelector('select[name="section"]');
+        sectionField.innerHTML = '<option value="">-- Select Section --</option>';
+
+        if (data.sections && data.sections.length > 0) {
+          // Add sections to dropdown
+          data.sections.forEach(function(section) {
+            var option = document.createElement('option');
+            option.value = section.id;
+            option.textContent = section.name;
+            sectionField.appendChild(option);
+          });
+        }
+      },
+      error: function(xhr) {
+        console.error('Error loading sections:', xhr.responseText);
+      }
+    });
+  }
+
+  // Load sections when the page loads (for edit form)
+  $(document).ready(function() {
+    var classField = document.querySelector('select[name="current_class"]');
+    if (classField && classField.value) {
+      loadSections(classField.value);
+
+      // Set the current section as selected after sections are loaded
+      setTimeout(function() {
+        var sectionField = document.querySelector('select[name="section"]');
+        var currentSection = '{{ object.section|default:"" }}';
+
+        if (currentSection && sectionField) {
+          // Find and select the option with the current section value
+          for (var i = 0; i < sectionField.options.length; i++) {
+            if (sectionField.options[i].textContent === currentSection) {
+              sectionField.options[i].selected = true;
+              break;
+            }
+          }
+        }
+      }, 500); // Small delay to ensure sections are loaded
+    }
+  });
+</script>
+{% endblock morejs %}

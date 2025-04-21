@@ -26844,3 +26844,336 @@ INFO 2025-04-21 12:48:42,885 "GET /api/class/6/teacher/ HTTP/1.1" 200 43
 ERROR 2025-04-21 12:48:46,851 Internal Server Error: /api/teachers/
 ERROR 2025-04-21 12:48:46,851 "GET /api/teachers/ HTTP/1.1" 500 378
 INFO 2025-04-21 12:48:46,870 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-04-21 12:51:17,887 D:\Sipher Web\Django School Management System\SMS\apps\corecode\models.py changed, reloading.
+INFO 2025-04-21 12:51:17,922 D:\Sipher Web\Django School Management System\SMS\apps\corecode\models.py changed, reloading.
+INFO 2025-04-21 12:51:20,136 Watching for file changes with StatReloader
+INFO 2025-04-21 12:51:20,150 Watching for file changes with StatReloader
+INFO 2025-04-21 12:51:59,363 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-21 12:51:59,387 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-21 12:52:00,960 Watching for file changes with StatReloader
+INFO 2025-04-21 12:52:01,008 Watching for file changes with StatReloader
+INFO 2025-04-21 12:52:34,298 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-21 12:52:34,316 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-21 12:52:36,165 Watching for file changes with StatReloader
+INFO 2025-04-21 12:52:36,192 Watching for file changes with StatReloader
+INFO 2025-04-21 12:52:46,539 D:\Sipher Web\Django School Management System\SMS\apps\corecode\urls.py changed, reloading.
+INFO 2025-04-21 12:52:46,539 D:\Sipher Web\Django School Management System\SMS\apps\corecode\urls.py changed, reloading.
+INFO 2025-04-21 12:52:48,136 Watching for file changes with StatReloader
+INFO 2025-04-21 12:52:48,168 Watching for file changes with StatReloader
+INFO 2025-04-21 12:52:59,906 "GET /class/list/ HTTP/1.1" 200 68201
+INFO 2025-04-21 12:53:00,385 "GET /class/5/data/ HTTP/1.1" 200 88
+INFO 2025-04-21 12:53:00,419 "GET /static/dist/css/style.css?v=1745220180305 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:53:00,435 "GET /class/4/data/ HTTP/1.1" 200 60
+INFO 2025-04-21 12:53:00,489 "GET /api/class/5/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 12:53:00,535 "GET /api/class/4/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 12:53:00,565 "GET /class/6/data/ HTTP/1.1" 200 64
+INFO 2025-04-21 12:53:00,588 "GET /class/3/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:53:00,626 "GET /class/8/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:53:00,667 "GET /class/7/data/ HTTP/1.1" 200 57
+INFO 2025-04-21 12:53:00,689 "GET /api/class/6/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 12:53:00,722 "GET /api/class/3/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 12:53:00,754 "GET /api/class/8/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 12:53:00,770 "GET /api/class/7/teacher/ HTTP/1.1" 200 43
+ERROR 2025-04-21 12:53:02,016 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 12:53:02,019 "GET /api/teachers/ HTTP/1.1" 500 378
+INFO 2025-04-21 12:53:02,033 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-04-21 12:53:10,897 "GET /class/list/ HTTP/1.1" 200 69134
+INFO 2025-04-21 12:53:11,293 "GET /static/dist/css/style.css?v=1745220191275 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:53:11,453 "GET /class/5/data/ HTTP/1.1" 200 88
+INFO 2025-04-21 12:53:11,485 "GET /class/6/data/ HTTP/1.1" 200 64
+INFO 2025-04-21 12:53:11,513 "GET /class/7/data/ HTTP/1.1" 200 57
+INFO 2025-04-21 12:53:11,553 "GET /class/3/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:53:11,601 "GET /class/8/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:53:11,648 "GET /class/4/data/ HTTP/1.1" 200 60
+INFO 2025-04-21 12:53:11,672 "GET /api/class/6/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 12:53:11,698 "GET /api/class/5/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 12:53:11,735 "GET /api/class/3/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 12:53:11,779 "GET /api/class/7/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 12:53:11,797 "GET /api/class/4/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 12:53:11,823 "GET /api/class/8/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 12:53:50,215 "GET /class/list/ HTTP/1.1" 200 71538
+INFO 2025-04-21 12:53:50,474 "GET /static/dist/css/style.css?v=1745220230466 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:53:50,574 "GET /class/3/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:53:50,593 "GET /class/8/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:53:50,609 "GET /class/4/data/ HTTP/1.1" 200 60
+INFO 2025-04-21 12:53:50,625 "GET /class/6/data/ HTTP/1.1" 200 64
+INFO 2025-04-21 12:53:50,642 "GET /class/5/data/ HTTP/1.1" 200 88
+INFO 2025-04-21 12:53:50,659 "GET /class/7/data/ HTTP/1.1" 200 57
+INFO 2025-04-21 12:53:50,735 "GET /api/class/8/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 12:53:50,757 "GET /api/class/4/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 12:53:50,782 "GET /api/class/3/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 12:53:50,803 "GET /api/class/6/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 12:53:50,832 "GET /api/class/7/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 12:53:50,849 "GET /api/class/5/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 12:54:17,827 "GET /class/list/ HTTP/1.1" 200 71538
+INFO 2025-04-21 12:54:18,128 "GET /static/dist/css/style.css?v=1745220258122 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:54:18,223 "GET /class/8/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:54:18,247 "GET /class/6/data/ HTTP/1.1" 200 64
+INFO 2025-04-21 12:54:18,277 "GET /class/7/data/ HTTP/1.1" 200 57
+INFO 2025-04-21 12:54:18,288 "GET /class/3/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:54:18,312 "GET /class/4/data/ HTTP/1.1" 200 60
+INFO 2025-04-21 12:54:18,363 "GET /api/class/7/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 12:54:18,380 "GET /api/class/3/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 12:54:18,415 "GET /class/5/data/ HTTP/1.1" 200 88
+INFO 2025-04-21 12:54:18,441 "GET /api/class/4/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 12:54:18,472 "GET /api/class/8/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 12:54:18,506 "GET /api/class/6/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 12:54:18,523 "GET /api/class/5/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 12:54:25,715 "GET /class/5/data/ HTTP/1.1" 200 88
+INFO 2025-04-21 12:54:27,592 "GET /class/5/data/ HTTP/1.1" 200 88
+ERROR 2025-04-21 12:54:28,642 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 12:54:28,644 "GET /api/teachers/ HTTP/1.1" 500 378
+INFO 2025-04-21 12:54:28,658 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-04-21 12:54:45,244 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-21 12:54:45,304 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-21 12:54:46,928 Watching for file changes with StatReloader
+INFO 2025-04-21 12:54:46,940 Watching for file changes with StatReloader
+INFO 2025-04-21 12:54:56,273 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-21 12:54:56,368 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-21 12:54:58,047 Watching for file changes with StatReloader
+INFO 2025-04-21 12:54:58,062 Watching for file changes with StatReloader
+INFO 2025-04-21 12:55:18,817 "GET /class/list/ HTTP/1.1" 200 78350
+INFO 2025-04-21 12:55:19,167 "GET /class/5/data/ HTTP/1.1" 200 83
+INFO 2025-04-21 12:55:19,206 "GET /static/dist/css/style.css?v=1745220319064 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:55:19,234 "GET /class/4/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:55:19,270 "GET /api/class/5/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 12:55:19,322 "GET /class/3/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:55:19,341 "GET /class/8/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:55:19,359 "GET /api/class/4/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 12:55:19,409 "GET /class/6/data/ HTTP/1.1" 200 64
+INFO 2025-04-21 12:55:19,420 "GET /api/class/3/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 12:55:19,435 "GET /class/7/data/ HTTP/1.1" 200 57
+INFO 2025-04-21 12:55:19,458 "GET /api/class/8/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 12:55:19,492 "GET /api/class/6/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 12:55:19,531 "GET /api/class/7/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 12:56:28,190 "GET /class/list/ HTTP/1.1" 200 78350
+INFO 2025-04-21 12:56:28,545 "GET /static/dist/css/style.css?v=1745220388527 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:56:28,593 "GET /class/5/data/ HTTP/1.1" 200 83
+INFO 2025-04-21 12:56:28,628 "GET /class/8/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:56:28,695 "GET /api/class/5/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 12:56:28,712 "GET /api/class/8/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 12:56:28,779 "GET /class/6/data/ HTTP/1.1" 200 64
+INFO 2025-04-21 12:56:28,815 "GET /class/7/data/ HTTP/1.1" 200 57
+INFO 2025-04-21 12:56:28,864 "GET /class/4/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:56:28,894 "GET /api/class/7/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 12:56:28,931 "GET /api/class/4/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 12:56:28,953 "GET /class/3/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:56:28,974 "GET /api/class/6/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 12:56:28,991 "GET /api/class/3/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 12:56:33,740 "GET /student/create/ HTTP/1.1" 200 39276
+INFO 2025-04-21 12:56:34,138 "GET /static/dist/css/style.css?v=1745220394084 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:57:53,954 D:\Sipher Web\Django School Management System\SMS\apps\students\views.py changed, reloading.
+INFO 2025-04-21 12:57:53,988 D:\Sipher Web\Django School Management System\SMS\apps\students\views.py changed, reloading.
+INFO 2025-04-21 12:57:55,753 Watching for file changes with StatReloader
+INFO 2025-04-21 12:57:55,765 Watching for file changes with StatReloader
+INFO 2025-04-21 12:58:06,765 D:\Sipher Web\Django School Management System\SMS\apps\students\views.py changed, reloading.
+INFO 2025-04-21 12:58:06,767 D:\Sipher Web\Django School Management System\SMS\apps\students\views.py changed, reloading.
+INFO 2025-04-21 12:58:08,241 Watching for file changes with StatReloader
+INFO 2025-04-21 12:58:08,245 Watching for file changes with StatReloader
+INFO 2025-04-21 12:58:16,959 "GET /student/create/ HTTP/1.1" 200 39320
+INFO 2025-04-21 12:58:17,420 "GET /static/dist/css/style.css?v=1745220497343 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:58:19,100 D:\Sipher Web\Django School Management System\SMS\apps\students\views.py changed, reloading.
+INFO 2025-04-21 12:58:19,365 D:\Sipher Web\Django School Management System\SMS\apps\students\views.py changed, reloading.
+INFO 2025-04-21 12:58:20,876 Watching for file changes with StatReloader
+INFO 2025-04-21 12:58:21,081 Watching for file changes with StatReloader
+INFO 2025-04-21 12:58:29,290 D:\Sipher Web\Django School Management System\SMS\apps\students\views.py changed, reloading.
+INFO 2025-04-21 12:58:29,326 D:\Sipher Web\Django School Management System\SMS\apps\students\views.py changed, reloading.
+INFO 2025-04-21 12:58:30,811 Watching for file changes with StatReloader
+INFO 2025-04-21 12:58:30,849 Watching for file changes with StatReloader
+INFO 2025-04-21 12:58:34,929 "GET /student/create/ HTTP/1.1" 200 39320
+INFO 2025-04-21 12:58:35,412 "GET /static/dist/css/style.css?v=1745220515338 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:58:45,932 D:\Sipher Web\Django School Management System\SMS\apps\students\urls.py changed, reloading.
+INFO 2025-04-21 12:58:46,104 D:\Sipher Web\Django School Management System\SMS\apps\students\urls.py changed, reloading.
+INFO 2025-04-21 12:58:47,636 Watching for file changes with StatReloader
+INFO 2025-04-21 12:58:47,764 Watching for file changes with StatReloader
+INFO 2025-04-21 12:58:58,119 D:\Sipher Web\Django School Management System\SMS\apps\students\urls.py changed, reloading.
+INFO 2025-04-21 12:58:58,135 D:\Sipher Web\Django School Management System\SMS\apps\students\urls.py changed, reloading.
+INFO 2025-04-21 12:58:59,594 Watching for file changes with StatReloader
+INFO 2025-04-21 12:58:59,634 Watching for file changes with StatReloader
+INFO 2025-04-21 12:59:26,267 "GET /student/create/ HTTP/1.1" 200 41396
+INFO 2025-04-21 12:59:26,552 "GET /static/dist/css/style.css?v=1745220566474 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:59:29,303 "GET /student/api/class/5/sections/ HTTP/1.1" 200 16
+INFO 2025-04-21 12:59:33,974 "GET /student/api/class/6/sections/ HTTP/1.1" 200 16
+INFO 2025-04-21 12:59:37,058 "GET /student/list HTTP/1.1" 200 36719
+INFO 2025-04-21 12:59:37,414 "GET /static/dist/css/style.css?v=1745220577407 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:59:38,916 "GET /student/3/ HTTP/1.1" 200 48186
+INFO 2025-04-21 12:59:39,132 "GET /static/dist/css/style.css?v=1745220579117 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:59:39,152 "GET /static/dist/img/avatar.png HTTP/1.1" 200 2121881
+INFO 2025-04-21 12:59:42,452 Watching for file changes with StatReloader
+INFO 2025-04-21 12:59:42,934 "GET /student/3/update/ HTTP/1.1" 200 41523
+INFO 2025-04-21 12:59:43,133 "GET /static/dist/css/style.css?v=1745220583109 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:59:43,183 "GET /student/api/class/3/sections/ HTTP/1.1" 200 16
+INFO 2025-04-21 12:59:50,919 "GET /class/list/ HTTP/1.1" 200 78350
+INFO 2025-04-21 12:59:51,123 "GET /static/dist/css/style.css?v=1745220591117 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:59:51,322 "GET /class/5/data/ HTTP/1.1" 200 83
+INFO 2025-04-21 12:59:51,370 "GET /class/6/data/ HTTP/1.1" 200 64
+INFO 2025-04-21 12:59:51,406 "GET /class/7/data/ HTTP/1.1" 200 57
+INFO 2025-04-21 12:59:51,438 "GET /class/3/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:59:51,455 "GET /class/4/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:59:51,498 "GET /class/8/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:59:51,523 "GET /api/class/5/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 12:59:51,582 "GET /api/class/6/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 12:59:51,607 "GET /api/class/3/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 12:59:51,624 "GET /api/class/7/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 12:59:51,642 "GET /api/class/8/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 12:59:51,658 "GET /api/class/4/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 12:59:52,537 "GET /class/list/ HTTP/1.1" 200 78350
+INFO 2025-04-21 12:59:53,237 "GET /static/dist/css/style.css?v=1745220593232 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:59:53,356 "GET /class/4/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:59:53,375 "GET /class/6/data/ HTTP/1.1" 200 64
+INFO 2025-04-21 12:59:53,402 "GET /class/3/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:59:53,422 "GET /class/7/data/ HTTP/1.1" 200 57
+INFO 2025-04-21 12:59:53,458 "GET /class/5/data/ HTTP/1.1" 200 83
+INFO 2025-04-21 12:59:53,515 "GET /class/8/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 12:59:53,557 "GET /api/class/4/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 12:59:53,603 "GET /api/class/7/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 12:59:53,626 "GET /api/class/6/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 12:59:53,647 "GET /api/class/3/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 12:59:53,675 "GET /api/class/8/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 12:59:53,697 "GET /api/class/5/teacher/ HTTP/1.1" 200 43
+ERROR 2025-04-21 13:00:12,278 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 13:00:12,281 "GET /api/teachers/ HTTP/1.1" 500 378
+INFO 2025-04-21 13:00:12,293 "GET /api/get-sections/7/ HTTP/1.1" 200 16
+INFO 2025-04-21 13:00:47,553 "GET /attendance/attendance_list/ HTTP/1.1" 200 56764
+INFO 2025-04-21 13:00:47,973 "GET /static/dist/css/style.css?v=1745220647963 HTTP/1.1" 200 46591
+INFO 2025-04-21 13:00:50,187 "GET /api/get-sections/5/ HTTP/1.1" 200 40
+INFO 2025-04-21 13:00:53,091 "GET /api/get-sections/7/ HTTP/1.1" 200 16
+INFO 2025-04-21 13:00:55,623 "GET /api/get-sections/5/ HTTP/1.1" 200 40
+INFO 2025-04-21 13:00:57,197 "GET /api/get-sections/6/ HTTP/1.1" 200 40
+INFO 2025-04-21 13:00:59,271 "GET /attendance/attendance_list/?class_id=6&section=A&attendance_date=2025-04-21 HTTP/1.1" 200 88853
+INFO 2025-04-21 13:00:59,649 "GET /api/get-sections/6/ HTTP/1.1" 200 40
+INFO 2025-04-21 13:00:59,678 "GET /static/dist/css/style.css?v=1745220659663 HTTP/1.1" 200 46591
+INFO 2025-04-21 13:01:07,573 "GET / HTTP/1.1" 200 57134
+INFO 2025-04-21 13:01:07,774 "GET /static/dist/css/style.css?v=1745220667764 HTTP/1.1" 200 46591
+INFO 2025-04-21 13:01:29,988 "GET /class/list/ HTTP/1.1" 200 78350
+INFO 2025-04-21 13:01:30,835 "GET /static/dist/css/style.css?v=1745220690829 HTTP/1.1" 200 46591
+INFO 2025-04-21 13:01:30,926 "GET /class/5/data/ HTTP/1.1" 200 83
+INFO 2025-04-21 13:01:30,958 "GET /class/6/data/ HTTP/1.1" 200 64
+INFO 2025-04-21 13:01:30,991 "GET /class/3/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 13:01:31,023 "GET /class/7/data/ HTTP/1.1" 200 57
+INFO 2025-04-21 13:01:31,041 "GET /class/8/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 13:01:31,061 "GET /class/4/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 13:01:31,077 "GET /api/class/5/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 13:01:31,095 "GET /api/class/6/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 13:01:31,140 "GET /api/class/3/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 13:01:31,153 "GET /api/class/7/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 13:01:31,179 "GET /api/class/8/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 13:01:31,205 "GET /api/class/4/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 13:01:44,243 "GET /api/sections/ HTTP/1.1" 200 2
+INFO 2025-04-21 13:02:23,069 "GET /class/list/ HTTP/1.1" 200 78350
+INFO 2025-04-21 13:02:23,465 "GET /static/dist/css/style.css?v=1745220743455 HTTP/1.1" 200 46591
+INFO 2025-04-21 13:02:23,585 "GET /class/7/data/ HTTP/1.1" 200 57
+INFO 2025-04-21 13:02:23,606 "GET /class/8/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 13:02:23,621 "GET /class/3/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 13:02:23,648 "GET /class/5/data/ HTTP/1.1" 200 83
+INFO 2025-04-21 13:02:23,668 "GET /class/4/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 13:02:23,702 "GET /class/6/data/ HTTP/1.1" 200 64
+INFO 2025-04-21 13:02:23,734 "GET /api/class/7/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 13:02:23,766 "GET /api/class/3/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 13:02:23,800 "GET /api/class/5/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 13:02:23,820 "GET /api/class/4/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 13:02:23,845 "GET /api/class/6/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 13:02:23,865 "GET /api/class/8/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 13:04:21,682 "GET /class/list/ HTTP/1.1" 200 83450
+INFO 2025-04-21 13:04:22,086 "GET /static/dist/css/style.css?v=1745220862081 HTTP/1.1" 200 46591
+INFO 2025-04-21 13:04:22,190 "GET /class/8/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 13:04:22,222 "GET /class/5/data/ HTTP/1.1" 200 83
+INFO 2025-04-21 13:04:22,247 "GET /class/3/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 13:04:22,268 "GET /class/7/data/ HTTP/1.1" 200 57
+INFO 2025-04-21 13:04:22,307 "GET /class/6/data/ HTTP/1.1" 200 64
+INFO 2025-04-21 13:04:22,338 "GET /class/4/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 13:04:22,406 "GET /api/class/5/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 13:04:22,452 "GET /api/class/8/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 13:04:22,469 "GET /api/class/6/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 13:04:22,485 "GET /api/class/7/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 13:04:22,501 "GET /api/class/4/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 13:04:22,516 "GET /api/class/3/teacher/ HTTP/1.1" 200 42
+ERROR 2025-04-21 13:04:38,885 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 13:04:38,888 "GET /api/teachers/ HTTP/1.1" 500 378
+INFO 2025-04-21 13:04:38,896 "GET /api/get-sections/5/ HTTP/1.1" 200 40
+INFO 2025-04-21 13:04:47,813 "GET /api/class/7/sections/ HTTP/1.1" 200 36
+INFO 2025-04-21 13:04:47,837 "GET /class/7/data/ HTTP/1.1" 200 57
+INFO 2025-04-21 13:04:59,897 "GET /api/class/7/sections/ HTTP/1.1" 200 36
+INFO 2025-04-21 13:04:59,921 "GET /class/7/data/ HTTP/1.1" 200 57
+INFO 2025-04-21 13:05:08,393 "POST /api/add-section/ HTTP/1.1" 200 147
+INFO 2025-04-21 13:05:09,919 "GET /api/class/7/sections/ HTTP/1.1" 200 77
+INFO 2025-04-21 13:05:09,948 "GET /class/5/data/ HTTP/1.1" 200 83
+INFO 2025-04-21 13:05:09,980 "GET /class/7/data/ HTTP/1.1" 200 60
+INFO 2025-04-21 13:05:10,019 "GET /class/8/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 13:05:10,048 "GET /class/6/data/ HTTP/1.1" 200 64
+INFO 2025-04-21 13:05:10,070 "GET /class/3/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 13:05:10,100 "GET /api/class/5/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 13:05:10,129 "GET /class/4/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 13:05:10,166 "GET /api/class/8/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 13:05:10,198 "GET /api/class/7/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 13:05:10,232 "GET /api/class/3/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 13:05:10,250 "GET /api/class/6/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 13:05:10,268 "GET /api/class/4/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 13:05:27,541 "GET /api/class/8/sections/ HTTP/1.1" 200 35
+INFO 2025-04-21 13:05:27,573 "GET /class/8/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 13:05:39,614 "GET /class/list/ HTTP/1.1" 200 88010
+INFO 2025-04-21 13:05:40,193 "GET /static/dist/css/style.css?v=1745220940185 HTTP/1.1" 200 46591
+INFO 2025-04-21 13:05:40,310 "GET /class/7/data/ HTTP/1.1" 200 60
+INFO 2025-04-21 13:05:40,328 "GET /class/3/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 13:05:40,347 "GET /class/4/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 13:05:40,363 "GET /class/5/data/ HTTP/1.1" 200 83
+INFO 2025-04-21 13:05:40,375 "GET /class/6/data/ HTTP/1.1" 200 64
+INFO 2025-04-21 13:05:40,399 "GET /class/8/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 13:05:40,422 "GET /api/class/7/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 13:05:40,494 "GET /api/class/3/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 13:05:40,530 "GET /api/class/5/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 13:05:40,560 "GET /api/class/4/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 13:05:40,582 "GET /api/class/6/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 13:05:40,595 "GET /api/class/8/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 13:05:41,664 "GET /api/class/7/sections/ HTTP/1.1" 200 77
+INFO 2025-04-21 13:05:48,036 "GET /api/class/5/sections/ HTTP/1.1" 200 36
+INFO 2025-04-21 13:05:53,178 "GET /api/class/5/sections/ HTTP/1.1" 200 36
+INFO 2025-04-21 13:06:18,799 "GET /class/list/ HTTP/1.1" 200 88638
+INFO 2025-04-21 13:06:19,077 "GET /static/dist/css/style.css?v=1745220979072 HTTP/1.1" 200 46591
+INFO 2025-04-21 13:06:19,203 "GET /class/3/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 13:06:19,226 "GET /class/5/data/ HTTP/1.1" 200 83
+INFO 2025-04-21 13:06:19,244 "GET /class/4/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 13:06:19,277 "GET /class/6/data/ HTTP/1.1" 200 64
+INFO 2025-04-21 13:06:19,317 "GET /class/8/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 13:06:19,337 "GET /api/class/3/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 13:06:19,376 "GET /class/7/data/ HTTP/1.1" 200 60
+INFO 2025-04-21 13:06:19,415 "GET /api/class/5/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 13:06:19,442 "GET /api/class/8/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 13:06:19,468 "GET /api/class/4/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 13:06:19,499 "GET /api/class/6/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 13:06:19,519 "GET /api/class/7/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 13:06:20,032 "GET /class/list/ HTTP/1.1" 200 88638
+INFO 2025-04-21 13:06:20,752 "GET /static/dist/css/style.css?v=1745220980743 HTTP/1.1" 200 46591
+INFO 2025-04-21 13:06:20,873 "GET /class/4/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 13:06:20,908 "GET /class/8/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 13:06:20,932 "GET /class/3/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 13:06:20,954 "GET /class/7/data/ HTTP/1.1" 200 60
+INFO 2025-04-21 13:06:20,983 "GET /class/6/data/ HTTP/1.1" 200 64
+INFO 2025-04-21 13:06:21,023 "GET /class/5/data/ HTTP/1.1" 200 83
+INFO 2025-04-21 13:06:21,051 "GET /api/class/4/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 13:06:21,076 "GET /api/class/8/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 13:06:21,121 "GET /api/class/7/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 13:06:21,154 "GET /api/class/3/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 13:06:21,188 "GET /api/class/5/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 13:06:21,200 "GET /api/class/6/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 13:06:23,908 "GET /api/class/5/sections/ HTTP/1.1" 200 36
+INFO 2025-04-21 13:06:30,674 "POST /api/add-section/ HTTP/1.1" 200 147
+INFO 2025-04-21 13:06:34,919 "GET /class/3/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 13:06:34,950 "GET /api/class/5/sections/ HTTP/1.1" 200 77
+INFO 2025-04-21 13:06:34,989 "GET /class/8/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 13:06:35,020 "GET /class/7/data/ HTTP/1.1" 200 60
+INFO 2025-04-21 13:06:35,053 "GET /class/6/data/ HTTP/1.1" 200 64
+INFO 2025-04-21 13:06:35,098 "GET /api/class/3/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 13:06:35,134 "GET /class/4/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 13:06:35,164 "GET /class/5/data/ HTTP/1.1" 200 88
+INFO 2025-04-21 13:06:35,187 "GET /api/class/7/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 13:06:35,207 "GET /api/class/5/sections/ HTTP/1.1" 200 77
+INFO 2025-04-21 13:06:35,234 "GET /api/class/6/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 13:06:35,253 "GET /api/class/8/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 13:06:35,286 "GET /api/class/4/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-21 13:06:35,305 "GET /api/class/5/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-21 13:06:43,170 "GET /student/list HTTP/1.1" 200 36719
+INFO 2025-04-21 13:06:43,572 "GET /static/dist/css/style.css?v=1745221003560 HTTP/1.1" 200 46591
+INFO 2025-04-21 13:06:44,463 "GET /student/create/ HTTP/1.1" 200 41396
+INFO 2025-04-21 13:06:44,626 "GET /static/dist/css/style.css?v=1745221004613 HTTP/1.1" 200 46591
+INFO 2025-04-21 13:06:49,951 "GET /student/api/class/5/sections/ HTTP/1.1" 200 40

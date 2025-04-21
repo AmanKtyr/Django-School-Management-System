@@ -87,4 +87,11 @@ urlpatterns = [
     path('api/class/<int:class_id>/section/<str:section>/teacher/', views.get_class_teacher, name='get_class_section_teacher'),
     path('api/assign-class-teacher/', views.assign_class_teacher, name='assign_class_teacher'),
     path('api/remove-class-teacher/<int:class_teacher_id>/', views.remove_class_teacher, name='remove_class_teacher'),
+
+    # Section API endpoints
+    path('api/sections/', views.get_all_sections, name='get_all_sections'),
+    path('api/class/<int:class_id>/sections/', views.get_class_sections, name='get_class_sections'),
+    path('api/add-section/', views.add_section, name='add_section'),
+    path('api/update-section/<int:section_id>/', views.update_section, name='update_section'),
+    path('api/delete-section/<int:section_id>/', views.delete_section, name='delete_section'),
 ]
