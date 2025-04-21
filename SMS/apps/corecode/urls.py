@@ -80,4 +80,11 @@ urlpatterns = [
     path('system-settings/backup-restore/', views.backup_restore, name='backup_restore'),
     path('system-settings/user-permissions/', views.user_permissions, name='user_permissions'),
     path('system-settings/security-logs/', views.security_logs, name='security_logs'),
+
+    # Class Teacher API endpoints
+    path('api/class-teachers/', views.get_class_teachers, name='get_class_teachers'),
+    path('api/class/<int:class_id>/teacher/', views.get_class_teacher, name='get_class_teacher'),
+    path('api/class/<int:class_id>/section/<str:section>/teacher/', views.get_class_teacher, name='get_class_section_teacher'),
+    path('api/assign-class-teacher/', views.assign_class_teacher, name='assign_class_teacher'),
+    path('api/remove-class-teacher/<int:class_teacher_id>/', views.remove_class_teacher, name='remove_class_teacher'),
 ]

@@ -36,7 +36,8 @@ from .models import (
     CollegeProfile,
     FeeSettings,
     FeeStructure,
-    ClassSubject
+    ClassSubject,
+    ClassTeacher
 )
 
 
@@ -1274,5 +1275,144 @@ def update_term_ajax(request, term_id):
         })
     except AcademicTerm.DoesNotExist:
         return JsonResponse({'error': 'Term not found'}, status=404)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
+
+@login_required
+def get_class_teachers(request):
+    """API endpoint to get all class teachers"""
+    try:
+        class_teachers = ClassTeacher.objects.filter(is_active=True).select_related(
+            'student_class', 'teacher'
+        )
+
+        teachers_list = [{
+            'id': ct.id,
+            'class_id': ct.student_class.id,
+            'class_name': ct.student_class.name,
+            'section': ct.section or '',
+            'teacher_id': ct.teacher.id,
+            'teacher_name': ct.teacher.fullname
+        } for ct in class_teachers]
+
+        return JsonResponse(teachers_list, safe=False)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
+
+@login_required
+def get_class_teacher(request, class_id, section=None):
+    """API endpoint to get class teacher for a specific class and section"""
+    try:
+        # Get the class
+        student_class = StudentClass.objects.get(id=class_id)
+
+        # Get class teacher
+        query = {
+            'student_class': student_class,
+            'is_active': True
+        }
+
+        if section:
+            query['section'] = section
+
+        class_teacher = ClassTeacher.objects.filter(**query).select_related('teacher').first()
+
+        if class_teacher:
+            teacher_data = {
+                'id': class_teacher.id,
+                'teacher_id': class_teacher.teacher.id,
+                'teacher_name': class_teacher.teacher.fullname,
+                'section': class_teacher.section or ''
+            }
+        else:
+            teacher_data = None
+
+        return JsonResponse({
+            'class_name': student_class.name,
+            'class_teacher': teacher_data
+        })
+    except StudentClass.DoesNotExist:
+        return JsonResponse({'error': 'Class not found'}, status=404)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
+
+@login_required
+def assign_class_teacher(request):
+    """API endpoint to assign a teacher to a class"""
+    if request.method != 'POST':
+        return JsonResponse({'error': 'Only POST method is allowed'}, status=405)
+
+    try:
+        # Parse JSON data
+        data = json.loads(request.body)
+        class_id = data.get('class_id')
+        section = data.get('section', '')
+        teacher_id = data.get('teacher_id')
+
+        if not class_id:
+            return JsonResponse({'error': 'Class ID is required'}, status=400)
+
+        if not teacher_id:
+            return JsonResponse({'error': 'Teacher ID is required'}, status=400)
+
+        # Get the class and teacher
+        student_class = StudentClass.objects.get(id=class_id)
+        from apps.staffs.models import Staff
+        teacher = Staff.objects.get(id=teacher_id)
+
+        # Check if assignment already exists
+        class_teacher, created = ClassTeacher.objects.get_or_create(
+            student_class=student_class,
+            section=section,
+            defaults={
+                'teacher': teacher,
+                'is_active': True
+            }
+        )
+
+        if not created:
+            # Update existing assignment
+            class_teacher.teacher = teacher
+            class_teacher.is_active = True
+            class_teacher.save()
+            message = 'Class teacher updated successfully'
+        else:
+            message = 'Class teacher assigned successfully'
+
+        return JsonResponse({
+            'success': True,
+            'message': message,
+            'class_teacher_id': class_teacher.id
+        })
+    except StudentClass.DoesNotExist:
+        return JsonResponse({'error': 'Class not found'}, status=404)
+    except Staff.DoesNotExist:
+        return JsonResponse({'error': 'Teacher not found'}, status=404)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
+
+@login_required
+def remove_class_teacher(request, class_teacher_id):
+    """API endpoint to remove a class teacher"""
+    if request.method != 'POST':
+        return JsonResponse({'error': 'Only POST method is allowed'}, status=405)
+
+    try:
+        class_teacher = ClassTeacher.objects.get(id=class_teacher_id)
+
+        # Instead of deleting, mark as inactive
+        class_teacher.is_active = False
+        class_teacher.save()
+
+        return JsonResponse({
+            'success': True,
+            'message': 'Class teacher removed successfully'
+        })
+    except ClassTeacher.DoesNotExist:
+        return JsonResponse({'error': 'Class teacher assignment not found'}, status=404)
     except Exception as e:
         return JsonResponse({'error': str(e)}, status=500)

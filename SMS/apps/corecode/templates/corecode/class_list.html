@@ -81,9 +81,10 @@
             <thead class="table-light">
               <tr>
                 <th width="5%" class="text-center">#</th>
-                <th width="40%">Class Name</th>
+                <th width="30%">Class Name</th>
                 <th width="15%" class="text-center">Students</th>
-                <th width="25%" class="text-center">Sections</th>
+                <th width="20%" class="text-center">Sections</th>
+                <th width="15%" class="text-center">Class Teacher</th>
                 <th width="15%" class="text-center">Actions</th>
               </tr>
             </thead>
@@ -101,12 +102,18 @@
                   <span class="section-list" data-class-id="{{ object.id }}">Loading...</span>
                 </td>
                 <td class="text-center">
+                  <span class="class-teacher" data-class-id="{{ object.id }}">Loading...</span>
+                </td>
+                <td class="text-center">
                   <div class="btn-group btn-group-sm">
                     <button type="button" class="btn btn-outline-primary edit-class-btn" data-class-id="{{ object.id }}" title="Edit Class">
                       <i class="fa fa-edit"></i>
                     </button>
                     <button type="button" class="btn btn-outline-info view-class-details" data-class-id="{{ object.id }}" title="View Details">
                       <i class="fa fa-eye"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-success assign-teacher-btn" data-class-id="{{ object.id }}" data-class-name="{{ object }}" title="Assign Class Teacher">
+                      <i class="fa fa-user-plus"></i>
                     </button>
                     <a href="{% url 'class-delete' object.id %}" class="btn btn-outline-danger" title="Delete Class">
                       <i class="fa fa-trash-alt"></i>
@@ -116,7 +123,7 @@
               </tr>
               {% empty %}
               <tr>
-                <td colspan="5" class="text-center py-4">
+                <td colspan="6" class="text-center py-4">
                   <div class="empty-state">
                     <i class="fas fa-school fa-3x text-muted mb-3"></i>
                     <h5>No Classes Found</h5>
@@ -179,6 +186,17 @@
               <p id="detailStudentCount" class="form-control-plaintext">-</p>
             </div>
           </div>
+          <div class="col-md-12">
+            <div class="mb-3">
+              <label class="form-label fw-bold">Class Teacher:</label>
+              <div id="detailClassTeacher" class="form-control-plaintext d-flex align-items-center">
+                <span class="me-2">Loading...</span>
+                <button type="button" id="assignTeacherFromDetailsBtn" class="btn btn-sm btn-outline-success">
+                  <i class="fas fa-user-plus me-1"></i> Assign Teacher
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="row">
           <div class="col-12">
@@ -238,6 +256,56 @@
           </button>
         </div>
       </form>
+    </div>
+  </div>
+</div>
+
+<!-- Assign Class Teacher Modal -->
+<div class="modal fade" id="assignTeacherModal" tabindex="-1" aria-labelledby="assignTeacherModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title" id="assignTeacherModalLabel">
+          <i class="fas fa-user-plus me-2"></i> Assign Class Teacher
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="assignTeacherForm">
+          {% csrf_token %}
+          <input type="hidden" id="assignTeacherClassId" name="class_id">
+          <div class="mb-3">
+            <label for="assignTeacherClassName" class="form-label fw-bold">Class</label>
+            <input type="text" class="form-control" id="assignTeacherClassName" readonly>
+          </div>
+          <div class="mb-3">
+            <label for="assignTeacherSection" class="form-label fw-bold">Section</label>
+            <select class="form-select" id="assignTeacherSection" name="section">
+              <option value="">-- All Sections --</option>
+              <!-- Sections will be loaded dynamically -->
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="assignTeacherTeacher" class="form-label fw-bold">Teacher</label>
+            <select class="form-select" id="assignTeacherTeacher" name="teacher_id" required>
+              <option value="">-- Select Teacher --</option>
+              <!-- Teachers will be loaded dynamically -->
+            </select>
+            <div class="invalid-feedback">Please select a teacher.</div>
+          </div>
+          <div class="alert alert-info">
+            <i class="fas fa-info-circle me-2"></i> Assigning a class teacher helps in managing class-specific activities and communications.
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer bg-light">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          <i class="fas fa-times me-1"></i> Cancel
+        </button>
+        <button type="button" class="btn btn-success" id="saveAssignTeacherBtn">
+          <i class="fas fa-save me-1"></i> Assign Teacher
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -332,14 +400,18 @@
       var className = $(this).closest('tr').data('class-name');
       var studentCount = $(this).closest('tr').find('.student-count').text();
       var sections = $(this).closest('tr').find('.section-list').html(); // Use HTML to preserve badges
+      var classTeacher = $(this).closest('tr').find('.class-teacher').html(); // Use HTML to preserve badges
 
       $('#detailClassName').text(className);
       $('#detailStudentCount').text(studentCount);
       $('#detailSections').html(sections);
+      $('#detailClassTeacher').find('span').first().replaceWith(classTeacher);
 
-      // Store class ID for edit button
+      // Store class ID for edit and assign teacher buttons
       $('#editClassFromDetailsBtn').data('class-id', classId);
       $('#editClassFromDetailsBtn').data('class-name', className);
+      $('#assignTeacherFromDetailsBtn').data('class-id', classId);
+      $('#assignTeacherFromDetailsBtn').data('class-name', className);
 
       // Load subjects for this class
       loadSubjectsForClass(classId);
@@ -423,10 +495,159 @@
       });
     });
 
-    // Load student counts and sections for each class
+    // Load student counts, sections, and class teachers for each class
     loadClassData();
 
-    // Function to load student counts and sections
+    // Assign Teacher button click
+    $('.assign-teacher-btn').on('click', function() {
+      var classId = $(this).data('class-id');
+      var className = $(this).data('class-name');
+
+      // Set class ID and name in the form
+      $('#assignTeacherClassId').val(classId);
+      $('#assignTeacherClassName').val(className);
+
+      // Load sections for this class
+      loadSectionsForAssignTeacher(classId);
+
+      // Load teachers
+      loadTeachersForAssignTeacher();
+
+      // Show the modal
+      var assignTeacherModal = new bootstrap.Modal(document.getElementById('assignTeacherModal'));
+      assignTeacherModal.show();
+    });
+
+    // Assign Teacher from details modal
+    $('#assignTeacherFromDetailsBtn').on('click', function() {
+      var classId = $(this).data('class-id');
+      var className = $(this).data('class-name');
+      var section = $(this).data('section') || '';
+
+      // Close the details modal
+      var detailsModal = bootstrap.Modal.getInstance(document.getElementById('classDetailsModal'));
+      detailsModal.hide();
+
+      // Set class ID and name in the form
+      $('#assignTeacherClassId').val(classId);
+      $('#assignTeacherClassName').val(className);
+
+      // Load sections for this class
+      loadSectionsForAssignTeacher(classId, section);
+
+      // Load teachers
+      loadTeachersForAssignTeacher();
+
+      // Show the modal
+      var assignTeacherModal = new bootstrap.Modal(document.getElementById('assignTeacherModal'));
+      assignTeacherModal.show();
+    });
+
+    // Save Assign Teacher button click
+    $('#saveAssignTeacherBtn').on('click', function() {
+      var classId = $('#assignTeacherClassId').val();
+      var section = $('#assignTeacherSection').val();
+      var teacherId = $('#assignTeacherTeacher').val();
+
+      if (!teacherId) {
+        $('#assignTeacherTeacher').addClass('is-invalid');
+        return false;
+      }
+
+      // Show loading state
+      var $btn = $('#saveAssignTeacherBtn');
+      var originalHtml = $btn.html();
+      $btn.html('<i class="fas fa-spinner fa-spin me-1"></i> Saving...');
+      $btn.prop('disabled', true);
+
+      // Make AJAX call to assign teacher
+      $.ajax({
+        url: '/api/assign-class-teacher/',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify({
+          class_id: classId,
+          section: section,
+          teacher_id: teacherId
+        }),
+        headers: {
+          'X-CSRFToken': $('input[name="csrfmiddlewaretoken"]').val()
+        },
+        success: function(response) {
+          // Close modal
+          var assignTeacherModal = bootstrap.Modal.getInstance(document.getElementById('assignTeacherModal'));
+          assignTeacherModal.hide();
+
+          // Show success message
+          alert(response.message);
+
+          // Refresh the data
+          loadClassData();
+
+          // Reset button
+          $btn.html(originalHtml);
+          $btn.prop('disabled', false);
+        },
+        error: function(xhr) {
+          var errorMsg = 'Failed to assign class teacher';
+          if (xhr.responseJSON && xhr.responseJSON.error) {
+            errorMsg = xhr.responseJSON.error;
+          }
+          alert(errorMsg);
+
+          // Reset button
+          $btn.html(originalHtml);
+          $btn.prop('disabled', false);
+        }
+      });
+    });
+
+    // Function to load sections for assign teacher modal
+    function loadSectionsForAssignTeacher(classId, selectedSection) {
+      // Clear existing options except the default one
+      $('#assignTeacherSection option:not(:first)').remove();
+
+      // Make AJAX call to get sections
+      $.ajax({
+        url: '/api/get-sections/' + classId + '/',
+        type: 'GET',
+        success: function(data) {
+          if (data.sections && data.sections.length > 0) {
+            // Add sections to dropdown
+            data.sections.forEach(function(section) {
+              var option = $('<option></option>').attr('value', section.id).text(section.name);
+              if (selectedSection && section.id === selectedSection) {
+                option.attr('selected', 'selected');
+              }
+              $('#assignTeacherSection').append(option);
+            });
+          }
+        }
+      });
+    }
+
+    // Function to load teachers for assign teacher modal
+    function loadTeachersForAssignTeacher() {
+      // Clear existing options except the default one
+      $('#assignTeacherTeacher option:not(:first)').remove();
+
+      // Make AJAX call to get teachers
+      $.ajax({
+        url: '/api/teachers/',
+        type: 'GET',
+        success: function(data) {
+          if (data && data.length > 0) {
+            // Add teachers to dropdown
+            data.forEach(function(teacher) {
+              var option = $('<option></option>').attr('value', teacher.id).text(teacher.name);
+              $('#assignTeacherTeacher').append(option);
+            });
+          }
+        }
+      });
+    }
+
+    // Function to load student counts, sections, and class teachers
     function loadClassData() {
       $('.class-row').each(function() {
         var row = $(this);
@@ -450,12 +671,38 @@
             } else {
               row.find('.section-list').html('<span class="text-muted">No sections</span>');
             }
+
+            // Load class teacher
+            loadClassTeacher(classId, row);
           },
           error: function() {
             row.find('.student-count').text('0');
             row.find('.section-list').html('<span class="text-muted">No sections</span>');
+            row.find('.class-teacher').html('<span class="text-muted">Not assigned</span>');
           }
         });
+      });
+    }
+
+    // Function to load class teacher
+    function loadClassTeacher(classId, row) {
+      $.ajax({
+        url: '/api/class/' + classId + '/teacher/',
+        type: 'GET',
+        success: function(data) {
+          if (data.class_teacher) {
+            var teacherHtml = '<span class="badge bg-success">' + data.class_teacher.teacher_name + '</span>';
+            if (data.class_teacher.section) {
+              teacherHtml += ' <span class="badge bg-secondary">Section ' + data.class_teacher.section + '</span>';
+            }
+            row.find('.class-teacher').html(teacherHtml);
+          } else {
+            row.find('.class-teacher').html('<span class="text-muted">Not assigned</span>');
+          }
+        },
+        error: function() {
+          row.find('.class-teacher').html('<span class="text-muted">Not assigned</span>');
+        }
       });
     }
 

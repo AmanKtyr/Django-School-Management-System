@@ -159,3 +159,23 @@ class FeeStructure(models.Model):
 
     def __str__(self):
         return f"{self.fee_type} - {self.fee_settings}"
+
+
+class ClassTeacher(models.Model):
+    """Model for assigning class teachers to classes and sections"""
+    student_class = models.ForeignKey(StudentClass, on_delete=models.CASCADE, related_name='class_teachers')
+    section = models.CharField(max_length=10, blank=True, null=True)
+    teacher = models.ForeignKey('staffs.Staff', on_delete=models.CASCADE, related_name='assigned_classes')
+    is_active = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['student_class__name', 'section']
+        unique_together = ['student_class', 'section']
+        verbose_name = 'Class Teacher'
+        verbose_name_plural = 'Class Teachers'
+
+    def __str__(self):
+        section_str = f" - {self.section}" if self.section else ""
+        return f"{self.student_class.name}{section_str} - {self.teacher.fullname}"
