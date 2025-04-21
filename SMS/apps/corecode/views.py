@@ -881,6 +881,7 @@ def get_subject_data(request, subject_id):
             exam_count = 0
 
         return JsonResponse({
+            'name': subject.name,
             'class_count': len(classes_list),
             'classes': classes_list,
             'department': department,
@@ -890,6 +891,39 @@ def get_subject_data(request, subject_id):
         })
     except Subject.DoesNotExist:
         return JsonResponse({'error': 'Subject not found'}, status=404)
+
+
+@login_required
+def update_subject_ajax(request, subject_id):
+    """API endpoint to update a subject via AJAX"""
+    if request.method != 'POST':
+        return JsonResponse({'error': 'Only POST method is allowed'}, status=405)
+
+    try:
+        subject = Subject.objects.get(id=subject_id)
+
+        # Update subject fields
+        subject.name = request.POST.get('name')
+        subject.code = request.POST.get('code', '')
+        subject.department = request.POST.get('department', '')
+        subject.description = request.POST.get('description', '')
+        subject.save()
+
+        return JsonResponse({
+            'success': True,
+            'message': 'Subject updated successfully',
+            'subject': {
+                'id': subject.id,
+                'name': subject.name,
+                'code': subject.code,
+                'department': subject.department,
+                'description': subject.description
+            }
+        })
+    except Subject.DoesNotExist:
+        return JsonResponse({'error': 'Subject not found'}, status=404)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
 
 
 @login_required
@@ -995,11 +1029,20 @@ def assign_subject_to_class(request):
         return JsonResponse({'error': 'Only POST method is allowed'}, status=405)
 
     try:
-        data = json.loads(request.body)
+        # Try to parse JSON data
+        try:
+            data = json.loads(request.body)
+        except json.JSONDecodeError:
+            # If JSON parsing fails, try to get data from POST
+            data = request.POST
+
         subject_id = data.get('subject_id')
         class_id = data.get('class_id')
         section = data.get('section', '')
         teacher_id = data.get('teacher_id')
+
+        # Log the received data for debugging
+        print(f"Received data: subject_id={subject_id}, class_id={class_id}, section={section}, teacher_id={teacher_id}")
 
         if not subject_id or not class_id:
             return JsonResponse({'error': 'Subject ID and Class ID are required'}, status=400)
@@ -1071,13 +1114,16 @@ def remove_subject_from_class(request, class_subject_id):
 @login_required
 def get_all_classes(request):
     """API endpoint to get all classes"""
-    classes = StudentClass.objects.all().order_by('name')
-    classes_list = [{
-        'id': cls.id,
-        'name': cls.name
-    } for cls in classes]
+    try:
+        classes = StudentClass.objects.all().order_by('name')
+        classes_list = [{
+            'id': cls.id,
+            'name': cls.name
+        } for cls in classes]
 
-    return JsonResponse(classes_list, safe=False)
+        return JsonResponse(classes_list, safe=False)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
 
 
 @login_required

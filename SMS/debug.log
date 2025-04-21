@@ -22835,3 +22835,607 @@ INFO 2025-04-21 11:28:12,446 "GET /subject/3/data/ HTTP/1.1" 200 112
 INFO 2025-04-21 11:28:12,466 "GET /subject/2/data/ HTTP/1.1" 200 112
 INFO 2025-04-21 11:28:12,479 "GET /subject/4/data/ HTTP/1.1" 200 110
 INFO 2025-04-21 11:28:12,495 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:30:36,428 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-21 11:30:39,604 Watching for file changes with StatReloader
+INFO 2025-04-21 11:30:44,607 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-21 11:30:47,503 Watching for file changes with StatReloader
+INFO 2025-04-21 11:30:59,442 D:\Sipher Web\Django School Management System\SMS\apps\corecode\urls.py changed, reloading.
+INFO 2025-04-21 11:31:03,184 Watching for file changes with StatReloader
+INFO 2025-04-21 11:31:11,546 D:\Sipher Web\Django School Management System\SMS\apps\corecode\urls.py changed, reloading.
+INFO 2025-04-21 11:31:13,968 Watching for file changes with StatReloader
+INFO 2025-04-21 11:31:26,485 D:\Sipher Web\Django School Management System\SMS\apps\corecode\urls.py changed, reloading.
+INFO 2025-04-21 11:31:28,988 Watching for file changes with StatReloader
+INFO 2025-04-21 11:31:55,460 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-21 11:31:59,011 Watching for file changes with StatReloader
+INFO 2025-04-21 11:34:20,742 "GET /subject/list/ HTTP/1.1" 200 86094
+INFO 2025-04-21 11:34:21,211 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:34:21,244 "GET /subject/1/data/ HTTP/1.1" 200 114
+ERROR 2025-04-21 11:34:21,273 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:34:21,276 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:34:21,286 "GET /static/dist/css/style.css?v=1745215461158 HTTP/1.1" 200 44868
+INFO 2025-04-21 11:34:21,308 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:34:21,345 "GET /subject/4/data/ HTTP/1.1" 200 110
+INFO 2025-04-21 11:34:21,368 "GET /subject/2/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:34:21,412 "GET /subject/3/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:34:26,905 "GET /subject/list/ HTTP/1.1" 200 87353
+INFO 2025-04-21 11:34:27,233 "GET /static/dist/css/style.css?v=1745215467210 HTTP/1.1" 200 44868
+ERROR 2025-04-21 11:34:27,319 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:34:27,338 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:34:27,392 "GET /subject/4/data/ HTTP/1.1" 200 110
+INFO 2025-04-21 11:34:27,428 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:34:27,477 "GET /subject/3/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:34:27,542 "GET /subject/1/data/ HTTP/1.1" 200 114
+INFO 2025-04-21 11:34:27,574 "GET /subject/2/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:34:27,637 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:35:39,217 "GET /subject/list/ HTTP/1.1" 200 90482
+INFO 2025-04-21 11:35:39,404 "GET /static/dist/css/style.css?v=1745215539397 HTTP/1.1" 200 44868
+ERROR 2025-04-21 11:35:39,460 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:35:39,465 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:35:39,493 "GET /subject/2/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:35:39,529 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:35:39,545 "GET /subject/1/data/ HTTP/1.1" 200 114
+INFO 2025-04-21 11:35:39,571 "GET /subject/4/data/ HTTP/1.1" 200 110
+INFO 2025-04-21 11:35:39,584 "GET /subject/3/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:35:39,602 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:35:42,044 "GET /subject/4/ HTTP/1.1" 200 56026
+INFO 2025-04-21 11:35:42,323 "GET /static/dist/css/style.css?v=1745215542313 HTTP/1.1" 200 44868
+ERROR 2025-04-21 11:35:42,384 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:35:42,395 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:35:42,440 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:35:42,454 "GET /subject/4/exams/ HTTP/1.1" 200 73
+INFO 2025-04-21 11:35:42,477 "GET /api/subject-assignments/4/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:35:42,500 "GET /api/subject-statistics/4/ HTTP/1.1" 200 75
+INFO 2025-04-21 11:36:01,292 "GET /subject/4/update/ HTTP/1.1" 200 31242
+INFO 2025-04-21 11:36:01,457 "GET /static/dist/css/style.css?v=1745215561443 HTTP/1.1" 200 44868
+INFO 2025-04-21 11:36:28,249 "GET /subject/list/ HTTP/1.1" 200 90482
+INFO 2025-04-21 11:36:28,410 "GET /static/dist/css/style.css?v=1745215588401 HTTP/1.1" 200 44868
+INFO 2025-04-21 11:36:28,496 "GET /api/classes/ HTTP/1.1" 200 147
+ERROR 2025-04-21 11:36:28,526 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:36:28,528 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:36:28,566 "GET /subject/4/data/ HTTP/1.1" 200 110
+INFO 2025-04-21 11:36:28,594 "GET /subject/2/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:36:28,624 "GET /subject/3/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:36:28,640 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:36:28,662 "GET /subject/1/data/ HTTP/1.1" 200 114
+INFO 2025-04-21 11:39:26,923 "GET /subject/list/ HTTP/1.1" 200 86970
+INFO 2025-04-21 11:39:27,314 "GET /static/dist/css/style.css?v=1745215767309 HTTP/1.1" 200 44868
+ERROR 2025-04-21 11:39:27,394 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:39:27,400 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:39:27,411 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:39:27,448 "GET /subject/2/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:39:27,464 "GET /subject/1/data/ HTTP/1.1" 200 114
+INFO 2025-04-21 11:39:27,489 "GET /subject/4/data/ HTTP/1.1" 200 110
+INFO 2025-04-21 11:39:27,507 "GET /subject/3/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:39:27,519 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:40:38,369 "GET /subject/list/ HTTP/1.1" 200 85155
+INFO 2025-04-21 11:40:38,818 "GET /static/dist/css/style.css?v=1745215838811 HTTP/1.1" 200 44868
+ERROR 2025-04-21 11:40:38,914 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:40:38,914 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:40:38,933 "GET /subject/4/data/ HTTP/1.1" 200 110
+INFO 2025-04-21 11:40:38,962 "GET /subject/1/data/ HTTP/1.1" 200 114
+INFO 2025-04-21 11:40:38,998 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:40:39,016 "GET /subject/2/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:40:39,034 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:40:39,058 "GET /subject/3/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:41:53,152 "GET /subject/list/ HTTP/1.1" 200 85155
+INFO 2025-04-21 11:41:53,503 "GET /static/dist/css/style.css?v=1745215913496 HTTP/1.1" 200 44868
+ERROR 2025-04-21 11:41:53,595 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:41:53,603 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:41:53,634 "GET /subject/4/data/ HTTP/1.1" 200 110
+INFO 2025-04-21 11:41:53,661 "GET /subject/1/data/ HTTP/1.1" 200 114
+INFO 2025-04-21 11:41:53,672 "GET /subject/3/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:41:53,700 "GET /subject/2/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:41:53,720 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:41:53,745 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:43:02,290 "GET /subject/list/ HTTP/1.1" 200 82216
+INFO 2025-04-21 11:43:02,674 "GET /static/dist/css/style.css?v=1745215982660 HTTP/1.1" 200 44868
+ERROR 2025-04-21 11:43:02,728 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:43:02,747 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:43:02,773 "GET /subject/3/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:43:02,795 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:43:02,829 "GET /subject/2/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:43:02,848 "GET /subject/1/data/ HTTP/1.1" 200 114
+INFO 2025-04-21 11:43:02,872 "GET /subject/4/data/ HTTP/1.1" 200 110
+INFO 2025-04-21 11:43:02,887 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:43:11,882 "GET /subject/list/ HTTP/1.1" 200 78171
+INFO 2025-04-21 11:43:12,151 "GET /static/dist/css/style.css?v=1745215992144 HTTP/1.1" 200 44868
+ERROR 2025-04-21 11:43:12,232 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:43:12,240 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:43:12,247 "GET /subject/4/data/ HTTP/1.1" 200 110
+INFO 2025-04-21 11:43:12,271 "GET /subject/1/data/ HTTP/1.1" 200 114
+INFO 2025-04-21 11:43:12,293 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:43:12,315 "GET /subject/3/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:43:12,339 "GET /subject/2/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:43:12,363 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:43:20,306 "GET /subject/4/ HTTP/1.1" 200 56026
+INFO 2025-04-21 11:43:20,525 "GET /static/dist/css/style.css?v=1745216000459 HTTP/1.1" 200 44868
+ERROR 2025-04-21 11:43:20,527 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:43:20,556 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:43:20,572 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:43:20,612 "GET /api/subject-assignments/4/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:43:20,647 "GET /subject/4/exams/ HTTP/1.1" 200 73
+INFO 2025-04-21 11:43:20,664 "GET /api/subject-statistics/4/ HTTP/1.1" 200 75
+INFO 2025-04-21 11:43:30,825 "GET /exams/?subject=4 HTTP/1.1" 200 65981
+INFO 2025-04-21 11:43:31,054 "GET /static/dist/css/style.css?v=1745216011033 HTTP/1.1" 200 44868
+INFO 2025-04-21 11:43:36,924 "GET /subject/list/ HTTP/1.1" 200 77818
+INFO 2025-04-21 11:43:37,113 "GET /static/dist/css/style.css?v=1745216017103 HTTP/1.1" 200 44868
+ERROR 2025-04-21 11:43:37,194 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:43:37,207 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:43:37,244 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:43:37,291 "GET /subject/1/data/ HTTP/1.1" 200 114
+INFO 2025-04-21 11:43:37,313 "GET /subject/2/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:43:37,342 "GET /subject/4/data/ HTTP/1.1" 200 110
+INFO 2025-04-21 11:43:37,361 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:43:37,385 "GET /subject/3/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:43:46,952 "GET /subject/list/ HTTP/1.1" 200 77818
+INFO 2025-04-21 11:43:47,146 "GET /static/dist/css/style.css?v=1745216027139 HTTP/1.1" 200 44868
+ERROR 2025-04-21 11:43:47,195 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:43:47,208 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:43:47,257 "GET /subject/3/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:43:47,290 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:43:47,320 "GET /subject/4/data/ HTTP/1.1" 200 110
+INFO 2025-04-21 11:43:47,332 "GET /subject/2/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:43:47,354 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:43:47,381 "GET /subject/1/data/ HTTP/1.1" 200 114
+INFO 2025-04-21 11:44:09,101 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-21 11:44:10,269 Watching for file changes with StatReloader
+INFO 2025-04-21 11:44:20,837 "GET /subject/list/ HTTP/1.1" 200 81573
+INFO 2025-04-21 11:44:21,071 "GET /api/classes/ HTTP/1.1" 200 147
+ERROR 2025-04-21 11:44:21,077 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:44:21,089 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:44:21,106 "GET /static/dist/css/style.css?v=1745216060990 HTTP/1.1" 200 44868
+INFO 2025-04-21 11:44:21,120 "GET /subject/1/data/ HTTP/1.1" 200 114
+INFO 2025-04-21 11:44:21,165 "GET /subject/4/data/ HTTP/1.1" 200 110
+INFO 2025-04-21 11:44:21,236 "GET /subject/3/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:44:21,265 "GET /subject/2/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:44:21,291 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:44:30,722 "GET /subject/4/update/ HTTP/1.1" 200 31242
+INFO 2025-04-21 11:44:30,924 "GET /static/dist/css/style.css?v=1745216070911 HTTP/1.1" 200 44868
+INFO 2025-04-21 11:45:56,261 "GET /subject/list/ HTTP/1.1" 200 81573
+INFO 2025-04-21 11:45:56,479 "GET /static/dist/css/style.css?v=1745216156471 HTTP/1.1" 200 44868
+INFO 2025-04-21 11:45:56,546 "GET /api/classes/ HTTP/1.1" 200 147
+ERROR 2025-04-21 11:45:56,558 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:45:56,564 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:45:56,626 "GET /subject/3/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:45:56,655 "GET /subject/4/data/ HTTP/1.1" 200 110
+INFO 2025-04-21 11:45:56,678 "GET /subject/2/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:45:56,707 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:45:56,725 "GET /subject/1/data/ HTTP/1.1" 200 114
+INFO 2025-04-21 11:46:01,142 "GET /class/list/ HTTP/1.1" 200 51758
+INFO 2025-04-21 11:46:01,574 "GET /static/dist/css/style.css?v=1745216161498 HTTP/1.1" 200 44868
+INFO 2025-04-21 11:46:01,773 "GET /class/8/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 11:46:01,797 "GET /class/5/data/ HTTP/1.1" 200 88
+INFO 2025-04-21 11:46:01,829 "GET /class/3/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 11:46:01,860 "GET /class/6/data/ HTTP/1.1" 200 64
+INFO 2025-04-21 11:46:01,900 "GET /class/7/data/ HTTP/1.1" 200 57
+INFO 2025-04-21 11:46:01,924 "GET /class/4/data/ HTTP/1.1" 200 60
+INFO 2025-04-21 11:46:06,515 "GET /class/7/update/ HTTP/1.1" 200 31239
+INFO 2025-04-21 11:46:06,676 "GET /static/dist/css/style.css?v=1745216166662 HTTP/1.1" 200 44868
+INFO 2025-04-21 11:46:55,659 "GET /class/list/ HTTP/1.1" 200 51758
+INFO 2025-04-21 11:46:56,027 "GET /static/dist/css/style.css?v=1745216216019 HTTP/1.1" 200 44868
+INFO 2025-04-21 11:46:56,164 "GET /class/4/data/ HTTP/1.1" 200 60
+INFO 2025-04-21 11:46:56,193 "GET /class/7/data/ HTTP/1.1" 200 57
+INFO 2025-04-21 11:46:56,209 "GET /class/6/data/ HTTP/1.1" 200 64
+INFO 2025-04-21 11:46:56,227 "GET /class/5/data/ HTTP/1.1" 200 88
+INFO 2025-04-21 11:46:56,266 "GET /class/3/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 11:46:56,284 "GET /class/8/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 11:46:58,975 "GET /subject/list/ HTTP/1.1" 200 81713
+INFO 2025-04-21 11:46:59,319 "GET /static/dist/css/style.css?v=1745216219296 HTTP/1.1" 200 44868
+ERROR 2025-04-21 11:46:59,357 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:46:59,358 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:46:59,424 "GET /subject/2/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:46:59,465 "GET /subject/3/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:46:59,500 "GET /subject/1/data/ HTTP/1.1" 200 114
+INFO 2025-04-21 11:46:59,509 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:46:59,521 "GET /subject/4/data/ HTTP/1.1" 200 110
+INFO 2025-04-21 11:46:59,542 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:47:59,868 "GET /subject/list/ HTTP/1.1" 200 85353
+INFO 2025-04-21 11:48:00,252 "GET /static/dist/css/style.css?v=1745216280248 HTTP/1.1" 200 44868
+ERROR 2025-04-21 11:48:00,297 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:48:00,303 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:48:00,351 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:48:00,377 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:48:00,403 "GET /subject/1/data/ HTTP/1.1" 200 114
+INFO 2025-04-21 11:48:00,417 "GET /subject/3/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:48:00,440 "GET /subject/4/data/ HTTP/1.1" 200 110
+INFO 2025-04-21 11:48:00,460 "GET /subject/2/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:48:14,115 "GET /subject/list/ HTTP/1.1" 200 88837
+INFO 2025-04-21 11:48:14,506 "GET /static/dist/css/style.css?v=1745216294499 HTTP/1.1" 200 44868
+ERROR 2025-04-21 11:48:14,593 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:48:14,593 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:48:14,643 "GET /subject/3/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:48:14,655 "GET /subject/2/data/ HTTP/1.1" 200 112
+INFO 2025-04-21 11:48:14,676 "GET /subject/1/data/ HTTP/1.1" 200 114
+INFO 2025-04-21 11:48:14,713 "GET /subject/4/data/ HTTP/1.1" 200 110
+INFO 2025-04-21 11:48:14,726 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:48:14,746 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:48:15,953 "GET /subject/4/data/ HTTP/1.1" 200 110
+INFO 2025-04-21 11:48:19,145 "GET /subject/4/data/ HTTP/1.1" 200 110
+WARNING 2025-04-21 11:48:34,762 Not Found: /subject/4/update-ajax/
+WARNING 2025-04-21 11:48:34,762 "POST /subject/4/update-ajax/ HTTP/1.1" 404 15588
+INFO 2025-04-21 11:48:43,706 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-21 11:48:46,201 Watching for file changes with StatReloader
+INFO 2025-04-21 11:48:54,545 D:\Sipher Web\Django School Management System\SMS\apps\corecode\urls.py changed, reloading.
+INFO 2025-04-21 11:48:55,883 Watching for file changes with StatReloader
+INFO 2025-04-21 11:49:25,612 "GET /subject/list HTTP/1.1" 301 0
+INFO 2025-04-21 11:49:25,731 "GET /subject/list/ HTTP/1.1" 200 88852
+ERROR 2025-04-21 11:49:26,326 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:49:26,326 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:49:26,371 "GET /static/dist/css/style.css?v=1745216366241 HTTP/1.1" 200 44868
+INFO 2025-04-21 11:49:26,375 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 11:49:26,406 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:49:26,464 "GET /subject/4/data/ HTTP/1.1" 200 125
+INFO 2025-04-21 11:49:26,482 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 11:49:26,507 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 11:49:26,528 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:49:39,428 "GET /subject/list/ HTTP/1.1" 200 88852
+INFO 2025-04-21 11:49:39,838 "GET /static/dist/css/style.css?v=1745216379830 HTTP/1.1" 200 44868
+ERROR 2025-04-21 11:49:39,904 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:49:39,906 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:49:39,913 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 11:49:39,939 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:49:39,963 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 11:49:39,984 "GET /subject/4/data/ HTTP/1.1" 200 125
+INFO 2025-04-21 11:49:40,005 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:49:40,022 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 11:49:43,572 "GET /subject/4/data/ HTTP/1.1" 200 125
+INFO 2025-04-21 11:49:54,913 "POST /subject/4/update-ajax/ HTTP/1.1" 200 150
+INFO 2025-04-21 11:49:56,801 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 11:49:56,823 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 11:49:56,841 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:49:56,858 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 11:50:18,913 "GET /subject/list/ HTTP/1.1" 200 88805
+INFO 2025-04-21 11:50:19,208 "GET /static/dist/css/style.css?v=1745216419202 HTTP/1.1" 200 44868
+ERROR 2025-04-21 11:50:19,248 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:50:19,254 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:50:19,276 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:50:19,304 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:50:19,328 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:50:19,350 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 11:50:19,372 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 11:50:19,382 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 11:51:11,694 "GET /class/list/ HTTP/1.1" 200 51758
+INFO 2025-04-21 11:51:11,901 "GET /static/dist/css/style.css?v=1745216471888 HTTP/1.1" 200 44868
+INFO 2025-04-21 11:51:12,038 "GET /class/8/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 11:51:12,070 "GET /class/4/data/ HTTP/1.1" 200 60
+INFO 2025-04-21 11:51:12,096 "GET /class/7/data/ HTTP/1.1" 200 57
+INFO 2025-04-21 11:51:12,130 "GET /class/3/data/ HTTP/1.1" 200 55
+INFO 2025-04-21 11:51:12,149 "GET /class/5/data/ HTTP/1.1" 200 88
+INFO 2025-04-21 11:51:12,164 "GET /class/6/data/ HTTP/1.1" 200 64
+INFO 2025-04-21 11:51:21,166 "GET /class/5/update/ HTTP/1.1" 200 31239
+INFO 2025-04-21 11:51:21,456 "GET /static/dist/css/style.css?v=1745216481425 HTTP/1.1" 200 44868
+INFO 2025-04-21 11:51:30,064 "GET /static/dist/css/style.css?v=1745216490035 HTTP/1.1" 200 44868
+INFO 2025-04-21 11:51:37,766 "GET /subject/list/ HTTP/1.1" 200 88924
+INFO 2025-04-21 11:51:37,976 "GET /static/dist/css/style.css?v=1745216497964 HTTP/1.1" 200 44868
+ERROR 2025-04-21 11:51:38,114 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:51:38,158 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:51:38,184 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 11:51:38,218 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 11:51:38,247 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:51:38,293 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 11:51:38,313 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:51:38,341 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:51:55,137 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 11:51:55,151 "GET /subject/1/exams/ HTTP/1.1" 200 131
+WARNING 2025-04-21 11:52:08,936 Forbidden (CSRF token missing.): /api/assign-subject/
+WARNING 2025-04-21 11:52:08,953 "POST /api/assign-subject/ HTTP/1.1" 403 2491
+WARNING 2025-04-21 11:52:12,206 Forbidden (CSRF token missing.): /api/assign-subject/
+WARNING 2025-04-21 11:52:12,220 "POST /api/assign-subject/ HTTP/1.1" 403 2491
+INFO 2025-04-21 11:52:20,810 "GET /subject/list/ HTTP/1.1" 200 88924
+INFO 2025-04-21 11:52:21,139 "GET /static/dist/css/style.css?v=1745216541128 HTTP/1.1" 200 46347
+ERROR 2025-04-21 11:52:21,195 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:52:21,207 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:52:21,219 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:52:21,247 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:52:21,296 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 11:52:21,314 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 11:52:21,330 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:52:21,348 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 11:52:23,412 "GET /subject/list/ HTTP/1.1" 200 88924
+INFO 2025-04-21 11:52:23,988 "GET /static/dist/css/style.css?v=1745216543981 HTTP/1.1" 200 46347
+ERROR 2025-04-21 11:52:24,056 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:52:24,056 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:52:24,093 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 11:52:24,120 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:52:24,134 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:52:24,157 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:52:24,168 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 11:52:24,187 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 11:52:53,445 "GET /subject/4/exams/ HTTP/1.1" 200 73
+INFO 2025-04-21 11:52:53,455 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:54:05,891 "GET /subject/4/exams/ HTTP/1.1" 200 73
+INFO 2025-04-21 11:54:05,900 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:54:38,496 "GET /subject/list/ HTTP/1.1" 200 88924
+INFO 2025-04-21 11:54:38,844 "GET /static/dist/css/style.css?v=1745216678838 HTTP/1.1" 200 46347
+ERROR 2025-04-21 11:54:38,893 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:54:38,916 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:54:38,964 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:54:38,995 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 11:54:39,033 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:54:39,066 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 11:54:39,098 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:54:39,140 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 11:55:15,842 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:55:46,017 "GET /subject/list/ HTTP/1.1" 200 89891
+INFO 2025-04-21 11:55:46,365 "GET /static/dist/css/style.css?v=1745216746357 HTTP/1.1" 200 46347
+INFO 2025-04-21 11:55:46,424 "GET /api/classes/ HTTP/1.1" 200 147
+ERROR 2025-04-21 11:55:46,435 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:55:46,450 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:55:46,473 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 11:55:46,511 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 11:55:46,542 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 11:55:46,556 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:55:46,569 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:55:58,676 "GET /subject/list/ HTTP/1.1" 200 90058
+INFO 2025-04-21 11:55:58,920 "GET /static/dist/css/style.css?v=1745216758908 HTTP/1.1" 200 46347
+ERROR 2025-04-21 11:55:59,308 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:55:59,332 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:55:59,342 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 11:55:59,369 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:55:59,391 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 11:55:59,416 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:55:59,452 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 11:55:59,473 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:56:01,614 "GET /subject/list/ HTTP/1.1" 200 90058
+INFO 2025-04-21 11:56:01,788 "GET /static/dist/css/style.css?v=1745216761781 HTTP/1.1" 200 46347
+ERROR 2025-04-21 11:56:01,842 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:56:01,852 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:56:01,883 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:56:01,907 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:56:01,934 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 11:56:01,954 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 11:56:01,972 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 11:56:01,995 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:56:02,681 "GET /subject/list/ HTTP/1.1" 200 90058
+INFO 2025-04-21 11:56:02,892 "GET /static/dist/css/style.css?v=1745216762886 HTTP/1.1" 200 46347
+ERROR 2025-04-21 11:56:02,976 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:56:02,980 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:56:03,005 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:56:03,037 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 11:56:03,058 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 11:56:03,075 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 11:56:03,090 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:56:03,103 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:56:03,723 "GET /subject/list/ HTTP/1.1" 200 90058
+INFO 2025-04-21 11:56:04,003 "GET /static/dist/css/style.css?v=1745216763994 HTTP/1.1" 200 46347
+ERROR 2025-04-21 11:56:04,071 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:56:04,078 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:56:04,102 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:56:04,138 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 11:56:04,156 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 11:56:04,179 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:56:04,201 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:56:04,226 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 11:56:04,255 "GET /subject/list/ HTTP/1.1" 200 90058
+INFO 2025-04-21 11:56:04,503 "GET /static/dist/css/style.css?v=1745216764488 HTTP/1.1" 200 46347
+ERROR 2025-04-21 11:56:04,558 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:56:04,567 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:56:04,585 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:56:04,613 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 11:56:04,637 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:56:04,656 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 11:56:04,683 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 11:56:04,695 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:56:04,772 "GET /subject/list/ HTTP/1.1" 200 90058
+INFO 2025-04-21 11:56:05,000 "GET /static/dist/css/style.css?v=1745216764990 HTTP/1.1" 200 46347
+ERROR 2025-04-21 11:56:05,047 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:56:05,052 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:56:05,088 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:56:05,122 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:56:05,141 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 11:56:05,167 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 11:56:05,181 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:56:05,223 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 11:56:05,270 "GET /subject/list/ HTTP/1.1" 200 90058
+INFO 2025-04-21 11:56:05,506 "GET /static/dist/css/style.css?v=1745216765501 HTTP/1.1" 200 46347
+ERROR 2025-04-21 11:56:05,561 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:56:05,566 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:56:05,594 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:56:05,615 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 11:56:05,624 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 11:56:05,650 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 11:56:05,665 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:56:05,674 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:56:05,831 "GET /subject/list/ HTTP/1.1" 200 90058
+INFO 2025-04-21 11:56:06,048 "GET /static/dist/css/style.css?v=1745216766040 HTTP/1.1" 200 46347
+ERROR 2025-04-21 11:56:06,111 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:56:06,113 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:56:06,125 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:56:06,166 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:56:06,195 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 11:56:06,256 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 11:56:06,315 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 11:56:06,355 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:56:19,540 "GET /subject/list/ HTTP/1.1" 200 90637
+INFO 2025-04-21 11:56:19,749 "GET /static/dist/css/style.css?v=1745216779738 HTTP/1.1" 200 46347
+INFO 2025-04-21 11:56:19,830 "GET /api/classes/ HTTP/1.1" 200 147
+ERROR 2025-04-21 11:56:19,846 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:56:19,847 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:56:19,860 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 11:56:19,888 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:56:19,910 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:56:19,923 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 11:56:19,946 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 11:56:23,449 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-21 11:56:24,642 Watching for file changes with StatReloader
+INFO 2025-04-21 11:56:29,612 "GET /subject/list/ HTTP/1.1" 200 90637
+INFO 2025-04-21 11:56:30,189 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:56:30,233 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 11:56:30,236 "GET /static/dist/css/style.css?v=1745216790131 HTTP/1.1" 200 46347
+ERROR 2025-04-21 11:56:30,262 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:56:30,268 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:56:30,283 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:56:30,313 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 11:56:30,336 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 11:56:30,352 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:56:35,926 "GET /subject/list/ HTTP/1.1" 200 90637
+INFO 2025-04-21 11:56:36,286 "GET /static/dist/css/style.css?v=1745216796282 HTTP/1.1" 200 46347
+ERROR 2025-04-21 11:56:36,365 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:56:36,378 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:56:36,394 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:56:36,418 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 11:56:36,432 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:56:36,443 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 11:56:36,461 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 11:56:36,476 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:56:39,925 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:56:44,649 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:56:44,685 "GET /subject/4/exams/ HTTP/1.1" 200 73
+INFO 2025-04-21 11:57:10,389 "GET /subject/list/ HTTP/1.1" 200 90717
+INFO 2025-04-21 11:57:10,557 "GET /static/dist/css/style.css?v=1745216830548 HTTP/1.1" 200 46347
+ERROR 2025-04-21 11:57:10,611 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:57:10,612 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:57:10,642 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:57:10,681 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:57:10,698 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 11:57:10,711 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 11:57:10,724 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 11:57:10,734 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:57:17,109 "GET /subject/list/ HTTP/1.1" 200 90717
+INFO 2025-04-21 11:57:18,629 "GET /static/dist/css/style.css?v=1745216838618 HTTP/1.1" 200 46347
+ERROR 2025-04-21 11:57:18,739 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:57:18,746 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:57:18,781 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 11:57:18,812 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:57:18,843 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 11:57:18,862 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 11:57:18,886 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 11:57:18,899 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 11:57:32,657 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:57:38,763 "GET /subject/4/exams/ HTTP/1.1" 200 73
+INFO 2025-04-21 11:57:38,779 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:59:59,392 "GET /subject/list/ HTTP/1.1" 200 90729
+INFO 2025-04-21 11:59:59,850 "GET /static/dist/css/style.css?v=1745216999833 HTTP/1.1" 200 46347
+INFO 2025-04-21 11:59:59,931 "GET /api/classes/ HTTP/1.1" 200 147
+ERROR 2025-04-21 11:59:59,931 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 11:59:59,947 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 11:59:59,976 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 11:59:59,999 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 12:00:00,032 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 12:00:00,062 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 12:00:00,089 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 12:00:43,839 "GET /subject/list/ HTTP/1.1" 200 91379
+INFO 2025-04-21 12:00:44,445 "GET /static/dist/css/style.css?v=1745217044439 HTTP/1.1" 200 46591
+ERROR 2025-04-21 12:00:44,575 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 12:00:44,579 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 12:00:44,634 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 12:00:44,657 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 12:00:44,695 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 12:00:44,722 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 12:00:44,749 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 12:00:44,781 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 12:01:32,809 "GET /subject/list/ HTTP/1.1" 200 91379
+INFO 2025-04-21 12:01:33,130 "GET /static/dist/css/style.css?v=1745217093123 HTTP/1.1" 200 46591
+ERROR 2025-04-21 12:01:33,205 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 12:01:33,206 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 12:01:33,241 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 12:01:33,255 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 12:01:33,298 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 12:01:33,316 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 12:01:33,341 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 12:01:33,369 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 12:01:48,383 "GET /subject/list/ HTTP/1.1" 200 91379
+INFO 2025-04-21 12:01:48,686 "GET /static/dist/css/style.css?v=1745217108681 HTTP/1.1" 200 46591
+ERROR 2025-04-21 12:01:48,765 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 12:01:48,772 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 12:01:48,865 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 12:01:48,941 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 12:01:48,981 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 12:01:49,016 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 12:01:49,038 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 12:01:49,077 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 12:02:02,312 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 12:02:07,727 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 12:02:22,728 "GET /api/all-assignments/ HTTP/1.1" 200 2
+WARNING 2025-04-21 12:02:36,544 Forbidden (CSRF token missing.): /api/assign-subject/
+WARNING 2025-04-21 12:02:36,556 "POST /api/assign-subject/ HTTP/1.1" 403 2491
+INFO 2025-04-21 12:02:39,127 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 12:02:39,168 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 12:02:39,185 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 12:02:39,211 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 12:02:39,229 "GET /subject/2/data/ HTTP/1.1" 200 131
+WARNING 2025-04-21 12:03:00,055 Forbidden (CSRF token missing.): /api/assign-subject/
+WARNING 2025-04-21 12:03:00,069 "POST /api/assign-subject/ HTTP/1.1" 403 2491
+WARNING 2025-04-21 12:04:20,268 Forbidden (CSRF token missing.): /api/assign-subject/
+WARNING 2025-04-21 12:04:20,279 "POST /api/assign-subject/ HTTP/1.1" 403 2491
+INFO 2025-04-21 12:04:24,586 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 12:04:24,623 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 12:04:24,654 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 12:04:24,681 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 12:04:24,688 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 12:04:35,770 "GET /subject/list/ HTTP/1.1" 200 91379
+INFO 2025-04-21 12:04:37,184 "GET /static/dist/css/style.css?v=1745217277168 HTTP/1.1" 200 46591
+ERROR 2025-04-21 12:04:37,303 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 12:04:37,331 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 12:04:37,354 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 12:04:37,388 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 12:04:37,420 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 12:04:37,465 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 12:04:37,511 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 12:04:37,534 "GET /subject/4/data/ HTTP/1.1" 200 118
+WARNING 2025-04-21 12:04:42,589 Forbidden (CSRF token missing.): /api/assign-subject/
+WARNING 2025-04-21 12:04:42,599 "POST /api/assign-subject/ HTTP/1.1" 403 2491
+WARNING 2025-04-21 12:04:46,647 Forbidden (CSRF token missing.): /api/assign-subject/
+WARNING 2025-04-21 12:04:46,665 "POST /api/assign-subject/ HTTP/1.1" 403 2491
+INFO 2025-04-21 12:05:51,708 "GET /subject/list/ HTTP/1.1" 200 92162
+INFO 2025-04-21 12:05:52,094 "GET /static/dist/css/style.css?v=1745217352086 HTTP/1.1" 200 46591
+ERROR 2025-04-21 12:05:52,129 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 12:05:52,129 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 12:05:52,198 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 12:05:52,242 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 12:05:52,257 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 12:05:52,270 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 12:05:52,281 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 12:05:52,296 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 12:06:00,456 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 12:06:01,377 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-21 12:06:02,716 Watching for file changes with StatReloader
+INFO 2025-04-21 12:06:11,674 "GET /subject/list/ HTTP/1.1" 200 92162
+INFO 2025-04-21 12:06:12,325 "GET /api/classes/ HTTP/1.1" 200 147
+ERROR 2025-04-21 12:06:12,338 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 12:06:12,344 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 12:06:12,402 "GET /subject/4/data/ HTTP/1.1" 200 118
+INFO 2025-04-21 12:06:12,440 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 12:06:12,458 "GET /static/dist/css/style.css?v=1745217372234 HTTP/1.1" 200 46591
+INFO 2025-04-21 12:06:12,467 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 12:06:12,494 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 12:06:12,516 "GET /api/all-assignments/ HTTP/1.1" 200 2
+INFO 2025-04-21 12:06:19,303 "POST /api/assign-subject/ HTTP/1.1" 200 93
+INFO 2025-04-21 12:06:20,992 "GET /api/all-assignments/ HTTP/1.1" 200 143
+INFO 2025-04-21 12:06:21,041 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 12:06:21,076 "GET /subject/4/data/ HTTP/1.1" 200 122
+INFO 2025-04-21 12:06:21,111 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 12:06:21,133 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 12:06:55,275 "GET /subject/list/ HTTP/1.1" 200 92422
+INFO 2025-04-21 12:06:55,933 "GET /static/dist/css/style.css?v=1745217415925 HTTP/1.1" 200 46591
+ERROR 2025-04-21 12:06:56,022 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 12:06:56,036 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 12:06:56,070 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 12:06:56,107 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 12:06:56,137 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 12:06:56,158 "GET /subject/4/data/ HTTP/1.1" 200 122
+INFO 2025-04-21 12:06:56,184 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 12:06:56,214 "GET /api/all-assignments/ HTTP/1.1" 200 143
+INFO 2025-04-21 12:08:33,501 "GET /subject/list/ HTTP/1.1" 200 92422
+INFO 2025-04-21 12:08:33,811 "GET /static/dist/css/style.css?v=1745217513798 HTTP/1.1" 200 46591
+ERROR 2025-04-21 12:08:33,889 Internal Server Error: /api/teachers/
+ERROR 2025-04-21 12:08:33,893 "GET /api/teachers/ HTTP/1.1" 500 360
+INFO 2025-04-21 12:08:33,913 "GET /subject/4/data/ HTTP/1.1" 200 122
+INFO 2025-04-21 12:08:33,934 "GET /api/classes/ HTTP/1.1" 200 147
+INFO 2025-04-21 12:08:33,947 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 12:08:33,963 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 12:08:33,984 "GET /subject/2/data/ HTTP/1.1" 200 131
+INFO 2025-04-21 12:08:34,010 "GET /api/all-assignments/ HTTP/1.1" 200 143
+INFO 2025-04-21 12:08:53,558 "POST /api/assign-subject/ HTTP/1.1" 200 93
+INFO 2025-04-21 12:08:53,600 "POST /api/assign-subject/ HTTP/1.1" 200 93
+INFO 2025-04-21 12:08:53,634 "POST /api/assign-subject/ HTTP/1.1" 200 93
+INFO 2025-04-21 12:08:53,656 "POST /api/assign-subject/ HTTP/1.1" 200 93
+INFO 2025-04-21 12:08:53,678 "POST /api/assign-subject/ HTTP/1.1" 200 93
+INFO 2025-04-21 12:08:53,702 "POST /api/assign-subject/ HTTP/1.1" 200 93
+INFO 2025-04-21 12:08:55,371 "GET /subject/3/data/ HTTP/1.1" 200 129
+INFO 2025-04-21 12:08:55,395 "GET /subject/4/data/ HTTP/1.1" 200 122
+INFO 2025-04-21 12:08:55,412 "GET /subject/1/data/ HTTP/1.1" 200 137
+INFO 2025-04-21 12:08:55,453 "GET /subject/2/data/ HTTP/1.1" 200 162
+INFO 2025-04-21 12:08:55,468 "GET /api/all-assignments/ HTTP/1.1" 200 1022
+INFO 2025-04-21 12:09:00,990 "GET /subject/2/exams/ HTTP/1.1" 200 71
+INFO 2025-04-21 12:09:01,017 "GET /subject/2/data/ HTTP/1.1" 200 162

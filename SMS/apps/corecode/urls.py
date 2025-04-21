@@ -75,6 +75,7 @@ urlpatterns = [
     path('api/remove-subject/<int:class_subject_id>/', views.remove_subject_from_class, name='remove_subject_from_class'),
     path('class/<int:class_id>/data/', views.get_class_data, name='get_class_data'),
     path('subject/<int:subject_id>/data/', views.get_subject_data, name='get_subject_data'),
+    path('subject/<int:subject_id>/update-ajax/', views.update_subject_ajax, name='update_subject_ajax'),
     path('subject/<int:subject_id>/exams/', views.get_subject_exams, name='get_subject_exams'),
     path('logout/', views.custom_logout_view, name='logout'),
 

@@ -1187,14 +1187,29 @@ body.sidebar-toggled .content-wrapper {
   color: #007bff;
 }
 
+/* Badge Styles */
+.badge {
+  font-weight: 600;
+  padding: 0.35em 0.65em;
+  border-radius: 0.25rem;
+}
+
+/* Class count badge */
+.class-count {
+  font-size: 14px;
+  padding: 6px 10px;
+  min-width: 30px;
+  display: inline-block;
+}
+
 /* Button Styles */
 .btn-primary {
   background: linear-gradient(135deg, #1E3C72, #2A5298) !important;
   border: none !important;
   color: #fff !important;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
@@ -1203,11 +1218,73 @@ body.sidebar-toggled .content-wrapper {
 .btn-primary:hover {
   background: linear-gradient(135deg, #16345A, #1E3C72) !important;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
 }
 
 .btn-primary:active {
   transform: translateY(0);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #28a745, #20c997) !important;
+  border: none !important;
+  color: #fff !important;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-success:hover {
+  background: linear-gradient(135deg, #218838, #1e9e7f) !important;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-success:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-info {
+  background: linear-gradient(135deg, #17a2b8, #138496) !important;
+  border: none !important;
+  color: #fff !important;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-info:hover {
+  background: linear-gradient(135deg, #138496, #0f6674) !important;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-info:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Action buttons group styling */
+.d-flex.gap-2 {
+  display: flex;
+  gap: 10px !important;
+}
+
+/* Rounded corners and shadow for buttons */
+.rounded-3 {
+  border-radius: 8px !important;
+}
+
+.shadow-sm {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
 }
 
 /* Enhanced Form Styles */
