@@ -67,6 +67,15 @@ urlpatterns = [
     path('api/get-fee-settings/<int:class_id>/<str:section>/', views.get_fee_settings, name='get_fee_settings'),
     path('fees/settings/list/', views.fee_settings_list, name='fee_settings_list'),
     path('api/get-sections/<int:class_id>/', views.get_sections_by_class, name='get_sections_by_class'),
+    path('api/classes/', views.get_all_classes, name='get_all_classes'),
+    path('api/teachers/', views.get_all_teachers, name='get_all_teachers'),
+    path('api/all-assignments/', views.get_all_assignments, name='get_all_assignments'),
+    path('api/class/<int:class_id>/subjects/', views.get_class_subjects, name='get_class_subjects'),
+    path('api/assign-subject/', views.assign_subject_to_class, name='assign_subject_to_class'),
+    path('api/remove-subject/<int:class_subject_id>/', views.remove_subject_from_class, name='remove_subject_from_class'),
+    path('class/<int:class_id>/data/', views.get_class_data, name='get_class_data'),
+    path('subject/<int:subject_id>/data/', views.get_subject_data, name='get_subject_data'),
+    path('subject/<int:subject_id>/exams/', views.get_subject_exams, name='get_subject_exams'),
     path('logout/', views.custom_logout_view, name='logout'),
 
     # System Settings URLs

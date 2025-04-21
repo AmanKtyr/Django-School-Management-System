@@ -273,9 +273,13 @@
       <div class="watermark">ADMIT CARD</div>
 
       <div class="admit-card-header">
+        {% if profile.college_logo %}
+        <img src="{{ profile.college_logo.url }}" alt="School Logo" class="school-logo">
+        {% else %}
         <img src="/static/dist/img/logo.png" alt="School Logo" class="school-logo">
-        <div class="school-name">SCHOOL NAME</div>
-        <div class="school-address">123 School Address, City, State, ZIP</div>
+        {% endif %}
+        <div class="school-name">{{ profile.college_name|default:"SCHOOL NAME" }}</div>
+        <div class="school-address">{{ profile.college_address|default:"123 School Address, City, State, ZIP" }}</div>
         <div class="card-title">Examination Admit Card</div>
       </div>
 

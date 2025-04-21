@@ -1,5 +1,6 @@
 from django.contrib import messages
 from django.contrib.auth import logout, get_user_model
+import json
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
@@ -34,7 +35,8 @@ from .models import (
     Subject,
     CollegeProfile,
     FeeSettings,
-    FeeStructure
+    FeeStructure,
+    ClassSubject
 )
 
 
@@ -808,6 +810,317 @@ def get_sections_by_class(request, class_id):
     section_data = sorted(section_data, key=lambda x: x['name'])
 
     return JsonResponse({'sections': section_data})
+
+
+@login_required
+def get_class_data(request, class_id):
+    """API endpoint to get data for a specific class"""
+    from apps.students.models import Student
+    from django.db.models import Count
+
+    try:
+        # Get the class
+        student_class = StudentClass.objects.get(id=class_id)
+
+        # Get student count
+        student_count = Student.objects.filter(
+            current_class=student_class,
+            current_status='active'
+        ).count()
+
+        # Get sections
+        sections = Student.objects.filter(
+            current_class=student_class,
+            current_status='active'
+        ).values_list('section', flat=True).distinct()
+
+        # Format sections
+        sections_list = [section for section in sections if section]
+
+        # Get subjects for this class (if available)
+        try:
+            from apps.exams.models import ExamSchedule
+            subjects = ExamSchedule.objects.filter(
+                student_class=student_class
+            ).values_list('subject__name', flat=True).distinct()
+            subjects_list = list(subjects)
+        except:
+            subjects_list = []
+
+        return JsonResponse({
+            'student_count': student_count,
+            'sections': sections_list,
+            'subjects': subjects_list
+        })
+    except StudentClass.DoesNotExist:
+        return JsonResponse({'error': 'Class not found'}, status=404)
+
+
+@login_required
+def get_subject_data(request, subject_id):
+    """API endpoint to get data for a specific subject"""
+    try:
+        # Get the subject
+        subject = Subject.objects.get(id=subject_id)
+
+        # Get classes where this subject is taught from ClassSubject model
+        class_subjects = ClassSubject.objects.filter(subject=subject, is_active=True)
+        classes_list = []
+        for cs in class_subjects:
+            section_str = f" ({cs.section})" if cs.section else ""
+            classes_list.append(f"{cs.student_class.name}{section_str}")
+
+        # Use the department field from the Subject model if available
+        department = subject.department or determine_department(subject.name)
+
+        # Get additional data
+        try:
+            from apps.exams.models import ExamSchedule
+            exam_count = ExamSchedule.objects.filter(subject=subject).count()
+        except:
+            exam_count = 0
+
+        return JsonResponse({
+            'class_count': len(classes_list),
+            'classes': classes_list,
+            'department': department,
+            'code': subject.code,
+            'description': subject.description,
+            'exam_count': exam_count
+        })
+    except Subject.DoesNotExist:
+        return JsonResponse({'error': 'Subject not found'}, status=404)
+
+
+@login_required
+def get_subject_exams(request, subject_id):
+    """API endpoint to get exams for a specific subject"""
+    try:
+        # Get the subject
+        subject = Subject.objects.get(id=subject_id)
+
+        # Get exams for this subject (if available)
+        try:
+            from apps.exams.models import ExamSchedule
+            exam_schedules = ExamSchedule.objects.filter(
+                subject=subject
+            ).select_related('exam', 'student_class').order_by('-date')[:5]  # Get the 5 most recent exams
+
+            exams_list = [{
+                'name': schedule.exam.name,
+                'class': schedule.student_class.name,
+                'date': schedule.date.strftime('%b %d, %Y') if schedule.date else 'N/A'
+            } for schedule in exam_schedules]
+        except Exception as e:
+            print(f"Error getting exams: {e}")
+            exams_list = []
+
+        return JsonResponse({
+            'exams': exams_list
+        })
+    except Subject.DoesNotExist:
+        return JsonResponse({'error': 'Subject not found'}, status=404)
+
+
+def determine_department(subject_name):
+    """Helper function to determine department based on subject name"""
+    subject_name = subject_name.lower()
+
+    # Science subjects
+    if any(keyword in subject_name for keyword in ['physics', 'chemistry', 'biology', 'science']):
+        return 'Science'
+
+    # Mathematics subjects
+    elif any(keyword in subject_name for keyword in ['math', 'algebra', 'geometry', 'calculus']):
+        return 'Mathematics'
+
+    # Language subjects
+    elif any(keyword in subject_name for keyword in ['english', 'hindi', 'sanskrit', 'language', 'literature']):
+        return 'Languages'
+
+    # Social Science subjects
+    elif any(keyword in subject_name for keyword in ['history', 'geography', 'civics', 'social', 'economics', 'political']):
+        return 'Social Sciences'
+
+    # Commerce subjects
+    elif any(keyword in subject_name for keyword in ['commerce', 'business', 'accounting', 'finance']):
+        return 'Commerce'
+
+    # Arts subjects
+    elif any(keyword in subject_name for keyword in ['art', 'music', 'dance', 'drama', 'painting']):
+        return 'Arts'
+
+    # Computer subjects
+    elif any(keyword in subject_name for keyword in ['computer', 'programming', 'it', 'information']):
+        return 'Computer Science'
+
+    # Default department
+    else:
+        return 'General'
+
+
+# This function is now replaced by the more detailed version below
+
+
+@login_required
+def get_class_subjects(request, class_id):
+    """API endpoint to get subjects for a specific class"""
+    try:
+        student_class = StudentClass.objects.get(id=class_id)
+        class_subjects = ClassSubject.objects.filter(
+            student_class=student_class,
+            is_active=True
+        ).select_related('subject')
+
+        subjects_list = [{
+            'id': cs.subject.id,
+            'name': cs.subject.name,
+            'section': cs.section or '',
+            'class_subject_id': cs.id,
+            'teacher': cs.teacher.fullname if cs.teacher else 'Not Assigned'
+        } for cs in class_subjects]
+
+        return JsonResponse({
+            'class_name': student_class.name,
+            'subjects': subjects_list
+        })
+    except StudentClass.DoesNotExist:
+        return JsonResponse({'error': 'Class not found'}, status=404)
+
+
+@login_required
+def assign_subject_to_class(request):
+    """API endpoint to assign a subject to a class"""
+    if request.method != 'POST':
+        return JsonResponse({'error': 'Only POST method is allowed'}, status=405)
+
+    try:
+        data = json.loads(request.body)
+        subject_id = data.get('subject_id')
+        class_id = data.get('class_id')
+        section = data.get('section', '')
+        teacher_id = data.get('teacher_id')
+
+        if not subject_id or not class_id:
+            return JsonResponse({'error': 'Subject ID and Class ID are required'}, status=400)
+
+        subject = Subject.objects.get(id=subject_id)
+        student_class = StudentClass.objects.get(id=class_id)
+
+        # Check if teacher exists if provided
+        teacher = None
+        if teacher_id:
+            from apps.staffs.models import Staff
+            teacher = Staff.objects.get(id=teacher_id)
+
+        # Check if assignment already exists
+        class_subject, created = ClassSubject.objects.get_or_create(
+            subject=subject,
+            student_class=student_class,
+            section=section,
+            defaults={
+                'teacher': teacher,
+                'is_active': True
+            }
+        )
+
+        if not created:
+            # Update existing assignment
+            class_subject.teacher = teacher
+            class_subject.is_active = True
+            class_subject.save()
+            message = 'Subject assignment updated successfully'
+        else:
+            message = 'Subject assigned to class successfully'
+
+        return JsonResponse({
+            'success': True,
+            'message': message,
+            'class_subject_id': class_subject.id
+        })
+    except Subject.DoesNotExist:
+        return JsonResponse({'error': 'Subject not found'}, status=404)
+    except StudentClass.DoesNotExist:
+        return JsonResponse({'error': 'Class not found'}, status=404)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
+
+@login_required
+def remove_subject_from_class(request, class_subject_id):
+    """API endpoint to remove a subject from a class"""
+    if request.method != 'POST':
+        return JsonResponse({'error': 'Only POST method is allowed'}, status=405)
+
+    try:
+        class_subject = ClassSubject.objects.get(id=class_subject_id)
+
+        # Instead of deleting, mark as inactive
+        class_subject.is_active = False
+        class_subject.save()
+
+        return JsonResponse({
+            'success': True,
+            'message': 'Subject removed from class successfully'
+        })
+    except ClassSubject.DoesNotExist:
+        return JsonResponse({'error': 'Class-Subject assignment not found'}, status=404)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
+@login_required
+def get_all_classes(request):
+    """API endpoint to get all classes"""
+    classes = StudentClass.objects.all().order_by('name')
+    classes_list = [{
+        'id': cls.id,
+        'name': cls.name
+    } for cls in classes]
+
+    return JsonResponse(classes_list, safe=False)
+
+
+@login_required
+def get_all_teachers(request):
+    """API endpoint to get all teachers"""
+    try:
+        from apps.staffs.models import Staff
+        teachers = Staff.objects.filter(current_status='active').order_by('surname')
+        teachers_list = [{
+            'id': teacher.id,
+            'name': teacher.fullname
+        } for teacher in teachers]
+
+        return JsonResponse(teachers_list, safe=False)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
+
+@login_required
+def get_all_assignments(request):
+    """API endpoint to get all subject-class assignments"""
+    try:
+        class_subjects = ClassSubject.objects.filter(is_active=True).select_related(
+            'subject', 'student_class', 'teacher'
+        )
+
+        assignments_list = []
+        for cs in class_subjects:
+            assignments_list.append({
+                'id': cs.id,
+                'subject_id': cs.subject.id,
+                'subject_name': cs.subject.name,
+                'class_id': cs.student_class.id,
+                'class_name': cs.student_class.name,
+                'section': cs.section or '',
+                'teacher_id': cs.teacher.id if cs.teacher else None,
+                'teacher_name': cs.teacher.fullname if cs.teacher else None
+            })
+
+        return JsonResponse(assignments_list, safe=False)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
 
 def fee_settings_list(request):
     fee_settings_list = FeeSettings.objects.all().order_by('class_name', 'section')

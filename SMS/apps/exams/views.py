@@ -1098,6 +1098,10 @@ def report_card(request, student_id, exam_id):
     class_teacher_remarks = 'Good performance. Keep it up!'
     principal_remarks = 'Satisfactory performance.'
 
+    # Get college profile for document header
+    from apps.corecode.models import CollegeProfile
+    profile = CollegeProfile.objects.first()
+
     context = {
         'student': student,
         'exam': exam,
@@ -1116,7 +1120,8 @@ def report_card(request, student_id, exam_id):
         'attendance_percentage': attendance_percentage,
         'class_teacher_remarks': class_teacher_remarks,
         'principal_remarks': principal_remarks,
-        'issue_date': timezone.now().date()
+        'issue_date': timezone.now().date(),
+        'profile': profile
     }
 
     return render(request, 'exams/report_card.html', context)
@@ -1444,11 +1449,16 @@ def document_download(request, doc_type, doc_id):
         qr_img.save(buffer, format="PNG")
         qr_code_base64 = base64.b64encode(buffer.getvalue()).decode()
 
+        # Get college profile for document header
+        from apps.corecode.models import CollegeProfile
+        profile = CollegeProfile.objects.first()
+
         context = {
             'admit_card': admit_card,
             'exam_schedules': exam_schedules,
             'qr_code_base64': qr_code_base64,
             'generation_date': timezone.now().date(),
+            'profile': profile,
         }
 
         # Render PDF template
@@ -1519,8 +1529,24 @@ def document_download(request, doc_type, doc_id):
             response = HttpResponse(content_type='application/pdf')
             response['Content-Disposition'] = f'attachment; filename="{template_name}_template.pdf"'
 
-            # Generate a simple PDF with a message
-            html = f"<html><body><h1>{template_name.replace('_', ' ').title()} Template</h1><p>This is a sample template file.</p></body></html>"
+            # Get college profile for document header
+            from apps.corecode.models import CollegeProfile
+            profile = CollegeProfile.objects.first()
+            college_name = profile.college_name if profile else "School Management System"
+            college_address = profile.college_address if profile else "School Address"
+            college_email = profile.college_email if profile else "info@school.edu"
+            college_phone = profile.college_phone if profile else "123-456-7890"
+
+            # Generate a simple PDF with a message and school info
+            html = f"""<html><body>
+            <div style='text-align:center; margin-bottom:20px;'>
+                <h2>{college_name}</h2>
+                <p>{college_address}</p>
+                <p>Phone: {college_phone} | Email: {college_email}</p>
+            </div>
+            <h1>{template_name.replace('_', ' ').title()} Template</h1>
+            <p>This is a sample template file generated for {college_name}.</p>
+            </body></html>"""
             pisa_status = pisa.CreatePDF(html, dest=response)
 
             if pisa_status.err:

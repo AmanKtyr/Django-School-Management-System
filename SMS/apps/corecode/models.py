@@ -6,7 +6,7 @@ from django.db import models
 class SiteConfig(models.Model):
     """Site Configurations"""
 
-    key = models.SlugField(unique=True) 
+    key = models.SlugField(unique=True)
     value = models.CharField(max_length=200)
 
     # New fields for site configuration
@@ -60,6 +60,12 @@ class Subject(models.Model):
     """Subject"""
 
     name = models.CharField(max_length=200, unique=True)
+    description = models.TextField(blank=True, null=True)
+    code = models.CharField(max_length=20, blank=True, null=True)
+    department = models.CharField(max_length=100, blank=True, null=True)
+    is_active = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True, null=True)
+    updated_at = models.DateTimeField(auto_now=True, null=True)
 
     class Meta:
         ordering = ["name"]
@@ -78,6 +84,27 @@ class StudentClass(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class ClassSubject(models.Model):
+    """Association between Class and Subject"""
+    subject = models.ForeignKey(Subject, on_delete=models.CASCADE, related_name='class_subjects')
+    student_class = models.ForeignKey(StudentClass, on_delete=models.CASCADE, related_name='class_subjects')
+    section = models.CharField(max_length=10, blank=True, null=True)
+    teacher = models.ForeignKey('staffs.Staff', on_delete=models.SET_NULL, null=True, blank=True, related_name='assigned_subjects')
+    is_active = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['student_class__name', 'subject__name']
+        unique_together = ['subject', 'student_class', 'section']
+        verbose_name = 'Class Subject'
+        verbose_name_plural = 'Class Subjects'
+
+    def __str__(self):
+        section_str = f" - {self.section}" if self.section else ""
+        return f"{self.subject.name} - {self.student_class.name}{section_str}"
 
 
 class CollegeProfile(models.Model):
