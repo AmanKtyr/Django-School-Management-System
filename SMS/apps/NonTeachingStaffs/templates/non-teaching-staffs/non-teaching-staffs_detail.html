@@ -270,123 +270,241 @@
         <div class="tab-content" id="staffProfileTabsContent">
           <!-- Personal Information Tab -->
           <div class="tab-pane fade show active" id="personal" role="tabpanel" aria-labelledby="personal-tab">
-            <div class="row mb-4">
-              <div class="col-md-6">
-                <div class="info-group mb-3">
-                  <label class="text-muted small">Full Name</label>
-                  <p class="mb-0 fw-medium">{{ object.fullname }}</p>
-                </div>
+            <div class="p-4">
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <h5 class="fw-bold mb-0"><i class="fas fa-user-circle me-2 text-primary"></i>Personal Information</h5>
+                <a href="{% url 'non-teaching-staffs-update' object.id %}" class="btn btn-sm btn-outline-primary">
+                  <i class="fas fa-edit me-1"></i> Edit
+                </a>
               </div>
-              <div class="col-md-6">
-                <div class="info-group mb-3">
-                  <label class="text-muted small">Date of Birth</label>
-                  <p class="mb-0 fw-medium">{{ object.date_of_birth }}</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-group mb-3">
-                  <label class="text-muted small">Gender</label>
-                  <p class="mb-0 fw-medium">{{ object.get_gender_display }}</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-group mb-3">
-                  <label class="text-muted small">Mobile Number</label>
-                  <p class="mb-0 fw-medium">{{ object.mobile_number|default:"Not provided" }}</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-group mb-3">
-                  <label class="text-muted small">Registration Date</label>
-                  <p class="mb-0 fw-medium">{{ object.date_of_registration }}</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-group mb-3">
-                  <label class="text-muted small">Status</label>
-                  <p class="mb-0 fw-medium">{{ object.get_current_status_display }}</p>
-                </div>
-              </div>
-            </div>
 
-            <div class="address-section bg-light p-3 rounded-3 mb-3">
-              <h6 class="fw-bold mb-2"><i class="fas fa-map-marker-alt me-2"></i>Address</h6>
-              <p class="mb-0">{{ object.address|default:"Address not provided" }}</p>
-            </div>
+              <div class="row g-4 mb-4">
+                <div class="col-md-6">
+                  <div class="info-card p-3 border rounded-3 h-100 bg-light bg-opacity-50">
+                    <div class="d-flex align-items-center mb-2">
+                      <div class="icon-circle bg-primary text-white me-2">
+                        <i class="fas fa-user"></i>
+                      </div>
+                      <h6 class="fw-bold mb-0">Basic Details</h6>
+                    </div>
+                    <div class="info-list mt-3">
+                      <div class="info-item d-flex mb-2">
+                        <div class="info-label text-muted" style="width: 120px;">Full Name:</div>
+                        <div class="info-value fw-medium flex-grow-1">{{ object.fullname }}</div>
+                      </div>
+                      <div class="info-item d-flex mb-2">
+                        <div class="info-label text-muted" style="width: 120px;">Gender:</div>
+                        <div class="info-value fw-medium flex-grow-1">{{ object.get_gender_display }}</div>
+                      </div>
+                      <div class="info-item d-flex mb-2">
+                        <div class="info-label text-muted" style="width: 120px;">Date of Birth:</div>
+                        <div class="info-value fw-medium flex-grow-1">{{ object.date_of_birth }}</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-            <div class="notes-section bg-light p-3 rounded-3">
-              <h6 class="fw-bold mb-2"><i class="fas fa-sticky-note me-2"></i>Additional Notes</h6>
-              <p class="mb-0">{{ object.others|default:"No additional notes" }}</p>
+                <div class="col-md-6">
+                  <div class="info-card p-3 border rounded-3 h-100 bg-light bg-opacity-50">
+                    <div class="d-flex align-items-center mb-2">
+                      <div class="icon-circle bg-success text-white me-2">
+                        <i class="fas fa-id-card"></i>
+                      </div>
+                      <h6 class="fw-bold mb-0">Contact & Status</h6>
+                    </div>
+                    <div class="info-list mt-3">
+                      <div class="info-item d-flex mb-2">
+                        <div class="info-label text-muted" style="width: 120px;">Mobile:</div>
+                        <div class="info-value fw-medium flex-grow-1">{{ object.mobile_number|default:"Not provided" }}</div>
+                      </div>
+                      <div class="info-item d-flex mb-2">
+                        <div class="info-label text-muted" style="width: 120px;">Status:</div>
+                        <div class="info-value fw-medium flex-grow-1">
+                          {% if object.current_status == 'active' %}
+                            <span class="badge bg-success px-2 py-1">Active</span>
+                          {% else %}
+                            <span class="badge bg-secondary px-2 py-1">Inactive</span>
+                          {% endif %}
+                        </div>
+                      </div>
+                      <div class="info-item d-flex mb-2">
+                        <div class="info-label text-muted" style="width: 120px;">Joined Date:</div>
+                        <div class="info-value fw-medium flex-grow-1">{{ object.date_of_registration }}</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-4">
+                <div class="col-md-12">
+                  <div class="info-card p-3 border rounded-3 bg-light bg-opacity-50">
+                    <div class="d-flex align-items-center mb-2">
+                      <div class="icon-circle bg-info text-white me-2">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                      <h6 class="fw-bold mb-0">Address Information</h6>
+                    </div>
+                    <div class="info-list mt-3">
+                      <div class="info-item d-flex mb-2">
+                        <div class="info-value fw-medium flex-grow-1">{{ object.address|default:"Address not provided" }}</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="info-card p-3 border rounded-3 bg-light bg-opacity-50">
+                    <div class="d-flex align-items-center mb-2">
+                      <div class="icon-circle bg-warning text-white me-2">
+                        <i class="fas fa-sticky-note"></i>
+                      </div>
+                      <h6 class="fw-bold mb-0">Additional Notes</h6>
+                    </div>
+                    <div class="info-list mt-3">
+                      <div class="info-item d-flex mb-2">
+                        <div class="info-value fw-medium flex-grow-1">{{ object.others|default:"No additional notes" }}</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Employment Tab -->
-          <div class="tab-pane fade" id="employment" role="tabpanel" aria-labelledby="employment-tab">
-            <div class="job-role-section bg-light p-3 rounded-3 mb-4">
-              <h6 class="fw-bold mb-2"><i class="fas fa-briefcase me-2"></i>Current Position</h6>
-              <p>{{ object.job_role|default:"Not specified" }}</p>
-            </div>
+          <!-- Professional Tab -->
+          <div class="tab-pane fade" id="professional" role="tabpanel" aria-labelledby="professional-tab">
+            <div class="p-4">
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <h5 class="fw-bold mb-0"><i class="fas fa-briefcase me-2 text-success"></i>Professional Information</h5>
+                <a href="{% url 'non-teaching-staffs-update' object.id %}" class="btn btn-sm btn-outline-success">
+                  <i class="fas fa-edit me-1"></i> Edit
+                </a>
+              </div>
 
-            <div class="row mb-4">
-              <div class="col-12">
-                <h6 class="fw-bold mb-3"><i class="fas fa-history me-2"></i>Employment History</h6>
-                <div class="table-responsive">
-                  <table class="table table-sm table-bordered">
-                    <thead class="table-light">
-                      <tr>
-                        <th>Position</th>
-                        <th>Department</th>
-                        <th>Start Date</th>
-                        <th>End Date</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td colspan="4" class="text-center text-muted">No employment history available</td>
-                      </tr>
-                      <!-- This section would be populated dynamically if employment history was available -->
-                    </tbody>
+              <div class="card border-0 shadow-sm mb-4">
+                <div class="card-header bg-success text-white">
+                  <h5 class="mb-0"><i class="fas fa-briefcase me-2"></i>Current Position</h5>
+                </div>
+                <div class="card-body">
+                  <table class="table table-bordered">
+                    <tr>
+                      <th width="40%" class="bg-light">Job Role</th>
+                      <td>{{ object.job_role|default:"Not specified" }}</td>
+                    </tr>
+                    <tr>
+                      <th class="bg-light">Status</th>
+                      <td>
+                        {% if object.current_status == 'active' %}
+                          <span class="badge bg-success px-3 py-2">Active</span>
+                        {% else %}
+                          <span class="badge bg-secondary px-3 py-2">Inactive</span>
+                        {% endif %}
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="bg-light">Joined Date</th>
+                      <td>{{ object.date_of_registration }}</td>
+                    </tr>
                   </table>
                 </div>
               </div>
-            </div>
 
-            <div class="qualifications-section">
-              <h6 class="fw-bold mb-3"><i class="fas fa-award me-2"></i>Qualifications & Skills</h6>
-              <p class="text-muted">No qualification records available. Update staff profile to add qualifications.</p>
-              <!-- This section would be populated dynamically if qualification data was available -->
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="card border-0 shadow-sm">
+                    <div class="card-header bg-info text-white">
+                      <h5 class="mb-0"><i class="fas fa-history me-2"></i>Employment History</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table class="table table-bordered">
+                          <thead class="table-light">
+                            <tr>
+                              <th>Position</th>
+                              <th>Department</th>
+                              <th>Start Date</th>
+                              <th>End Date</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="4" class="text-center text-muted">No employment history available</td>
+                            </tr>
+                            <!-- This section would be populated dynamically if employment history was available -->
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card border-0 shadow-sm">
+                <div class="card-header bg-primary text-white">
+                  <h5 class="mb-0"><i class="fas fa-award me-2"></i>Qualifications & Skills</h5>
+                </div>
+                <div class="card-body">
+                  <p class="text-muted mb-0">No qualification records available. Update staff profile to add qualifications.</p>
+                  <!-- This section would be populated dynamically if qualification data was available -->
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Documents Tab -->
           <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">
-            <div class="d-flex justify-content-between align-items-center mb-4">
-              <h6 class="fw-bold mb-0"><i class="fas fa-file-alt me-2"></i>Staff Documents</h6>
-              <button class="btn btn-sm btn-primary">
-                <i class="fas fa-upload me-2"></i>Upload New
-              </button>
-            </div>
-
-            <div class="document-list">
-              <div class="alert alert-info">
-                <i class="fas fa-info-circle me-2"></i>No documents have been uploaded for this staff member yet.
+            <div class="p-4">
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <h5 class="fw-bold mb-0"><i class="fas fa-file-alt me-2 text-info"></i>Staff Documents</h5>
+                <button class="btn btn-sm btn-primary">
+                  <i class="fas fa-upload me-2"></i>Upload New
+                </button>
               </div>
-              <!-- This section would be populated dynamically if documents were available -->
+
+              <div class="card border-0 shadow-sm">
+                <div class="card-header bg-info text-white">
+                  <h5 class="mb-0"><i class="fas fa-folder me-2"></i>Document Library</h5>
+                </div>
+                <div class="card-body">
+                  <div class="document-list">
+                    <div class="alert alert-info mb-0">
+                      <i class="fas fa-info-circle me-2"></i>No documents have been uploaded for this staff member yet.
+                    </div>
+                    <!-- This section would be populated dynamically if documents were available -->
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Activity Tab -->
           <div class="tab-pane fade" id="activity" role="tabpanel" aria-labelledby="activity-tab">
-            <div class="timeline">
-              <div class="timeline-item">
-                <div class="timeline-marker bg-primary"></div>
-                <div class="timeline-content">
-                  <h6 class="fw-bold mb-1">Staff Registered</h6>
-                  <p class="text-muted small mb-2">{{ object.date_of_registration }}</p>
-                  <p>Staff member was added to the system.</p>
+            <div class="p-4">
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <h5 class="fw-bold mb-0"><i class="fas fa-chart-line me-2 text-warning"></i>Activity Log</h5>
+              </div>
+
+              <div class="card border-0 shadow-sm">
+                <div class="card-header bg-warning text-white">
+                  <h5 class="mb-0"><i class="fas fa-history me-2"></i>Recent Activities</h5>
+                </div>
+                <div class="card-body">
+                  <div class="timeline p-3">
+                    <div class="timeline-item d-flex mb-4">
+                      <div class="timeline-icon bg-primary text-white rounded-circle p-3 me-3">
+                        <i class="fas fa-user-plus"></i>
+                      </div>
+                      <div class="timeline-content">
+                        <h6 class="fw-bold mb-1">Staff Registered</h6>
+                        <p class="text-muted small mb-2">{{ object.date_of_registration }}</p>
+                        <p class="mb-0">Staff member was added to the system.</p>
+                      </div>
+                    </div>
+                    <!-- More timeline items would be added dynamically based on staff activity -->
+                  </div>
                 </div>
               </div>
-              <!-- More timeline items would be added dynamically based on staff activity -->
             </div>
           </div>
         </div>
@@ -418,6 +536,267 @@
 {% endblock content %}
 
 {% block morejs %}
+<style>
+  /* Modern Profile Banner */
+  .staff-profile-container {
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+  }
+
+  .profile-banner {
+    background: linear-gradient(135deg, #1E3C72, #2A5298, #3949ab);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('{% static "dist/img/pattern-bg.png" %}') repeat;
+    opacity: 0.1;
+    z-index: 1;
+  }
+
+  .profile-banner .container-fluid {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Profile Image Styling */
+  .profile-image-container {
+    position: relative;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+  }
+
+  .profile-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Modern Status Indicator */
+  .status-indicator-modern {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    border: 3px solid white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .status-indicator-modern.active {
+    background-color: #4caf50;
+  }
+
+  .status-indicator-modern.inactive {
+    background-color: #f44336;
+  }
+
+  /* Staff Info Styling */
+  .staff-info {
+    color: white;
+  }
+
+  .staff-name {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+  }
+
+  .staff-designation {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .designation-badge {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    backdrop-filter: blur(5px);
+    color: white;
+  }
+
+  .id-badge {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    backdrop-filter: blur(5px);
+    color: white;
+  }
+
+  .staff-specialization {
+    font-size: 15px;
+    opacity: 0.9;
+    margin-top: 5px;
+    color: white;
+  }
+
+  /* Stats Cards */
+  .staff-stats-container {
+    margin-top: -20px;
+  }
+
+  .stats-card-wrapper {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .stats-card {
+    flex: 1;
+    min-width: 200px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+
+  .stats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  }
+
+  .stats-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-right: 15px;
+  }
+
+  .bg-primary-light {
+    background-color: rgba(13, 110, 253, 0.1);
+  }
+
+  .bg-success-light {
+    background-color: rgba(25, 135, 84, 0.1);
+  }
+
+  .bg-info-light {
+    background-color: rgba(13, 202, 240, 0.1);
+  }
+
+  .bg-warning-light {
+    background-color: rgba(255, 193, 7, 0.1);
+  }
+
+  .stats-info {
+    flex: 1;
+  }
+
+  .stats-value {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  .stats-label {
+    font-size: 13px;
+    color: #6c757d;
+    margin-bottom: 0;
+  }
+
+  /* Modern Tabs */
+  .modern-tabs {
+    margin-bottom: 20px;
+  }
+
+  .modern-tabs .nav-pills {
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f8f9fa;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .modern-tabs .nav-link {
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: 500;
+    color: #495057;
+    transition: all 0.3s ease;
+    margin: 3px;
+  }
+
+  .modern-tabs .nav-link:hover {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+  }
+
+  .modern-tabs .nav-link.active {
+    background-color: #0d6efd;
+    color: white;
+    box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
+  }
+
+  /* Icon circle styles */
+  .icon-circle {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  /* Info card hover effect */
+  .info-card:hover {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: all 0.3s ease;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .profile-banner .row {
+      flex-direction: column;
+    }
+
+    .profile-banner .col-md-7,
+    .profile-banner .col-md-5 {
+      width: 100%;
+    }
+
+    .stats-card {
+      min-width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+</style>
 <script>
   $(document).ready(function() {
     // Initialize tooltips
@@ -451,41 +830,65 @@
         <div class="row">
           <div class="col-md-4 text-center mb-4">
             {% if object.passport %}
-            <img src="{{ object.passport.url }}" class="rounded-circle border border-3 border-primary img-fluid shadow-sm" style="width: 150px; height: 150px; object-fit: cover;">
+            <img src="{{ object.passport.url }}" class="rounded-circle border border-3 border-primary img-fluid shadow-sm" style="width: 180px; height: 180px; object-fit: cover;">
             {% else %}
-            <img src="{% static 'dist/img/worker.svg' %}" class="rounded-circle border border-3 border-primary img-fluid shadow-sm" style="width: 150px; height: 150px; object-fit: cover;">
+            <img src="{% static 'dist/img/worker.svg' %}" class="rounded-circle border border-3 border-primary img-fluid shadow-sm" style="width: 180px; height: 180px; object-fit: cover;">
             {% endif %}
-            <h5 class="mt-3">{{ object.fullname }}</h5>
-            <p class="badge bg-info text-dark">Non-Teaching Staff</p>
+            <h5 class="mt-3 fw-bold">{{ object.fullname }}</h5>
+            <p class="badge bg-primary text-white px-3 py-2">Non-Teaching Staff</p>
+            <p class="text-muted small">Registration Date: {{ object.date_of_registration }}</p>
           </div>
+
           <div class="col-md-8">
-            <h5 class="mb-3">Personal Information</h5>
-            <table class="table table-bordered">
-              <tr>
-                <th width="40%">Job Role</th>
-                <td>{{ object.job_role }}</td>
-              </tr>
-              <tr>
-                <th>Gender</th>
-                <td>{{ object.get_gender_display }}</td>
-              </tr>
-              <tr>
-                <th>Date of Birth</th>
-                <td>{{ object.date_of_birth }}</td>
-              </tr>
-              <tr>
-                <th>Mobile Number</th>
-                <td>{{ object.mobile_number|default:"Not provided" }}</td>
-              </tr>
-              <tr>
-                <th>Address</th>
-                <td>{{ object.address|default:"Not provided" }}</td>
-              </tr>
-              <tr>
-                <th>Status</th>
-                <td>{{ object.get_current_status_display }}</td>
-              </tr>
-            </table>
+            <div class="card border-0 shadow-sm mb-4">
+              <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="fas fa-user me-2"></i>Personal Information</h5>
+              </div>
+              <div class="card-body">
+                <table class="table table-bordered">
+                  <tr>
+                    <th width="40%" class="bg-light">Job Role</th>
+                    <td>{{ object.job_role }}</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Gender</th>
+                    <td>{{ object.get_gender_display }}</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Date of Birth</th>
+                    <td>{{ object.date_of_birth }}</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Mobile Number</th>
+                    <td>{{ object.mobile_number|default:"Not provided" }}</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="card border-0 shadow-sm">
+              <div class="card-header bg-success text-white">
+                <h5 class="mb-0"><i class="fas fa-info-circle me-2"></i>Additional Information</h5>
+              </div>
+              <div class="card-body">
+                <table class="table table-bordered">
+                  <tr>
+                    <th width="40%" class="bg-light">Address</th>
+                    <td>{{ object.address|default:"Not provided" }}</td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light">Status</th>
+                    <td>
+                      {% if object.current_status == 'active' %}
+                        <span class="badge bg-success px-3 py-2">Active</span>
+                      {% else %}
+                        <span class="badge bg-secondary px-3 py-2">Inactive</span>
+                      {% endif %}
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
         <div class="mt-4 text-center">
