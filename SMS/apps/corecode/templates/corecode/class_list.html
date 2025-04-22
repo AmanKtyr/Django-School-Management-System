@@ -167,84 +167,106 @@
 
 <!-- Class Details Modal -->
 <div class="modal fade" id="classDetailsModal" tabindex="-1" aria-labelledby="classDetailsModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header bg-light">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow">
+      <div class="modal-header bg-gradient-info text-white">
         <h5 class="modal-title" id="classDetailsModalLabel">
           <i class="fas fa-info-circle me-2"></i> Class Details
         </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="mb-3">
-              <label class="form-label fw-bold">Class Name:</label>
-              <p id="detailClassName" class="form-control-plaintext">-</p>
-            </div>
+      <div class="modal-body p-4">
+        <!-- Basic Information Card -->
+        <div class="card mb-4 border-0 shadow-sm">
+          <div class="card-header bg-light">
+            <h6 class="mb-0"><i class="fas fa-school me-2 text-primary"></i>Basic Information</h6>
           </div>
-          <div class="col-md-6">
-            <div class="mb-3">
-              <label class="form-label fw-bold">Total Students:</label>
-              <p id="detailStudentCount" class="form-control-plaintext">-</p>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="mb-3">
-              <label class="form-label fw-bold">Class Teacher:</label>
-              <div id="detailClassTeacher" class="form-control-plaintext d-flex align-items-center">
-                <span class="me-2">Loading...</span>
-                <button type="button" id="assignTeacherFromDetailsBtn" class="btn btn-sm btn-outline-success">
-                  <i class="fas fa-user-plus me-1"></i> Assign Teacher
-                </button>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label class="form-label fw-bold text-secondary">Class Name:</label>
+                  <p id="detailClassName" class="form-control-plaintext fs-5 fw-bold">-</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label class="form-label fw-bold text-secondary">Total Students:</label>
+                  <p id="detailStudentCount" class="form-control-plaintext fs-5 fw-bold">-</p>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="mb-3">
+                  <label class="form-label fw-bold text-secondary">Class Teacher:</label>
+                  <div id="detailClassTeacher" class="form-control-plaintext d-flex align-items-center">
+                    <span class="me-2 fs-5 fw-bold">Loading...</span>
+                    <button type="button" id="assignTeacherFromDetailsBtn" class="btn btn-sm btn-outline-success">
+                      <i class="fas fa-user-plus me-1"></i> Assign Teacher
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="mb-3">
-              <label class="form-label fw-bold">Sections:</label>
-              <div class="d-flex justify-content-between align-items-center mb-2">
-                <h6 class="mb-0">Manage Sections</h6>
-                <button type="button" id="addSectionBtn" class="btn btn-sm btn-primary">
-                  <i class="fas fa-plus me-1"></i> Add Section
-                </button>
-              </div>
-              <div class="table-responsive">
-                <table class="table table-sm table-bordered">
-                  <thead class="table-light">
-                    <tr>
-                      <th width="5%">#</th>
-                      <th width="25%">Name</th>
-                      <th width="50%">Description</th>
-                      <th width="20%">Actions</th>
-                    </tr>
-                  </thead>
-                  <tbody id="sectionTableBody">
-                    <tr>
-                      <td colspan="4" class="text-center">Loading sections...</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+
+        <!-- Sections Card -->
+        <div class="card mb-4 border-0 shadow-sm">
+          <div class="card-header bg-light d-flex justify-content-between align-items-center">
+            <h6 class="mb-0"><i class="fas fa-layer-group me-2 text-success"></i>Sections</h6>
+            <button type="button" id="addSectionBtn" class="btn btn-sm btn-primary">
+              <i class="fas fa-plus me-1"></i> Add Section
+            </button>
+          </div>
+          <div class="card-body p-0">
+            <div class="table-responsive">
+              <table class="table table-hover table-bordered mb-0">
+                <thead class="table-light">
+                  <tr>
+                    <th width="5%" class="text-center">#</th>
+                    <th width="25%">Name</th>
+                    <th width="50%">Description</th>
+                    <th width="20%" class="text-center">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="sectionTableBody">
+                  <tr>
+                    <td colspan="4" class="text-center py-4">
+                      <div class="d-flex flex-column align-items-center">
+                        <div class="spinner-border text-primary mb-3" role="status">
+                          <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <p class="text-muted mb-0">Loading sections...</p>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="mb-3">
-              <label class="form-label fw-bold">Subjects:</label>
-              <div id="detailSubjects" class="form-control-plaintext">Loading...</div>
+
+        <!-- Subjects Card -->
+        <div class="card border-0 shadow-sm">
+          <div class="card-header bg-light">
+            <h6 class="mb-0"><i class="fas fa-book me-2 text-warning"></i>Subjects</h6>
+          </div>
+          <div class="card-body">
+            <div id="detailSubjects" class="form-control-plaintext">
+              <div class="d-flex justify-content-center">
+                <div class="spinner-border text-primary" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal-footer">
+      <div class="modal-footer bg-light">
         <button type="button" id="editClassFromDetailsBtn" class="btn btn-primary">
           <i class="fas fa-edit me-1"></i> Edit Class
         </button>
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
           <i class="fas fa-times me-1"></i> Close
         </button>
       </div>
@@ -254,26 +276,36 @@
 
 <!-- Edit Class Modal -->
 <div class="modal fade" id="editClassModal" tabindex="-1" aria-labelledby="editClassModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <form id="editClassForm">
-        <div class="modal-header bg-primary text-white">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow">
+      <form id="editClassForm" class="needs-validation" novalidate>
+        <div class="modal-header bg-gradient-primary text-white">
           <h5 class="modal-title" id="editClassModalLabel">
             <i class="fas fa-edit me-2"></i> Edit Class
           </h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body p-4">
           {% csrf_token %}
           <input type="hidden" id="editClassId" name="class_id">
+
+          <div class="alert alert-info mb-4">
+            <i class="fas fa-info-circle me-2"></i> Update the class name below.
+          </div>
+
           <div class="mb-3">
-            <label for="editClassName" class="form-label fw-bold">Class Name</label>
-            <input type="text" class="form-control" id="editClassName" name="name" required>
-            <div class="invalid-feedback">Please enter a class name.</div>
+            <label for="editClassName" class="form-label fw-bold">Class Name <span class="text-danger">*</span></label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-school"></i></span>
+              <input type="text" class="form-control" id="editClassName" name="name" required placeholder="Enter class name">
+            </div>
+            <div class="invalid-feedback">
+              <i class="fas fa-exclamation-circle me-1"></i>Please enter a class name.
+            </div>
           </div>
         </div>
         <div class="modal-footer bg-light">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
             <i class="fas fa-times me-1"></i> Cancel
           </button>
           <button type="submit" class="btn btn-primary" id="saveEditClassBtn">
@@ -287,39 +319,57 @@
 
 <!-- Section Modal -->
 <div class="modal fade" id="sectionModal" tabindex="-1" aria-labelledby="sectionModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header bg-primary text-white">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow">
+      <div class="modal-header bg-gradient-primary text-white">
         <h5 class="modal-title" id="sectionModalLabel">
           <i class="fas fa-layer-group me-2"></i> <span id="sectionModalAction">Add</span> Section
         </h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        <form id="sectionForm">
+      <div class="modal-body p-4">
+        <form id="sectionForm" class="needs-validation" novalidate>
           {% csrf_token %}
           <input type="hidden" id="sectionClassId" name="class_id">
           <input type="hidden" id="sectionId" name="section_id">
+
+          <div class="alert alert-info mb-4">
+            <i class="fas fa-info-circle me-2"></i> Sections help organize students within a class. Common examples include A, B, C or Morning, Evening, etc.
+          </div>
+
           <div class="mb-3">
             <label for="sectionClassName" class="form-label fw-bold">Class</label>
-            <input type="text" class="form-control" id="sectionClassName" readonly>
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-school"></i></span>
+              <input type="text" class="form-control bg-light" id="sectionClassName" readonly>
+            </div>
           </div>
+
           <div class="mb-3">
-            <label for="sectionName" class="form-label fw-bold">Section Name</label>
-            <input type="text" class="form-control" id="sectionName" name="name" required>
-            <div class="invalid-feedback">Please enter a section name.</div>
+            <label for="sectionName" class="form-label fw-bold">Section Name <span class="text-danger">*</span></label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-layer-group"></i></span>
+              <input type="text" class="form-control" id="sectionName" name="name" required placeholder="Enter section name (e.g., A, B, Morning)">
+            </div>
+            <div class="invalid-feedback">
+              <i class="fas fa-exclamation-circle me-1"></i>Please enter a section name.
+            </div>
           </div>
+
           <div class="mb-3">
             <label for="sectionDescription" class="form-label fw-bold">Description</label>
-            <textarea class="form-control" id="sectionDescription" name="description" rows="3"></textarea>
-          </div>
-          <div class="alert alert-info">
-            <i class="fas fa-info-circle me-2"></i> Sections help organize students within a class. Common examples include A, B, C or Morning, Evening, etc.
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-align-left"></i></span>
+              <textarea class="form-control" id="sectionDescription" name="description" rows="3" placeholder="Enter optional description for this section"></textarea>
+            </div>
+            <div class="form-text text-muted">
+              <i class="fas fa-info-circle me-1"></i>Provide additional details about this section (optional).
+            </div>
           </div>
         </form>
       </div>
       <div class="modal-footer bg-light">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
           <i class="fas fa-times me-1"></i> Cancel
         </button>
         <button type="button" class="btn btn-primary" id="saveSectionBtn">
@@ -332,44 +382,62 @@
 
 <!-- Assign Class Teacher Modal -->
 <div class="modal fade" id="assignTeacherModal" tabindex="-1" aria-labelledby="assignTeacherModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header bg-success text-white">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow">
+      <div class="modal-header bg-gradient-success text-white">
         <h5 class="modal-title" id="assignTeacherModalLabel">
           <i class="fas fa-user-plus me-2"></i> Assign Class Teacher
         </h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        <form id="assignTeacherForm">
+      <div class="modal-body p-4">
+        <form id="assignTeacherForm" class="needs-validation" novalidate>
           {% csrf_token %}
           <input type="hidden" id="assignTeacherClassId" name="class_id">
+
+          <div class="alert alert-info mb-4">
+            <i class="fas fa-info-circle me-2"></i> Assigning a class teacher helps in managing class-specific activities and communications.
+          </div>
+
           <div class="mb-3">
             <label for="assignTeacherClassName" class="form-label fw-bold">Class</label>
-            <input type="text" class="form-control" id="assignTeacherClassName" readonly>
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-school"></i></span>
+              <input type="text" class="form-control bg-light" id="assignTeacherClassName" readonly>
+            </div>
           </div>
+
           <div class="mb-3">
             <label for="assignTeacherSection" class="form-label fw-bold">Section</label>
-            <select class="form-select" id="assignTeacherSection" name="section">
-              <option value="">-- All Sections --</option>
-              <!-- Sections will be loaded dynamically -->
-            </select>
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-layer-group"></i></span>
+              <select class="form-select" id="assignTeacherSection" name="section">
+                <option value="">-- All Sections --</option>
+                <!-- Sections will be loaded dynamically -->
+              </select>
+            </div>
+            <div class="form-text text-muted">
+              <i class="fas fa-info-circle me-1"></i>Select a specific section or leave as "All Sections" to assign a teacher to the entire class.
+            </div>
           </div>
+
           <div class="mb-3">
-            <label for="assignTeacherTeacher" class="form-label fw-bold">Teacher</label>
-            <select class="form-select" id="assignTeacherTeacher" name="teacher_id" required>
-              <option value="">-- Select Teacher --</option>
-              <!-- Teachers will be loaded dynamically -->
-            </select>
-            <div class="invalid-feedback">Please select a teacher.</div>
-          </div>
-          <div class="alert alert-info">
-            <i class="fas fa-info-circle me-2"></i> Assigning a class teacher helps in managing class-specific activities and communications.
+            <label for="assignTeacherTeacher" class="form-label fw-bold">Teacher <span class="text-danger">*</span></label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-user-tie"></i></span>
+              <select class="form-select" id="assignTeacherTeacher" name="teacher_id" required>
+                <option value="">-- Select Teacher --</option>
+                <!-- Teachers will be loaded dynamically -->
+              </select>
+            </div>
+            <div class="invalid-feedback">
+              <i class="fas fa-exclamation-circle me-1"></i>Please select a teacher.
+            </div>
           </div>
         </form>
       </div>
       <div class="modal-footer bg-light">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
           <i class="fas fa-times me-1"></i> Cancel
         </button>
         <button type="button" class="btn btn-success" id="saveAssignTeacherBtn">
@@ -382,48 +450,61 @@
 
 <!-- Manage Sections Modal -->
 <div class="modal fade" id="manageSectionsModal" tabindex="-1" aria-labelledby="manageSectionsModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header bg-primary text-white">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow">
+      <div class="modal-header bg-gradient-primary text-white">
         <h5 class="modal-title" id="manageSectionsModalLabel">
           <i class="fas fa-layer-group me-2"></i> Manage Sections for <span id="manageSectionsClassName">Class</span>
         </h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body p-4">
+        <div class="alert alert-info mb-4">
+          <i class="fas fa-info-circle me-2"></i> Sections added here will be available in student forms and all filters across the system.
+        </div>
+
         <div class="d-flex justify-content-between align-items-center mb-3">
-          <h6 class="mb-0">Class Sections</h6>
+          <h6 class="mb-0 fw-bold"><i class="fas fa-list me-2 text-primary"></i>Class Sections</h6>
           <button type="button" id="addSectionFromListBtn" class="btn btn-sm btn-primary">
             <i class="fas fa-plus me-1"></i> Add New Section
           </button>
         </div>
 
         <div class="table-responsive">
-          <table class="table table-bordered">
+          <table class="table table-hover table-bordered">
             <thead class="table-light">
               <tr>
-                <th width="5%">#</th>
+                <th width="5%" class="text-center">#</th>
                 <th width="20%">Name</th>
                 <th width="50%">Description</th>
-                <th width="25%">Actions</th>
+                <th width="25%" class="text-center">Actions</th>
               </tr>
             </thead>
             <tbody id="manageSectionsTableBody">
               <tr>
-                <td colspan="4" class="text-center py-3">
-                  <i class="fas fa-spinner fa-spin me-2"></i> Loading sections...
+                <td colspan="4" class="text-center py-4">
+                  <div class="d-flex flex-column align-items-center">
+                    <div class="spinner-border text-primary mb-3" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p class="text-muted mb-0">Loading sections...</p>
+                  </div>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <div class="alert alert-info mt-3">
-          <i class="fas fa-info-circle me-2"></i> Sections added here will be available in student forms and all filters across the system.
+        <div class="empty-sections-message d-none mt-4">
+          <div class="text-center py-4">
+            <i class="fas fa-layer-group fa-3x text-muted mb-3"></i>
+            <h5>No Sections Found</h5>
+            <p class="text-muted">This class doesn't have any sections yet. Add your first section using the 'Add New Section' button.</p>
+          </div>
         </div>
       </div>
       <div class="modal-footer bg-light">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
           <i class="fas fa-times me-1"></i> Close
         </button>
       </div>
@@ -433,31 +514,44 @@
 
 <!-- Add New Class Modal -->
 <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="addClassModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <form action="{% url 'class-create' %}" method="POST" id="addClassForm">
-        <div class="modal-header bg-primary text-white">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow">
+      <form action="{% url 'class-create' %}" method="POST" id="addClassForm" class="needs-validation" novalidate>
+        <div class="modal-header bg-gradient-primary text-white">
           <h5 class="modal-title" id="addClassModalLabel">
             <i class="fas fa-plus-circle me-2"></i> Add New Class
           </h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body p-4">
           {% csrf_token %}
-          <div class="alert alert-info">
+          <div class="alert alert-info mb-4">
             <i class="fas fa-info-circle me-2"></i> Enter the class name (e.g., "Class 1", "Grade 10", "First Year").
           </div>
           {% for field in form %}
           <div class="mb-3">
-            <label for="{{ field.id_for_label }}" class="form-label fw-bold">{{ field.label }}</label>
-            {{ field|add_class:"form-control" }}
-            <div class="form-text">{{ field.help_text }}</div>
-            <div class="invalid-feedback">{{ field.errors }}</div>
+            <label for="{{ field.id_for_label }}" class="form-label fw-bold">
+              {{ field.label }}
+              {% if field.field.required %}<span class="text-danger">*</span>{% endif %}
+            </label>
+            {{ field|add_class:"form-control"|add_error_class:"is-invalid"|attr:"placeholder:Enter class name" }}
+            {% if field.errors %}
+              <div class="invalid-feedback d-block">
+                {% for error in field.errors %}
+                  <i class="fas fa-exclamation-circle me-1"></i>{{ error }}{% if not forloop.last %}<br>{% endif %}
+                {% endfor %}
+              </div>
+            {% endif %}
+            {% if field.help_text %}
+              <div class="form-text text-muted">
+                <i class="fas fa-info-circle me-1"></i>{{ field.help_text }}
+              </div>
+            {% endif %}
           </div>
           {% endfor %}
         </div>
         <div class="modal-footer bg-light">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
             <i class="fas fa-times me-1"></i> Cancel
           </button>
           <button type="submit" class="btn btn-primary">
