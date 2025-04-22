@@ -247,8 +247,15 @@
 
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary">
-      <!-- Brand Logo -->
-      <a href="{% url 'home' %}" class="brand-link">{{ profile.college_name | default:"MySchool" }}</a>
+      <!-- Brand Logo with College Logo -->
+      <a href="{% url 'home' %}" class="brand-link d-flex align-items-center">
+        {% if profile.college_logo %}
+        <img src="{{ profile.college_logo.url }}" alt="College Logo" class="brand-image img-circle elevation-3" style="opacity: .8; margin-right: 10px; max-height: 33px;">
+        {% else %}
+        <i class="fas fa-graduation-cap brand-image img-circle elevation-3" style="opacity: .8; margin-right: 10px; background-color: #fff; color: #1E3C72; padding: 5px; font-size: 16px;"></i>
+        {% endif %}
+        <span class="brand-text font-weight-light">{{ profile.college_name | default:"MySchool" }}</span>
+      </a>
 
 {% comment %} sidebar start {% endcomment %}
 

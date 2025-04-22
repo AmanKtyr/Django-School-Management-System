@@ -23,11 +23,34 @@
   height: 57px !important;
   display: flex !important;
   align-items: center !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
-  padding: 0.8rem 0.5rem !important;
+  padding: 10px 15px !important;
   background: linear-gradient(90deg, black, #1E3C72) !important;
   color: white !important;
+  transition: all 0.3s ease !important;
+}
+
+.main-sidebar .brand-link:hover {
+  background: linear-gradient(90deg, #000000, #16345A) !important;
+  color: #ffc107 !important;
+}
+
+.main-sidebar .brand-link .brand-image {
+  margin-right: 10px !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important;
+  transition: all 0.3s ease !important;
+}
+
+.main-sidebar .brand-link:hover .brand-image {
+  transform: scale(1.05) !important;
+}
+
+.main-sidebar .brand-link .brand-text {
+  font-size: 1.1rem !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
 }
 
 /* Sidebar nav container */
@@ -101,6 +124,48 @@ body.sidebar-collapse .main-sidebar::before {
   width: 4.6rem !important;
   overflow: visible !important;
   transition: width 0.3s ease-in-out !important;
+}
+
+/* Brand link in collapsed state */
+.sidebar-mini.sidebar-collapse .main-sidebar .brand-link,
+body.sidebar-collapse .main-sidebar .brand-link {
+  justify-content: center !important;
+  padding: 10px 5px !important;
+}
+
+.sidebar-mini.sidebar-collapse .main-sidebar .brand-link .brand-text,
+body.sidebar-collapse .main-sidebar .brand-link .brand-text {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.sidebar-mini.sidebar-collapse .main-sidebar .brand-link .brand-image,
+body.sidebar-collapse .main-sidebar .brand-link .brand-image {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* Brand link in hover state when collapsed */
+.sidebar-mini.sidebar-collapse .main-sidebar:hover .brand-link,
+body.sidebar-collapse .main-sidebar:hover .brand-link,
+.main-sidebar.sidebar-hover .brand-link {
+  justify-content: flex-start !important;
+  padding: 10px 15px !important;
+}
+
+.sidebar-mini.sidebar-collapse .main-sidebar:hover .brand-link .brand-text,
+body.sidebar-collapse .main-sidebar:hover .brand-link .brand-text,
+.main-sidebar.sidebar-hover .brand-link .brand-text {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.sidebar-mini.sidebar-collapse .main-sidebar:hover .brand-link .brand-image,
+body.sidebar-collapse .main-sidebar:hover .brand-link .brand-image,
+.main-sidebar.sidebar-hover .brand-link .brand-image {
+  margin-right: 10px !important;
 }
 
 .sidebar-mini.sidebar-collapse .content-wrapper,

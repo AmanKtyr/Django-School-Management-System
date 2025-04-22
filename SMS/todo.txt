@@ -51,19 +51,5 @@ Add secondrory color
 - **Settings**  
 
 
-for  attendance page 
-main ye chahata hu ki jab students ki attendance save karu to vo top  par
- dashboad me show hone lage aur ye database me save ho jaye , 
- agar same day me main fir se uss class ki list open karu  to vo same ho 
-
-
-
-
-Add invoice and students fees sections
-Add PostgreSQL  in my project
-make page not found 
-Add Attendence section in student profile 
-delete invoice from everywhere
-
 
 Add mail, Blood group in student profile

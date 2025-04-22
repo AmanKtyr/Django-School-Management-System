@@ -399,16 +399,38 @@ body.sidebar-toggled .content-wrapper {
 .brand-link {
   background: linear-gradient(90deg, black, #1E3C72);
   color: white !important;
-  text-align: center;
   font-weight: bold;
-  padding: 10px;
+  padding: 10px 15px;
   text-decoration: none;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 57px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
 }
 
 .brand-link:hover {
   color: #ffc107 !important;
   text-decoration: none;
+  background: linear-gradient(90deg, #000000, #16345A);
+}
+
+.brand-link .brand-image {
+  margin-right: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.brand-link:hover .brand-image {
+  transform: scale(1.05);
+}
+
+.brand-link .brand-text {
+  font-size: 1.1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Loader Styles */
