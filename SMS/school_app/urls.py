@@ -32,4 +32,6 @@ urlpatterns = [
      path('fees/', include('apps.fees.urls', namespace='fees')),
     # Exams app
     path('exams/', include('apps.exams.urls', namespace='exams')),
+    # Documents app
+    path('documents/', include('apps.documents.urls', namespace='documents')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

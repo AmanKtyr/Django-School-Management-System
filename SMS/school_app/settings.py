@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "apps.attendance",
     'apps.fees',
     'apps.exams',
+    'apps.documents',
     'django_filters',
 ]
 

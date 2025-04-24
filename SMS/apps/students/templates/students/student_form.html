@@ -365,6 +365,7 @@
                       <i class="fas fa-birthday-cake me-1"></i> {{ form.date_of_birth.label }}
                     </label>
                     {{ form.date_of_birth|add_class:"form-control" }}
+                    <div class="invalid-feedback" id="date_of_birth-error"></div>
                     {% if form.date_of_birth.errors %}
                       <div class="text-danger small">{{ form.date_of_birth.errors }}</div>
                     {% endif %}
@@ -441,12 +442,13 @@
           </div>
           <div class="card-body">
             <div class="row">
-              <!-- Current Class Field -->
+              <!-- Class Field -->
               <div class="col-md-4 mb-3">
                 <label for="{{ form.current_class.id_for_label }}" class="form-label">
-                  <i class="fas fa-chalkboard me-1"></i> {{ form.current_class.label }} <span class="text-danger">*</span>
+                  <i class="fas fa-chalkboard me-1"></i> CLASS <span class="text-danger">*</span>
                 </label>
                 {{ form.current_class|add_class:"form-select" }}
+                <div class="invalid-feedback" id="current_class-error"></div>
                 {% if form.current_class.errors %}
                   <div class="text-danger small">{{ form.current_class.errors }}</div>
                 {% endif %}
@@ -458,6 +460,7 @@
                   <i class="fas fa-puzzle-piece me-1"></i> {{ form.section.label }} <span class="text-danger">*</span>
                 </label>
                 {{ form.section|add_class:"form-select" }}
+                <div class="invalid-feedback" id="section-error"></div>
                 {% if form.section.errors %}
                   <div class="text-danger small">{{ form.section.errors }}</div>
                 {% endif %}
@@ -490,6 +493,7 @@
                   <i class="fas fa-mobile-alt me-1"></i> {{ form.mobile_number.label }}
                 </label>
                 {{ form.mobile_number|add_class:"form-control" }}
+                <div class="invalid-feedback" id="mobile_number-error"></div>
                 {% if form.mobile_number.errors %}
                   <div class="text-danger small">{{ form.mobile_number.errors }}</div>
                 {% endif %}
@@ -533,6 +537,7 @@
                   <i class="fas fa-user me-1"></i> {{ form.Father_name.label }} <span class="text-danger">*</span>
                 </label>
                 {{ form.Father_name|add_class:"form-control" }}
+                <div class="invalid-feedback" id="Father_name-error"></div>
                 {% if form.Father_name.errors %}
                   <div class="text-danger small">{{ form.Father_name.errors }}</div>
                 {% endif %}
@@ -544,6 +549,7 @@
                   <i class="fas fa-phone me-1"></i> {{ form.Father_mobile_number.label }} <span class="text-danger">*</span>
                 </label>
                 {{ form.Father_mobile_number|add_class:"form-control" }}
+                <div class="invalid-feedback" id="Father_mobile_number-error"></div>
                 {% if form.Father_mobile_number.errors %}
                   <div class="text-danger small">{{ form.Father_mobile_number.errors }}</div>
                 {% endif %}
@@ -753,16 +759,31 @@
       'fullname', 'current_class', 'section', 'Father_name', 'Father_mobile_number'
     ];
 
+    // Clear all previous validations
+    form.querySelectorAll('.is-invalid').forEach(el => {
+      el.classList.remove('is-invalid');
+    });
+    form.querySelectorAll('.is-valid').forEach(el => {
+      el.classList.remove('is-valid');
+    });
+    form.querySelectorAll('.invalid-feedback').forEach(el => {
+      el.textContent = '';
+    });
+
+    // Validate required fields
     requiredFields.forEach(fieldName => {
       const field = form.querySelector(`[name="${fieldName}"]`);
+      if (!field) return; // Skip if field doesn't exist
+
       const errorDiv = document.getElementById(`${fieldName}-error`) ||
-                      field.nextElementSibling.classList.contains('invalid-feedback') ?
-                      field.nextElementSibling : null;
+                      field.nextElementSibling;
 
       if (!field.value || field.value.trim() === '') {
         field.classList.add('is-invalid');
+        field.classList.remove('is-valid');
         if (errorDiv) {
           errorDiv.textContent = `${field.labels[0].textContent.replace('*', '').trim()} is required`;
+          errorDiv.style.display = 'block';
         }
         isValid = false;
       } else {
@@ -774,59 +795,127 @@
       }
     });
 
-    // Validate Aadhar number format (if provided)
-    const aadharField = form.querySelector('[name="aadhar"]');
-    if (aadharField.value && !/^\d{12}$/.test(aadharField.value)) {
-      aadharField.classList.add('is-invalid');
-      const errorDiv = aadharField.nextElementSibling.nextElementSibling;
+    // Validate fullname (at least 3 characters)
+    const fullnameField = form.querySelector('[name="fullname"]');
+    if (fullnameField && fullnameField.value && fullnameField.value.trim().length < 3) {
+      fullnameField.classList.add('is-invalid');
+      fullnameField.classList.remove('is-valid');
+      const errorDiv = document.getElementById('fullname-error');
       if (errorDiv) {
-        errorDiv.textContent = 'Aadhar number must be exactly 12 digits';
+        errorDiv.textContent = 'Name must be at least 3 characters long';
+        errorDiv.style.display = 'block';
       }
       isValid = false;
+    }
+
+    // Validate Aadhar number format (if provided)
+    const aadharField = form.querySelector('[name="aadhar"]');
+    if (aadharField && aadharField.value) {
+      if (!/^\d{12}$/.test(aadharField.value)) {
+        aadharField.classList.add('is-invalid');
+        aadharField.classList.remove('is-valid');
+        const errorDiv = aadharField.nextElementSibling.nextElementSibling;
+        if (errorDiv) {
+          errorDiv.textContent = 'Aadhar number must be exactly 12 digits';
+          errorDiv.style.display = 'block';
+        }
+        isValid = false;
+      } else {
+        aadharField.classList.remove('is-invalid');
+        aadharField.classList.add('is-valid');
+      }
     }
 
     // Validate Father's Aadhar number format (if provided)
     const fatherAadharField = form.querySelector('[name="Father_aadhar"]');
-    if (fatherAadharField.value && !/^\d{12}$/.test(fatherAadharField.value)) {
-      fatherAadharField.classList.add('is-invalid');
-      const errorDiv = fatherAadharField.nextElementSibling.nextElementSibling;
-      if (errorDiv) {
-        errorDiv.textContent = 'Aadhar number must be exactly 12 digits';
+    if (fatherAadharField && fatherAadharField.value) {
+      if (!/^\d{12}$/.test(fatherAadharField.value)) {
+        fatherAadharField.classList.add('is-invalid');
+        fatherAadharField.classList.remove('is-valid');
+        const errorDiv = fatherAadharField.nextElementSibling.nextElementSibling;
+        if (errorDiv) {
+          errorDiv.textContent = 'Aadhar number must be exactly 12 digits';
+          errorDiv.style.display = 'block';
+        }
+        isValid = false;
+      } else {
+        fatherAadharField.classList.remove('is-invalid');
+        fatherAadharField.classList.add('is-valid');
       }
-      isValid = false;
     }
 
     // Validate mobile number format (if provided)
     const mobileField = form.querySelector('[name="mobile_number"]');
-    if (mobileField.value && !/^[0-9]{10,15}$/.test(mobileField.value)) {
-      mobileField.classList.add('is-invalid');
-      const errorDiv = mobileField.nextElementSibling;
-      if (errorDiv) {
-        errorDiv.textContent = 'Mobile number must be 10-15 digits';
+    if (mobileField && mobileField.value) {
+      if (!/^[0-9]{10,15}$/.test(mobileField.value)) {
+        mobileField.classList.add('is-invalid');
+        mobileField.classList.remove('is-valid');
+        const errorDiv = mobileField.nextElementSibling;
+        if (errorDiv) {
+          errorDiv.textContent = 'Mobile number must be 10-15 digits';
+          errorDiv.style.display = 'block';
+        }
+        isValid = false;
+      } else {
+        mobileField.classList.remove('is-invalid');
+        mobileField.classList.add('is-valid');
       }
-      isValid = false;
     }
 
-    // Validate Father's mobile number format
+    // Validate Father's mobile number format (required)
     const fatherMobileField = form.querySelector('[name="Father_mobile_number"]');
-    if (!fatherMobileField.value || !/^[0-9]{10,15}$/.test(fatherMobileField.value)) {
-      fatherMobileField.classList.add('is-invalid');
-      const errorDiv = fatherMobileField.nextElementSibling;
-      if (errorDiv) {
-        errorDiv.textContent = 'Father\'s mobile number must be 10-15 digits';
+    if (fatherMobileField) {
+      if (!fatherMobileField.value || !/^[0-9]{10,15}$/.test(fatherMobileField.value)) {
+        fatherMobileField.classList.add('is-invalid');
+        fatherMobileField.classList.remove('is-valid');
+        const errorDiv = document.getElementById('Father_mobile_number-error');
+        if (errorDiv) {
+          errorDiv.textContent = fatherMobileField.value ? 'Mobile number must be 10-15 digits' : 'Father\'s mobile number is required';
+          errorDiv.style.display = 'block';
+        }
+        isValid = false;
+      } else {
+        fatherMobileField.classList.remove('is-invalid');
+        fatherMobileField.classList.add('is-valid');
       }
-      isValid = false;
     }
 
     // Validate email format (if provided)
     const emailField = form.querySelector('[name="email_id"]');
-    if (emailField.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailField.value)) {
-      emailField.classList.add('is-invalid');
-      const errorDiv = emailField.nextElementSibling;
-      if (errorDiv) {
-        errorDiv.textContent = 'Please enter a valid email address';
+    if (emailField && emailField.value) {
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailField.value)) {
+        emailField.classList.add('is-invalid');
+        emailField.classList.remove('is-valid');
+        const errorDiv = emailField.nextElementSibling;
+        if (errorDiv) {
+          errorDiv.textContent = 'Please enter a valid email address';
+          errorDiv.style.display = 'block';
+        }
+        isValid = false;
+      } else {
+        emailField.classList.remove('is-invalid');
+        emailField.classList.add('is-valid');
       }
-      isValid = false;
+    }
+
+    // Validate date of birth (not in future)
+    const dobField = form.querySelector('[name="date_of_birth"]');
+    if (dobField && dobField.value) {
+      const dob = new Date(dobField.value);
+      const today = new Date();
+      if (dob > today) {
+        dobField.classList.add('is-invalid');
+        dobField.classList.remove('is-valid');
+        const errorDiv = dobField.nextElementSibling;
+        if (errorDiv) {
+          errorDiv.textContent = 'Date of birth cannot be in the future';
+          errorDiv.style.display = 'block';
+        }
+        isValid = false;
+      } else {
+        dobField.classList.remove('is-invalid');
+        dobField.classList.add('is-valid');
+      }
     }
 
     return isValid;
@@ -937,12 +1026,145 @@
       });
     }
 
-    // Set up input change handlers for progress bar
+    // Set up input change handlers for progress bar and real-time validation
     const inputs = form.querySelectorAll('input, select, textarea');
     inputs.forEach(input => {
+      // Update progress bar on input change
       input.addEventListener('change', updateProgressBar);
       input.addEventListener('keyup', updateProgressBar);
+
+      // Add real-time validation
+      input.addEventListener('blur', function() {
+        validateField(this);
+      });
+
+      // For select elements, validate on change
+      if (input.tagName === 'SELECT') {
+        input.addEventListener('change', function() {
+          validateField(this);
+        });
+      }
     });
+
+    // Function to validate a single field
+    function validateField(field) {
+      const fieldName = field.getAttribute('name');
+
+      // Skip if this is not a field we want to validate
+      if (!fieldName) return;
+
+      // Check if it's a required field
+      const isRequired = ['fullname', 'current_class', 'section', 'Father_name', 'Father_mobile_number'].includes(fieldName);
+
+      // Get error div
+      const errorDiv = document.getElementById(`${fieldName}-error`) ||
+                      field.nextElementSibling;
+
+      // Clear previous validation
+      field.classList.remove('is-invalid');
+      field.classList.remove('is-valid');
+      if (errorDiv) errorDiv.textContent = '';
+
+      // Required field validation
+      if (isRequired && (!field.value || field.value.trim() === '')) {
+        field.classList.add('is-invalid');
+        if (errorDiv) {
+          errorDiv.textContent = `${field.labels[0].textContent.replace('*', '').trim()} is required`;
+          errorDiv.style.display = 'block';
+        }
+        return false;
+      }
+
+      // Field-specific validation
+      switch(fieldName) {
+        case 'fullname':
+          if (field.value && field.value.trim().length < 3) {
+            field.classList.add('is-invalid');
+            if (errorDiv) {
+              errorDiv.textContent = 'Name must be at least 3 characters long';
+              errorDiv.style.display = 'block';
+            }
+            return false;
+          }
+          break;
+
+        case 'aadhar':
+          if (field.value && !/^\d{12}$/.test(field.value)) {
+            field.classList.add('is-invalid');
+            const aadharErrorDiv = field.nextElementSibling.nextElementSibling;
+            if (aadharErrorDiv) {
+              aadharErrorDiv.textContent = 'Aadhar number must be exactly 12 digits';
+              aadharErrorDiv.style.display = 'block';
+            }
+            return false;
+          }
+          break;
+
+        case 'Father_aadhar':
+          if (field.value && !/^\d{12}$/.test(field.value)) {
+            field.classList.add('is-invalid');
+            const fatherAadharErrorDiv = field.nextElementSibling.nextElementSibling;
+            if (fatherAadharErrorDiv) {
+              fatherAadharErrorDiv.textContent = 'Aadhar number must be exactly 12 digits';
+              fatherAadharErrorDiv.style.display = 'block';
+            }
+            return false;
+          }
+          break;
+
+        case 'mobile_number':
+          if (field.value && !/^[0-9]{10,15}$/.test(field.value)) {
+            field.classList.add('is-invalid');
+            if (errorDiv) {
+              errorDiv.textContent = 'Mobile number must be 10-15 digits';
+              errorDiv.style.display = 'block';
+            }
+            return false;
+          }
+          break;
+
+        case 'Father_mobile_number':
+          if (!field.value || !/^[0-9]{10,15}$/.test(field.value)) {
+            field.classList.add('is-invalid');
+            if (errorDiv) {
+              errorDiv.textContent = field.value ? 'Mobile number must be 10-15 digits' : 'Father\'s mobile number is required';
+              errorDiv.style.display = 'block';
+            }
+            return false;
+          }
+          break;
+
+        case 'email_id':
+          if (field.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value)) {
+            field.classList.add('is-invalid');
+            if (errorDiv) {
+              errorDiv.textContent = 'Please enter a valid email address';
+              errorDiv.style.display = 'block';
+            }
+            return false;
+          }
+          break;
+
+        case 'date_of_birth':
+          if (field.value) {
+            const dob = new Date(field.value);
+            const today = new Date();
+            if (dob > today) {
+              field.classList.add('is-invalid');
+              if (errorDiv) {
+                errorDiv.textContent = 'Date of birth cannot be in the future';
+                errorDiv.style.display = 'block';
+              }
+              return false;
+            }
+          }
+          break;
+      }
+
+      // If we got here, the field is valid
+      field.classList.add('is-valid');
+      return true;
+    }
 
     // Initialize progress bar
     updateProgressBar();

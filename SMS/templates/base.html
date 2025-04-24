@@ -442,28 +442,58 @@
 
 
           <li class="nav-header">Documents</li>
-          <li class="nav-item has-treeview">
-              <a href="#" class="nav-link">
+          <li class="nav-item has-treeview {% if 'documents' in request.path %}menu-open{% endif %}">
+              <a href="{% url 'documents:dashboard' %}" class="nav-link {% if 'documents' in request.path %}active{% endif %}">
                   <i class="nav-icon fas fa-folder-open" style="color: #9933ff; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);"></i>
                   <p>Documents<i class="fas fa-angle-left right"></i></p>
               </a>
               <ul class="nav nav-treeview">
                   <li class="nav-item">
-                      <a href="#" class="nav-link">
-                          <i class="fas fa-file-alt nav-icon" style="color: #ff9900;"></i>
+                      <a href="{% url 'documents:dashboard' %}" class="nav-link {% if request.resolver_match.url_name == 'dashboard' and 'documents' in request.path %}active{% endif %}">
+                          <i class="fas fa-tachometer-alt nav-icon" style="color: #9933ff;"></i>
+                          <p>Dashboard</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="{% url 'documents:document_list' %}" class="nav-link {% if request.resolver_match.url_name == 'document_list' %}active{% endif %}">
+                          <i class="fas fa-file nav-icon" style="color: #33cc33;"></i>
+                          <p>All Documents</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="{% url 'documents:document_upload' %}" class="nav-link {% if request.resolver_match.url_name == 'document_upload' %}active{% endif %}">
+                          <i class="fas fa-upload nav-icon" style="color: #3399ff;"></i>
+                          <p>Upload Document</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="{% url 'documents:student_documents' %}" class="nav-link {% if request.resolver_match.url_name == 'student_documents' or request.resolver_match.url_name == 'student_documents_detail' %}active{% endif %}">
+                          <i class="fas fa-user-graduate nav-icon" style="color: #ff9900;"></i>
                           <p>Student Documents</p>
                       </a>
                   </li>
                   <li class="nav-item">
-                      <a href="#" class="nav-link">
-                          <i class="fas fa-file-alt nav-icon" style="color: #33cccc;"></i>
+                      <a href="{% url 'documents:staff_documents' %}" class="nav-link {% if request.resolver_match.url_name == 'staff_documents' or request.resolver_match.url_name == 'staff_documents_detail' %}active{% endif %}">
+                          <i class="fas fa-chalkboard-teacher nav-icon" style="color: #33cccc;"></i>
                           <p>Staff Documents</p>
                       </a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="fas fa-file-alt nav-icon" style="color: #ff3366;"></i>
+                    <a href="{% url 'documents:exam_documents' %}" class="nav-link {% if request.resolver_match.url_name == 'exam_documents' or request.resolver_match.url_name == 'exam_documents_detail' %}active{% endif %}">
+                        <i class="fas fa-graduation-cap nav-icon" style="color: #ff3366;"></i>
                         <p>Exam Documents</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'documents:category_list' %}" class="nav-link {% if request.resolver_match.url_name == 'category_list' %}active{% endif %}">
+                        <i class="fas fa-folder nav-icon" style="color: #6610f2;"></i>
+                        <p>Categories</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'documents:type_list' %}" class="nav-link {% if request.resolver_match.url_name == 'type_list' %}active{% endif %}">
+                        <i class="fas fa-tags nav-icon" style="color: #fd7e14;"></i>
+                        <p>Document Types</p>
                     </a>
                 </li>
               </ul>
