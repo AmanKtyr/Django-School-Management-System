@@ -389,6 +389,7 @@
                     </label>
                     {{ form.aadhar|add_class:"form-control" }}
                     <div class="form-text">12-digit Aadhar number without spaces</div>
+                    <div class="invalid-feedback" id="aadhar-error"></div>
                     {% if form.aadhar.errors %}
                       <div class="text-danger small">{{ form.aadhar.errors }}</div>
                     {% endif %}
@@ -505,6 +506,7 @@
                   <i class="fas fa-envelope me-1"></i> {{ form.email_id.label }}
                 </label>
                 {{ form.email_id|add_class:"form-control" }}
+                <div class="invalid-feedback" id="email_id-error"></div>
                 {% if form.email_id.errors %}
                   <div class="text-danger small">{{ form.email_id.errors }}</div>
                 {% endif %}
@@ -562,6 +564,7 @@
                 </label>
                 {{ form.Father_aadhar|add_class:"form-control" }}
                 <div class="form-text">12-digit Aadhar number without spaces</div>
+                <div class="invalid-feedback" id="Father_aadhar-error"></div>
                 {% if form.Father_aadhar.errors %}
                   <div class="text-danger small">{{ form.Father_aadhar.errors }}</div>
                 {% endif %}
@@ -1016,12 +1019,53 @@
       form.addEventListener('submit', function(event) {
         if (!validateForm()) {
           event.preventDefault();
+
+          // Show validation error alert
+          const alertContainer = document.createElement('div');
+          alertContainer.className = 'alert alert-danger alert-dismissible fade show';
+          alertContainer.setAttribute('role', 'alert');
+          alertContainer.innerHTML = `
+            <strong><i class="fas fa-exclamation-triangle me-2"></i>Form Validation Error</strong>
+            <p class="mb-0">Please correct the highlighted fields before submitting the form.</p>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          `;
+
+          // Insert alert at the top of the form
+          form.insertBefore(alertContainer, form.firstChild);
+
           // Scroll to first error
           const firstError = document.querySelector('.is-invalid');
           if (firstError) {
-            firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            firstError.focus();
+            // Find the section containing the error
+            const section = firstError.closest('.section-card');
+            if (section) {
+              // Get the section ID
+              const sectionId = section.id;
+
+              // Activate the corresponding navigation button
+              const navButtons = document.querySelectorAll('#formNavigation .btn');
+              navButtons.forEach(button => {
+                if (button.getAttribute('data-section') === sectionId) {
+                  button.click();
+                }
+              });
+            }
+
+            // Scroll to and focus on the error field
+            setTimeout(() => {
+              firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              firstError.focus();
+            }, 300);
           }
+
+          // Auto-dismiss the alert after 5 seconds
+          setTimeout(() => {
+            const alert = document.querySelector('.alert');
+            if (alert) {
+              const bsAlert = new bootstrap.Alert(alert);
+              bsAlert.close();
+            }
+          }, 5000);
         }
       });
     }

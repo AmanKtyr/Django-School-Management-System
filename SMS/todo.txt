@@ -54,4 +54,3 @@ Add secondrory color
 
 Add mail, Blood group in student profile 
 
-CURRENT CLASS CHANGE IN TO CLASS

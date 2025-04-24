@@ -32827,3 +32827,55 @@ INFO 2025-04-24 10:34:27,457 "GET /student/api/class/5/sections/ HTTP/1.1" 200 4
 INFO 2025-04-24 10:34:27,489 "GET /student/api/class/5/sections/ HTTP/1.1" 200 40
 INFO 2025-04-24 10:34:30,472 "GET /student/api/class/6/sections/ HTTP/1.1" 200 16
 INFO 2025-04-24 10:34:30,489 "GET /student/api/class/6/sections/ HTTP/1.1" 200 16
+INFO 2025-04-24 10:39:01,751 "GET /student/create/ HTTP/1.1" 200 71791
+INFO 2025-04-24 10:39:02,386 "GET /static/dist/css/style.css?v=1745471342365 HTTP/1.1" 200 55691
+INFO 2025-04-24 10:40:33,692 "GET /student/api/class/5/sections/ HTTP/1.1" 200 40
+INFO 2025-04-24 10:40:33,724 "GET /student/api/class/5/sections/ HTTP/1.1" 200 40
+INFO 2025-04-24 10:40:59,903 "GET /student/create/ HTTP/1.1" 200 71791
+INFO 2025-04-24 10:41:00,276 "GET /static/dist/css/style.css?v=1745471460266 HTTP/1.1" 200 55691
+INFO 2025-04-24 10:41:14,032 "GET /staff/list/ HTTP/1.1" 200 42799
+INFO 2025-04-24 10:41:14,380 "GET /static/dist/css/style.css?v=1745471474368 HTTP/1.1" 200 55691
+INFO 2025-04-24 10:41:16,461 "GET /staff/1/ HTTP/1.1" 200 74892
+WARNING 2025-04-24 10:41:16,521 "GET /static/dist/img/qualification-placeholder.png HTTP/1.1" 404 1928
+WARNING 2025-04-24 10:41:16,527 "GET /static/dist/img/empty-documents.png HTTP/1.1" 404 1898
+WARNING 2025-04-24 10:41:16,543 "GET /static/dist/img/pattern-bg.png HTTP/1.1" 404 1883
+INFO 2025-04-24 10:41:16,656 "GET /static/dist/css/style.css?v=1745471476648 HTTP/1.1" 200 55691
+INFO 2025-04-24 10:41:22,311 "GET /student/list HTTP/1.1" 200 38961
+INFO 2025-04-24 10:41:22,508 "GET /static/dist/css/style.css?v=1745471482503 HTTP/1.1" 200 55691
+INFO 2025-04-24 10:41:26,138 "GET /system-settings/ HTTP/1.1" 200 44561
+INFO 2025-04-24 10:41:26,317 "GET /static/dist/css/style.css?v=1745471486310 HTTP/1.1" 200 55691
+INFO 2025-04-24 10:41:30,789 "GET /system-settings/backup-restore/ HTTP/1.1" 200 62777
+INFO 2025-04-24 10:41:30,972 "GET /static/dist/css/style.css?v=1745471490968 HTTP/1.1" 200 55691
+INFO 2025-04-24 10:44:25,472 D:\Sipher Web\Django School Management System\SMS\apps\corecode\models.py changed, reloading.
+INFO 2025-04-24 10:44:26,766 Watching for file changes with StatReloader
+INFO 2025-04-24 10:44:57,281 D:\Sipher Web\Django School Management System\SMS\apps\corecode\models.py changed, reloading.
+INFO 2025-04-24 10:44:59,162 Watching for file changes with StatReloader
+INFO 2025-04-24 10:45:29,997 D:\Sipher Web\Django School Management System\SMS\apps\corecode\models.py changed, reloading.
+INFO 2025-04-24 10:45:32,479 Watching for file changes with StatReloader
+INFO 2025-04-24 10:47:38,463 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-24 10:47:40,365 Watching for file changes with StatReloader
+INFO 2025-04-24 10:47:57,507 D:\Sipher Web\Django School Management System\SMS\apps\corecode\urls.py changed, reloading.
+INFO 2025-04-24 10:48:00,053 Watching for file changes with StatReloader
+INFO 2025-04-24 10:48:50,433 D:\Sipher Web\Django School Management System\SMS\apps\corecode\views.py changed, reloading.
+INFO 2025-04-24 10:48:51,547 Watching for file changes with StatReloader
+INFO 2025-04-24 10:52:22,444 Watching for file changes with StatReloader
+INFO 2025-04-24 10:52:31,306 "GET /system-settings/backup-restore/ HTTP/1.1" 200 66383
+INFO 2025-04-24 10:52:31,815 "GET /static/dist/css/style.css?v=1745472151717 HTTP/1.1" 200 55691
+INFO 2025-04-24 10:52:58,932 "POST /api/create-backup/ HTTP/1.1" 200 253
+INFO 2025-04-24 10:53:00,587 "GET /system-settings/backup-restore/ HTTP/1.1" 200 67527
+INFO 2025-04-24 10:53:01,034 "GET /static/dist/css/style.css?v=1745472181028 HTTP/1.1" 200 55691
+INFO 2025-04-24 10:53:03,778 "GET /api/download-backup/1/? HTTP/1.1" 200 3683657
+INFO 2025-04-24 10:53:34,668 Watching for file changes with StatReloader
+INFO 2025-04-24 10:54:00,299 "GET /system-settings/backup-restore/ HTTP/1.1" 200 67527
+INFO 2025-04-24 10:54:00,629 "GET /static/dist/css/style.css?v=1745472240627 HTTP/1.1" 200 55691
+INFO 2025-04-24 10:55:11,389 "GET /system-settings/backup-restore/ HTTP/1.1" 200 67527
+INFO 2025-04-24 10:55:11,730 "GET /static/dist/css/style.css?v=1745472311728 HTTP/1.1" 200 55691
+INFO 2025-04-24 10:58:42,006 "GET /system-settings/ HTTP/1.1" 200 44561
+INFO 2025-04-24 10:58:42,365 "GET /static/dist/css/style.css?v=1745472522354 HTTP/1.1" 200 55691
+INFO 2025-04-24 10:59:01,409 "GET / HTTP/1.1" 200 58988
+INFO 2025-04-24 10:59:01,748 "GET /static/dist/css/style.css?v=1745472541746 HTTP/1.1" 200 55691
+INFO 2025-04-24 11:01:03,587 "GET / HTTP/1.1" 200 59337
+INFO 2025-04-24 11:01:03,941 "GET /static/dist/css/style.css?v=1745472663938 HTTP/1.1" 200 55691
+INFO 2025-04-24 11:01:11,532 "GET /system-settings/backup-restore/ HTTP/1.1" 200 67527
+INFO 2025-04-24 11:01:11,876 "GET /static/dist/css/style.css?v=1745472671868 HTTP/1.1" 200 55691
+INFO 2025-04-24 11:01:14,163 "GET /static/dist/css/style.css?v=1745472674152 HTTP/1.1" 200 55691

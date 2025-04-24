@@ -94,4 +94,11 @@ urlpatterns = [
     path('api/add-section/', views.add_section, name='add_section'),
     path('api/update-section/<int:section_id>/', views.update_section, name='update_section'),
     path('api/delete-section/<int:section_id>/', views.delete_section, name='delete_section'),
+
+    # Backup & Restore API endpoints
+    path('api/create-backup/', views.create_backup_ajax, name='create_backup_ajax'),
+    path('api/restore-backup/<int:backup_id>/', views.restore_backup_ajax, name='restore_backup_ajax'),
+    path('api/delete-backup/<int:backup_id>/', views.delete_backup_ajax, name='delete_backup_ajax'),
+    path('api/download-backup/<int:backup_id>/', views.download_backup_ajax, name='download_backup_ajax'),
+    path('api/save-automated-backup-settings/', views.save_automated_backup_settings, name='save_automated_backup_settings'),
 ]

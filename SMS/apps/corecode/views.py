@@ -560,9 +560,28 @@ def database_management(request):
 @login_required
 def backup_restore(request):
     """Backup & Restore Page"""
+    from .models import Backup, AutomatedBackupSettings
+    from .backup_utils import (
+        create_full_backup, create_custom_backup, create_database_backup,
+        create_media_backup, create_settings_backup, restore_from_backup
+    )
+
+    # Get all backups
+    backups = Backup.objects.all().order_by('-created_at')
+
+    # Get automated backup settings
+    try:
+        automated_settings = AutomatedBackupSettings.objects.first()
+        if not automated_settings:
+            automated_settings = AutomatedBackupSettings.objects.create()
+    except Exception:
+        automated_settings = AutomatedBackupSettings.objects.create()
+
     context = {
         'active_tab': 'backup',
-        'current_date': datetime.now().strftime('%Y_%m_%d')
+        'current_date': datetime.now().strftime('%Y_%m_%d'),
+        'backups': backups,
+        'automated_settings': automated_settings
     }
     return render(request, 'corecode/backup_restore.html', context)
 
@@ -1610,4 +1629,332 @@ def delete_section(request, section_id):
     except Section.DoesNotExist:
         return JsonResponse({'error': 'Section not found'}, status=404)
     except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
+
+@login_required
+def create_backup_ajax(request):
+    """API endpoint to create a backup"""
+    if request.method != 'POST':
+        return JsonResponse({'error': 'Only POST method is allowed'}, status=405)
+
+    try:
+        from .backup_utils import (
+            create_full_backup, create_custom_backup, create_database_backup,
+            create_media_backup, create_settings_backup
+        )
+
+        # Parse JSON data
+        data = json.loads(request.body)
+        backup_type = data.get('backup_type', 'full')
+        backup_format = data.get('backup_format', 'zip')
+        backup_name = data.get('backup_name', f"backup_{datetime.now().strftime('%Y_%m_%d')}")
+        encrypt = data.get('encrypt', False)
+        password = data.get('password', None) if encrypt else None
+
+        # Create the backup based on the type
+        if backup_type == 'full':
+            backup = create_full_backup(
+                user=request.user,
+                backup_name=backup_name,
+                encrypt=encrypt,
+                password=password
+            )
+        elif backup_type == 'database':
+            if backup_format == 'sql':
+                from .backup_utils import create_sql_backup
+                output_file = create_sql_backup()
+                # Create a backup record
+                from .models import Backup
+                import os
+                file_size_bytes = os.path.getsize(output_file)
+                from .backup_utils import format_size
+                backup = Backup.objects.create(
+                    name=backup_name,
+                    file_path=output_file,
+                    backup_type='database',
+                    format='sql',
+                    size=format_size(file_size_bytes),
+                    size_bytes=file_size_bytes,
+                    created_by=request.user,
+                    is_encrypted=False,
+                    description="Database backup (SQL format)"
+                )
+            else:
+                output_file = create_database_backup()
+                # Create a backup record
+                from .models import Backup
+                import os
+                file_size_bytes = os.path.getsize(output_file)
+                from .backup_utils import format_size
+                backup = Backup.objects.create(
+                    name=backup_name,
+                    file_path=output_file,
+                    backup_type='database',
+                    format='json',
+                    size=format_size(file_size_bytes),
+                    size_bytes=file_size_bytes,
+                    created_by=request.user,
+                    is_encrypted=False,
+                    description="Database backup (JSON format)"
+                )
+        elif backup_type == 'media':
+            output_file = create_media_backup()
+            # Create a backup record
+            from .models import Backup
+            import os
+            file_size_bytes = os.path.getsize(output_file)
+            from .backup_utils import format_size
+            backup = Backup.objects.create(
+                name=backup_name,
+                file_path=output_file,
+                backup_type='media',
+                format='zip',
+                size=format_size(file_size_bytes),
+                size_bytes=file_size_bytes,
+                created_by=request.user,
+                is_encrypted=False,
+                description="Media files backup"
+            )
+        elif backup_type == 'settings':
+            output_file = create_settings_backup()
+            # Create a backup record
+            from .models import Backup
+            import os
+            file_size_bytes = os.path.getsize(output_file)
+            from .backup_utils import format_size
+            backup = Backup.objects.create(
+                name=backup_name,
+                file_path=output_file,
+                backup_type='settings',
+                format='json',
+                size=format_size(file_size_bytes),
+                size_bytes=file_size_bytes,
+                created_by=request.user,
+                is_encrypted=False,
+                description="System settings backup"
+            )
+        elif backup_type == 'custom':
+            # Get the components to include
+            components = []
+            if data.get('include_students', True):
+                components.append('students')
+            if data.get('include_staff', True):
+                components.append('staff')
+            if data.get('include_classes', True):
+                components.append('classes')
+            if data.get('include_results', True):
+                components.append('results')
+            if data.get('include_attendance', True):
+                components.append('attendance')
+            if data.get('include_fees', True):
+                components.append('fees')
+            if data.get('include_settings', True):
+                components.append('settings')
+            if data.get('include_database', True):
+                components.append('database')
+            if data.get('include_media', True):
+                components.append('media')
+
+            backup = create_custom_backup(
+                components=components,
+                user=request.user,
+                backup_name=backup_name,
+                encrypt=encrypt,
+                password=password
+            )
+        else:
+            return JsonResponse({'error': f'Invalid backup type: {backup_type}'}, status=400)
+
+        return JsonResponse({
+            'success': True,
+            'message': 'Backup created successfully',
+            'backup': {
+                'id': backup.id,
+                'name': backup.name,
+                'type': backup.get_backup_type_display(),
+                'format': backup.format,
+                'size': backup.size,
+                'created_at': backup.created_at.strftime('%Y-%m-%d %H:%M:%S'),
+                'created_by': backup.created_by.username if backup.created_by else 'system',
+                'is_encrypted': backup.is_encrypted
+            }
+        })
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        return JsonResponse({'error': str(e)}, status=500)
+
+
+@login_required
+def restore_backup_ajax(request, backup_id):
+    """API endpoint to restore from a backup"""
+    if request.method != 'POST':
+        return JsonResponse({'error': 'Only POST method is allowed'}, status=405)
+
+    try:
+        from .backup_utils import restore_from_backup
+        from .models import Backup
+
+        # Parse JSON data
+        data = json.loads(request.body)
+        restore_type = data.get('restore_type', 'full')
+        backup_before_restore = data.get('backup_before_restore', True)
+        password = data.get('password', None)
+
+        # Get the backup
+        try:
+            backup = Backup.objects.get(id=backup_id)
+        except Backup.DoesNotExist:
+            return JsonResponse({'error': 'Backup not found'}, status=404)
+
+        # Check if the backup is encrypted and a password is provided
+        if backup.is_encrypted and not password:
+            return JsonResponse({'error': 'Password required for encrypted backup'}, status=400)
+
+        # Determine components to restore
+        components = None
+        if restore_type == 'selective':
+            components = []
+            if data.get('restore_students', False):
+                components.append('students')
+            if data.get('restore_staff', False):
+                components.append('staff')
+            if data.get('restore_classes', False):
+                components.append('classes')
+            if data.get('restore_results', False):
+                components.append('results')
+            if data.get('restore_attendance', False):
+                components.append('attendance')
+            if data.get('restore_fees', False):
+                components.append('fees')
+            if data.get('restore_settings', False):
+                components.append('settings')
+            if data.get('restore_database', False):
+                components.append('database')
+            if data.get('restore_media', False):
+                components.append('media')
+
+        # Restore from the backup
+        restore_from_backup(
+            backup_id=backup_id,
+            components=components,
+            user=request.user,
+            backup_before_restore=backup_before_restore
+        )
+
+        return JsonResponse({
+            'success': True,
+            'message': 'Restore completed successfully'
+        })
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        return JsonResponse({'error': str(e)}, status=500)
+
+
+@login_required
+def delete_backup_ajax(request, backup_id):
+    """API endpoint to delete a backup"""
+    if request.method != 'POST':
+        return JsonResponse({'error': 'Only POST method is allowed'}, status=405)
+
+    try:
+        from .models import Backup
+
+        # Get the backup
+        try:
+            backup = Backup.objects.get(id=backup_id)
+        except Backup.DoesNotExist:
+            return JsonResponse({'error': 'Backup not found'}, status=404)
+
+        # Delete the backup (this will also delete the file)
+        backup.delete()
+
+        return JsonResponse({
+            'success': True,
+            'message': 'Backup deleted successfully'
+        })
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
+
+@login_required
+def download_backup_ajax(request, backup_id):
+    """API endpoint to download a backup"""
+    from .models import Backup
+    from django.http import FileResponse
+    import os
+
+    # Get the backup
+    try:
+        backup = Backup.objects.get(id=backup_id)
+    except Backup.DoesNotExist:
+        return JsonResponse({'error': 'Backup not found'}, status=404)
+
+    # Check if the file exists
+    if not os.path.exists(backup.file_path):
+        return JsonResponse({'error': 'Backup file not found'}, status=404)
+
+    # Determine the content type based on the format
+    content_types = {
+        'zip': 'application/zip',
+        'sql': 'application/sql',
+        'json': 'application/json',
+    }
+    content_type = content_types.get(backup.format, 'application/octet-stream')
+
+    # Return the file as a response
+    response = FileResponse(
+        open(backup.file_path, 'rb'),
+        content_type=content_type,
+        as_attachment=True,
+        filename=os.path.basename(backup.file_path)
+    )
+
+    return response
+
+
+@login_required
+def save_automated_backup_settings(request):
+    """API endpoint to save automated backup settings"""
+    if request.method != 'POST':
+        return JsonResponse({'error': 'Only POST method is allowed'}, status=405)
+
+    try:
+        from .models import AutomatedBackupSettings
+
+        # Parse JSON data
+        data = json.loads(request.body)
+
+        # Get or create the settings
+        settings, created = AutomatedBackupSettings.objects.get_or_create(pk=1)
+
+        # Update the settings
+        settings.enabled = data.get('enabled', False)
+        settings.frequency = data.get('frequency', 'weekly')
+
+        # Parse the time
+        backup_time = data.get('backup_time', '02:00')
+        from datetime import datetime
+        time_obj = datetime.strptime(backup_time, '%H:%M').time()
+        settings.backup_time = time_obj
+
+        settings.day_of_week = int(data.get('day_of_week', 0))
+        settings.backup_type = data.get('backup_type', 'full')
+        settings.retention_policy = data.get('retention_policy', '10')
+        settings.notify_on_backup = data.get('notify_on_backup', True)
+
+        # Calculate the next backup time
+        settings.calculate_next_backup()
+        settings.save()
+
+        return JsonResponse({
+            'success': True,
+            'message': 'Automated backup settings saved successfully',
+            'next_backup': settings.next_backup.strftime('%Y-%m-%d %H:%M:%S') if settings.next_backup else None
+        })
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
         return JsonResponse({'error': str(e)}, status=500)
