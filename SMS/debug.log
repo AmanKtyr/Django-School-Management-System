@@ -32879,3 +32879,274 @@ INFO 2025-04-24 11:01:03,941 "GET /static/dist/css/style.css?v=1745472663938 HTT
 INFO 2025-04-24 11:01:11,532 "GET /system-settings/backup-restore/ HTTP/1.1" 200 67527
 INFO 2025-04-24 11:01:11,876 "GET /static/dist/css/style.css?v=1745472671868 HTTP/1.1" 200 55691
 INFO 2025-04-24 11:01:14,163 "GET /static/dist/css/style.css?v=1745472674152 HTTP/1.1" 200 55691
+INFO 2025-04-24 11:06:42,993 "GET / HTTP/1.1" 200 59337
+INFO 2025-04-24 11:06:43,269 "GET /static/dist/css/style.css?v=1745473003264 HTTP/1.1" 200 55691
+INFO 2025-04-24 11:06:54,474 "GET / HTTP/1.1" 200 59337
+INFO 2025-04-24 11:06:54,883 "GET /static/dist/css/style.css?v=1745473014870 HTTP/1.1" 200 55691
+INFO 2025-04-24 11:07:33,581 "GET / HTTP/1.1" 200 59337
+INFO 2025-04-24 11:07:33,807 "GET /static/dist/css/style.css?v=1745473053805 HTTP/1.1" 200 55691
+INFO 2025-04-24 11:07:38,166 "GET / HTTP/1.1" 200 59337
+INFO 2025-04-24 11:07:38,518 "GET /static/dist/css/style.css?v=1745473058510 HTTP/1.1" 200 55691
+INFO 2025-04-24 11:07:57,864 "GET /class/list/ HTTP/1.1" 200 95372
+INFO 2025-04-24 11:07:58,039 "GET /static/dist/css/style.css?v=1745473078035 HTTP/1.1" 200 55691
+INFO 2025-04-24 11:07:58,161 "GET /class/5/data/ HTTP/1.1" 200 88
+INFO 2025-04-24 11:07:58,188 "GET /class/6/data/ HTTP/1.1" 200 64
+INFO 2025-04-24 11:07:58,229 "GET /class/4/data/ HTTP/1.1" 200 55
+INFO 2025-04-24 11:07:58,258 "GET /class/7/data/ HTTP/1.1" 200 60
+INFO 2025-04-24 11:07:58,292 "GET /class/3/data/ HTTP/1.1" 200 55
+INFO 2025-04-24 11:07:58,320 "GET /class/8/data/ HTTP/1.1" 200 55
+INFO 2025-04-24 11:07:58,367 "GET /api/class/7/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-24 11:07:58,399 "GET /api/class/4/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-24 11:07:58,413 "GET /api/class/6/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-24 11:07:58,434 "GET /api/class/8/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-24 11:07:58,449 "GET /api/class/5/teacher/ HTTP/1.1" 200 43
+INFO 2025-04-24 11:07:58,466 "GET /api/class/3/teacher/ HTTP/1.1" 200 42
+INFO 2025-04-24 11:08:04,340 "GET /api/class/5/sections/ HTTP/1.1" 200 77
+INFO 2025-04-24 11:08:04,366 "GET /class/5/data/ HTTP/1.1" 200 88
+INFO 2025-04-24 11:08:32,157 "GET /api/class/5/sections/ HTTP/1.1" 200 77
+INFO 2025-04-24 11:08:43,202 "GET /api/class/6/sections/ HTTP/1.1" 200 36
+INFO 2025-04-24 11:08:50,003 "GET /api/class/5/sections/ HTTP/1.1" 200 77
+INFO 2025-04-24 11:09:02,164 "GET /fees/ HTTP/1.1" 200 85636
+INFO 2025-04-24 11:09:02,351 "GET /static/dist/css/style.css?v=1745473142344 HTTP/1.1" 200 55691
+INFO 2025-04-24 11:09:08,965 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 42877
+INFO 2025-04-24 11:09:09,143 "GET /static/dist/css/style.css?v=1745473149137 HTTP/1.1" 200 55691
+INFO 2025-04-24 11:11:53,462 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 42877
+INFO 2025-04-24 11:11:53,663 "GET /static/dist/css/style.css?v=1745473313653 HTTP/1.1" 200 55691
+INFO 2025-04-24 11:55:29,498 "GET /attendance/holidays/ HTTP/1.1" 200 55855
+INFO 2025-04-24 11:55:29,875 "GET /static/dist/css/style.css?v=1745475929866 HTTP/1.1" 200 55691
+INFO 2025-04-24 11:55:31,199 "GET /attendance/attendance_list/ HTTP/1.1" 200 58594
+INFO 2025-04-24 11:55:31,419 "GET /static/dist/css/style.css?v=1745475931417 HTTP/1.1" 200 55691
+INFO 2025-04-24 11:55:34,144 "GET / HTTP/1.1" 200 59337
+INFO 2025-04-24 11:55:34,808 "GET /static/dist/css/style.css?v=1745475934805 HTTP/1.1" 200 55691
+INFO 2025-04-24 11:59:02,671 D:\Sipher Web\Django School Management System\SMS\apps\attendance\models.py changed, reloading.
+INFO 2025-04-24 11:59:04,171 Watching for file changes with StatReloader
+INFO 2025-04-24 11:59:37,194 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-04-24 11:59:38,749 Watching for file changes with StatReloader
+INFO 2025-04-24 12:00:29,730 D:\Sipher Web\Django School Management System\SMS\apps\attendance\views.py changed, reloading.
+INFO 2025-04-24 12:00:30,767 Watching for file changes with StatReloader
+INFO 2025-04-24 12:00:46,353 D:\Sipher Web\Django School Management System\SMS\apps\attendance\urls.py changed, reloading.
+INFO 2025-04-24 12:00:47,753 Watching for file changes with StatReloader
+INFO 2025-04-24 12:01:45,490 "GET / HTTP/1.1" 200 59364
+INFO 2025-04-24 12:01:46,067 "GET /static/dist/css/style.css?v=1745476305970 HTTP/1.1" 200 55691
+ERROR 2025-04-24 12:01:49,359 Internal Server Error: /attendance/staff_attendance/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: attendance_staffattendance
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\attendance\views.py", line 543, in staff_attendance_list
+    attendance_dict = {record.staff.id: record for record in attendance_records}
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: attendance_staffattendance
+ERROR 2025-04-24 12:01:49,369 "GET /attendance/staff_attendance/ HTTP/1.1" 500 153774
+ERROR 2025-04-24 12:04:30,224 Internal Server Error: /attendance/staff_attendance/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: attendance_staffattendance
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\attendance\views.py", line 543, in staff_attendance_list
+    attendance_dict = {record.staff.id: record for record in attendance_records}
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: attendance_staffattendance
+ERROR 2025-04-24 12:04:30,228 "GET /attendance/staff_attendance/ HTTP/1.1" 500 153911
+ERROR 2025-04-24 12:06:18,448 Internal Server Error: /attendance/staff_attendance/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: attendance_staffattendance
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\sms\apps\attendance\views.py", line 543, in staff_attendance_list
+    attendance_dict = {record.staff.id: record for record in attendance_records}
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: attendance_staffattendance
+ERROR 2025-04-24 12:06:18,450 "GET /attendance/staff_attendance/ HTTP/1.1" 500 153911
+INFO 2025-04-24 12:07:25,947 "GET /attendance/staff_attendance/ HTTP/1.1" 200 33200
+INFO 2025-04-24 12:07:26,277 "GET /static/dist/css/style.css?v=1745476646270 HTTP/1.1" 200 55691
+INFO 2025-04-24 12:12:10,816 "GET /attendance/staff_attendance/ HTTP/1.1" 200 33200
+INFO 2025-04-24 12:12:11,204 "GET /static/dist/css/style.css?v=1745476931195 HTTP/1.1" 200 55691
+INFO 2025-04-24 12:12:15,959 "GET /non-teaching-staffs/list/ HTTP/1.1" 200 42904
+INFO 2025-04-24 12:12:16,295 "GET /static/dist/css/style.css?v=1745476936288 HTTP/1.1" 200 55691
+INFO 2025-04-24 12:12:21,057 "GET /attendance/staff_attendance/ HTTP/1.1" 200 33200
+INFO 2025-04-24 12:12:21,235 "GET /static/dist/css/style.css?v=1745476941228 HTTP/1.1" 200 55691
+INFO 2025-04-24 12:12:35,710 D:\Sipher Web\Django School Management System\SMS\apps\attendance\urls.py changed, reloading.
+INFO 2025-04-24 12:12:40,744 Watching for file changes with StatReloader
+INFO 2025-04-24 12:12:44,015 "GET / HTTP/1.1" 200 59337
+INFO 2025-04-24 12:12:44,788 "GET /static/dist/css/style.css?v=1745476964732 HTTP/1.1" 200 55691
+INFO 2025-04-24 12:12:56,776 "GET / HTTP/1.1" 200 59337
+INFO 2025-04-24 12:12:57,047 "GET /static/dist/css/style.css?v=1745476977039 HTTP/1.1" 200 55691
+INFO 2025-04-24 12:13:01,765 "GET /attendance/holidays/ HTTP/1.1" 200 55855
+INFO 2025-04-24 12:13:01,965 "GET /static/dist/css/style.css?v=1745476981952 HTTP/1.1" 200 55691
+INFO 2025-04-24 12:24:27,703 "GET / HTTP/1.1" 302 0
+INFO 2025-04-24 12:24:27,720 "GET /accounts/login/?next=/ HTTP/1.1" 200 5723
+INFO 2025-04-24 12:24:27,834 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-04-24 12:24:27,849 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-04-24 12:24:27,865 "GET /static/dist/css/login-page.css HTTP/1.1" 200 9070
+INFO 2025-04-24 12:24:27,867 "GET /media/college_logos/college_lgoooo_wLVF410.jpg HTTP/1.1" 200 31795
+INFO 2025-04-24 12:24:27,952 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-04-24 12:24:28,023 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-04-24 12:24:28,024 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2025-04-24 12:24:28,322 "GET /static/dist/img/bg.jpg HTTP/1.1" 200 3093083
+INFO 2025-04-24 12:29:22,541 "GET / HTTP/1.1" 302 0
+INFO 2025-04-24 12:29:22,562 "GET /accounts/login/?next=/ HTTP/1.1" 200 5723
+INFO 2025-04-24 12:33:14,813 "GET /static/dist/css/style.css?v=1745478194782 HTTP/1.1" 200 55691
+INFO 2025-04-24 14:44:26,098 "GET /attendance/holidays/ HTTP/1.1" 200 55855
+INFO 2025-04-24 14:44:26,259 "GET /static/dist/js/custom.js HTTP/1.1" 304 0
+INFO 2025-04-24 14:44:26,486 "GET /static/dist/css/style.css?v=1745486066464 HTTP/1.1" 200 55691
+INFO 2025-04-24 14:45:00,608 "GET /student/create/ HTTP/1.1" 200 71791
+INFO 2025-04-24 14:45:00,962 "GET /static/dist/css/style.css?v=1745486100934 HTTP/1.1" 200 55691
+INFO 2025-04-24 14:45:43,100 "GET /student/api/class/8/sections/ HTTP/1.1" 200 16
+INFO 2025-04-24 14:45:43,123 "GET /student/api/class/8/sections/ HTTP/1.1" 200 16
+INFO 2025-04-24 14:47:01,541 "GET /student/create/ HTTP/1.1" 200 71756
+INFO 2025-04-24 14:47:01,943 "GET /static/dist/css/style.css?v=1745486221935 HTTP/1.1" 200 55691
+INFO 2025-04-24 14:47:08,843 "GET /student/create/ HTTP/1.1" 200 71745
+INFO 2025-04-24 14:47:09,281 "GET /static/dist/css/style.css?v=1745486229272 HTTP/1.1" 200 55691
+INFO 2025-04-24 14:51:30,448 "GET /student/create/ HTTP/1.1" 200 71863
+INFO 2025-04-24 14:51:30,533 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-24 14:51:30,543 "GET /static/dist/css/sidebar-fix.css HTTP/1.1" 304 0
+INFO 2025-04-24 14:51:30,921 "GET /static/dist/css/style.css?v=1745486490909 HTTP/1.1" 200 55691
+INFO 2025-04-24 14:51:46,202 "GET /student/create/ HTTP/1.1" 200 71863
+INFO 2025-04-24 14:51:46,507 "GET /static/dist/css/style.css?v=1745486506501 HTTP/1.1" 200 55691
+INFO 2025-04-24 14:51:46,513 "GET /static/dist/js/sidebar-fix.js HTTP/1.1" 304 0
+INFO 2025-04-24 17:17:19,516 "GET /static/dist/css/style.css?v=1745495239463 HTTP/1.1" 200 55691
+INFO 2025-04-24 17:18:14,404 "GET / HTTP/1.1" 200 59337
+INFO 2025-04-24 17:18:14,860 "GET /static/dist/css/style.css?v=1745495294851 HTTP/1.1" 200 55691
+INFO 2025-04-24 17:18:26,216 "GET /system-settings/ HTTP/1.1" 200 44561
+INFO 2025-04-24 17:18:26,544 "GET /static/dist/css/style.css?v=1745495306528 HTTP/1.1" 200 55691
+INFO 2025-04-24 17:18:32,547 "GET /system-settings/backup-restore/ HTTP/1.1" 200 67527
+INFO 2025-04-24 17:18:32,736 "GET /static/dist/css/style.css?v=1745495312727 HTTP/1.1" 200 55691

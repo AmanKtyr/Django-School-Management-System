@@ -458,7 +458,7 @@
               <!-- Section Field -->
               <div class="col-md-4 mb-3">
                 <label for="{{ form.section.id_for_label }}" class="form-label">
-                  <i class="fas fa-puzzle-piece me-1"></i> {{ form.section.label }} <span class="text-danger">*</span>
+                  <i class="fas fa-puzzle-piece me-1"></i> {{ form.section.label }}
                 </label>
                 {{ form.section|add_class:"form-select" }}
                 <div class="invalid-feedback" id="section-error"></div>
@@ -515,9 +515,10 @@
               <!-- Address Field -->
               <div class="col-md-12 mb-3">
                 <label for="{{ form.address.id_for_label }}" class="form-label">
-                  <i class="fas fa-map-marker-alt me-1"></i> {{ form.address.label }}
+                  <i class="fas fa-map-marker-alt me-1"></i> {{ form.address.label }} <span class="text-danger">*</span>
                 </label>
                 {{ form.address|add_class:"form-control" }}
+                <div class="invalid-feedback" id="address-error"></div>
                 {% if form.address.errors %}
                   <div class="text-danger small">{{ form.address.errors }}</div>
                 {% endif %}
@@ -759,7 +760,7 @@
 
     // Required fields
     const requiredFields = [
-      'fullname', 'current_class', 'section', 'Father_name', 'Father_mobile_number'
+      'fullname', 'current_class', 'address', 'Father_name', 'Father_mobile_number'
     ];
 
     // Clear all previous validations
@@ -1098,7 +1099,7 @@
       if (!fieldName) return;
 
       // Check if it's a required field
-      const isRequired = ['fullname', 'current_class', 'section', 'Father_name', 'Father_mobile_number'].includes(fieldName);
+      const isRequired = ['fullname', 'current_class', 'address', 'Father_name', 'Father_mobile_number'].includes(fieldName);
 
       // Get error div
       const errorDiv = document.getElementById(`${fieldName}-error`) ||
