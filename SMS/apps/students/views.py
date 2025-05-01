@@ -118,6 +118,70 @@ class StudentDeleteView(LoginRequiredMixin, DeleteView):
     model = Student
     success_url = reverse_lazy("student-list")
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        student = self.get_object()
+
+        # Import related models
+        from apps.fees.models import FeePayment, PendingFee
+        from apps.exams.models import AdmitCard, ExamAttendance, Mark
+        from apps.attendance.models import Attendance
+
+        # Count related records
+        context['related_data'] = {
+            'fee_payments': FeePayment.objects.filter(student=student).count(),
+            'pending_fees': PendingFee.objects.filter(student=student).count(),
+            'admit_cards': AdmitCard.objects.filter(student=student).count(),
+            'exam_attendance': ExamAttendance.objects.filter(student=student).count(),
+            'marks': Mark.objects.filter(student=student).count(),
+            'attendance': Attendance.objects.filter(student=student).count(),
+            'documents': StudentDocument.objects.filter(student=student).count(),
+        }
+
+        return context
+
+    def post(self, request, *args, **kwargs):
+        student = self.get_object()
+        student_id = student.id
+        student_name = student.fullname
+
+        try:
+            # Use direct database connection to force delete
+            from django.db import connection
+            cursor = connection.cursor()
+
+            # Disable foreign key checks temporarily (for SQLite)
+            cursor.execute("PRAGMA foreign_keys = OFF;")
+
+            # Delete related records from all tables that reference students
+            # 1. Delete fee-related records
+            cursor.execute("DELETE FROM fees_feepayment WHERE student_id = ?", [student_id])
+            cursor.execute("DELETE FROM fees_pendingfee WHERE student_id = ?", [student_id])
+
+            # 2. Delete exam-related records
+            cursor.execute("DELETE FROM exams_mark WHERE student_id = ?", [student_id])
+            cursor.execute("DELETE FROM exams_examattendance WHERE student_id = ?", [student_id])
+            cursor.execute("DELETE FROM exams_admitcard WHERE student_id = ?", [student_id])
+
+            # 3. Delete attendance records
+            cursor.execute("DELETE FROM attendance_attendance WHERE student_id = ?", [student_id])
+
+            # 4. Delete student documents
+            cursor.execute("DELETE FROM students_studentdocument WHERE student_id = ?", [student_id])
+
+            # 5. Finally delete the student
+            cursor.execute("DELETE FROM students_student WHERE id = ?", [student_id])
+
+            # Re-enable foreign key checks
+            cursor.execute("PRAGMA foreign_keys = ON;")
+
+            messages.success(request, f"Student '{student_name}' and all related records have been successfully deleted.")
+            return redirect(self.success_url)
+
+        except Exception as e:
+            messages.error(request, f"Error deleting student: {str(e)}")
+            return redirect('student-detail', pk=student_id)
+
 
 class StudentBulkUploadView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     model = StudentBulkUpload

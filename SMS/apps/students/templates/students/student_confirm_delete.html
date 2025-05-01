@@ -75,6 +75,41 @@
         <div class="alert alert-warning mt-3" role="alert">
             <p>Are you sure you want to delete <strong>{{ object }}</strong>?</p>
             <p class="text-danger"><strong>All associated data will be permanently removed!</strong></p>
+
+            {% if related_data %}
+            <div class="mt-3">
+                <p><strong>The following related data will also be deleted:</strong></p>
+                <ul class="text-start">
+                    {% if related_data.fee_payments > 0 %}
+                    <li>{{ related_data.fee_payments }} Fee Payment record(s)</li>
+                    {% endif %}
+
+                    {% if related_data.pending_fees > 0 %}
+                    <li>{{ related_data.pending_fees }} Pending Fee record(s)</li>
+                    {% endif %}
+
+                    {% if related_data.admit_cards > 0 %}
+                    <li>{{ related_data.admit_cards }} Admit Card(s)</li>
+                    {% endif %}
+
+                    {% if related_data.exam_attendance > 0 %}
+                    <li>{{ related_data.exam_attendance }} Exam Attendance record(s)</li>
+                    {% endif %}
+
+                    {% if related_data.marks > 0 %}
+                    <li>{{ related_data.marks }} Mark record(s)</li>
+                    {% endif %}
+
+                    {% if related_data.attendance > 0 %}
+                    <li>{{ related_data.attendance }} Attendance record(s)</li>
+                    {% endif %}
+
+                    {% if related_data.documents > 0 %}
+                    <li>{{ related_data.documents }} Document record(s)</li>
+                    {% endif %}
+                </ul>
+            </div>
+            {% endif %}
         </div>
 
         <form action="" method="POST">
