@@ -705,11 +705,11 @@
             <div class="udise-field-group">
               <span class="field-validation-indicator field-required">Required</span>
               <label class="udise-field-label">
-                <span class="udise-field-number">4.1.1</span> Student's Name
+                <span class="udise-field-number">1</span> Student's Name
                 <span class="udise-rule-reference">(as Per School record/School Admission Register)</span>
               </label>
               <div class="udise-field-sublabel">
-                <span class="text-danger">*</span> <span class="udise-rule-reference">[Refer Rule: 4.1.1]</span>
+                <span class="text-danger">*</span> <span class="udise-rule-reference"></span>
               </div>
               {{ form.fullname|add_class:"form-control"|default_if_none:""|attr:"value:Rahul Sharma"|attr:"required" }}
               <div class="invalid-feedback">Student name is required</div>
@@ -721,11 +721,11 @@
             <div class="udise-field-group">
               <span class="field-validation-indicator field-required">Required</span>
               <label class="udise-field-label">
-                <span class="udise-field-number">4.1.2</span> Gender
+                <span class="udise-field-number">2</span> Gender
                 <span class="udise-rule-reference">(as Per School record/School Admission Register)</span>
               </label>
               <div class="udise-field-sublabel">
-                <span class="text-danger">*</span> <span class="udise-rule-reference">[Refer Rule: 4.1.2]</span>
+                <span class="text-danger">*</span> <span class="udise-rule-reference"></span>
               </div>
               <select name="gender" class="form-select" required>
                 <option value="">Select</option>
@@ -742,11 +742,11 @@
             <div class="udise-field-group">
               <span class="field-validation-indicator field-required">Required</span>
               <label class="udise-field-label">
-                <span class="udise-field-number">4.1.3</span> Date of Birth
+                <span class="udise-field-number">3</span> Date of Birth
                 <span class="udise-rule-reference">(as Per School record/School Admission Register)</span>
               </label>
               <div class="udise-field-sublabel">
-                <span class="text-danger">*</span> <span class="udise-rule-reference">[Refer Rule: 4.1.3]</span>
+                <span class="text-danger">*</span> <span class="udise-rule-reference"></span>
                 <a href="#" class="text-primary" data-bs-toggle="tooltip" title="Click to view age matrix for different classes">Age Matrix</a>
               </div>
               <div class="date-input-group">
@@ -762,10 +762,10 @@
             <div class="udise-field-group">
               <span class="field-validation-indicator field-optional">Optional</span>
               <label class="udise-field-label">
-                <span class="udise-field-number">4.1.4</span> Mother's Name
+                <span class="udise-field-number">4</span> Mother's Name
               </label>
               <div class="udise-field-sublabel">
-                <span class="udise-rule-reference">[Refer Rule: 4.1.4]</span>
+                <span class="udise-rule-reference"></span>
               </div>
               <input type="text" name="Mother_name" class="form-control" value="Sunita Sharma">
               <div class="invalid-feedback"></div>
@@ -776,10 +776,10 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.1.5</span> Father's Name
+                <span class="udise-field-number">5</span> Father's Name
               </label>
               <div class="udise-field-sublabel">
-                <span class="udise-rule-reference">[Refer Rule: 4.1.5]</span>
+                <span class="udise-rule-reference"></span>
               </div>
               <input type="text" name="Father_name" class="form-control" value="Rajesh Sharma">
               <div class="invalid-feedback"></div>
@@ -790,12 +790,26 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.1.6</span> Guardian's Name
+                <span class="udise-field-number">6</span> Guardian's Name
               </label>
               <div class="udise-field-sublabel">
-                <span class="udise-rule-reference">[Refer Rule: 4.1.6]</span>
+                <span class="udise-rule-reference"></span>
               </div>
               <input type="text" class="form-control" name="guardian_name" value="Rajesh Sharma">
+              <div class="invalid-feedback"></div>
+            </div>
+          </div>
+
+          <!-- Permanent Education Number -->
+          <div class="col-md-4 mb-4">
+            <div class="udise-field-group">
+              <label class="udise-field-label">
+                <span class="udise-field-number">7</span> Permanent Education Number
+              </label>
+              <div class="udise-field-sublabel">
+                <span class="udise-rule-reference"></span>
+              </div>
+              <input type="text" name="permanent_education_number" class="form-control" value="2018010737">
               <div class="invalid-feedback"></div>
             </div>
           </div>
@@ -804,10 +818,10 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.1.7</span> AADHAAR Number of Student
+                <span class="udise-field-number">8</span> AADHAAR Number of Student
               </label>
               <div class="udise-field-sublabel">
-                <span class="udise-rule-reference">[Refer Rule: 4.1.7]</span>
+                <span class="udise-rule-reference"></span>
               </div>
               <div class="d-flex align-items-center mb-2">
                 <div class="form-check me-3">
@@ -826,10 +840,10 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.1.8</span> Name of Student as per AADHAAR Card
+                <span class="udise-field-number">9</span> Name of Student as per AADHAAR Card
               </label>
               <div class="udise-field-sublabel">
-                <span class="udise-rule-reference">[Refer Rule: 4.1.8]</span>
+                <span class="udise-rule-reference"></span>
               </div>
               <input type="text" class="form-control" name="name_as_per_aadhaar" value="{{ form.fullname.value }}">
               <div class="invalid-feedback"></div>
@@ -841,10 +855,10 @@
             <div class="udise-field-group">
               <span class="field-validation-indicator field-required">Required</span>
               <label class="udise-field-label">
-                <span class="udise-field-number">4.1.9 (a)</span> Address
+                <span class="udise-field-number">10</span> Address
               </label>
               <div class="udise-field-sublabel">
-                <span class="text-danger">*</span> <span class="udise-rule-reference">[Refer Rule: 4.1.9 (a)]</span>
+                <span class="text-danger">*</span> <span class="udise-rule-reference"></span>
               </div>
               <textarea name="address" class="form-control" required>123, Green Park Colony, Sector 5, Lucknow</textarea>
               <div class="invalid-feedback">Address is required</div>
@@ -855,10 +869,10 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.1.9 (b)</span> Pin Code
+                <span class="udise-field-number">11</span> Pin Code
               </label>
               <div class="udise-field-sublabel">
-                <span class="udise-rule-reference">[Refer Rule: 4.1.9 (b)]</span>
+                <span class="udise-rule-reference"></span>
               </div>
               <input type="text" class="form-control" name="pin_code" maxlength="6" pattern="[0-9]{6}" value="226005" required>
               <div class="invalid-feedback">Pin code must be 6 digits</div>
@@ -870,11 +884,11 @@
             <div class="udise-field-group">
               <span class="field-validation-indicator field-required">Required</span>
               <label class="udise-field-label">
-                <span class="udise-field-number">4.1.10 (a)</span> Mobile Number
+                <span class="udise-field-number">12</span> Mobile Number
                 <span class="udise-rule-reference">(of Student/Parent/Guardian)</span>
               </label>
               <div class="udise-field-sublabel">
-                <span class="text-danger">*</span> <span class="udise-rule-reference">[Refer Rule: 4.1.10 (a)]</span>
+                <span class="text-danger">*</span> <span class="udise-rule-reference"></span>
               </div>
               <input type="text" name="mobile_number" class="form-control" value="9876543210" pattern="[0-9]{10,15}" required>
               <div class="invalid-feedback">Valid mobile number is required (10-15 digits)</div>
@@ -885,11 +899,11 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.1.10 (b)</span> Alternate Mobile Number
+                <span class="udise-field-number">13</span> Alternate Mobile Number
                 <span class="udise-rule-reference">(of Student/Parent/Guardian)</span>
               </label>
               <div class="udise-field-sublabel">
-                <span class="udise-rule-reference">[Refer Rule: 4.1.10 (b)]</span>
+                <span class="udise-rule-reference"></span>
               </div>
               <input type="text" class="form-control" name="alternate_mobile" pattern="[0-9]{10,15}" value="8765432109">
               <div class="invalid-feedback">Mobile number must be 10-15 digits</div>
@@ -900,7 +914,7 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.1.11</span> Contact email id
+                <span class="udise-field-number">14</span> Contact email id
                 <span class="udise-rule-reference">(of Student/Parent/Guardian)</span>
               </label>
               <div class="udise-field-sublabel">
@@ -915,13 +929,14 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.1.12</span> Mother Tongue of the Student
+                <span class="udise-field-number">15</span> Mother Tongue of the Student
               </label>
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
               </div>
               <select class="form-select" name="mother_tongue">
                 <option value="">Select</option>
+                <option value="58-HINDI-Bhojpuri" selected>58-HINDI-Bhojpuri</option>
                 <option value="1-HINDI">1-HINDI</option>
                 <option value="2-ENGLISH">2-ENGLISH</option>
                 <option value="3-BENGALI">3-BENGALI</option>
@@ -943,20 +958,22 @@
             </div>
           </div>
 
-          <!-- Special Category -->
+          <!-- Social Category -->
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.1.13</span> Special Category
+                <span class="udise-field-number">16</span> Social Category
               </label>
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
               </div>
-              <select name="category" class="form-select">
+              <select name="social_category" class="form-select">
                 <option value="">Select</option>
                 <option value="Gen" selected>General</option>
                 <option value="OBC">OBC</option>
-                <option value="SC/ST">SC/ST</option>
+                <option value="SC">SC</option>
+                <option value="ST">ST</option>
+                <option value="2-SC">2-SC</option>
                 <option value="Other">Other</option>
               </select>
               <div class="invalid-feedback"></div>
@@ -967,7 +984,7 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.1.14</span> Minority Group
+                <span class="udise-field-number">17</span> Minority Group
               </label>
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
@@ -991,7 +1008,7 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.1.15</span> Whether BPL beneficiary?
+                <span class="udise-field-number">18</span> Whether BPL beneficiary?
               </label>
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
@@ -1014,10 +1031,10 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.1.16 (a)</span> Whether Antyodaya Anna Yojana (AAY) beneficiary?
+                <span class="udise-field-number">19</span> Whether Antyodaya Anna Yojana (AAY) beneficiary?
               </label>
               <div class="udise-field-sublabel">
-                <span class="udise-rule-reference">[Refer Rule: 4.1.16 (a)]</span>
+                <span class="udise-rule-reference"></span>
               </div>
               <div class="udise-radio-group">
                 <div class="udise-radio-item">
@@ -1037,7 +1054,7 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.1.16</span> Whether belongs to EWS (Disadvantaged Group)?
+                <span class="udise-field-number">20</span> Whether belongs to EWS (Disadvantaged Group)?
               </label>
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
@@ -1060,7 +1077,7 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.1.17</span> Whether CWSN?
+                <span class="udise-field-number">21</span> Whether CWSN?
               </label>
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
@@ -1083,12 +1100,12 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.1.17 (a)</span> If Yes, (a) Type of impairment (code)
+                <span class="udise-field-number">22</span> If Yes, Type of impairment (code)
               </label>
               <div class="udise-field-sublabel">
-                <span class="udise-rule-reference">[Refer Rule: 4.1.17 (a)]</span>
+                <span class="udise-rule-reference"></span>
               </div>
-              <select class="form-select" name="impairment_type" disabled>
+              <select class="form-select" name="impairment_type">
                 <option value="">Select</option>
                 <option value="1">1-Blindness</option>
                 <option value="2">2-Low-vision</option>
@@ -1120,18 +1137,18 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.1.17 (b)</span> Whether having Disability Certificate?
+                <span class="udise-field-number">23</span> Whether having Disability Certificate?
               </label>
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
               </div>
               <div class="udise-radio-group">
                 <div class="udise-radio-item">
-                  <input type="radio" id="disability_cert_yes" name="disability_certificate" value="Yes" disabled>
+                  <input type="radio" id="disability_cert_yes" name="disability_certificate" value="Yes">
                   <label for="disability_cert_yes">Yes</label>
                 </div>
                 <div class="udise-radio-item">
-                  <input type="radio" id="disability_cert_no" name="disability_certificate" value="No" checked disabled>
+                  <input type="radio" id="disability_cert_no" name="disability_certificate" value="No" checked>
                   <label for="disability_cert_no">No</label>
                 </div>
               </div>
@@ -1143,12 +1160,12 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.1.17 (c)</span> Disability Percentage (in %)
+                <span class="udise-field-number">24</span> Disability Percentage (in %)
               </label>
               <div class="udise-field-sublabel">
-                <span class="udise-rule-reference">[Refer Rule: 4.1.17 (c)]</span>
+                <span class="udise-rule-reference"></span>
               </div>
-              <input type="number" class="form-control" name="disability_percentage" min="0" max="100" disabled>
+              <input type="number" class="form-control" name="disability_percentage" min="0" max="100">
               <div class="invalid-feedback"></div>
             </div>
           </div>
@@ -1157,7 +1174,7 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.1.18</span> Whether the Student is Indian National?
+                <span class="udise-field-number">25</span> Whether the Student is Indian National?
               </label>
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
@@ -1180,7 +1197,7 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.1.19</span> Is this Student identified as Out-of-School Child in current or previous years?
+                <span class="udise-field-number">26</span> Is this Student identified as Out-of-School Child in current or previous years?
               </label>
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
@@ -1199,6 +1216,53 @@
             </div>
           </div>
 
+          <!-- Blood Group -->
+          <div class="col-md-4 mb-4">
+            <div class="udise-field-group">
+              <label class="udise-field-label">
+                <span class="udise-field-number">27</span> Blood Group
+              </label>
+              <div class="udise-field-sublabel">
+                <span class="udise-rule-reference"></span>
+              </div>
+              <select class="form-select" name="blood_group">
+                <option value="">Select</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="Under Investigation">Under Investigation - Result will be updated soon</option>
+              </select>
+              <div class="invalid-feedback"></div>
+            </div>
+          </div>
+
+          <!-- When the Child is mainstreamed -->
+          <div class="col-md-4 mb-4">
+            <div class="udise-field-group">
+              <label class="udise-field-label">
+                <span class="udise-field-number">28</span> When the Child is mainstreamed
+              </label>
+              <div class="udise-field-sublabel">
+                <span class="udise-rule-reference"></span>
+              </div>
+              <select class="form-select" name="mainstreamed">
+                <option value="">Select</option>
+                <option value="NA" selected>NA</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+              </select>
+              <div class="invalid-feedback"></div>
+            </div>
+          </div>
+
           <!-- Mainstreamed -->
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
@@ -1206,7 +1270,7 @@
                 <span class="udise-field-number">4.1.19 (a)</span> When the student is mainstreamed?
               </label>
               <div class="udise-field-sublabel">
-                <span class="udise-rule-reference">[Refer Rule: 4.1.19 (a)]</span>
+                <span class="udise-rule-reference"></span>
               </div>
               <select class="form-select" name="mainstreamed" disabled>
                 <option value="">Select</option>
@@ -1264,11 +1328,11 @@
             <div class="udise-field-group">
               <span class="field-validation-indicator field-required">Required</span>
               <label class="udise-field-label">
-                <span class="udise-field-number">4.2.1</span> Registration/Admission Number
+                <span class="udise-field-number">1</span> Registration/Admission Number
                 <span class="udise-rule-reference">(Auto-generated)</span>
               </label>
               <div class="udise-field-sublabel">
-                <span class="text-danger">*</span> <span class="udise-rule-reference">[Refer Rule: 4.2.1]</span>
+                <span class="text-danger">*</span> <span class="udise-rule-reference"></span>
               </div>
               <div class="input-group">
                 <input type="text" class="form-control" name="registration_number" value="{{ form.registration_number.value|default:'Will be auto-generated' }}" readonly>
@@ -1283,10 +1347,10 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.2.2</span> Admission Date (DD/ MM/ YYYY) in Present School
+                <span class="udise-field-number">2</span> Admission Date (DD/ MM/ YYYY) in Present School
               </label>
               <div class="udise-field-sublabel">
-                <span class="udise-rule-reference">[Refer Rule: 4.2.2]</span>
+                <span class="udise-rule-reference"></span>
               </div>
               <div class="date-input-group">
                 <input type="date" name="date_of_admission" class="form-control" value="2023-04-01" required>
@@ -1301,10 +1365,10 @@
             <div class="udise-field-group">
               <span class="field-validation-indicator field-required">Required</span>
               <label class="udise-field-label">
-                <span class="udise-field-number">4.2.3</span> Current Class
+                <span class="udise-field-number">3</span> Current Class
               </label>
               <div class="udise-field-sublabel">
-                <span class="text-danger">*</span> <span class="udise-rule-reference">[Refer Rule: 4.2.3]</span>
+                <span class="text-danger">*</span> <span class="udise-rule-reference"></span>
               </div>
               {{ form.current_class|add_class:"form-select"|attr:"required"|attr:"onchange:loadSections(this.value)" }}
               <div class="invalid-feedback">Please select a class</div>
@@ -1315,10 +1379,10 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.2.3 (a)</span> Section
+                <span class="udise-field-number">4</span> Section
               </label>
               <div class="udise-field-sublabel">
-                <span class="udise-rule-reference">[Refer Rule: 4.2.3 (a)]</span>
+                <span class="udise-rule-reference"></span>
               </div>
               {{ form.section|add_class:"form-select" }}
               <div class="invalid-feedback">Please select a section</div>
@@ -1329,12 +1393,12 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.2.3 (b)</span> Class/Section Roll Number
+                <span class="udise-field-number">5</span> Class/Section Roll No
               </label>
               <div class="udise-field-sublabel">
-                <span class="udise-rule-reference">[Refer Rule: 4.2.3 (b)]</span>
+                <span class="udise-rule-reference"></span>
               </div>
-              <input type="text" class="form-control" name="roll_number" value="15">
+              <input type="text" class="form-control" name="roll_number" value="1">
               <div class="invalid-feedback"></div>
             </div>
           </div>
@@ -1343,7 +1407,7 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.2.3 (a)</span> Medium of Instruction
+                <span class="udise-field-number">6</span> Medium of Instruction
               </label>
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
@@ -1389,7 +1453,7 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.2.3 (b)</span> Languages Group Studied by the Student
+                <span class="udise-field-number">7</span> Languages Group Studied by the Student
               </label>
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
@@ -1397,6 +1461,7 @@
               <select class="form-select" name="languages_studied">
                 <option value="">Select</option>
                 <option value="Hindi, English" selected>Hindi, English</option>
+                <option value="Hindi_English">Hindi_English</option>
                 <option value="English, Hindi, Sanskrit">English, Hindi, Sanskrit</option>
                 <option value="English, Hindi, French">English, Hindi, French</option>
                 <option value="English, Hindi, Urdu">English, Hindi, Urdu</option>
@@ -1417,10 +1482,10 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.2.4 (a)</span> Academic Stream opted by student
+                <span class="udise-field-number">8</span> Academic Stream opted by student
               </label>
               <div class="udise-field-sublabel">
-                <span class="udise-rule-reference">[Refer Rule: 4.2.4 (a)]</span>
+                <span class="udise-rule-reference"></span>
                 <span class="text-muted">(For Higher Secondary Classes only)</span>
               </div>
               <select class="form-select" name="academic_stream">
@@ -1440,10 +1505,10 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.2.4 (b)</span> Subjects Group Studied by the Student
+                <span class="udise-field-number">9</span> Subjects Group Studied by the Student
               </label>
               <div class="udise-field-sublabel">
-                <span class="udise-rule-reference">[Refer Rule: 4.2.4 (b)]</span>
+                <span class="udise-rule-reference"></span>
                 <span class="text-muted">(For Higher Secondary Classes only. As per selection of 4.2.4 (a))</span>
               </div>
               <select class="form-select" name="subjects_group">
@@ -1462,10 +1527,10 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.2.5 (a)</span> Status of student in Previous Academic Year of Schooling
+                <span class="udise-field-number">10</span> Status of student in Previous Academic Year of Schooling
               </label>
               <div class="udise-field-sublabel">
-                <span class="udise-rule-reference">[Refer Rule: 4.2.5 (a)]</span>
+                <span class="udise-rule-reference"></span>
               </div>
               <select class="form-select" name="previous_status">
                 <option value="">Select</option>
@@ -1483,10 +1548,10 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.2.5 (b)</span> Grade/Class Studied in the Previous/Last Academic Year
+                <span class="udise-field-number">11</span> Grade/Class Studied in the Previous/Last Academic Year
               </label>
               <div class="udise-field-sublabel">
-                <span class="udise-rule-reference">[Refer Rule: 4.2.5 (b)]</span>
+                <span class="udise-rule-reference"></span>
               </div>
               <select class="form-select" name="previous_class">
                 <option value="">Select</option>
@@ -1513,7 +1578,7 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.2.6</span> Admitted / Enrolled Under (Only for Pvt. Unaided)
+                <span class="udise-field-number">12</span> Admitted / Enrolled Under (Only for Pvt. Unaided)
               </label>
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
@@ -1528,7 +1593,7 @@
                 <option value="6">6-RTE 12(1)(c) HIV Affected/Infected</option>
                 <option value="7">7-RTE 12(1)(c) CwSN</option>
                 <option value="8">8-Non-RTE</option>
-                <option value="9">9-Not Applicable</option>
+                <option value="9" selected>9-Not Applicable</option>
               </select>
               <div class="invalid-feedback"></div>
             </div>
@@ -1538,10 +1603,10 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.2.7 (a)</span> In the previous class studied – Result of the examination
+                <span class="udise-field-number">13</span> In the previous class studied – Result of the examination
               </label>
               <div class="udise-field-sublabel">
-                <span class="udise-rule-reference">[Refer Rule: 4.2.7 (a)]</span>
+                <span class="udise-rule-reference"></span>
               </div>
               <select class="form-select" name="previous_result">
                 <option value="">Select</option>
@@ -1561,10 +1626,10 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.2.7 (b)</span> In the previous class studied – Marks obtained (in Percentage)
+                <span class="udise-field-number">14</span> In the previous class studied – Marks obtained (in Percentage)
               </label>
               <div class="udise-field-sublabel">
-                <span class="udise-rule-reference">[Refer Rule: 4.2.7 (b)]</span>
+                <span class="udise-rule-reference"></span>
               </div>
               <input type="number" class="form-control" name="previous_marks" min="0" max="100" value="77">
               <div class="invalid-feedback"></div>
@@ -1575,10 +1640,10 @@
           <div class="col-md-4 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.2.8</span> No. of days Student attended school (in the previous academic year)
+                <span class="udise-field-number">15</span> No. of days Student attended school (in the previous academic year)
               </label>
               <div class="udise-field-sublabel">
-                <span class="udise-rule-reference">[Refer Rule: 4.2.8]</span>
+                <span class="udise-rule-reference"></span>
               </div>
               <input type="number" class="form-control" name="previous_attendance" min="0" max="365" value="200">
               <div class="invalid-feedback"></div>
@@ -1606,7 +1671,7 @@
           <div class="col-md-12 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.3.3</span> Whether Student has been screened for Specific Learning Disability (SLD)?
+                <span class="udise-field-number">1</span> Whether Student has been screened for Specific Learning Disability (SLD)?
               </label>
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
@@ -1629,7 +1694,7 @@
           <div class="col-md-12 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.3.3 (a)</span> If Yes-1, specify the type of SLD
+                <span class="udise-field-number">2</span> If Yes-1, specify the type of SLD
               </label>
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
@@ -1656,7 +1721,7 @@
           <div class="col-md-12 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.3.4</span> Whether Student has been screened for Autism Spectrum Disorder (ASD)?
+                <span class="udise-field-number">3</span> Whether Student has been screened for Autism Spectrum Disorder (ASD)?
               </label>
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
@@ -1679,7 +1744,7 @@
           <div class="col-md-12 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.3.5</span> Whether Student has been screened for Attention Deficit Hyperactive Disorder (ADHD)?
+                <span class="udise-field-number">4</span> Whether Student has been screened for Attention Deficit Hyperactive Disorder (ADHD)?
               </label>
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
@@ -1702,7 +1767,7 @@
           <div class="col-md-12 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.3.6</span> Has the Student been identified as a Gifted / Talented?
+                <span class="udise-field-number">5</span> Has the Student been identified as a Gifted / Talented?
               </label>
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
@@ -1725,7 +1790,7 @@
           <div class="col-md-12 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.3.7</span> Does the student appeared in any State Level Competitions/ National level Competitions/ Olympiads?
+                <span class="udise-field-number">6</span> Does the student appeared in any State Level Competitions/ National level Competitions/ Olympiads?
               </label>
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
@@ -1748,7 +1813,7 @@
           <div class="col-md-12 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.3.8</span> Does the Student participate in NCC/ NSS/ Scouts and Guides?
+                <span class="udise-field-number">7</span> Does the Student participate in NCC/ NSS/ Scouts and Guides?
               </label>
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
@@ -1771,7 +1836,7 @@
           <div class="col-md-12 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.3.9</span> Whether student is capable of handling digital devices including the internet?
+                <span class="udise-field-number">8</span> Whether student is capable of handling digital devices including the internet?
               </label>
               <div class="udise-field-sublabel">
                 <span class="text-muted">(Mobile, Laptops, Smart Boards, Desktops, Projectors, the use of computers to retrieve, assess, store, produce, present and exchange information, and to communicate and participate in collaborative networks via the Internet, Interacting through digital technologies, Protecting personal data and privacy)</span>
@@ -1794,7 +1859,7 @@
           <div class="col-md-6 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.3.10 (a)</span> Student's Height (in CMs)
+                <span class="udise-field-number">9</span> Student's Height (in CMs)
               </label>
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
@@ -1807,7 +1872,7 @@
           <div class="col-md-6 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.3.10 (b)</span> Student's Weight (in KGs)
+                <span class="udise-field-number">10</span> Student's Weight (in KGs)
               </label>
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
@@ -1821,7 +1886,7 @@
           <div class="col-md-6 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.3.11</span> Approximate Distance of student's residence to school
+                <span class="udise-field-number">11</span> Approximate Distance of student's residence to school
               </label>
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
@@ -1841,7 +1906,7 @@
           <div class="col-md-6 mb-4">
             <div class="udise-field-group">
               <label class="udise-field-label">
-                <span class="udise-field-number">4.3.12</span> Completed Highest Education Level of Mother/Father/Legal Guardian
+                <span class="udise-field-number">12</span> Completed Highest Education Level of Mother/Father/Legal Guardian
               </label>
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
@@ -1897,7 +1962,7 @@
               <div class="card-body">
                 <div class="mb-3">
                   <label class="udise-field-label">
-                    <span class="udise-field-number">4.4.1</span> Recent Passport Size Photo
+                    <span class="udise-field-number">1</span> Recent Passport Size Photo
                     <span class="udise-rule-reference">(with white background)</span>
                   </label>
                   <div class="input-group">
@@ -1928,7 +1993,7 @@
               <div class="card-body">
                 <div class="mb-3">
                   <label class="udise-field-label">
-                    <span class="udise-field-number">4.4.2</span> Birth Certificate
+                    <span class="udise-field-number">2</span> Birth Certificate
                     <span class="text-danger">*</span>
                   </label>
                   <div class="input-group">
@@ -1940,7 +2005,7 @@
 
                 <div class="mb-3">
                   <label class="udise-field-label">
-                    <span class="udise-field-number">4.4.3</span> Address Proof
+                    <span class="udise-field-number">3</span> Address Proof
                     <span class="text-danger">*</span>
                   </label>
                   <div class="input-group">
@@ -1952,7 +2017,7 @@
 
                 <div class="mb-3">
                   <label class="udise-field-label">
-                    <span class="udise-field-number">4.4.4</span> Previous School Transfer Certificate
+                    <span class="udise-field-number">4</span> Previous School Transfer Certificate
                   </label>
                   <div class="input-group">
                     <input type="file" class="form-control" name="transfer_certificate" accept=".jpg,.jpeg,.png,.pdf">
@@ -1975,7 +2040,7 @@
                 <div class="row">
                   <div class="col-md-4 mb-3">
                     <label class="udise-field-label">
-                      <span class="udise-field-number">4.4.5</span> Category Certificate (SC/ST/OBC)
+                      <span class="udise-field-number">5</span> Category Certificate (SC/ST/OBC)
                     </label>
                     <div class="input-group">
                       <input type="file" class="form-control" name="category_certificate" accept=".jpg,.jpeg,.png,.pdf">
@@ -1985,7 +2050,7 @@
 
                   <div class="col-md-4 mb-3">
                     <label class="udise-field-label">
-                      <span class="udise-field-number">4.4.6</span> Disability Certificate
+                      <span class="udise-field-number">6</span> Disability Certificate
                     </label>
                     <div class="input-group">
                       <input type="file" class="form-control" name="disability_certificate" accept=".jpg,.jpeg,.png,.pdf">
@@ -1995,7 +2060,7 @@
 
                   <div class="col-md-4 mb-3">
                     <label class="udise-field-label">
-                      <span class="udise-field-number">4.4.7</span> Income Certificate (for EWS)
+                      <span class="udise-field-number">7</span> Income Certificate (for EWS)
                     </label>
                     <div class="input-group">
                       <input type="file" class="form-control" name="income_certificate" accept=".jpg,.jpeg,.png,.pdf">
@@ -2031,231 +2096,248 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-md-3 mb-4">
-            <div class="card border-0 shadow-sm h-100">
-              <div class="card-header bg-primary text-white">
-                <h6 class="mb-0"><i class="fas fa-id-card me-2"></i>Student Photo</h6>
-              </div>
-              <div class="card-body text-center py-4">
-                <div class="mb-3">
-                  <img id="preview-photo" src="{% if form.passport.value %}{{ form.passport.value.url }}{% else %}{% static 'dist/img/avatar.png' %}{% endif %}" alt="Student Photo" style="max-width: 150px; max-height: 180px; border: 1px solid #ddd; padding: 3px; background: #f8f9fa;">
-                </div>
-                <div class="udise-verified-badge mt-2">
-                  <i class="fas fa-check-circle"></i> UDISE+ Verified
-                </div>
-                <div class="mt-3">
-                  <p class="mb-1 text-muted small">Registration Number</p>
-                  <p class="mb-0 fw-bold" id="preview-admission-number">{{ form.registration_number.value|default:"Will be generated" }}</p>
-                </div>
-              </div>
-            </div>
+        <!-- Student Information Report Format -->
+        <div class="card border-0 shadow-sm mb-4">
+          <div class="card-header bg-primary text-white text-center py-3">
+            <h5 class="mb-0">Student Information Report</h5>
+            <p class="mb-0 small">Student Database Management System (SDMS)</p>
           </div>
+          <div class="card-body p-0">
+            <table class="table table-bordered mb-0">
+              <tr>
+                <td colspan="3" class="fw-bold">Student Name: <span id="preview-fullname">{{ form.fullname.value|default:"Not provided" }}</span></td>
+                <td>Class: <span id="preview-class">{{ form.current_class.value|default:"Not assigned" }}</span></td>
+                <td>Section: <span id="preview-section">{{ form.section.value|default:"Not assigned" }}</span></td>
+              </tr>
+            </table>
 
-          <div class="col-md-9 mb-4">
-            <div class="card border-0 shadow-sm">
-              <div class="card-header bg-light d-flex align-items-center">
-                <i class="fas fa-user me-2 text-primary"></i>
-                <h6 class="mb-0">General Profile Summary</h6>
-              </div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-4 mb-3">
-                    <div class="student-info-item">
-                      <p class="mb-1 text-muted small">Student's Name</p>
-                      <p class="mb-0 fw-medium" id="preview-fullname">{{ form.fullname.value|default:"Not provided" }}</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-3">
-                    <div class="student-info-item">
-                      <p class="mb-1 text-muted small">Gender</p>
-                      <p class="mb-0 fw-medium" id="preview-gender">{{ form.gender.value|default:"Not provided" }}</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-3">
-                    <div class="student-info-item">
-                      <p class="mb-1 text-muted small">Date of Birth</p>
-                      <p class="mb-0 fw-medium" id="preview-dob">{{ form.date_of_birth.value|default:"Not provided" }}</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-3">
-                    <div class="student-info-item">
-                      <p class="mb-1 text-muted small">Father's Name</p>
-                      <p class="mb-0 fw-medium" id="preview-father">{{ form.Father_name.value|default:"Not provided" }}</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-3">
-                    <div class="student-info-item">
-                      <p class="mb-1 text-muted small">Mother's Name</p>
-                      <p class="mb-0 fw-medium" id="preview-mother">{{ form.Mother_name.value|default:"Not provided" }}</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-3">
-                    <div class="student-info-item">
-                      <p class="mb-1 text-muted small">AADHAAR Number</p>
-                      <p class="mb-0 fw-medium" id="preview-aadhar">{{ form.aadhar.value|default:"Not provided" }}</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-3">
-                    <div class="student-info-item">
-                      <p class="mb-1 text-muted small">Address</p>
-                      <p class="mb-0 fw-medium" id="preview-address">{{ form.address.value|default:"Not provided" }}</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-3">
-                    <div class="student-info-item">
-                      <p class="mb-1 text-muted small">Mobile Number</p>
-                      <p class="mb-0 fw-medium" id="preview-mobile">{{ form.mobile_number.value|default:"Not provided" }}</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-3">
-                    <div class="student-info-item">
-                      <p class="mb-1 text-muted small">Email ID</p>
-                      <p class="mb-0 fw-medium" id="preview-email">{{ form.email_id.value|default:"Not provided" }}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            <table class="table table-bordered mb-0">
+              <tr class="bg-light">
+                <td colspan="6" class="fw-bold">General Information of Student</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">1</td>
+                <td>Gender (as Per School record/School Admission Register)</td>
+                <td id="preview-gender">{{ form.gender.value|default:"Not provided" }}</td>
+                <td style="width: 30px;" class="text-center">2</td>
+                <td>Mother Tongue of the Student</td>
+                <td id="preview-mother-tongue">58-HINDI-Bhojpuri</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">3</td>
+                <td>Date of Birth (as Per School record/School Admission Register) (DD/MM/YYYY)</td>
+                <td id="preview-dob">{{ form.date_of_birth.value|default:"Not provided" }}</td>
+                <td style="width: 30px;" class="text-center">4</td>
+                <td>Permanent Education Number</td>
+                <td id="preview-pen">2018010737</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">5</td>
+                <td>Social Category</td>
+                <td id="preview-social-category">2-SC</td>
+                <td style="width: 30px;" class="text-center">6</td>
+                <td>Mother's Name</td>
+                <td id="preview-mother">{{ form.Mother_name.value|default:"Not provided" }}</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">7</td>
+                <td>Minority Group</td>
+                <td id="preview-minority-group">7-NA</td>
+                <td style="width: 30px;" class="text-center">8</td>
+                <td>Father's Name</td>
+                <td id="preview-father">{{ form.Father_name.value|default:"Not provided" }}</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">9</td>
+                <td>Whether BPL beneficiary</td>
+                <td id="preview-bpl">No</td>
+                <td style="width: 30px;" class="text-center">10</td>
+                <td>Guardian's Name</td>
+                <td id="preview-guardian">{{ form.guardian_name.value|default:"Not provided" }}</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">11</td>
+                <td>Whether Antyodaya Anna Yojana (AAY) beneficiary</td>
+                <td id="preview-aay">NA</td>
+                <td style="width: 30px;" class="text-center">12</td>
+                <td>AADHAAR Number of Student</td>
+                <td id="preview-aadhar">{{ form.aadhar.value|default:"Not provided" }}</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">13</td>
+                <td>Whether belongs to EWS / Disadvantaged Group</td>
+                <td id="preview-ews">No</td>
+                <td style="width: 30px;" class="text-center">14</td>
+                <td>Name of Student as per in AADHAAR Card</td>
+                <td id="preview-name-as-per-aadhaar">{{ form.name_as_per_aadhaar.value|default:"Not provided" }}</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">15</td>
+                <td>Whether CWSN</td>
+                <td id="preview-cwsn">No</td>
+                <td style="width: 30px;" class="text-center">16</td>
+                <td>Address</td>
+                <td id="preview-address">{{ form.address.value|default:"Not provided" }}</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">17</td>
+                <td>Type of Impairments</td>
+                <td id="preview-impairments">NA</td>
+                <td style="width: 30px;" class="text-center">18</td>
+                <td>Pincode</td>
+                <td id="preview-pincode">{{ form.pin_code.value|default:"Not provided" }}</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">19</td>
+                <td>Indian Nationality</td>
+                <td id="preview-nationality">Yes</td>
+                <td style="width: 30px;" class="text-center">20</td>
+                <td>Mobile Number (of Student/Parent/Guardian)</td>
+                <td id="preview-mobile">{{ form.mobile_number.value|default:"Not provided" }}</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">21</td>
+                <td>Is Child Identified as Out of School-Child</td>
+                <td id="preview-out-of-school">No</td>
+                <td style="width: 30px;" class="text-center">22</td>
+                <td>Alternate Mobile Number (of Student/Parent/Guardian)</td>
+                <td id="preview-alt-mobile">{{ form.alternate_mobile.value|default:"Not provided" }}</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">23</td>
+                <td>When the Child is mainstreamed</td>
+                <td id="preview-mainstreamed">NA</td>
+                <td style="width: 30px;" class="text-center">24</td>
+                <td>Contact email-id (of Student/Parent/Guardian)</td>
+                <td id="preview-email">{{ form.email_id.value|default:"Not provided" }}</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">25</td>
+                <td>Whether having Disability Certificate</td>
+                <td id="preview-disability-cert">NA</td>
+                <td style="width: 30px;" class="text-center">26</td>
+                <td>Disability Percentage (in %)</td>
+                <td id="preview-disability-percentage">0</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">27</td>
+                <td>Blood Group</td>
+                <td colspan="4" id="preview-blood-group">Under Investigation - Result will be updated soon</td>
+              </tr>
+            </table>
 
-          <div class="col-md-6 mb-4">
-            <div class="card border-0 shadow-sm h-100">
-              <div class="card-header bg-light d-flex align-items-center">
-                <i class="fas fa-graduation-cap me-2 text-primary"></i>
-                <h6 class="mb-0">Enrolment Profile Summary</h6>
-              </div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-6 mb-3">
-                    <div class="student-info-item">
-                      <p class="mb-1 text-muted small">Admission Date</p>
-                      <p class="mb-0 fw-medium" id="preview-admission-date">{{ form.date_of_admission.value|default:"Not provided" }}</p>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <div class="student-info-item">
-                      <p class="mb-1 text-muted small">Current Class</p>
-                      <p class="mb-0 fw-medium" id="preview-class">{{ form.current_class.value|default:"Not assigned" }}</p>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <div class="student-info-item">
-                      <p class="mb-1 text-muted small">Section</p>
-                      <p class="mb-0 fw-medium" id="preview-section">{{ form.section.value|default:"Not assigned" }}</p>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <div class="student-info-item">
-                      <p class="mb-1 text-muted small">Medium of Instruction</p>
-                      <p class="mb-0 fw-medium" id="preview-medium">English</p>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <div class="student-info-item">
-                      <p class="mb-1 text-muted small">Previous Class Result</p>
-                      <p class="mb-0 fw-medium" id="preview-result">Promoted/Passed</p>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <div class="student-info-item">
-                      <p class="mb-1 text-muted small">Previous Attendance</p>
-                      <p class="mb-0 fw-medium" id="preview-attendance">200 days</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            <table class="table table-bordered mb-0">
+              <tr class="bg-light">
+                <td colspan="6" class="fw-bold">Enrollment Detail of the Student</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">1</td>
+                <td>Admission Number in Present School</td>
+                <td id="preview-admission-number">{{ form.registration_number.value|default:"Will be generated" }}</td>
+                <td style="width: 30px;" class="text-center">2</td>
+                <td>Admitted / Enrolled Under (Only for Pvt. Unaided)</td>
+                <td id="preview-admitted-under">NA</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">3</td>
+                <td>Admission Date (DD/ MM/ YYYY) in Present School</td>
+                <td id="preview-admission-date">{{ form.date_of_admission.value|default:"Not provided" }}</td>
+                <td style="width: 30px;" class="text-center">4</td>
+                <td>Class/Section Roll No</td>
+                <td id="preview-roll-number">1</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">5</td>
+                <td>Medium of Instruction</td>
+                <td id="preview-medium">4-Hindi</td>
+                <td style="width: 30px;" class="text-center">6</td>
+                <td>Languages Group Studied by the Student</td>
+                <td id="preview-languages">Hindi_English</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">7</td>
+                <td>Is the previous class studied - result of the examinations</td>
+                <td id="preview-result">1-Promoted/Passed</td>
+                <td style="width: 30px;" class="text-center">8</td>
+                <td>Academic Stream opted by student</td>
+                <td id="preview-academic-stream">NA</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">9</td>
+                <td>Status of Student in Previous Academic Year of Schooling</td>
+                <td id="preview-previous-status">1-Studied at Current/Same School</td>
+                <td style="width: 30px;" class="text-center">10</td>
+                <td>No. of days child attended school (in the previous academic year)</td>
+                <td id="preview-attendance">206</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">11</td>
+                <td>Grade/Class Studied in the Previous/Last Academic Year</td>
+                <td colspan="4" id="preview-previous-class">Class UKG/KG2/Pre-Primary</td>
+              </tr>
+            </table>
 
-          <div class="col-md-6 mb-4">
-            <div class="card border-0 shadow-sm h-100">
-              <div class="card-header bg-light d-flex align-items-center">
-                <i class="fas fa-clipboard-list me-2 text-primary"></i>
-                <h6 class="mb-0">Facility Profile Summary</h6>
-              </div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-6 mb-3">
-                    <div class="student-info-item">
-                      <p class="mb-1 text-muted small">Height (in CMs)</p>
-                      <p class="mb-0 fw-medium" id="preview-height">120</p>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <div class="student-info-item">
-                      <p class="mb-1 text-muted small">Weight (in KGs)</p>
-                      <p class="mb-0 fw-medium" id="preview-weight">25</p>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <div class="student-info-item">
-                      <p class="mb-1 text-muted small">Distance to School</p>
-                      <p class="mb-0 fw-medium" id="preview-distance">Less than 1 km</p>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <div class="student-info-item">
-                      <p class="mb-1 text-muted small">Digital Device Capability</p>
-                      <p class="mb-0 fw-medium" id="preview-digital">Yes</p>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <div class="student-info-item">
-                      <p class="mb-1 text-muted small">Guardian's Education Level</p>
-                      <p class="mb-0 fw-medium" id="preview-guardian-education">Primary</p>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <div class="student-info-item">
-                      <p class="mb-1 text-muted small">Special Needs</p>
-                      <p class="mb-0 fw-medium" id="preview-special-needs">None</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-12 mb-4">
-            <div class="card border-0 shadow-sm">
-              <div class="card-header bg-light d-flex align-items-center">
-                <i class="fas fa-file-alt me-2 text-primary"></i>
-                <h6 class="mb-0">Document Summary</h6>
-              </div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-3 mb-3 text-center">
-                    <div class="document-status p-3 rounded" style="background-color: #f0f9ff; border: 1px solid #e1f0ff;">
-                      <i class="fas fa-id-card mb-2 text-primary" style="font-size: 24px;"></i>
-                      <p class="mb-1 fw-medium">Student Photo</p>
-                      <span class="badge bg-success">Uploaded</span>
-                    </div>
-                  </div>
-                  <div class="col-md-3 mb-3 text-center">
-                    <div class="document-status p-3 rounded" style="background-color: #f0f9ff; border: 1px solid #e1f0ff;">
-                      <i class="fas fa-certificate mb-2 text-primary" style="font-size: 24px;"></i>
-                      <p class="mb-1 fw-medium">Birth Certificate</p>
-                      <span class="badge bg-success">Uploaded</span>
-                    </div>
-                  </div>
-                  <div class="col-md-3 mb-3 text-center">
-                    <div class="document-status p-3 rounded" style="background-color: #f0f9ff; border: 1px solid #e1f0ff;">
-                      <i class="fas fa-home mb-2 text-primary" style="font-size: 24px;"></i>
-                      <p class="mb-1 fw-medium">Address Proof</p>
-                      <span class="badge bg-success">Uploaded</span>
-                    </div>
-                  </div>
-                  <div class="col-md-3 mb-3 text-center">
-                    <div class="document-status p-3 rounded" style="background-color: #f0f9ff; border: 1px solid #e1f0ff;">
-                      <i class="fas fa-exchange-alt mb-2 text-primary" style="font-size: 24px;"></i>
-                      <p class="mb-1 fw-medium">Transfer Certificate</p>
-                      <span class="badge bg-secondary">Not Required</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <table class="table table-bordered mb-0">
+              <tr class="bg-light">
+                <td colspan="6" class="fw-bold">Facility Profile</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">1</td>
+                <td>Whether Facilities provided to the Student (for the year of filling data)</td>
+                <td id="preview-facilities">NA</td>
+                <td style="width: 30px;" class="text-center">2</td>
+                <td>Has the student appeared in State Level Competitions/ Olympics/National level Competitions?</td>
+                <td id="preview-competitions">No</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">3</td>
+                <td>Facilities provided to Student in case of CWSN (for the year of filling data)</td>
+                <td id="preview-cwsn-facilities">NA</td>
+                <td style="width: 30px;" class="text-center">4</td>
+                <td>Does the Student participate in NCC/ NSS/ Scouts and Guides?</td>
+                <td id="preview-ncc-nss">No</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">5</td>
+                <td>Whether Student has been screened for Specific Learning Disability (SLD)</td>
+                <td id="preview-sld-screened">No</td>
+                <td style="width: 30px;" class="text-center">6</td>
+                <td>Whether student is capable of handling digital devices including the internet?</td>
+                <td id="preview-digital">Yes</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">7</td>
+                <td>SLD Type</td>
+                <td id="preview-sld-type">NA</td>
+                <td style="width: 30px;" class="text-center">8</td>
+                <td>Student's Height (in CMs)</td>
+                <td id="preview-height">98 CMs</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">9</td>
+                <td>Whether Student has been screened for Autism Spectrum Disorder (ASD)?</td>
+                <td id="preview-asd-screened">No</td>
+                <td style="width: 30px;" class="text-center">10</td>
+                <td>Student's Weight (in KGs)</td>
+                <td id="preview-weight">30 KGs</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">11</td>
+                <td>Whether Student has been screened for Attention Deficit Hyperactive Disorder (ADHD)?</td>
+                <td id="preview-adhd-screened">No</td>
+                <td style="width: 30px;" class="text-center">12</td>
+                <td>Approximate Distance of student's residence to school</td>
+                <td id="preview-distance">2 - Between 1-3 Kms</td>
+              </tr>
+              <tr>
+                <td style="width: 30px;" class="text-center">13</td>
+                <td>Has the Student been identified as a gifted / talented?</td>
+                <td id="preview-gifted">No</td>
+                <td style="width: 30px;" class="text-center">14</td>
+                <td>Completed Highest Education Level of Mother/Father/Legal Guardian</td>
+                <td id="preview-guardian-education">2 - Upper Primary</td>
+              </tr>
+            </table>
           </div>
         </div>
 
@@ -2270,6 +2352,13 @@
             <i class="fas fa-exclamation-triangle me-2" style="color: #dd6b20;"></i>
             <strong>Note:</strong> Providing false information may result in rejection of admission or cancellation at a later stage.
           </div>
+        </div>
+
+        <!-- Download Button -->
+        <div class="text-center mb-4">
+          <button type="button" class="btn btn-primary" id="downloadReport">
+            <i class="fas fa-download me-2"></i> Download Student Information Report
+          </button>
         </div>
 
         <!-- Navigation buttons -->
@@ -2315,6 +2404,303 @@
   // Update time every minute
   updateTime();
   setInterval(updateTime, 60000);
+
+  // Function to download Student Information Report as PDF
+  document.getElementById('downloadReport').addEventListener('click', function() {
+    // Create a new window for printing
+    const printWindow = window.open('', '_blank');
+
+    // Get student information
+    const studentName = document.getElementById('preview-fullname').textContent;
+    const studentClass = document.getElementById('preview-class').textContent;
+    const studentSection = document.getElementById('preview-section').textContent;
+
+    // Create the content for the print window
+    let content = `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <title>Student Information Report - ${studentName}</title>
+        <style>
+          body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+          table { width: 100%; border-collapse: collapse; margin-bottom: 0; }
+          th, td { border: 1px solid #000; padding: 5px 8px; font-size: 12px; }
+          th { background-color: #f2f2f2; }
+          .header { text-align: center; margin-bottom: 20px; }
+          .section-header { background-color: #f2f2f2; font-weight: bold; }
+          @media print {
+            body { padding: 0; }
+            button { display: none; }
+          }
+        </style>
+      </head>
+      <body>
+        <div class="header">
+          <h2 style="margin-bottom: 5px;">Student Information Report</h2>
+          <p style="margin-top: 0;">Student Database Management System (SDMS)</p>
+        </div>
+
+        <table>
+          <tr>
+            <td colspan="3"><strong>Student Name:</strong> ${studentName}</td>
+            <td><strong>Class:</strong> ${studentClass}</td>
+            <td><strong>Section:</strong> ${studentSection}</td>
+          </tr>
+        </table>
+
+        <table>
+          <tr class="section-header">
+            <td colspan="6">General Information of Student</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">1</td>
+            <td>Gender (as Per School record/School Admission Register)</td>
+            <td>${document.getElementById('preview-gender').textContent}</td>
+            <td style="width: 30px; text-align: center;">2</td>
+            <td>Mother Tongue of the Student</td>
+            <td>${document.getElementById('preview-mother-tongue').textContent}</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">3</td>
+            <td>Date of Birth (as Per School record/School Admission Register) (DD/MM/YYYY)</td>
+            <td>${document.getElementById('preview-dob').textContent}</td>
+            <td style="width: 30px; text-align: center;">4</td>
+            <td>Permanent Education Number</td>
+            <td>${document.getElementById('preview-pen').textContent}</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">5</td>
+            <td>Social Category</td>
+            <td>${document.getElementById('preview-social-category').textContent}</td>
+            <td style="width: 30px; text-align: center;">6</td>
+            <td>Mother's Name</td>
+            <td>${document.getElementById('preview-mother').textContent}</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">7</td>
+            <td>Minority Group</td>
+            <td>${document.getElementById('preview-minority-group').textContent}</td>
+            <td style="width: 30px; text-align: center;">8</td>
+            <td>Father's Name</td>
+            <td>${document.getElementById('preview-father').textContent}</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">9</td>
+            <td>Whether BPL beneficiary</td>
+            <td>${document.getElementById('preview-bpl').textContent}</td>
+            <td style="width: 30px; text-align: center;">10</td>
+            <td>Guardian's Name</td>
+            <td>${document.getElementById('preview-guardian').textContent}</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">11</td>
+            <td>Whether Antyodaya Anna Yojana (AAY) beneficiary</td>
+            <td>${document.getElementById('preview-aay').textContent}</td>
+            <td style="width: 30px; text-align: center;">12</td>
+            <td>AADHAAR Number of Student</td>
+            <td>${document.getElementById('preview-aadhar').textContent}</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">13</td>
+            <td>Whether belongs to EWS / Disadvantaged Group</td>
+            <td>${document.getElementById('preview-ews').textContent}</td>
+            <td style="width: 30px; text-align: center;">14</td>
+            <td>Name of Student as per in AADHAAR Card</td>
+            <td>${document.getElementById('preview-name-as-per-aadhaar').textContent}</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">15</td>
+            <td>Whether CWSN</td>
+            <td>${document.getElementById('preview-cwsn').textContent}</td>
+            <td style="width: 30px; text-align: center;">16</td>
+            <td>Address</td>
+            <td>${document.getElementById('preview-address').textContent}</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">17</td>
+            <td>Type of Impairments</td>
+            <td>${document.getElementById('preview-impairments').textContent}</td>
+            <td style="width: 30px; text-align: center;">18</td>
+            <td>Pincode</td>
+            <td>${document.getElementById('preview-pincode').textContent}</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">19</td>
+            <td>Indian Nationality</td>
+            <td>${document.getElementById('preview-nationality').textContent}</td>
+            <td style="width: 30px; text-align: center;">20</td>
+            <td>Mobile Number (of Student/Parent/Guardian)</td>
+            <td>${document.getElementById('preview-mobile').textContent}</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">21</td>
+            <td>Is Child Identified as Out of School-Child</td>
+            <td>${document.getElementById('preview-out-of-school').textContent}</td>
+            <td style="width: 30px; text-align: center;">22</td>
+            <td>Alternate Mobile Number (of Student/Parent/Guardian)</td>
+            <td>${document.getElementById('preview-alt-mobile').textContent}</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">23</td>
+            <td>When the Child is mainstreamed</td>
+            <td>${document.getElementById('preview-mainstreamed').textContent}</td>
+            <td style="width: 30px; text-align: center;">24</td>
+            <td>Contact email-id (of Student/Parent/Guardian)</td>
+            <td>${document.getElementById('preview-email').textContent}</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">25</td>
+            <td>Whether having Disability Certificate</td>
+            <td>${document.getElementById('preview-disability-cert').textContent}</td>
+            <td style="width: 30px; text-align: center;">26</td>
+            <td>Disability Percentage (in %)</td>
+            <td>${document.getElementById('preview-disability-percentage').textContent}</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">27</td>
+            <td>Blood Group</td>
+            <td colspan="4">${document.getElementById('preview-blood-group').textContent}</td>
+          </tr>
+        </table>
+
+        <table>
+          <tr class="section-header">
+            <td colspan="6">Enrollment Detail of the Student</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">1</td>
+            <td>Admission Number in Present School</td>
+            <td>${document.getElementById('preview-admission-number').textContent}</td>
+            <td style="width: 30px; text-align: center;">2</td>
+            <td>Admitted / Enrolled Under (Only for Pvt. Unaided)</td>
+            <td>${document.getElementById('preview-admitted-under').textContent}</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">3</td>
+            <td>Admission Date (DD/ MM/ YYYY) in Present School</td>
+            <td>${document.getElementById('preview-admission-date').textContent}</td>
+            <td style="width: 30px; text-align: center;">4</td>
+            <td>Class/Section Roll No</td>
+            <td>${document.getElementById('preview-roll-number').textContent}</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">5</td>
+            <td>Medium of Instruction</td>
+            <td>${document.getElementById('preview-medium').textContent}</td>
+            <td style="width: 30px; text-align: center;">6</td>
+            <td>Languages Group Studied by the Student</td>
+            <td>${document.getElementById('preview-languages').textContent}</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">7</td>
+            <td>Is the previous class studied - result of the examinations</td>
+            <td>${document.getElementById('preview-result').textContent}</td>
+            <td style="width: 30px; text-align: center;">8</td>
+            <td>Academic Stream opted by student</td>
+            <td>${document.getElementById('preview-academic-stream').textContent}</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">9</td>
+            <td>Status of Student in Previous Academic Year of Schooling</td>
+            <td>${document.getElementById('preview-previous-status').textContent}</td>
+            <td style="width: 30px; text-align: center;">10</td>
+            <td>No. of days child attended school (in the previous academic year)</td>
+            <td>${document.getElementById('preview-attendance').textContent}</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">11</td>
+            <td>Grade/Class Studied in the Previous/Last Academic Year</td>
+            <td colspan="4">${document.getElementById('preview-previous-class').textContent}</td>
+          </tr>
+        </table>
+
+        <table>
+          <tr class="section-header">
+            <td colspan="6">Facility Profile</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">1</td>
+            <td>Whether Facilities provided to the Student (for the year of filling data)</td>
+            <td>${document.getElementById('preview-facilities').textContent}</td>
+            <td style="width: 30px; text-align: center;">2</td>
+            <td>Has the student appeared in State Level Competitions/ Olympics/National level Competitions?</td>
+            <td>${document.getElementById('preview-competitions').textContent}</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">3</td>
+            <td>Facilities provided to Student in case of CWSN (for the year of filling data)</td>
+            <td>${document.getElementById('preview-cwsn-facilities').textContent}</td>
+            <td style="width: 30px; text-align: center;">4</td>
+            <td>Does the Student participate in NCC/ NSS/ Scouts and Guides?</td>
+            <td>${document.getElementById('preview-ncc-nss').textContent}</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">5</td>
+            <td>Whether Student has been screened for Specific Learning Disability (SLD)</td>
+            <td>${document.getElementById('preview-sld-screened').textContent}</td>
+            <td style="width: 30px; text-align: center;">6</td>
+            <td>Whether student is capable of handling digital devices including the internet?</td>
+            <td>${document.getElementById('preview-digital').textContent}</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">7</td>
+            <td>SLD Type</td>
+            <td>${document.getElementById('preview-sld-type').textContent}</td>
+            <td style="width: 30px; text-align: center;">8</td>
+            <td>Student's Height (in CMs)</td>
+            <td>${document.getElementById('preview-height').textContent}</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">9</td>
+            <td>Whether Student has been screened for Autism Spectrum Disorder (ASD)?</td>
+            <td>${document.getElementById('preview-asd-screened').textContent}</td>
+            <td style="width: 30px; text-align: center;">10</td>
+            <td>Student's Weight (in KGs)</td>
+            <td>${document.getElementById('preview-weight').textContent}</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">11</td>
+            <td>Whether Student has been screened for Attention Deficit Hyperactive Disorder (ADHD)?</td>
+            <td>${document.getElementById('preview-adhd-screened').textContent}</td>
+            <td style="width: 30px; text-align: center;">12</td>
+            <td>Approximate Distance of student's residence to school</td>
+            <td>${document.getElementById('preview-distance').textContent}</td>
+          </tr>
+          <tr>
+            <td style="width: 30px; text-align: center;">13</td>
+            <td>Has the Student been identified as a gifted / talented?</td>
+            <td>${document.getElementById('preview-gifted').textContent}</td>
+            <td style="width: 30px; text-align: center;">14</td>
+            <td>Completed Highest Education Level of Mother/Father/Legal Guardian</td>
+            <td>${document.getElementById('preview-guardian-education').textContent}</td>
+          </tr>
+        </table>
+
+        <div style="margin-top: 20px; text-align: center;">
+          <button onclick="window.print();" style="padding: 10px 20px; background-color: #0e4686; color: white; border: none; border-radius: 4px; cursor: pointer;">
+            Print Report
+          </button>
+        </div>
+      </body>
+      </html>
+    `;
+
+    // Write the content to the new window
+    printWindow.document.open();
+    printWindow.document.write(content);
+    printWindow.document.close();
+
+    // Set the filename for the downloaded PDF
+    const filename = `Student_Information_Report_${studentName.replace(/\s+/g, '_')}.pdf`;
+
+    // Auto-trigger print after the content is loaded
+    printWindow.onload = function() {
+      // For browsers that support it, set the filename
+      if (typeof printWindow.document.title !== 'undefined') {
+        printWindow.document.title = filename;
+      }
+    };
+  });
 
   // Function to load sections based on selected class
   function loadSections(classId) {
@@ -2412,11 +2798,54 @@
       document.getElementById('preview-mobile').textContent = document.querySelector('[name="mobile_number"]').value || 'Not provided';
       document.getElementById('preview-email').textContent = document.querySelector('[name="email_id"]').value || 'Not provided';
 
+      // Additional fields for Student Information Report
+      // Mother Tongue
+      const motherTongueSelect = document.querySelector('[name="mother_tongue"]');
+      if (motherTongueSelect && motherTongueSelect.selectedIndex > 0) {
+        document.getElementById('preview-mother-tongue').textContent = motherTongueSelect.options[motherTongueSelect.selectedIndex].text;
+      }
+
+      // Permanent Education Number
+      document.getElementById('preview-pen').textContent = document.querySelector('[name="permanent_education_number"]').value || '2018010737';
+
+      // Social Category
+      const socialCategorySelect = document.querySelector('[name="social_category"]');
+      if (socialCategorySelect && socialCategorySelect.selectedIndex > 0) {
+        document.getElementById('preview-social-category').textContent = socialCategorySelect.options[socialCategorySelect.selectedIndex].value;
+      }
+
+      // Guardian's Name
+      document.getElementById('preview-guardian').textContent = document.querySelector('[name="guardian_name"]').value || 'Not provided';
+
+      // Name as per AADHAAR
+      document.getElementById('preview-name-as-per-aadhaar').textContent = document.querySelector('[name="name_as_per_aadhaar"]').value || document.querySelector('[name="fullname"]').value || 'Not provided';
+
+      // Pincode
+      document.getElementById('preview-pincode').textContent = document.querySelector('[name="pin_code"]').value || 'Not provided';
+
+      // Alternate Mobile
+      document.getElementById('preview-alt-mobile').textContent = document.querySelector('[name="alternate_mobile"]').value || 'Not provided';
+
+      // Blood Group
+      const bloodGroupSelect = document.querySelector('[name="blood_group"]');
+      if (bloodGroupSelect && bloodGroupSelect.selectedIndex > 0) {
+        document.getElementById('preview-blood-group').textContent = bloodGroupSelect.options[bloodGroupSelect.selectedIndex].text;
+      }
+
+      // Mainstreamed
+      const mainstreamedSelect = document.querySelector('[name="mainstreamed"]');
+      if (mainstreamedSelect && mainstreamedSelect.selectedIndex > 0) {
+        document.getElementById('preview-mainstreamed').textContent = mainstreamedSelect.options[mainstreamedSelect.selectedIndex].text;
+      }
+
       // Enrolment Profile
       document.getElementById('preview-admission-number').textContent = document.querySelector('[name="admission_number"]').value || 'Will be generated';
       document.getElementById('preview-admission-date').textContent = document.querySelector('[name="date_of_admission"]').value || 'Not provided';
       document.getElementById('preview-class').textContent = document.querySelector('[name="current_class"]').value || 'Not assigned';
       document.getElementById('preview-section').textContent = document.querySelector('[name="section"]').value || 'Not assigned';
+
+      // Roll Number
+      document.getElementById('preview-roll-number').textContent = document.querySelector('[name="roll_number"]').value || '1';
 
       // Medium of instruction
       const mediumSelect = document.querySelector('[name="medium_of_instruction"]');
@@ -2424,20 +2853,41 @@
         document.getElementById('preview-medium').textContent = mediumSelect.options[mediumSelect.selectedIndex].text;
       }
 
+      // Languages Group Studied
+      const languagesSelect = document.querySelector('[name="languages_studied"]');
+      if (languagesSelect && languagesSelect.selectedIndex > 0) {
+        document.getElementById('preview-languages').textContent = languagesSelect.options[languagesSelect.selectedIndex].value;
+      }
+
       // Previous class result
       const resultSelect = document.querySelector('[name="previous_result"]');
       if (resultSelect && resultSelect.selectedIndex > 0) {
-        document.getElementById('preview-result').textContent = resultSelect.options[resultSelect.selectedIndex].text.replace(/^\d+-/, '');
+        document.getElementById('preview-result').textContent = resultSelect.options[resultSelect.selectedIndex].text;
       }
 
+      // Previous class
+      const previousClassSelect = document.querySelector('[name="previous_class"]');
+      if (previousClassSelect && previousClassSelect.selectedIndex > 0) {
+        document.getElementById('preview-previous-class').textContent = previousClassSelect.options[previousClassSelect.selectedIndex].text;
+      }
+
+      // Previous status
+      const previousStatusSelect = document.querySelector('[name="previous_status"]');
+      if (previousStatusSelect && previousStatusSelect.selectedIndex > 0) {
+        document.getElementById('preview-previous-status').textContent = previousStatusSelect.options[previousStatusSelect.selectedIndex].text;
+      }
+
+      // Attendance
+      document.getElementById('preview-attendance').textContent = document.querySelector('[name="previous_attendance"]').value || '206';
+
       // Facility Profile
-      document.getElementById('preview-height').textContent = document.querySelector('[name="height"]').value || 'Not provided';
-      document.getElementById('preview-weight').textContent = document.querySelector('[name="weight"]').value || 'Not provided';
+      document.getElementById('preview-height').textContent = document.querySelector('[name="height"]').value + ' CMs' || '98 CMs';
+      document.getElementById('preview-weight').textContent = document.querySelector('[name="weight"]').value + ' KGs' || '30 KGs';
 
       // Distance to school
       const distanceSelect = document.querySelector('[name="distance_to_school"]');
       if (distanceSelect && distanceSelect.selectedIndex > 0) {
-        document.getElementById('preview-distance').textContent = distanceSelect.options[distanceSelect.selectedIndex].text.replace(/^\d+ - /, '');
+        document.getElementById('preview-distance').textContent = distanceSelect.options[distanceSelect.selectedIndex].text;
       }
 
       // Digital capability
@@ -2447,7 +2897,7 @@
       // Guardian education
       const educationSelect = document.querySelector('[name="guardian_education"]');
       if (educationSelect && educationSelect.selectedIndex > 0) {
-        document.getElementById('preview-guardian-education').textContent = educationSelect.options[educationSelect.selectedIndex].text.replace(/^\d+ - /, '');
+        document.getElementById('preview-guardian-education').textContent = educationSelect.options[educationSelect.selectedIndex].text;
       }
 
       // Special needs
@@ -2763,6 +3213,36 @@
 
     sldYes.addEventListener('change', toggleSldTypeFields);
     sldNo.addEventListener('change', toggleSldTypeFields);
+
+    // Enable/disable disability fields based on CWSN selection
+    const cwsnYes = document.getElementById('cwsn_yes');
+    const cwsnNo = document.getElementById('cwsn_no');
+    const impairmentTypeSelect = document.querySelector('[name="impairment_type"]');
+    const disabilityCertYes = document.getElementById('disability_cert_yes');
+    const disabilityCertNo = document.getElementById('disability_cert_no');
+    const disabilityPercentage = document.querySelector('[name="disability_percentage"]');
+
+    function toggleDisabilityFields() {
+      const isEnabled = cwsnYes.checked;
+      impairmentTypeSelect.disabled = !isEnabled;
+      disabilityCertYes.disabled = !isEnabled;
+      disabilityCertNo.disabled = !isEnabled;
+      disabilityPercentage.disabled = !isEnabled;
+
+      // If CWSN is set to No, reset the fields
+      if (!isEnabled) {
+        impairmentTypeSelect.selectedIndex = 0;
+        disabilityCertNo.checked = true;
+        disabilityPercentage.value = '';
+      }
+    }
+
+    // Initialize on page load
+    toggleDisabilityFields();
+
+    // Add event listeners
+    cwsnYes.addEventListener('change', toggleDisabilityFields);
+    cwsnNo.addEventListener('change', toggleDisabilityFields);
 
     // Form validation
     const form = document.getElementById('udiseStudentForm');
