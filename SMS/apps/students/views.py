@@ -307,3 +307,201 @@ def get_sections_for_class(request, class_id):
     except Exception as e:
         return JsonResponse({'error': str(e)}, status=500)
 
+
+class StudentUDISECreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
+    """UDISE+ style form for creating a new student"""
+    model = Student
+    form_class = StudentForm
+    template_name = "students/udise_student_form.html"
+    success_message = "New student successfully added using UDISE+ format."
+
+    def get_form(self, form_class=None):
+        form = super().get_form(form_class)
+
+        # Add AJAX functionality to update sections when class changes
+        form.fields['current_class'].widget.attrs.update({
+            'class': 'form-select',
+            'onchange': 'loadSections(this.value)'
+        })
+
+        return form
+
+    def form_valid(self, form):
+        # Check if the form is being saved as a draft
+        if 'save_as_draft' in self.request.POST:
+            form.instance.current_status = 'inactive'  # Mark as draft by setting status to inactive
+            self.success_message = "Student information saved as draft. You can complete it later."
+        else:
+            form.instance.current_status = 'active'
+
+        # Save the form to get the student instance
+        response = super().form_valid(form)
+
+        # Handle document uploads
+        self.handle_document_uploads(self.object)
+
+        return response
+
+    def handle_document_uploads(self, student):
+        """Process document uploads and save them to StudentDocument model"""
+        from .models import StudentDocument
+
+        # Get or create StudentDocument instance for this student
+        student_doc, created = StudentDocument.objects.get_or_create(student=student)
+
+        # Handle student photo (passport)
+        if 'student_photo' in self.request.FILES:
+            student.passport = self.request.FILES['student_photo']
+            student.save()
+
+        # Handle birth certificate
+        if 'birth_certificate' in self.request.FILES:
+            student_doc.birth_certificate = self.request.FILES['birth_certificate']
+
+        # Handle address proof
+        if 'address_proof' in self.request.FILES:
+            student_doc.address_proof = self.request.FILES['address_proof']
+
+        # Handle transfer certificate
+        if 'transfer_certificate' in self.request.FILES:
+            student_doc.transfer_certificate = self.request.FILES['transfer_certificate']
+            student_doc.transfer_certificate_number = self.request.POST.get('transfer_certificate_number', '')
+
+        # Handle category certificate
+        if 'category_certificate' in self.request.FILES:
+            student_doc.caste_certificate = self.request.FILES['category_certificate']
+            student_doc.caste_certificate_number = self.request.POST.get('category_certificate_number', '')
+
+        # Handle disability certificate
+        if 'disability_certificate' in self.request.FILES:
+            student_doc.medical_certificate = self.request.FILES['disability_certificate']
+            student_doc.medical_certificate_number = self.request.POST.get('disability_certificate_number', '')
+
+        # Handle income certificate
+        if 'income_certificate' in self.request.FILES:
+            student_doc.other_document = self.request.FILES['income_certificate']
+            student_doc.other_document_number = self.request.POST.get('income_certificate_number', '')
+
+        # Save the document
+        student_doc.save()
+
+    def get_success_url(self):
+        # Redirect to the student detail page after successful creation
+        return reverse_lazy('student-detail', kwargs={'pk': self.object.pk})
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        # Add current academic session to context
+        from apps.corecode.models import AcademicSession
+        current_session = AcademicSession.objects.filter(current=True).first()
+        if current_session:
+            context['current_session'] = current_session
+
+        # Add school profile to context
+        from apps.corecode.models import SiteConfig
+        context['profile'] = {
+            'college_name': SiteConfig.objects.filter(key='school_name').first().value if SiteConfig.objects.filter(key='school_name').exists() else 'VIDYA BHARTI',
+            'college_code': SiteConfig.objects.filter(key='school_address').first().value if SiteConfig.objects.filter(key='school_address').exists() else '09161513902'
+        }
+
+        return context
+
+
+class StudentUDISEUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
+    """UDISE+ style form for updating an existing student"""
+    model = Student
+    form_class = StudentForm
+    template_name = "students/udise_student_form.html"
+    success_message = "Student record successfully updated using UDISE+ format."
+
+    def get_form(self, form_class=None):
+        form = super().get_form(form_class)
+
+        # Add AJAX functionality to update sections when class changes
+        form.fields['current_class'].widget.attrs.update({
+            'class': 'form-select',
+            'onchange': 'loadSections(this.value)'
+        })
+
+        return form
+
+    def form_valid(self, form):
+        # Check if the form is being saved as a draft
+        if 'save_as_draft' in self.request.POST:
+            form.instance.current_status = 'inactive'  # Mark as draft by setting status to inactive
+            self.success_message = "Student information saved as draft. You can complete it later."
+        else:
+            form.instance.current_status = 'active'
+
+        # Save the form to get the student instance
+        response = super().form_valid(form)
+
+        # Handle document uploads
+        self.handle_document_uploads(self.object)
+
+        return response
+
+    def handle_document_uploads(self, student):
+        """Process document uploads and save them to StudentDocument model"""
+        from .models import StudentDocument
+
+        # Get or create StudentDocument instance for this student
+        student_doc, created = StudentDocument.objects.get_or_create(student=student)
+
+        # Handle student photo (passport)
+        if 'student_photo' in self.request.FILES:
+            student.passport = self.request.FILES['student_photo']
+            student.save()
+
+        # Handle birth certificate
+        if 'birth_certificate' in self.request.FILES:
+            student_doc.birth_certificate = self.request.FILES['birth_certificate']
+
+        # Handle address proof
+        if 'address_proof' in self.request.FILES:
+            student_doc.address_proof = self.request.FILES['address_proof']
+
+        # Handle transfer certificate
+        if 'transfer_certificate' in self.request.FILES:
+            student_doc.transfer_certificate = self.request.FILES['transfer_certificate']
+            student_doc.transfer_certificate_number = self.request.POST.get('transfer_certificate_number', '')
+
+        # Handle category certificate
+        if 'category_certificate' in self.request.FILES:
+            student_doc.caste_certificate = self.request.FILES['category_certificate']
+            student_doc.caste_certificate_number = self.request.POST.get('category_certificate_number', '')
+
+        # Handle disability certificate
+        if 'disability_certificate' in self.request.FILES:
+            student_doc.medical_certificate = self.request.FILES['disability_certificate']
+            student_doc.medical_certificate_number = self.request.POST.get('disability_certificate_number', '')
+
+        # Handle income certificate
+        if 'income_certificate' in self.request.FILES:
+            student_doc.other_document = self.request.FILES['income_certificate']
+            student_doc.other_document_number = self.request.POST.get('income_certificate_number', '')
+
+        # Save the document
+        student_doc.save()
+
+    def get_success_url(self):
+        # Redirect to the student detail page after successful update
+        return reverse_lazy('student-detail', kwargs={'pk': self.object.pk})
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        # Add current academic session to context
+        from apps.corecode.models import AcademicSession
+        current_session = AcademicSession.objects.filter(current=True).first()
+        if current_session:
+            context['current_session'] = current_session
+
+        # Add school profile to context
+        from apps.corecode.models import SiteConfig
+        context['profile'] = {
+            'college_name': SiteConfig.objects.filter(key='school_name').first().value if SiteConfig.objects.filter(key='school_name').exists() else 'VIDYA BHARTI',
+            'college_code': SiteConfig.objects.filter(key='school_address').first().value if SiteConfig.objects.filter(key='school_address').exists() else '09161513902'
+        }
+
+        return context
+

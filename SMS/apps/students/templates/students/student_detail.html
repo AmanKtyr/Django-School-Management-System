@@ -48,9 +48,15 @@
       <button id="printButton" class="action-btn btn btn-light shadow-sm me-1" title="Print Student Details">
         <i class="fas fa-print"></i> Print
       </button>
-      <a href="{% url 'student-update' object.id %}" class="action-btn btn btn-warning shadow-sm text-white me-1" title="Edit Student Details">
-        <i class="fas fa-edit"></i> Edit
-      </a>
+      <div class="dropdown d-inline-block me-1">
+        <button class="action-btn btn btn-warning shadow-sm text-white dropdown-toggle" type="button" id="editDropdown" data-bs-toggle="dropdown" aria-expanded="false" title="Edit Student Details">
+          <i class="fas fa-edit"></i> Edit
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="editDropdown">
+          <li><a class="dropdown-item" href="{% url 'student-update' object.id %}">Standard Form</a></li>
+          <li><a class="dropdown-item" href="{% url 'student-update-udise' object.id %}">UDISE+ Format</a></li>
+        </ul>
+      </div>
       <a href="{% url 'student-delete' object.id %}" class="action-btn btn btn-danger shadow-sm" title="Delete Student Details">
         <i class="fas fa-trash-alt"></i> Delete
       </a>

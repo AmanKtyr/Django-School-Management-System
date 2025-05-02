@@ -270,7 +270,7 @@
           </li>
 
           <li class="nav-header">Students</li>
-          <li class="nav-item has-treeview  {% if request.resolver_match.url_name in 'student-list student-create student-details  ' %}menu-open{% endif %}">
+          <li class="nav-item has-treeview  {% if request.resolver_match.url_name in 'student-list student-create student-create-udise student-update-udise student-details' %}menu-open{% endif %}">
               <a href="#" class="nav-link  " >
                   <i class="nav-icon fas fa-user-graduate" style="color: #3399ff; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);"></i>
                   <p>Students<i class="fas fa-angle-left right"></i></p>
@@ -286,6 +286,12 @@
                       <a href="{% url 'student-create' %}" class="nav-link {% if request.resolver_match.url_name == 'student-create' %}active{% endif %}">
                           <i class="fas fa-user-plus nav-icon" style="color: #ffcc00;"></i>
                           <p>Admissions</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="{% url 'student-create-udise' %}" class="nav-link {% if request.resolver_match.url_name == 'student-create-udise' %}active{% endif %}">
+                          <i class="fas fa-id-card nav-icon" style="color: #ff6600;"></i>
+                          <p>UDISE+ Student Form</p>
                       </a>
                   </li>
               </ul>

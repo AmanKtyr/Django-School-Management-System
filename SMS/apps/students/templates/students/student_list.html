@@ -31,9 +31,15 @@
 {% endblock breadcrumb %}
 
 {% block page-actions %}
-<a class="btn btn-primary" href="{% url 'student-create' %}">
-  <i class="fas fa-plus"></i> New Student
-</a>
+<div class="dropdown d-inline-block me-2">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="addStudentDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fas fa-plus"></i> New Student
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="addStudentDropdown">
+    <li><a class="dropdown-item" href="{% url 'student-create' %}">Standard Form</a></li>
+    <li><a class="dropdown-item" href="{% url 'student-create-udise' %}">UDISE+ Format</a></li>
+  </ul>
+</div>
 <a class="btn btn-outline-primary" href="{% url 'student-upload' %}">
   <i class="fas fa-upload"></i> Upload Students
 </a>

@@ -158,6 +158,12 @@ class StudentDocument(models.Model):
     aadhar_card = models.FileField(upload_to="students/documents/aadhar/", blank=True, null=True)
     aadhar_card_number = models.CharField(max_length=50, blank=True)
 
+    birth_certificate = models.FileField(upload_to="students/documents/birth/", blank=True, null=True)
+    birth_certificate_number = models.CharField(max_length=50, blank=True)
+
+    address_proof = models.FileField(upload_to="students/documents/address/", blank=True, null=True)
+    address_proof_number = models.CharField(max_length=50, blank=True)
+
     parent_photo = models.FileField(upload_to="students/documents/parent_photo/", blank=True, null=True)
     parent_photo_number = models.CharField(max_length=50, blank=True)
 
