@@ -641,31 +641,14 @@
 
       <!-- UDISE+ Header -->
       <div class="udise-header d-flex align-items-center mb-4">
-        <img src="{% static 'dist/img/udise-logo.png' %}" alt="UDISE+ Logo" class="udise-logo">
-        <div>
-          <h1 class="udise-title">UDISE+ Student Registration Form</h1>
-          <p class="udise-subtitle">Unified District Information System for Education Plus</p>
-        </div>
+
+
         <div class="ms-auto session-info">
           <span id="current-time">12:00 PM</span> | Academic Year: 2023-24
         </div>
       </div>
 
-      <!-- UDISE+ Info Bar -->
-      <div class="udise-info-bar d-flex flex-wrap align-items-center mb-4">
-        <div class="udise-info-item">
-          <strong>School Code:</strong> 12345
-        </div>
-        <div class="udise-info-item">
-          <strong>School Name:</strong> {{ school_name|default:"Your School Name" }}
-        </div>
-        <div class="udise-info-item">
-          <strong>District:</strong> {{ district|default:"Your District" }}
-        </div>
-        <div class="udise-info-item">
-          <strong>State:</strong> {{ state|default:"Your State" }}
-        </div>
-      </div>
+
 
       <!-- Section Tabs -->
       <div class="container-fluid px-4 py-3">
@@ -711,7 +694,7 @@
               <div class="udise-field-sublabel">
                 <span class="text-danger">*</span> <span class="udise-rule-reference"></span>
               </div>
-              {{ form.fullname|add_class:"form-control"|default_if_none:""|attr:"value:Rahul Sharma"|attr:"required" }}
+              {{ form.fullname|add_class:"form-control"|default_if_none:""|attr:"required"|attr:"placeholder:Enter student's full name" }}
               <div class="invalid-feedback">Student name is required</div>
             </div>
           </div>
@@ -727,9 +710,9 @@
               <div class="udise-field-sublabel">
                 <span class="text-danger">*</span> <span class="udise-rule-reference"></span>
               </div>
-              <select name="gender" class="form-select" required>
-                <option value="">Select</option>
-                <option value="male" selected>Male</option>
+              <select name="gender" class="form-select" required placeholder="Select gender">
+                <option value="">Select gender</option>
+                <option value="male">Male</option>
                 <option value="female">Female</option>
                 <option value="other">Other</option>
               </select>
@@ -750,7 +733,7 @@
                 <a href="#" class="text-primary" data-bs-toggle="tooltip" title="Click to view age matrix for different classes">Age Matrix</a>
               </div>
               <div class="date-input-group">
-                <input type="date" name="date_of_birth" class="form-control" value="2014-05-15" required>
+                <input type="date" name="date_of_birth" class="form-control" required placeholder="Select date of birth">
                 <i class="fas fa-calendar"></i>
               </div>
               <div class="invalid-feedback">Date of birth is required</div>
@@ -767,7 +750,7 @@
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
               </div>
-              <input type="text" name="Mother_name" class="form-control" value="Sunita Sharma">
+              <input type="text" name="Mother_name" class="form-control" placeholder="Enter mother's name">
               <div class="invalid-feedback"></div>
             </div>
           </div>
@@ -781,7 +764,7 @@
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
               </div>
-              <input type="text" name="Father_name" class="form-control" value="Rajesh Sharma">
+              <input type="text" name="Father_name" class="form-control" placeholder="Enter father's name">
               <div class="invalid-feedback"></div>
             </div>
           </div>
@@ -795,7 +778,7 @@
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
               </div>
-              <input type="text" class="form-control" name="guardian_name" value="Rajesh Sharma">
+              <input type="text" class="form-control" name="guardian_name" placeholder="Enter guardian's name">
               <div class="invalid-feedback"></div>
             </div>
           </div>
@@ -809,7 +792,7 @@
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
               </div>
-              <input type="text" name="permanent_education_number" class="form-control" value="2018010737">
+              <input type="text" name="permanent_education_number" class="form-control" placeholder="Enter permanent education number">
               <div class="invalid-feedback"></div>
             </div>
           </div>
@@ -825,13 +808,11 @@
               </div>
               <div class="d-flex align-items-center mb-2">
                 <div class="form-check me-3">
-                  <input class="form-check-input" type="checkbox" id="changeAadhaar">
-                  <label class="form-check-label" for="changeAadhaar">
-                    Do you want to change AADHAAR Details in UDISE?
-                  </label>
+
+
                 </div>
               </div>
-              <input type="text" name="aadhar" class="form-control" value="123456789012" maxlength="12" pattern="[0-9]{12}">
+              <input type="text" name="aadhar" class="form-control" placeholder="Enter 12-digit Aadhaar number" maxlength="12" pattern="[0-9]{12}">
               <div class="invalid-feedback"></div>
             </div>
           </div>
@@ -845,7 +826,7 @@
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
               </div>
-              <input type="text" class="form-control" name="name_as_per_aadhaar" value="{{ form.fullname.value }}">
+              <input type="text" class="form-control" name="name_as_per_aadhaar" placeholder="Enter name as per Aadhaar card">
               <div class="invalid-feedback"></div>
             </div>
           </div>
@@ -860,7 +841,7 @@
               <div class="udise-field-sublabel">
                 <span class="text-danger">*</span> <span class="udise-rule-reference"></span>
               </div>
-              <textarea name="address" class="form-control" required>123, Green Park Colony, Sector 5, Lucknow</textarea>
+              <textarea name="address" class="form-control" required placeholder="Enter complete address"></textarea>
               <div class="invalid-feedback">Address is required</div>
             </div>
           </div>
@@ -874,7 +855,7 @@
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
               </div>
-              <input type="text" class="form-control" name="pin_code" maxlength="6" pattern="[0-9]{6}" value="226005" required>
+              <input type="text" class="form-control" name="pin_code" maxlength="6" pattern="[0-9]{6}" placeholder="Enter 6-digit PIN code" required>
               <div class="invalid-feedback">Pin code must be 6 digits</div>
             </div>
           </div>
@@ -890,7 +871,7 @@
               <div class="udise-field-sublabel">
                 <span class="text-danger">*</span> <span class="udise-rule-reference"></span>
               </div>
-              <input type="text" name="mobile_number" class="form-control" value="9876543210" pattern="[0-9]{10,15}" required>
+              <input type="text" name="mobile_number" class="form-control" placeholder="Enter 10-digit mobile number" pattern="[0-9]{10,15}" required>
               <div class="invalid-feedback">Valid mobile number is required (10-15 digits)</div>
             </div>
           </div>
@@ -905,7 +886,7 @@
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
               </div>
-              <input type="text" class="form-control" name="alternate_mobile" pattern="[0-9]{10,15}" value="8765432109">
+              <input type="text" class="form-control" name="alternate_mobile" pattern="[0-9]{10,15}" placeholder="Enter alternate mobile number (optional)">
               <div class="invalid-feedback">Mobile number must be 10-15 digits</div>
             </div>
           </div>
@@ -920,7 +901,7 @@
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
               </div>
-              <input type="email" name="email_id" class="form-control" value="rajesh.sharma@gmail.com">
+              <input type="email" name="email_id" class="form-control" placeholder="Enter email address">
               <div class="invalid-feedback"></div>
             </div>
           </div>
@@ -935,8 +916,8 @@
                 <span class="udise-rule-reference"></span>
               </div>
               <select class="form-select" name="mother_tongue">
-                <option value="">Select</option>
-                <option value="58-HINDI-Bhojpuri" selected>58-HINDI-Bhojpuri</option>
+                <option value="">Select mother tongue</option>
+                <option value="58-HINDI-Bhojpuri">58-HINDI-Bhojpuri</option>
                 <option value="1-HINDI">1-HINDI</option>
                 <option value="2-ENGLISH">2-ENGLISH</option>
                 <option value="3-BENGALI">3-BENGALI</option>
@@ -968,8 +949,8 @@
                 <span class="udise-rule-reference"></span>
               </div>
               <select name="social_category" class="form-select">
-                <option value="">Select</option>
-                <option value="Gen" selected>General</option>
+                <option value="">Select social category</option>
+                <option value="Gen">General</option>
                 <option value="OBC">OBC</option>
                 <option value="SC">SC</option>
                 <option value="ST">ST</option>
@@ -990,7 +971,7 @@
                 <span class="udise-rule-reference"></span>
               </div>
               <select class="form-select" name="minority_group">
-                <option value="">Select</option>
+                <option value="">Select minority group (if applicable)</option>
                 <option value="1-MUSLIM">1-MUSLIM</option>
                 <option value="2-CHRISTIAN">2-CHRISTIAN</option>
                 <option value="3-SIKH">3-SIKH</option>
@@ -1353,7 +1334,7 @@
                 <span class="udise-rule-reference"></span>
               </div>
               <div class="date-input-group">
-                <input type="date" name="date_of_admission" class="form-control" value="2023-04-01" required>
+                <input type="date" name="date_of_admission" class="form-control" required placeholder="Select admission date">
                 <i class="fas fa-calendar"></i>
               </div>
               <div class="invalid-feedback"></div>
@@ -1398,7 +1379,7 @@
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
               </div>
-              <input type="text" class="form-control" name="roll_number" value="1">
+              <input type="text" class="form-control" name="roll_number" placeholder="Enter roll number">
               <div class="invalid-feedback"></div>
             </div>
           </div>
@@ -1413,8 +1394,8 @@
                 <span class="udise-rule-reference"></span>
               </div>
               <select class="form-select" name="medium_of_instruction">
-                <option value="">Select</option>
-                <option value="19-English" selected>19-English</option>
+                <option value="">Select medium of instruction</option>
+                <option value="19-English">19-English</option>
                 <option value="1-Assamese">1-Assamese</option>
                 <option value="2-Bengali">2-Bengali</option>
                 <option value="3-Gujarati">3-Gujarati</option>
@@ -1459,8 +1440,8 @@
                 <span class="udise-rule-reference"></span>
               </div>
               <select class="form-select" name="languages_studied">
-                <option value="">Select</option>
-                <option value="Hindi, English" selected>Hindi, English</option>
+                <option value="">Select languages studied</option>
+                <option value="Hindi, English">Hindi, English</option>
                 <option value="Hindi_English">Hindi_English</option>
                 <option value="English, Hindi, Sanskrit">English, Hindi, Sanskrit</option>
                 <option value="English, Hindi, French">English, Hindi, French</option>
@@ -1864,7 +1845,7 @@
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
               </div>
-              <input type="number" class="form-control" name="height" min="50" max="250" value="120" required>
+              <input type="number" class="form-control" name="height" min="50" max="250" placeholder="Enter height in cm" required>
               <div class="invalid-feedback"></div>
             </div>
           </div>
@@ -1877,7 +1858,7 @@
               <div class="udise-field-sublabel">
                 <span class="udise-rule-reference"></span>
               </div>
-              <input type="number" class="form-control" name="weight" min="5" max="150" value="25" required>
+              <input type="number" class="form-control" name="weight" min="5" max="150" placeholder="Enter weight in kg" required>
               <div class="invalid-feedback"></div>
             </div>
           </div>
@@ -1892,8 +1873,8 @@
                 <span class="udise-rule-reference"></span>
               </div>
               <select class="form-select" name="distance_to_school">
-                <option value="">Select</option>
-                <option value="1" selected>1 - Less than 1 km</option>
+                <option value="">Select distance to school</option>
+                <option value="1">1 - Less than 1 km</option>
                 <option value="2">2 - 1 to 3 km</option>
                 <option value="3">3 - 3 to 5 km</option>
                 <option value="4">4 - More than 5 km</option>
@@ -1912,8 +1893,8 @@
                 <span class="udise-rule-reference"></span>
               </div>
               <select class="form-select" name="guardian_education">
-                <option value="">Select</option>
-                <option value="1" selected>1 - Primary</option>
+                <option value="">Select guardian's education level</option>
+                <option value="1">1 - Primary</option>
                 <option value="2">2 - Upper Primary</option>
                 <option value="3">3 - Secondary</option>
                 <option value="4">4 - Higher Secondary</option>
@@ -1997,8 +1978,8 @@
                     <span class="text-danger">*</span>
                   </label>
                   <div class="input-group">
-                    <input type="file" class="form-control" name="birth_certificate" accept=".jpg,.jpeg,.png,.pdf" required>
-                    <input type="text" class="form-control" name="birth_certificate_number" placeholder="Document Number" style="max-width: 150px;">
+                    <input type="file" class="form-control" name="birth_certificate" accept=".jpg,.jpeg,.png,.pdf" required placeholder="Upload birth certificate">
+                    <input type="text" class="form-control" name="birth_certificate_number" placeholder="Enter document number" style="max-width: 150px;">
                   </div>
                   <div class="form-text">Proof of date of birth</div>
                 </div>
@@ -2009,8 +1990,8 @@
                     <span class="text-danger">*</span>
                   </label>
                   <div class="input-group">
-                    <input type="file" class="form-control" name="address_proof" accept=".jpg,.jpeg,.png,.pdf" required>
-                    <input type="text" class="form-control" name="address_proof_number" placeholder="Document Number" style="max-width: 150px;">
+                    <input type="file" class="form-control" name="address_proof" accept=".jpg,.jpeg,.png,.pdf" required placeholder="Upload address proof">
+                    <input type="text" class="form-control" name="address_proof_number" placeholder="Enter document number" style="max-width: 150px;">
                   </div>
                   <div class="form-text">Aadhaar card, utility bill, etc.</div>
                 </div>
@@ -2020,8 +2001,8 @@
                     <span class="udise-field-number">4</span> Previous School Transfer Certificate
                   </label>
                   <div class="input-group">
-                    <input type="file" class="form-control" name="transfer_certificate" accept=".jpg,.jpeg,.png,.pdf">
-                    <input type="text" class="form-control" name="transfer_certificate_number" placeholder="TC Number" style="max-width: 150px;">
+                    <input type="file" class="form-control" name="transfer_certificate" accept=".jpg,.jpeg,.png,.pdf" placeholder="Upload transfer certificate (if applicable)">
+                    <input type="text" class="form-control" name="transfer_certificate_number" placeholder="Enter TC number" style="max-width: 150px;">
                   </div>
                   <div class="form-text">If applicable</div>
                 </div>
@@ -2043,8 +2024,8 @@
                       <span class="udise-field-number">5</span> Category Certificate (SC/ST/OBC)
                     </label>
                     <div class="input-group">
-                      <input type="file" class="form-control" name="category_certificate" accept=".jpg,.jpeg,.png,.pdf">
-                      <input type="text" class="form-control" name="category_certificate_number" placeholder="Certificate No." style="max-width: 150px;">
+                      <input type="file" class="form-control" name="category_certificate" accept=".jpg,.jpeg,.png,.pdf" placeholder="Upload category certificate (if applicable)">
+                      <input type="text" class="form-control" name="category_certificate_number" placeholder="Enter certificate number" style="max-width: 150px;">
                     </div>
                   </div>
 
@@ -2053,8 +2034,8 @@
                       <span class="udise-field-number">6</span> Disability Certificate
                     </label>
                     <div class="input-group">
-                      <input type="file" class="form-control" name="disability_certificate" accept=".jpg,.jpeg,.png,.pdf">
-                      <input type="text" class="form-control" name="disability_certificate_number" placeholder="Certificate No." style="max-width: 150px;">
+                      <input type="file" class="form-control" name="disability_certificate" accept=".jpg,.jpeg,.png,.pdf" placeholder="Upload disability certificate (if applicable)">
+                      <input type="text" class="form-control" name="disability_certificate_number" placeholder="Enter certificate number" style="max-width: 150px;">
                     </div>
                   </div>
 
@@ -2063,8 +2044,8 @@
                       <span class="udise-field-number">7</span> Income Certificate (for EWS)
                     </label>
                     <div class="input-group">
-                      <input type="file" class="form-control" name="income_certificate" accept=".jpg,.jpeg,.png,.pdf">
-                      <input type="text" class="form-control" name="income_certificate_number" placeholder="Certificate No." style="max-width: 150px;">
+                      <input type="file" class="form-control" name="income_certificate" accept=".jpg,.jpeg,.png,.pdf" placeholder="Upload income certificate (if applicable)">
+                      <input type="text" class="form-control" name="income_certificate_number" placeholder="Enter certificate number" style="max-width: 150px;">
                     </div>
                   </div>
                 </div>
