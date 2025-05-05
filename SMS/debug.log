@@ -34717,3 +34717,460 @@ WARNING 2025-05-03 18:23:57,667 Not Found: /.well-known/appspecific/com.chrome.d
 WARNING 2025-05-03 18:23:57,668 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 20609
 WARNING 2025-05-03 18:23:59,088 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
 INFO 2025-05-03 18:23:59,182 "GET /static/dist/css/style.css?v=1746276839155 HTTP/1.1" 200 55691
+INFO 2025-05-04 11:17:25,031 Watching for file changes with StatReloader
+INFO 2025-05-04 11:17:34,506 "GET / HTTP/1.1" 302 0
+INFO 2025-05-04 11:17:34,599 "GET /accounts/login/?next=/ HTTP/1.1" 200 5723
+INFO 2025-05-04 11:17:34,875 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-05-04 11:17:34,899 "GET /media/college_logos/college_lgoooo_wLVF410.jpg HTTP/1.1" 200 31795
+INFO 2025-05-04 11:17:34,989 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-05-04 11:17:35,000 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-05-04 11:17:35,157 "GET /static/dist/css/login-page.css HTTP/1.1" 200 9070
+INFO 2025-05-04 11:17:35,170 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-05-04 11:17:35,914 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2025-05-04 11:17:36,254 "GET /static/dist/img/bg.jpg HTTP/1.1" 200 3093083
+WARNING 2025-05-04 11:17:36,556 Not Found: /favicon.ico
+WARNING 2025-05-04 11:17:36,558 "GET /favicon.ico HTTP/1.1" 404 20498
+INFO 2025-05-04 11:17:45,485 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-05-04 11:17:45,665 "GET / HTTP/1.1" 200 59643
+INFO 2025-05-04 11:17:45,743 "GET /static/dist/css/preload.css HTTP/1.1" 200 1863
+INFO 2025-05-04 11:17:45,751 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-05-04 11:17:45,775 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-05-04 11:17:45,775 "GET /static/dist/css/sidebar-fix.css HTTP/1.1" 200 11058
+INFO 2025-05-04 11:17:45,779 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-05-04 11:17:45,785 "GET /static/dist/css/style.css HTTP/1.1" 200 55691
+INFO 2025-05-04 11:17:45,796 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-05-04 11:17:45,797 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-05-04 11:17:45,808 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-05-04 11:17:45,809 "GET /static/dist/js/custom.js HTTP/1.1" 200 2597
+INFO 2025-05-04 11:17:45,826 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-05-04 11:17:45,839 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-05-04 11:17:46,157 "GET /static/dist/js/class-section-filter.js HTTP/1.1" 200 3704
+INFO 2025-05-04 11:17:47,094 "GET /static/dist/css/style.css?v=1746337667088 HTTP/1.1" 200 55691
+INFO 2025-05-04 11:17:47,121 "GET /static/dist/js/sidebar-fix.js HTTP/1.1" 200 2712
+INFO 2025-05-04 11:17:47,122 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 200 9593
+WARNING 2025-05-04 11:17:47,987 "GET /static/dist/img/favicon/favicon.ico HTTP/1.1" 404 1898
+WARNING 2025-05-04 11:17:48,002 "GET /static/dist/img/favicon/favicon-32x32.png HTTP/1.1" 404 1916
+WARNING 2025-05-04 11:17:48,016 "GET /static/dist/img/favicon/favicon-16x16.png HTTP/1.1" 404 1916
+INFO 2025-05-04 11:17:50,116 "GET / HTTP/1.1" 200 59643
+INFO 2025-05-04 11:17:50,313 "GET /static/dist/css/style.css?v=1746337670308 HTTP/1.1" 200 55691
+INFO 2025-05-04 11:17:50,498 "GET / HTTP/1.1" 200 59643
+INFO 2025-05-04 11:17:50,682 "GET /static/dist/css/style.css?v=1746337670675 HTTP/1.1" 200 55691
+INFO 2025-05-04 11:17:50,983 "GET / HTTP/1.1" 200 59643
+INFO 2025-05-04 11:17:51,162 "GET /static/dist/css/style.css?v=1746337671158 HTTP/1.1" 200 55691
+INFO 2025-05-04 11:17:56,954 "GET /student/create-udise/ HTTP/1.1" 200 166995
+INFO 2025-05-04 11:17:57,031 "GET /static/dist/img/avatar.png HTTP/1.1" 200 2121881
+INFO 2025-05-04 11:17:57,183 "GET /static/dist/css/style.css?v=1746337677176 HTTP/1.1" 200 55691
+WARNING 2025-05-04 11:17:57,320 "GET /static/dist/img/favicon/default-favicon.ico HTTP/1.1" 404 1922
+INFO 2025-05-04 11:19:10,963 "GET /static/dist/css/style.css?v=1746337750958 HTTP/1.1" 200 55691
+INFO 2025-05-04 11:23:13,740 "GET /fees/settings/ HTTP/1.1" 200 39457
+WARNING 2025-05-04 11:23:13,950 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+INFO 2025-05-04 11:23:14,172 "GET /static/dist/css/style.css?v=1746337994151 HTTP/1.1" 200 55691
+INFO 2025-05-04 11:23:17,182 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-05-04 11:23:17,209 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-05-04 11:23:19,365 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 44679
+INFO 2025-05-04 11:23:19,733 "GET /static/dist/css/style.css?v=1746337999724 HTTP/1.1" 200 55691
+INFO 2025-05-04 11:23:19,883 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-05-04 11:23:19,948 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-05-04 11:23:20,033 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-05-04 11:31:30,084 "GET /fees/ HTTP/1.1" 200 85942
+INFO 2025-05-04 11:31:30,621 "GET /static/dist/css/style.css?v=1746338490576 HTTP/1.1" 200 55691
+INFO 2025-05-04 11:31:36,195 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-05-04 11:31:36,224 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-05-04 11:31:36,241 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-05-04 11:31:38,578 "GET /fees/?class_name=5&section=A&search= HTTP/1.1" 200 101216
+INFO 2025-05-04 11:31:39,004 "GET /static/dist/css/style.css?v=1746338498995 HTTP/1.1" 200 55691
+INFO 2025-05-04 11:31:39,044 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-05-04 11:31:39,075 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-05-04 11:31:39,109 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-05-04 11:31:39,174 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-05-04 11:31:45,113 "GET /fees/add-payment/1/ HTTP/1.1" 200 39185
+INFO 2025-05-04 11:31:45,301 "GET /static/dist/css/style.css?v=1746338505282 HTTP/1.1" 200 55691
+INFO 2025-05-04 11:32:02,693 "POST /fees/add-payment/1/ HTTP/1.1" 302 0
+INFO 2025-05-04 11:32:02,764 "GET /fees/history/1/ HTTP/1.1" 200 42506
+INFO 2025-05-04 11:32:02,977 "GET /static/dist/css/style.css?v=1746338522968 HTTP/1.1" 200 55691
+INFO 2025-05-04 12:02:52,407 "GET /fees/history/1/ HTTP/1.1" 200 42353
+INFO 2025-05-04 12:02:52,850 "GET /static/dist/css/style.css?v=1746340372839 HTTP/1.1" 200 55691
+INFO 2025-05-04 12:02:55,722 "GET /student/create-udise/ HTTP/1.1" 200 167878
+INFO 2025-05-04 12:02:56,157 "GET /static/dist/css/style.css?v=1746340376146 HTTP/1.1" 200 55691
+INFO 2025-05-04 12:03:08,790 "GET /student/create-udise/ HTTP/1.1" 200 167878
+INFO 2025-05-04 12:03:08,958 "GET /static/dist/css/style.css?v=1746340388949 HTTP/1.1" 200 55691
+WARNING 2025-05-04 12:03:17,062 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-04 12:03:17,063 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 20609
+INFO 2025-05-04 12:03:17,361 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+WARNING 2025-05-04 12:03:17,534 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-05-04 12:03:17,544 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+INFO 2025-05-04 12:03:17,698 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-05-04 12:03:19,055 "GET /student/create-udise/ HTTP/1.1" 200 167878
+INFO 2025-05-04 12:03:19,200 "GET /static/dist/css/preload.css HTTP/1.1" 200 1863
+WARNING 2025-05-04 12:03:19,247 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-04 12:03:19,248 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 20609
+INFO 2025-05-04 12:03:19,313 "GET /static/dist/css/style.css HTTP/1.1" 200 55691
+INFO 2025-05-04 12:03:19,354 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-05-04 12:03:19,361 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-05-04 12:03:19,384 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-05-04 12:03:19,391 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-05-04 12:03:19,435 "GET /static/dist/css/sidebar-fix.css HTTP/1.1" 200 11058
+INFO 2025-05-04 12:03:19,586 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-05-04 12:03:19,676 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-05-04 12:03:19,681 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-05-04 12:03:19,756 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-05-04 12:03:19,767 "GET /static/dist/js/custom.js HTTP/1.1" 200 2597
+INFO 2025-05-04 12:03:19,900 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-05-04 12:03:19,949 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-05-04 12:03:20,057 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-05-04 12:03:20,117 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+INFO 2025-05-04 12:03:20,254 "GET /static/dist/img/avatar.png HTTP/1.1" 200 2121881
+INFO 2025-05-04 12:03:20,322 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-05-04 12:03:20,650 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-05-04 12:03:20,686 "GET /static/dist/js/class-section-filter.js HTTP/1.1" 200 3704
+WARNING 2025-05-04 12:03:20,820 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-05-04 12:03:20,902 "GET /static/dist/css/style.css?v=1746340400886 HTTP/1.1" 200 55691
+INFO 2025-05-04 12:03:21,183 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 200 9593
+INFO 2025-05-04 12:03:21,185 "GET /static/dist/js/sidebar-fix.js HTTP/1.1" 200 2712
+WARNING 2025-05-04 12:03:22,238 "GET /static/dist/img/favicon/default-favicon.ico HTTP/1.1" 404 1922
+INFO 2025-05-04 16:57:27,097 Watching for file changes with StatReloader
+INFO 2025-05-04 16:57:55,159 "GET / HTTP/1.1" 302 0
+INFO 2025-05-04 16:57:55,376 "GET /accounts/login/?next=/ HTTP/1.1" 200 5723
+INFO 2025-05-04 16:57:55,941 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-05-04 16:57:55,994 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-05-04 16:57:56,006 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-05-04 16:57:56,075 "GET /media/college_logos/college_lgoooo_wLVF410.jpg HTTP/1.1" 200 31795
+INFO 2025-05-04 16:57:56,077 "GET /static/dist/css/login-page.css HTTP/1.1" 200 9070
+INFO 2025-05-04 16:57:56,238 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-05-04 16:57:56,418 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2025-05-04 16:57:56,727 "GET /static/dist/img/bg.jpg HTTP/1.1" 200 3093083
+WARNING 2025-05-04 16:57:56,770 Not Found: /favicon.ico
+WARNING 2025-05-04 16:57:56,772 "GET /favicon.ico HTTP/1.1" 404 20498
+INFO 2025-05-04 16:58:02,249 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-05-04 16:58:02,499 "GET / HTTP/1.1" 200 59647
+INFO 2025-05-04 16:58:02,589 "GET /static/dist/css/preload.css HTTP/1.1" 200 1863
+INFO 2025-05-04 16:58:02,593 "GET /static/dist/css/sidebar-fix.css HTTP/1.1" 200 11058
+INFO 2025-05-04 16:58:02,595 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-05-04 16:58:02,598 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-05-04 16:58:02,607 "GET /static/dist/css/style.css HTTP/1.1" 200 55691
+INFO 2025-05-04 16:58:02,608 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-05-04 16:58:02,616 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-05-04 16:58:02,631 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-05-04 16:58:02,635 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-05-04 16:58:02,652 "GET /static/dist/js/custom.js HTTP/1.1" 200 2597
+INFO 2025-05-04 16:58:02,707 "GET /static/dist/js/class-section-filter.js HTTP/1.1" 200 3704
+INFO 2025-05-04 16:58:02,707 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-05-04 16:58:02,783 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-05-04 16:58:03,313 "GET /static/dist/css/style.css?v=1746358083301 HTTP/1.1" 200 55691
+INFO 2025-05-04 16:58:03,342 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 200 9593
+INFO 2025-05-04 16:58:03,347 "GET /static/dist/js/sidebar-fix.js HTTP/1.1" 200 2712
+WARNING 2025-05-04 16:58:03,939 "GET /static/dist/img/favicon/favicon.ico HTTP/1.1" 404 1898
+WARNING 2025-05-04 16:58:03,957 "GET /static/dist/img/favicon/favicon-32x32.png HTTP/1.1" 404 1916
+WARNING 2025-05-04 16:58:03,974 "GET /static/dist/img/favicon/favicon-16x16.png HTTP/1.1" 404 1916
+INFO 2025-05-04 16:58:11,828 "GET /student/create-udise/ HTTP/1.1" 200 166997
+INFO 2025-05-04 16:58:11,981 "GET /static/dist/img/avatar.png HTTP/1.1" 200 2121881
+INFO 2025-05-04 16:58:12,148 "GET /static/dist/css/style.css?v=1746358092139 HTTP/1.1" 200 55691
+WARNING 2025-05-04 16:58:12,330 "GET /static/dist/img/favicon/default-favicon.ico HTTP/1.1" 404 1922
+INFO 2025-05-04 16:58:36,134 "GET /student/list HTTP/1.1" 200 39653
+INFO 2025-05-04 16:58:36,392 "GET /static/dist/css/style.css?v=1746358116386 HTTP/1.1" 200 55691
+INFO 2025-05-04 16:58:56,127 "GET /attendance/attendance_list/ HTTP/1.1" 200 58911
+INFO 2025-05-04 16:58:56,376 "GET /static/dist/css/style.css?v=1746358136364 HTTP/1.1" 200 55691
+INFO 2025-05-04 16:59:01,639 "GET /api/get-sections/6/ HTTP/1.1" 200 40
+INFO 2025-05-04 16:59:14,892 "GET /attendance/attendance_list/?class_id=6&section=A HTTP/1.1" 200 93074
+INFO 2025-05-04 16:59:15,199 "GET /api/get-sections/6/ HTTP/1.1" 200 40
+INFO 2025-05-04 16:59:15,212 "GET /static/dist/css/style.css?v=1746358155208 HTTP/1.1" 200 55691
+INFO 2025-05-04 16:59:55,831 "GET /fees/ HTTP/1.1" 200 85947
+INFO 2025-05-04 16:59:56,127 "GET /static/dist/css/style.css?v=1746358196118 HTTP/1.1" 200 55691
+INFO 2025-05-04 17:00:01,166 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-05-04 17:00:01,203 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-05-04 17:00:01,249 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-05-04 17:00:05,550 "GET /fees/?class_name=5&section=A&search= HTTP/1.1" 200 101221
+INFO 2025-05-04 17:00:05,937 "GET /static/dist/css/style.css?v=1746358205921 HTTP/1.1" 200 55691
+INFO 2025-05-04 17:00:05,964 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-05-04 17:00:05,990 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-05-04 17:00:06,019 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-05-04 17:00:06,087 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-05-04 17:00:59,304 "GET /fees/add-payment/11/ HTTP/1.1" 200 39184
+INFO 2025-05-04 17:00:59,526 "GET /static/dist/css/style.css?v=1746358259518 HTTP/1.1" 200 55691
+INFO 2025-05-04 17:01:07,720 "GET /static/dist/css/style.css?v=1746358267702 HTTP/1.1" 200 55691
+INFO 2025-05-04 17:01:20,566 "GET /fees/history/7/ HTTP/1.1" 200 36943
+INFO 2025-05-04 17:01:20,756 "GET /static/dist/css/style.css?v=1746358280749 HTTP/1.1" 200 55691
+INFO 2025-05-04 17:01:27,886 "GET /student/7/ HTTP/1.1" 200 51967
+INFO 2025-05-04 17:01:28,114 "GET /static/dist/css/style.css?v=1746358288108 HTTP/1.1" 200 55691
+INFO 2025-05-04 17:02:08,896 "GET /exams/ HTTP/1.1" 200 68148
+INFO 2025-05-04 17:02:09,169 "GET /static/dist/css/style.css?v=1746358329159 HTTP/1.1" 200 55691
+INFO 2025-05-04 17:02:24,504 "GET /fees/settings/ HTTP/1.1" 200 39457
+WARNING 2025-05-04 17:02:24,636 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+INFO 2025-05-04 17:02:24,888 "GET /static/dist/css/style.css?v=1746358344873 HTTP/1.1" 200 55691
+INFO 2025-05-04 17:02:28,280 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-05-04 17:02:28,349 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-05-04 17:02:31,761 "GET /fees/settings/?class_name=5&section=A HTTP/1.1" 200 44679
+INFO 2025-05-04 17:02:32,004 "GET /static/dist/css/style.css?v=1746358351986 HTTP/1.1" 200 55691
+INFO 2025-05-04 17:02:32,032 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-05-04 17:02:32,066 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-05-04 17:02:32,123 "GET /api/get-sections/5/ HTTP/1.1" 200 66
+INFO 2025-05-04 17:02:55,727 "GET /fees/settings/list/ HTTP/1.1" 200 49283
+INFO 2025-05-04 17:02:55,936 "GET /static/dist/css/style.css?v=1746358375929 HTTP/1.1" 200 55691
+INFO 2025-05-04 17:03:10,487 "GET /fees/settings/ HTTP/1.1" 200 39457
+WARNING 2025-05-04 17:03:10,569 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+INFO 2025-05-04 17:03:10,689 "GET /static/dist/css/style.css?v=1746358390679 HTTP/1.1" 200 55691
+INFO 2025-05-04 17:03:21,449 "GET /fees/settings/ HTTP/1.1" 200 39457
+WARNING 2025-05-04 17:03:21,524 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+INFO 2025-05-04 17:03:21,649 "GET /static/dist/css/style.css?v=1746358401641 HTTP/1.1" 200 55691
+INFO 2025-05-04 17:03:28,589 "GET / HTTP/1.1" 200 59647
+INFO 2025-05-04 17:03:28,844 "GET /static/dist/css/style.css?v=1746358408839 HTTP/1.1" 200 55691
+INFO 2025-05-04 17:03:41,425 "GET /system-settings/backup-restore/ HTTP/1.1" 200 70433
+INFO 2025-05-04 17:03:41,689 "GET /static/dist/css/style.css?v=1746358421666 HTTP/1.1" 200 55691
+INFO 2025-05-04 17:04:54,511 "GET /student/create-udise/ HTTP/1.1" 200 166997
+INFO 2025-05-04 17:04:54,804 "GET /static/dist/css/style.css?v=1746358494797 HTTP/1.1" 200 55691
+INFO 2025-05-04 17:05:15,045 "GET /student/list HTTP/1.1" 200 39653
+INFO 2025-05-04 17:05:15,432 "GET /static/dist/css/style.css?v=1746358515425 HTTP/1.1" 200 55691
+INFO 2025-05-04 17:05:28,601 "GET /exams/ HTTP/1.1" 200 68148
+INFO 2025-05-04 17:05:28,864 "GET /static/dist/css/style.css?v=1746358528851 HTTP/1.1" 200 55691
+INFO 2025-05-04 17:05:39,003 "GET /exams/guide/ HTTP/1.1" 200 40510
+INFO 2025-05-04 17:05:41,228 "GET /static/dist/css/style.css?v=1746358539211 HTTP/1.1" 200 55691
+INFO 2025-05-04 17:05:50,653 "GET /exams/guide/ HTTP/1.1" 200 40510
+INFO 2025-05-04 17:05:50,861 "GET /static/dist/css/style.css?v=1746358550854 HTTP/1.1" 200 55691
+INFO 2025-05-04 17:06:07,948 "GET / HTTP/1.1" 200 59647
+INFO 2025-05-04 17:06:08,235 "GET /static/dist/css/style.css?v=1746358568222 HTTP/1.1" 200 55691
+INFO 2025-05-04 17:06:28,950 "GET /exams/results/ HTTP/1.1" 200 47949
+INFO 2025-05-04 17:06:29,165 "GET /static/dist/css/style.css?v=1746358589157 HTTP/1.1" 200 55691
+INFO 2025-05-04 17:06:35,196 "GET /exams/admit-cards/ HTTP/1.1" 200 57041
+INFO 2025-05-04 17:06:35,446 "GET /static/dist/css/style.css?v=1746358595437 HTTP/1.1" 200 55691
+INFO 2025-05-04 17:06:39,099 "GET /exams/admit-cards/1/view/ HTTP/1.1" 200 11705
+INFO 2025-05-04 17:08:07,914 "GET / HTTP/1.1" 200 59647
+INFO 2025-05-04 17:08:08,369 "GET /static/dist/css/style.css?v=1746358688358 HTTP/1.1" 200 55691
+INFO 2025-05-05 11:56:31,405 Watching for file changes with StatReloader
+INFO 2025-05-05 11:56:37,607 "GET / HTTP/1.1" 302 0
+INFO 2025-05-05 11:56:37,711 "GET /accounts/login/?next=/ HTTP/1.1" 200 5723
+INFO 2025-05-05 11:56:38,049 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-05-05 11:56:38,070 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-05-05 11:56:38,092 "GET /static/dist/css/login-page.css HTTP/1.1" 200 9070
+INFO 2025-05-05 11:56:38,125 "GET /media/college_logos/college_lgoooo_wLVF410.jpg HTTP/1.1" 200 31795
+INFO 2025-05-05 11:56:38,164 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-05-05 11:56:38,215 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-05-05 11:56:38,263 "GET /static/dist/img/bg.jpg HTTP/1.1" 200 3093083
+INFO 2025-05-05 11:56:38,265 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+WARNING 2025-05-05 11:56:38,882 Not Found: /favicon.ico
+WARNING 2025-05-05 11:56:38,886 "GET /favicon.ico HTTP/1.1" 404 20498
+INFO 2025-05-05 11:57:03,975 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-05-05 11:57:04,265 "GET / HTTP/1.1" 200 59647
+INFO 2025-05-05 11:57:04,372 "GET /static/dist/css/preload.css HTTP/1.1" 200 1863
+INFO 2025-05-05 11:57:04,406 "GET /static/dist/css/sidebar-fix.css HTTP/1.1" 200 11058
+INFO 2025-05-05 11:57:04,411 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-05-05 11:57:04,449 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-05-05 11:57:04,476 "GET /static/dist/css/style.css HTTP/1.1" 200 55691
+INFO 2025-05-05 11:57:04,576 "GET /static/dist/js/custom.js HTTP/1.1" 200 2597
+INFO 2025-05-05 11:57:04,581 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-05-05 11:57:04,595 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-05-05 11:57:04,629 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-05-05 11:57:04,637 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-05-05 11:57:04,642 "GET /static/dist/js/class-section-filter.js HTTP/1.1" 200 3704
+INFO 2025-05-05 11:57:04,689 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-05-05 11:57:05,465 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-05-05 11:57:05,696 "GET /static/dist/css/style.css?v=1746426425669 HTTP/1.1" 200 55691
+INFO 2025-05-05 11:57:05,731 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 200 9593
+INFO 2025-05-05 11:57:05,740 "GET /static/dist/js/sidebar-fix.js HTTP/1.1" 200 2712
+WARNING 2025-05-05 11:57:05,876 "GET /static/dist/img/favicon/favicon.ico HTTP/1.1" 404 1898
+WARNING 2025-05-05 11:57:05,894 "GET /static/dist/img/favicon/favicon-32x32.png HTTP/1.1" 404 1916
+WARNING 2025-05-05 11:57:05,909 "GET /static/dist/img/favicon/favicon-16x16.png HTTP/1.1" 404 1916
+INFO 2025-05-05 11:57:10,274 "GET /student/create-udise/ HTTP/1.1" 200 166995
+INFO 2025-05-05 11:57:10,399 "GET /static/dist/img/avatar.png HTTP/1.1" 200 2121881
+INFO 2025-05-05 11:57:10,595 "GET /static/dist/css/style.css?v=1746426430578 HTTP/1.1" 200 55691
+WARNING 2025-05-05 11:57:10,762 "GET /static/dist/img/favicon/default-favicon.ico HTTP/1.1" 404 1922
+INFO 2025-05-05 12:50:29,978 "GET /student/create-udise/ HTTP/1.1" 200 166995
+INFO 2025-05-05 12:50:30,084 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-05-05 12:50:30,101 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-05-05 12:50:30,103 "GET /static/dist/css/preload.css HTTP/1.1" 200 1863
+INFO 2025-05-05 12:50:30,116 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-05-05 12:50:30,116 "GET /static/dist/css/style.css HTTP/1.1" 200 55691
+INFO 2025-05-05 12:50:30,120 "GET /static/dist/css/sidebar-fix.css HTTP/1.1" 200 11058
+INFO 2025-05-05 12:50:30,131 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-05-05 12:50:30,186 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-05-05 12:50:30,236 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-05-05 12:50:30,238 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-05-05 12:50:30,244 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-05-05 12:50:30,254 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-05-05 12:50:30,268 "GET /static/dist/js/custom.js HTTP/1.1" 200 2597
+INFO 2025-05-05 12:50:30,281 "GET /static/dist/js/class-section-filter.js HTTP/1.1" 200 3704
+INFO 2025-05-05 12:50:30,287 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-05-05 12:50:30,413 "GET /static/dist/img/avatar.png HTTP/1.1" 200 2121881
+INFO 2025-05-05 12:50:30,431 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-05-05 12:50:30,765 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 200 9593
+INFO 2025-05-05 12:50:30,768 "GET /static/dist/css/style.css?v=1746429630721 HTTP/1.1" 200 55691
+INFO 2025-05-05 12:50:30,770 "GET /static/dist/js/sidebar-fix.js HTTP/1.1" 200 2712
+WARNING 2025-05-05 12:50:31,019 "GET /static/dist/img/favicon/default-favicon.ico HTTP/1.1" 404 1922
+INFO 2025-05-05 12:54:39,901 "GET /student/create-udise/ HTTP/1.1" 200 166989
+INFO 2025-05-05 12:54:40,700 "GET /static/dist/css/style.css?v=1746429880596 HTTP/1.1" 200 55691
+ERROR 2025-05-05 12:55:48,915 Internal Server Error: /student/create-udise/
+Traceback (most recent call last):
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Sipher Web\Django School Management System\.venv\Lib\site-packages\django\template\loader_tags.py", line 228, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'extrastyle' appears more than once
+ERROR 2025-05-05 12:55:48,946 "GET /student/create-udise/ HTTP/1.1" 500 195776
+WARNING 2025-05-05 12:55:49,247 Not Found: /favicon.ico
+WARNING 2025-05-05 12:55:49,248 "GET /favicon.ico HTTP/1.1" 404 20498
+INFO 2025-05-05 12:57:12,899 "GET /student/create-udise/ HTTP/1.1" 302 0
+INFO 2025-05-05 12:57:12,968 "GET /accounts/login/?next=/student/create-udise/ HTTP/1.1" 200 5744
+INFO 2025-05-05 12:57:13,055 "GET /static/dist/css/login-page.css HTTP/1.1" 200 9070
+INFO 2025-05-05 12:57:13,068 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-05-05 12:57:13,071 "GET /media/college_logos/college_lgoooo_wLVF410.jpg HTTP/1.1" 200 31795
+INFO 2025-05-05 12:57:13,302 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2025-05-05 12:57:13,414 "GET /static/dist/img/bg.jpg HTTP/1.1" 200 3093083
+INFO 2025-05-05 12:57:16,869 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-05-05 12:57:16,933 "GET /student/create-udise/ HTTP/1.1" 200 166995
+INFO 2025-05-05 12:57:17,505 "GET /static/dist/css/style.css?v=1746430037487 HTTP/1.1" 200 55691
+INFO 2025-05-05 13:02:02,690 "GET /student/create-udise/ HTTP/1.1" 200 170065
+INFO 2025-05-05 13:02:03,130 "GET /static/dist/css/style.css?v=1746430323124 HTTP/1.1" 200 55691
+INFO 2025-05-05 13:07:01,972 "GET /student/create-udise/ HTTP/1.1" 200 170065
+INFO 2025-05-05 13:07:02,372 "GET /static/dist/css/style.css?v=1746430622364 HTTP/1.1" 200 55691
+INFO 2025-05-05 13:19:02,581 "GET /student/create-udise/ HTTP/1.1" 200 170065
+INFO 2025-05-05 13:19:03,141 "GET /static/dist/css/style.css?v=1746431343124 HTTP/1.1" 200 55691
+INFO 2025-05-05 15:04:40,891 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+WARNING 2025-05-05 15:04:40,913 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-05-05 15:04:40,921 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+WARNING 2025-05-05 15:04:40,928 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-05 15:04:40,929 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 20609
+INFO 2025-05-05 15:04:40,969 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-05-05 15:05:58,139 "GET /student/create-udise/ HTTP/1.1" 200 170065
+INFO 2025-05-05 15:05:58,572 "GET /static/dist/css/style.css?v=1746437758564 HTTP/1.1" 200 55691
+INFO 2025-05-05 15:09:59,543 "GET /student/create-udise/ HTTP/1.1" 200 170065
+INFO 2025-05-05 15:09:59,958 "GET /static/dist/css/style.css?v=1746437999949 HTTP/1.1" 200 55691
+INFO 2025-05-05 15:13:45,030 "GET /student/create-udise/ HTTP/1.1" 200 170065
+INFO 2025-05-05 15:13:45,512 "GET /static/dist/css/style.css?v=1746438225500 HTTP/1.1" 200 55691
+INFO 2025-05-05 15:31:37,401 "GET /student/create-udise/ HTTP/1.1" 200 170067
+INFO 2025-05-05 15:31:37,473 "GET /static/dist/css/preload.css HTTP/1.1" 200 1863
+INFO 2025-05-05 15:31:37,475 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-05-05 15:31:37,483 "GET /static/dist/css/sidebar-fix.css HTTP/1.1" 200 11058
+INFO 2025-05-05 15:31:37,483 "GET /static/dist/css/style.css HTTP/1.1" 200 55691
+INFO 2025-05-05 15:31:37,524 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-05-05 15:31:37,530 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-05-05 15:31:37,530 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-05-05 15:31:37,550 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-05-05 15:31:37,564 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-05-05 15:31:37,611 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-05-05 15:31:37,612 "GET /static/dist/js/custom.js HTTP/1.1" 200 2597
+INFO 2025-05-05 15:31:37,613 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-05-05 15:31:37,613 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-05-05 15:31:37,626 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-05-05 15:31:37,638 "GET /static/dist/img/avatar.png HTTP/1.1" 200 2121881
+INFO 2025-05-05 15:31:37,660 "GET /static/dist/js/class-section-filter.js HTTP/1.1" 200 3704
+INFO 2025-05-05 15:31:37,689 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-05-05 15:31:38,050 "GET /static/dist/css/style.css?v=1746439298046 HTTP/1.1" 200 55691
+INFO 2025-05-05 15:31:38,079 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 200 9593
+INFO 2025-05-05 15:31:38,080 "GET /static/dist/js/sidebar-fix.js HTTP/1.1" 200 2712
+WARNING 2025-05-05 15:31:38,282 "GET /static/dist/img/favicon/default-favicon.ico HTTP/1.1" 404 1922
+INFO 2025-05-05 15:33:00,200 "GET /student/create-udise/ HTTP/1.1" 200 170127
+INFO 2025-05-05 15:33:00,689 "GET /static/dist/css/style.css?v=1746439380682 HTTP/1.1" 200 55691
+INFO 2025-05-05 15:34:15,439 "GET /student/create-udise/ HTTP/1.1" 200 170224
+INFO 2025-05-05 15:34:15,888 "GET /static/dist/css/style.css?v=1746439455880 HTTP/1.1" 200 55691
+INFO 2025-05-05 15:36:37,466 "GET /student/create-udise/ HTTP/1.1" 200 170224
+INFO 2025-05-05 15:36:37,867 "GET /static/dist/css/style.css?v=1746439597858 HTTP/1.1" 200 55691
+INFO 2025-05-05 15:36:44,108 "GET /student/create-udise/ HTTP/1.1" 200 170224
+INFO 2025-05-05 15:36:44,489 "GET /static/dist/css/style.css?v=1746439604479 HTTP/1.1" 200 55691
+INFO 2025-05-05 15:38:38,895 "GET /student/create-udise/ HTTP/1.1" 200 170234
+INFO 2025-05-05 15:38:39,105 "GET /static/dist/css/style.css?v=1746439719096 HTTP/1.1" 200 55691
+INFO 2025-05-05 15:39:00,528 "GET /student/create-udise/ HTTP/1.1" 200 170234
+INFO 2025-05-05 15:39:00,969 "GET /static/dist/css/style.css?v=1746439740962 HTTP/1.1" 200 55691
+WARNING 2025-05-05 15:39:03,103 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-05 15:39:03,104 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 20609
+INFO 2025-05-05 15:39:03,559 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-05-05 15:39:03,607 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+WARNING 2025-05-05 15:39:03,622 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-05-05 15:39:03,708 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2025-05-05 15:39:16,041 "GET /student/create-udise/ HTTP/1.1" 200 170234
+INFO 2025-05-05 15:39:16,143 "GET /static/dist/css/preload.css HTTP/1.1" 200 1863
+INFO 2025-05-05 15:39:16,152 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-05-05 15:39:16,169 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+WARNING 2025-05-05 15:39:16,171 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-05 15:39:16,171 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 20609
+INFO 2025-05-05 15:39:16,175 "GET /static/dist/css/sidebar-fix.css HTTP/1.1" 200 11058
+INFO 2025-05-05 15:39:16,188 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-05-05 15:39:16,191 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-05-05 15:39:16,221 "GET /static/dist/css/style.css HTTP/1.1" 200 55691
+INFO 2025-05-05 15:39:16,224 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-05-05 15:39:16,273 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-05-05 15:39:16,280 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-05-05 15:39:16,302 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-05-05 15:39:16,342 "GET /static/dist/js/class-section-filter.js HTTP/1.1" 200 3704
+INFO 2025-05-05 15:39:16,342 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-05-05 15:39:16,350 "GET /static/dist/js/custom.js HTTP/1.1" 200 2597
+INFO 2025-05-05 15:39:16,378 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-05-05 15:39:16,450 "GET /static/dist/img/avatar.png HTTP/1.1" 200 2121881
+INFO 2025-05-05 15:39:16,503 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-05-05 15:39:16,696 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2025-05-05 15:39:16,762 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+INFO 2025-05-05 15:39:16,790 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+WARNING 2025-05-05 15:39:17,032 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-05-05 15:39:17,124 "GET /static/dist/css/style.css?v=1746439757105 HTTP/1.1" 200 55691
+INFO 2025-05-05 15:39:17,200 "GET /static/dist/js/sidebar-fix.js HTTP/1.1" 200 2712
+INFO 2025-05-05 15:39:17,224 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 200 9593
+WARNING 2025-05-05 15:39:17,875 "GET /static/dist/img/favicon/default-favicon.ico HTTP/1.1" 404 1922
+INFO 2025-05-05 15:40:44,311 "GET /student/create-udise/ HTTP/1.1" 200 170234
+WARNING 2025-05-05 15:40:44,431 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-05 15:40:44,431 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 20609
+WARNING 2025-05-05 15:40:45,174 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1925
+INFO 2025-05-05 15:40:45,323 "GET /static/dist/css/style.css?v=1746439845303 HTTP/1.1" 200 55691
+INFO 2025-05-05 15:44:01,294 "GET /student/create-udise/ HTTP/1.1" 200 170234
+INFO 2025-05-05 15:44:01,679 "GET /static/dist/css/style.css?v=1746440041669 HTTP/1.1" 200 55691
+INFO 2025-05-05 15:44:09,594 "GET /student/create-udise/ HTTP/1.1" 200 170067
+INFO 2025-05-05 15:44:09,964 "GET /static/dist/css/style.css?v=1746440049960 HTTP/1.1" 200 55691
+INFO 2025-05-05 15:52:17,613 "GET /student/create-udise/ HTTP/1.1" 200 170071
+INFO 2025-05-05 15:52:18,132 "GET /static/dist/css/style.css?v=1746440538124 HTTP/1.1" 200 55691
+INFO 2025-05-05 15:58:08,304 "GET /student/create-udise/ HTTP/1.1" 200 170082
+INFO 2025-05-05 15:58:08,835 "GET /static/dist/css/style.css?v=1746440888825 HTTP/1.1" 200 55691

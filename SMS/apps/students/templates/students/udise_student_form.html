@@ -11,6 +11,8 @@
 {% endblock title %}
 
 {% block extrastyle %}
+<!-- Make sure Bootstrap CSS is loaded -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 <style>
   /* UDISE+ Form Styling */
   body {
@@ -606,10 +608,13 @@
 {% endblock extrastyle %}
 
 {% block content %}
+<!-- Bootstrap check message -->
+<div id="bootstrap-check-message" class="alert alert-warning alert-dismissible fade show mb-3" role="alert" style="display: none;">
+  <strong>Warning!</strong> Bootstrap may not be loaded correctly. Some features might not work properly.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
 <!-- UDISE+ Header -->
-
-
-
 
 <!-- Edit Student Details Card -->
 <div class="card mb-4 border-0 shadow-sm">
@@ -2370,6 +2375,21 @@
 
 {% block morejs %}
 <script>
+  // Make sure Bootstrap is properly initialized
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Bootstrap tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+
+    // Initialize Bootstrap popovers
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl);
+    });
+  });
+
   // Update current time
   function updateTime() {
     const now = new Date();
@@ -3143,10 +3163,6 @@
         const modal = document.createElement('div');
         modal.className = 'modal fade';
         modal.id = 'photoGuideModal';
-        modal.setAttribute('tabindex', '-1');
-        modal.setAttribute('aria-labelledby', 'photoGuideModalLabel');
-        modal.setAttribute('aria-hidden', 'true');
-
         modal.innerHTML = `
           <div class="modal-dialog">
             <div class="modal-content">
@@ -3167,11 +3183,22 @@
           </div>
         `;
 
+        // Ensure the modal has the proper Bootstrap 5 attributes
+        modal.setAttribute('tabindex', '-1');
+        modal.setAttribute('aria-labelledby', 'photoGuideModalLabel');
+        modal.setAttribute('aria-hidden', 'true');
+
         document.body.appendChild(modal);
 
-        // Show the modal
-        const bsModal = new bootstrap.Modal(modal);
-        bsModal.show();
+        // Show the modal - make sure Bootstrap is loaded
+        if (typeof bootstrap !== 'undefined') {
+          const bsModal = new bootstrap.Modal(modal);
+          bsModal.show();
+        } else {
+          console.error('Bootstrap is not loaded. Cannot show modal.');
+          // Fallback to alert if Bootstrap is not available
+          alert('Photo Guidelines:\n- Recent passport size color photograph\n- White background\n- Face should cover 70-80% of the photo\n- No caps, hats, or sunglasses\n- JPG or PNG format\n- File size should not exceed 1MB');
+        }
 
         // Remove modal from DOM when hidden
         modal.addEventListener('hidden.bs.modal', function() {
@@ -3475,6 +3502,45 @@
       setTimeout(() => {
         toast.remove();
       }, 3000);
+    }
+  });
+</script>
+
+<!-- Make sure Bootstrap JS is loaded -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Check if Bootstrap is loaded and log to console -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (typeof bootstrap !== 'undefined') {
+      console.log('Bootstrap is loaded successfully');
+    } else {
+      console.error('Bootstrap is not loaded properly');
+      // Show warning message
+      document.getElementById('bootstrap-check-message').style.display = 'block';
+    }
+
+    // Try to initialize Bootstrap components again
+    try {
+      // Initialize tooltips
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+      tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+
+      // Initialize popovers
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+      popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl);
+      });
+
+      // Initialize any modals
+      var modalTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="modal"]'));
+      modalTriggerList.map(function (modalTriggerEl) {
+        return new bootstrap.Modal(modalTriggerEl);
+      });
+    } catch (e) {
+      console.error('Error initializing Bootstrap components:', e);
     }
   });
 </script>
