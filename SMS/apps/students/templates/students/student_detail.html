@@ -67,8 +67,8 @@
           <i class="fas fa-edit"></i> Edit
         </button>
         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="editDropdown">
-          <li><a class="dropdown-item" href="{% url 'student-update' object.id %}">Standard Form</a></li>
-          <li><a class="dropdown-item" href="{% url 'student-update-udise' object.id %}">UDISE+ Format</a></li>
+          <li><a class="dropdown-item" href="{% url 'student-update' object.id %}"><i class="fas fa-file-alt me-2"></i>Standard Form</a></li>
+          <li><a class="dropdown-item" href="{% url 'student-update-udise' object.id %}"><i class="fas fa-id-card me-2"></i>UDISE+ Format</a></li>
         </ul>
       </div>
       <a href="{% url 'student-delete' object.id %}" class="action-btn btn btn-danger shadow-sm" title="Delete Student Details">
@@ -500,16 +500,8 @@
       }, 1000);
     }
 
-    // Fix for edit dropdown button
-    const editDropdown = document.getElementById('editDropdown');
-    if (editDropdown) {
-      editDropdown.addEventListener('click', function(e) {
-        // Direct link to standard form edit page as fallback
-        if (e.target.classList.contains('dropdown-toggle')) {
-          window.location.href = "{% url 'student-update' object.id %}";
-        }
-      });
-    }
+    // No need for special handling of the edit dropdown
+    // The Bootstrap dropdown will work automatically
 
     // Add click event to print button
     const printButton = document.getElementById('printButton');
