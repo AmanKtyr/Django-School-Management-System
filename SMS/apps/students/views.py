@@ -125,13 +125,12 @@ class StudentUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
         return form
 
 
-class StudentDeleteView(LoginRequiredMixin, DeleteView):
-    model = Student
-    success_url = reverse_lazy("student-list")
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        student = self.get_object()
+class StudentDeleteView(LoginRequiredMixin, View):
+    """
+    Custom view for student deletion that handles all related records
+    """
+    def get(self, request, pk):
+        student = get_object_or_404(Student, pk=pk)
 
         # Import related models
         from apps.fees.models import FeePayment, PendingFee
@@ -139,7 +138,7 @@ class StudentDeleteView(LoginRequiredMixin, DeleteView):
         from apps.attendance.models import Attendance
 
         # Count related records
-        context['related_data'] = {
+        related_data = {
             'fee_payments': FeePayment.objects.filter(student=student).count(),
             'pending_fees': PendingFee.objects.filter(student=student).count(),
             'admit_cards': AdmitCard.objects.filter(student=student).count(),
@@ -149,45 +148,51 @@ class StudentDeleteView(LoginRequiredMixin, DeleteView):
             'documents': StudentDocument.objects.filter(student=student).count(),
         }
 
-        return context
+        context = {
+            'object': student,
+            'related_data': related_data
+        }
 
-    def post(self, request, *args, **kwargs):
-        student = self.get_object()
+        return render(request, 'students/student_confirm_delete.html', context)
+
+    def post(self, request, pk):
+        student = get_object_or_404(Student, pk=pk)
         student_id = student.id
         student_name = student.fullname
 
         try:
-            # Use direct database connection to force delete
-            from django.db import connection
-            cursor = connection.cursor()
+            # Try to delete UDISE info first if it exists
+            try:
+                udise_info = StudentUDISEInfo.objects.get(student=student)
+                udise_info.delete()
+            except StudentUDISEInfo.DoesNotExist:
+                pass
 
-            # Disable foreign key checks temporarily (for SQLite)
-            cursor.execute("PRAGMA foreign_keys = OFF;")
+            # Use Django's ORM to delete related records first
+            from apps.fees.models import FeePayment, PendingFee
+            from apps.exams.models import AdmitCard, ExamAttendance, Mark
+            from apps.attendance.models import Attendance
 
-            # Delete related records from all tables that reference students
-            # 1. Delete fee-related records
-            cursor.execute("DELETE FROM fees_feepayment WHERE student_id = ?", [student_id])
-            cursor.execute("DELETE FROM fees_pendingfee WHERE student_id = ?", [student_id])
+            # Delete fee-related records
+            FeePayment.objects.filter(student=student).delete()
+            PendingFee.objects.filter(student=student).delete()
 
-            # 2. Delete exam-related records
-            cursor.execute("DELETE FROM exams_mark WHERE student_id = ?", [student_id])
-            cursor.execute("DELETE FROM exams_examattendance WHERE student_id = ?", [student_id])
-            cursor.execute("DELETE FROM exams_admitcard WHERE student_id = ?", [student_id])
+            # Delete exam-related records
+            Mark.objects.filter(student=student).delete()
+            ExamAttendance.objects.filter(student=student).delete()
+            AdmitCard.objects.filter(student=student).delete()
 
-            # 3. Delete attendance records
-            cursor.execute("DELETE FROM attendance_attendance WHERE student_id = ?", [student_id])
+            # Delete attendance records
+            Attendance.objects.filter(student=student).delete()
 
-            # 4. Delete student documents
-            cursor.execute("DELETE FROM students_studentdocument WHERE student_id = ?", [student_id])
+            # Delete student documents
+            StudentDocument.objects.filter(student=student).delete()
 
-            # 5. Finally delete the student
-            cursor.execute("DELETE FROM students_student WHERE id = ?", [student_id])
-
-            # Re-enable foreign key checks
-            cursor.execute("PRAGMA foreign_keys = ON;")
+            # Finally delete the student
+            student.delete()
 
             messages.success(request, f"Student '{student_name}' and all related records have been successfully deleted.")
-            return redirect(self.success_url)
+            return redirect('student-list')
 
         except Exception as e:
             messages.error(request, f"Error deleting student: {str(e)}")
