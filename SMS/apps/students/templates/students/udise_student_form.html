@@ -646,7 +646,10 @@
 
       <!-- UDISE+ Header -->
       <div class="udise-header d-flex align-items-center mb-4">
-
+        <div class="d-flex flex-column">
+          <h2 class="udise-title mb-0">{{ profile.college_name | default:"MySchool" }}</h2>
+          <p class="udise-subtitle">{{ profile.college_address | default:"College Address" }}</p>
+        </div>
 
         <div class="ms-auto session-info">
           <span id="current-time">12:00 PM</span> | Academic Year: 2023-24
@@ -2092,6 +2095,14 @@
               <tr>
                 <td colspan="3" class="fw-bold">Student Name: <span id="preview-fullname">{{ form.fullname.value|default:"Not provided" }}</span></td>
                 <td>Class: <span id="preview-class">{{ form.current_class.value|default:"Not assigned" }}</span></td>
+<!-- Add this near the top of your form, likely after the opening container div -->
+<div class="college-header mb-4">
+  <h2 class="text-primary">{{ profile.college_name|default:"School Management System" }}</h2>
+  {% if profile.college_logo %}
+  <img src="{{ profile.college_logo.url }}" alt="College Logo" class="img-fluid me-3" style="max-height: 60px;">
+  {% endif %}
+</div>
+
                 <td>Section: <span id="preview-section">{{ form.section.value|default:"Not assigned" }}</span></td>
               </tr>
             </table>

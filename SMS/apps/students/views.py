@@ -581,17 +581,34 @@ class StudentUDISECreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         # Add current academic session to context
-        from apps.corecode.models import AcademicSession
+        from apps.corecode.models import AcademicSession, CollegeProfile
         current_session = AcademicSession.objects.filter(current=True).first()
         if current_session:
             context['current_session'] = current_session
 
-        # Add school profile to context
-        from apps.corecode.models import SiteConfig
-        context['profile'] = {
-            'college_name': SiteConfig.objects.filter(key='school_name').first().value if SiteConfig.objects.filter(key='school_name').exists() else 'VIDYA BHARTI',
-            'college_code': SiteConfig.objects.filter(key='school_address').first().value if SiteConfig.objects.filter(key='school_address').exists() else '09161513902'
-        }
+        # Get college profile from the global context processor
+        # This will use the context processor's profile if available
+        if 'profile' not in context or not context['profile']:
+            # If not available, get it directly
+            try:
+                college_profile = CollegeProfile.objects.first()
+                if college_profile:
+                    context['profile'] = college_profile
+                else:
+                    # Fallback to SiteConfig if no CollegeProfile exists
+                    from apps.corecode.models import SiteConfig
+                    context['profile'] = {
+                        'college_name': SiteConfig.objects.filter(key='school_name').first().value if SiteConfig.objects.filter(key='school_name').exists() else 'VIDYA BHARTI',
+                        'college_address': SiteConfig.objects.filter(key='school_address').first().value if SiteConfig.objects.filter(key='school_address').exists() else 'College Address',
+                        'college_code': '09161513902'
+                    }
+            except Exception:
+                # Final fallback if everything fails
+                context['profile'] = {
+                    'college_name': 'VIDYA BHARTI',
+                    'college_address': 'College Address',
+                    'college_code': '09161513902'
+                }
 
         return context
 
@@ -771,17 +788,34 @@ class StudentUDISEUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         # Add current academic session to context
-        from apps.corecode.models import AcademicSession
+        from apps.corecode.models import AcademicSession, CollegeProfile
         current_session = AcademicSession.objects.filter(current=True).first()
         if current_session:
             context['current_session'] = current_session
 
-        # Add school profile to context
-        from apps.corecode.models import SiteConfig
-        context['profile'] = {
-            'college_name': SiteConfig.objects.filter(key='school_name').first().value if SiteConfig.objects.filter(key='school_name').exists() else 'VIDYA BHARTI',
-            'college_code': SiteConfig.objects.filter(key='school_address').first().value if SiteConfig.objects.filter(key='school_address').exists() else '09161513902'
-        }
+        # Get college profile from the global context processor
+        # This will use the context processor's profile if available
+        if 'profile' not in context or not context['profile']:
+            # If not available, get it directly
+            try:
+                college_profile = CollegeProfile.objects.first()
+                if college_profile:
+                    context['profile'] = college_profile
+                else:
+                    # Fallback to SiteConfig if no CollegeProfile exists
+                    from apps.corecode.models import SiteConfig
+                    context['profile'] = {
+                        'college_name': SiteConfig.objects.filter(key='school_name').first().value if SiteConfig.objects.filter(key='school_name').exists() else 'VIDYA BHARTI',
+                        'college_address': SiteConfig.objects.filter(key='school_address').first().value if SiteConfig.objects.filter(key='school_address').exists() else 'College Address',
+                        'college_code': '09161513902'
+                    }
+            except Exception:
+                # Final fallback if everything fails
+                context['profile'] = {
+                    'college_name': 'VIDYA BHARTI',
+                    'college_address': 'College Address',
+                    'college_code': '09161513902'
+                }
 
         return context
 
