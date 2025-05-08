@@ -828,6 +828,28 @@
           }
         });
       });
+
+      // Fix for edit dropdown in student profile
+      const editDropdown = document.getElementById('editDropdown');
+      if (editDropdown) {
+        editDropdown.addEventListener('click', function(e) {
+          const dropdownMenu = this.nextElementSibling;
+          if (dropdownMenu && dropdownMenu.classList.contains('dropdown-menu')) {
+            dropdownMenu.classList.toggle('show');
+            e.stopPropagation();
+          }
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+          const dropdownMenus = document.querySelectorAll('.dropdown-menu.show');
+          dropdownMenus.forEach(function(menu) {
+            if (!menu.parentElement.contains(e.target)) {
+              menu.classList.remove('show');
+            }
+          });
+        });
+      }
     });
   </script>
 

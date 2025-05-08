@@ -66,7 +66,7 @@
         <button class="action-btn btn btn-warning shadow-sm text-white dropdown-toggle" type="button" id="editDropdown" data-bs-toggle="dropdown" aria-expanded="false" title="Edit Student Details">
           <i class="fas fa-edit"></i> Edit
         </button>
-        <ul class="dropdown-menu" aria-labelledby="editDropdown">
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="editDropdown">
           <li><a class="dropdown-item" href="{% url 'student-update' object.id %}">Standard Form</a></li>
           <li><a class="dropdown-item" href="{% url 'student-update-udise' object.id %}">UDISE+ Format</a></li>
         </ul>
@@ -500,8 +500,22 @@
       }, 1000);
     }
 
-    // Add click event listener to the print button
-    document.getElementById('printButton').addEventListener('click', printStudentProfile);
+    // Fix for edit dropdown button
+    const editDropdown = document.getElementById('editDropdown');
+    if (editDropdown) {
+      editDropdown.addEventListener('click', function(e) {
+        // Direct link to standard form edit page as fallback
+        if (e.target.classList.contains('dropdown-toggle')) {
+          window.location.href = "{% url 'student-update' object.id %}";
+        }
+      });
+    }
+
+    // Add click event to print button
+    const printButton = document.getElementById('printButton');
+    if (printButton) {
+      printButton.addEventListener('click', printStudentProfile);
+    }
   });
 </script>
 
