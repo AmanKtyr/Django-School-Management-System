@@ -12,6 +12,7 @@ from .views import (
     StudentUDISEUpdateView,
     upload_student_documents,
     get_sections_for_class,
+    create_udise_info,
 )
 
 urlpatterns = [
@@ -27,6 +28,7 @@ urlpatterns = [
     # UDISE+ style forms
     path("create-udise/", StudentUDISECreateView.as_view(), name="student-create-udise"),
     path("<int:pk>/update-udise/", StudentUDISEUpdateView.as_view(), name="student-update-udise"),
+    path("<int:pk>/create-udise-info/", create_udise_info, name="create-udise-info"),
 
     # API endpoints
     path("api/class/<int:class_id>/sections/", get_sections_for_class, name="get-sections-for-class"),

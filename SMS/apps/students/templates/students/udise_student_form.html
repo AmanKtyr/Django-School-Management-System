@@ -1358,6 +1358,7 @@
               </div>
               {{ form.current_class|add_class:"form-select"|attr:"required"|attr:"onchange:loadSections(this.value)" }}
               <div class="invalid-feedback">Please select a class</div>
+              <div class="form-text text-muted small">When you select a class, its sections will automatically load.</div>
             </div>
           </div>
 
@@ -1931,8 +1932,8 @@
         <div class="alert alert-info d-flex align-items-center border-0 shadow-sm" style="background-color: #e6f7ff; border-left: 4px solid #1890ff;">
           <i class="fas fa-info-circle me-3 fs-4" style="color: #1890ff;"></i>
           <div>
-            <strong class="d-block mb-1">Upload required documents for verification</strong>
-            <span>Please upload clear scanned copies or photos of the following documents. Supported formats: JPG, PNG, PDF (max 2MB each).</span>
+            <strong class="d-block mb-1">Upload optional documents for verification</strong>
+            <span>You can upload clear scanned copies or photos of the following documents if available. All documents are optional. Supported formats: JPG, PNG, PDF (max 2MB each).</span>
           </div>
         </div>
 
@@ -1943,7 +1944,7 @@
               <div class="card-header bg-light d-flex align-items-center">
                 <i class="fas fa-image me-2 text-primary"></i>
                 <h6 class="mb-0">Student Photo</h6>
-                <span class="ms-auto badge bg-danger">Required</span>
+                <span class="ms-auto badge bg-info">Optional</span>
               </div>
               <div class="card-body">
                 <div class="mb-3">
@@ -1952,7 +1953,7 @@
                     <span class="udise-rule-reference">(with white background)</span>
                   </label>
                   <div class="input-group">
-                    {{ form.passport|add_class:"form-control"|attr:"accept:image/*"|attr:"required" }}
+                    {{ form.passport|add_class:"form-control"|attr:"accept:image/*" }}
                     <button class="btn btn-outline-primary" type="button" id="photoGuideBtn" data-bs-toggle="tooltip" title="View photo guidelines">
                       <i class="fas fa-question-circle"></i>
                     </button>
@@ -1974,16 +1975,15 @@
             <div class="card border-0 shadow-sm h-100">
               <div class="card-header bg-light d-flex align-items-center">
                 <i class="fas fa-file-alt me-2 text-primary"></i>
-                <h6 class="mb-0">Required Documents</h6>
+                <h6 class="mb-0">Optional Documents</h6>
               </div>
               <div class="card-body">
                 <div class="mb-3">
                   <label class="udise-field-label">
                     <span class="udise-field-number">2</span> Birth Certificate
-                    <span class="text-danger">*</span>
                   </label>
                   <div class="input-group">
-                    <input type="file" class="form-control" name="birth_certificate" accept=".jpg,.jpeg,.png,.pdf" required placeholder="Upload birth certificate">
+                    <input type="file" class="form-control" name="birth_certificate" accept=".jpg,.jpeg,.png,.pdf" placeholder="Upload birth certificate">
                     <input type="text" class="form-control" name="birth_certificate_number" placeholder="Enter document number" style="max-width: 150px;">
                   </div>
                   <div class="form-text">Proof of date of birth</div>
@@ -1992,10 +1992,9 @@
                 <div class="mb-3">
                   <label class="udise-field-label">
                     <span class="udise-field-number">3</span> Address Proof
-                    <span class="text-danger">*</span>
                   </label>
                   <div class="input-group">
-                    <input type="file" class="form-control" name="address_proof" accept=".jpg,.jpeg,.png,.pdf" required placeholder="Upload address proof">
+                    <input type="file" class="form-control" name="address_proof" accept=".jpg,.jpeg,.png,.pdf" placeholder="Upload address proof">
                     <input type="text" class="form-control" name="address_proof_number" placeholder="Enter document number" style="max-width: 150px;">
                   </div>
                   <div class="form-text">Aadhaar card, utility bill, etc.</div>
@@ -2711,42 +2710,148 @@
     const sectionField = document.querySelector('[name="section"]');
     sectionField.innerHTML = '<option value="">Loading sections...</option>';
 
+    // Show loading indicator
+    const loadingIndicator = document.createElement('div');
+    loadingIndicator.id = 'section-loading-indicator';
+    loadingIndicator.className = 'text-primary small mt-1';
+    loadingIndicator.innerHTML = '<i class="fas fa-spinner fa-spin me-1"></i> Loading sections...';
+
+    // Add loading indicator after the section field
+    const fieldGroup = sectionField.closest('.udise-field-group');
+    if (fieldGroup && !document.getElementById('section-loading-indicator')) {
+      fieldGroup.appendChild(loadingIndicator);
+    }
+
     // Fetch sections for the selected class
     fetch(`/students/api/class/${classId}/sections/`)
-      .then(response => response.json())
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      })
       .then(data => {
-        sectionField.innerHTML = '<option value="">Select Section</option>';
+        // Remove loading indicator
+        const indicator = document.getElementById('section-loading-indicator');
+        if (indicator) indicator.remove();
 
-        // Add new options
-        data.sections.forEach(section => {
-          const option = document.createElement('option');
-          option.value = section.id;
-          option.textContent = section.name;
-          sectionField.appendChild(option);
-        });
+        // Check if we have sections data
+        if (data && data.sections && Array.isArray(data.sections)) {
+          if (data.sections.length > 0) {
+            sectionField.innerHTML = '<option value="">Select Section</option>';
 
-        // If there's a previously selected section, try to restore it
-        const currentSection = '{{ form.section.value|default:"" }}';
-        if (currentSection) {
-          for (let i = 0; i < sectionField.options.length; i++) {
-            if (sectionField.options[i].value === currentSection) {
-              sectionField.selectedIndex = i;
-              break;
+            // Add new options
+            data.sections.forEach(section => {
+              const option = document.createElement('option');
+              option.value = section.id;
+              option.textContent = section.name;
+              sectionField.appendChild(option);
+            });
+
+            // If there's only one section, select it automatically
+            if (data.sections.length === 1) {
+              sectionField.selectedIndex = 1; // Select the first section (index 1 because index 0 is "Select Section")
+
+              // Trigger change event to update any dependent fields
+              const event = new Event('change');
+              sectionField.dispatchEvent(event);
+            } else {
+              // If there's a previously selected section, try to restore it
+              const currentSection = '{{ form.section.value|default:"" }}';
+              if (currentSection) {
+                for (let i = 0; i < sectionField.options.length; i++) {
+                  if (sectionField.options[i].value === currentSection) {
+                    sectionField.selectedIndex = i;
+                    break;
+                  }
+                }
+              }
             }
+
+            // Show success message
+            showToast('Sections loaded successfully!', 'success');
+          } else {
+            // No sections found for this class
+            sectionField.innerHTML = '<option value="">No sections available for this class</option>';
+
+            // Add default sections A and B
+            const sectionA = document.createElement('option');
+            sectionA.value = "A";
+            sectionA.textContent = "A";
+            sectionField.appendChild(sectionA);
+
+            const sectionB = document.createElement('option');
+            sectionB.value = "B";
+            sectionB.textContent = "B";
+            sectionField.appendChild(sectionB);
+
+            // Select section A by default
+            sectionField.selectedIndex = 1;
+
+            // Trigger change event
+            const event = new Event('change');
+            sectionField.dispatchEvent(event);
+
+            // Add a message
+            showToast('Using default sections A and B', 'info');
           }
+        } else {
+          // Invalid data format
+          throw new Error('Invalid data format received from server');
         }
       })
       .catch(error => {
         console.error('Error loading sections:', error);
-        sectionField.innerHTML = '<option value="">Error loading sections</option>';
+
+        // Remove loading indicator
+        const indicator = document.getElementById('section-loading-indicator');
+        if (indicator) indicator.remove();
+
+        // Show error message
+        sectionField.innerHTML = '<option value="">Select Section</option>';
+
+        // Add default sections A and B
+        const sectionA = document.createElement('option');
+        sectionA.value = "A";
+        sectionA.textContent = "A";
+        sectionField.appendChild(sectionA);
+
+        const sectionB = document.createElement('option');
+        sectionB.value = "B";
+        sectionB.textContent = "B";
+        sectionField.appendChild(sectionB);
+
+        // Select section A by default
+        sectionField.selectedIndex = 1;
+
+        // Trigger change event
+        const event = new Event('change');
+        sectionField.dispatchEvent(event);
+
+        // Show error message
+        showToast('Could not load sections. Using default sections A and B.', 'warning');
       });
   }
 
   // Initialize sections on page load if class is already selected
   document.addEventListener('DOMContentLoaded', function() {
     const classField = document.querySelector('[name="current_class"]');
+    const sectionField = document.querySelector('[name="section"]');
+
+    // Add a manual event listener to the class field to ensure it works
+    classField.addEventListener('change', function() {
+      console.log('Class changed to:', this.value);
+      loadSections(this.value);
+    });
+
+    // If class is already selected on page load, load its sections
     if (classField && classField.value) {
-      loadSections(classField.value);
+      console.log('Class already selected, loading sections for class ID:', classField.value);
+      setTimeout(() => {
+        loadSections(classField.value);
+      }, 300); // Small delay to ensure the DOM is fully loaded
+    } else {
+      console.log('No class selected on page load');
     }
 
     // Make sure only the first section is visible on page load
@@ -2925,8 +3030,8 @@
         photoStatus.className = 'badge bg-success';
         photoStatus.textContent = 'Uploaded';
       } else {
-        photoStatus.className = 'badge bg-danger';
-        photoStatus.textContent = 'Required';
+        photoStatus.className = 'badge bg-info';
+        photoStatus.textContent = 'Optional';
       }
 
       // Check if birth certificate is uploaded
@@ -2934,8 +3039,8 @@
         birthCertStatus.className = 'badge bg-success';
         birthCertStatus.textContent = 'Uploaded';
       } else {
-        birthCertStatus.className = 'badge bg-danger';
-        birthCertStatus.textContent = 'Required';
+        birthCertStatus.className = 'badge bg-info';
+        birthCertStatus.textContent = 'Optional';
       }
 
       // Check if address proof is uploaded
@@ -2943,8 +3048,8 @@
         addressProofStatus.className = 'badge bg-success';
         addressProofStatus.textContent = 'Uploaded';
       } else {
-        addressProofStatus.className = 'badge bg-danger';
-        addressProofStatus.textContent = 'Required';
+        addressProofStatus.className = 'badge bg-info';
+        addressProofStatus.textContent = 'Optional';
       }
 
       // Check if transfer certificate is uploaded
@@ -3281,6 +3386,28 @@
             showToast(`Please check: ${errorMessage}`, 'error');
           }
         }
+      } else {
+        // Show loading state on submit button
+        const submitBtn = document.getElementById('submit-btn');
+        if (submitBtn) {
+          submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> Saving...';
+          submitBtn.disabled = true;
+        }
+
+        // Make sure Father's mobile number is set from mobile number if not provided
+        const fatherMobileField = document.querySelector('[name="Father_mobile_number"]');
+        if (!fatherMobileField || !fatherMobileField.value) {
+          const mobileNumber = document.querySelector('[name="mobile_number"]').value;
+          // Create a hidden input for Father's mobile number
+          const hiddenInput = document.createElement('input');
+          hiddenInput.type = 'hidden';
+          hiddenInput.name = 'Father_mobile_number';
+          hiddenInput.value = mobileNumber;
+          form.appendChild(hiddenInput);
+        }
+
+        // Show success message
+        showToast('Form submitted successfully! Redirecting to student profile...', 'success');
       }
 
       form.classList.add('was-validated');
@@ -3367,7 +3494,7 @@
       'document-upload': {
         title: 'Document Upload Help',
         content: `
-          <p>This section allows you to upload required documents:</p>
+          <p>This section allows you to upload optional documents:</p>
           <ul>
             <li><strong>Student Photo:</strong> Recent passport size photograph with white background</li>
             <li><strong>Birth Certificate:</strong> Document proving date of birth</li>
@@ -3376,7 +3503,8 @@
             <li><strong>Category Certificate:</strong> For SC/ST/OBC students</li>
             <li><strong>Disability Certificate:</strong> For students with special needs</li>
           </ul>
-          <p>All documents should be clear, legible, and in JPG, PNG, or PDF format (max 2MB each).</p>
+          <p><strong>Note:</strong> All documents are optional. You can proceed without uploading any documents.</p>
+          <p>If you choose to upload, documents should be clear, legible, and in JPG, PNG, or PDF format (max 2MB each).</p>
           <p>Click on the question mark icon next to the photo upload for detailed photo guidelines.</p>
         `
       },

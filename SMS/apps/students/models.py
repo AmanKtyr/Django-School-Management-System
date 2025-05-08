@@ -150,6 +150,49 @@ class StudentBulkUpload(models.Model):
     csv_file = models.FileField(upload_to="students/bulkupload/")
 
 
+class StudentUDISEInfo(models.Model):
+    """Model for storing UDISE+ specific information for students"""
+    student = models.OneToOneField(Student, on_delete=models.CASCADE, related_name='udise_info')
+
+    # Flag to indicate if student was admitted through UDISE form
+    is_udise_student = models.BooleanField(default=True)
+
+    # UDISE specific fields
+    mother_tongue = models.CharField(max_length=100, blank=True, default="58-HINDI-Bhojpuri")
+    nationality = models.CharField(max_length=50, blank=True, default="Indian")
+    is_indian = models.BooleanField(default=True)
+
+    # EWS and other status fields
+    is_ews = models.BooleanField(default=False)
+    is_cwsn = models.BooleanField(default=False)
+    is_out_of_school = models.BooleanField(default=False)
+    mainstreamed_year = models.CharField(max_length=10, blank=True, default="NA")
+
+    # Disability related fields
+    disability_type = models.CharField(max_length=100, blank=True)
+    has_disability_certificate = models.BooleanField(default=False)
+    disability_percentage = models.IntegerField(default=0)
+
+    # Additional contact information
+    alternate_mobile = models.CharField(max_length=15, blank=True)
+
+    # Health information
+    blood_group = models.CharField(max_length=10, blank=True, default="Under Investigation")
+
+    # Enrollment details
+    admitted_under = models.CharField(max_length=100, blank=True, default="NA")
+
+    # Facility details
+    sld_screened = models.BooleanField(default=False)
+
+    # Timestamps
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"UDISE Info for {self.student.fullname}"
+
+
 class StudentDocument(models.Model):
     """Model for storing student documents"""
     student = models.ForeignKey(Student, on_delete=models.CASCADE, related_name='documents')

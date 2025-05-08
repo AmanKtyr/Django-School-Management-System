@@ -10,12 +10,13 @@ from django.views.generic.edit import CreateView, DeleteView, UpdateView
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+from django.views.decorators.http import require_POST
 
 # Finance app removed
 from apps.corecode.filters import ClassSectionFilterForm
 from apps.corecode.models import Section
 
-from .models import Student, StudentBulkUpload, StudentDocument
+from .models import Student, StudentBulkUpload, StudentDocument, StudentUDISEInfo
 from .filters import StudentFilter
 from .forms import StudentForm
 
@@ -51,6 +52,16 @@ class StudentDetailView(LoginRequiredMixin, DetailView):
 
         # Get student documents if they exist
         context['documents'] = StudentDocument.objects.filter(student=self.object).first()
+
+        # Get UDISE information if it exists
+        try:
+            context['udise_info'] = StudentUDISEInfo.objects.get(student=self.object)
+        except (StudentUDISEInfo.DoesNotExist, Exception) as e:
+            # Handle both DoesNotExist and database errors (like missing table)
+            context['udise_info'] = None
+            # If it's a database error, set a flag to show a migration message
+            if not isinstance(e, StudentUDISEInfo.DoesNotExist):
+                context['needs_migration'] = True
 
         # Get pending fees
         from apps.fees.models import PendingFee, FeePayment
@@ -294,6 +305,22 @@ def upload_student_documents(request, pk):
 def get_sections_for_class(request, class_id):
     """API endpoint to get sections for a class for the student form"""
     try:
+        # Check if class exists
+        from apps.corecode.models import StudentClass
+        student_class = StudentClass.objects.filter(id=class_id).first()
+
+        if not student_class:
+            # Return default sections if class doesn't exist
+            default_sections = [
+                {'id': 'A', 'name': 'A'},
+                {'id': 'B', 'name': 'B'}
+            ]
+            return JsonResponse({
+                'sections': default_sections,
+                'message': f'Class with ID {class_id} not found. Using default sections.',
+                'status': 'warning'
+            })
+
         # Get sections from the Section model
         sections = Section.objects.filter(
             student_class_id=class_id,
@@ -303,9 +330,75 @@ def get_sections_for_class(request, class_id):
         # Format sections for the response
         section_data = [{'id': section, 'name': section} for section in sections]
 
-        return JsonResponse({'sections': section_data})
+        # If no sections found, return default sections A and B
+        if not section_data:
+            # Log this for debugging
+            import logging
+            logger = logging.getLogger(__name__)
+            logger.warning(f"No sections found for class ID {class_id}. Returning default sections.")
+
+            # Return default sections as fallback
+            section_data = [
+                {'id': 'A', 'name': 'A'},
+                {'id': 'B', 'name': 'B'}
+            ]
+
+            return JsonResponse({
+                'sections': section_data,
+                'message': f'No sections found for class {student_class.name}. Using default sections A and B.',
+                'status': 'info'
+            })
+
+        return JsonResponse({
+            'sections': section_data,
+            'status': 'success'
+        })
     except Exception as e:
-        return JsonResponse({'error': str(e)}, status=500)
+        import traceback
+        traceback.print_exc()
+
+        # Return default sections as fallback even in case of error
+        default_sections = [
+            {'id': 'A', 'name': 'A'},
+            {'id': 'B', 'name': 'B'}
+        ]
+
+        return JsonResponse({
+            'error': str(e),
+            'sections': default_sections,
+            'message': 'Error loading sections. Using default sections as fallback.',
+            'status': 'error'
+        })
+
+
+@login_required
+@require_POST
+def create_udise_info(request, pk):
+    """Create UDISE information for a student"""
+    student = get_object_or_404(Student, pk=pk)
+
+    try:
+        # Check if UDISE info already exists
+        try:
+            StudentUDISEInfo.objects.get(student=student)
+            messages.warning(request, f"UDISE information already exists for {student.fullname}")
+        except StudentUDISEInfo.DoesNotExist:
+            # Create new UDISE info
+            udise_info = StudentUDISEInfo(
+                student=student,
+                is_udise_student=True,
+                mother_tongue="58-HINDI-Bhojpuri",
+                nationality="Indian",
+                is_indian=True,
+                blood_group="Under Investigation"
+            )
+            udise_info.save()
+            messages.success(request, f"UDISE information created for {student.fullname}")
+    except Exception as e:
+        # Handle database errors (like missing table)
+        messages.error(request, f"Database error: {str(e)}. Please run migrations first.")
+
+    return redirect('student-detail', pk=student.pk)
 
 
 class StudentUDISECreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
@@ -334,13 +427,102 @@ class StudentUDISECreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView
         else:
             form.instance.current_status = 'active'
 
+        # Get data from POST
+        post_data = self.request.POST
+
+        # Manually set fields from the form that might not be mapped automatically
+        if 'Father_name' in post_data:
+            form.instance.Father_name = post_data.get('Father_name')
+
+        if 'Father_mobile_number' in post_data:
+            form.instance.Father_mobile_number = post_data.get('mobile_number')  # Use the mobile number as father's mobile
+
+        if 'Mother_name' in post_data:
+            form.instance.Mother_name = post_data.get('Mother_name')
+
+        if 'address' in post_data:
+            form.instance.address = post_data.get('address')
+
+        if 'mobile_number' in post_data:
+            form.instance.mobile_number = post_data.get('mobile_number')
+
+        if 'email_id' in post_data:
+            form.instance.email_id = post_data.get('email_id')
+
+        if 'aadhar' in post_data:
+            form.instance.aadhar = post_data.get('aadhar')
+
         # Save the form to get the student instance
         response = super().form_valid(form)
 
         # Handle document uploads
         self.handle_document_uploads(self.object)
 
+        # Save UDISE information
+        self.save_udise_info(self.object)
+
+        # Log success message
+        messages.success(self.request, f"Student {self.object.fullname} successfully created and saved to database.")
+
         return response
+
+    def save_udise_info(self, student):
+        """Save UDISE+ specific information for the student"""
+        try:
+            # Create or update UDISE info
+            udise_info, created = StudentUDISEInfo.objects.get_or_create(student=student)
+
+            # Get data from POST
+            post_data = self.request.POST
+
+            # Update fields from form data
+            if 'mother_tongue' in post_data:
+                udise_info.mother_tongue = post_data.get('mother_tongue')
+
+            if 'is_indian' in post_data:
+                udise_info.is_indian = post_data.get('is_indian') == 'Yes'
+
+            if 'ews' in post_data:
+                udise_info.is_ews = post_data.get('ews') == 'Yes'
+
+            if 'cwsn' in post_data:
+                udise_info.is_cwsn = post_data.get('cwsn') == 'Yes'
+
+            if 'out_of_school' in post_data:
+                udise_info.is_out_of_school = post_data.get('out_of_school') == 'Yes'
+
+            if 'mainstreamed' in post_data:
+                udise_info.mainstreamed_year = post_data.get('mainstreamed')
+
+            if 'disability_type' in post_data:
+                udise_info.disability_type = post_data.get('disability_type')
+
+            if 'disability_certificate' in post_data:
+                udise_info.has_disability_certificate = post_data.get('disability_certificate') == 'Yes'
+
+            if 'disability_percentage' in post_data:
+                try:
+                    udise_info.disability_percentage = int(post_data.get('disability_percentage', 0))
+                except ValueError:
+                    udise_info.disability_percentage = 0
+
+            if 'alternate_mobile' in post_data:
+                udise_info.alternate_mobile = post_data.get('alternate_mobile')
+
+            if 'blood_group' in post_data:
+                udise_info.blood_group = post_data.get('blood_group')
+
+            if 'admitted_under' in post_data:
+                udise_info.admitted_under = post_data.get('admitted_under')
+
+            if 'sld_screened' in post_data:
+                udise_info.sld_screened = post_data.get('sld_screened') == 'Yes'
+
+            # Save the UDISE info
+            udise_info.save()
+        except Exception as e:
+            # Handle database errors (like missing table)
+            messages.error(self.request, f"Database error: {str(e)}. Please run migrations first.")
 
     def handle_document_uploads(self, student):
         """Process document uploads and save them to StudentDocument model"""
@@ -350,17 +532,19 @@ class StudentUDISECreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView
         student_doc, created = StudentDocument.objects.get_or_create(student=student)
 
         # Handle student photo (passport)
-        if 'student_photo' in self.request.FILES:
-            student.passport = self.request.FILES['student_photo']
+        if 'passport' in self.request.FILES:
+            student.passport = self.request.FILES['passport']
             student.save()
 
         # Handle birth certificate
         if 'birth_certificate' in self.request.FILES:
             student_doc.birth_certificate = self.request.FILES['birth_certificate']
+            student_doc.birth_certificate_number = self.request.POST.get('birth_certificate_number', '')
 
         # Handle address proof
         if 'address_proof' in self.request.FILES:
             student_doc.address_proof = self.request.FILES['address_proof']
+            student_doc.address_proof_number = self.request.POST.get('address_proof_number', '')
 
         # Handle transfer certificate
         if 'transfer_certificate' in self.request.FILES:
@@ -433,13 +617,102 @@ class StudentUDISEUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView
         else:
             form.instance.current_status = 'active'
 
+        # Get data from POST
+        post_data = self.request.POST
+
+        # Manually set fields from the form that might not be mapped automatically
+        if 'Father_name' in post_data:
+            form.instance.Father_name = post_data.get('Father_name')
+
+        if 'Father_mobile_number' in post_data:
+            form.instance.Father_mobile_number = post_data.get('mobile_number')  # Use the mobile number as father's mobile
+
+        if 'Mother_name' in post_data:
+            form.instance.Mother_name = post_data.get('Mother_name')
+
+        if 'address' in post_data:
+            form.instance.address = post_data.get('address')
+
+        if 'mobile_number' in post_data:
+            form.instance.mobile_number = post_data.get('mobile_number')
+
+        if 'email_id' in post_data:
+            form.instance.email_id = post_data.get('email_id')
+
+        if 'aadhar' in post_data:
+            form.instance.aadhar = post_data.get('aadhar')
+
         # Save the form to get the student instance
         response = super().form_valid(form)
 
         # Handle document uploads
         self.handle_document_uploads(self.object)
 
+        # Save UDISE information
+        self.save_udise_info(self.object)
+
+        # Log success message
+        messages.success(self.request, f"Student {self.object.fullname} successfully updated in database.")
+
         return response
+
+    def save_udise_info(self, student):
+        """Save UDISE+ specific information for the student"""
+        try:
+            # Create or update UDISE info
+            udise_info, created = StudentUDISEInfo.objects.get_or_create(student=student)
+
+            # Get data from POST
+            post_data = self.request.POST
+
+            # Update fields from form data
+            if 'mother_tongue' in post_data:
+                udise_info.mother_tongue = post_data.get('mother_tongue')
+
+            if 'is_indian' in post_data:
+                udise_info.is_indian = post_data.get('is_indian') == 'Yes'
+
+            if 'ews' in post_data:
+                udise_info.is_ews = post_data.get('ews') == 'Yes'
+
+            if 'cwsn' in post_data:
+                udise_info.is_cwsn = post_data.get('cwsn') == 'Yes'
+
+            if 'out_of_school' in post_data:
+                udise_info.is_out_of_school = post_data.get('out_of_school') == 'Yes'
+
+            if 'mainstreamed' in post_data:
+                udise_info.mainstreamed_year = post_data.get('mainstreamed')
+
+            if 'disability_type' in post_data:
+                udise_info.disability_type = post_data.get('disability_type')
+
+            if 'disability_certificate' in post_data:
+                udise_info.has_disability_certificate = post_data.get('disability_certificate') == 'Yes'
+
+            if 'disability_percentage' in post_data:
+                try:
+                    udise_info.disability_percentage = int(post_data.get('disability_percentage', 0))
+                except ValueError:
+                    udise_info.disability_percentage = 0
+
+            if 'alternate_mobile' in post_data:
+                udise_info.alternate_mobile = post_data.get('alternate_mobile')
+
+            if 'blood_group' in post_data:
+                udise_info.blood_group = post_data.get('blood_group')
+
+            if 'admitted_under' in post_data:
+                udise_info.admitted_under = post_data.get('admitted_under')
+
+            if 'sld_screened' in post_data:
+                udise_info.sld_screened = post_data.get('sld_screened') == 'Yes'
+
+            # Save the UDISE info
+            udise_info.save()
+        except Exception as e:
+            # Handle database errors (like missing table)
+            messages.error(self.request, f"Database error: {str(e)}. Please run migrations first.")
 
     def handle_document_uploads(self, student):
         """Process document uploads and save them to StudentDocument model"""
@@ -449,17 +722,19 @@ class StudentUDISEUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView
         student_doc, created = StudentDocument.objects.get_or_create(student=student)
 
         # Handle student photo (passport)
-        if 'student_photo' in self.request.FILES:
-            student.passport = self.request.FILES['student_photo']
+        if 'passport' in self.request.FILES:
+            student.passport = self.request.FILES['passport']
             student.save()
 
         # Handle birth certificate
         if 'birth_certificate' in self.request.FILES:
             student_doc.birth_certificate = self.request.FILES['birth_certificate']
+            student_doc.birth_certificate_number = self.request.POST.get('birth_certificate_number', '')
 
         # Handle address proof
         if 'address_proof' in self.request.FILES:
             student_doc.address_proof = self.request.FILES['address_proof']
+            student_doc.address_proof_number = self.request.POST.get('address_proof_number', '')
 
         # Handle transfer certificate
         if 'transfer_certificate' in self.request.FILES:

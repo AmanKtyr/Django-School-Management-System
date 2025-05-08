@@ -48,6 +48,20 @@
       <button id="printButton" class="action-btn btn btn-light shadow-sm me-1" title="Print Student Details">
         <i class="fas fa-print"></i> Print
       </button>
+      {% if needs_migration %}
+      <!-- Show migration message button -->
+      <button type="button" class="action-btn btn btn-warning shadow-sm me-1" data-bs-toggle="modal" data-bs-target="#migrationModal" title="Database Migration Required">
+        <i class="fas fa-database"></i> Migration Required
+      </button>
+      {% elif udise_info %}
+      <button type="button" class="action-btn btn btn-info shadow-sm me-1" data-bs-toggle="modal" data-bs-target="#udiseInfoModal" title="View UDISE+ Information">
+        <i class="fas fa-info-circle"></i> Student UDISE+ Info
+      </button>
+      {% else %}
+      <button type="button" class="action-btn btn btn-outline-info shadow-sm me-1" data-bs-toggle="modal" data-bs-target="#createUdiseModal" title="Create UDISE+ Information">
+        <i class="fas fa-plus-circle"></i> Create UDISE+ Info
+      </button>
+      {% endif %}
       <div class="dropdown d-inline-block me-1">
         <button class="action-btn btn btn-warning shadow-sm text-white dropdown-toggle" type="button" id="editDropdown" data-bs-toggle="dropdown" aria-expanded="false" title="Edit Student Details">
           <i class="fas fa-edit"></i> Edit
@@ -490,5 +504,67 @@
     document.getElementById('printButton').addEventListener('click', printStudentProfile);
   });
 </script>
+
+{% if needs_migration %}
+<!-- Migration Required Modal -->
+<div class="modal fade" id="migrationModal" tabindex="-1" aria-labelledby="migrationModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-warning text-dark">
+        <h5 class="modal-title" id="migrationModalLabel">
+          <i class="fas fa-database me-2"></i> Database Migration Required
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center mb-4">
+          <i class="fas fa-exclamation-triangle text-warning" style="font-size: 3rem;"></i>
+        </div>
+        <h5 class="text-center mb-3">Database Migration Required</h5>
+        <p>The UDISE+ feature requires a database migration to be applied. Please run the following command in your terminal:</p>
+        <div class="bg-dark text-light p-3 rounded">
+          <code>python manage.py migrate</code>
+        </div>
+        <p class="mt-3">After running the migration, refresh this page to use the UDISE+ features.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% elif udise_info %}
+  {% include 'students/udise_info_modal.html' %}
+{% else %}
+<!-- Create UDISE Info Confirmation Modal -->
+<div class="modal fade" id="createUdiseModal" tabindex="-1" aria-labelledby="createUdiseModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="createUdiseModalLabel">
+          <i class="fas fa-plus-circle me-2"></i> Create UDISE+ Information
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center mb-4">
+          <i class="fas fa-info-circle text-primary" style="font-size: 3rem;"></i>
+        </div>
+        <p class="mb-0">Are you sure you want to create UDISE+ information for <strong>{{ object.fullname }}</strong>?</p>
+        <p class="text-muted small mt-2">This will create a basic UDISE+ profile for the student. You can update the details later using the UDISE+ form.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <form action="{% url 'create-udise-info' object.id %}" method="post">
+          {% csrf_token %}
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-check me-2"></i> Create UDISE+ Info
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
 
 {% endblock content %}
