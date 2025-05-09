@@ -36410,3 +36410,103 @@ WARNING 2025-05-08 18:52:53,429 Not Found: /students/api/class/3/sections/
 WARNING 2025-05-08 18:52:53,431 "GET /students/api/class/3/sections/ HTTP/1.1" 404 20555
 INFO 2025-05-08 18:54:30,789 "GET /student/3/ HTTP/1.1" 200 53522
 INFO 2025-05-08 18:54:31,220 "GET /static/dist/css/style.css?v=1746710671211 HTTP/1.1" 200 55691
+INFO 2025-05-08 18:55:22,896 "GET /student/3/ HTTP/1.1" 200 53593
+INFO 2025-05-08 18:55:23,388 "GET /static/dist/css/style.css?v=1746710723382 HTTP/1.1" 200 55691
+INFO 2025-05-08 18:55:24,894 "GET /student/3/update/ HTTP/1.1" 200 73139
+INFO 2025-05-08 18:55:25,235 "GET /static/dist/css/style.css?v=1746710725225 HTTP/1.1" 200 55691
+INFO 2025-05-08 18:55:25,300 "GET /student/api/class/3/sections/ HTTP/1.1" 200 161
+INFO 2025-05-08 18:55:27,542 "GET /student/3/update-udise/ HTTP/1.1" 200 177042
+INFO 2025-05-08 18:55:27,732 "GET /static/dist/css/style.css?v=1746710727728 HTTP/1.1" 200 55691
+WARNING 2025-05-08 18:55:28,071 Not Found: /students/api/class/3/sections/
+WARNING 2025-05-08 18:55:28,071 "GET /students/api/class/3/sections/ HTTP/1.1" 404 20555
+INFO 2025-05-08 20:53:37,179 Watching for file changes with StatReloader
+INFO 2025-05-08 20:53:43,309 "GET / HTTP/1.1" 302 0
+INFO 2025-05-08 20:53:43,415 "GET /accounts/login/?next=/ HTTP/1.1" 200 5723
+WARNING 2025-05-08 20:53:44,444 Not Found: /favicon.ico
+WARNING 2025-05-08 20:53:44,445 "GET /favicon.ico HTTP/1.1" 404 20498
+INFO 2025-05-08 20:54:18,037 "POST /accounts/login/ HTTP/1.1" 200 5811
+INFO 2025-05-08 20:54:31,965 "POST /accounts/login/ HTTP/1.1" 200 5811
+INFO 2025-05-08 20:54:39,917 "POST /accounts/login/ HTTP/1.1" 200 5811
+INFO 2025-05-08 20:55:35,790 "POST /accounts/login/ HTTP/1.1" 200 5811
+INFO 2025-05-08 20:55:39,232 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-05-08 20:55:39,305 "GET / HTTP/1.1" 200 60501
+INFO 2025-05-08 20:55:39,459 "GET /static/dist/js/class-section-filter.js HTTP/1.1" 304 0
+INFO 2025-05-08 20:55:39,852 "GET /static/dist/css/style.css?v=1746717939714 HTTP/1.1" 200 55691
+WARNING 2025-05-08 20:55:39,994 "GET /static/dist/img/favicon/favicon.ico HTTP/1.1" 404 1898
+WARNING 2025-05-08 20:55:40,048 "GET /static/dist/img/favicon/favicon-32x32.png HTTP/1.1" 404 1916
+WARNING 2025-05-08 20:55:40,251 "GET /static/dist/img/favicon/favicon-16x16.png HTTP/1.1" 404 1916
+INFO 2025-05-08 20:55:42,190 "GET /student/create-udise/ HTTP/1.1" 200 177073
+INFO 2025-05-08 20:55:42,460 "GET /static/dist/css/style.css?v=1746717942453 HTTP/1.1" 200 55691
+INFO 2025-05-08 20:55:54,897 "GET /student/list HTTP/1.1" 200 40110
+INFO 2025-05-08 20:55:55,108 "GET /static/dist/css/style.css?v=1746717955100 HTTP/1.1" 200 55691
+INFO 2025-05-09 11:22:59,467 Watching for file changes with StatReloader
+INFO 2025-05-09 11:23:14,471 "GET / HTTP/1.1" 302 0
+INFO 2025-05-09 11:23:14,579 "GET /accounts/login/?next=/ HTTP/1.1" 200 5723
+WARNING 2025-05-09 11:23:15,698 Not Found: /favicon.ico
+WARNING 2025-05-09 11:23:15,702 "GET /favicon.ico HTTP/1.1" 404 20498
+INFO 2025-05-09 11:23:18,257 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-05-09 11:23:18,574 "GET / HTTP/1.1" 200 60501
+INFO 2025-05-09 11:23:18,729 "GET /static/dist/css/style.css HTTP/1.1" 304 0
+INFO 2025-05-09 11:23:19,244 "GET /static/dist/js/custom.js HTTP/1.1" 304 0
+INFO 2025-05-09 11:23:19,688 "GET /static/dist/css/style.css?v=1746769999551 HTTP/1.1" 200 55691
+WARNING 2025-05-09 11:23:19,838 "GET /static/dist/img/favicon/favicon.ico HTTP/1.1" 404 1898
+WARNING 2025-05-09 11:23:19,894 "GET /static/dist/img/favicon/favicon-32x32.png HTTP/1.1" 404 1916
+WARNING 2025-05-09 11:23:19,947 "GET /static/dist/img/favicon/favicon-16x16.png HTTP/1.1" 404 1916
+INFO 2025-05-09 11:27:45,395 "GET /logout/ HTTP/1.1" 200 6187
+INFO 2025-05-09 11:27:47,863 "GET /accounts/login/ HTTP/1.1" 200 5722
+INFO 2025-05-09 11:28:06,993 "POST /accounts/login/ HTTP/1.1" 200 5810
+INFO 2025-05-09 12:44:55,653 "POST /accounts/login/ HTTP/1.1" 200 5810
+INFO 2025-05-09 13:53:08,968 Watching for file changes with StatReloader
+INFO 2025-05-09 13:53:40,718 Watching for file changes with StatReloader
+INFO 2025-05-09 13:56:54,180 Watching for file changes with StatReloader
+INFO 2025-05-09 13:56:59,315 "GET / HTTP/1.1" 302 0
+INFO 2025-05-09 13:56:59,444 "GET /accounts/login/?next=/ HTTP/1.1" 200 5723
+WARNING 2025-05-09 13:57:00,336 Not Found: /favicon.ico
+WARNING 2025-05-09 13:57:00,336 "GET /favicon.ico HTTP/1.1" 404 20498
+INFO 2025-05-09 13:57:04,192 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-05-09 13:57:04,433 "GET / HTTP/1.1" 200 60501
+INFO 2025-05-09 13:57:04,957 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 304 0
+INFO 2025-05-09 13:57:05,075 "GET /static/dist/css/style.css?v=1746779224931 HTTP/1.1" 200 55691
+WARNING 2025-05-09 13:57:05,199 "GET /static/dist/img/favicon/favicon.ico HTTP/1.1" 404 1898
+WARNING 2025-05-09 13:57:05,213 "GET /static/dist/img/favicon/favicon-32x32.png HTTP/1.1" 404 1916
+WARNING 2025-05-09 13:57:05,229 "GET /static/dist/img/favicon/favicon-16x16.png HTTP/1.1" 404 1916
+INFO 2025-05-09 13:59:57,035 D:\Sipher Web\Django School Management System\SMS\school_app\settings.py changed, reloading.
+INFO 2025-05-09 13:59:58,793 Watching for file changes with StatReloader
+INFO 2025-05-09 14:07:25,981 Watching for file changes with StatReloader
+INFO 2025-05-09 14:07:46,196 Watching for file changes with StatReloader
+INFO 2025-05-09 14:08:49,075 Watching for file changes with StatReloader
+INFO 2025-05-09 14:08:54,366 "GET / HTTP/1.1" 302 0
+INFO 2025-05-09 14:08:54,538 "GET /accounts/login/?next=/ HTTP/1.1" 200 5702
+INFO 2025-05-09 14:08:54,855 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-05-09 14:08:54,869 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-05-09 14:08:54,873 "GET /static/dist/css/login-page.css HTTP/1.1" 200 9070
+WARNING 2025-05-09 14:08:54,890 "GET /static/path/to/default-logo.png HTTP/1.1" 404 1886
+INFO 2025-05-09 14:08:54,966 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-05-09 14:08:55,074 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2025-05-09 14:08:55,080 "GET /static/dist/img/bg.jpg HTTP/1.1" 200 3093083
+INFO 2025-05-09 14:08:55,106 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+WARNING 2025-05-09 14:08:55,915 Not Found: /favicon.ico
+WARNING 2025-05-09 14:08:55,917 "GET /favicon.ico HTTP/1.1" 404 20498
+INFO 2025-05-09 14:09:11,358 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-05-09 14:09:11,519 "GET / HTTP/1.1" 200 55830
+INFO 2025-05-09 14:09:11,635 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-05-09 14:09:11,637 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-05-09 14:09:11,647 "GET /static/dist/css/preload.css HTTP/1.1" 200 1863
+INFO 2025-05-09 14:09:11,649 "GET /static/dist/css/style.css HTTP/1.1" 200 55691
+INFO 2025-05-09 14:09:11,682 "GET /static/dist/css/sidebar-fix.css HTTP/1.1" 200 11058
+INFO 2025-05-09 14:09:11,747 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-05-09 14:09:11,753 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-05-09 14:09:11,789 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-05-09 14:09:11,798 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-05-09 14:09:11,802 "GET /static/dist/js/class-section-filter.js HTTP/1.1" 200 3704
+INFO 2025-05-09 14:09:11,810 "GET /static/dist/js/custom.js HTTP/1.1" 200 2597
+INFO 2025-05-09 14:09:11,890 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-05-09 14:09:12,248 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-05-09 14:09:12,451 "GET /static/dist/css/style.css?v=1746779952437 HTTP/1.1" 200 55691
+INFO 2025-05-09 14:09:12,519 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 200 9593
+INFO 2025-05-09 14:09:12,527 "GET /static/dist/js/sidebar-fix.js HTTP/1.1" 200 2712
+WARNING 2025-05-09 14:09:12,622 "GET /static/dist/img/favicon/default-favicon.ico HTTP/1.1" 404 1922
+INFO 2025-05-09 14:09:16,575 "GET /student/list HTTP/1.1" 200 35876
+INFO 2025-05-09 14:09:16,833 "GET /static/dist/css/style.css?v=1746779956818 HTTP/1.1" 200 55691
+INFO 2025-05-09 14:10:07,543 "GET /system-settings/general/ HTTP/1.1" 200 46893
+INFO 2025-05-09 14:10:07,843 "GET /static/dist/css/style.css?v=1746780007833 HTTP/1.1" 200 55691
