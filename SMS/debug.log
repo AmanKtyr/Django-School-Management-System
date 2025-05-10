@@ -36952,3 +36952,13 @@ INFO 2025-05-10 18:02:53,776 "GET /fees/settings/ HTTP/1.1" 200 40097
 WARNING 2025-05-10 18:02:53,854 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
 INFO 2025-05-10 18:02:53,960 "GET /static/dist/css/style.css?v=1746880373952 HTTP/1.1" 200 55691
 INFO 2025-05-10 18:04:01,944 "GET /fees/settings/ HTTP/1.1" 200 40071
+INFO 2025-05-10 18:08:11,032 "GET /fees/settings/ HTTP/1.1" 200 63029
+WARNING 2025-05-10 18:08:11,142 "GET /static/img/select-class.svg HTTP/1.1" 404 1874
+INFO 2025-05-10 18:08:11,409 "GET /static/dist/css/style.css?v=1746880691399 HTTP/1.1" 200 55691
+INFO 2025-05-10 18:09:09,060 "GET /api/get-sections/4/ HTTP/1.1" 200 16
+INFO 2025-05-10 18:09:09,303 "GET /api/get-sections/4/ HTTP/1.1" 200 16
+INFO 2025-05-10 18:09:11,129 "GET /fees/settings/?class_name=4&section= HTTP/1.1" 200 71942
+INFO 2025-05-10 18:09:11,486 "GET /static/dist/css/style.css?v=1746880751451 HTTP/1.1" 200 55691
+INFO 2025-05-10 18:09:11,623 "GET /api/get-sections/4/ HTTP/1.1" 200 16
+INFO 2025-05-10 18:09:11,779 "GET /api/get-sections/4/ HTTP/1.1" 200 16
+INFO 2025-05-10 18:09:11,893 "GET /api/get-sections/4/ HTTP/1.1" 200 16
