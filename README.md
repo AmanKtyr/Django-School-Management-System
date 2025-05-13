@@ -41,8 +41,8 @@ Once the server is running, navigate to:
 ## 🔑 Admin Login Credentials
 When you run the migration, a default superuser is created:
 ```bash
-Username: Aman09
-Password: aman0000
+Username: Admin
+Password: Admin@#12
 ```
 You can log in to the admin panel at:  
 [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)

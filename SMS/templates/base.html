@@ -376,8 +376,8 @@
               </ul>
           </li>
 
-          <li class="nav-header">Examinations</li>
-          <li class="nav-item has-treeview {% if 'exams' in request.path %}menu-open{% endif %}">
+          <li class="nav-header" >Examinations</li>
+          <li class="nav-item has-treeview {% if 'exams' in request.path %}menu-open{% endif %}" title="Under Development">
               <a href="{% url 'exams:dashboard' %}" class="nav-link {% if 'exams' in request.path %}active{% endif %}">
                   <i class="nav-icon fas fa-graduation-cap" style="color: #ff9900; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);"></i>
                   <p>
@@ -448,7 +448,7 @@
 
 
           <li class="nav-header">Documents</li>
-          <li class="nav-item has-treeview {% if 'documents' in request.path %}menu-open{% endif %}">
+          <li class="nav-item has-treeview {% if 'documents' in request.path %}menu-open{% endif %}" title="Under Development">
               <a href="{% url 'documents:dashboard' %}" class="nav-link {% if 'documents' in request.path %}active{% endif %}">
                   <i class="nav-icon fas fa-folder-open" style="color: #9933ff; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);"></i>
                   <p>Documents<i class="fas fa-angle-left right"></i></p>
