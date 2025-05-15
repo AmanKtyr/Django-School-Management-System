@@ -37088,3 +37088,42 @@ INFO 2025-05-13 12:53:39,850 "GET /exams/ HTTP/1.1" 200 68205
 INFO 2025-05-13 12:53:40,185 "GET /static/dist/css/style.css?v=1747121020179 HTTP/1.1" 200 55691
 INFO 2025-05-13 12:54:26,998 "GET /exams/ HTTP/1.1" 200 68231
 INFO 2025-05-13 12:54:27,344 "GET /static/dist/css/style.css?v=1747121067338 HTTP/1.1" 200 55691
+INFO 2025-05-15 16:19:42,883 Watching for file changes with StatReloader
+INFO 2025-05-15 16:21:12,261 Watching for file changes with StatReloader
+INFO 2025-05-15 16:22:22,638 Watching for file changes with StatReloader
+INFO 2025-05-15 16:24:21,422 Watching for file changes with StatReloader
+INFO 2025-05-15 16:30:48,642 Watching for file changes with StatReloader
+INFO 2025-05-15 16:31:47,725 Watching for file changes with StatReloader
+INFO 2025-05-15 16:31:52,967 "GET / HTTP/1.1" 302 0
+INFO 2025-05-15 16:31:53,028 "GET /accounts/login/?next=/ HTTP/1.1" 200 5723
+INFO 2025-05-15 16:31:53,298 "GET /media/college_logos/college_lgoooo_wLVF410.jpg HTTP/1.1" 200 31795
+INFO 2025-05-15 16:31:53,304 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-05-15 16:31:53,314 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-05-15 16:31:53,372 "GET /static/dist/css/login-page.css HTTP/1.1" 200 9070
+INFO 2025-05-15 16:31:53,433 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-05-15 16:31:53,572 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-05-15 16:31:53,663 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2025-05-15 16:31:53,678 "GET /static/dist/img/bg.jpg HTTP/1.1" 200 3093083
+WARNING 2025-05-15 16:31:54,485 Not Found: /favicon.ico
+WARNING 2025-05-15 16:31:54,491 "GET /favicon.ico HTTP/1.1" 404 20498
+INFO 2025-05-15 16:31:57,156 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-05-15 16:31:57,368 "GET / HTTP/1.1" 200 60554
+INFO 2025-05-15 16:31:57,475 "GET /static/dist/css/preload.css HTTP/1.1" 200 1863
+INFO 2025-05-15 16:31:57,479 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-05-15 16:31:57,521 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-05-15 16:31:57,532 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-05-15 16:31:57,599 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-05-15 16:31:57,643 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-05-15 16:31:57,707 "GET /static/dist/js/custom.js HTTP/1.1" 200 2597
+INFO 2025-05-15 16:31:57,715 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-05-15 16:31:57,737 "GET /static/dist/css/sidebar-fix.css HTTP/1.1" 200 11058
+INFO 2025-05-15 16:31:57,747 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-05-15 16:31:57,792 "GET /static/dist/css/style.css HTTP/1.1" 200 55691
+INFO 2025-05-15 16:31:57,961 "GET /static/dist/js/class-section-filter.js HTTP/1.1" 200 3704
+INFO 2025-05-15 16:31:58,372 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-05-15 16:31:58,608 "GET /static/dist/css/style.css?v=1747306918589 HTTP/1.1" 200 55691
+INFO 2025-05-15 16:31:58,676 "GET /static/dist/js/breadcrumbs.js HTTP/1.1" 200 9593
+INFO 2025-05-15 16:31:58,683 "GET /static/dist/js/sidebar-fix.js HTTP/1.1" 200 2712
+WARNING 2025-05-15 16:31:58,794 "GET /static/dist/img/favicon/favicon.ico HTTP/1.1" 404 1898
+WARNING 2025-05-15 16:31:58,811 "GET /static/dist/img/favicon/favicon-32x32.png HTTP/1.1" 404 1916
+WARNING 2025-05-15 16:31:58,827 "GET /static/dist/img/favicon/favicon-16x16.png HTTP/1.1" 404 1916
