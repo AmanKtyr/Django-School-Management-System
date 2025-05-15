@@ -96,8 +96,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'school_management',
-        'USER': 'postgres',
-        'PASSWORD': 'Sipher@#12',
+        'USER': 'vidyabharti_in_user',
+        'PASSWORD': '1Fffh0ktvLG0tWVABbajfJohogz3picv',
         'HOST': 'localhost',
         'PORT': '5432',
     }
