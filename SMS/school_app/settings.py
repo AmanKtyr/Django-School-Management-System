@@ -221,3 +221,8 @@ MESSAGE_TAGS = {
     messages.WARNING: 'warning',
     messages.ERROR: 'danger',
 }
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://vidyabharti.in',
+    'https://django-school-management-system.onrender.com'
+]
