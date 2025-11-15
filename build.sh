@@ -4,6 +4,5 @@ set -o errexit
 
 pip install -r requirements.txt
 
-cd SMS
-python manage.py collectstatic --no-input
-python manage.py migrate
+python SMS/manage.py collectstatic --noinput
+python SMS/manage.py migrate

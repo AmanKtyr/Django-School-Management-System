@@ -1,22 +1,6 @@
 services:
   - type: web
-    name: school-management-system
-    runtime: python
+    name: web
+    env: python
     buildCommand: "./build.sh"
-    startCommand: "cd SMS && gunicorn school_app.wsgi:application"
-    envVars:
-      - key: SECRET_KEY
-        generateValue: true
-      - key: RENDER
-        value: true
-      - key: DATABASE_URL
-        fromDatabase:
-          name: school_db
-          property: connectionString
-      - key: PYTHON_VERSION
-        value: 3.9.0
-
-databases:
-  - name: school_db
-    databaseName: school_management
-    user: school_user
+    startCommand: "gunicorn SMS.wsgi:application"
